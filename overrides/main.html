@@ -6,6 +6,8 @@
   {% if page and page.file and ('product/' in page.file.src_path or 'tutorial/' in page.file.src_path) %}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/slideshow.css' | url }}">
   {% endif %}
+  {# GA4: Consent Mode v2 + linker — replaces Material built-in extra.analytics #}
+  <script src="{{ 'assets/javascripts/op-analytics.js' | url }}"></script>
 {% endblock %}
 
 {% block scripts %}

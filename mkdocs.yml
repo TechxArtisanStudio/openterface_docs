@@ -76,9 +76,6 @@ extra:
     shop: https://shop.techxartisan.com/
     forum: https://forum.openterface.com/
     marketing_en: https://en.openterface.com/
-  analytics:
-    provider: google
-    property: G-EKZEH6QYWT
   consent:
     title: Cookie Consent
     description: We use cookies to enhance quality of docs content, analyse site effectiveness

@@ -38,8 +38,6 @@ jobs:
 
       - name: Build site (10 locales)
         run: npm run build:full
-        env:
-          PATH: ${{ github.workspace }}/.venv/bin:${{ env.PATH }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
