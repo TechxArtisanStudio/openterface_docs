@@ -2,18 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { kvmGoSidebar } from '../config/sidebar';
+import { sidebarSlugsForPage } from '../config/sidebar';
 import { DEFAULT_LOCALE, localizedPath, type SiteLocale } from './locale';
 
 const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro'] as const;
-
-/** Spike scope — expand to full corpus in Phase 2. */
-export const SPIKE_SLUG_PREFIXES = [
-  'index',
-  'product/kvm-go',
-  'app/overview',
-  'support',
-];
 
 export type DocFrontmatter = {
   title?: string;
@@ -37,6 +29,8 @@ export type DocHeading = {
   text: string;
   id: string;
 };
+
+let cachedPages: DocPage[] | null = null;
 
 function docsRoot(): string {
   return path.resolve(process.cwd(), 'docs');
@@ -75,13 +69,25 @@ function slugify(text: string): string {
     .replace(/\s+/g, '-');
 }
 
+function inlineSnippet(snippetPath: string): string {
+  const full = path.join(docsRoot(), snippetPath);
+  if (!fs.existsSync(full)) return `<!-- missing snippet: ${snippetPath} -->`;
+  let html = fs.readFileSync(full, 'utf8');
+  html = html.replace(/\.\.\/\.\.\/\.\.\/\.\.\/assets\//g, '/assets/');
+  html = html.replace(/\.\.\/\.\.\/assets\//g, '/assets/');
+  return `\n${html}\n`;
+}
+
 /** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
 export function preprocessMkdocsMarkdown(raw: string): string {
   let md = raw;
 
-  // !!! type "Title" / !!! type blocks
+  // pymdownx snippets
+  md = md.replace(/^--8<--\s+"([^"]+)"\s*$/gm, (_m, snippetPath: string) => inlineSnippet(snippetPath));
+
+  // pymdownx.details (??? type "Title")
   md = md.replace(
-    /^!!! (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gm,
+    /^\?\?\? (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gm,
     (_match, type: string, title: string | undefined, body: string) => {
       const lines = body
         .split('\n')
@@ -89,21 +95,46 @@ export function preprocessMkdocsMarkdown(raw: string): string {
         .filter(Boolean)
         .join('\n');
       const label = title || type.charAt(0).toUpperCase() + type.slice(1);
-      return `<aside class="callout callout-${type}">\n<strong class="callout-title">${label}</strong>\n\n${lines}\n</aside>\n\n`;
+      return `<details class="callout callout-${type}">\n<summary class="callout-title">${label}</summary>\n\n${lines}\n</details>\n\n`;
     },
   );
 
-  // pymdownx attr_list on images/links — strip or inline style
+  // admonitions (!!! type "Title") — case-insensitive type
+  md = md.replace(
+    /^!!! (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gim,
+    (_match, type: string, title: string | undefined, body: string) => {
+      const lines = body
+        .split('\n')
+        .map((line) => line.replace(/^    /, ''))
+        .filter(Boolean)
+        .join('\n');
+      const normalized = type.toLowerCase();
+      const label = title || normalized.charAt(0).toUpperCase() + normalized.slice(1);
+      return `<aside class="callout callout-${normalized}">\n<strong class="callout-title">${label}</strong>\n\n${lines}\n</aside>\n\n`;
+    },
+  );
+
+  // mermaid fences → pre.mermaid for optional client render
+  md = md.replace(/```mermaid\n([\s\S]*?)```/g, (_m, code: string) => {
+    return `<pre class="mermaid">${code.trim()}</pre>\n\n`;
+  });
+
+  // pymdownx attr_list on images/links
   md = md.replace(/(\!\[[^\]]*\]\([^)]+\))\{:[^}]+\}/g, '$1');
   md = md.replace(/(\]\([^)]+\))\{:[^}]+\}/g, '$1');
 
-  // Strip Material emoji icon fragments (#only-light) etc.
+  // Material emoji icon fragments (#only-light) etc.
   md = md.replace(/#only-light\)/g, ')');
   md = md.replace(/#only-dark\)/g, ')');
 
-  // Absolute internal doc links → relative (keep for spike)
+  // Absolute internal doc links → site paths
   md = md.replace(/\]\(\/app\)/g, '](/app/overview/)');
+  md = md.replace(/\]\(\/faq\)/g, '](/faq/)');
+  md = md.replace(/\]\(\/support\)/g, '](/support/)');
   md = md.replace(/\]\(\/product\//g, '](/product/');
+  md = md.replace(/\]\(\/tutorial\//g, '](/tutorial/');
+  md = md.replace(/\]\(\/about\//g, '](/about/');
+  md = md.replace(/\]\(\/policy\//g, '](/policy/');
 
   return md;
 }
@@ -131,18 +162,14 @@ function injectHeadingIds(html: string, headings: DocHeading[]): string {
 
 export function renderMarkdown(raw: string): { html: string; headings: DocHeading[] } {
   const md = preprocessMkdocsMarkdown(raw);
-  const html = marked.parse(md, { async: false }) as string;
+  const html = marked.parse(md, { async: false, gfm: true }) as string;
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };
 }
 
-function isSpikeSlug(slug: string): boolean {
-  return SPIKE_SLUG_PREFIXES.some(
-    (prefix) => slug === prefix || slug.startsWith(`${prefix}/`) || slug.startsWith(prefix),
-  );
-}
-
 export function collectDocPages(): DocPage[] {
+  if (cachedPages) return cachedPages;
+
   const root = docsRoot();
   const pages: DocPage[] = [];
 
@@ -161,10 +188,18 @@ export function collectDocPages(): DocPage[] {
       const { stem, locale } = parseLocaleFromFilename(entry.name);
       const slug = fileToSlug(relative, stem);
 
-      if (!isSpikeSlug(slug)) continue;
-
       const source = fs.readFileSync(full, 'utf8');
-      const { data, content } = matter(source);
+      let data: DocFrontmatter = {};
+      let content = source;
+      try {
+        const parsed = matter(source);
+        data = parsed.data as DocFrontmatter;
+        content = parsed.content;
+      } catch {
+        // Some legacy frontmatter values contain unquoted colons; render body as-is.
+        const match = source.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n([\s\S]*)$/);
+        content = match ? match[1] : source;
+      }
       const { html, headings } = renderMarkdown(content);
 
       pages.push({
@@ -181,6 +216,7 @@ export function collectDocPages(): DocPage[] {
   }
 
   walk(root);
+  cachedPages = pages;
   return pages;
 }
 
@@ -204,17 +240,8 @@ export function getAdjacentPages(
   slug: string,
   locale: SiteLocale,
 ): { prev?: DocPage; next?: DocPage } {
-  if (!slug.startsWith('product/kvm-go')) return {};
-
-  const sidebar = kvmGoSidebar(locale);
-  const slugs = sidebar
-    .map((item) => {
-      if (!item.href) return null;
-      const parts = item.href.split('/').filter(Boolean);
-      if (parts[0] === locale) parts.shift();
-      return parts.join('/');
-    })
-    .filter(Boolean) as string[];
+  const slugs = sidebarSlugsForPage(slug);
+  if (!slugs.length) return {};
 
   const idx = slugs.indexOf(slug);
   if (idx === -1) return {};
@@ -231,4 +258,9 @@ export function pageTitle(page: DocPage): string {
   if (page.frontmatter.title) return page.frontmatter.title;
   const firstLine = page.content.split('\n').find((l) => l.startsWith('#'));
   return firstLine?.replace(/^#+\s*/, '').replace(/\*\*/g, '') ?? page.slug;
+}
+
+/** Clear page cache (tests). */
+export function resetDocCache(): void {
+  cachedPages = null;
 }

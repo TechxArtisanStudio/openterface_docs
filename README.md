@@ -14,7 +14,7 @@ npm run test:smoke
 
 Content lives in `./docs/` (suffix-file i18n: `page.md`, `page.zh.md`, …).
 
-**Phase 1 spike scope:** docs home, KVM-GO product tree, app overview, support (EN + locales where available). Full ~677-page corpus is Phase 2.
+**Phase 2:** Full ~677-page corpus with sidebar from `archive/mkdocs/mkdocs.yml` nav and MkDocs markdown dialect support.
 
 ## Stack
 

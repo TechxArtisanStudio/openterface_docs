@@ -1,4 +1,6 @@
 import { localizedPath, type SiteLocale } from '../lib/locale';
+import { NAV_SECTIONS } from './sidebar.generated';
+import { translateNavLabel } from './nav-translations.generated';
 
 export type SidebarItem = {
   label: string;
@@ -6,45 +8,54 @@ export type SidebarItem = {
   children?: SidebarItem[];
 };
 
-/** KVM-GO spike sidebar — full tree will be generated from zensical.toml in Phase 2. */
-export function kvmGoSidebar(locale: SiteLocale): SidebarItem[] {
-  const p = (slug: string) => localizedPath(locale, ...slug.split('/').filter(Boolean));
-  return [
-    { label: 'Overview', href: p('product/kvm-go') },
-    { label: 'Features', href: p('product/kvm-go/features') },
-    { label: "What's In The Box", href: p('product/kvm-go/whats-in-the-box') },
-    { label: 'How To Connect', href: p('product/kvm-go/how-to-connect') },
-    { label: 'Use Cases', href: p('product/kvm-go/use-cases') },
-    { label: 'Beta Quick Start', href: p('product/kvm-go/beta-quick-start') },
-    { label: 'MicroSD Switch', href: p('product/kvm-go/microsd-switch') },
-    { label: 'FAQs', href: p('product/kvm-go/faq') },
-    { label: 'Reviews', href: p('product/kvm-go/reviews') },
-  ];
+function sectionForSlug(slug: string) {
+  // Exact item match first
+  for (const section of NAV_SECTIONS) {
+    if (section.items.some((item) => item.slug === slug)) return section;
+  }
+
+  // Longest prefix match (e.g. product/kvm-go/notes/foo → kvm-go section)
+  let best: (typeof NAV_SECTIONS)[number] | null = null;
+  let bestLen = 0;
+  for (const section of NAV_SECTIONS) {
+    for (const item of section.items) {
+      const prefix = item.slug;
+      if (slug === prefix || slug.startsWith(`${prefix}/`)) {
+        if (prefix.length > bestLen) {
+          best = section;
+          bestLen = prefix.length;
+        }
+      }
+    }
+  }
+  return best;
 }
 
-/** Resolve sidebar for a given docs slug path. */
 export function sidebarForSlug(locale: SiteLocale, slug: string): SidebarItem[] | null {
-  if (slug === '' || slug === 'index') {
-    return null;
-  }
-  if (slug.startsWith('product/kvm-go')) {
-    return kvmGoSidebar(locale);
-  }
-  if (slug.startsWith('app')) {
-    return [
-      { label: 'Overview', href: localizedPath(locale, 'app', 'overview') },
-      { label: 'FAQs', href: localizedPath(locale, 'app', 'faq') },
-    ];
-  }
-  if (slug.startsWith('support')) {
-    return [{ label: 'Support', href: localizedPath(locale, 'support') }];
-  }
-  return null;
+  if (slug === '' || slug === 'index') return null;
+
+  const section = sectionForSlug(slug);
+  if (!section) return null;
+
+  return section.items.map((item) => ({
+    label: translateNavLabel(item.label, locale),
+    href: localizedPath(locale, ...item.slug.split('/').filter(Boolean)),
+  }));
 }
 
-export function sidebarSectionTitle(slug: string): string {
-  if (slug.startsWith('product/kvm-go')) return 'KVM-GO Series';
-  if (slug.startsWith('app')) return 'App';
-  if (slug.startsWith('support')) return 'Support';
-  return 'Documentation';
+export function sidebarSectionTitle(slug: string, locale: SiteLocale = 'en'): string {
+  const section = sectionForSlug(slug);
+  if (!section) return translateNavLabel('Documentation', locale);
+  return translateNavLabel(section.title, locale);
+}
+
+/** Flat slug order within the active sidebar section (for prev/next). */
+export function sidebarSlugsForPage(slug: string): string[] {
+  const section = sectionForSlug(slug);
+  return section?.items.map((item) => item.slug) ?? [];
+}
+
+/** @deprecated use sidebarForSlug */
+export function kvmGoSidebar(locale: SiteLocale): SidebarItem[] {
+  return sidebarForSlug(locale, 'product/kvm-go') ?? [];
 }

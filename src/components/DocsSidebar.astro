@@ -13,7 +13,7 @@ interface Props {
 
 const { locale, items, slug, currentPath } = Astro.props;
 const ui = t(locale);
-const sectionTitle = sidebarSectionTitle(slug);
+const sectionTitle = sidebarSectionTitle(slug, locale);
 
 function isActive(href: string): boolean {
   const normalized = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;

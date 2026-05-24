@@ -9,7 +9,9 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "predev": "node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
     "dev": "astro dev --port 8000",
+    "prebuild": "node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
     "build": "astro build",
     "preview": "astro preview --port 8000",
     "test:smoke": "playwright test tests/smoke"
@@ -25,7 +27,8 @@
   "devDependencies": {
     "@playwright/test": "^1.51.0",
     "@types/node": "^22.13.10",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "yaml": "^2.9.0"
   },
   "overrides": {
     "vite": "7.3.3"
