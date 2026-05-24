@@ -16,6 +16,8 @@ interface Props {
   description?: string;
   canonicalPath?: string;
   hreflangAlternates?: { locale: SiteLocale; path: string }[];
+  robots?: string;
+  includeCanonical?: boolean;
 }
 
 const {
@@ -24,6 +26,8 @@ const {
   description,
   canonicalPath = Astro.url.pathname,
   hreflangAlternates = [],
+  robots,
+  includeCanonical = true,
 } = Astro.props;
 
 const ui = t(locale);
@@ -49,8 +53,8 @@ const searchIndex = searchIndexForLocale(locale);
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>{fullTitle}</title>
     <meta name="description" content={pageDescription} />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={robots ?? 'index, follow'} />
+    {includeCanonical && <link rel="canonical" href={canonical} />}
     {
       hreflangAlternates.map((alt) => (
         <link rel="alternate" hreflang={alt.locale} href={new URL(alt.path, siteConfig.url).href} />

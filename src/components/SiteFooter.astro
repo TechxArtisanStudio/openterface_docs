@@ -63,6 +63,12 @@ const nav = docsNav(locale);
         <a href={`${siteConfig.links.legacy}/policy/privacy/`} class="hover:text-primary-dark" target="_blank" rel="noopener">{ui.footer.privacy}</a>
         ·
         <a href={`${siteConfig.links.legacy}/policy/terms-of-service/`} class="hover:text-primary-dark" target="_blank" rel="noopener">{ui.footer.terms}</a>
+        {siteConfig.analytics.enabled && (
+          <>
+            ·
+            <a href="#" id="cookie-settings" class="hover:text-primary-dark">{ui.footer.cookie}</a>
+          </>
+        )}
       </p>
     </div>
   </div>
