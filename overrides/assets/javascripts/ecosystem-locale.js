@@ -18,19 +18,23 @@
     return MARKETING[seg] ? seg : 'en';
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const locale = detectLocale();
-    const strip = document.querySelector('.op-ecosystem-strip__inner');
-    if (!strip) return;
-    const marketing = strip.querySelector('a[href*="openterface.com"]');
+  function updateLinks(root, locale) {
+    if (!root) return;
+    const marketing = root.querySelector('[data-op-ecosystem="marketing"]');
     if (marketing && MARKETING[locale]) {
       marketing.href = MARKETING[locale] + '/';
       marketing.textContent = 'Marketing ↗';
     }
     const newsBase = 'https://news.openterface.com';
-    const newsLink = strip.querySelector('a[href*="news.openterface"]');
-    if (newsLink) {
-      newsLink.href = locale === 'en' ? newsBase + '/' : newsBase + '/' + locale + '/';
-    }
+    const newsLinks = root.querySelectorAll('[data-op-ecosystem="news"]');
+    newsLinks.forEach(function (link) {
+      link.href = locale === 'en' ? newsBase + '/' : newsBase + '/' + locale + '/';
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const locale = detectLocale();
+    updateLinks(document.querySelector('.op-site-header__nav'), locale);
+    updateLinks(document.querySelector('.op-site-header__sites-menu-panel'), locale);
   });
 })();

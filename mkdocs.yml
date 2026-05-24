@@ -18,7 +18,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: assets/images/app-logo.png
+  logo: assets/images/openterface.svg
   favicon: https://assets.openterface.com/images/favicon.png
   icon:
     admonition:

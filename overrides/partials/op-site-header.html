@@ -1,0 +1,122 @@
+{% set class = "op-site-header md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+
+<header class="{{ class }}" data-md-component="header">
+  <nav class="op-site-header__bar md-header__inner" aria-label="{{ lang.t('header') }}">
+    <a
+      href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+      title="{{ config.site_name | e }}"
+      class="op-site-header__brand md-header__button md-logo"
+      aria-label="{{ config.site_name }}"
+      data-md-component="logo"
+    >
+      <img
+        src="{{ 'assets/images/openterface.svg' | url }}"
+        alt="Openterface"
+        class="op-site-header__logo"
+        width="180"
+        height="27"
+      >
+      <span class="op-site-header__badge">Docs</span>
+    </a>
+
+    <nav class="op-site-header__nav" aria-label="Openterface sites">
+      <a
+        href="{{ config.extra.ecosystem.marketing_en }}"
+        class="op-site-header__nav-link"
+        data-op-ecosystem="marketing"
+        target="_blank"
+        rel="noopener"
+      >Marketing ↗</a>
+      <span class="op-site-header__nav-link is-current" aria-current="page">Docs</span>
+      <a
+        href="{{ config.extra.ecosystem.news }}"
+        class="op-site-header__nav-link"
+        data-op-ecosystem="news"
+        target="_blank"
+        rel="noopener"
+      >News ↗</a>
+      <a
+        href="{{ config.extra.ecosystem.forum }}"
+        class="op-site-header__nav-link"
+        target="_blank"
+        rel="noopener"
+      >Forum ↗</a>
+      <a
+        href="{{ config.extra.ecosystem.shop }}"
+        class="op-site-header__nav-link"
+        target="_blank"
+        rel="noopener"
+      >Store ↗</a>
+    </nav>
+
+    <details class="op-site-header__sites-menu">
+      <summary class="op-site-header__sites-menu-toggle" aria-label="Openterface sites">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/>
+        </svg>
+      </summary>
+      <ul class="op-site-header__sites-menu-panel">
+        <li><a href="{{ config.extra.ecosystem.marketing_en }}" data-op-ecosystem="marketing" target="_blank" rel="noopener">Marketing ↗</a></li>
+        <li><span class="is-current" aria-current="page">Docs</span></li>
+        <li><a href="{{ config.extra.ecosystem.news }}" data-op-ecosystem="news" target="_blank" rel="noopener">News ↗</a></li>
+        <li><a href="{{ config.extra.ecosystem.forum }}" target="_blank" rel="noopener">Forum ↗</a></li>
+        <li><a href="{{ config.extra.ecosystem.shop }}" target="_blank" rel="noopener">Store ↗</a></li>
+      </ul>
+    </details>
+
+    <div class="op-site-header__utils">
+      {% if config.theme.palette %}
+        {% if not config.theme.palette is mapping %}
+          {% include "partials/palette.html" %}
+        {% endif %}
+      {% endif %}
+
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/javascripts/palette.html" %}
+      {% endif %}
+
+      {% if config.extra.alternate %}
+        {% include "partials/alternate.html" %}
+      {% endif %}
+
+      {% if "material/search" in config.plugins %}
+        {% set search = config.plugins["material/search"] | attr("config") %}
+        {% if search.enabled %}
+          <label class="md-header__button md-icon" for="__search">
+            {% set icon = config.theme.icon.search or "material/magnify" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </label>
+        {% endif %}
+      {% endif %}
+
+      <label class="md-header__button md-icon op-site-header__drawer" for="__drawer">
+        {% set icon = config.theme.icon.menu or "material/menu" %}
+        {% include ".icons/" ~ icon ~ ".svg" %}
+      </label>
+
+      {% if config.repo_url %}
+        <div class="md-header__source op-site-header__source">
+          {% include "partials/source.html" %}
+        </div>
+      {% endif %}
+    </div>
+  </nav>
+
+  {% if "material/search" in config.plugins %}
+    {% set search = config.plugins["material/search"] | attr("config") %}
+    {% if search.enabled %}
+      {% include "partials/search.html" %}
+    {% endif %}
+  {% endif %}
+
+  {% if "navigation.tabs.sticky" in features %}
+    {% if "navigation.tabs" in features %}
+      {% include "partials/tabs.html" %}
+    {% endif %}
+  {% endif %}
+</header>

@@ -1,0 +1,16 @@
+/**
+ * Openterface design tokens — SSOT for marketing, news, and docs surfaces.
+ * Source: openterface_en/src/styles/global.css @theme block.
+ */
+:root {
+  --op-primary-dark: #ff6e42;
+  --op-primary: #ff855f;
+  --op-brand: #df4d3f;
+  --op-brand-dark: #c43d30;
+  --op-accent-on-light: #a83228;
+  --op-brand-light: #f5ebe9;
+  --op-surface: #fafafa;
+  --op-ink: #373737;
+  --op-muted: #5c5c5c;
+  --op-font-sans: "Roboto", system-ui, -apple-system, sans-serif;
+}
