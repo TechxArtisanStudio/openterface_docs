@@ -1,0 +1,110 @@
+---
+import type { DocPage } from '../lib/docs';
+import { t } from '../i18n/ui';
+import type { SiteLocale } from '../lib/locale';
+
+interface Props {
+  locale: SiteLocale;
+  class?: string;
+  searchIndex: { title: string; href: string; excerpt: string }[];
+}
+
+const { locale, class: className = '', searchIndex } = Astro.props;
+const ui = t(locale);
+---
+
+<div class:list={['docs-search relative', className]} data-docs-search>
+  <label class="sr-only" for="docs-search-input">{ui.nav.search}</label>
+  <div class="relative">
+    <svg
+      class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
+    </svg>
+    <input
+      id="docs-search-input"
+      type="search"
+      placeholder={ui.nav.searchPlaceholder}
+      class="w-full rounded-md border border-white/30 bg-white/15 py-2 pl-9 pr-3 text-sm text-white placeholder:text-white/60 focus:border-white/60 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
+      autocomplete="off"
+      data-docs-search-input
+    />
+  </div>
+  <div
+    class="docs-search-results absolute right-0 top-full z-50 mt-2 hidden max-h-80 w-[min(100vw-2rem,24rem)] overflow-y-auto rounded-lg border border-gray-200 bg-white py-2 shadow-xl"
+    data-docs-search-results
+    role="listbox"
+  ></div>
+</div>
+
+<script define:vars={{ searchIndex }}>
+  (function () {
+    var root = document.querySelector('[data-docs-search]');
+    if (!root) return;
+    var input = root.querySelector('[data-docs-search-input]');
+    var results = root.querySelector('[data-docs-search-results]');
+    if (!input || !results) return;
+
+    function render(query) {
+      var q = query.trim().toLowerCase();
+      if (!q) {
+        results.classList.add('hidden');
+        results.innerHTML = '';
+        return;
+      }
+      var matches = searchIndex.filter(function (item) {
+        return (
+          item.title.toLowerCase().includes(q) ||
+          item.excerpt.toLowerCase().includes(q) ||
+          item.href.toLowerCase().includes(q)
+        );
+      }).slice(0, 8);
+
+      if (matches.length === 0) {
+        results.innerHTML = '<p class="px-4 py-2 text-sm text-muted">No results</p>';
+      } else {
+        results.innerHTML = matches.map(function (item) {
+          return (
+            '<a href="' + item.href + '" class="block px-4 py-2 hover:bg-brand-light" role="option">' +
+            '<span class="block text-sm font-medium text-ink">' + item.title + '</span>' +
+            '<span class="block truncate text-xs text-muted">' + item.excerpt + '</span>' +
+            '</a>'
+          );
+        }).join('');
+      }
+      results.classList.remove('hidden');
+    }
+
+    input.addEventListener('input', function () {
+      render(input.value);
+    });
+
+    input.addEventListener('focus', function () {
+      if (input.value.trim()) render(input.value);
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!root.contains(e.target)) {
+        results.classList.add('hidden');
+      }
+    });
+  })();
+</script>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>

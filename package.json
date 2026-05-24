@@ -1,23 +1,33 @@
 {
   "name": "openterface_docs",
-  "private": true,
   "type": "module",
+  "version": "0.2.0",
+  "private": true,
+  "siteLocale": "en",
   "description": "Openterface documentation hub — docs.openterface.com",
-  "scripts": {
-    "migrate": "node scripts/migrate-docs-from-legacy.mjs",
-    "prebuild": "node scripts/sync-app-versions.mjs",
-    "build": "node scripts/build.mjs --i18n=full",
-    "build:en": "node scripts/build.mjs --i18n en",
-    "build:full": "node scripts/build.mjs --i18n=full --clean",
-    "serve": "node scripts/build.mjs --serve",
-    "serve:full": "node scripts/build.mjs --serve --i18n=full",
-    "i18n:indexes": "node scripts/generate-locale-indexes.mjs",
-    "i18n:sync": "node scripts/sync-i18n-config.mjs --full",
-    "i18n:audit": "node scripts/i18n/audit.mjs",
-    "i18n:audit:strict": "node scripts/i18n/audit.mjs --fail-on-missing --tier-a",
-    "validate-links": "node scripts/validate-links.mjs"
-  },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --port 8000",
+    "build": "astro build",
+    "preview": "astro preview --port 8000",
+    "test:smoke": "playwright test tests/smoke"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.5",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.7",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "overrides": {
+    "vite": "7.3.3"
   }
 }

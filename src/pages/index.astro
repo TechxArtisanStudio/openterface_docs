@@ -1,0 +1,26 @@
+---
+import DocsLayout from '../layouts/DocsLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getDocPage, getDocAlternates, pageTitle } from '../lib/docs';
+import { DEFAULT_LOCALE } from '../lib/locale';
+
+const slug = 'index';
+const locale = DEFAULT_LOCALE;
+const doc = getDocPage(slug, locale);
+
+if (!doc) {
+  throw new Error('Missing docs home page');
+}
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle(doc)}
+  description={doc.frontmatter.description}
+  canonicalPath={doc.href}
+  hreflangAlternates={getDocAlternates(slug)}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <div class="prose-docs" set:html={doc.html} />
+  </div>
+</BaseLayout>

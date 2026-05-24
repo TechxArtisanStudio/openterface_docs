@@ -1,0 +1,279 @@
+---
+import { docsNav } from '../config/site';
+import { LOCALE_LABELS, localizedPath, switchLocalePath, type SiteLocale } from '../lib/locale';
+import { t } from '../i18n/ui';
+import Logo from './Logo.astro';
+import DocsSearch from './DocsSearch.astro';
+
+interface Props {
+  locale: SiteLocale;
+  currentPath: string;
+  currentSearch?: string;
+  searchIndex: { title: string; href: string; excerpt: string }[];
+}
+
+const { locale, currentPath, currentSearch = '', searchIndex } = Astro.props;
+const ui = t(locale);
+const nav = docsNav(locale);
+const productLinks = nav.find((item) => item.label === ui.nav.product)?.children ?? [];
+const primaryLinks = nav.filter(
+  (item) => item.label !== ui.nav.product && !item.external && item.href !== localizedPath(locale),
+);
+const externalLinks = nav.filter((item) => item.external);
+const homeHref = localizedPath(locale);
+---
+
+<header class="site-header sticky top-0 z-50 bg-primary-dark shadow-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4">
+    <a href={homeHref} class="flex shrink-0 items-center gap-2">
+      <Logo variant="onPrimary" />
+      <span class="hidden text-sm font-medium text-white/90 sm:inline">{ui.nav.docsBadge}</span>
+    </a>
+
+    <nav class="hidden items-center gap-1 xl:flex" aria-label="Main navigation">
+      {
+        nav.map((item) =>
+          item.children ? (
+            <div class="group relative">
+              <button
+                type="button"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/15"
+                aria-haspopup="true"
+              >
+                {item.label} ▾
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 min-w-[220px] rounded-lg border border-gray-200 bg-white py-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
+                {
+                  item.children.map((child) => (
+                    <a
+                      href={child.href}
+                      class="block px-4 py-2 text-sm text-ink hover:bg-brand-light hover:text-primary-dark"
+                    >
+                      {child.label}
+                    </a>
+                  ))
+                }
+              </div>
+            </div>
+          ) : (
+            <a
+              href={item.href}
+              class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/15"
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
+            >
+              {item.label}{item.external ? ' ↗' : ''}
+            </a>
+          ),
+        )
+      }
+    </nav>
+
+    <div class="flex flex-1 items-center justify-end gap-2 xl:flex-none">
+      <DocsSearch locale={locale} searchIndex={searchIndex} class="hidden min-w-0 flex-1 sm:block sm:max-w-xs lg:max-w-sm xl:max-w-md" />
+
+      <details class="locale-switcher relative hidden sm:block">
+        <summary
+          class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-white/40 text-white hover:bg-white/10"
+          aria-label={`Language: ${LOCALE_LABELS[locale]}`}
+        >
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+          </svg>
+        </summary>
+        <ul class="absolute right-0 top-full z-50 mt-1 min-w-[140px] rounded-lg border border-gray-200 bg-white py-1 shadow-lg">
+          {
+            Object.entries(LOCALE_LABELS).map(([loc, label]) => (
+              <li>
+                <a
+                  href={switchLocalePath(currentPath, loc as SiteLocale, currentSearch)}
+                  data-locale-switch
+                  class:list={[
+                    'block px-3 py-2 text-sm hover:bg-brand-light hover:text-primary-dark',
+                    loc === locale ? 'font-semibold text-primary-dark' : 'text-ink',
+                  ]}
+                >
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+
+      <details class="mobile-nav relative xl:hidden">
+        <summary
+          class="mobile-nav-toggle flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-white/40 text-white hover:bg-white/10"
+          aria-label="Open menu"
+        >
+          <svg class="mobile-nav-icon-open h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <svg class="mobile-nav-icon-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </summary>
+
+        <div class="mobile-nav-backdrop fixed inset-0 top-14 z-40 bg-black/45"></div>
+
+        <nav
+          class="mobile-nav-panel fixed inset-x-0 top-14 z-50 border-b border-gray-200 bg-white shadow-lg"
+          aria-label="Mobile navigation"
+        >
+          <div class="mx-auto max-h-[min(75vh,36rem)] max-w-7xl overflow-y-auto overscroll-contain px-3 py-2 sm:px-4 sm:py-3">
+            <div class="mb-3 sm:hidden">
+              <DocsSearch locale={locale} searchIndex={searchIndex} />
+            </div>
+
+            <a href={homeHref} class="mobile-nav-link mobile-nav-link--home">{ui.nav.docsHome}</a>
+
+            <div class="mobile-nav-section">
+              <p class="mobile-nav-section-label">{ui.nav.product}</p>
+              <div class="mobile-nav-section-links">
+                {productLinks.map((child) => (
+                  <a href={child.href} class="mobile-nav-link">{child.label}</a>
+                ))}
+              </div>
+            </div>
+
+            <div class="mobile-nav-section">
+              <p class="mobile-nav-section-label">{ui.mobile.sections}</p>
+              <div class="mobile-nav-section-links">
+                {primaryLinks.map((item) => (
+                  <a href={item.href} class="mobile-nav-link">{item.label}</a>
+                ))}
+              </div>
+            </div>
+
+            {
+              externalLinks.length > 0 && (
+                <div class="mobile-nav-section pb-1">
+                  <p class="mobile-nav-section-label">{ui.mobile.ecosystem}</p>
+                  <div class="mobile-nav-section-links">
+                    {
+                      externalLinks.map((item) => (
+                        <a
+                          href={item.href}
+                          class="mobile-nav-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {item.label}
+                          <span class="ml-1.5 text-xs text-muted" aria-hidden="true">↗</span>
+                        </a>
+                      ))
+                    }
+                  </div>
+                </div>
+              )
+            }
+
+            <div class="mobile-nav-section pb-1 sm:hidden">
+              <p class="mobile-nav-section-label">{ui.mobile.language}</p>
+              <div class="mobile-nav-section-links">
+                {
+                  Object.entries(LOCALE_LABELS).map(([loc, label]) => (
+                    <a
+                      href={switchLocalePath(currentPath, loc as SiteLocale, currentSearch)}
+                      data-locale-switch
+                      class:list={[
+                        'mobile-nav-link',
+                        loc === locale ? 'font-semibold text-primary-dark' : '',
+                      ]}
+                    >
+                      {label}
+                    </a>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  (function () {
+    var search = window.location.search;
+    if (!search) return;
+    document.querySelectorAll('a[data-locale-switch]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href && href.indexOf('?') === -1) {
+        a.setAttribute('href', href + search);
+      }
+    });
+  })();
+</script>
+
+<style>
+  .mobile-nav summary::-webkit-details-marker,
+  .locale-switcher summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav:not([open]) .mobile-nav-panel,
+  .mobile-nav:not([open]) .mobile-nav-backdrop {
+    display: none;
+  }
+
+  .mobile-nav[open] .mobile-nav-backdrop {
+    display: block;
+  }
+
+  .mobile-nav[open] .mobile-nav-toggle {
+    background-color: rgb(255 255 255 / 0.15);
+  }
+
+  .mobile-nav[open] .mobile-nav-icon-open {
+    display: none;
+  }
+
+  .mobile-nav[open] .mobile-nav-icon-close {
+    display: block;
+  }
+
+  .mobile-nav-link {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+    border-radius: 0.375rem;
+    padding: 0.625rem 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-ink);
+  }
+
+  .mobile-nav-link:hover {
+    background-color: var(--color-brand-light);
+    color: var(--color-primary-dark);
+  }
+
+  .mobile-nav-link--home {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+
+  .mobile-nav-section {
+    margin-top: 0.5rem;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 0.75rem;
+  }
+
+  .mobile-nav-section-label {
+    padding: 0 0.5rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .mobile-nav-section-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+</style>

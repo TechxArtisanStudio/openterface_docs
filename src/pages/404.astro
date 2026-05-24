@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t } from '../i18n/ui';
+---
+
+<BaseLayout title="Page not found">
+  <div class="mx-auto max-w-lg px-4 py-20 text-center">
+    <h1 class="section-title">404</h1>
+    <p class="mt-4 text-muted">{t('en').siteDescription}</p>
+    <a href="/" class="btn btn-primary mt-8">Docs home</a>
+  </div>
+</BaseLayout>

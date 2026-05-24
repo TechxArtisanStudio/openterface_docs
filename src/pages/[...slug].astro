@@ -1,0 +1,23 @@
+---
+import DocsLayout from '../layouts/DocsLayout.astro';
+import { collectDocPages, getDocPage } from '../lib/docs';
+import { DEFAULT_LOCALE } from '../lib/locale';
+
+export function getStaticPaths() {
+  return collectDocPages()
+    .filter((p) => p.locale === DEFAULT_LOCALE && p.slug !== 'index')
+    .map((p) => ({
+      params: { slug: p.slug },
+      props: { slug: p.slug, locale: DEFAULT_LOCALE },
+    }));
+}
+
+const { slug, locale } = Astro.props;
+const doc = getDocPage(slug, locale);
+
+if (!doc) {
+  return Astro.redirect('/404/');
+}
+---
+
+<DocsLayout page={doc} />

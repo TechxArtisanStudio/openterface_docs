@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #ff6e42;
+  --color-primary: #ff855f;
+  --color-brand: #df4d3f;
+  --color-brand-dark: #c43d30;
+  --color-accent-on-light: #a83228;
+  --color-brand-light: #f5ebe9;
+  --color-surface: #fafafa;
+  --color-ink: #373737;
+  --color-muted: #5c5c5c;
+  --font-sans: "Roboto", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink antialiased;
+    font-family: var(--font-sans);
+  }
+
+  a {
+    @apply transition-colors duration-150;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-semibold transition-all duration-150;
+  }
+
+  .btn-primary {
+    @apply border-2 border-transparent text-white shadow-sm;
+    background-color: #ff6e42;
+  }
+
+  .btn-primary:hover {
+    background-color: #ff855f;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold tracking-tight text-ink md:text-3xl;
+  }
+
+  .prose-docs {
+    @apply max-w-none text-ink;
+  }
+
+  .prose-docs h1 {
+    @apply mb-6 text-3xl font-bold tracking-tight text-ink md:text-4xl;
+  }
+
+  .prose-docs h2 {
+    @apply mt-10 mb-4 scroll-mt-24 text-xl font-bold text-ink md:text-2xl;
+  }
+
+  .prose-docs h3 {
+    @apply mt-8 mb-3 scroll-mt-24 text-lg font-semibold text-ink;
+  }
+
+  .prose-docs p {
+    @apply mb-4 leading-relaxed text-ink/90;
+  }
+
+  .prose-docs a {
+    @apply text-primary-dark underline-offset-2 hover:underline;
+  }
+
+  .prose-docs ul,
+  .prose-docs ol {
+    @apply mb-4 ml-6 list-outside space-y-2;
+  }
+
+  .prose-docs ul {
+    @apply list-disc;
+  }
+
+  .prose-docs ol {
+    @apply list-decimal;
+  }
+
+  .prose-docs li {
+    @apply leading-relaxed text-ink/90;
+  }
+
+  .prose-docs img {
+    @apply my-6 block max-w-full rounded-lg;
+    width: auto;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  .prose-docs hr {
+    @apply my-8 border-gray-200;
+  }
+
+  .prose-docs strong {
+    @apply font-semibold text-ink;
+  }
+
+  .prose-docs code {
+    @apply rounded bg-surface px-1.5 py-0.5 text-sm text-brand-dark;
+  }
+
+  .prose-docs pre {
+    @apply my-4 overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100;
+  }
+
+  .prose-docs pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+
+  .prose-docs table {
+    @apply my-6 w-full border-collapse text-sm;
+  }
+
+  .prose-docs th,
+  .prose-docs td {
+    @apply border border-gray-200 px-3 py-2 text-left;
+  }
+
+  .prose-docs th {
+    @apply bg-surface font-semibold;
+  }
+
+  .callout {
+    @apply my-6 rounded-lg border-l-4 p-4 text-sm leading-relaxed;
+  }
+
+  .callout-title {
+    @apply mb-2 block font-semibold;
+  }
+
+  .callout-note {
+    @apply border-blue-400 bg-blue-50 text-blue-950;
+  }
+
+  .callout-note .callout-title {
+    @apply text-blue-900;
+  }
+
+  .callout-warning {
+    @apply border-amber-500 bg-amber-50 text-amber-950;
+  }
+
+  .callout-warning .callout-title {
+    @apply text-amber-900;
+  }
+
+  .callout-tip {
+    @apply border-emerald-500 bg-emerald-50 text-emerald-950;
+  }
+
+  .callout-tip .callout-title {
+    @apply text-emerald-900;
+  }
+
+  .sidebar-link {
+    @apply block rounded-md px-3 py-2 text-sm text-muted transition-colors hover:bg-brand-light hover:text-primary-dark;
+  }
+
+  .sidebar-link-active {
+    @apply bg-brand-light font-medium text-primary-dark;
+  }
+
+  .toc-link {
+    @apply block border-l-2 border-transparent py-1 pl-3 text-sm text-muted transition-colors hover:border-primary-dark hover:text-primary-dark;
+  }
+
+  .toc-link-active {
+    @apply border-primary-dark font-medium text-primary-dark;
+  }
+}

@@ -1,0 +1,68 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import DocsSidebar from '../components/DocsSidebar.astro';
+import DocsTOC from '../components/DocsTOC.astro';
+import { sidebarForSlug } from '../config/sidebar';
+import { siteConfig } from '../config/site';
+import { getAdjacentPages, getDocAlternates, pageTitle, type DocPage } from '../lib/docs';
+import { t } from '../i18n/ui';
+import type { SiteLocale } from '../lib/locale';
+
+interface Props {
+  page: DocPage;
+}
+
+const { page } = Astro.props;
+const { locale, slug, href, html, headings, sourcePath } = page;
+const ui = t(locale);
+const sidebar = sidebarForSlug(locale, slug);
+const alternates = getDocAlternates(slug);
+const { prev, next } = getAdjacentPages(slug, locale);
+const title = pageTitle(page);
+const editUrl = `${siteConfig.editBase}/${sourcePath}`;
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={page.frontmatter.description}
+  canonicalPath={href}
+  hreflangAlternates={alternates}
+>
+  <div class="mx-auto flex max-w-7xl gap-0 px-4 lg:px-6">
+    {
+      sidebar && (
+        <DocsSidebar locale={locale} items={sidebar} slug={slug} currentPath={href} />
+      )
+    }
+
+    <article class="min-w-0 flex-1 py-6 lg:py-8 xl:max-w-3xl">
+      <div class="prose-docs mx-auto max-w-none px-0 lg:px-6" set:html={html} />
+      <div class="mx-auto mt-10 flex max-w-none flex-col gap-4 border-t border-gray-200 pt-6 lg:px-6 sm:flex-row sm:justify-between">
+        {
+          prev ? (
+            <a href={prev.href} class="text-sm text-muted hover:text-primary-dark">
+              ← {ui.docs.previous}: {pageTitle(prev)}
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        {
+          next ? (
+            <a href={next.href} class="text-right text-sm text-muted hover:text-primary-dark sm:ml-auto">
+              {ui.docs.next}: {pageTitle(next)} →
+            </a>
+          ) : null
+        }
+      </div>
+      <p class="mx-auto mt-4 text-center text-xs text-muted lg:px-6">
+        <a href={editUrl} class="hover:text-primary-dark" target="_blank" rel="noopener noreferrer">
+          {ui.docs.editPage} ↗
+        </a>
+      </p>
+    </article>
+
+    <DocsTOC locale={locale} headings={headings} />
+  </div>
+</BaseLayout>

@@ -961,15 +961,6 @@ extra:
     news: http://localhost:4321
     marketing:
       en: http://localhost:4322
-      de: http://localhost:4323
-      es: http://localhost:4324
-      fr: http://localhost:4325
-      it: http://localhost:4326
-      ja: http://localhost:4327
-      ko: http://localhost:4328
-      pt: http://localhost:4329
-      ro: http://localhost:4330
-      zh: http://localhost:4331
 nav:
 - Documentation: index.md
 - FAQs:

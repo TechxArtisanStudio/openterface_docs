@@ -1,0 +1,23 @@
+---
+import type { SiteLocale } from '../lib/locale';
+
+interface Props {
+  siteLocale: SiteLocale;
+}
+
+const { siteLocale } = Astro.props;
+const storageKey = 'openterface-cookie-consent';
+---
+
+<script is:inline define:vars={{ siteLocale, storageKey }}>
+  window.__openterfaceAnalyticsConfig = { siteLocale, storageKey };
+</script>
+
+<script>
+  import { initAnalyticsEvents } from '../lib/analytics';
+
+  const config = window.__openterfaceAnalyticsConfig;
+  if (config) {
+    initAnalyticsEvents(config.siteLocale, config.storageKey);
+  }
+</script>

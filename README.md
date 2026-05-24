@@ -1,47 +1,28 @@
 # openterface_docs
 
-Official documentation hub for [docs.openterface.com](https://docs.openterface.com).
-
-Built with [Zensical](https://zensical.org/) (Material theme). Site config lives in `zensical.toml`; `mkdocs.yml` is auto-generated for full i18n builds. Content uses suffix-file i18n (`page.zh.md`). No legacy `openterface-cms` submodule.
+Astro 6 documentation hub for [docs.openterface.com](https://docs.openterface.com) — shared brand chrome with `openterface_news` and locale marketing sites.
 
 ## Quick start
 
 ```bash
-# One-time: copy trimmed content from legacy Openterface repo
-npm run migrate
-
-# Python env (Zensical)
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# Dev server
-npm run serve
-
-# Production build
+npm install
+npm run dev    # http://localhost:8000
 npm run build
+npm run preview
+npm run test:smoke
 ```
 
-## Scripts
+Content lives in `./docs/` (suffix-file i18n: `page.md`, `page.zh.md`, …).
 
-| Command | Description |
-|---------|-------------|
-| `npm run migrate` | Copy docs from `Openterface/docs` (excludes updates/events) |
-| `npm run build` | Sync config + full i18n build (mkdocs) → `site/` |
-| `npm run build:en` | EN-only Zensical build → `site/` |
-| `npm run serve` | EN-only preview at :8000 (`zensical.toml`) |
-| `npm run serve:full` | All locales at :8000 (`mkdocs.yml`) |
-| `npm run i18n:audit` | Translation coverage report |
-| `npm run validate-links` | Post-build link check (stub) |
+**Phase 1 spike scope:** docs home, KVM-GO product tree, app overview, support (EN + locales where available). Full ~677-page corpus is Phase 2.
 
-## Cross-surface links
+## Stack
 
-SSOT: `web-dev-tool/analytics/locales.json` + `surface-links.json`
+- Astro 6 + Tailwind 4
+- Shared header/footer with news/en
+- `DocsLayout`: sidebar + prose + TOC + client search index
+- MkDocs markdown dialect preprocessor (`!!! note`, attr_list)
 
-- Marketing: `*.openterface.com`
-- News: `news.openterface.com`
-- Docs: `docs.openterface.com/{locale}/`
+## Legacy MkDocs
 
-## Deploy
-
-GitHub Pages via `.github/workflows/deploy.yml` → `docs.openterface.com`
+Previous Zensical/MkDocs build config is archived under `archive/mkdocs/`.

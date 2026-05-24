@@ -13,4 +13,7 @@
   --op-ink: #373737;
   --op-muted: #5c5c5c;
   --op-font-sans: "Roboto", system-ui, -apple-system, sans-serif;
+  /* Breakpoints aligned with Tailwind (marketing / news SiteHeader) */
+  --op-bp-sm: 40rem;
+  --op-bp-lg: 64rem;
 }

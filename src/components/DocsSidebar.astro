@@ -1,0 +1,71 @@
+---
+import type { SidebarItem } from '../config/sidebar';
+import { sidebarSectionTitle } from '../config/sidebar';
+import { t } from '../i18n/ui';
+import type { SiteLocale } from '../lib/locale';
+
+interface Props {
+  locale: SiteLocale;
+  items: SidebarItem[];
+  slug: string;
+  currentPath: string;
+}
+
+const { locale, items, slug, currentPath } = Astro.props;
+const ui = t(locale);
+const sectionTitle = sidebarSectionTitle(slug);
+
+function isActive(href: string): boolean {
+  const normalized = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
+  const target = href.endsWith('/') ? href : `${href}/`;
+  return normalized === target;
+}
+---
+
+<aside class="docs-sidebar hidden w-56 shrink-0 lg:block xl:w-64" aria-label={ui.docs.sidebarLabel}>
+  <div class="sticky top-[4.5rem] max-h-[calc(100vh-5rem)] overflow-y-auto pb-8 pr-4 pt-6">
+    <p class="mb-3 px-3 text-xs font-bold uppercase tracking-wider text-muted">{sectionTitle}</p>
+    <nav class="space-y-0.5">
+      {
+        items.map((item) =>
+          item.href ? (
+            <a
+              href={item.href}
+              class:list={['sidebar-link', isActive(item.href) && 'sidebar-link-active']}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          ) : null,
+        )
+      }
+    </nav>
+  </div>
+</aside>
+
+<!-- Mobile sidebar toggle -->
+<details class="docs-sidebar-mobile mx-4 mt-4 lg:hidden">
+  <summary class="cursor-pointer list-none rounded-lg border border-gray-200 bg-surface px-4 py-3 text-sm font-medium text-ink">
+    {sectionTitle} ▾
+  </summary>
+  <nav class="mt-2 space-y-0.5 rounded-lg border border-gray-200 bg-white p-2">
+    {
+      items.map((item) =>
+        item.href ? (
+          <a
+            href={item.href}
+            class:list={['sidebar-link', isActive(item.href) && 'sidebar-link-active']}
+          >
+            {item.label}
+          </a>
+        ) : null,
+      )
+    }
+  </nav>
+</details>
+
+<style>
+  .docs-sidebar-mobile summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

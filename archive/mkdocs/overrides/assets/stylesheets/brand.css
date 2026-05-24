@@ -10,7 +10,7 @@
   --md-accent-fg-color: var(--op-brand);
   --op-header-bar-height: 3.5rem;
   --md-header-height: var(--op-header-bar-height);
-  --md-tabs-height: 2.375rem;
+  --md-tabs-height: 2.25rem;
 }
 
 [data-md-color-scheme="default"] {
@@ -31,6 +31,11 @@ body {
   background-color: var(--op-primary-dark) !important;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
   color: #fff;
+  height: auto !important;
+}
+
+.op-site-header.md-header--lifted {
+  height: auto !important;
 }
 
 /* Kill Material grid on the top bar — use marketing-style flex row */
@@ -45,8 +50,9 @@ body {
   margin: 0 auto;
   padding: 0.75rem 1rem !important;
   width: 100%;
-  min-height: 0 !important;
-  height: auto !important;
+  min-height: var(--op-header-bar-height) !important;
+  max-height: var(--op-header-bar-height) !important;
+  height: var(--op-header-bar-height) !important;
   box-sizing: border-box;
   grid-template-columns: none !important;
   grid-template-rows: none !important;
@@ -93,9 +99,13 @@ body {
 .op-site-header__utils {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
   flex-shrink: 0;
-  margin-left: 0;
+  margin-left: auto;
+}
+
+.op-site-header__source {
+  display: none !important;
 }
 
 .op-site-header__utils .md-header__option {
@@ -120,9 +130,17 @@ body {
   background: rgb(255 255 255 / 0.15);
 }
 
-/* Utility icon buttons — bordered pills like news SiteHeader */
-.op-site-header__utils .md-header__button[for="__search"] {
+/* Utility icon buttons — bordered 44px squares like marketing/news (h-11 w-11) */
+.op-site-header__utils .md-header__button[for="__search"],
+.op-site-header__drawer {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgb(255 255 255 / 0.4);
+}
+
+.op-site-header__utils .md-header__button[for="__search"] {
+  display: inline-flex !important;
 }
 
 /* Locale switcher — match openterface_news SiteHeader pill */
@@ -132,21 +150,36 @@ body {
 }
 
 .op-locale-switcher__toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 2.75rem;
+  width: 2.75rem;
   height: 2.75rem;
-  padding: 0 0.625rem;
+  padding: 0;
   border: 1px solid rgb(255 255 255 / 0.4);
   border-radius: 0.375rem;
-  font-size: 0.75rem;
-  font-weight: 500;
   color: #fff;
   cursor: pointer;
   list-style: none;
   background: transparent;
+}
+
+.op-locale-switcher__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+}
+
+.op-locale-switcher__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+  border: 0;
 }
 
 .op-locale-switcher__toggle::-webkit-details-marker {
@@ -156,6 +189,70 @@ body {
 .op-locale-switcher__toggle:hover,
 .op-locale-switcher[open] .op-locale-switcher__toggle {
   background: rgb(255 255 255 / 0.1);
+}
+
+/* ── Responsive (Tailwind sm=640px, lg=1024px — matches marketing/news) ── */
+
+@media (max-width: 39.99rem) {
+  .op-site-header__badge {
+    display: none;
+  }
+
+  /* Locale in drawer nav on xs/sm — header icon hidden like marketing hidden sm:block */
+  .op-site-header__utils .op-locale-switcher {
+    display: none;
+  }
+}
+
+@media (min-width: 40rem) {
+  .op-drawer-locale {
+    display: none !important;
+  }
+}
+
+/* Drawer language section (mobile sidebar only) */
+.op-drawer-locale {
+  display: block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.75rem 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.op-drawer-locale__label {
+  margin: 0 0 0.25rem;
+  padding: 0 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--op-muted);
+}
+
+.op-drawer-locale__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.op-drawer-locale__link {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--op-ink);
+  text-decoration: none;
+}
+
+.op-drawer-locale__link:hover {
+  background: var(--op-brand-light);
+}
+
+.op-drawer-locale__link.is-current {
+  font-weight: 600;
+  color: var(--op-primary-dark);
 }
 
 .op-locale-switcher__menu {
@@ -196,7 +293,6 @@ body {
   color: var(--op-primary-dark);
 }
 
-/* Locale switcher — match openterface_news SiteHeader pill */
 .op-site-header .md-header__title {
   display: none !important;
 }
@@ -218,10 +314,6 @@ body {
 }
 
 @media screen and (min-width: 60em) {
-  .op-site-header .md-header__button[for="__search"] {
-    display: inline-flex !important;
-  }
-
   .op-site-header > .md-search .md-search__inner {
     float: none !important;
     position: fixed !important;
@@ -267,14 +359,10 @@ body {
   }
 }
 
-/* Drawer toggle — mobile/tablet sidebar only */
-.op-site-header__drawer {
-  display: flex;
-}
-
-@media (min-width: 76.25em) {
+/* Drawer toggle — show below lg (1024px), same as marketing mobile-nav lg:hidden */
+@media (min-width: 64rem) {
   .op-site-header__drawer {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -311,6 +399,12 @@ body {
 .op-site-header .md-tabs__list {
   display: flex;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.op-site-header .md-tabs__list::-webkit-scrollbar {
+  display: none;
 }
 
 .op-site-header .md-tabs__item--external-spacer {
@@ -332,8 +426,9 @@ body {
   opacity: 1;
   font-size: 0.8125rem;
   font-weight: 500;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .op-site-header .md-tabs__link--active {

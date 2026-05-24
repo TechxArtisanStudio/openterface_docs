@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import AnalyticsHead from '../components/AnalyticsHead.astro';
+import AnalyticsEvents from '../components/AnalyticsEvents.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { siteConfig } from '../config/site';
+import { DEFAULT_LOCALE, switchLocalePath, type SiteLocale } from '../lib/locale';
+import { t } from '../i18n/ui';
+import { searchIndexForLocale } from '../lib/search';
+
+interface Props {
+  locale?: SiteLocale;
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  hreflangAlternates?: { locale: SiteLocale; path: string }[];
+}
+
+const {
+  locale = DEFAULT_LOCALE,
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  hreflangAlternates = [],
+} = Astro.props;
+
+const ui = t(locale);
+const pageTitle = title ?? ui.siteName;
+const pageDescription = description ?? ui.siteDescription;
+const fullTitle = title && title !== ui.siteName ? `${title} | ${ui.siteName}` : ui.siteName;
+const canonical = new URL(canonicalPath, siteConfig.url).href;
+const htmlLang = locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja' : locale === 'ko' ? 'ko' : locale;
+const currentPath = Astro.url.pathname;
+const currentSearch = Astro.url.search;
+const xDefaultPath = switchLocalePath(currentPath, DEFAULT_LOCALE);
+const searchIndex = searchIndexForLocale(locale);
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+    {
+      hreflangAlternates.map((alt) => (
+        <link rel="alternate" hreflang={alt.locale} href={new URL(alt.path, siteConfig.url).href} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL(xDefaultPath, siteConfig.url).href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={siteConfig.ogImage} />
+    <meta property="og:site_name" content={ui.siteName} />
+    {siteConfig.analytics.enabled && <AnalyticsHead />}
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <SiteHeader locale={locale} currentPath={currentPath} currentSearch={currentSearch} searchIndex={searchIndex} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <SiteFooter locale={locale} />
+    {siteConfig.analytics.enabled && <CookieConsent locale={locale} />}
+    {siteConfig.analytics.enabled && <AnalyticsEvents siteLocale={locale} />}
+  </body>
+</html>
