@@ -44,6 +44,14 @@ export interface UiStrings {
     terms: string;
     cookie: string;
   };
+  newsletter: {
+    title: string;
+    description: string;
+    submit: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    footnote: string;
+  };
   cookie: {
     title: string;
     description: string;
@@ -95,6 +103,14 @@ const en: UiStrings = {
     privacy: 'Privacy',
     terms: 'Terms',
     cookie: 'Cookie settings',
+  },
+  newsletter: {
+    title: 'Newsletter',
+    description: 'Monthly updates on products, firmware, and KVM tips.',
+    submit: 'Subscribe',
+    namePlaceholder: 'Name',
+    emailPlaceholder: 'Email *',
+    footnote: 'Unsubscribe anytime.',
   },
   cookie: {
     title: 'Cookie preferences',
@@ -150,6 +166,14 @@ const zh: UiStrings = {
     terms: '条款',
     cookie: 'Cookie 设置',
   },
+  newsletter: {
+    title: '邮件订阅',
+    description: '每月获取产品、固件与 KVM 技巧更新。',
+    submit: '订阅',
+    namePlaceholder: '姓名',
+    emailPlaceholder: '邮箱 *',
+    footnote: '随时可取消订阅。',
+  },
 };
 
 const dictionaries: Record<SiteLocale, UiStrings> = {
@@ -180,7 +204,6 @@ export function docsNav(locale: SiteLocale): NavItem[] {
   const ui = t(locale);
   const prefix = (path: string) => localizedPath(locale, ...path.split('/').filter(Boolean));
   return [
-    { label: ui.nav.docsHome, href: localizedPath(locale) },
     {
       label: ui.nav.product,
       href: prefix('product/kvm-go'),

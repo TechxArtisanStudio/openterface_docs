@@ -10,6 +10,7 @@ export const siteConfig = {
   links: {
     forum: 'https://forum.openterface.com',
     legacy: 'https://openterface.com',
+    subscribe: 'https://subscribe.openterface.com/api/subscribe/',
   },
   analytics: {
     enabled: import.meta.env.PROD,

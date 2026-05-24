@@ -3,6 +3,7 @@ import { siteConfig, docsNav, marketingHost } from '../config/site';
 import { newsPath } from '../config/surface-urls';
 import { t } from '../i18n/ui';
 import Logo from './Logo.astro';
+import FooterNewsletter from './FooterNewsletter.astro';
 import type { SiteLocale } from '../lib/locale';
 
 interface Props {
@@ -56,6 +57,15 @@ const nav = docsNav(locale);
         </ul>
       </div>
     </div>
+
+    <FooterNewsletter
+      title={ui.newsletter.title}
+      description={ui.newsletter.description}
+      submitLabel={ui.newsletter.submit}
+      namePlaceholder={ui.newsletter.namePlaceholder}
+      emailPlaceholder={ui.newsletter.emailPlaceholder}
+      footnote={ui.newsletter.footnote}
+    />
 
     <div class="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-muted">
       <p>© {new Date().getFullYear()} {ui.footer.copyright}</p>

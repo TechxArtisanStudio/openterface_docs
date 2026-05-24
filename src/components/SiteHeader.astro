@@ -28,10 +28,13 @@ const homeHref = localizedPath(locale);
 
 <header class="site-header sticky top-0 z-50 bg-primary-dark shadow-md">
   <div class="site-header__inner">
-    <a href={homeHref} class="site-header__brand">
-      <Logo variant="onPrimary" />
-      <span class="hidden text-sm font-medium text-white/90 sm:inline">{ui.nav.docsBadge}</span>
-    </a>
+    <div class="site-header__start">
+      <a href={homeHref} class="site-header__brand">
+        <Logo variant="onPrimary" class="site-header__logo" />
+      </a>
+      <span class="site-header__suffix">{ui.nav.docsBadge}</span>
+      <span class="site-header__lead" aria-hidden="true"></span>
+    </div>
 
     <nav class="site-header__nav" aria-label="Main navigation">
       {
@@ -105,8 +108,6 @@ const homeHref = localizedPath(locale);
             <div class="mb-3 sm:hidden">
               <DocsSearch locale={locale} searchIndex={searchIndex} />
             </div>
-
-            <a href={homeHref} class="mobile-nav-link mobile-nav-link--home">{ui.nav.docsHome}</a>
 
             {
               productItem && (
