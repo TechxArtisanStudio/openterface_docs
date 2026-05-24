@@ -57,7 +57,7 @@ Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der u
 
 </div>
 
-???+ warning "Achtung: Datenschutz & Sicherheit bei Drittanbieter-Apps prüfen"
+!!! warning "Achtung: Datenschutz & Sicherheit bei Drittanbieter-Apps prüfen"
 Da alle unsere Apps Open Source sind, könnten Sie auf alternative Versionen von Host-Anwendungen für Openterface-Geräte stoßen, die von anderen erstellt wurden. Sie können ziemlich cool sein und zusätzliche Funktionen bieten, aber hier ist eine freundliche Erinnerung: Überprüfen Sie ihre Sicherheits- und Datenschutzpraktiken sorgfältig—besonders weil KVM-Kontrolle Ereignisse von Ihrem Bildschirm, Tastatur und Maus beinhaltet. Das Openterface-Team kann nicht für die Sicherheit dieser Drittanbieter-Apps bürgen, also gehen Sie vorsichtig vor!
 
 

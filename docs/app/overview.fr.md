@@ -57,7 +57,7 @@ Pour faire fonctionner vos gadgets Openterface™ KVM, vous devrez installer l'u
 
 </div>
 
-???+ warning "Attention : Vérifiez la confidentialité et la sécurité des applications tierces"
+!!! warning "Attention : Vérifiez la confidentialité et la sécurité des applications tierces"
 Comme toutes nos applications sont open source, vous pourriez tomber sur des versions alternatives d'applications hôtes pour les appareils Openterface créées par d'autres. Elles peuvent être assez cool et offrir des fonctionnalités supplémentaires, mais voici un rappel amical : examinez attentivement leurs pratiques de sécurité et de confidentialité—surtout parce que le contrôle KVM implique des événements de votre écran, clavier et souris. L'équipe Openterface ne peut pas garantir la sécurité de ces applications tierces, alors procédez avec prudence !
 
 ## Contrôles de base de l'application hôte

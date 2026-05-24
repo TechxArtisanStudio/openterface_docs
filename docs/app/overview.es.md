@@ -57,7 +57,7 @@ Para poner en marcha tus gadgets Openterface™ KVM, necesitarás instalar una d
 
 </div>
 
-???+ warning "Atención: Revisa la Privacidad y Seguridad con Aplicaciones de Terceros"
+!!! warning "Atención: Revisa la Privacidad y Seguridad con Aplicaciones de Terceros"
 Dado que todas nuestras aplicaciones son de código abierto, podrías encontrarte con versiones alternativas de aplicaciones anfitrión para dispositivos Openterface creadas por otros. Pueden ser bastante geniales y ofrecer características adicionales, pero aquí hay un recordatorio amigable: revisa cuidadosamente sus prácticas de seguridad y privacidad—especialmente porque el control KVM involucra eventos de tu pantalla, teclado y ratón. El equipo de Openterface no puede avalar la seguridad de estas aplicaciones de terceros, ¡así que procede con precaución!
 
 ## Controles Básicos de la Aplicación Anfitrión

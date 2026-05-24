@@ -134,6 +134,17 @@ function resolveIncludes(raw: string): string {
   return md;
 }
 
+const CALLOUT_ICONS: Record<string, string> = {
+  note: 'i',
+  warning: '!',
+  tip: '✓',
+};
+
+function calloutIcon(type: string): string {
+  const glyph = CALLOUT_ICONS[type.toLowerCase()] ?? '•';
+  return `<span class="callout-icon" aria-hidden="true">${glyph}</span>`;
+}
+
 function transformLegacySlideshow(html: string): string {
   if (!html.includes('slideshow-container')) return html;
 
@@ -301,8 +312,9 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
         .map((line) => line.replace(/^    /, ''))
         .filter(Boolean)
         .join('\n');
-      const label = title || type.charAt(0).toUpperCase() + type.slice(1);
-      return `<details class="callout callout-${type}">\n<summary class="callout-title">${label}</summary>\n\n${lines}\n</details>\n\n`;
+      const normalized = type.toLowerCase();
+      const label = title || normalized.charAt(0).toUpperCase() + normalized.slice(1);
+      return `<details class="callout callout-${normalized}">\n<summary class="callout-title">${calloutIcon(normalized)}${label}</summary>\n\n${lines}\n</details>\n\n`;
     },
   );
 
@@ -317,7 +329,7 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
         .join('\n');
       const normalized = type.toLowerCase();
       const label = title || normalized.charAt(0).toUpperCase() + normalized.slice(1);
-      return `<aside class="callout callout-${normalized}">\n<strong class="callout-title">${label}</strong>\n\n${lines}\n</aside>\n\n`;
+      return `<aside class="callout callout-${normalized}" role="note">\n<strong class="callout-title">${calloutIcon(normalized)}${label}</strong>\n\n${lines}\n</aside>\n\n`;
     },
   );
 

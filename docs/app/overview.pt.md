@@ -57,7 +57,7 @@ Para colocar seus gadgets Openterface™ KVM em funcionamento, você precisará 
 
 </div>
 
-???+ warning "Atenção: Verifique Privacidade e Segurança com Apps de Terceiros"
+!!! warning "Atenção: Verifique Privacidade e Segurança com Apps de Terceiros"
 Como todos os nossos apps são open source, você pode encontrar versões alternativas de aplicações host para dispositivos Openterface criadas por outros. Elas podem ser bem legais e oferecer recursos extras, mas aqui está um lembrete amigável: revise cuidadosamente suas práticas de segurança e privacidade—especialmente porque o controle KVM envolve eventos da sua tela, teclado e mouse. A Equipe Openterface não pode garantir a segurança desses apps de terceiros, então proceda com cautela!
 
 ## Controles Básicos do App Host

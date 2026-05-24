@@ -172,47 +172,95 @@
   }
 
   .callout {
-    @apply my-6 rounded-lg border-l-4 p-4 text-sm leading-relaxed;
+    @apply my-6 rounded-xl border p-4 text-sm leading-relaxed shadow-sm;
   }
 
   .callout-title {
-    @apply mb-2 block font-semibold;
+    @apply mb-2 flex items-start gap-2 font-semibold;
+  }
+
+  .callout-icon {
+    @apply mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs font-bold;
+  }
+
+  aside.callout {
+    @apply border-l-4;
+  }
+
+  aside.callout > p:last-child {
+    @apply mb-0 opacity-90;
   }
 
   .callout-note {
-    @apply border-blue-400 bg-blue-50 text-blue-950;
+    @apply border-blue-200 border-l-blue-500 bg-blue-50 text-blue-950;
   }
 
   .callout-note .callout-title {
     @apply text-blue-900;
   }
 
+  .callout-note .callout-icon {
+    @apply bg-blue-100 text-blue-700;
+  }
+
   .callout-warning {
-    @apply border-amber-500 bg-amber-50 text-amber-950;
+    @apply border-amber-200 border-l-amber-500 bg-gradient-to-br from-amber-50 to-orange-50 text-amber-950;
   }
 
   .callout-warning .callout-title {
-    @apply text-amber-900;
+    @apply text-base text-amber-900;
+  }
+
+  .callout-warning .callout-icon {
+    @apply bg-amber-100 text-amber-800;
   }
 
   .callout-tip {
-    @apply border-emerald-500 bg-emerald-50 text-emerald-950;
+    @apply border-emerald-200 border-l-emerald-500 bg-emerald-50 text-emerald-950;
   }
 
   .callout-tip .callout-title {
     @apply text-emerald-900;
   }
 
+  .callout-tip .callout-icon {
+    @apply bg-emerald-100 text-emerald-700;
+  }
+
   details.callout {
-    @apply my-6 rounded-lg border border-gray-200 bg-surface p-4;
+    @apply my-6 rounded-xl border p-4 shadow-sm;
   }
 
   details.callout summary {
-    @apply cursor-pointer list-none font-semibold text-ink;
+    @apply cursor-pointer list-none;
+  }
+
+  details.callout summary.callout-title {
+    @apply mb-0;
+  }
+
+  details.callout[open] summary.callout-title {
+    @apply mb-3;
   }
 
   details.callout summary::-webkit-details-marker {
     display: none;
+  }
+
+  details.callout-warning {
+    @apply border-amber-200 border-l-4 border-l-amber-500 bg-gradient-to-br from-amber-50 to-orange-50 text-amber-950;
+  }
+
+  details.callout-warning summary.callout-title {
+    @apply text-base text-amber-900;
+  }
+
+  details.callout-note {
+    @apply border-blue-200 border-l-4 border-l-blue-500 bg-blue-50 text-blue-950;
+  }
+
+  details.callout-tip {
+    @apply border-emerald-200 border-l-4 border-l-emerald-500 bg-emerald-50 text-emerald-950;
   }
 
   .doc-grid-cards {

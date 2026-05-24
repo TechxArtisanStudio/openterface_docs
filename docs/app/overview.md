@@ -89,7 +89,7 @@ Transform your phone or tablet into a **universal input device** for any compute
 
 ---
 
-???+ warning "Heads Up: Check Privacy & Security with Third-Party Apps"
+!!! warning "Heads Up: Check Privacy & Security with Third-Party Apps"
 
     All Openterface apps are open source. You may find community-built alternatives that offer extra features, but please review their security practices carefully, especially since KVM control involves your screen, keyboard, and mouse data. The Openterface Team cannot vouch for third-party apps.
 

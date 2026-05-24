@@ -57,7 +57,7 @@ Pentru a face funcționale gadget-urile Openterface™ KVM, va trebui să instal
 
 </div>
 
-???+ warning "Atenție: Verificați Confidențialitatea și Securitatea cu Aplicațiile Terțe"
+!!! warning "Atenție: Verificați Confidențialitatea și Securitatea cu Aplicațiile Terțe"
 Deoarece toate aplicațiile noastre sunt open source, s-ar putea să întâlniți versiuni alternative de aplicații gazdă pentru dispozitivele Openterface create de alții. Acestea pot fi destul de cool și pot oferi funcții suplimentare, dar iată o reamintire prietenoasă: examinați cu atenție practicile lor de securitate și confidențialitate—mai ales pentru că controlul KVM implică evenimente de pe ecranul, tastatura și mouse-ul dvs. Echipa Openterface nu poate garanta siguranța acestor aplicații terțe, așa că procedați cu prudență!
 
 ## Controale de Bază ale Aplicației Gazdă
