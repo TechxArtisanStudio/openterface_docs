@@ -8,13 +8,16 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DOCS = join(__dirname, '..', '..', 'docs');
-const LOCALES_JSON = join(__dirname, '..', '..', '..', '..', 'web-dev-tool/analytics/locales.json');
+const SITE_LOCALES = join(__dirname, '..', '..', 'config', 'site-locales.json');
+const TIER_A = join(__dirname, '..', '..', 'config', 'tier-a-pages.json');
 
 const failOnMissing = process.argv.includes('--fail-on-missing');
 const onlyMissing = process.argv.includes('--only-missing');
+const tierAOnly = process.argv.includes('--tier-a');
 
-const { locales, default_locale: defaultLocale } = JSON.parse(readFileSync(LOCALES_JSON, 'utf8'));
+const { locales, default_locale: defaultLocale } = JSON.parse(readFileSync(SITE_LOCALES, 'utf8'));
 const targetLocales = Object.keys(locales).filter((l) => l !== defaultLocale);
+const tierASet = tierAOnly ? new Set(JSON.parse(readFileSync(TIER_A, 'utf8'))) : null;
 
 function isBaseMd(name) {
   return name.endsWith('.md') && !/\.[a-z]{2}\.md$/.test(name);
@@ -33,7 +36,12 @@ function collectBaseFiles(dir, base = DOCS) {
   return files;
 }
 
-const baseFiles = collectBaseFiles(DOCS);
+let baseFiles = collectBaseFiles(DOCS);
+if (tierASet) {
+  baseFiles = baseFiles.filter((f) => tierASet.has(f));
+  console.log(`i18n audit: Tier A only (${baseFiles.length} files)\n`);
+}
+
 let missingTotal = 0;
 
 for (const file of baseFiles.sort()) {

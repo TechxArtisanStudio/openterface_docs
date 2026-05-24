@@ -1,0 +1,16 @@
+{
+  "default_locale": "en",
+  "locales": {
+    "en": { "label": "English", "path": "en" },
+    "zh": { "label": "Chinese", "path": "zh" },
+    "ja": { "label": "Japanese", "path": "ja" },
+    "ko": { "label": "Korean", "path": "ko" },
+    "de": { "label": "German", "path": "de" },
+    "fr": { "label": "French", "path": "fr" },
+    "es": { "label": "Spanish", "path": "es" },
+    "it": { "label": "Italian", "path": "it" },
+    "pt": { "label": "Portuguese", "path": "pt" },
+    "ro": { "label": "Romanian", "path": "ro" }
+  },
+  "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"
+}

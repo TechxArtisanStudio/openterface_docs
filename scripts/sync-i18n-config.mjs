@@ -1,22 +1,21 @@
 #!/usr/bin/env node
 /**
- * Sync i18n language block in mkdocs.yml from web-dev-tool locales.json.
+ * Sync i18n language block in mkdocs.yml from config/locales.yml.
  * Phase 1 (default): English only — no file changes.
- * Phase 2: node scripts/sync-i18n-config.mjs --full (requires PyYAML via python helper).
+ * Phase 2: node scripts/sync-i18n-config.mjs --full
  */
-import { readFileSync, existsSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
-const LOCALES_JSON = join(REPO_ROOT, '../../web-dev-tool/analytics/locales.json');
 
 const full = process.argv.includes('--full');
 
 if (!full) {
-  console.log('sync-i18n-config: EN-only mode (pass --full to enable all locales in Phase 2)');
+  console.log('sync-i18n-config: EN-only mode (pass --full to enable all locales)');
   process.exit(0);
 }
 
@@ -26,5 +25,7 @@ if (!existsSync(helper)) {
   process.exit(0);
 }
 
-const result = spawnSync('python3', [helper], { stdio: 'inherit', cwd: REPO_ROOT });
+const venvPython = join(REPO_ROOT, '.venv/bin/python3');
+const python = existsSync(venvPython) ? venvPython : 'python3';
+const result = spawnSync(python, [helper], { stdio: 'inherit', cwd: REPO_ROOT });
 process.exit(result.status ?? 1);

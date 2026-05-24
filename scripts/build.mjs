@@ -15,23 +15,48 @@ const serve = args.includes('--serve');
 const clean = args.includes('--clean');
 const i18nFlag = args.find((a) => a.startsWith('--i18n'));
 const i18nMode = i18nFlag?.split('=')[1] ?? 'en';
+const fullI18n = i18nMode === 'full';
 
-if (i18nMode === 'full') {
-  spawnSync('node', ['scripts/sync-i18n-config.mjs', '--full'], { stdio: 'inherit', cwd: REPO_ROOT });
+function run(nodeArgs) {
+  const r = spawnSync('node', nodeArgs, { stdio: 'inherit', cwd: REPO_ROOT });
+  if (r.status !== 0 && r.status !== null) process.exit(r.status);
+}
+
+if (fullI18n) {
+  run(['scripts/generate-locale-indexes.mjs']);
+  run(['scripts/sync-i18n-config.mjs', '--full']);
 } else {
   spawnSync('node', ['scripts/sync-i18n-config.mjs'], { stdio: 'inherit', cwd: REPO_ROOT });
 }
 
+spawnSync('node', ['scripts/sync-app-versions.mjs'], { stdio: 'inherit', cwd: REPO_ROOT });
+
 const venvZensical = join(REPO_ROOT, '.venv/bin/zensical');
 const venvMkdocs = join(REPO_ROOT, '.venv/bin/mkdocs');
-const bin = existsSync(venvZensical) ? venvZensical : existsSync(venvMkdocs) ? venvMkdocs : 'zensical';
+// Zensical is fast for EN-only; mkdocs-static-i18n multi-locale needs mkdocs (see ZENSICAL_SPIKE.md)
+const bin = fullI18n
+  ? existsSync(venvMkdocs)
+    ? venvMkdocs
+    : 'mkdocs'
+  : existsSync(venvZensical)
+    ? venvZensical
+    : existsSync(venvMkdocs)
+      ? venvMkdocs
+      : 'zensical';
 
 const cmdArgs = serve ? ['serve', '-a', '0.0.0.0:8000'] : ['build'];
-if (clean) cmdArgs.unshift('--clean');
+if (clean && !serve) cmdArgs.push('--clean');
 
 console.log(`\n→ ${bin} ${cmdArgs.join(' ')}\n`);
 const result = spawnSync(bin, cmdArgs, { stdio: 'inherit', cwd: REPO_ROOT, env: process.env });
+
 if (!serve && (result.status === 0 || result.status === null)) {
-  spawnSync('node', ['scripts/post-build-redirect.mjs'], { stdio: 'inherit', cwd: REPO_ROOT });
+  if (fullI18n) {
+    run(['scripts/post-build-restructure.mjs']);
+    run(['scripts/post-build-hreflang.mjs']);
+  } else {
+    run(['scripts/post-build-redirect.mjs']);
+  }
 }
+
 process.exit(result.status ?? 1);

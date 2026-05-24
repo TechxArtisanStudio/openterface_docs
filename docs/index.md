@@ -1,6 +1,6 @@
 ---
 title: Documentation
-description: Official Openterface documentation — product setup guides, app downloads, tutorials, FAQs, and support.
+description: Welcome to the official documentation hub for Openterface KVM-over-USB products and software.
 ---
 
 # Openterface Documentation
@@ -9,11 +9,11 @@ Welcome to the official documentation hub for Openterface KVM-over-USB products 
 
 ## Quick links
 
-- [Product documentation](/product/kvm-go/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
-- [Download the app](/app/overview/) — macOS, Windows, Linux, Android
-- [Tutorials](/tutorial/kvm/) — KVM and KeyMod getting started guides
-- [FAQs](/faq/) — Common questions
-- [Support](/support/) — Help, forum, and latest news
+- [Product documentation](/en/product/kvm-go/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
+- [Download the app](/en/app/overview/) — macOS, Windows, Linux, Android
+- [Tutorials](/en/tutorial/kvm/) — KVM and KeyMod getting started guides
+- [FAQs](/en/faq/) — Common questions
+- [Support](/en/support/) — Help, forum, and latest news
 
 ## Other sites
 

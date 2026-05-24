@@ -1,0 +1,11 @@
+[
+  "index.md",
+  "faq/index.md",
+  "support/index.md",
+  "app/overview.md",
+  "product/kvm-go/how-to-connect.md",
+  "product/kvm-go/index.md",
+  "product/minikvm/how-to-connect.md",
+  "product/keymod/how-to-connect.md",
+  "tutorial/kvm/01-getting-started.md"
+]

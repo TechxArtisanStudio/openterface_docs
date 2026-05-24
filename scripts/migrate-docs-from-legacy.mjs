@@ -17,10 +17,11 @@ const TARGET_OVERRIDES = join(REPO_ROOT, 'overrides');
 const EXCLUDE_DIR_NAMES = new Set(['updates', 'event']);
 const EXCLUDE_FILE_PATTERNS = [
   /^home(\.[a-z]{2})?\.html$/,
-  /^videos\.md$/,
-  /^use-cases\.md$/,
+  /^videos(\.[a-z]{2})?\.md$/,
+  /^use-cases(\.[a-z]{2})?\.md$/,
   /^home-videos/,
   /^videos-grid/,
+  /^videos(\.[a-z]{2})?\.html$/,
 ];
 
 function shouldExclude(relPath) {
