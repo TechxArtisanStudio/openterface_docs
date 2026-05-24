@@ -70,7 +70,7 @@ extra:
   macos_version: '2.1'
   qt_linux_stable: 0.3.19
   copyright_year: 2026
-  homepage: /en/
+  homepage: /
   ecosystem:
     news: https://news.openterface.com/
     shop: https://shop.techxartisan.com/
@@ -85,7 +85,7 @@ extra:
     - reject
   alternate:
   - name: English
-    link: en
+    link: .
     lang: en
   - name: 简体中文
     link: zh

@@ -81,13 +81,13 @@ def main() -> int:
 
         # Material language switcher (relative links — see mkdocs-static-i18n docs)
         if code == default_locale:
-            alternates.append({"name": lang_entry["name"], "link": "en", "lang": code})
+            alternates.append({"name": lang_entry["name"], "link": ".", "lang": code})
         else:
             alternates.append({"name": lang_entry["name"], "link": code, "lang": code})
 
     mkdocs["plugins"][idx]["i18n"]["languages"] = languages
     mkdocs.setdefault("extra", {})["alternate"] = alternates
-    mkdocs["extra"]["homepage"] = "/en/"
+    mkdocs["extra"]["homepage"] = "/"
     mkdocs["site_url"] = "https://docs.openterface.com/"
 
     save_mkdocs(MKDOCS, mkdocs)

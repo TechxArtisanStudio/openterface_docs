@@ -51,11 +51,10 @@ console.log(`\n→ ${bin} ${cmdArgs.join(' ')}\n`);
 const result = spawnSync(bin, cmdArgs, { stdio: 'inherit', cwd: REPO_ROOT, env: process.env });
 
 if (!serve && (result.status === 0 || result.status === null)) {
+  run(['scripts/post-build-nojekyll.mjs']);
   if (fullI18n) {
-    run(['scripts/post-build-restructure.mjs']);
     run(['scripts/post-build-hreflang.mjs']);
-  } else {
-    run(['scripts/post-build-redirect.mjs']);
+    run(['scripts/post-build-en-legacy-redirects.mjs']);
   }
 }
 

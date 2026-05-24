@@ -4,8 +4,9 @@
   <div style="text-align: center; margin-top: 50px;">
     <!-- Default English content (fallback) -->
     <h1 id="error-title" data-i18n="error.404-title">404 - Page Not Found</h1>
-    <p id="error-desc" data-i18n="error.404-desc">The page does not exist. Redirecting to the homepage...</p>
-    
+    <p id="error-desc" data-i18n="error.404-desc">The page does not exist.</p>
+    <p><a id="error-home" href="/">Back to documentation</a></p>
+
     <img src="https://assets.openterface.com/images/cover.webp" alt="" style="max-width: 600px; height: auto;" draggable="false">
 
     <script>
@@ -13,43 +14,43 @@
         const messages = {
             'en': {
                 title: '404 - Page Not Found',
-                desc: 'The page does not exist. Redirecting to the homepage...'
+                desc: 'The page does not exist.'
             },
             'de': {
                 title: '404 - Seite nicht gefunden',
-                desc: 'Diese Seite existiert nicht. Sie werden zur Startseite weitergeleitet...'
+                desc: 'Diese Seite existiert nicht.'
             },
             'es': {
                 title: '404 - Página No Encontrada',
-                desc: 'La página no existe. Redirigiendo a la página principal...'
+                desc: 'La página no existe.'
             },
             'fr': {
                 title: '404 - Page Non Trouvée',
-                desc: 'Cette page n\'existe pas. Redirection vers la page d\'accueil...'
+                desc: 'Cette page n\'existe pas.'
             },
             'it': {
                 title: '404 - Pagina Non Trovata',
-                desc: 'La pagina non esiste. Reindirizzamento alla homepage...'
+                desc: 'La pagina non esiste.'
             },
             'ja': {
                 title: '404 - ページが見つかりません',
-                desc: 'ページが存在しません。ホームページにリダイレクトします...'
+                desc: 'ページが存在しません。'
             },
             'ko': {
                 title: '404 - 페이지를 찾을 수 없습니다',
-                desc: '페이지가 존재하지 않습니다. 홈페이지로 이동합니다...'
+                desc: '페이지가 존재하지 않습니다.'
             },
             'pt': {
                 title: '404 - Página não encontrada',
-                desc: 'A página não existe. Redirecionando para a página inicial...'
+                desc: 'A página não existe.'
             },
             'ro': {
                 title: '404 - Pagină Negăsită',
-                desc: 'Pagina nu există. Redirecționare către pagina principală...'
+                desc: 'Pagina nu există.'
             },
             'zh': {
                 title: '404 - 页面未找到',
-                desc: '页面不存在。正在跳转到首页...'
+                desc: '页面不存在。'
             }
         };
 
@@ -192,13 +193,8 @@
         // Update content immediately
         updateContent();
 
-        // Check for custom redirect first
-        if (!checkCustomRedirect()) {
-            // Default redirect to homepage after 1 second
-            setTimeout(function() {
-                window.location.href = "/";
-            }, 1000);
-        }
+        // Custom redirect map only (no auto-redirect to homepage — avoids redirect loops)
+        checkCustomRedirect();
     </script>
   </div>
 {% endblock %}

@@ -111,11 +111,11 @@ ${en.lead}
 
 ## Quick links
 
-- [Product documentation](/en/product/kvm-go/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
-- [Download the app](/en/app/overview/) — macOS, Windows, Linux, Android
-- [Tutorials](/en/tutorial/kvm/) — KVM and KeyMod getting started guides
-- [FAQs](/en/faq/) — Common questions
-- [Support](/en/support/) — Help, forum, and latest news
+- [Product documentation](/product/kvm-go/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
+- [Download the app](/app/overview/) — macOS, Windows, Linux, Android
+- [Tutorials](/tutorial/kvm/) — KVM and KeyMod getting started guides
+- [FAQs](/faq/) — Common questions
+- [Support](/support/) — Help, forum, and latest news
 
 ## Other sites
 

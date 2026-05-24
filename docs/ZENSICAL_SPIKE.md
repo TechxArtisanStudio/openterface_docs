@@ -24,10 +24,10 @@
 ## Phase 2 follow-ups
 
 - **Full i18n (10 locales):** use `mkdocs build` — Zensical 0.0.43 does not emit per-locale site dirs (`/zh/`, …); EN-only dev stays on Zensical
-- Post-build `post-build-restructure.mjs` moves default locale output to `/en/`
-- Resolve legacy absolute links (`/app/overview.md` → `/en/app/overview/`)
+- English at site root `/` (unprefixed, same as news); other locales under `/{locale}/`
+- Post-build `post-build-en-legacy-redirects.mjs` stubs `/en/*` → unprefixed paths for bookmarks
+- Resolve legacy absolute links (`/app/overview.md` → `/app/overview/`)
 - `config/locales.yml` nav_translations synced via `scripts/sync-i18n-config.py`
-- Root `/` → `/en/` redirect on GH Pages
 
 ## Fallback
 
