@@ -10,10 +10,12 @@
   },
   "scripts": {
     "predev": "node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
-    "dev": "astro dev --port 8000",
+    "dev": "astro dev --host --port 8000",
+    "serve": "npm run dev",
     "prebuild": "node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
     "build": "astro build",
-    "preview": "astro preview --port 8000",
+    "postbuild": "node scripts/post-build.mjs",
+    "preview": "astro preview --port 8000 --host",
     "test:smoke": "playwright test tests/smoke"
   },
   "dependencies": {

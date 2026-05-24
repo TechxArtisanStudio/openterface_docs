@@ -16,6 +16,16 @@ Content lives in `./docs/` (suffix-file i18n: `page.md`, `page.zh.md`, …).
 
 **Phase 2:** Full ~677-page corpus with sidebar from `archive/mkdocs/mkdocs.yml` nav and MkDocs markdown dialect support.
 
+## Deploy
+
+GitHub Actions (`.github/workflows/deploy.yml`) on push to `main`:
+
+1. `npm ci` → `npm run build` (678 pages → `dist/`)
+2. Playwright smoke tests against `astro preview` on port **18800** (avoids dev-stack on 8000)
+3. GitHub Pages deploy (`public/CNAME` → `docs.openterface.com`)
+
+Post-build writes `dist/.nojekyll` and `/en/*` redirect stubs for legacy bookmarks.
+
 ## Stack
 
 - Astro 6 + Tailwind 4
