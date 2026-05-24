@@ -1,0 +1,33 @@
+{# Short locale labels — aligned with openterface_news LOCALE_LABELS #}
+{% set short_labels = {
+  "en": "English",
+  "zh": "中文",
+  "ja": "日本語",
+  "ko": "한국어",
+  "de": "Deutsch",
+  "fr": "Français",
+  "es": "Español",
+  "it": "Italiano",
+  "pt": "Português",
+  "ro": "Română"
+} %}
+{% set current_lang = config.theme.language | default("en") %}
+
+<details class="op-locale-switcher">
+  <summary class="op-locale-switcher__toggle" aria-label="{{ lang.t('select.language') }}">
+    {{ short_labels.get(current_lang, current_lang) }}
+  </summary>
+  <ul class="op-locale-switcher__menu">
+    {% for alt in config.extra.alternate %}
+      <li>
+        <a
+          href="{{ alt.link | url }}"
+          hreflang="{{ alt.lang }}"
+          class="op-locale-switcher__link{% if alt.lang == current_lang %} is-current{% endif %}"
+        >
+          {{ short_labels.get(alt.lang, alt.name) }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</details>

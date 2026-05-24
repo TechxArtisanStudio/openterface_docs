@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync mkdocs-static-i18n languages and extra.alternate from config/locales.yml."""
+"""Sync mkdocs-static-i18n languages and extra.alternate from config/locales.yml into zensical.toml."""
 
 from __future__ import annotations
 
@@ -9,37 +9,11 @@ from pathlib import Path
 
 import yaml
 
+from site_config import export_mkdocs_yml, find_i18n_plugin, load_project, save_project
+
 ROOT = Path(__file__).resolve().parent.parent
-MKDOCS = ROOT / "mkdocs.yml"
 LOCALES_YML = ROOT / "config" / "locales.yml"
 SITE_LOCALES = ROOT / "config" / "site-locales.json"
-
-TAG_REPLACEMENTS = {
-    "pymdownx_fence_format": "!!python/name:pymdownx.superfences.fence_code_format",
-    "twemoji": "!!python/name:material.extensions.emoji.twemoji",
-    "to_svg": "!!python/name:material.extensions.emoji.to_svg",
-}
-
-
-def load_mkdocs(path: Path) -> dict:
-    content = path.read_text(encoding="utf-8")
-    for tag in TAG_REPLACEMENTS:
-        content = content.replace(TAG_REPLACEMENTS[tag], tag)
-    return yaml.safe_load(content)
-
-
-def save_mkdocs(path: Path, data: dict) -> None:
-    content = yaml.dump(data, default_flow_style=False, allow_unicode=True, sort_keys=False)
-    for placeholder, tag in TAG_REPLACEMENTS.items():
-        content = content.replace(placeholder, tag)
-    path.write_text(content, encoding="utf-8")
-
-
-def find_i18n_plugin(config: dict) -> int:
-    for i, plugin in enumerate(config.get("plugins", [])):
-        if isinstance(plugin, dict) and "i18n" in plugin:
-            return i
-    return -1
 
 
 def main() -> int:
@@ -50,8 +24,8 @@ def main() -> int:
     lang_config = yaml.safe_load(LOCALES_YML.read_text(encoding="utf-8")) or []
     lang_by_locale = {entry["locale"]: entry for entry in lang_config}
 
-    mkdocs = load_mkdocs(MKDOCS)
-    idx = find_i18n_plugin(mkdocs)
+    project = load_project()
+    idx = find_i18n_plugin(project)
     if idx < 0:
         print("sync-i18n-config: i18n plugin not found", file=sys.stderr)
         return 1
@@ -79,18 +53,18 @@ def main() -> int:
 
         languages.append(lang_entry)
 
-        # Material language switcher (relative links — see mkdocs-static-i18n docs)
         if code == default_locale:
             alternates.append({"name": lang_entry["name"], "link": ".", "lang": code})
         else:
             alternates.append({"name": lang_entry["name"], "link": code, "lang": code})
 
-    mkdocs["plugins"][idx]["i18n"]["languages"] = languages
-    mkdocs.setdefault("extra", {})["alternate"] = alternates
-    mkdocs["extra"]["homepage"] = "/"
-    mkdocs["site_url"] = "https://docs.openterface.com/"
+    project["plugins"][idx]["i18n"]["languages"] = languages
+    project.setdefault("extra", {})["alternate"] = alternates
+    project["extra"]["homepage"] = "/"
+    project["site_url"] = "https://docs.openterface.com/"
 
-    save_mkdocs(MKDOCS, mkdocs)
+    save_project(project)
+    export_mkdocs_yml(project)
     print(f"sync-i18n-config: {len(languages)} locales — {', '.join(locale_codes)}")
     return 0
 

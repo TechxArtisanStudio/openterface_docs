@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Sync i18n language block in mkdocs.yml from config/locales.yml.
+ * Sync i18n language block in zensical.toml from config/locales.yml.
  * Phase 1 (default): English only — no file changes.
  * Phase 2: node scripts/sync-i18n-config.mjs --full
  */

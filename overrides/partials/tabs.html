@@ -1,0 +1,42 @@
+{% import "partials/tabs-item.html" as item with context %}
+
+<nav
+  class="md-tabs"
+  aria-label="{{ lang.t('tabs') }}"
+  data-md-component="tabs"
+>
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      {% for nav_item in nav.items %}
+        {{ item.render(nav_item) }}
+      {% endfor %}
+      <li class="md-tabs__item md-tabs__item--external-spacer" aria-hidden="true"></li>
+      <li class="md-tabs__item">
+        <a
+          href="{{ config.extra.ecosystem.home_en }}"
+          class="md-tabs__link md-tabs__link--external"
+          data-op-ecosystem="home"
+          target="_blank"
+          rel="noopener"
+        >Home ↗</a>
+      </li>
+      <li class="md-tabs__item">
+        <a
+          href="{{ config.extra.ecosystem.news }}"
+          class="md-tabs__link md-tabs__link--external"
+          data-op-ecosystem="news"
+          target="_blank"
+          rel="noopener"
+        >News ↗</a>
+      </li>
+      <li class="md-tabs__item">
+        <a
+          href="{{ config.extra.ecosystem.shop }}"
+          class="md-tabs__link md-tabs__link--external"
+          target="_blank"
+          rel="noopener"
+        >Store ↗</a>
+      </li>
+    </ul>
+  </div>
+</nav>

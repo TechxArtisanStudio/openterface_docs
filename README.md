@@ -2,7 +2,7 @@
 
 Official documentation hub for [docs.openterface.com](https://docs.openterface.com).
 
-Built with [Zensical](https://zensical.org/) (Material theme). Content uses suffix-file i18n (`page.zh.md`). No legacy `openterface-cms` submodule.
+Built with [Zensical](https://zensical.org/) (Material theme). Site config lives in `zensical.toml`; `mkdocs.yml` is auto-generated for full i18n builds. Content uses suffix-file i18n (`page.zh.md`). No legacy `openterface-cms` submodule.
 
 ## Quick start
 
@@ -27,8 +27,10 @@ npm run build
 | Command | Description |
 |---------|-------------|
 | `npm run migrate` | Copy docs from `Openterface/docs` (excludes updates/events) |
-| `npm run build` | Sync config + Zensical build → `site/` |
-| `npm run serve` | Local preview at :8000 |
+| `npm run build` | Sync config + full i18n build (mkdocs) → `site/` |
+| `npm run build:en` | EN-only Zensical build → `site/` |
+| `npm run serve` | EN-only preview at :8000 (`zensical.toml`) |
+| `npm run serve:full` | All locales at :8000 (`mkdocs.yml`) |
 | `npm run i18n:audit` | Translation coverage report |
 | `npm run validate-links` | Post-build link check (stub) |
 

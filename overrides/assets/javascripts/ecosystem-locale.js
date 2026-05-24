@@ -1,6 +1,6 @@
-/** Locale-aware ecosystem links for docs.openterface.com */
+/** Locale-aware cross-site links in docs tabs row (Home, News) */
 (function () {
-  const MARKETING = {
+  const PROD_HOME = {
     en: 'https://en.openterface.com',
     zh: 'https://cn.openterface.com',
     ja: 'https://jp.openterface.com',
@@ -13,28 +13,31 @@
     ro: 'https://ro.openterface.com',
   };
 
+  const PROD_NEWS = 'https://news.openterface.com';
+  const dev = window.__OP_DEV_SURFACE;
+  const HOME = dev && dev.marketing ? dev.marketing : PROD_HOME;
+  const newsBase = dev && dev.news ? dev.news : PROD_NEWS;
+
   function detectLocale() {
     const seg = window.location.pathname.split('/').filter(Boolean)[0];
-    return MARKETING[seg] ? seg : 'en';
+    return HOME[seg] ? seg : 'en';
   }
 
-  function updateLinks(root, locale) {
-    if (!root) return;
-    const marketing = root.querySelector('[data-op-ecosystem="marketing"]');
-    if (marketing && MARKETING[locale]) {
-      marketing.href = MARKETING[locale] + '/';
-      marketing.textContent = 'Marketing ↗';
+  function updateTabs(locale) {
+    const tabs = document.querySelector('.op-site-header .md-tabs');
+    if (!tabs) return;
+
+    const home = tabs.querySelector('[data-op-ecosystem="home"]');
+    if (home && HOME[locale]) {
+      home.href = HOME[locale] + '/';
     }
-    const newsBase = 'https://news.openterface.com';
-    const newsLinks = root.querySelectorAll('[data-op-ecosystem="news"]');
-    newsLinks.forEach(function (link) {
+
+    tabs.querySelectorAll('[data-op-ecosystem="news"]').forEach(function (link) {
       link.href = locale === 'en' ? newsBase + '/' : newsBase + '/' + locale + '/';
     });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    const locale = detectLocale();
-    updateLinks(document.querySelector('.op-site-header__nav'), locale);
-    updateLinks(document.querySelector('.op-site-header__sites-menu-panel'), locale);
+    updateTabs(detectLocale());
   });
 })();

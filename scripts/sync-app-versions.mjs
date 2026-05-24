@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 /**
- * Update app version fields in mkdocs.yml extra: from GitHub releases (best-effort).
+ * Update app version fields in zensical.toml [project.extra] from GitHub releases (best-effort).
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const MKDOCS = join(__dirname, '..', 'mkdocs.yml');
+const REPO_ROOT = join(__dirname, '..');
+const ZENSICAL_TOML = join(REPO_ROOT, 'zensical.toml');
 
 const REPOS = {
   qt_version: 'TechxArtisanStudio/Openterface_QT',
@@ -27,17 +29,22 @@ async function latestTag(repo) {
 
 async function main() {
   const skip = process.argv.includes('--skip-fetch') || process.env.CI === 'true';
-  let content = readFileSync(MKDOCS, 'utf8');
+  let content = readFileSync(ZENSICAL_TOML, 'utf8');
   const year = String(new Date().getFullYear());
-  content = content.replace(/copyright_year: \d+/, `copyright_year: ${year}`);
+  content = content.replace(/copyright_year = \d+/, `copyright_year = ${year}`);
 
   if (!skip) {
     for (const [key, repo] of Object.entries(REPOS)) {
       try {
         const tag = await latestTag(repo);
         if (tag) {
-          const re = new RegExp(`(${key}): \"[^\"]+\"`);
-          content = content.replace(re, `$1: "${tag}"`);
+          const re = new RegExp(`(${key}) = "[^"]+"`);
+          if (re.test(content)) {
+            content = content.replace(re, `$1 = "${tag}"`);
+          } else {
+            const bare = new RegExp(`(${key}) = [^\\n]+`);
+            content = content.replace(bare, `$1 = "${tag}"`);
+          }
           console.log(`sync-app-versions: ${key} → ${tag}`);
         }
       } catch {
@@ -48,7 +55,11 @@ async function main() {
     console.log('sync-app-versions: --skip-fetch');
   }
 
-  writeFileSync(MKDOCS, content);
+  writeFileSync(ZENSICAL_TOML, content);
+
+  const venvPython = join(REPO_ROOT, '.venv/bin/python3');
+  const python = existsSync(venvPython) ? venvPython : 'python3';
+  spawnSync(python, ['scripts/export-mkdocs-yml.py'], { stdio: 'inherit', cwd: REPO_ROOT });
 }
 
 main().catch((err) => {
