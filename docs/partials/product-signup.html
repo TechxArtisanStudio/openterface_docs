@@ -1,0 +1,38 @@
+<!-- Product Signup Block -->
+<div class="product-signup-container"{% if product_signup_anchor != false %} id="product-signup-form"{% endif %} data-i18n-file="forms">
+  <p data-i18n-key="product_description">
+    Sign up to receive updates of this product. Unsubscribe anytime.
+  </p>
+
+  <form class="product-signup-form" name="product-signup-form">
+    <div class="product-signup-form-row">
+      <div class="product-signup-name-field">
+        <input type="text" 
+               name="name" 
+               id="product-form-name" 
+               data-i18n-key="product_name_placeholder"
+               data-i18n-attr="placeholder"
+               placeholder="Your Name">
+      </div>
+      <div class="product-signup-email-field">
+        <input type="email" 
+               name="email" 
+               class="required email" 
+               id="product-form-email" 
+               required 
+               data-i18n-key="product_email_placeholder"
+               data-i18n-attr="placeholder"
+               placeholder="Your Email Address *">
+      </div>
+      <div class="product-signup-button-field">
+        <input type="submit" 
+               name="submit" 
+               id="product-form-submit" 
+               class="button" 
+               data-i18n-key="product_submit_button"
+               data-i18n-attr="value"
+               value="✉️ Subscribe! 🐝">
+      </div>
+    </div>
+  </form>
+</div>

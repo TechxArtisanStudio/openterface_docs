@@ -1,0 +1,243 @@
+site_name: Openterface Docs
+site_url: https://docs.openterface.com/
+site_author: Openterface
+site_description: Official documentation for Openterface KVM-over-USB products and software
+repo_name: openterface_docs
+repo_url: https://github.com/TechxArtisanStudio/openterface_docs
+edit_uri: edit/main/docs/
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/images/app-logo.png
+  favicon: https://assets.openterface.com/images/favicon.png
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  features:
+    - toc.follow
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.tabs
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - announce.dismiss
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+  qt_version: "0.5.23"
+  android_version: "1.2.2"
+  macos_version: "2.1"
+  qt_linux_stable: "0.3.19"
+  copyright_year: 2026
+  homepage: /
+  ecosystem:
+    news: https://news.openterface.com/
+    shop: https://shop.techxartisan.com/
+    forum: https://forum.openterface.com/
+    marketing_en: https://en.openterface.com/
+  analytics:
+    provider: google
+    property: G-EKZEH6QYWT
+  consent:
+    title: Cookie Consent
+    description: We use cookies to enhance quality of docs content, analyse site effectiveness and needs. By consenting, you help us improve our website. Thanks!
+    actions:
+      - accept
+      - reject
+
+markdown_extensions:
+  - tables
+  - def_list
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.betterem
+  - pymdownx.snippets:
+      base_path: docs
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      pygments_lang_class: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - toc:
+      toc_depth: 2
+
+plugins:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      use_directory_urls: true
+      languages:
+        - locale: en
+          name: English
+          build: true
+          site_name: Openterface Docs
+          default: true
+  - glightbox:
+      skip_classes:
+        - skip-lightbox
+  - search
+  - macros
+  - tags
+  - meta
+  - social
+
+nav:
+  - Documentation: index.md
+  - FAQs:
+      - Overview: faq/index.md
+      - KVM-over-USB: faq/kvm-over-usb.md
+  - Support: support/index.md
+  - Product:
+      - KeyMod Series:
+          - Overview: product/keymod/index.md
+          - Features: product/keymod/features.md
+          - What's In The Box: product/keymod/whats-in-the-box.md
+          - How To Connect: product/keymod/how-to-connect.md
+          - Use Cases: product/keymod/use-cases.md
+          - FAQs: product/keymod/faq.md
+          - Reviews: product/keymod/reviews/index.md
+      - KVM-Go Series:
+          - Overview: product/kvm-go/index.md
+          - Features: product/kvm-go/features.md
+          - What's In The Box: product/kvm-go/whats-in-the-box.md
+          - How To Connect: product/kvm-go/how-to-connect.md
+          - Use Cases: product/kvm-go/use-cases.md
+          - Beta Quick Start: product/kvm-go/beta-quick-start.md
+          - MicroSD Switch: product/kvm-go/microsd-switch.md
+          - FAQs: product/kvm-go/faq.md
+          - Reviews: product/kvm-go/reviews/index.md
+      - Mini-KVM:
+          - Overview: product/minikvm/index.md
+          - Features: product/minikvm/features.md
+          - What's In The Box: product/minikvm/whats-in-the-box.md
+          - How To Connect: product/minikvm/how-to-connect.md
+          - USB Switch: product/minikvm/usb-switch.md
+          - Extension Pins: product/minikvm/extension-pins.md
+          - FAQs: product/minikvm/faq.md
+          - Tech Support:
+              - Troubleshooting: product/minikvm/support/mini-kvm-troubleshooting-and-support.md
+              - Diagnostic (macOS): product/minikvm/support/diagnostic-self-check.md
+              - Diagnostic (Windows): product/minikvm/support/diagnostic-self-check-windows.md
+              - Keyboard and Mouse: product/minikvm/support/keyboard-mouse-control.md
+          - Reviews: product/minikvm/reviews/index.md
+      - uConsole KVM Extension:
+          - Overview: product/uconsole-kvm-extension/index.md
+          - Features: product/uconsole-kvm-extension/features.md
+          - What's In The Box: product/uconsole-kvm-extension/whats-in-the-box.md
+          - Hardware Installation: product/uconsole-kvm-extension/hardware-installation.md
+          - Software Setup: product/uconsole-kvm-extension/software-setup.md
+          - Connect to Target: product/uconsole-kvm-extension/connect-to-target.md
+          - FAQs: product/uconsole-kvm-extension/faq.md
+      - Accessories:
+          - Overview: product/accessories/index.md
+          - VGA to HDMI Cable 1m: product/accessories/vga-to-hdmi-cable.md
+          - Type-C to C Cable Nylon 1.5m: product/accessories/nylong-c-to-c-150.md
+          - Type-C to C Cable Orange 1.5m: product/accessories/type-c-to-c-cable-with-adapter.md
+          - Type-C to A Cable Black 30cm: product/accessories/black-c-to-a-30.md
+          - HDMI Cable 30cm: product/accessories/hdmi-male-to-male-cable.md
+          - Toolkit Bag: product/accessories/openterface-toolkit-bag.md
+  - App:
+      - Overview: app/overview.md
+      - FAQs: app/faq.md
+  - Tutorial:
+      - KVM Series:
+          - Overview: tutorial/kvm/index.md
+          - Getting Started: tutorial/kvm/01-getting-started.md
+          - Basic Operations: tutorial/kvm/02-basic-operations.md
+          - Advanced Features: tutorial/kvm/03-advanced-features.md
+          - Troubleshooting: tutorial/kvm/04-troubleshooting.md
+      - KeyMod:
+          - Overview: tutorial/keymod/index.md
+          - Getting Started: tutorial/keymod/01-getting-started.md
+          - Keyboard & Mouse: tutorial/keymod/02-keyboard-mouse.md
+          - Target Keyboard: tutorial/keymod/03-target-keyboard.md
+          - Shortcut Hub: tutorial/keymod/04-shortcuts.md
+          - Macros: tutorial/keymod/05-macros.md
+          - Voice Input: tutorial/keymod/06-voice-input.md
+          - AI Integration: tutorial/keymod/07-ai.md
+          - Gamepad: tutorial/keymod/08-gamepad.md
+          - Numpad: tutorial/keymod/09-numpad.md
+          - Presentation: tutorial/keymod/10-presentation.md
+          - Settings: tutorial/keymod/11-settings.md
+          - Troubleshooting: tutorial/keymod/12-troubleshooting.md
+  - About:
+      - Community: about/community.md
+      - Multi-Languages: about/multi-languages.md
+      - Compliance: about/compliance.md
+      - Contribute & Support: about/contribute-support.md
+      - Reviews & Media: about/media.md
+      - Bulk Orders: about/bulk_orders.md
+      - For Enterprise: about/enterprise.md
+      - Policy:
+          - Overview: policy/index.md
+          - Privacy: policy/privacy.md
+          - Terms of Service: policy/terms-of-service.md
+          - Return, Refunds & Warranty: policy/return-refunds-warranty.md
+      - Public Holidays: about/public-holidays.md
+      - About Us: about/about-us.md

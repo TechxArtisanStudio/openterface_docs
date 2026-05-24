@@ -1,0 +1,204 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <div style="text-align: center; margin-top: 50px;">
+    <!-- Default English content (fallback) -->
+    <h1 id="error-title" data-i18n="error.404-title">404 - Page Not Found</h1>
+    <p id="error-desc" data-i18n="error.404-desc">The page does not exist. Redirecting to the homepage...</p>
+    
+    <img src="https://assets.openterface.com/images/cover.webp" alt="" style="max-width: 600px; height: auto;" draggable="false">
+
+    <script>
+        // Language-specific 404 messages
+        const messages = {
+            'en': {
+                title: '404 - Page Not Found',
+                desc: 'The page does not exist. Redirecting to the homepage...'
+            },
+            'de': {
+                title: '404 - Seite nicht gefunden',
+                desc: 'Diese Seite existiert nicht. Sie werden zur Startseite weitergeleitet...'
+            },
+            'es': {
+                title: '404 - Página No Encontrada',
+                desc: 'La página no existe. Redirigiendo a la página principal...'
+            },
+            'fr': {
+                title: '404 - Page Non Trouvée',
+                desc: 'Cette page n\'existe pas. Redirection vers la page d\'accueil...'
+            },
+            'it': {
+                title: '404 - Pagina Non Trovata',
+                desc: 'La pagina non esiste. Reindirizzamento alla homepage...'
+            },
+            'ja': {
+                title: '404 - ページが見つかりません',
+                desc: 'ページが存在しません。ホームページにリダイレクトします...'
+            },
+            'ko': {
+                title: '404 - 페이지를 찾을 수 없습니다',
+                desc: '페이지가 존재하지 않습니다. 홈페이지로 이동합니다...'
+            },
+            'pt': {
+                title: '404 - Página não encontrada',
+                desc: 'A página não existe. Redirecionando para a página inicial...'
+            },
+            'ro': {
+                title: '404 - Pagină Negăsită',
+                desc: 'Pagina nu există. Redirecționare către pagina principală...'
+            },
+            'zh': {
+                title: '404 - 页面未找到',
+                desc: '页面不存在。正在跳转到首页...'
+            }
+        };
+
+        // Detect language from URL path
+        function detectLanguage() {
+            const path = window.location.pathname;
+            const segments = path.split('/').filter(segment => segment);
+            
+            // Check if first segment is a language code
+            if (segments.length > 0 && messages[segments[0]]) {
+                return segments[0];
+            }
+            
+            // Check if we're in a language subdirectory
+            const hostname = window.location.hostname;
+            if (hostname.includes('.') && hostname.split('.').length > 2) {
+                const subdomain = hostname.split('.')[0];
+                if (messages[subdomain]) {
+                    return subdomain;
+                }
+            }
+            
+            // Default to English
+            return 'en';
+        }
+
+        // Update content based on detected language
+        function updateContent() {
+            const lang = detectLanguage();
+            const message = messages[lang] || messages['en'];
+            
+            document.getElementById('error-title').textContent = message.title;
+            document.getElementById('error-desc').textContent = message.desc;
+        }
+
+        // Supported languages from lang.yml
+                const supportedLanguages = ['zh', 'ja', 'ko', 'fr', 'de', 'it', 'es', 'pt', 'ro'];
+        
+        // Redirect mappings from mkdocs.yml (this would be dynamically loaded in production)
+                const mkdocsRedirects = {
+            'app.md': 'app/overview.md',
+            'about.md': 'about/about-us.md',
+            'contact.md': 'about/about-us.md',
+            'about/contributing.md': 'about/contribute-support.md',
+            'about/support-us.md': 'about/contribute-support.md',
+            'acknowledgements.md': 'contributing.md',
+            'compliance.md': 'about/compliance.md',
+            'community.md': 'about/community.md',
+            'reviews.md': 'product/minikvm/reviews.md',
+            'features.md': 'product/minikvm/features.md',
+            'usb-switch.md': 'product/minikvm/usb-switch.md',
+            'product.md': 'product/minikvm/index.md',
+            'whats-in-the-box.md': 'product/minikvm/whats-in-the-box.md',
+            'quick-start.md': 'product/minikvm/index.md',
+            'basic/usb-switch.md': 'product/minikvm/usb-switch.md',
+            'product/minikvm-lite/pre-launch.md': 'product/kvm-go/pre-launch.md',
+            'support.md': 'about/tech-support.md',
+            'why-openterface.md': 'faq/usbkvm/openterface.md',
+            'buy-mini-kvm.md': 'https://www.crowdsupply.com/techxartisan/openterface-mini-kvm',
+            'order.md': 'https://www.crowdsupply.com/techxartisan/openterface-mini-kvm',
+            'shop.md': 'https://shop.techxartisan.com',
+            'discord.md': 'https://discord.gg/sFTJD6a3R8',
+            'reddit.md': 'https://www.reddit.com/r/Openterface_miniKVM/',
+            'feedback.md': 'https://forms.gle/YJLrCKwro8tbi6ar7',
+            'youtube.md': 'https://www.youtube.com/@TechxArtisan',
+            'linkedin.md': 'https://www.linkedin.com/company/techxartisan/',
+            'x.md': 'https://x.com/TechxArtisan',
+            'twitter.md': 'https://x.com/TechxArtisan',
+            'instagram.md': 'https://www.instagram.com/techxartisan/',
+            'facebook.md': 'https://www.facebook.com/techxartisan',
+            'threads.md': 'https://www.threads.net/@techxartisan',
+            'tiktok.md': 'https://www.tiktok.com/@techxartisan',
+            'bluesky.md': 'https://bsky.app/profile/youyoubilly.bsky.social',
+            'mastodon.md': 'https://mastodon.social/@youyoubilly',
+            'webapp.md': 'https://openterface-viewer.pages.dev/',
+            'macos.md': 'https://github.com/TechxArtisanStudio/Openterface_MacOS',
+            'android.md': 'https://github.com/TechxArtisanStudio/Openterface_Android',
+            'qt.md': 'https://github.com/TechxArtisanStudio/Openterface_QT',
+            'window.md': 'https://github.com/TechxArtisanStudio/Openterface_QT',
+            'linux.md': 'https://github.com/TechxArtisanStudio/Openterface_QT',
+            'appstore.md': 'https://apps.apple.com/us/app/openterface-mini-kvm/id6478481082',
+            'playstore.md': 'https://play.google.com/store/apps/details?id=com.openterface.AOS',
+            'flathub.md': 'https://flathub.org/apps/com.openterface.openterfaceQT',
+            'hardware.md': 'https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware',
+            'open-hardware.md': 'https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware',
+            'oshw.md': 'https://certification.oshwa.org/cn000015.html',
+        };
+        
+        // Generate dynamic redirect mappings for language-specific redirects only
+        function generateRedirectMappings() {
+            const redirectMappings = {};
+            
+            // Only handle language-specific redirects that the redirects plugin can't handle
+            for (const [source, target] of Object.entries(mkdocsRedirects)) {
+                const cleanSource = source.replace('.md', '');
+                
+                if (target.startsWith('http')) {
+                    // External URL - same URL for all languages
+                    for (const lang of supportedLanguages) {
+                        redirectMappings[`${lang}/${cleanSource}`] = target;
+                    }
+                } else {
+                    // Internal redirect - let the redirects plugin handle English,
+                    // and only handle language variants here
+                    const cleanTarget = target.replace('.md', '/');
+                    for (const lang of supportedLanguages) {
+                        redirectMappings[`${lang}/${cleanSource}`] = `${lang}/${cleanTarget}`;
+                    }
+                }
+            }
+            
+            return redirectMappings;
+        }
+        
+        const redirectMappings = generateRedirectMappings();
+
+        // Check for custom redirect
+        function checkCustomRedirect() {
+            const path = window.location.pathname;
+            const cleanPath = path.replace(/^\//, '').replace(/\/$/, ''); // Remove leading/trailing slashes
+            
+            if (redirectMappings[cleanPath]) {
+                const target = redirectMappings[cleanPath];
+                console.log('Redirecting from', path, 'to', target);
+                
+                if (target.startsWith('http')) {
+                    // External redirect
+                    window.location.replace(target);
+                } else {
+                    // Internal redirect
+                    const targetPath = '/' + target;
+                    window.location.replace(targetPath);
+                }
+                return true;
+            }
+            
+            return false;
+        }
+
+        // Update content immediately
+        updateContent();
+
+        // Check for custom redirect first
+        if (!checkCustomRedirect()) {
+            // Default redirect to homepage after 1 second
+            setTimeout(function() {
+                window.location.href = "/";
+            }, 1000);
+        }
+    </script>
+  </div>
+{% endblock %}

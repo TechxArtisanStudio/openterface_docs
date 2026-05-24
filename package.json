@@ -1,0 +1,19 @@
+{
+  "name": "openterface_docs",
+  "private": true,
+  "type": "module",
+  "description": "Openterface documentation hub — docs.openterface.com",
+  "scripts": {
+    "migrate": "node scripts/migrate-docs-from-legacy.mjs",
+    "prebuild": "node scripts/sync-i18n-config.mjs && node scripts/sync-app-versions.mjs",
+    "build": "node scripts/build.mjs",
+    "build:en": "node scripts/build.mjs --i18n en",
+    "serve": "node scripts/build.mjs --serve",
+    "i18n:audit": "node scripts/i18n/audit.mjs",
+    "i18n:audit:strict": "node scripts/i18n/audit.mjs --fail-on-missing",
+    "validate-links": "node scripts/validate-links.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

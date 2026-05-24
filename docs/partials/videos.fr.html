@@ -1,0 +1,60 @@
+<!-- YouTube Videos Page (Layout Template) -->
+<!-- This file is hand-maintained. Video data is generated into docs/partials/videos-grid.html. -->
+<!-- Translations are applied at build-time by scripts/i18n-site-tools/generate_static_pages.py using docs/assets/i18n-sites/videos.json -->
+
+<div class="youtube-videos-page">
+    <h1 class="youtube-videos-title">📺 Vidéos YouTube</h1>
+    
+    <div class="youtube-topbar">
+        <div class="youtube-stats">
+            <div class="youtube-stat-card" data-stat="total_videos">
+                <div class="number">0</div>
+                <div class="label">Total des vidéos</div>
+            </div>
+            <div class="youtube-stat-card" data-stat="languages">
+                <div class="number">0</div>
+                <div class="label">Langues</div>
+            </div>
+            <div class="youtube-stat-card" data-stat="products">
+                <div class="number">0</div>
+                <div class="label">Produits</div>
+            </div>
+        </div>
+
+        <div class="youtube-controls" role="region" aria-label="Video controls">
+            <div class="youtube-controls-row">
+                <div class="youtube-control">
+                    <label for="yt-sort">Trier</label>
+                    <select id="yt-sort" class="youtube-select">
+                        <option value="newest">Les plus récentes</option>
+                        <option value="oldest">Les plus anciennes</option>
+                        <option value="views">Les plus vues</option>
+                    </select>
+                </div>
+
+                <div class="youtube-control">
+                    <label for="yt-filter-product">Produit</label>
+                    <select id="yt-filter-product" class="youtube-select">
+                        <option value="">Tous les produits</option>
+                    </select>
+                </div>
+
+                <div class="youtube-control">
+                    <label for="yt-filter-language">Langue</label>
+                    <select id="yt-filter-language" class="youtube-select">
+                        <option value="">Toutes les langues</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="youtube-controls-footer" aria-live="polite">
+                <span>Affichage</span>
+                <strong><span id="yt-results-visible">0</span></strong>
+                /
+                <span id="yt-results-total">0</span>
+            </div>
+        </div>
+    </div>
+    
+    {% include "partials/videos-grid.fr.html" %}
+</div>

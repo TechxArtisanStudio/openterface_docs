@@ -1,0 +1,7 @@
+.venv/
+site/
+__pycache__/
+node_modules/
+*.pyc
+.DS_Store
+config/mkdocs.generated.yml

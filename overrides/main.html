@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/brand.css' | url }}">
+  {% if page and page.file and ('product/' in page.file.src_path or 'tutorial/' in page.file.src_path) %}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/slideshow.css' | url }}">
+  {% endif %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'assets/javascripts/ecosystem-locale.js' | url }}"></script>
+  {% if page and page.file and ('product/' in page.file.src_path or 'tutorial/' in page.file.src_path) %}
+  <script src="{{ 'assets/javascripts/slideshow.js' | url }}"></script>
+  {% endif %}
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/op-footer.html" %}
+{% endblock %}
