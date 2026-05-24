@@ -1,0 +1,110 @@
+---
+/** Client behavior for legacy MkDocs embeds rendered inside doc prose. */
+---
+
+<script>
+  function initDocSlideshows() {
+    document.querySelectorAll('[data-doc-slideshow]').forEach((root) => {
+      if (root.dataset.initialized) return;
+      root.dataset.initialized = 'true';
+
+      const images = Array.from(root.querySelectorAll('.doc-slideshow__image'));
+      const dots = Array.from(root.querySelectorAll('.doc-slideshow__dot'));
+      const prev = root.querySelector('.doc-slideshow__prev');
+      const next = root.querySelector('.doc-slideshow__next');
+      if (images.length <= 1) return;
+
+      let current = 0;
+      let timer;
+
+      function show(index) {
+        current = index;
+        images.forEach((img, i) => {
+          img.classList.toggle('hidden', i !== index);
+        });
+        dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+      }
+
+      function advance(delta) {
+        show((current + delta + images.length) % images.length);
+      }
+
+      prev?.addEventListener('click', () => advance(-1));
+      next?.addEventListener('click', () => advance(1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+
+      timer = window.setInterval(() => advance(1), 5000);
+      root.addEventListener('mouseenter', () => window.clearInterval(timer));
+      root.addEventListener('mouseleave', () => {
+        timer = window.setInterval(() => advance(1), 5000);
+      });
+    });
+  }
+
+  function initSubscribeForms() {
+    document.querySelectorAll('form.subscribe-form').forEach((form) => {
+      if (form.dataset.subscribeBound === 'true') return;
+      form.dataset.subscribeBound = 'true';
+
+      const endpoint = form.dataset.subscribeEndpoint;
+      const submitBtn = form.querySelector('.subscribe-submit, .doc-product-signup__submit');
+      const statusEl = form.querySelector('[data-status]');
+      if (!endpoint || !submitBtn) return;
+
+      const defaultLabel = submitBtn.dataset.defaultLabel ?? submitBtn.textContent ?? 'Subscribe';
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const email = String(data.get('email') ?? '').trim();
+        const name = String(data.get('name') ?? '').trim();
+        if (!email) return;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Processing…';
+        statusEl?.classList.add('hidden');
+
+        try {
+          const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, name }),
+          });
+          const result = await response.json();
+          if (result?.success) {
+            submitBtn.textContent = 'Subscribed — thank you!';
+            form.reset();
+            if (statusEl) {
+              statusEl.textContent = 'Subscribed — thank you!';
+              statusEl.dataset.state = 'success';
+              statusEl.classList.remove('hidden');
+            }
+            window.setTimeout(() => {
+              submitBtn.textContent = defaultLabel;
+              submitBtn.disabled = false;
+              statusEl?.classList.add('hidden');
+            }, 4000);
+          } else {
+            throw new Error('failed');
+          }
+        } catch {
+          submitBtn.textContent = 'Something went wrong';
+          submitBtn.disabled = false;
+          if (statusEl) {
+            statusEl.textContent = 'Something went wrong. Please try again.';
+            statusEl.dataset.state = 'error';
+            statusEl.classList.remove('hidden');
+          }
+        }
+      });
+    });
+  }
+
+  function initDocEmbeds() {
+    initDocSlideshows();
+    initSubscribeForms();
+  }
+
+  initDocEmbeds();
+  document.addEventListener('astro:page-load', initDocEmbeds);
+</script>

@@ -199,6 +199,176 @@
     @apply my-4 overflow-x-auto rounded-lg bg-surface p-4 text-xs;
   }
 
+  /* Doc page legacy embeds (product landings migrated from MkDocs) */
+  .doc-slideshow {
+    @apply my-8;
+  }
+
+  .doc-slideshow__frame {
+    @apply relative mx-auto max-w-2xl overflow-hidden rounded-xl bg-gray-100;
+  }
+
+  .doc-slideshow__image {
+    @apply mx-auto block w-full object-contain;
+    max-height: 20rem;
+  }
+
+  .doc-slideshow__image.hidden {
+    display: none;
+  }
+
+  .doc-slideshow__arrow {
+    @apply absolute top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border-0 text-gray-500 transition;
+    background: rgb(255 255 255 / 0.85);
+  }
+
+  .doc-slideshow__arrow svg {
+    @apply h-4 w-4;
+  }
+
+  .doc-slideshow__prev {
+    @apply left-2;
+  }
+
+  .doc-slideshow__next {
+    @apply right-2;
+  }
+
+  .doc-slideshow__arrow:hover,
+  .doc-slideshow__arrow:focus-visible {
+    @apply text-primary-dark outline-none;
+    background: rgb(255 255 255 / 0.95);
+  }
+
+  .doc-slideshow__dots {
+    @apply absolute bottom-3 left-0 right-0 flex justify-center gap-2;
+  }
+
+  .doc-slideshow__dot {
+    @apply h-2 w-2 rounded-full border-0 bg-gray-300 p-0 transition;
+  }
+
+  .doc-slideshow__dot.is-active,
+  .doc-slideshow__dot:hover {
+    @apply bg-primary-dark;
+  }
+
+  .doc-slogan {
+    @apply my-8 rounded-xl border border-primary-dark/15 bg-brand-light/40 px-6 py-5 text-center;
+  }
+
+  .doc-slogan__title {
+    @apply m-0 text-xl font-bold text-ink md:text-2xl;
+  }
+
+  .doc-slogan__subtitle {
+    @apply mt-2 text-base text-muted;
+  }
+
+  .doc-center {
+    @apply my-6 text-center;
+  }
+
+  .doc-buy-cta-wrap {
+    @apply my-6 flex justify-center;
+  }
+
+  .doc-buy-cta {
+    @apply gap-3 px-6 py-3;
+  }
+
+  .doc-buy-cta__logo {
+    @apply h-6 w-auto shrink-0;
+    filter: brightness(0) invert(1);
+  }
+
+  .doc-funding-stats {
+    @apply my-4 inline-flex flex-wrap items-center justify-center gap-2 text-sm text-muted;
+  }
+
+  .doc-funding-stats__amount {
+    @apply font-semibold text-primary-dark;
+  }
+
+  .doc-funding-stats__sep {
+    @apply text-gray-300;
+  }
+
+  .doc-product-signup {
+    @apply my-10 rounded-xl border border-gray-200 bg-surface p-6;
+  }
+
+  .doc-product-signup__lead {
+    @apply mb-4 text-center text-sm text-muted;
+  }
+
+  .doc-product-signup__fields {
+    @apply flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch;
+  }
+
+  .doc-product-signup__input {
+    @apply min-w-0 flex-1 rounded-md border border-gray-200 bg-white px-4 py-3 text-base shadow-sm;
+  }
+
+  .doc-product-signup__input:focus {
+    @apply border-primary-dark outline-none ring-2 ring-primary-dark/20;
+  }
+
+  .doc-product-signup__submit {
+    @apply shrink-0;
+  }
+
+  .doc-product-signup__status[data-state='success'] {
+    @apply mt-3 text-center text-sm font-medium text-green-700;
+  }
+
+  .doc-product-signup__status[data-state='error'] {
+    @apply mt-3 text-center text-sm font-medium text-brand-dark;
+  }
+
+  .doc-youtube-section {
+    @apply my-10;
+  }
+
+  .doc-youtube-grid {
+    @apply grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4;
+  }
+
+  .doc-youtube-card a {
+    @apply block no-underline;
+  }
+
+  .doc-youtube-card__thumb {
+    @apply relative aspect-video overflow-hidden rounded-xl bg-gray-200 shadow-sm ring-1 ring-black/5 transition;
+  }
+
+  .doc-youtube-card:hover .doc-youtube-card__thumb {
+    @apply -translate-y-0.5 shadow-md ring-primary-dark/30;
+  }
+
+  .doc-youtube-card__thumb img {
+    @apply m-0 h-full w-full max-w-none rounded-none object-cover;
+  }
+
+  .doc-youtube-card__play {
+    @apply pointer-events-none absolute inset-0 bg-black/0 transition;
+  }
+
+  .doc-youtube-card:hover .doc-youtube-card__play {
+    background: rgb(0 0 0 / 0.12);
+  }
+
+  .doc-youtube-card__play::after {
+    content: '';
+    @apply absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-0 transition;
+    background: rgb(0 0 0 / 0.65);
+    clip-path: polygon(38% 28%, 38% 72%, 68% 50%);
+  }
+
+  .doc-youtube-card:hover .doc-youtube-card__play::after {
+    @apply opacity-100;
+  }
+
   .sidebar-link {
     @apply block rounded-md px-3 py-2 text-sm text-muted transition-colors hover:bg-brand-light hover:text-primary-dark;
   }

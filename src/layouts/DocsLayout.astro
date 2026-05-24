@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import DocEmbeds from '../components/DocEmbeds.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
 import DocsTOC from '../components/DocsTOC.astro';
 import { sidebarForSlug } from '../config/sidebar';
@@ -65,4 +66,5 @@ const editUrl = `${siteConfig.editBase}/${sourcePath}`;
 
     <DocsTOC locale={locale} headings={headings} />
   </div>
+  <DocEmbeds />
 </BaseLayout>

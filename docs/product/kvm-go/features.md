@@ -6,11 +6,11 @@ keywords: "KVM-Go features, ultra-compact KVM, built-in HDMI, 4K KVM, MicroSD KV
 
 # **Features & Specifications** | Openterface KVM-Go Series
 
-## Pre-Launch Status
+## Production & Shipping
 
-The KVM-Go Series is currently in pre-launch development. We're refining the PCB and case designs. Join our [waiting list]({{ config.extra.kvmgo_purchase_link }}) to stay updated on progress and get early access.
+The KVM-Go Series is in active production and fulfillment. Finished units are shipping to the Mouser warehouse for distribution, and Crowd Supply backers will begin receiving their orders soon. [Pre-order on Crowd Supply]({{ config.extra.kvmgo_purchase_link }}) to reserve yours.
 
-> **Note:** Features, specifications, and design are still subject to change as development continues.
+> **Note:** The VGA model is still in development; other details may be refined as manufacturing ramps up.
 
 ## Product Models
 - **KVM-Go HDMI Male** — Direct HDMI connection

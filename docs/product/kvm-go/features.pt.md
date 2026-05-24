@@ -6,11 +6,11 @@ keywords: "recursos KVM-Go, KVM ultra-compacto, HDMI integrado, KVM 4K, KVM Micr
 
 # **Recursos e especificações** | Série Openterface KVM-Go
 
-## Status pré-lançamento
+## Produção e envio
 
-A série KVM-Go está atualmente em desenvolvimento pré-lançamento. Estamos refinando os designs de PCB e caixa. Junte-se à nossa [lista de espera]({{ config.extra.kvmgo_purchase_link }}) para se manter atualizado sobre o progresso e obter acesso antecipado.
+A série KVM-Go está em produção ativa e fase de envio. As unidades finalizadas estão a caminho do armazém da Mouser para distribuição, e os apoiadores da Crowd Supply começarão a receber os pedidos em breve. [Pré-encomendar na Crowd Supply]({{ config.extra.kvmgo_purchase_link }}).
 
-> **Nota:** Recursos, especificações e design ainda estão sujeitos a alterações conforme o desenvolvimento continua.
+> **Nota:** O modelo VGA ainda está em desenvolvimento; outros detalhes podem ser refinados à medida que a produção avança.
 
 ## Modelos de produtos
 - **KVM-Go HDMI Male** — Conexão HDMI direta

@@ -6,11 +6,11 @@ keywords: "funciones KVM-Go, KVM ultracompacto, HDMI integrado, KVM 4K, KVM Micr
 
 # **Funciones y especificaciones** | Serie Openterface KVM-Go
 
-## Estado de prelanzamiento
+## Producción y envío
 
-La serie KVM-Go se encuentra actualmente en desarrollo previo al lanzamiento. Estamos perfeccionando los diseños de PCB y carcasa. Únete a nuestra [lista de espera]({{ config.extra.kvmgo_purchase_link }}) para mantenerte informado sobre el progreso y obtener acceso anticipado.
+La serie KVM-Go está en producción activa y en fase de envío. Las unidades terminadas se están enviando al almacén de Mouser para su distribución, y los patrocinadores de Crowd Supply comenzarán a recibir sus pedidos muy pronto. [Reservar en Crowd Supply]({{ config.extra.kvmgo_purchase_link }}).
 
-> **Nota:** Las funciones, especificaciones y diseño aún están sujetos a cambios a medida que continúa el desarrollo.
+> **Nota:** El modelo VGA sigue en desarrollo; otros detalles pueden perfeccionarse a medida que aumenta la producción.
 
 ## Modelos de producto
 - **KVM-Go HDMI Male** — Conexión HDMI directa

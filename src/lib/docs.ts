@@ -17,6 +17,18 @@ const MKDOCS_MACROS: Record<string, string> = {
   copyright_year: '2026',
 };
 
+/** MkDocs config.extra purchase / external links */
+const MKDOCS_EXTRA: Record<string, string> = {
+  minikvm_purchase_link: 'https://www.crowdsupply.com/techxartisan/openterface-mini-kvm',
+  kvmgo_purchase_link: 'https://www.crowdsupply.com/techxartisan/openterface-kvm-go',
+  keymod_crowdsupply_link: 'https://www.crowdsupply.com/techxartisan/openterface-keymod',
+};
+
+const ARROW_PREV =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>';
+const ARROW_NEXT =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>';
+
 export type DocFrontmatter = {
   title?: string;
   description?: string;
@@ -85,7 +97,147 @@ function inlineSnippet(snippetPath: string): string {
   let html = fs.readFileSync(full, 'utf8');
   html = html.replace(/\.\.\/\.\.\/\.\.\/\.\.\/assets\//g, '/assets/');
   html = html.replace(/\.\.\/\.\.\/assets\//g, '/assets/');
-  return `\n${html}\n`;
+  return `\n${transformLegacyEmbeds(html)}\n`;
+}
+
+function resolveMkdocsExtra(raw: string): string {
+  let md = raw;
+  md = md.replace(/\{\{\s*config\.extra\.(\w+)\s*(?:\|\s*\w+)?\s*\}\}/g, (_m, key: string) => MKDOCS_EXTRA[key] ?? '');
+  return md;
+}
+
+function stripJinjaTags(raw: string): string {
+  return raw.replace(/\{%[^%]*%\}/g, '');
+}
+
+function inlinePartial(partialPath: string, seen = new Set<string>()): string {
+  const normalized = partialPath.replace(/^partials\//, '');
+  if (seen.has(normalized)) return `<!-- circular include: ${partialPath} -->`;
+  seen.add(normalized);
+
+  const full = path.join(docsRoot(), 'partials', normalized);
+  if (!fs.existsSync(full)) return `<!-- missing partial: ${partialPath} -->`;
+
+  let html = fs.readFileSync(full, 'utf8');
+  html = stripJinjaTags(html);
+  html = resolveMkdocsExtra(html);
+  html = html.replace(/\{%\s*include\s+"([^"]+)"\s*%\}/g, (_m, nested: string) => inlinePartial(nested, seen));
+  return transformLegacyEmbeds(html);
+}
+
+function resolveIncludes(raw: string): string {
+  let md = raw;
+  let safety = 0;
+  while (/\{%\s*include\s+"[^"]+"\s*%\}/.test(md) && safety++ < 32) {
+    md = md.replace(/\{%\s*include\s+"([^"]+)"\s*%\}/g, (_m, partial: string) => inlinePartial(partial));
+  }
+  return md;
+}
+
+function transformLegacySlideshow(html: string): string {
+  if (!html.includes('slideshow-container')) return html;
+
+  const imgs = [...html.matchAll(/<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"/gi)];
+  if (!imgs.length) return html;
+
+  const imagesHtml = imgs
+    .map(([, src, alt], i) => {
+      const hidden = i === 0 ? '' : ' hidden';
+      const loading = i === 0 ? 'eager' : 'lazy';
+      return `<img src="${src}" alt="${alt}" class="doc-slideshow__image${hidden}" data-index="${i}" loading="${loading}" />`;
+    })
+    .join('\n    ');
+
+  const nav =
+    imgs.length > 1
+      ? `
+    <button type="button" class="doc-slideshow__arrow doc-slideshow__prev" aria-label="Previous image">${ARROW_PREV}</button>
+    <button type="button" class="doc-slideshow__arrow doc-slideshow__next" aria-label="Next image">${ARROW_NEXT}</button>
+    <div class="doc-slideshow__dots">
+      ${imgs.map((_, i) => `<button type="button" class="doc-slideshow__dot${i === 0 ? ' is-active' : ''}" data-dot="${i}" aria-label="Image ${i + 1}"></button>`).join('\n      ')}
+    </div>`
+      : '';
+
+  return `<div class="doc-slideshow" data-doc-slideshow>
+  <div class="doc-slideshow__frame group/slideshow">
+    ${imagesHtml}${nav}
+  </div>
+</div>`;
+}
+
+function transformMdButtons(html: string): string {
+  return html.replace(
+    /<button\s+class="md-button"\s+onclick="window\.(?:open\('|location\.href=')\s*([^'"]+)'[^"]*"[^>]*>([\s\S]*?)<\/button>/gi,
+    (_m, url: string, inner: string) => {
+      const text = inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      const imgMatch = inner.match(/<img[^>]+src="([^"]+)"[^>]*alt="([^"]*)"/i);
+      const logo = imgMatch
+        ? `<img src="${imgMatch[1]}" alt="${imgMatch[2]}" class="doc-buy-cta__logo" width="120" height="26" />`
+        : '';
+      const label = text || 'Order';
+      return `<div class="doc-buy-cta-wrap"><a href="${url.trim()}" class="btn btn-primary doc-buy-cta" target="_blank" rel="noopener noreferrer"><span>${label}</span>${logo}</a></div>`;
+    },
+  );
+}
+
+function transformProductSignup(html: string): string {
+  if (html.includes('doc-product-signup')) return html;
+  if (!html.includes('product-signup-container') && !html.includes('product-signup-form')) return html;
+
+  return `<div class="doc-product-signup" id="product-signup-form">
+  <p class="doc-product-signup__lead">Sign up to receive updates for this product. Unsubscribe anytime.</p>
+  <form class="doc-product-signup__form subscribe-form" data-subscribe-endpoint="https://subscribe.openterface.com/api/subscribe/" data-analytics-placement="product_signup_doc" novalidate>
+    <div class="doc-product-signup__fields">
+      <input type="text" name="name" autocomplete="name" placeholder="Your name (optional)" class="doc-product-signup__input" />
+      <input type="email" name="email" required autocomplete="email" placeholder="Email address *" class="doc-product-signup__input" />
+      <button type="submit" class="btn btn-primary doc-product-signup__submit subscribe-submit" data-default-label="Subscribe">Subscribe</button>
+    </div>
+    <p class="doc-product-signup__status subscribe-status hidden" role="status" aria-live="polite" data-status></p>
+  </form>
+</div>`;
+}
+
+function transformYoutubeGrid(html: string): string {
+  if (!html.includes('youtube-videos-grid')) return html;
+
+  let out = html.replace(/class="youtube-videos-grid"/g, 'class="doc-youtube-grid"');
+  out = out.replace(/class="youtube-video-card"/g, 'class="doc-youtube-card"');
+  out = out.replace(/class="youtube-video-thumbnail"/g, 'class="doc-youtube-card__thumb"');
+  out = out.replace(/class="play-overlay"/g, 'class="doc-youtube-card__play"');
+  out = out.replace(/class="skip-lightbox"/g, '');
+  return `<section class="doc-youtube-section" aria-label="Product videos">\n${out}\n</section>`;
+}
+
+function transformLegacyEmbeds(html: string): string {
+  let out = html;
+  out = transformLegacySlideshow(out);
+  out = transformProductSignup(out);
+  out = transformYoutubeGrid(out);
+  return out;
+}
+
+function transformLegacyBlocks(md: string): string {
+  let out = md;
+
+  out = out.replace(/<div\s+markdown="0">\s*/gi, '');
+  out = out.replace(/<div style="text-align:\s*center[^"]*"[^>]*>/gi, '<div class="doc-center">');
+  out = out.replace(/<div class="slogan-highlight">/g, '<div class="doc-slogan">');
+  out = out.replace(/class="slogan-text"/g, 'class="doc-slogan__title"');
+  out = out.replace(/class="slogan-subtitle"/g, 'class="doc-slogan__subtitle"');
+  out = out.replace(/class="carousel-funding-stats"/g, 'class="doc-funding-stats"');
+  out = out.replace(/class="funding-amount"/g, 'class="doc-funding-stats__amount"');
+  out = out.replace(/class="funding-text"/g, 'class="doc-funding-stats__text"');
+  out = out.replace(/class="funding-separator"/g, 'class="doc-funding-stats__sep"');
+  out = out.replace(/class="funding-backers"/g, 'class="doc-funding-stats__backers"');
+  out = out.replace(/class="funding-backers-count"/g, 'class="doc-funding-stats__backers-count"');
+
+  out = resolveIncludes(out);
+  out = resolveMkdocsExtra(out);
+  out = stripJinjaTags(out);
+  out = transformMdButtons(out);
+  out = transformLegacyEmbeds(out);
+
+  return out;
 }
 
 function parseGridCards(md: string): string {
@@ -98,7 +250,7 @@ function parseGridCards(md: string): string {
 
 /** Inner preprocessor — skips grid-card recursion. */
 function preprocessMkdocsMarkdownInner(raw: string): string {
-  let md = raw;
+  let md = transformLegacyBlocks(raw);
 
   // pymdownx snippets
   md = md.replace(/^--8<--\s+"([^"]+)"\s*$/gm, (_m, snippetPath: string) => inlineSnippet(snippetPath));
@@ -109,6 +261,7 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
   }
 
   // Material / Octicons icon shortcodes (strip — link text remains)
+  md = md.replace(/:material-[a-z0-9-]+:(?:\{[^}]*\})?\s*/gi, '');
   md = md.replace(/:fontawesome-(?:brands|solid)-[a-z0-9-]+:(?:\{[^}]*\})?\s*/gi, '');
   md = md.replace(/:octicons-[a-z0-9-]+:\s*/gi, '');
 
@@ -222,7 +375,12 @@ export function renderMarkdown(
   pageSlug?: string,
 ): { html: string; headings: DocHeading[] } {
   const md = preprocessMkdocsMarkdown(raw, locale, pageSlug);
-  const html = marked.parse(md, { async: false, gfm: true }) as string;
+  let html = marked.parse(md, { async: false, gfm: true }) as string;
+  // marked may wrap standalone HTML blocks in <p> — unwrap doc embed wrappers
+  html = html.replace(/<p>\s*(<div class="doc-(?:slideshow|slogan|center|buy|product-signup|funding|youtube)[^>]*>)/g, '$1');
+  html = html.replace(/(<\/div>)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*(<section class="doc-youtube-section"[^>]*>)/g, '$1');
+  html = html.replace(/(<\/section>)\s*<\/p>/g, '$1');
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };
 }

@@ -6,11 +6,11 @@ keywords: "KVM-Go 기능, 초소형 KVM, 내장 HDMI, 4K KVM, MicroSD KVM, 열�
 
 # **기능 및 사양** | Openterface KVM-Go 시리즈
 
-## 출시 전 상태
+## 생산 및 배송
 
-KVM-Go 시리즈는 현재 출시 전 개발 단계에 있습니다. PCB 및 케이스 디자인을 개선하고 있습니다. [대기자 명단]({{ config.extra.kvmgo_purchase_link }})에 참여하여 진행 상황을 확인하고 조기 액세스를 받으세요.
+KVM-Go 시리즈는 본격적인 생산 및 출고 단계에 있습니다. 완제품이 Mouser 창고로 운송 중이며, Crowd Supply 후원자들도 곧 제품을 받게 됩니다. [Crowd Supply에서 사전 주문]({{ config.extra.kvmgo_purchase_link }})하세요.
 
-> **참고:** 개발이 계속됨에 따라 기능, 사양 및 디자인이 변경될 수 있습니다.
+> **참고:** VGA 모델은 아직 개발 중이며, 양산이 진행되면서 다른 세부 사항이 업데이트될 수 있습니다.
 
 ## 제품 모델
 - **KVM-Go HDMI Male** — 직접 HDMI 연결
