@@ -2,6 +2,7 @@ import type { SiteLocale } from '../lib/locale';
 
 const PROD_DOCS = 'https://docs.openterface.com';
 const PROD_NEWS = 'https://news.openterface.com';
+export const SHOP_URL = 'https://shop.techxartisan.com/';
 
 const PROD_MARKETING: Record<SiteLocale, string> = {
   en: 'https://en.openterface.com',

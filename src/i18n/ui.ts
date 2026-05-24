@@ -1,4 +1,4 @@
-import { docsPath, newsPath, surfaceMarketingHost } from '../config/surface-urls';
+import { docsPath, newsPath, SHOP_URL, surfaceMarketingHost } from '../config/surface-urls';
 import { localizedPath, type SiteLocale } from '../lib/locale';
 
 export interface UiStrings {
@@ -12,6 +12,7 @@ export interface UiStrings {
     app: string;
     tutorial: string;
     about: string;
+    home: string;
     news: string;
     shop: string;
     docsBadge: string;
@@ -56,13 +57,14 @@ const en: UiStrings = {
   siteDescription:
     'Official documentation for Openterface KVM-over-USB products and software — setup guides, FAQs, and tutorials.',
   nav: {
-    docsHome: 'Docs home',
+    docsHome: 'All Docs',
     faqs: 'FAQs',
     support: 'Support',
     product: 'Product',
     app: 'App',
     tutorial: 'Tutorial',
     about: 'About',
+    home: 'Home',
     news: 'News',
     shop: 'Shop',
     docsBadge: 'Docs',
@@ -108,7 +110,8 @@ const zh: UiStrings = {
   siteDescription: 'Openterface KVM-over-USB 产品与软件的官方文档 — 安装指南、常见问题与教程。',
   nav: {
     ...en.nav,
-    docsHome: '文档首页',
+    docsHome: '全部文档',
+    home: '首页',
     faqs: '常见问题',
     support: '支持',
     product: '产品',
@@ -192,7 +195,8 @@ export function docsNav(locale: SiteLocale): NavItem[] {
     { label: ui.nav.tutorial, href: prefix('tutorial/kvm') },
     { label: ui.nav.faqs, href: prefix('faq/kvm-over-usb') },
     { label: ui.nav.support, href: prefix('support') },
+    { label: ui.nav.home, href: surfaceMarketingHost(locale), external: true },
     { label: ui.nav.news, href: newsPath(locale), external: true },
-    { label: ui.nav.shop, href: surfaceMarketingHost(locale), external: true },
+    { label: ui.nav.shop, href: SHOP_URL, external: true },
   ];
 }

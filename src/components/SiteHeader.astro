@@ -5,6 +5,7 @@ import { t } from '../i18n/ui';
 import Logo from './Logo.astro';
 import TranslateIcon from './TranslateIcon.astro';
 import DocsSearch from './DocsSearch.astro';
+import NavDropdown from './NavDropdown.astro';
 
 interface Props {
   locale: SiteLocale;
@@ -16,50 +17,31 @@ interface Props {
 const { locale, currentPath, currentSearch = '', searchIndex } = Astro.props;
 const ui = t(locale);
 const nav = docsNav(locale);
-const productLinks = nav.find((item) => item.label === ui.nav.product)?.children ?? [];
+const productItem = nav.find((item) => item.children);
+const productLinks = productItem?.children ?? [];
 const primaryLinks = nav.filter(
-  (item) => item.label !== ui.nav.product && !item.external && item.href !== localizedPath(locale),
+  (item) => !item.children && !item.external && item.href !== localizedPath(locale),
 );
 const externalLinks = nav.filter((item) => item.external);
 const homeHref = localizedPath(locale);
 ---
 
 <header class="site-header sticky top-0 z-50 bg-primary-dark shadow-md">
-  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4">
-    <a href={homeHref} class="flex shrink-0 items-center gap-2">
+  <div class="site-header__inner">
+    <a href={homeHref} class="site-header__brand">
       <Logo variant="onPrimary" />
       <span class="hidden text-sm font-medium text-white/90 sm:inline">{ui.nav.docsBadge}</span>
     </a>
 
-    <nav class="hidden items-center gap-1 xl:flex" aria-label="Main navigation">
+    <nav class="site-header__nav" aria-label="Main navigation">
       {
         nav.map((item) =>
           item.children ? (
-            <div class="group relative">
-              <button
-                type="button"
-                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/15"
-                aria-haspopup="true"
-              >
-                {item.label} ▾
-              </button>
-              <div class="invisible absolute left-0 top-full z-50 min-w-[220px] rounded-lg border border-gray-200 bg-white py-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
-                {
-                  item.children.map((child) => (
-                    <a
-                      href={child.href}
-                      class="block px-4 py-2 text-sm text-ink hover:bg-brand-light hover:text-primary-dark"
-                    >
-                      {child.label}
-                    </a>
-                  ))
-                }
-              </div>
-            </div>
+            <NavDropdown label={item.label} children={item.children} />
           ) : (
             <a
               href={item.href}
-              class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/15"
+              class="site-header__nav-link"
               target={item.external ? '_blank' : undefined}
               rel={item.external ? 'noopener noreferrer' : undefined}
             >
@@ -70,12 +52,12 @@ const homeHref = localizedPath(locale);
       }
     </nav>
 
-    <div class="flex flex-1 items-center justify-end gap-2 xl:flex-none">
-      <DocsSearch locale={locale} searchIndex={searchIndex} class="hidden min-w-0 flex-1 sm:block sm:max-w-xs lg:max-w-sm xl:max-w-md" />
+    <div class="site-header__toolbar">
+      <DocsSearch locale={locale} searchIndex={searchIndex} class="hidden min-w-0 sm:block sm:max-w-xs lg:max-w-sm xl:max-w-md" />
 
       <details class="locale-switcher relative hidden sm:block">
         <summary
-          class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-white/40 text-white hover:bg-white/10"
+          class="site-header__icon-btn"
           aria-label={`Language: ${LOCALE_LABELS[locale]}`}
         >
           <TranslateIcon />
@@ -102,7 +84,7 @@ const homeHref = localizedPath(locale);
 
       <details class="mobile-nav relative xl:hidden">
         <summary
-          class="mobile-nav-toggle flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-white/40 text-white hover:bg-white/10"
+          class="site-header__icon-btn mobile-nav-toggle"
           aria-label="Open menu"
         >
           <svg class="mobile-nav-icon-open h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -113,10 +95,10 @@ const homeHref = localizedPath(locale);
           </svg>
         </summary>
 
-        <div class="mobile-nav-backdrop fixed inset-0 top-14 z-40 bg-black/45"></div>
+        <div class="mobile-nav-backdrop fixed inset-0 top-[var(--site-header-height)] z-40 bg-black/45"></div>
 
         <nav
-          class="mobile-nav-panel fixed inset-x-0 top-14 z-50 border-b border-gray-200 bg-white shadow-lg"
+          class="mobile-nav-panel fixed inset-x-0 top-[var(--site-header-height)] z-50 border-b border-gray-200 bg-white shadow-lg"
           aria-label="Mobile navigation"
         >
           <div class="mx-auto max-h-[min(75vh,36rem)] max-w-7xl overflow-y-auto overscroll-contain px-3 py-2 sm:px-4 sm:py-3">
@@ -126,14 +108,18 @@ const homeHref = localizedPath(locale);
 
             <a href={homeHref} class="mobile-nav-link mobile-nav-link--home">{ui.nav.docsHome}</a>
 
-            <div class="mobile-nav-section">
-              <p class="mobile-nav-section-label">{ui.nav.product}</p>
-              <div class="mobile-nav-section-links">
-                {productLinks.map((child) => (
-                  <a href={child.href} class="mobile-nav-link">{child.label}</a>
-                ))}
-              </div>
-            </div>
+            {
+              productItem && (
+                <div class="mobile-nav-section">
+                  <p class="mobile-nav-section-label">{productItem.label}</p>
+                  <div class="mobile-nav-section-links">
+                    {productLinks.map((child) => (
+                      <a href={child.href} class="mobile-nav-link">{child.label}</a>
+                    ))}
+                  </div>
+                </div>
+              )
+            }
 
             <div class="mobile-nav-section">
               <p class="mobile-nav-section-label">{ui.mobile.sections}</p>
@@ -206,9 +192,45 @@ const homeHref = localizedPath(locale);
   })();
 </script>
 
+<script>
+  function initNavDropdowns() {
+    document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+      if (dropdown.dataset.initialized) return;
+      dropdown.dataset.initialized = 'true';
+
+      dropdown.addEventListener('toggle', () => {
+        if (!(dropdown instanceof HTMLDetailsElement) || !dropdown.open) return;
+        document.querySelectorAll('.nav-dropdown[open]').forEach((other) => {
+          if (other !== dropdown && other instanceof HTMLDetailsElement) other.open = false;
+        });
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
+        if (dropdown instanceof HTMLDetailsElement && !dropdown.contains(target)) {
+          dropdown.open = false;
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
+        if (dropdown instanceof HTMLDetailsElement) dropdown.open = false;
+      });
+    });
+  }
+
+  initNavDropdowns();
+  document.addEventListener('astro:page-load', initNavDropdowns);
+</script>
+
 <style>
-  .mobile-nav summary::-webkit-details-marker,
-  .locale-switcher summary::-webkit-details-marker {
+  .locale-switcher summary::-webkit-details-marker,
+  .mobile-nav summary::-webkit-details-marker {
     display: none;
   }
 
