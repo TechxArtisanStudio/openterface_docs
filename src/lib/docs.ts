@@ -145,6 +145,81 @@ function calloutIcon(type: string): string {
   return `<span class="callout-icon" aria-hidden="true">${glyph}</span>`;
 }
 
+const MATERIAL_CARD_ICONS: Record<string, string> = {
+  usb: '⎓',
+  lan: '⛓',
+  'check-circle-outline': '✓',
+  'cloud-outline': '☁',
+};
+
+function transformFaqHeadings(md: string): string {
+  let out = md.replace(
+    /^##\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
+    (_m, title: string, id: string) => `<h2 class="doc-faq-question" id="${id}">${title.trim()}</h2>\n`,
+  );
+  out = out.replace(
+    /^##\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*$/gim,
+    (_m, title: string) => `<h2 class="doc-faq-question">${title.trim()}</h2>\n`,
+  );
+  out = out.replace(
+    /\*\*:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\*\*/g,
+    '<p class="doc-faq-question doc-faq-question--inline"><strong>$1</strong></p>',
+  );
+  return out.replace(
+    /^##\s+(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
+    (_m, title: string, id: string) => `<h2 id="${id}">${title.trim()}</h2>\n`,
+  );
+}
+
+function transformGridCardIcons(md: string): string {
+  return md.replace(
+    /^-\s+:material-([a-z0-9-]+):\{\s*\.lg\s*\}\s+(\*\*[^*]+\*\*[^\n]*)/gim,
+    (_m, icon: string, rest: string) => {
+      const glyph = MATERIAL_CARD_ICONS[icon] ?? '•';
+      return `- <span class="doc-card-icon" aria-hidden="true">${glyph}</span> ${rest}`;
+    },
+  );
+}
+
+function transformMkdocsImages(md: string): string {
+  return md.replace(/!\[([^\]]*)\]\(([^)]+)\)(\{:[^}]+\})?/g, (_m, alt: string, src: string, attrs?: string) => {
+    let cleanSrc = src;
+    let themeClass = '';
+
+    if (/#only-dark$/i.test(src)) {
+      cleanSrc = src.replace(/#only-dark$/i, '');
+      themeClass = 'doc-img-dark';
+    } else if (/#only-light$/i.test(src)) {
+      cleanSrc = src.replace(/#only-light$/i, '');
+      themeClass = 'doc-img-light';
+    }
+
+    let inlineStyle = '';
+    if (attrs) {
+      const styleMatch = attrs.match(/style="([^"]+)"/);
+      if (styleMatch) inlineStyle = styleMatch[1];
+    }
+
+    const maxHeightMatch = inlineStyle.match(/max-height:\s*(\d+)/i);
+    const maxHeight = maxHeightMatch ? Number(maxHeightMatch[1]) : null;
+    const isInlineIcon = maxHeight !== null && maxHeight <= 32;
+    const isDiagram = /\/usbkvm\//i.test(cleanSrc) || (cleanSrc.endsWith('.svg') && !isInlineIcon);
+
+    const classes = [
+      themeClass,
+      isInlineIcon ? 'doc-inline-icon' : '',
+      isDiagram ? 'doc-diagram' : '',
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+    const classAttr = classes ? ` class="${classes}"` : '';
+    const styleAttr = inlineStyle ? ` style="${inlineStyle}"` : '';
+    const altAttr = alt ? ` alt="${alt}"` : ' alt=""';
+    return `<img src="${cleanSrc}"${altAttr} loading="lazy"${classAttr}${styleAttr} />`;
+  });
+}
+
 function transformLegacySlideshow(html: string): string {
   if (!html.includes('slideshow-container')) return html;
 
@@ -298,6 +373,11 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
     md = md.replaceAll(`{{${key}}}`, value);
   }
 
+  // FAQ headings, card icons, and MkDocs image attrs (before generic icon stripping)
+  md = transformFaqHeadings(md);
+  md = transformGridCardIcons(md);
+  md = transformMkdocsImages(md);
+
   // Material / Octicons icon shortcodes (strip — link text remains)
   md = md.replace(/:material-[a-z0-9-]+:(?:\{[^}]*\})?\s*/gi, '');
   md = md.replace(/:fontawesome-(?:brands|solid)-[a-z0-9-]+:(?:\{[^}]*\})?\s*/gi, '');
@@ -338,13 +418,8 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
     return `<pre class="mermaid">${code.trim()}</pre>\n\n`;
   });
 
-  // pymdownx attr_list on images/links
-  md = md.replace(/(\!\[[^\]]*\]\([^)]+\))\{:[^}]+\}/g, '$1');
+  // pymdownx attr_list remnants on links
   md = md.replace(/(\]\([^)]+\))\{:[^}]+\}/g, '$1');
-
-  // Material emoji icon fragments (#only-light) etc.
-  md = md.replace(/#only-light\)/g, ')');
-  md = md.replace(/#only-dark\)/g, ')');
 
   // Absolute internal doc links → site paths
   md = md.replace(/\]\(\/app\)/g, '](/app/overview/)');
@@ -394,17 +469,21 @@ function extractHeadings(html: string): DocHeading[] {
   while ((match = re.exec(html)) !== null) {
     const depth = Number(match[1]);
     const text = match[2].replace(/<[^>]+>/g, '').trim();
-    if (text) headings.push({ depth, text, id: slugify(text) });
+    if (!text) continue;
+    const idMatch = match[0].match(/\bid="([^"]+)"/);
+    const id = idMatch?.[1] ?? slugify(text);
+    headings.push({ depth, text, id });
   }
   return headings;
 }
 
 function injectHeadingIds(html: string, headings: DocHeading[]): string {
   let i = 0;
-  return html.replace(/<h([2-3])>/gi, (match, depth) => {
+  return html.replace(/<h([2-3])([^>]*)>/gi, (match, depth, attrs) => {
+    if (/\bid=/.test(attrs)) return match;
     const heading = headings[i++];
     if (!heading) return match;
-    return `<h${depth} id="${heading.id}">`;
+    return `<h${depth}${attrs} id="${heading.id}">`;
   });
 }
 
@@ -421,6 +500,10 @@ export function renderMarkdown(
   html = html.replace(/<p>\s*(<section class="doc-youtube-section"[^>]*>)/g, '$1');
   html = html.replace(/(<\/section>)\s*<\/p>/g, '$1');
   html = html.replace(/<p>\s*(<section class="doc-social-posts-section"[^>]*>)/g, '$1');
+  html = html.replace(/<p>\s*(<h2 class="doc-faq-question"[^>]*>)/g, '$1');
+  html = html.replace(/(<\/h2>)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*(<img class="doc-(?:diagram|inline-icon|img-light|img-dark)[^>]*>)/g, '$1');
+  html = html.replace(/(<img class="doc-(?:diagram|inline-icon|img-light|img-dark)[^>]*>)\s*<\/p>/g, '$1');
   html = transformMediaCoverage(html);
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };

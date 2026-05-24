@@ -91,11 +91,87 @@
     @apply max-w-full rounded-lg;
   }
 
-  .prose-docs img:not([width]) {
+  .prose-docs img:not([width]):not(.doc-inline-icon):not(.doc-diagram) {
     @apply my-6 block;
     width: auto;
     height: auto;
     margin-inline: auto;
+  }
+
+  .doc-faq-question {
+    @apply mt-10 mb-4 flex scroll-mt-24 items-start gap-3 text-xl font-bold text-ink md:text-2xl;
+  }
+
+  .doc-faq-question:not(.doc-faq-question--inline)::before {
+    content: '?';
+    @apply mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-light text-sm font-bold text-primary-dark;
+  }
+
+  .doc-faq-question--inline {
+    @apply my-4 flex items-start gap-3 rounded-lg border border-gray-200 bg-surface px-4 py-3;
+  }
+
+  .doc-faq-question--inline::before {
+    content: '?';
+    @apply mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-light text-xs font-bold text-primary-dark;
+  }
+
+  .doc-faq-question--inline strong {
+    @apply font-semibold text-ink;
+  }
+
+  .doc-diagram {
+    @apply my-6 w-full max-w-2xl;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  .doc-diagram.doc-img-light {
+    display: block;
+  }
+
+  .doc-diagram.doc-img-dark {
+    display: none;
+  }
+
+  .doc-inline-icon {
+    @apply m-0 align-middle;
+    width: auto;
+    height: auto;
+    max-height: 1.25rem;
+    margin-inline: 0.125rem;
+  }
+
+  .doc-inline-icon.doc-img-light {
+    display: inline-block;
+  }
+
+  .doc-inline-icon.doc-img-dark {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .doc-diagram.doc-img-light,
+    .doc-inline-icon.doc-img-light {
+      display: none;
+    }
+
+    .doc-diagram.doc-img-dark {
+      display: block;
+    }
+
+    .doc-inline-icon.doc-img-dark {
+      display: inline-block;
+    }
+  }
+
+  .doc-card-icon {
+    @apply mr-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-light text-base font-bold text-primary-dark;
+    vertical-align: middle;
+  }
+
+  .doc-grid-cards > ul > li > p:first-child {
+    @apply flex items-center gap-2;
   }
 
   .doc-media-coverage {
