@@ -208,11 +208,30 @@ function transformYoutubeGrid(html: string): string {
   return `<section class="doc-youtube-section" aria-label="Product videos">\n${out}\n</section>`;
 }
 
+function transformSocialPosts(html: string): string {
+  if (!html.includes('social-posts-container')) return html;
+
+  let out = html.replace(/<script[\s\S]*?<\/script>\s*/gi, '');
+  out = out.replace(/<link[^>]*>\s*/gi, '');
+
+  // Minimal Twitter embed markup for widgets.js (legacy snippets often ship empty <p> bodies)
+  out = out.replace(
+    /<blockquote class="twitter-tweet"[^>]*>[\s\S]*?<a href="(https:\/\/twitter\.com\/[^"]+)"><\/a><\/blockquote>/gi,
+    '<blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><a href="$1"></a></blockquote>',
+  );
+
+  out = out.replace(/class="social-posts-container"[^>]*/g, 'class="doc-social-posts"');
+  out = out.replace(/class="social-post-item/g, 'class="doc-social-post__item');
+
+  return `<section class="doc-social-posts-section" aria-label="Community posts">\n${out}\n</section>`;
+}
+
 function transformLegacyEmbeds(html: string): string {
   let out = html;
   out = transformLegacySlideshow(out);
   out = transformProductSignup(out);
   out = transformYoutubeGrid(out);
+  out = transformSocialPosts(out);
   return out;
 }
 
@@ -381,6 +400,7 @@ export function renderMarkdown(
   html = html.replace(/(<\/div>)\s*<\/p>/g, '$1');
   html = html.replace(/<p>\s*(<section class="doc-youtube-section"[^>]*>)/g, '$1');
   html = html.replace(/(<\/section>)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*(<section class="doc-social-posts-section"[^>]*>)/g, '$1');
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };
 }

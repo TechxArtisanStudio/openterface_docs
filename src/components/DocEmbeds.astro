@@ -100,9 +100,79 @@
     });
   }
 
+  function loadTwitterWidgets() {
+    return new Promise((resolve) => {
+      if (window.twttr?.widgets) {
+        resolve(window.twttr);
+        return;
+      }
+
+      const existing = document.querySelector('script[data-twitter-widgets]');
+      if (existing) {
+        existing.addEventListener('load', () => resolve(window.twttr));
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.async = true;
+      script.dataset.twitterWidgets = 'true';
+      script.onload = () => resolve(window.twttr);
+      document.head.appendChild(script);
+    });
+  }
+
+  function activateSocialPost(item) {
+    item.classList.remove('loading');
+    item.classList.add('loaded');
+  }
+
+  function initSocialPosts() {
+    const container = document.querySelector('.doc-social-posts');
+    if (!container || container.dataset.initialized) return;
+    container.dataset.initialized = 'true';
+
+    const items = Array.from(container.querySelectorAll('.doc-social-post__item[data-lazy="true"]'));
+    if (!items.length) return;
+
+    const renderWidgets = () => {
+      loadTwitterWidgets().then((twttr) => {
+        if (twttr?.widgets?.load) {
+          twttr.widgets.load(container);
+        }
+      });
+    };
+
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(activateSocialPost);
+      renderWidgets();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          activateSocialPost(entry.target);
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: '80px 0px', threshold: 0.05 },
+    );
+
+    items.forEach((item) => observer.observe(item));
+    renderWidgets();
+
+    window.setTimeout(() => {
+      items.forEach(activateSocialPost);
+      renderWidgets();
+    }, 2500);
+  }
+
   function initDocEmbeds() {
     initDocSlideshows();
     initSubscribeForms();
+    initSocialPosts();
   }
 
   initDocEmbeds();
