@@ -171,6 +171,30 @@
     display: none;
   }
 
+  .doc-grid-cards {
+    @apply my-6 grid gap-4 sm:grid-cols-2;
+  }
+
+  .doc-grid-cards > ul {
+    @apply col-span-full grid list-none gap-4 p-0 sm:grid-cols-2;
+  }
+
+  .doc-grid-cards > ul > li {
+    @apply list-none rounded-lg border border-gray-200 bg-surface p-4;
+  }
+
+  .doc-grid-cards > ul > li > hr {
+    @apply my-3 border-gray-200;
+  }
+
+  .doc-grid-cards > ul > li > p {
+    @apply mb-2 text-sm leading-relaxed;
+  }
+
+  .doc-grid-cards > ul > li > h3 {
+    @apply mt-0 mb-2 text-base font-semibold;
+  }
+
   .mermaid {
     @apply my-4 overflow-x-auto rounded-lg bg-surface p-4 text-xs;
   }

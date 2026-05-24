@@ -3,9 +3,19 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { sidebarSlugsForPage } from '../config/sidebar';
+import { newsPath } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, type SiteLocale } from './locale';
 
 const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro'] as const;
+
+/** MkDocs extra macros — keep in sync with archive/mkdocs/mkdocs.yml */
+const MKDOCS_MACROS: Record<string, string> = {
+  qt_version: '0.5.23',
+  android_version: '1.2.2',
+  macos_version: '2.1',
+  qt_linux_stable: '0.3.19',
+  copyright_year: '2026',
+};
 
 export type DocFrontmatter = {
   title?: string;
@@ -78,16 +88,33 @@ function inlineSnippet(snippetPath: string): string {
   return `\n${html}\n`;
 }
 
-/** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
-export function preprocessMkdocsMarkdown(raw: string): string {
+function parseGridCards(md: string): string {
+  return md.replace(/<div class="grid cards" markdown>\s*([\s\S]*?)<\/div>/gi, (_m, inner: string) => {
+    const body = preprocessMkdocsMarkdownInner(inner.trim());
+    const html = marked.parse(body, { async: false, gfm: true }) as string;
+    return `<div class="doc-grid-cards">\n${html}\n</div>\n\n`;
+  });
+}
+
+/** Inner preprocessor — skips grid-card recursion. */
+function preprocessMkdocsMarkdownInner(raw: string): string {
   let md = raw;
 
   // pymdownx snippets
   md = md.replace(/^--8<--\s+"([^"]+)"\s*$/gm, (_m, snippetPath: string) => inlineSnippet(snippetPath));
 
-  // pymdownx.details (??? type "Title")
+  // MkDocs extra macros
+  for (const [key, value] of Object.entries(MKDOCS_MACROS)) {
+    md = md.replaceAll(`{{${key}}}`, value);
+  }
+
+  // Material / Octicons icon shortcodes (strip — link text remains)
+  md = md.replace(/:fontawesome-(?:brands|solid)-[a-z0-9-]+:(?:\{[^}]*\})?\s*/gi, '');
+  md = md.replace(/:octicons-[a-z0-9-]+:\s*/gi, '');
+
+  // pymdownx.details (???[+]? type "Title")
   md = md.replace(
-    /^\?\?\? (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gm,
+    /^\?\?\?\+? (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gm,
     (_match, type: string, title: string | undefined, body: string) => {
       const lines = body
         .split('\n')
@@ -139,6 +166,35 @@ export function preprocessMkdocsMarkdown(raw: string): string {
   return md;
 }
 
+/** Point legacy in-doc update links at news.openterface.com. */
+function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): string {
+  let out = md.replace(/\]\(\/app\/updates\)/g, `](${newsPath(locale, 'software')})`);
+
+  out = out.replace(/\]\(updates\/([^)]+)\)/g, (_m, file: string) => {
+    let slug = file.replace(/\.md$/, '');
+    for (const loc of LOCALE_SUFFIXES) {
+      if (slug.endsWith(`.${loc}`)) {
+        slug = slug.slice(0, -(loc.length + 1));
+        break;
+      }
+    }
+    if (pageSlug.startsWith('product/')) {
+      const product = pageSlug.split('/')[1];
+      return `](${newsPath(locale, `product/${product}/${slug}`)})`;
+    }
+    return `](${newsPath(locale, `software/${slug}`)})`;
+  });
+
+  return out;
+}
+
+/** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
+export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageSlug?: string): string {
+  let md = preprocessMkdocsMarkdownInner(raw);
+  if (locale && pageSlug) md = rewriteNewsLinks(md, locale, pageSlug);
+  return parseGridCards(md);
+}
+
 function extractHeadings(html: string): DocHeading[] {
   const headings: DocHeading[] = [];
   const re = /<h([2-3])[^>]*>(.*?)<\/h\1>/gi;
@@ -160,8 +216,12 @@ function injectHeadingIds(html: string, headings: DocHeading[]): string {
   });
 }
 
-export function renderMarkdown(raw: string): { html: string; headings: DocHeading[] } {
-  const md = preprocessMkdocsMarkdown(raw);
+export function renderMarkdown(
+  raw: string,
+  locale?: SiteLocale,
+  pageSlug?: string,
+): { html: string; headings: DocHeading[] } {
+  const md = preprocessMkdocsMarkdown(raw, locale, pageSlug);
   const html = marked.parse(md, { async: false, gfm: true }) as string;
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };
@@ -200,7 +260,7 @@ export function collectDocPages(): DocPage[] {
         const match = source.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n([\s\S]*)$/);
         content = match ? match[1] : source;
       }
-      const { html, headings } = renderMarkdown(content);
+      const { html, headings } = renderMarkdown(content, locale, slug);
 
       pages.push({
         slug,
