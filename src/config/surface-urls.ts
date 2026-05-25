@@ -17,6 +17,7 @@ const PROD_MARKETING: Record<SiteLocale, string> = {
   zh: 'https://cn.openterface.com',
   hk: 'https://hk.openterface.com',
   tw: 'https://tw.openterface.com',
+  ar: 'https://ar.openterface.com',
   ru: 'https://ru.openterface.com',
 };
 
@@ -34,6 +35,7 @@ const DEV_MARKETING: Partial<Record<SiteLocale, string | undefined>> = {
   hk: import.meta.env.PUBLIC_OP_DEV_MARKETING_HK,
   tw: import.meta.env.PUBLIC_OP_DEV_MARKETING_TW,
   ru: import.meta.env.PUBLIC_OP_DEV_MARKETING_RU,
+  ar: import.meta.env.PUBLIC_OP_DEV_MARKETING_AR,
 };
 
 export function surfaceDocsBase(): string {

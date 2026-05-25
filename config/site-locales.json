@@ -52,6 +52,10 @@
     "ru": {
       "label": "Русский",
       "path": "ru"
+    },
+    "ar": {
+      "label": "العربية",
+      "path": "ar"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"
