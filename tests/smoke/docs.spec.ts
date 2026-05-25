@@ -57,6 +57,50 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.getByText('即将推出')).toBeVisible();
   });
 
+  test('keymod overview shows variants grid before support CTA', async ({ page }) => {
+    await page.goto('/product/keymod/');
+    const variants = page.locator('.doc-keymod-variants');
+    const cta = page.locator('.doc-buy-cta');
+    await expect(variants).toBeVisible();
+    await expect(page.getByText('2-in-1 Connector Version')).toBeVisible();
+    await expect(page.getByText('USB C Version')).toBeVisible();
+    await expect(cta).toBeVisible();
+    const variantsBeforeCta = await variants.evaluate((el) => {
+      const buy = document.querySelector('.doc-buy-cta');
+      return buy ? (el.compareDocumentPosition(buy) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 : false;
+    });
+    expect(variantsBeforeCta).toBe(true);
+  });
+
+  test('zh keymod overview shows localized variants grid', async ({ page }) => {
+    await page.goto('/zh/product/keymod/');
+    await expect(page.locator('.doc-keymod-variants')).toBeVisible();
+    await expect(page.getByText('2 合 1 连接器版本')).toBeVisible();
+    await expect(page.getByText('USB C 版本')).toBeVisible();
+  });
+
+  test('minikvm overview shows package options before order CTA', async ({ page }) => {
+    await page.goto('/product/minikvm/');
+    const packages = page.locator('.doc-minikvm-packages');
+    const cta = page.locator('.doc-buy-cta');
+    await expect(packages).toBeVisible();
+    await expect(page.getByText('Basic Package')).toBeVisible();
+    await expect(page.getByText('Toolkit Package')).toBeVisible();
+    await expect(cta).toBeVisible();
+    const packagesBeforeCta = await packages.evaluate((el) => {
+      const buy = document.querySelector('.doc-buy-cta');
+      return buy ? (el.compareDocumentPosition(buy) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 : false;
+    });
+    expect(packagesBeforeCta).toBe(true);
+  });
+
+  test('zh minikvm overview shows localized package options', async ({ page }) => {
+    await page.goto('/zh/product/minikvm/');
+    await expect(page.locator('.doc-minikvm-packages')).toBeVisible();
+    await expect(page.getByText('基础包装')).toBeVisible();
+    await expect(page.getByText('工具包包装')).toBeVisible();
+  });
+
   test('kvm-go how-to-connect has sidebar, callouts, and search', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('/product/kvm-go/how-to-connect/');
@@ -92,6 +136,17 @@ test.describe('docs full corpus smoke', () => {
     await expect(page).toHaveTitle(/Openterface 文档/);
     await expect(page.getByRole('link', { name: '文档' }).first()).toBeVisible();
     await expect(page.locator('aside.docs-sidebar').getByText(/KVM-Go 系列/)).toBeVisible();
+  });
+
+  test('zh minikvm sidebar shows translated support labels', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('/zh/product/minikvm/support/mini-kvm-troubleshooting-and-support/');
+    const sidebar = page.locator('aside.docs-sidebar');
+    await expect(sidebar.getByText('故障排查')).toBeVisible();
+    await expect(sidebar.getByText('诊断自检指南（macOS）')).toBeVisible();
+    await expect(sidebar.getByText('诊断自检指南（Windows）')).toBeVisible();
+    await expect(sidebar.getByText('键盘和鼠标控制')).toBeVisible();
+    await expect(sidebar.getByText('Troubleshooting')).toHaveCount(0);
   });
 
   test('faq page loads', async ({ page }) => {

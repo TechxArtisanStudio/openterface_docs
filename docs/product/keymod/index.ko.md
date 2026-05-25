@@ -13,6 +13,28 @@ keywords: "KeyMod, HID 에뮬레이터, 폰 키보드, 블루투스 키보드, U
   <div class="slogan-subtitle">기술, 전문가 및 게이밍을 위한 프로그래밍 가능한 키보드 및 마우스 제어.</div>
 </div>
 
+2024년 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)과 2025년 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go) 캠페인의 성공에 이어, 새로운 일상 제어 도구를 선보입니다: **Openterface KeyMod**.
+
+컴팩트하고 프로그래밍 가능한 **USB + 블루투스** HID(키보드 및 마우스) 에뮬레이터인 KeyMod는 휴대폰을 휴대용 키보드와 트랙패드 콘솔로 바꿔 빠른 로컬 제어와 워크플로우 단축키를 제공합니다. Openterface Mini-KVM의 검증된 HID 코어를 기반으로 하며, 플러그 앤 플레이, 100% 오픈소스입니다.
+
+<div class="doc-keymod-variants">
+  <p class="doc-keymod-variants__title">예정된 변형</p>
+  <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Openterface KeyMod 시리즈" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
+  <div class="doc-keymod-variants__grid">
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
+      <p class="doc-keymod-variants__name">2-in-1 커넥터 버전</p>
+      <p class="doc-keymod-variants__desc">노트북, 태블릿, 스마트폰과의 광범위한 호환성을 위한 USB A + USB C 복합 플러그 설계</p>
+    </div>
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">USB C 버전</p>
+      <p class="doc-keymod-variants__desc">현대 기기 및 깔끔한 케이블 관리를 위한 전용 USB C 플러그</p>
+    </div>
+  </div>
+  <p class="doc-keymod-variants__note">두 변형 모두 동일한 핵심 기능을 공유합니다: 블루투스 HID 키보드 및 마우스, 사용자 정의 프로필, 매크로, 게임패드 모드.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.keymod_crowdsupply_link }}', '_blank')">
     지금 후원하기
@@ -23,11 +45,6 @@ keywords: "KeyMod, HID 에뮬레이터, 폰 키보드, 블루투스 키보드, U
       style="vertical-align: middle; height: 26px; margin-left: 8px;">
   </button>
 </div>
-
-
-2024년 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)과 2025년 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go) 캠페인의 성공에 이어, 새로운 일상 제어 도구를 선보입니다: **Openterface KeyMod**.
-
-컴팩트하고 프로그래밍 가능한 **USB + 블루투스** HID(키보드 및 마우스) 에뮬레이터인 KeyMod는 휴대폰을 휴대용 키보드와 트랙패드 콘솔로 바꿔 빠른 로컬 제어와 워크플로우 단축키를 제공합니다. Openterface Mini-KVM의 검증된 HID 코어를 기반으로 하며, 플러그 앤 플레이, 100% 오픈소스입니다.
 
 <div class="grid cards" markdown>
 
@@ -78,9 +95,3 @@ keywords: "KeyMod, HID 에뮬레이터, 폰 키보드, 블루투스 키보드, U
 {% include "partials/videos-grid-keymod.html" %}
 </div>
 
-## 예정된 변형
-
-- **2-in-1 커넥터 버전** — 노트북, 태블릿, 스마트폰과의 광범위한 호환성을 위한 USB A + USB C 복합 플러그 설계
-- **USB C 버전** — 현대 기기 및 깔끔한 케이블 관리를 위한 전용 USB C 플러그
-
-두 변형 모두 동일한 핵심 기능을 공유합니다: 블루투스 HID 키보드 및 마우스, 사용자 정의 프로필, 매크로, 게임패드 모드.

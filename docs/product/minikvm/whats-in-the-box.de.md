@@ -22,7 +22,7 @@ keywords: "Mini-KVM, KVM Switch, HDMI KVM, USB KVM, headless Steuerung, Computer
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Bestellen <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "Unsere Empfehlung"
-**Wählen Sie das Toolkit Paket** für die beste Erfahrung! Es ist nicht nur kosteneffizienter, sondern alle Zubehörteile sind qualitätsgetestet und garantiert perfekt mit unserem Mini-KVM Gerät zu funktionieren.
+    **Wählen Sie das Toolkit Paket** für die beste Erfahrung! Es ist nicht nur kosteneffizienter, sondern alle Zubehörteile sind qualitätsgetestet und garantiert perfekt mit unserem Mini-KVM Gerät zu funktionieren.
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, KVM Switch, HDMI KVM, USB KVM, headless Steuerung, Computer
 
 !!! warning "Kabelqualitäts-Anforderungen"
     **Wichtig**: Die Verwendung von schlechter Qualität oder inkompatiblen USB-C Kabeln kann zu folgenden Problemen führen:
-
+    
     - Verbindungsfehlern oder intermittierender Konnektivität
     - Reduzierter Stromversorgung, die die Geräteleistung beeinträchtigt
     - Datenübertragungsproblemen oder langsamen Antwortzeiten
     - Möglichen Schäden an angeschlossenen Geräten
-
+    
     **Wir empfehlen dringend das Toolkit Paket** für garantierte Kompatibilität und optimale Leistung.
 
 ---

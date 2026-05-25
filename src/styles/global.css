@@ -491,15 +491,21 @@
     @apply text-gray-300;
   }
 
-  .doc-kvm-go-models {
+  .doc-kvm-go-models,
+  .doc-keymod-variants,
+  .doc-minikvm-packages {
     @apply my-6 rounded-xl border border-gray-200 bg-surface/80 px-4 py-5 md:px-6;
   }
 
-  .doc-kvm-go-models__title {
+  .doc-kvm-go-models__title,
+  .doc-keymod-variants__title,
+  .doc-minikvm-packages__title {
     @apply m-0 mb-4 text-center text-sm font-semibold uppercase tracking-wide text-muted;
   }
 
-  .doc-kvm-go-models__photo {
+  .doc-kvm-go-models__photo,
+  .doc-keymod-variants__photo,
+  .doc-minikvm-packages__photo {
     @apply mx-auto mb-4 block max-h-32 object-contain;
   }
 
@@ -507,35 +513,56 @@
     @apply grid gap-3 sm:grid-cols-3;
   }
 
-  .doc-kvm-go-models__card {
+  .doc-keymod-variants__grid,
+  .doc-minikvm-packages__grid {
+    @apply grid gap-3 sm:grid-cols-2;
+  }
+
+  .doc-kvm-go-models__card,
+  .doc-keymod-variants__card,
+  .doc-minikvm-packages__card {
     @apply rounded-lg border border-gray-200 bg-surface p-4 text-center;
+  }
+
+  .doc-minikvm-packages__card--featured {
+    @apply border-primary-dark/25 bg-brand-light/30;
   }
 
   .doc-kvm-go-models__card--soon {
     @apply border-dashed opacity-75;
   }
 
-  .doc-kvm-go-models__badge {
+  .doc-kvm-go-models__badge,
+  .doc-keymod-variants__badge,
+  .doc-minikvm-packages__badge {
     @apply mb-2 inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide;
   }
 
-  .doc-kvm-go-models__badge--hdmi {
+  .doc-kvm-go-models__badge--hdmi,
+  .doc-keymod-variants__badge--dual,
+  .doc-minikvm-packages__badge--toolkit {
     @apply bg-orange-100 text-orange-800;
   }
 
-  .doc-kvm-go-models__badge--dp {
+  .doc-kvm-go-models__badge--dp,
+  .doc-keymod-variants__badge--usbc {
     @apply bg-blue-100 text-blue-800;
   }
 
-  .doc-kvm-go-models__badge--vga {
+  .doc-kvm-go-models__badge--vga,
+  .doc-minikvm-packages__badge--basic {
     @apply bg-gray-100 text-gray-700;
   }
 
-  .doc-kvm-go-models__name {
+  .doc-kvm-go-models__name,
+  .doc-keymod-variants__name,
+  .doc-minikvm-packages__name {
     @apply m-0 mb-1 text-sm font-semibold text-ink;
   }
 
-  .doc-kvm-go-models__desc {
+  .doc-kvm-go-models__desc,
+  .doc-keymod-variants__desc,
+  .doc-minikvm-packages__desc {
     @apply m-0 text-xs leading-relaxed text-muted;
   }
 
@@ -543,7 +570,9 @@
     @apply mt-2 inline-block rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-muted;
   }
 
-  .doc-kvm-go-models__note {
+  .doc-kvm-go-models__note,
+  .doc-keymod-variants__note,
+  .doc-minikvm-packages__note {
     @apply m-0 mt-4 text-center text-sm text-muted;
   }
 

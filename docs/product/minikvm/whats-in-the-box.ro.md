@@ -22,7 +22,7 @@ keywords: "Mini-KVM, comutator KVM, KVM HDMI, KVM USB, control headless, perifer
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Plasează comandă <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "Recomandarea noastră"
-**Alegeți Pachetul Toolkit** pentru cea mai bună experiență! Nu doar că este mai rentabil, dar toate accesoriile sunt testate pentru calitate și garantate să funcționeze perfect cu dispozitivul nostru Mini-KVM.
+    **Alegeți Pachetul Toolkit** pentru cea mai bună experiență! Nu doar că este mai rentabil, dar toate accesoriile sunt testate pentru calitate și garantate să funcționeze perfect cu dispozitivul nostru Mini-KVM.
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, comutator KVM, KVM HDMI, KVM USB, control headless, perifer
 
 !!! warning "Cerințe de calitate a cablurilor"
     **Important**: Folosirea cablurilor USB-C de calitate slabă sau incompatibile poate rezulta în:
-
+    
     - Eșecuri de conexiune sau conectivitate intermitentă
     - Reducerea livrării de energie afectând performanța dispozitivului
     - Probleme de transfer de date sau timpi de răspuns lenti
     - Posibile daune la dispozitivele conectate
-
+    
     **Recomandăm puternic Pachetul Toolkit** pentru compatibilitate garantată și performanță optimă.
 
 ---

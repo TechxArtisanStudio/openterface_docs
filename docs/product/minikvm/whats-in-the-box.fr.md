@@ -22,7 +22,7 @@ keywords: "Mini-KVM, commutateur KVM, KVM HDMI, KVM USB, contrôle headless, pé
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Passer commande <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "Notre recommandation"
-**Choisissez le Package Toolkit** pour la meilleure expérience ! Non seulement il est plus rentable, mais tous les accessoires sont testés pour la qualité et garantis pour fonctionner parfaitement avec notre appareil Mini-KVM.
+    **Choisissez le Package Toolkit** pour la meilleure expérience ! Non seulement il est plus rentable, mais tous les accessoires sont testés pour la qualité et garantis pour fonctionner parfaitement avec notre appareil Mini-KVM.
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, commutateur KVM, KVM HDMI, KVM USB, contrôle headless, pé
 
 !!! warning "Exigences de qualité des câbles"
     **Important** : L'utilisation de câbles USB-C de mauvaise qualité ou incompatibles peut entraîner :
-
+    
     - Des échecs de connexion ou une connectivité intermittente
     - Une réduction de l'alimentation électrique affectant les performances de l'appareil
     - Des problèmes de transfert de données ou des temps de réponse lents
     - Des dommages potentiels aux appareils connectés
-
+    
     **Nous recommandons fortement le Package Toolkit** pour une compatibilité garantie et des performances optimales.
 
 ---

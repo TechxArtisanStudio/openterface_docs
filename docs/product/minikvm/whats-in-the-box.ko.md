@@ -22,7 +22,7 @@ keywords: "Mini-KVM, KVM 스위치, HDMI KVM, USB KVM, headless 제어, 컴퓨�
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> 주문하기 <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "저희의 추천"
-**툴킷 패키지를 선택**하여 최고의 경험을 얻으세요! 비용 효율적일 뿐만 아니라 모든 액세서리가 품질 테스트를 거쳐 저희 Mini-KVM 디바이스와 완벽하게 작동함이 보장됩니다.
+    **툴킷 패키지를 선택**하여 최고의 경험을 얻으세요! 비용 효율적일 뿐만 아니라 모든 액세서리가 품질 테스트를 거쳐 저희 Mini-KVM 디바이스와 완벽하게 작동함이 보장됩니다.
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, KVM 스위치, HDMI KVM, USB KVM, headless 제어, 컴퓨�
 
 !!! warning "케이블 품질 요구사항"
     **중요**: 품질이 낮거나 호환되지 않는 USB-C 케이블 사용 시 다음이 발생할 수 있습니다:
-
+    
     - 연결 실패 또는 간헐적 연결
     - 디바이스 성능에 영향을 주는 전력 공급 감소
     - 데이터 전송 문제 또는 느린 응답 시간
     - 연결된 디바이스에 대한 잠재적 손상
-
+    
     **보장된 호환성과 최적 성능을 위해 툴킷 패키지를 강력히 권장합니다**.
 
 ---

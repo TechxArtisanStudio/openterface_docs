@@ -13,6 +13,28 @@ keywords: "KeyMod, emulator HID, tastatură telefon, tastatură Bluetooth, tasta
   <div class="slogan-subtitle">Control tastatură și mouse programabil pentru tech, profesioniști și gaming.</div>
 </div>
 
+După succesul campaniilor noastre din 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) și 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), revenim cu un nou tip de instrument de control zilnic: **Openterface KeyMod**.
+
+Un emulator HID (tastatură și mouse) compact și programabil **USB + Bluetooth**, KeyMod transformă telefonul într-o consolă tastatură și trackpad portabile pentru control local rapid și shortcut-uri de flux de lucru. Construit pe nucleul HID dovedit al Openterface Mini-KVM, este plug and play, 100% open source.
+
+<div class="doc-keymod-variants">
+  <p class="doc-keymod-variants__title">Variante planificate</p>
+  <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Seria Openterface KeyMod" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
+  <div class="doc-keymod-variants__grid">
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
+      <p class="doc-keymod-variants__name">Versiune conector 2-în-1</p>
+      <p class="doc-keymod-variants__desc">Design cu conector USB A + USB C combinat pentru compatibilitate largă cu laptopuri, tablete și telefoane</p>
+    </div>
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">Versiune USB C</p>
+      <p class="doc-keymod-variants__desc">Conector USB C dedicat pentru dispozitive moderne și gestionare curată a cablurilor</p>
+    </div>
+  </div>
+  <p class="doc-keymod-variants__note">Ambele variante împărtășesc aceeași funcționalitate de bază: tastatură și mouse HID Bluetooth, profile personalizate, macro-uri și moduri gamepad.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.keymod_crowdsupply_link }}', '_blank')">
     Susține ACUM
@@ -23,11 +45,6 @@ keywords: "KeyMod, emulator HID, tastatură telefon, tastatură Bluetooth, tasta
       style="vertical-align: middle; height: 26px; margin-left: 8px;">
   </button>
 </div>
-
-
-După succesul campaniilor noastre din 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) și 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), revenim cu un nou tip de instrument de control zilnic: **Openterface KeyMod**.
-
-Un emulator HID (tastatură și mouse) compact și programabil **USB + Bluetooth**, KeyMod transformă telefonul într-o consolă tastatură și trackpad portabile pentru control local rapid și shortcut-uri de flux de lucru. Construit pe nucleul HID dovedit al Openterface Mini-KVM, este plug and play, 100% open source.
 
 <div class="grid cards" markdown>
 
@@ -78,9 +95,3 @@ Un emulator HID (tastatură și mouse) compact și programabil **USB + Bluetooth
 {% include "partials/videos-grid-keymod.html" %}
 </div>
 
-## Variante planificate
-
-- **Versiune conector 2-în-1** — Design cu conector USB A + USB C combinat pentru compatibilitate largă cu laptopuri, tablete și telefoane
-- **Versiune USB C** — Conector USB C dedicat pentru dispozitive moderne și gestionare curată a cablurilor
-
-Ambele variante împărtășesc aceeași funcționalitate de bază: tastatură și mouse HID Bluetooth, profile personalizate, macro-uri și moduri gamepad.

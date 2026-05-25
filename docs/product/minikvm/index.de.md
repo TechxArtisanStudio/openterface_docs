@@ -17,6 +17,25 @@ keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB 
 
 Unser **Openterface™ Mini-KVM** ist eine Plug-and-Play [**KVM-over-USB**](/faq/kvm-over-usb/) Lösung. Es ermöglicht Ihnen, einen nahegelegenen Headless-Computer direkt von Ihrem Laptop oder Desktop über USB- und HDMI-Verbindungen zu steuern, ohne zusätzliche Peripheriegeräte oder Netzwerkkonnektivität zu benötigen.
 
+<div class="doc-minikvm-packages">
+  <p class="doc-minikvm-packages__title">Paketoptionen</p>
+  <img src="https://assets.openterface.com/images/cover/mini-kvm-toolkit.webp" alt="Openterface Mini-KVM Basic- und Toolkit-Pakete" class="doc-minikvm-packages__photo skip-lightbox" loading="lazy" />
+  <div class="doc-minikvm-packages__grid">
+    <div class="doc-minikvm-packages__card">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--basic">Basic</span>
+      <p class="doc-minikvm-packages__name">Basic Paket</p>
+      <p class="doc-minikvm-packages__desc">Mini-KVM Gerät und Schnellstartanleitung — eigene hochwertige Kabel mitbringen</p>
+    </div>
+    <div class="doc-minikvm-packages__card doc-minikvm-packages__card--featured">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--toolkit">Toolkit</span>
+      <p class="doc-minikvm-packages__name">Toolkit Paket</p>
+      <p class="doc-minikvm-packages__desc">Komplettset mit getesteten Kabeln, Toolkit-Tasche und Zubehör — bestes Preis-Leistungs-Verhältnis</p>
+    </div>
+  </div>
+  <p class="doc-minikvm-packages__note">Beide Pakete enthalten dasselbe Mini-KVM Kern-Gerät — Basic für das Wesentliche oder Toolkit für ein komplettes, kompatibles Setup.</p>
+</div>
+
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.minikvm_purchase_link }}', '_blank')">
     JETZT BESTELLEN

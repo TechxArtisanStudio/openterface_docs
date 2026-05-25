@@ -17,6 +17,25 @@ keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB 
 
 우리의 **Openterface™ Mini-KVM**은 플러그 앤 플레이 [**KVM-over-USB**](/faq/kvm-over-usb/) 솔루션입니다. USB와 HDMI 연결을 사용하여 노트북이나 데스크톱에서 근처의 헤드리스 컴퓨터를 직접 제어할 수 있으며, 추가 주변 장치나 네트워크 연결이 필요하지 않습니다.
 
+<div class="doc-minikvm-packages">
+  <p class="doc-minikvm-packages__title">패키지 옵션</p>
+  <img src="https://assets.openterface.com/images/cover/mini-kvm-toolkit.webp" alt="Openterface Mini-KVM 기본 및 툴킷 패키지" class="doc-minikvm-packages__photo skip-lightbox" loading="lazy" />
+  <div class="doc-minikvm-packages__grid">
+    <div class="doc-minikvm-packages__card">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--basic">Basic</span>
+      <p class="doc-minikvm-packages__name">기본 패키지</p>
+      <p class="doc-minikvm-packages__desc">Mini-KVM 본체와 빠른 시작 가이드 — 고품질 케이블은 직접 준비</p>
+    </div>
+    <div class="doc-minikvm-packages__card doc-minikvm-packages__card--featured">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--toolkit">Toolkit</span>
+      <p class="doc-minikvm-packages__name">툴킷 패키지</p>
+      <p class="doc-minikvm-packages__desc">테스트된 케이블, 툴킷 백, 액세서리가 포함된 완전 키트 — 최고의 가치와 호환성 보장</p>
+    </div>
+  </div>
+  <p class="doc-minikvm-packages__note">두 패키지 모두 동일한 Mini-KVM 본체를 포함합니다 — 필수 구성은 Basic, 완전하고 호환성이 보장된 구성은 Toolkit을 선택하세요.</p>
+</div>
+
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.minikvm_purchase_link }}', '_blank')">
     지금 주문

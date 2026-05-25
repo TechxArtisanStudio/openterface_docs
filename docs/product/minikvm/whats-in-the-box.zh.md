@@ -22,7 +22,7 @@ keywords: "Mini-KVM, KVM 切换器, HDMI KVM, USB KVM, headless 控制, 计算�
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> 立即订购 <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "我们的推荐"
-**选择工具包包装**以获得最佳体验！它不仅更经济实惠，而且所有配件都经过质量测试，保证与我们的 Mini-KVM 设备完美配合。
+    **选择工具包包装**以获得最佳体验！它不仅更经济实惠，而且所有配件都经过质量测试，保证与我们的 Mini-KVM 设备完美配合。
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, KVM 切换器, HDMI KVM, USB KVM, headless 控制, 计算�
 
 !!! warning "线缆质量要求"
     **重要**：使用劣质或不兼容的 USB-C 线缆可能导致：
-
+    
     - 连接失败或间歇性连接
     - 影响设备性能的功率传输减少
     - 数据传输问题或响应时间缓慢
     - 对连接设备的潜在损坏
-
+    
     **我们强烈推荐工具包包装**以保证兼容性和最佳性能。
 
 ---

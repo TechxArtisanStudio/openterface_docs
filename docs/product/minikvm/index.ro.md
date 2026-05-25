@@ -16,6 +16,25 @@ keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB 
 
 **Openterface™ Mini-KVM**-ul nostru este o soluție [**KVM-over-USB**](/faq/kvm-over-usb/) plug-and-play. Îți permite să controlezi un calculator headless din apropiere direct de pe laptop-ul sau desktop-ul tău folosind conexiuni USB și HDMI, eliminând nevoia de periferice suplimentare sau conectivitate de rețea.
 
+<div class="doc-minikvm-packages">
+  <p class="doc-minikvm-packages__title">Opțiuni pachet</p>
+  <img src="https://assets.openterface.com/images/cover/mini-kvm-toolkit.webp" alt="Pachetele Basic și Toolkit Openterface Mini-KVM" class="doc-minikvm-packages__photo skip-lightbox" loading="lazy" />
+  <div class="doc-minikvm-packages__grid">
+    <div class="doc-minikvm-packages__card">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--basic">Basic</span>
+      <p class="doc-minikvm-packages__name">Pachet Basic</p>
+      <p class="doc-minikvm-packages__desc">Dispozitiv Mini-KVM esențial și ghid de pornire rapidă — folosiți propriile cabluri de calitate</p>
+    </div>
+    <div class="doc-minikvm-packages__card doc-minikvm-packages__card--featured">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--toolkit">Toolkit</span>
+      <p class="doc-minikvm-packages__name">Pachet Toolkit</p>
+      <p class="doc-minikvm-packages__desc">Kit complet cu cabluri testate, geantă toolkit și accesorii — cel mai bun raport calitate-preț și compatibilitate garantată</p>
+    </div>
+  </div>
+  <p class="doc-minikvm-packages__note">Ambele pachete includ același dispozitiv Mini-KVM — alegeți Basic pentru esențial sau Toolkit pentru o configurație completă și compatibilă.</p>
+</div>
+
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.minikvm_purchase_link }}', '_blank')">
     Comandă ACUM

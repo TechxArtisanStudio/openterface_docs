@@ -22,7 +22,7 @@ keywords: "Mini-KVM, switch KVM, KVM HDMI, KVM USB, controle headless, periféri
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Fazer pedido <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! tip "Nossa recomendação"
-**Escolha o Pacote Toolkit** para a melhor experiência! Não apenas é mais econômico, mas todos os acessórios são testados quanto à qualidade e garantidos para funcionar perfeitamente com nosso dispositivo Mini-KVM.
+    **Escolha o Pacote Toolkit** para a melhor experiência! Não apenas é mais econômico, mas todos os acessórios são testados quanto à qualidade e garantidos para funcionar perfeitamente com nosso dispositivo Mini-KVM.
 
 ---
 
@@ -41,12 +41,12 @@ keywords: "Mini-KVM, switch KVM, KVM HDMI, KVM USB, controle headless, periféri
 
 !!! warning "Requisitos de qualidade dos cabos"
     **Importante**: O uso de cabos USB-C de baixa qualidade ou incompatíveis pode resultar em:
-
+    
     - Falhas de conexão ou conectividade intermitente
     - Redução da entrega de energia afetando o desempenho do dispositivo
     - Problemas de transferência de dados ou tempos de resposta lentos
     - Possíveis danos aos dispositivos conectados
-
+    
     **Recomendamos fortemente o Pacote Toolkit** para compatibilidade garantida e desempenho otimizado.
 
 ---

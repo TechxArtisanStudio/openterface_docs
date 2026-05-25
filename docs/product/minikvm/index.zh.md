@@ -16,6 +16,25 @@ keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB 
 
 我们的 **Openterface™ Mini-KVM** 是一个即插即用的 [**KVM-over-USB**](/faq/kvm-over-usb/) 解决方案。它允许您使用USB和HDMI连接直接从您的笔记本电脑或台式机控制附近的无头计算机，无需额外的外设或网络连接。
 
+<div class="doc-minikvm-packages">
+  <p class="doc-minikvm-packages__title">包装选项</p>
+  <img src="https://assets.openterface.com/images/cover/mini-kvm-toolkit.webp" alt="Openterface Mini-KVM 基础版与工具包" class="doc-minikvm-packages__photo skip-lightbox" loading="lazy" />
+  <div class="doc-minikvm-packages__grid">
+    <div class="doc-minikvm-packages__card">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--basic">基础版</span>
+      <p class="doc-minikvm-packages__name">基础包装</p>
+      <p class="doc-minikvm-packages__desc">Mini-KVM 核心设备与快速入门指南 — 自备优质线缆</p>
+    </div>
+    <div class="doc-minikvm-packages__card doc-minikvm-packages__card--featured">
+      <span class="doc-minikvm-packages__badge doc-minikvm-packages__badge--toolkit">工具包</span>
+      <p class="doc-minikvm-packages__name">工具包包装</p>
+      <p class="doc-minikvm-packages__desc">完整套装，含经测试线缆、工具包袋及配件 — 最佳性价比与兼容性保障</p>
+    </div>
+  </div>
+  <p class="doc-minikvm-packages__note">两种包装均包含相同的 Mini-KVM 核心设备 — 基础版满足基本需求，工具包版提供完整、兼容性有保障的配置。</p>
+</div>
+
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.minikvm_purchase_link }}', '_blank')">
     立即订购

@@ -25,6 +25,10 @@ export const NAV_TRANSLATIONS: Partial<Record<SiteLocale, Record<string, string>
 export function translateNavLabel(label: string, locale: SiteLocale): string {
   if (locale === 'en') return label;
   const aliases: Record<string, string> = {
+    'Mini-KVM': 'Mini-KVM Series',
+    'Diagnostic (macOS)': 'Diagnostic Self-Check Guide (macOS)',
+    'Diagnostic (Windows)': 'Diagnostic Self-Check Guide (Windows)',
+    'Keyboard and Mouse': 'Keyboard and Mouse Control',
     'KVM-Go Series': 'KVM-Go Series ⏳',
     'KeyMod Series': 'KeyMod Series 🤘',
     'uConsole KVM Extension': 'uConsole KVM Extension 🛠️',

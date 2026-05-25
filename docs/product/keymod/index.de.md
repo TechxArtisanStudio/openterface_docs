@@ -13,6 +13,28 @@ keywords: "KeyMod, HID-Emulator, Smartphone-Tastatur, Bluetooth-Tastatur, USB-Ta
   <div class="slogan-subtitle">Programmierbare Tastatur- und Maussteuerung für Technik, Profis und Gaming.</div>
 </div>
 
+Nach dem Erfolg unserer 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)- und 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go)-Kampagnen präsentieren wir ein neues Alltagskontrollwerkzeug: **Openterface KeyMod**.
+
+Ein kompakter, programmierbarer **USB + Bluetooth** HID-Emulator (Tastatur und Maus), der Ihr Smartphone in eine tragbare Tastatur- und Trackpad-Konsole für schnelle lokale Steuerung und Workflow-Verknüpfungen verwandelt. Basiert auf dem bewährten HID-Kern von Openterface Mini-KVM, ist es Plug-and-Play und 100 % Open Source.
+
+<div class="doc-keymod-variants">
+  <p class="doc-keymod-variants__title">Geplante Varianten</p>
+  <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Openterface KeyMod Series" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
+  <div class="doc-keymod-variants__grid">
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
+      <p class="doc-keymod-variants__name">2-in-1-Stecker-Version</p>
+      <p class="doc-keymod-variants__desc">Kombinierter USB-A- und USB-C-Stecker für breite Kompatibilität mit Laptops, Tablets und Smartphones</p>
+    </div>
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">USB-C-Version</p>
+      <p class="doc-keymod-variants__desc">Dedizierter USB-C-Stecker für moderne Geräte und übersichtliche Kabelverwaltung</p>
+    </div>
+  </div>
+  <p class="doc-keymod-variants__note">Beide Varianten teilen dieselbe Kernfunktionalität: Bluetooth-HID-Tastatur und -Maus, benutzerdefinierte Profile, Makros und Gamepad-Modi.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.keymod_crowdsupply_link }}', '_blank')">
     Jetzt unterstützen
@@ -23,11 +45,6 @@ keywords: "KeyMod, HID-Emulator, Smartphone-Tastatur, Bluetooth-Tastatur, USB-Ta
       style="vertical-align: middle; height: 26px; margin-left: 8px;">
   </button>
 </div>
-
-
-Nach dem Erfolg unserer 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)- und 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go)-Kampagnen präsentieren wir ein neues Alltagskontrollwerkzeug: **Openterface KeyMod**.
-
-Ein kompakter, programmierbarer **USB + Bluetooth** HID-Emulator (Tastatur und Maus), der Ihr Smartphone in eine tragbare Tastatur- und Trackpad-Konsole für schnelle lokale Steuerung und Workflow-Verknüpfungen verwandelt. Basiert auf dem bewährten HID-Kern von Openterface Mini-KVM, ist es Plug-and-Play und 100 % Open Source.
 
 <div class="grid cards" markdown>
 
@@ -78,9 +95,3 @@ Ein kompakter, programmierbarer **USB + Bluetooth** HID-Emulator (Tastatur und M
 {% include "partials/videos-grid-keymod.html" %}
 </div>
 
-## Geplante Varianten
-
-- **2-in-1-Stecker-Version** — Kombinierter USB-A- und USB-C-Stecker für breite Kompatibilität mit Laptops, Tablets und Smartphones
-- **USB-C-Version** — Dedizierter USB-C-Stecker für moderne Geräte und übersichtliche Kabelverwaltung
-
-Beide Varianten teilen dieselbe Kernfunktionalität: Bluetooth-HID-Tastatur und -Maus, benutzerdefinierte Profile, Makros und Gamepad-Modi.

@@ -13,9 +13,31 @@ keywords: "KeyMod, emulatore HID, tastiera telefono, tastiera Bluetooth, tastier
   <div class="slogan-subtitle">Controllo tastiera e mouse programmabile per tech, professionisti e gaming.</div>
 </div>
 
+Dopo il successo delle nostre campagne 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) e 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), torniamo con un nuovo tipo di strumento di controllo quotidiano: **Openterface KeyMod**.
+
+Un emulatore HID (tastiera e mouse) compatto e programmabile **USB + Bluetooth**, KeyMod trasforma il tuo telefono in una console tastiera e trackpad portatili per controllo locale rapido e scorciatoie di flusso di lavoro. Costruito sul collaudato nucleo HID di Openterface Mini-KVM, è plug and play, 100% open source.
+
+<div class="doc-keymod-variants">
+  <p class="doc-keymod-variants__title">Varianti previste</p>
+  <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Serie Openterface KeyMod" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
+  <div class="doc-keymod-variants__grid">
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
+      <p class="doc-keymod-variants__name">Versione connettore 2-in-1</p>
+      <p class="doc-keymod-variants__desc">Design con spina USB A + USB C combinata per ampia compatibilità con laptop, tablet e telefoni</p>
+    </div>
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">Versione USB C</p>
+      <p class="doc-keymod-variants__desc">Spina USB C dedicata per dispositivi moderni e gestione cavi pulita</p>
+    </div>
+  </div>
+  <p class="doc-keymod-variants__note">Entrambe le varianti condividono la stessa funzionalità principale: tastiera e mouse HID Bluetooth, profili personalizzati, macro e modalità gamepad.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.keymod_crowdsupply_link }}', '_blank')">
-    Sostieni ORA
+    Supporta ORA
     <img 
       class="skip-lightbox"
       src="https://assets.openterface.com/images/trademark/crowd-supply.svg" 
@@ -23,11 +45,6 @@ keywords: "KeyMod, emulatore HID, tastiera telefono, tastiera Bluetooth, tastier
       style="vertical-align: middle; height: 26px; margin-left: 8px;">
   </button>
 </div>
-
-
-Dopo il successo delle nostre campagne 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) e 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), torniamo con un nuovo tipo di strumento di controllo quotidiano: **Openterface KeyMod**.
-
-Un emulatore HID (tastiera e mouse) compatto e programmabile **USB + Bluetooth**, KeyMod trasforma il tuo telefono in una console tastiera e trackpad portatili per controllo locale rapido e scorciatoie di flusso di lavoro. Costruito sul collaudato nucleo HID di Openterface Mini-KVM, è plug and play, 100% open source.
 
 <div class="grid cards" markdown>
 
@@ -78,9 +95,3 @@ Un emulatore HID (tastiera e mouse) compatto e programmabile **USB + Bluetooth**
 {% include "partials/videos-grid-keymod.html" %}
 </div>
 
-## Varianti previste
-
-- **Versione connettore 2-in-1** — Design con spina USB A + USB C combinata per ampia compatibilità con laptop, tablet e telefoni
-- **Versione USB C** — Spina USB C dedicata per dispositivi moderni e gestione cavi pulita
-
-Entrambe le varianti condividono la stessa funzionalità principale: tastiera e mouse HID Bluetooth, profili personalizzati, macro e modalità gamepad.
