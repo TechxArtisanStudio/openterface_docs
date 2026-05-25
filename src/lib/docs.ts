@@ -251,14 +251,16 @@ function transformLegacySlideshow(html: string): string {
 </div>`;
 }
 
+const CROWD_SUPPLY_ICON = 'https://www.crowdsupply.com/_marvin/images/crowd-supply-icon.svg';
+
 function transformMdButtons(html: string): string {
   return html.replace(
     /<button\s+class="md-button"\s+onclick="window\.(?:open\('|location\.href=')\s*([^'"]+)'[^"]*"[^>]*>([\s\S]*?)<\/button>/gi,
     (_m, url: string, inner: string) => {
       const text = inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-      const imgMatch = inner.match(/<img[^>]+src="([^"]+)"[^>]*alt="([^"]*)"/i);
-      const logo = imgMatch
-        ? `<img src="${imgMatch[1]}" alt="${imgMatch[2]}" class="doc-buy-cta__logo" width="120" height="26" />`
+      const hasLogo = /<img/i.test(inner);
+      const logo = hasLogo
+        ? `<img src="${CROWD_SUPPLY_ICON}" alt="Crowd Supply" class="doc-buy-cta__logo" width="24" height="24" />`
         : '';
       const label = text || 'Order';
       return `<div class="doc-buy-cta-wrap"><a href="${url.trim()}" class="btn btn-primary doc-buy-cta" target="_blank" rel="noopener noreferrer"><span>${label}</span>${logo}</a></div>`;
