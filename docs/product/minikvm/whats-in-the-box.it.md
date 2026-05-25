@@ -40,7 +40,7 @@ keywords: "Mini-KVM, switch KVM, KVM HDMI, KVM USB, controllo headless, periferi
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Ordina <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! warning "Requisiti di qualità dei cavi"
-**Importante**: L'uso di cavi USB-C di scarsa qualità o incompatibili può causare:
+    **Importante**: L'uso di cavi USB-C di scarsa qualità o incompatibili può causare:
 
     - Fallimenti di connessione o connettività intermittente
     - Riduzione dell'alimentazione che influisce sulle prestazioni del dispositivo

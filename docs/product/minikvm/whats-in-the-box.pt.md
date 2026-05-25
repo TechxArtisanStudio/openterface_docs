@@ -40,7 +40,7 @@ keywords: "Mini-KVM, switch KVM, KVM HDMI, KVM USB, controle headless, periféri
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Fazer pedido <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! warning "Requisitos de qualidade dos cabos"
-**Importante**: O uso de cabos USB-C de baixa qualidade ou incompatíveis pode resultar em:
+    **Importante**: O uso de cabos USB-C de baixa qualidade ou incompatíveis pode resultar em:
 
     - Falhas de conexão ou conectividade intermitente
     - Redução da entrega de energia afetando o desempenho do dispositivo

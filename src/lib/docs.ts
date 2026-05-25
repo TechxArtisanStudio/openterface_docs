@@ -394,13 +394,13 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
 
   // pymdownx.details (???[+]? type "Title")
   md = md.replace(
-    /^\?\?\?\+? (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gm,
+    /^\?\?\?\+? (\w+)(?: "([^"]*)")?\s*\n((?:    .*\n?)*)/gm,
     (_match, type: string, title: string | undefined, body: string) => {
       const lines = body
         .split('\n')
         .map((line) => line.replace(/^    /, ''))
-        .filter(Boolean)
-        .join('\n');
+        .join('\n')
+        .trim();
       const normalized = type.toLowerCase();
       const label = title || normalized.charAt(0).toUpperCase() + normalized.slice(1);
       return `<details class="callout callout-${normalized}">\n<summary class="callout-title">${calloutIcon(normalized)}${label}</summary>\n\n${lines}\n</details>\n\n`;
@@ -409,13 +409,13 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
 
   // admonitions (!!! type "Title") — case-insensitive type
   md = md.replace(
-    /^!!! (\w+)(?: "([^"]*)")?\s*\n((?:    .+\n?)*)/gim,
+    /^!!! (\w+)(?: "([^"]*)")?\s*\n((?:    .*\n?)*)/gim,
     (_match, type: string, title: string | undefined, body: string) => {
       const lines = body
         .split('\n')
         .map((line) => line.replace(/^    /, ''))
-        .filter(Boolean)
-        .join('\n');
+        .join('\n')
+        .trim();
       const normalized = type.toLowerCase();
       const label = title || normalized.charAt(0).toUpperCase() + normalized.slice(1);
       return `<aside class="callout callout-${normalized}" role="note">\n<strong class="callout-title">${calloutIcon(normalized)}${label}</strong>\n\n${lines}\n</aside>\n\n`;
@@ -519,7 +519,7 @@ export function renderMarkdown(
 }
 
 export function collectDocPages(): DocPage[] {
-  if (cachedPages) return cachedPages;
+  if (cachedPages && import.meta.env.PROD) return cachedPages;
 
   const root = docsRoot();
   const pages: DocPage[] = [];
@@ -567,7 +567,7 @@ export function collectDocPages(): DocPage[] {
   }
 
   walk(root);
-  cachedPages = pages;
+  if (import.meta.env.PROD) cachedPages = pages;
   return pages;
 }
 

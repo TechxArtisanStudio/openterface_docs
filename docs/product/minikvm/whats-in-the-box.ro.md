@@ -40,7 +40,7 @@ keywords: "Mini-KVM, comutator KVM, KVM HDMI, KVM USB, control headless, perifer
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> Plasează comandă <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! warning "Cerințe de calitate a cablurilor"
-**Important**: Folosirea cablurilor USB-C de calitate slabă sau incompatibile poate rezulta în:
+    **Important**: Folosirea cablurilor USB-C de calitate slabă sau incompatibile poate rezulta în:
 
     - Eșecuri de conexiune sau conectivitate intermitentă
     - Reducerea livrării de energie afectând performanța dispozitivului

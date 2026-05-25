@@ -40,7 +40,7 @@ keywords: "Mini-KVM, KVM 스위치, HDMI KVM, USB KVM, headless 제어, 컴퓨�
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> 주문하기 <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! warning "케이블 품질 요구사항"
-**중요**: 품질이 낮거나 호환되지 않는 USB-C 케이블 사용 시 다음이 발생할 수 있습니다:
+    **중요**: 품질이 낮거나 호환되지 않는 USB-C 케이블 사용 시 다음이 발생할 수 있습니다:
 
     - 연결 실패 또는 간헐적 연결
     - 디바이스 성능에 영향을 주는 전력 공급 감소

@@ -40,7 +40,7 @@ keywords: "Mini-KVM, KVM 切换器, HDMI KVM, USB KVM, headless 控制, 计算�
 <button class="md-button" onclick="window.location.href='{{ config.extra.minikvm_purchase_link }}'"> 立即订购 <img src="https://assets.openterface.com/images/trademark/crowd-supply.svg" alt="Crowd Supply" style="vertical-align: middle; height: 26px;"></button>
 
 !!! warning "线缆质量要求"
-**重要**：使用劣质或不兼容的 USB-C 线缆可能导致：
+    **重要**：使用劣质或不兼容的 USB-C 线缆可能导致：
 
     - 连接失败或间歇性连接
     - 影响设备性能的功率传输减少
