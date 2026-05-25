@@ -20,11 +20,12 @@ const tocHeadings = headings.filter((h) => h.depth <= 3);
       aria-label={ui.docs.onThisPage}
     >
       <p class="mb-3 text-xs font-bold uppercase tracking-wider text-muted">{ui.docs.onThisPage}</p>
-      <nav class="space-y-1">
+      <nav class="min-w-0 space-y-1">
         {
           tocHeadings.map((heading) => (
             <a
               href={`#${heading.id}`}
+              title={heading.text}
               class:list={[
                 'toc-link',
                 heading.depth === 3 && 'pl-5 text-xs',

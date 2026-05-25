@@ -698,7 +698,7 @@
   }
 
   .toc-link {
-    @apply block border-l-2 border-transparent py-1 pl-3 text-sm text-muted transition-colors hover:border-primary-dark hover:text-primary-dark;
+    @apply block truncate border-l-2 border-transparent py-1 pl-3 text-sm text-muted transition-colors hover:border-primary-dark hover:text-primary-dark;
   }
 
   .toc-link-active {
