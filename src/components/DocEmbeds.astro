@@ -203,7 +203,36 @@
     if (!nodes.length) return;
 
     const { default: mermaid } = await import('mermaid');
-    mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'base',
+      themeVariables: {
+        fontFamily: '"Roboto", system-ui, sans-serif',
+        fontSize: '14px',
+        primaryColor: '#f5ebe9',
+        primaryTextColor: '#373737',
+        primaryBorderColor: '#ff6e42',
+        secondaryColor: '#fafafa',
+        secondaryTextColor: '#373737',
+        secondaryBorderColor: '#e5e7eb',
+        tertiaryColor: '#ffffff',
+        tertiaryTextColor: '#373737',
+        tertiaryBorderColor: '#e5e7eb',
+        lineColor: '#5c5c5c',
+        textColor: '#373737',
+        mainBkg: '#ffffff',
+        nodeBorder: '#ff6e42',
+        clusterBkg: '#fafafa',
+        titleColor: '#373737',
+        edgeLabelBackground: '#ffffff',
+        background: '#ffffff',
+      },
+      flowchart: {
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 20,
+      },
+    });
     await mermaid.run({ nodes });
   }
 

@@ -16,7 +16,7 @@ const tocHeadings = headings.filter((h) => h.depth <= 3);
 {
   tocHeadings.length > 0 && (
     <aside
-      class="docs-toc sticky top-[4.5rem] hidden max-h-[calc(100vh-5rem)] w-48 shrink-0 self-start overflow-y-auto pb-8 pl-4 pt-6 xl:block"
+      class="docs-toc docs-aside-scroll sticky top-[4.5rem] hidden max-h-[calc(100vh-5rem)] w-48 shrink-0 self-start overflow-y-auto pb-8 pl-4 pt-6 xl:block"
       aria-label={ui.docs.onThisPage}
     >
       <p class="mb-3 text-xs font-bold uppercase tracking-wider text-muted">{ui.docs.onThisPage}</p>

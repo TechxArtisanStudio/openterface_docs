@@ -226,12 +226,29 @@
     @apply rounded bg-surface px-1.5 py-0.5 text-sm text-brand-dark;
   }
 
-  .prose-docs pre {
+  .prose-docs pre:not(.mermaid) {
     @apply my-4 overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100;
   }
 
-  .prose-docs pre code {
+  .prose-docs pre:not(.mermaid) code {
     @apply bg-transparent p-0 text-inherit;
+  }
+
+  .prose-docs pre.mermaid,
+  .mermaid {
+    @apply my-6 overflow-x-auto rounded-xl border border-gray-200 bg-white p-5 text-sm shadow-sm;
+    color: var(--color-ink);
+  }
+
+  .prose-docs pre.mermaid svg,
+  .mermaid svg {
+    @apply mx-auto block max-w-full;
+    height: auto;
+  }
+
+  .prose-docs pre.mermaid .edgeLabel,
+  .mermaid .edgeLabel {
+    @apply rounded bg-white px-1.5 py-0.5 text-xs text-muted;
   }
 
   .prose-docs table {
@@ -361,10 +378,6 @@
 
   .doc-grid-cards > ul > li > h3 {
     @apply mt-0 mb-2 text-base font-semibold;
-  }
-
-  .mermaid {
-    @apply my-4 overflow-x-auto rounded-lg bg-surface p-4 text-xs;
   }
 
   /* Doc page legacy embeds (product landings migrated from MkDocs) */
@@ -688,6 +701,29 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .docs-aside-scroll {
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(209 213 219 / 0.75) transparent;
+  }
+
+  .docs-aside-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .docs-aside-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .docs-aside-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(209 213 219 / 0.55);
+    border-radius: 9999px;
+  }
+
+  .docs-aside-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(156 163 175 / 0.75);
   }
 
   .sidebar-link {
