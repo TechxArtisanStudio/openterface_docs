@@ -20,6 +20,7 @@ Feel free to browse in your preferred one:
 - 🇸🇦 [العربية](/ar) (ar)
 - 🇹🇷 [Türkçe](/tr) (tr)
 - 🇵🇱 [Polski](/pl) (pl)
+- 🇳🇱 [Nederlands](/nl) (nl)
 - 🇷🇴 [Română](/ro) (ro)
 
 ## Translation Process

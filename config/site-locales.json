@@ -64,6 +64,10 @@
     "pl": {
       "label": "Polski",
       "path": "pl"
+    },
+    "nl": {
+      "label": "Nederlands",
+      "path": "nl"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"

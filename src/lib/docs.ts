@@ -6,7 +6,7 @@ import { sidebarSlugsForPage } from '../config/sidebar';
 import { newsPath } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, type SiteLocale } from './locale';
 
-const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl'] as const;
+const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
 
 /** MkDocs extra macros — keep in sync with archive/mkdocs/mkdocs.yml */
 const MKDOCS_MACROS: Record<string, string> = {
