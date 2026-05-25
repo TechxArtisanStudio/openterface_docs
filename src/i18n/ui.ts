@@ -173,6 +173,61 @@ const zh: UiStrings = {
   },
 };
 
+const hk: UiStrings = {
+  ...en,
+  siteName: 'Openterface 文檔',
+  siteDescription: 'Openterface KVM-over-USB 產品與軟件的官方文檔 — 安裝指南、常見問題與教程。',
+  nav: {
+    ...en.nav,
+    docsHome: '全部文檔',
+    home: '首頁',
+    faqs: '常見問題',
+    support: '支持',
+    product: '產品',
+    app: '應用',
+    tutorial: '教程',
+    about: '關於',
+    news: '資訊',
+    shop: '商店',
+    docsBadge: '文檔',
+    search: '搜索',
+    searchPlaceholder: '搜索文檔…',
+  },
+  mobile: {
+    sections: '章節',
+    ecosystem: '生態',
+    language: '語言',
+  },
+  docs: {
+    onThisPage: '本頁目錄',
+    editPage: '編輯此頁',
+    previous: '上一頁',
+    next: '下一頁',
+    sidebarLabel: '文檔導航',
+  },
+  footer: {
+    ...en.footer,
+    tagline: 'Openterface KVM-over-USB 硬件與應用的官方使用指南。',
+    products: '產品',
+    resources: '資源',
+    sites: '站點',
+    news: '資訊 ↗',
+    forum: '論壇 ↗',
+    copyright: 'Openterface. 開源 KVM-over-USB.',
+    privacy: '隱私',
+    terms: '條款',
+    cookie: 'Cookie 設置',
+  },
+  newsletter: {
+    title: '郵件訂閲',
+    description: '每月獲取產品、固件與 KVM 技巧更新。',
+    submit: '訂閲',
+    namePlaceholder: '姓名',
+    emailPlaceholder: '郵箱 *',
+    footnote: '隨時可取消訂閲。',
+  },
+};
+
 const dictionaries: Record<SiteLocale, UiStrings> = {
   en,
   zh,
@@ -184,6 +239,7 @@ const dictionaries: Record<SiteLocale, UiStrings> = {
   it: en,
   pt: en,
   ro: en,
+  hk,
 };
 
 export function t(locale: SiteLocale): UiStrings {

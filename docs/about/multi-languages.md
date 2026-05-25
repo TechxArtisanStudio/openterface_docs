@@ -14,6 +14,7 @@ Feel free to browse in your preferred one:
 - 🇮🇹 [Italiano](/it) (it)
 - 🇪🇸 [Español](/es) (es)
 - 🇧🇷 [Português](/pt) (pt)
+- 🇭🇰 [繁體中文（香港）](/hk) (hk)
 - 🇷🇴 [Română](/ro) (ro)
 
 ## Translation Process
