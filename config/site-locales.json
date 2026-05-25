@@ -44,6 +44,10 @@
     "hk": {
       "label": "繁體中文（香港）",
       "path": "hk"
+    },
+    "tw": {
+      "label": "繁體中文（台灣）",
+      "path": "tw"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"

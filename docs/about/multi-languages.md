@@ -15,6 +15,7 @@ Feel free to browse in your preferred one:
 - 🇪🇸 [Español](/es) (es)
 - 🇧🇷 [Português](/pt) (pt)
 - 🇭🇰 [繁體中文（香港）](/hk) (hk)
+- 🇹🇼 [繁體中文（台灣）](/tw) (tw)
 - 🇷🇴 [Română](/ro) (ro)
 
 ## Translation Process
