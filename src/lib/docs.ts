@@ -228,9 +228,8 @@ function transformLegacySlideshow(html: string): string {
 
   const imagesHtml = imgs
     .map(([, src, alt], i) => {
-      const hidden = i === 0 ? '' : ' hidden';
-      const loading = i === 0 ? 'eager' : 'lazy';
-      return `<img src="${src}" alt="${alt}" class="doc-slideshow__image${hidden}" data-index="${i}" loading="${loading}" />`;
+      const active = i === 0 ? ' is-active' : '';
+      return `<img src="${src}" alt="${alt}" class="doc-slideshow__image${active}" data-index="${i}" loading="eager" aria-hidden="${i === 0 ? 'false' : 'true'}" />`;
     })
     .join('\n    ');
 

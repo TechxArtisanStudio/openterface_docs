@@ -17,6 +17,24 @@ test.describe('docs full corpus smoke', () => {
     );
   });
 
+  test('kvm-go slideshow keeps stable frame height when advancing', async ({ page }) => {
+    await page.goto('/product/kvm-go/');
+    const frame = page.locator('.doc-slideshow__frame');
+    await expect(frame).toBeVisible();
+
+    const heightBefore = (await frame.boundingBox())?.height ?? 0;
+    expect(heightBefore).toBeGreaterThan(100);
+
+    await page.locator('.doc-slideshow__next').click();
+    await expect(page.locator('.doc-slideshow__image.is-active')).toHaveAttribute(
+      'data-index',
+      '1',
+    );
+
+    const heightAfter = (await frame.boundingBox())?.height ?? 0;
+    expect(Math.abs(heightAfter - heightBefore)).toBeLessThanOrEqual(5);
+  });
+
   test('kvm-go overview shows models grid before pre-order CTA', async ({ page }) => {
     await page.goto('/product/kvm-go/');
     const models = page.locator('.doc-kvm-go-models');

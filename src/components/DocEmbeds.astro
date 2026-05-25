@@ -3,6 +3,28 @@
 ---
 
 <script>
+  function preloadSlideshowImages(images) {
+    images.forEach((img) => {
+      if (!img.src || img.complete) return;
+      const preload = new Image();
+      preload.src = img.src;
+    });
+  }
+
+  function whenImageReady(img, callback) {
+    if (img.complete && img.naturalWidth > 0) {
+      callback();
+      return;
+    }
+    const onReady = () => {
+      img.removeEventListener('load', onReady);
+      img.removeEventListener('error', onReady);
+      callback();
+    };
+    img.addEventListener('load', onReady);
+    img.addEventListener('error', onReady);
+  }
+
   function initDocSlideshows() {
     document.querySelectorAll('[data-doc-slideshow]').forEach((root) => {
       if (root.dataset.initialized) return;
@@ -14,24 +36,31 @@
       const next = root.querySelector('.doc-slideshow__next');
       if (images.length <= 1) return;
 
+      preloadSlideshowImages(images);
+
       let current = 0;
       let timer;
 
       function show(index) {
         current = index;
         images.forEach((img, i) => {
-          img.classList.toggle('hidden', i !== index);
+          const active = i === index;
+          img.classList.toggle('is-active', active);
+          img.setAttribute('aria-hidden', active ? 'false' : 'true');
         });
         dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
       }
 
       function advance(delta) {
-        show((current + delta + images.length) % images.length);
+        const nextIndex = (current + delta + images.length) % images.length;
+        const target = images[nextIndex];
+        if (!target) return;
+        whenImageReady(target, () => show(nextIndex));
       }
 
       prev?.addEventListener('click', () => advance(-1));
       next?.addEventListener('click', () => advance(1));
-      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => advance(i - current)));
 
       timer = window.setInterval(() => advance(1), 5000);
       root.addEventListener('mouseenter', () => window.clearInterval(timer));

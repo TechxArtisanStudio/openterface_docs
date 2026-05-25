@@ -373,16 +373,17 @@
   }
 
   .doc-slideshow__frame {
-    @apply relative mx-auto max-w-2xl overflow-hidden rounded-xl bg-gray-100;
+    @apply relative mx-auto flex max-w-2xl items-center justify-center overflow-hidden rounded-xl bg-gray-100;
+    height: min(20rem, 70vw);
   }
 
   .doc-slideshow__image {
-    @apply mx-auto block w-full object-contain;
+    @apply absolute inset-0 mx-auto block h-full w-full object-contain opacity-0 transition-opacity duration-300 pointer-events-none;
     max-height: 20rem;
   }
 
-  .doc-slideshow__image.hidden {
-    display: none;
+  .doc-slideshow__image.is-active {
+    @apply z-[1] opacity-100;
   }
 
   .doc-slideshow__arrow {
