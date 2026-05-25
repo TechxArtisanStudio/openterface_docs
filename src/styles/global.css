@@ -236,7 +236,7 @@
 
   .prose-docs pre.mermaid,
   .mermaid {
-    @apply my-6 overflow-x-auto rounded-xl border border-gray-200 bg-white p-5 text-sm shadow-sm;
+    @apply my-6 overflow-x-auto bg-transparent p-2 text-sm;
     color: var(--color-ink);
   }
 

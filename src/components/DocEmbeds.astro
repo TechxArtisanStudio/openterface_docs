@@ -226,6 +226,7 @@
         titleColor: '#373737',
         edgeLabelBackground: '#ffffff',
         background: '#ffffff',
+        borderRadius: '6px',
       },
       flowchart: {
         htmlLabels: true,
@@ -234,6 +235,12 @@
       },
     });
     await mermaid.run({ nodes });
+    nodes.forEach((root) => {
+      root.querySelectorAll('.node rect.basic.label-container').forEach((rect) => {
+        rect.setAttribute('rx', '6');
+        rect.setAttribute('ry', '6');
+      });
+    });
   }
 
   function initDocEmbeds() {
