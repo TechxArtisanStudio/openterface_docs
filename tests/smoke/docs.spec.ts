@@ -149,6 +149,41 @@ test.describe('docs full corpus smoke', () => {
     await expect(sidebar.getByText('Troubleshooting')).toHaveCount(0);
   });
 
+  test('new locale home and product pages return 200', async ({ page }) => {
+    const paths = [
+      '/hk/product/kvm-go/',
+      '/tw/product/kvm-go/',
+      '/ru/product/kvm-go/',
+      '/ar/product/kvm-go/',
+      '/tr/product/kvm-go/',
+      '/pl/product/kvm-go/',
+      '/nl/product/kvm-go/',
+      '/hk/about/multi-languages/',
+      '/ru/about/multi-languages/',
+    ];
+
+    for (const path of paths) {
+      const response = await page.goto(path, { waitUntil: 'commit' });
+      expect(response?.status(), path).toBe(200);
+      await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
+    }
+  });
+
+  test('hk locale page shows translated sidebar labels', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('/hk/product/kvm-go/how-to-connect/');
+    await expect(page).toHaveTitle(/Openterface 文檔/);
+    await expect(page.locator('aside.docs-sidebar').getByText(/KVM-Go 系列/)).toBeVisible();
+  });
+
+  test('ru locale page loads with localized chrome', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('/ru/product/kvm-go/');
+    await expect(page).toHaveTitle(/Openterface Docs/);
+    await expect(page.locator('.site-header')).toBeVisible();
+    await expect(page.locator('article .doc-page-nav')).toBeVisible();
+  });
+
   test('faq page loads', async ({ page }) => {
     await page.goto('/faq/kvm-over-usb/');
     await expect(page.locator('.prose-docs')).toBeVisible();
