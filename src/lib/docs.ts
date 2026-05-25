@@ -341,7 +341,8 @@ function transformLegacyEmbeds(html: string): string {
 function transformLegacyBlocks(md: string): string {
   let out = md;
 
-  out = out.replace(/<div\s+markdown="0">\s*/gi, '');
+  // Unwrap MkDocs raw-HTML wrappers before includes expand (inner is a single {% include %} only).
+  out = out.replace(/<div\s+markdown="0">\s*([\s\S]*?)\s*<\/div>\s*/gi, '$1\n\n');
   out = out.replace(/<div style="text-align:\s*center[^"]*"[^>]*>/gi, '<div class="doc-center">');
   out = out.replace(/<div class="slogan-highlight">/g, '<div class="doc-slogan">');
   out = out.replace(/class="slogan-text"/g, 'class="doc-slogan__title"');

@@ -16,6 +16,30 @@ keywords: "KVM-Go, KVM over USB, 超コンパクトKVM, 内蔵HDMI, キーチェ
 
 **Openterface Mini-KVM**の成功を受け、オープンソースコミュニティに5,000人以上のユーザーを擁する**Openterface™ KVM-Goシリーズ**は次世代の[**KVM-over-USB**](/faq/kvm-over-usb/)ソリューションです。超コンパクトでキーチェーンに収まる設計で、内蔵ビデオコネクター（HDMI、DisplayPort、またはVGA）を搭載し、別途ビデオケーブルが不要です。データセンター、リモートサーバールーム、ヘッドレスデバイスのトラブルシューティングでの迅速な操作に最適です。
 
+<div class="doc-kvm-go-models">
+  <p class="doc-kvm-go-models__title">利用可能なモデル</p>
+  <img src="https://assets.openterface.com/images/kvm-go/kvm-go-hdmi-vga-dp-group-1.webp" alt="KVM-Go HDMI、DisplayPort、VGA バリアント" class="doc-kvm-go-models__photo skip-lightbox" loading="lazy" />
+  <div class="doc-kvm-go-models__grid">
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--hdmi">HDMI</span>
+      <p class="doc-kvm-go-models__name">KVM-Go HDMI オス</p>
+      <p class="doc-kvm-go-models__desc">モダンデバイス用の直接HDMI接続</p>
+    </div>
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--dp">DisplayPort</span>
+      <p class="doc-kvm-go-models__name">KVM-Go DisplayPort オス</p>
+      <p class="doc-kvm-go-models__desc">高性能DisplayPortサポート</p>
+    </div>
+    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
+      <p class="doc-kvm-go-models__name">KVM-Go VGA オス</p>
+      <p class="doc-kvm-go-models__desc">レガシーシステム互換性</p>
+      <span class="doc-kvm-go-models__status">近日公開</span>
+    </div>
+  </div>
+  <p class="doc-kvm-go-models__note">すべてのモデルは同じ超コンパクトデザインとコア機能を共有し、内蔵ビデオコネクターのみが異なります。</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.kvmgo_purchase_link }}', '_blank')">
     ウェイティングリストに参加
@@ -83,11 +107,3 @@ keywords: "KVM-Go, KVM over USB, 超コンパクトKVM, 内蔵HDMI, キーチェ
 <div markdown="0">
 {% include "partials/videos-grid-kvm-go.ja.html" %}
 </div>
-
-## 利用可能なモデル
-
-- **KVM-Go HDMI オス** — モダンデバイス用の直接HDMI接続
-- **KVM-Go DisplayPort オス** — 高性能DisplayPortサポート  
-- **KVM-Go VGA オス** — レガシーシステム互換性（近日公開）
-
-すべてのモデルは同じ超コンパクトデザインとコア機能を共有し、内蔵ビデオコネクターのみが異なります。

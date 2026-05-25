@@ -16,6 +16,30 @@ keywords: "KVM-Go, KVM over USB, KVM ultra-compact, HDMI intégré, KVM porte-cl
 
 Suite au succès d'**Openterface Mini-KVM**, avec plus de 5 000 utilisateurs dans notre communauté open source, la **Série Openterface™ KVM-Go** est la solution [**KVM-over-USB**](/faq/kvm-over-usb/) de nouvelle génération. Ultra-compacte et conçue pour tenir sur votre porte-clés, elle dispose de connecteurs vidéo intégrés (HDMI, DisplayPort ou VGA) qui éliminent le besoin de câbles vidéo séparés. Parfaite pour les opérations rapides dans les centres de données, les salles de serveurs distantes et le dépannage de dispositifs headless.
 
+<div class="doc-kvm-go-models">
+  <p class="doc-kvm-go-models__title">Modèles Disponibles</p>
+  <img src="https://assets.openterface.com/images/kvm-go/kvm-go-hdmi-vga-dp-group-1.webp" alt="Variantes KVM-Go HDMI, DisplayPort et VGA" class="doc-kvm-go-models__photo skip-lightbox" loading="lazy" />
+  <div class="doc-kvm-go-models__grid">
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--hdmi">HDMI</span>
+      <p class="doc-kvm-go-models__name">KVM-Go HDMI Mâle</p>
+      <p class="doc-kvm-go-models__desc">Connexion HDMI directe pour les appareils modernes</p>
+    </div>
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--dp">DisplayPort</span>
+      <p class="doc-kvm-go-models__name">KVM-Go DisplayPort Mâle</p>
+      <p class="doc-kvm-go-models__desc">Support DisplayPort haute performance</p>
+    </div>
+    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
+      <p class="doc-kvm-go-models__name">KVM-Go VGA Mâle</p>
+      <p class="doc-kvm-go-models__desc">Compatibilité avec les systèmes hérités</p>
+      <span class="doc-kvm-go-models__status">Bientôt disponible</span>
+    </div>
+  </div>
+  <p class="doc-kvm-go-models__note">Tous les modèles partagent le même design ultra-compact et les fonctionnalités principales, avec seulement des connecteurs vidéo intégrés différents.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.kvmgo_purchase_link }}', '_blank')">
     Rejoindre la Liste d'Attente
@@ -83,11 +107,3 @@ Suite au succès d'**Openterface Mini-KVM**, avec plus de 5 000 utilisateurs dan
 <div markdown="0">
 {% include "partials/videos-grid-kvm-go.fr.html" %}
 </div>
-
-## Modèles Disponibles
-
-- **KVM-Go HDMI Mâle** — Connexion HDMI directe pour les appareils modernes
-- **KVM-Go DisplayPort Mâle** — Support DisplayPort haute performance  
-- **KVM-Go VGA Mâle** — Compatibilité avec les systèmes hérités (bientôt disponible)
-
-Tous les modèles partagent le même design ultra-compact et les fonctionnalités principales, avec seulement des connecteurs vidéo intégrés différents.

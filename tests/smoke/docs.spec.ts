@@ -7,6 +7,38 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.locator('.site-header')).toBeVisible();
   });
 
+  test('kvm-go overview has doc page nav without edit link', async ({ page }) => {
+    await page.goto('/product/kvm-go/');
+    await expect(page.locator('article .doc-page-nav')).toBeVisible();
+    await expect(page.getByText('Edit this page')).toHaveCount(0);
+    await expect(page.locator('.doc-page-nav__link--next')).toHaveAttribute(
+      'href',
+      /\/product\/kvm-go\/features\/?$/,
+    );
+  });
+
+  test('kvm-go overview shows models grid before pre-order CTA', async ({ page }) => {
+    await page.goto('/product/kvm-go/');
+    const models = page.locator('.doc-kvm-go-models');
+    const cta = page.locator('.doc-buy-cta');
+    await expect(models).toBeVisible();
+    await expect(page.getByText('KVM-Go HDMI Male')).toBeVisible();
+    await expect(page.getByText('Coming soon')).toBeVisible();
+    await expect(cta).toBeVisible();
+    const modelsBeforeCta = await models.evaluate((el) => {
+      const buy = document.querySelector('.doc-buy-cta');
+      return buy ? (el.compareDocumentPosition(buy) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 : false;
+    });
+    expect(modelsBeforeCta).toBe(true);
+  });
+
+  test('zh kvm-go overview shows localized models grid', async ({ page }) => {
+    await page.goto('/zh/product/kvm-go/');
+    await expect(page.locator('.doc-kvm-go-models')).toBeVisible();
+    await expect(page.getByText('KVM-Go HDMI 公头')).toBeVisible();
+    await expect(page.getByText('即将推出')).toBeVisible();
+  });
+
   test('kvm-go how-to-connect has sidebar, callouts, and search', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('/product/kvm-go/how-to-connect/');

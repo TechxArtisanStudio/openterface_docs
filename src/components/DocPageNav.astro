@@ -1,0 +1,36 @@
+---
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  prev?: NavLink;
+  next?: NavLink;
+}
+
+const { prev, next } = Astro.props;
+const layout =
+  prev && next ? 'doc-page-nav--both' : prev ? 'doc-page-nav--prev-only' : 'doc-page-nav--next-only';
+---
+
+{
+  (prev || next) && (
+    <nav class:list={['doc-page-nav', layout]} aria-label="Page navigation">
+      {
+        prev ? (
+          <a href={prev.href} class="doc-page-nav__link doc-page-nav__link--prev" aria-label={`Previous: ${prev.label}`}>
+            ← {prev.label}
+          </a>
+        ) : null
+      }
+      {
+        next ? (
+          <a href={next.href} class="doc-page-nav__link doc-page-nav__link--next" aria-label={`Next: ${next.label}`}>
+            {next.label} →
+          </a>
+        ) : null
+      }
+    </nav>
+  )
+}

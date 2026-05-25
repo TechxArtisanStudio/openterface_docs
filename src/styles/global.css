@@ -477,6 +477,62 @@
     @apply text-gray-300;
   }
 
+  .doc-kvm-go-models {
+    @apply my-6 rounded-xl border border-gray-200 bg-surface/80 px-4 py-5 md:px-6;
+  }
+
+  .doc-kvm-go-models__title {
+    @apply m-0 mb-4 text-center text-sm font-semibold uppercase tracking-wide text-muted;
+  }
+
+  .doc-kvm-go-models__photo {
+    @apply mx-auto mb-4 block max-h-32 object-contain;
+  }
+
+  .doc-kvm-go-models__grid {
+    @apply grid gap-3 sm:grid-cols-3;
+  }
+
+  .doc-kvm-go-models__card {
+    @apply rounded-lg border border-gray-200 bg-surface p-4 text-center;
+  }
+
+  .doc-kvm-go-models__card--soon {
+    @apply border-dashed opacity-75;
+  }
+
+  .doc-kvm-go-models__badge {
+    @apply mb-2 inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide;
+  }
+
+  .doc-kvm-go-models__badge--hdmi {
+    @apply bg-orange-100 text-orange-800;
+  }
+
+  .doc-kvm-go-models__badge--dp {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .doc-kvm-go-models__badge--vga {
+    @apply bg-gray-100 text-gray-700;
+  }
+
+  .doc-kvm-go-models__name {
+    @apply m-0 mb-1 text-sm font-semibold text-ink;
+  }
+
+  .doc-kvm-go-models__desc {
+    @apply m-0 text-xs leading-relaxed text-muted;
+  }
+
+  .doc-kvm-go-models__status {
+    @apply mt-2 inline-block rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-muted;
+  }
+
+  .doc-kvm-go-models__note {
+    @apply m-0 mt-4 text-center text-sm text-muted;
+  }
+
   .doc-product-signup {
     @apply my-10 rounded-xl border border-gray-200 bg-surface p-6;
   }
@@ -647,6 +703,26 @@
 
   .toc-link-active {
     @apply border-primary-dark font-medium text-primary-dark;
+  }
+
+  .doc-page-nav {
+    @apply mt-10 flex min-w-0 flex-wrap items-center gap-x-6 gap-y-2 border-t border-gray-100 pt-5 lg:px-6;
+  }
+
+  .doc-page-nav--both {
+    @apply justify-between;
+  }
+
+  .doc-page-nav--prev-only {
+    @apply justify-start;
+  }
+
+  .doc-page-nav--next-only {
+    @apply justify-end;
+  }
+
+  .doc-page-nav__link {
+    @apply max-w-full truncate text-sm text-muted no-underline transition-colors hover:text-primary-dark;
   }
 
   .site-header {

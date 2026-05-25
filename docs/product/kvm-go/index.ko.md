@@ -16,6 +16,30 @@ keywords: "KVM-Go, KVM over USB, 초소형 KVM, 내장 HDMI, 키체인 KVM, 4K K
 
 **Openterface Mini-KVM**의 성공에 이어 오픈 소스 커뮤니티에 5,000명 이상의 사용자를 보유한 **Openterface™ KVM-Go 시리즈**는 차세대 [**KVM-over-USB**](/faq/kvm-over-usb/) 솔루션입니다. 키체인에 맞는 초소형으로 설계되었으며, 내장 비디오 커넥터(HDMI, DisplayPort 또는 VGA)를 특징으로 하여 별도의 비디오 케이블이 필요 없습니다. 데이터 센터, 원격 서버실, 헤드리스 장치 문제 해결에서의 신속한 작업에 완벽합니다.
 
+<div class="doc-kvm-go-models">
+  <p class="doc-kvm-go-models__title">사용 가능한 모델</p>
+  <img src="https://assets.openterface.com/images/kvm-go/kvm-go-hdmi-vga-dp-group-1.webp" alt="KVM-Go HDMI, DisplayPort, VGA 버전" class="doc-kvm-go-models__photo skip-lightbox" loading="lazy" />
+  <div class="doc-kvm-go-models__grid">
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--hdmi">HDMI</span>
+      <p class="doc-kvm-go-models__name">KVM-Go HDMI 수</p>
+      <p class="doc-kvm-go-models__desc">모던 장치용 직접 HDMI 연결</p>
+    </div>
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--dp">DisplayPort</span>
+      <p class="doc-kvm-go-models__name">KVM-Go DisplayPort 수</p>
+      <p class="doc-kvm-go-models__desc">고성능 DisplayPort 지원</p>
+    </div>
+    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
+      <p class="doc-kvm-go-models__name">KVM-Go VGA 수</p>
+      <p class="doc-kvm-go-models__desc">레거시 시스템 호환성</p>
+      <span class="doc-kvm-go-models__status">출시 예정</span>
+    </div>
+  </div>
+  <p class="doc-kvm-go-models__note">모든 모델은 동일한 초소형 디자인과 핵심 기능을 공유하며, 내장 비디오 커넥터만 다릅니다.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.kvmgo_purchase_link }}', '_blank')">
     대기 목록 참여
@@ -83,11 +107,3 @@ keywords: "KVM-Go, KVM over USB, 초소형 KVM, 내장 HDMI, 키체인 KVM, 4K K
 <div markdown="0">
 {% include "partials/videos-grid-kvm-go.ko.html" %}
 </div>
-
-## 사용 가능한 모델
-
-- **KVM-Go HDMI 수** — 모던 장치용 직접 HDMI 연결
-- **KVM-Go DisplayPort 수** — 고성능 DisplayPort 지원  
-- **KVM-Go VGA 수** — 레거시 시스템 호환성 (출시 예정)
-
-모든 모델은 동일한 초소형 디자인과 핵심 기능을 공유하며, 내장 비디오 커넥터만 다릅니다.

@@ -16,6 +16,30 @@ keywords: "KVM-Go, KVM over USB, 超紧凑KVM, 内置HDMI, 钥匙扣KVM, 4K KVM,
 
 继**Openterface Mini-KVM**取得成功，我们的开源社区拥有超过5,000名用户，**Openterface™ KVM-Go系列**是下一代[**KVM-over-USB**](/faq/kvm-over-usb/)解决方案。超紧凑设计，可挂在钥匙扣上，配备内置视频连接器（HDMI、DisplayPort或VGA），无需单独的视频线缆。非常适合数据中心、远程服务器机房和无头设备故障排除的快速操作。
 
+<div class="doc-kvm-go-models">
+  <p class="doc-kvm-go-models__title">可用型号</p>
+  <img src="https://assets.openterface.com/images/kvm-go/kvm-go-hdmi-vga-dp-group-1.webp" alt="KVM-Go HDMI、DisplayPort 与 VGA 版本" class="doc-kvm-go-models__photo skip-lightbox" loading="lazy" />
+  <div class="doc-kvm-go-models__grid">
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--hdmi">HDMI</span>
+      <p class="doc-kvm-go-models__name">KVM-Go HDMI 公头</p>
+      <p class="doc-kvm-go-models__desc">现代设备的直接HDMI连接</p>
+    </div>
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--dp">DisplayPort</span>
+      <p class="doc-kvm-go-models__name">KVM-Go DisplayPort 公头</p>
+      <p class="doc-kvm-go-models__desc">高性能DisplayPort支持</p>
+    </div>
+    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
+      <p class="doc-kvm-go-models__name">KVM-Go VGA 公头</p>
+      <p class="doc-kvm-go-models__desc">传统系统兼容性</p>
+      <span class="doc-kvm-go-models__status">即将推出</span>
+    </div>
+  </div>
+  <p class="doc-kvm-go-models__note">所有型号共享相同的超紧凑设计和核心功能，仅内置视频连接器不同。</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.kvmgo_purchase_link }}', '_blank')">
     加入等待列表
@@ -83,11 +107,3 @@ keywords: "KVM-Go, KVM over USB, 超紧凑KVM, 内置HDMI, 钥匙扣KVM, 4K KVM,
 <div markdown="0">
 {% include "partials/videos-grid-kvm-go.zh.html" %}
 </div>
-
-## 可用型号
-
-- **KVM-Go HDMI 公头** — 现代设备的直接HDMI连接
-- **KVM-Go DisplayPort 公头** — 高性能DisplayPort支持  
-- **KVM-Go VGA 公头** — 传统系统兼容性（即将推出）
-
-所有型号共享相同的超紧凑设计和核心功能，仅内置视频连接器不同。

@@ -16,6 +16,30 @@ keywords: "KVM-Go, KVM over USB, KVM ultra-compact, HDMI integrat, KVM portcheie
 
 După succesul **Openterface Mini-KVM**, cu peste 5.000 de utilizatori în comunitatea noastră open-source, **Seria Openterface™ KVM-Go** este soluția [**KVM-over-USB**](/faq/kvm-over-usb/) de generația următoare. Ultra-compactă și proiectată să încapă pe portcheia ta, prezintă conectoare video integrate (HDMI, DisplayPort sau VGA) care elimină necesitatea cablurilor video separate. Perfectă pentru operațiuni rapide în centrele de date, sălile de servere remote și rezolvarea problemelor dispozitivelor headless.
 
+<div class="doc-kvm-go-models">
+  <p class="doc-kvm-go-models__title">Modele Disponibile</p>
+  <img src="https://assets.openterface.com/images/kvm-go/kvm-go-hdmi-vga-dp-group-1.webp" alt="Variante KVM-Go HDMI, DisplayPort și VGA" class="doc-kvm-go-models__photo skip-lightbox" loading="lazy" />
+  <div class="doc-kvm-go-models__grid">
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--hdmi">HDMI</span>
+      <p class="doc-kvm-go-models__name">KVM-Go HDMI Mascul</p>
+      <p class="doc-kvm-go-models__desc">Conexiune HDMI directă pentru dispozitive moderne</p>
+    </div>
+    <div class="doc-kvm-go-models__card">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--dp">DisplayPort</span>
+      <p class="doc-kvm-go-models__name">KVM-Go DisplayPort Mascul</p>
+      <p class="doc-kvm-go-models__desc">Suport DisplayPort de înaltă performanță</p>
+    </div>
+    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+      <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
+      <p class="doc-kvm-go-models__name">KVM-Go VGA Mascul</p>
+      <p class="doc-kvm-go-models__desc">Compatibilitate sisteme legacy</p>
+      <span class="doc-kvm-go-models__status">În curând</span>
+    </div>
+  </div>
+  <p class="doc-kvm-go-models__note">Toate modelele împărtășesc același design ultra-compact și funcționalitate de bază, doar cu conectoare video integrate diferite.</p>
+</div>
+
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('{{ config.extra.kvmgo_purchase_link }}', '_blank')">
     Alătură-te Listei de Așteptare
@@ -83,11 +107,3 @@ După succesul **Openterface Mini-KVM**, cu peste 5.000 de utilizatori în comun
 <div markdown="0">
 {% include "partials/videos-grid-kvm-go.ro.html" %}
 </div>
-
-## Modele Disponibile
-
-- **KVM-Go HDMI Mascul** — Conexiune HDMI directă pentru dispozitive moderne
-- **KVM-Go DisplayPort Mascul** — Suport DisplayPort de înaltă performanță  
-- **KVM-Go VGA Mascul** — Compatibilitate sisteme legacy (în curând)
-
-Toate modelele împărtășesc același design ultra-compact și funcționalitate de bază, doar cu conectoare video integrate diferite.

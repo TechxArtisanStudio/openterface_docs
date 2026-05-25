@@ -55,6 +55,15 @@ export function sidebarSlugsForPage(slug: string): string[] {
   return section?.items.map((item) => item.slug) ?? [];
 }
 
+/** Short sidebar label for a slug (e.g. "Features"), for prev/next link text. */
+export function sidebarNavLabel(slug: string, locale: SiteLocale): string | undefined {
+  for (const section of NAV_SECTIONS) {
+    const item = section.items.find((i) => i.slug === slug);
+    if (item) return translateNavLabel(item.label, locale);
+  }
+  return undefined;
+}
+
 /** @deprecated use sidebarForSlug */
 export function kvmGoSidebar(locale: SiteLocale): SidebarItem[] {
   return sidebarForSlug(locale, 'product/kvm-go') ?? [];
