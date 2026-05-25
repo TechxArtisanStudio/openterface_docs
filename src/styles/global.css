@@ -667,9 +667,13 @@
   }
 
   .site-header__suffix {
-    @apply shrink-0 text-sm font-medium whitespace-nowrap text-white/90;
+    @apply shrink-0 text-sm font-medium whitespace-nowrap text-white/90 transition-colors duration-150;
     flex: 0 0 var(--site-header-suffix-width);
     margin-left: var(--site-header-brand-gap);
+  }
+
+  .site-header__suffix:hover {
+    @apply text-white;
   }
 
   .site-header__suffix:empty {

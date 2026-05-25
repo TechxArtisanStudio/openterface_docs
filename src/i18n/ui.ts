@@ -36,7 +36,6 @@ export interface UiStrings {
     products: string;
     resources: string;
     sites: string;
-    marketing: string;
     news: string;
     forum: string;
     copyright: string;
@@ -96,7 +95,6 @@ const en: UiStrings = {
     products: 'Products',
     resources: 'Resources',
     sites: 'Sites',
-    marketing: 'Marketing ↗',
     news: 'News ↗',
     forum: 'Forum ↗',
     copyright: 'Openterface. Open-source KVM-over-USB.',
@@ -158,7 +156,6 @@ const zh: UiStrings = {
     products: '产品',
     resources: '资源',
     sites: '站点',
-    marketing: '营销站 ↗',
     news: '资讯 ↗',
     forum: '论坛 ↗',
     copyright: 'Openterface. 开源 KVM-over-USB.',
