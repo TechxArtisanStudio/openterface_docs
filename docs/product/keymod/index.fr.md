@@ -24,7 +24,6 @@ keywords: "KeyMod, émulateur HID, clavier téléphone, clavier Bluetooth, clavi
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
 
 Suite au succès de nos campagnes 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) et 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), nous revenons avec un nouvel outil de contrôle quotidien : **Openterface KeyMod**.
 

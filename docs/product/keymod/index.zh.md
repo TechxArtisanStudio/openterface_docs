@@ -24,7 +24,6 @@ keywords: "KeyMod, HID 模拟器, 手机键盘, 蓝牙键盘, USB 键盘, 便携
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
 
 继 2024 年 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) 和 2025 年 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go) 活动成功后，我们带来了一款新的日常控制工具：**Openterface KeyMod**。
 

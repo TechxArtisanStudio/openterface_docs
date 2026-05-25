@@ -24,7 +24,6 @@ keywords: "KeyMod, HIDエミュレーター, スマホキーボード, Bluetooth
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
 
 2024年[Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)と2025年[KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go)キャンペーンの成功に続き、新しい日常制御ツールを発表します：**Openterface KeyMod**。
 

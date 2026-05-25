@@ -24,7 +24,6 @@ keywords: "KeyMod, emulador HID, teclado telefone, teclado Bluetooth, teclado US
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
 
 Após o sucesso de nossas campanhas de 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) e 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), voltamos com um novo tipo de ferramenta de controle cotidiano: **Openterface KeyMod**.
 

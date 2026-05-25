@@ -24,8 +24,6 @@ keywords: "KeyMod, HID emulator, phone keyboard, Bluetooth keyboard, USB keyboar
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
-
 Following the success of our 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) and 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go) campaigns, we're back with a new kind of everyday control tool: **Openterface KeyMod Series**.
 
 A compact, programmable **USB + Bluetooth** HID (keyboard and mouse) emulator, KeyMod Series turns your phone into a portable keyboard and trackpad console for quick local control and workflow shortcuts. Built on the proven HID core from Openterface Mini-KVM, it is plug and play, 100% open source.

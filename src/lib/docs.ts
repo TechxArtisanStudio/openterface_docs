@@ -270,7 +270,11 @@ function transformMdButtons(html: string): string {
 
 function transformProductSignup(html: string): string {
   if (html.includes('doc-product-signup')) return html;
-  if (!html.includes('product-signup-container') && !html.includes('product-signup-form')) return html;
+  const hasSignupMarkup =
+    html.includes('product-signup-container') ||
+    html.includes('class="product-signup-form"') ||
+    /\bid=["']product-signup-form["']/.test(html);
+  if (!hasSignupMarkup) return html;
 
   return `<div class="doc-product-signup" id="product-signup-form">
   <p class="doc-product-signup__lead">Sign up to receive updates for this product. Unsubscribe anytime.</p>

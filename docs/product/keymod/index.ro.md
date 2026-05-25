@@ -24,7 +24,6 @@ keywords: "KeyMod, emulator HID, tastatură telefon, tastatură Bluetooth, tasta
   </button>
 </div>
 
-{% include "partials/product-signup.html" %}
 
 După succesul campaniilor noastre din 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) și 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), revenim cu un nou tip de instrument de control zilnic: **Openterface KeyMod**.
 
