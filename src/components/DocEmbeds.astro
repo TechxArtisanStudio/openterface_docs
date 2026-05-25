@@ -169,10 +169,20 @@
     }, 2500);
   }
 
+  async function initMermaid() {
+    const nodes = Array.from(document.querySelectorAll('pre.mermaid:not([data-processed])'));
+    if (!nodes.length) return;
+
+    const { default: mermaid } = await import('mermaid');
+    mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+    await mermaid.run({ nodes });
+  }
+
   function initDocEmbeds() {
     initDocSlideshows();
     initSubscribeForms();
     initSocialPosts();
+    void initMermaid();
   }
 
   initDocEmbeds();

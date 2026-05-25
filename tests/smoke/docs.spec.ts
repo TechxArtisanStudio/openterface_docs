@@ -54,6 +54,13 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.locator('details.callout-note summary')).toBeVisible();
   });
 
+  test('minikvm troubleshooting renders mermaid flowchart', async ({ page }) => {
+    await page.goto('/product/minikvm/support/mini-kvm-troubleshooting-and-support/#overview-how-this-is-handled');
+    const diagram = page.locator('pre.mermaid');
+    await expect(diagram).toBeVisible();
+    await expect(diagram.locator('svg')).toBeVisible();
+  });
+
   test('tutorial kvm getting started loads with sidebar', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('/tutorial/kvm/01-getting-started/');
