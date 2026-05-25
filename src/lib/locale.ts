@@ -14,6 +14,7 @@ export const SUPPORTED_LOCALES = [
   'ru',
   'ar',
   'tr',
+  'pl',
 ] as const;
 
 export type SiteLocale = (typeof SUPPORTED_LOCALES)[number];
@@ -34,6 +35,7 @@ export const LOCALE_LABELS: Record<SiteLocale, string> = {
   ru: 'Русский',
   ar: 'العربية',
   tr: 'Türkçe',
+  pl: 'Polski',
 };
 
 export const DEFAULT_LOCALE: SiteLocale = 'en';

@@ -19,6 +19,7 @@ Feel free to browse in your preferred one:
 - 🇷🇺 [Русский](/ru) (ru)
 - 🇸🇦 [العربية](/ar) (ar)
 - 🇹🇷 [Türkçe](/tr) (tr)
+- 🇵🇱 [Polski](/pl) (pl)
 - 🇷🇴 [Română](/ro) (ro)
 
 ## Translation Process

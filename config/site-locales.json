@@ -60,6 +60,10 @@
     "tr": {
       "label": "Türkçe",
       "path": "tr"
+    },
+    "pl": {
+      "label": "Polski",
+      "path": "pl"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"
