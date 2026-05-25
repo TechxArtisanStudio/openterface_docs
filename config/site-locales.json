@@ -48,6 +48,10 @@
     "tw": {
       "label": "繁體中文（台灣）",
       "path": "tw"
+    },
+    "ru": {
+      "label": "Русский",
+      "path": "ru"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"
