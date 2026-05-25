@@ -292,7 +292,10 @@ function transformYoutubeGrid(html: string): string {
   out = out.replace(/class="youtube-video-card"/g, 'class="doc-youtube-card"');
   out = out.replace(/class="youtube-video-thumbnail"/g, 'class="doc-youtube-card__thumb"');
   out = out.replace(/class="play-overlay"/g, 'class="doc-youtube-card__play"');
-  out = out.replace(/class="skip-lightbox"/g, '');
+  out = out.replace(/class="skip-lightbox"/g, 'class="doc-youtube-thumb"');
+  out = out.replace(/(<img(?![^>]*class=)[^>]*>)/g, (tag) =>
+    tag.replace('<img', '<img class="doc-youtube-thumb"'),
+  );
   return `<section class="doc-youtube-section" aria-label="Product videos">\n${out}\n</section>`;
 }
 

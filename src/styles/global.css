@@ -91,7 +91,7 @@
     @apply max-w-full rounded-lg;
   }
 
-  .prose-docs img:not([width]):not(.doc-inline-icon):not(.doc-diagram) {
+  .prose-docs img:not([width]):not(.doc-inline-icon):not(.doc-diagram):not(.doc-youtube-thumb) {
     @apply my-6 block;
     width: auto;
     height: auto;
@@ -521,6 +521,10 @@
     @apply block no-underline;
   }
 
+  .prose-docs .doc-youtube-card a {
+    @apply no-underline;
+  }
+
   .doc-youtube-card__thumb {
     @apply relative aspect-video overflow-hidden rounded-xl bg-gray-200 shadow-sm ring-1 ring-black/5 transition;
   }
@@ -529,8 +533,9 @@
     @apply -translate-y-0.5 shadow-md ring-primary-dark/30;
   }
 
+  .prose-docs .doc-youtube-card__thumb img,
   .doc-youtube-card__thumb img {
-    @apply m-0 h-full w-full max-w-none rounded-none object-cover;
+    @apply absolute inset-0 m-0 block h-full w-full max-w-none rounded-none object-cover;
   }
 
   .doc-youtube-card__play {
