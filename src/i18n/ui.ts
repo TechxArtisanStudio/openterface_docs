@@ -298,6 +298,7 @@ const dictionaries: Record<SiteLocale, UiStrings> = {
   tw,
   ru: en,
   ar: en,
+  tr: en,
 };
 
 export function t(locale: SiteLocale): UiStrings {

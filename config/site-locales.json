@@ -56,6 +56,10 @@
     "ar": {
       "label": "العربية",
       "path": "ar"
+    },
+    "tr": {
+      "label": "Türkçe",
+      "path": "tr"
     }
   },
   "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"

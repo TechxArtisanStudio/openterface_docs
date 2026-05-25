@@ -18,6 +18,7 @@ Feel free to browse in your preferred one:
 - 🇹🇼 [繁體中文（台灣）](/tw) (tw)
 - 🇷🇺 [Русский](/ru) (ru)
 - 🇸🇦 [العربية](/ar) (ar)
+- 🇹🇷 [Türkçe](/tr) (tr)
 - 🇷🇴 [Română](/ro) (ro)
 
 ## Translation Process
