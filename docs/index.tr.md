@@ -1,17 +1,17 @@
 ---
 title: Dokümantasyon
-description: Willkommen in der offiziellen Dokümantasyon için Openterface KVM-over-USB Ürüne ve Yazılım.
+description: Openterface KVM-over-USB ürünleri ve yazılımı için resmi dokümantasyon merkezine hoş geldiniz.
 ---
 
-# Openterface Dokümantasyon
+# Openterface Dokümantasyonu
 
-Willkommen in der offiziellen Dokümantasyon için Openterface KVM-over-USB Ürüne ve Yazılım.
+Openterface KVM-over-USB ürünleri ve yazılımı için resmi dokümantasyon merkezine hoş geldiniz.
 
 ## Quick links
 
-- [KVM-GO](/de/product/kvm-go/)
-- [Mini-KVM](/de/product/minikvm/)
-- [KeyMod](/de/product/keymod/)
-- [İndir App](/de/app/overview/)
-- [Destek](/de/support/)
-- [Haberler ↗](https://news.openterface.com/de/)
+- [KVM-GO](/tr/product/kvm-go/)
+- [Mini-KVM](/tr/product/minikvm/)
+- [KeyMod](/tr/product/keymod/)
+- [Uygulamayı indir](/tr/app/overview/)
+- [Destek](/tr/support/)
+- [Haberler ↗](https://news.openterface.com/tr/)

@@ -1,17 +1,17 @@
 ---
 title: التوثيق
-description: Willkommen in der offiziellen التوثيق لـ Openterface KVM-over-USB منتجe و البرمجيات.
+description: مرحبًا بك في مركز التوثيق الرسمي لمنتجات وبرامج Openterface KVM-over-USB.
 ---
 
-# Openterface التوثيق
+# توثيق Openterface
 
-Willkommen in der offiziellen التوثيق لـ Openterface KVM-over-USB منتجe و البرمجيات.
+مرحبًا بك في مركز التوثيق الرسمي لمنتجات وبرامج Openterface KVM-over-USB.
 
 ## Quick links
 
-- [KVM-GO](/de/product/kvm-go/)
-- [Mini-KVM](/de/product/minikvm/)
-- [KeyMod](/de/product/keymod/)
-- [تنزيل App](/de/app/overview/)
-- [الدعم](/de/support/)
-- [الأخبار ↗](https://news.openterface.com/de/)
+- [KVM-GO](/ar/product/kvm-go/)
+- [Mini-KVM](/ar/product/minikvm/)
+- [KeyMod](/ar/product/keymod/)
+- [تنزيل التطبيق](/ar/app/overview/)
+- [الدعم](/ar/support/)
+- [الأخبار ↗](https://news.openterface.com/ar/)

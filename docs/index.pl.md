@@ -1,17 +1,17 @@
 ---
 title: Dokumentacja
-description: Willkommen in der offiziellen Dokumentacja dla Openterface KVM-over-USB Produkty i Oprogramowanie.
+description: Witamy w oficjalnej dokumentacji produktów i oprogramowania Openterface KVM-over-USB.
 ---
 
-# Openterface Dokumentacja
+# Dokumentacja Openterface
 
-Willkommen in der offiziellen Dokumentacja dla Openterface KVM-over-USB Produkty i Oprogramowanie.
+Witamy w oficjalnej dokumentacji produktów i oprogramowania Openterface KVM-over-USB.
 
 ## Quick links
 
-- [KVM-GO](/de/product/kvm-go/)
-- [Mini-KVM](/de/product/minikvm/)
-- [KeyMod](/de/product/keymod/)
-- [Pobierz App](/de/app/overview/)
-- [Wsparcie](/de/support/)
-- [Aktualności ↗](https://news.openterface.com/de/)
+- [KVM-GO](/pl/product/kvm-go/)
+- [Mini-KVM](/pl/product/minikvm/)
+- [KeyMod](/pl/product/keymod/)
+- [Pobierz aplikację](/pl/app/overview/)
+- [Wsparcie](/pl/support/)
+- [Aktualności ↗](https://news.openterface.com/pl/)

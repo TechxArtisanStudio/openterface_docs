@@ -93,7 +93,7 @@ Unser **Openterface™ Mini-KVM** ist eine Plug-and-Play [**KVM-over-USB**](/faq
 
     ---
 
-    [:material-star-outline: Bewertungen](/product/minikvm/reviews/) / [:material-newspaper-variant-outline: Medien](/product/minikvm/reviews/) / [:material-play-circle-outline: YouTube Videos](/de/videos/?p=minikvm) / [:material-newspaper-variant-outline: Insgesamt Обновления {{ config.extra.minikvm_updates }}](/product/minikvm/updates) / [:material-trophy-outline: USB KVM DIY Wettbewerb 2024](/product/minikvm/updates) / [:material-account-group-outline: Ausstellung](/product/minikvm/updates)
+    [:material-star-outline: Bewertungen](/product/minikvm/reviews/) / [:material-newspaper-variant-outline: Medien](/product/minikvm/reviews/) / [:material-play-circle-outline: YouTube Videos](/ru/videos/?p=minikvm) / [:material-newspaper-variant-outline: Insgesamt Обновления {{ config.extra.minikvm_updates }}](/product/minikvm/updates) / [:material-trophy-outline: USB KVM DIY Wettbewerb 2024](/product/minikvm/updates) / [:material-account-group-outline: Ausstellung](/product/minikvm/updates)
 
 </div>
 
