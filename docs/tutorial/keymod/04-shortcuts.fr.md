@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Hub de raccourcis"
-description: "Utilisez des raccourcis clavier basés sur le profil pour les applications populaires telles que Blender, VS Code, Photoshop et KiCAD."
+description: Utilisez des raccourcis clavier basés sur le profil pour les applications populaires telles que Blender, VS Code, Photoshop et KiCAD. Accès en un seul clic…
 keywords: "Raccourcis KeyMod, profils de raccourcis, raccourcis Blender, raccourcis VS Code, raccourcis clavier"
 ---
 

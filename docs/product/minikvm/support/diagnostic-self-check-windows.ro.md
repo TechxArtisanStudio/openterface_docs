@@ -2,6 +2,7 @@
 titlu: „Openterface Mini-KVM (Windows) - Ghid pentru verificare auto-diagnostic hardware"
 descriere: „Ghid pas cu pas pentru rularea verificării auto-diagnostice hardware în aplicația Openterface pentru Windows. Învață cum să testezi conexiunile USB, să detectezi probleme și să trimiti rapoarte de diagnostic către suport."
 cuvinte cheie: „Openterface Mini-KVM, Windows, diagnostic hardware, verificare auto-diagnostic, depanare KVM, diagnostic USB KVM, suport Mini-KVM, testare dispozitiv KVM, Windows KVM, raport de defect KVM, ghid pentru depanare Mini-KVM"
+description: Acest ghid explică cum să rulați verificarea auto-diagnostic Hardware în versiunea Windows a aplicației Openterface, și cum să trimiteți raportul de… Openterfac
 ---
 
 # Openterface Mini-KVM (Windows) — Ghid pentru verificare auto-diagnostic hardware

@@ -1,7 +1,7 @@
 ---
 title: KVM-over-USB 基礎知識 | 什麼是 USB KVM？
 keywords: KVM-over-USB, USB KVM, keyboard video mouse control, headless computer, plug-and-play, network-independent, IT professionals, system builders, portable KVM, BIOS access
-description: 瞭解 KVM-over-USB 技術、其優勢以及與其他 KVM 解決方案的比較。適合需要便攜和網絡獨立設備控制的 IT 專業人士和系統構建者。
+description: "KVM-over-USB 基礎知識 | 什麼是 USB KVM？: USB KVM——通常稱為 KVM-over-USB——是一種鍵盤、視頻和鼠標控制解決方案，通過 USB 和通常的 HDMI（或類似的，如 VGA 或 Micro… — faq/kvm-over-usb"
 ---
 
 # KVM-over-USB 基礎知識

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Central de atalhos"
-description: "Use atalhos de teclado baseados em perfil para aplicativos populares como Blender, VS Code, Photoshop e KiCAD."
+description: Use atalhos de teclado baseados em perfil para aplicativos populares como Blender, VS Code, Photoshop e KiCAD. Acesso com um toque a atalhos de teclado…
 keywords: "KeyMod atalhos, perfis de atalho, Blender atalhos, VS Code atalhos, atalhos de teclado"
 ---
 

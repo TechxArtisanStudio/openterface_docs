@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - SO de destino"
-description: "Defina o sistema operacional de destino para que KeyMod envie os mapeamentos de teclas corretos para computadores Windows, macOS ou Linux."
+description: Defina o sistema operacional de destino para que KeyMod envie os mapeamentos de teclas corretos para computadores Windows, macOS ou Linux. KeyMod envia…
 keywords: "KeyMod SO de destino, mapeamento de teclas, teclas modificadoras, entrada Unicode"
 ---
 

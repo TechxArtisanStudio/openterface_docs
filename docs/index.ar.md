@@ -1,6 +1,6 @@
 ---
 title: التوثيق
-description: مرحبًا بك في مركز التوثيق الرسمي لمنتجات وبرامج Openterface KVM-over-USB.
+description: "مرحبًا بك في مركز التوثيق الرسمي لمنتجات وبرامج Openterface KVM-over-USB. وثائق Openterface الرسمية: الإعداد والأسئلة الشائعة واستكشاف أخطاء KVM-over-USB."
 ---
 
 # توثيق Openterface

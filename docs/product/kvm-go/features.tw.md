@@ -1,6 +1,6 @@
 ---
 title: "功能與規格"
-description: "Openterface KVM-Go 系列完整概述：超緊湊設計，內置視頻接口，支持 4K/60Hz，MicroSD 插槽及詳細技術規格。鑰匙扣大小的 KVM-over-USB 解決方案，專為 IT 專業人士打造。"
+description: "功能與規格: KVM-Go 系列已進入量產與發貨階段。成品正在運往 Mouser 倉庫進行配送，Crowd Supply 支持者即將收到設備。。 注意： VGA 型號仍在開發中；隨著量產推進，其他細節可能會進一步完善。"
 keywords: "KVM-Go 功能, 超緊湊 KVM, 內置 HDMI, 4K KVM, MicroSD KVM, 鑰匙扣 KVM, KVM 規格, 無顯示器控制, 便攜式 KVM, IT 工具, 服務器管理"
 ---
 

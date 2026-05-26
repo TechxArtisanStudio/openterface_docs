@@ -1,3 +1,8 @@
+---
+title: "KVM-Go firmware-upgrade"
+description: KVM-Go gebruikt de CH32V208-chip van WCH voor toetsenbord- en muisemulatie. Momenteel vereist firmware flashen de officiële programmeertool van WCH, die…
+---
+
 # KVM-Go firmware-upgrade
 
 ## Overzicht

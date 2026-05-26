@@ -1,3 +1,8 @@
+---
+title: "앱 FAQ"
+description: 앱 FAQ에 오신 것을 환영합니다. 필요한 답을 찾지 못하셨다면 으로 이메일을 보내거나 나 에서 커뮤니티에 참여하여 개발팀과 다른 사용자들과 연결하세요. ⚠️ FAQ는 오래될 수 있습니다—업데이트가 필요한 것을 발견하시면 알려주세요!
+---
+
 # 앱 FAQ
 
 앱 FAQ에 오신 것을 환영합니다. 필요한 답을 찾지 못하셨다면 **[info@openterface.com](mailto:info@openterface.com)으로 이메일**을 보내거나 [Discord](/discord)나 [Reddit](/reddit)에서 **커뮤니티에 참여**하여 개발팀과 다른 사용자들과 연결하세요.

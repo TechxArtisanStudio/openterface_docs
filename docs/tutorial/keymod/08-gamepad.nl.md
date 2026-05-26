@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Handleiding - Gamepad"
-description: "Gebruik KeyMod als een virtuele gamecontroller met aanpasbare lay-outs voor gaming, retro-emulatie en gametests."
+description: Gebruik KeyMod als een virtuele gamecontroller met aanpasbare lay-outs voor gaming, retro-emulatie en gametests. Transformeer uw telefoon in een virtuele…
 keywords: "KeyMod gamepad, virtuele controller, gamecontroller, WASD mapping, analoge stick"
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Contribuer et soutenir"
+description: Le matériel open source permet à chacun de contrôler, personnaliser et réellement comprendre sa technologie. Le construire — et le garder ouvert — exige une…
+---
+
 # Contribuer et soutenir
 
 Le matériel open source permet à chacun de contrôler, personnaliser et réellement comprendre sa technologie. Le construire — et le garder ouvert — exige une communauté engagée. Avec votre aide, nous pouvons remettre en question les systèmes fermés et créer un avenir où la technologie appartient à ses utilisateurs.

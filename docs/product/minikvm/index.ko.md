@@ -1,8 +1,7 @@
 ---
 title: "Openterface Mini-KVM | 헤드리스 컴퓨터 제어를 위한 KVM-over-USB 솔루션"
-description: "Openterface Mini-KVM을 사용하여 노트북에서 헤드리스 컴퓨터를 직접 제어하세요. HDMI 지원 플러그 앤 플레이 KVM-over-USB 솔루션으로 네트워크 연결이 필요 없습니다. 개발자, IT 전문가, 원격 워크스테이션에 완벽합니다."
+description: Openterface Mini-KVM을 사용하여 노트북에서 헤드리스 컴퓨터를 직접 제어하세요. HDMI 지원 플러그 앤 플레이 KVM-over-USB 솔루션으로 네트워크 연결이 필요 없습니다. 개발자, IT 전문가, 원격 워크스테이션에 완벽합니다. 우리의 Openterface™…
 keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB KVM, KVM switch, KVM console, usb crash cart adapter, JetKVM, NanoKVM, KiwiKVM, PiKVM, plug and play KVM, VNC, computer peripherals"
-
 ---
 
 # **Openterface Mini-KVM**

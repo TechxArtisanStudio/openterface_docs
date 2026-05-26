@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 目标系统"
-description: "设置目标操作系统，使 KeyMod 向 Windows、macOS 或 Linux 电脑发送正确的按键映射。"
+description: 设置目标操作系统，使 KeyMod 向 Windows、macOS 或 Linux 电脑发送正确的按键映射。 KeyMod 发送的按键会适配目标电脑的操作系统。正确配置可确保目标端收到正确的按键。 点击标题栏中的 系统图标 打开选择器： 说明：…
 keywords: "KeyMod 目标系统, 按键映射, 修饰键, Unicode 输入"
 ---
 

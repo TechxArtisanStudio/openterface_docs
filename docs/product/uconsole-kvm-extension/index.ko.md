@@ -1,6 +1,6 @@
 ---
 title: "Openterface KVM Extension for uConsole | 휴대용 KVM 콘솔 솔루션"
-description: "이 플러그 앤 플레이 확장 보드로 uConsole을 휴대용 KVM 콘솔로 변환하세요. 직접 HDMI 입력과 USB HID 제어로 어디서든 헤드리스 디바이스를 관리할 수 있습니다."
+description: 이 플러그 앤 플레이 확장 보드로 uConsole을 휴대용 KVM 콘솔로 변환하세요. 직접 HDMI 입력과 USB HID 제어로 어디서든 헤드리스 디바이스를 관리할 수 있습니다. Openterface KVM Extension은 uConsole의 확장 슬롯에 있는 원래 4G/LTE…
 keywords: "KVM 확장, uConsole KVM, 휴대용 KVM, HDMI KVM, USB HID 제어, 헤드리스 제어, 4G LTE 대체, uConsole 확장, 모바일 KVM 콘솔"
 ---
 

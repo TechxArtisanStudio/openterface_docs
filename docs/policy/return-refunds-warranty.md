@@ -1,3 +1,8 @@
+---
+title: "Return, Refund, and Warranty Policy"
+description: "Return, Refund, and Warranty Policy: (Version 2 – February 2026) This policy applies to Openterface products, including Mini-KVM, KVM-GO, etc. Please read…"
+---
+
 # Return, Refund, and Warranty Policy
 
 **(Version 2 – February 2026)**

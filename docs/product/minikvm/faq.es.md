@@ -1,6 +1,6 @@
 ---
 title: Preguntas frecuentes sobre Openterface Mini-KVM
-description: Preguntas frecuentes sobre el Mini-KVM, que cubren características, compatibilidad, resolución de problemas y planes futuros.
+description: Preguntas frecuentes sobre el Mini-KVM, que cubren características, compatibilidad, resolución de problemas y planes futuros. Bienvenido a las preguntas…
 keywords: Mini-KVM, Openterface, conmutador KVM, código abierto, resolución de problemas, captura de video, USB, compatibilidad, autodiagnóstico, control teclado ratón, diagnóstico hardware, soporte
 ---
 

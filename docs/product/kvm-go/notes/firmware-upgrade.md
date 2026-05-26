@@ -1,3 +1,8 @@
+---
+title: "KVM-Go Firmware Upgrade"
+description: "KVM-Go Firmware Upgrade: KVM-Go uses the CH32V208 chip from WCH for keyboard and mouse emulation. Currently, firmware flashing requires WCH's official…"
+---
+
 # KVM-Go Firmware Upgrade
 
 ## Overview

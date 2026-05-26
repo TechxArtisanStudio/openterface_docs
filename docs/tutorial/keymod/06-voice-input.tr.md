@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Ses Girişi"
-description: "KeyMod ile sesi klavyeye aktarma özelliğini kullanın. Sistem konuşma tanımayı, cihazdaki yapay zekayı ve birden fazla dili destekler."
+description: KeyMod ile sesi klavyeye aktarma özelliğini kullanın. Sistem konuşma tanımayı, cihazdaki yapay zekayı ve birden fazla dili destekler. Konuşmanızı hedef…
 keywords: "KeyMod ses girişi, konuşmayı metne dönüştürme, Whisper, sesle yazma, eller serbest klavye"
 ---
 

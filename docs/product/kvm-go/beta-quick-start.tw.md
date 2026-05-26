@@ -1,6 +1,6 @@
 ---
 title: "KVM-GO Beta 快速入門指南 | Openterface 測試說明"
-description: "Openterface KVM-GO 完整測試指南。瞭解如何測試長時間空閒、熱插拔、BIOS 訪問、複製粘貼和設備模擬設置。通過我們的測試問卷提交反饋。"
+description: "KVM-GO Beta 快速入門指南 | Openterface 測試說明: 由 Openterface 社區的 ❤️ 撰寫——感謝你幫助我們打造更好的文檔！ 歡迎來到 ！下面是 Beta 反饋問卷的快速指南版本。請依次完成每個部分，記錄你的發現，並在完成後通過 提交所有信息。 恭喜你被選為 Beta…"
 keywords: "KVM-GO 測試, Openterface 測試, KVM-GO 測試指南, 測試者說明, KVM-GO 反饋, 測試問卷, USB KVM 測試, 無頭控制測試, USB KVM 測試"
 ---
 

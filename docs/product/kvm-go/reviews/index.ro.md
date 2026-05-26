@@ -1,3 +1,8 @@
+---
+title: "Recenzii și Media"
+description: "Recenzii și Media: --8<-- \"product/kvm-go/reviews/social-posts.html\" Documentație Openterface: configurare, întrebări frecvente și depanare KVM-over-USB."
+---
+
 # Recenzii și Media
 
 ## Acoperirea în Mass-Media

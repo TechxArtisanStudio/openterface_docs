@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial – Zielbetriebssystem"
-description: "Stellen Sie das Zielbetriebssystem so ein, dass KeyMod die korrekten Tastenzuordnungen an Windows, macOS oder Linux Computer sendet."
+description: Stellen Sie das Zielbetriebssystem so ein, dass KeyMod die korrekten Tastenzuordnungen an Windows, macOS oder Linux Computer sendet. KeyMod sendet… Openterface.
 keywords: "KeyMod Zielbetriebssystem, Tastenzuordnung, Zusatztasten, Unicode-Eingabe"
 ---
 

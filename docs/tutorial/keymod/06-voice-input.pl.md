@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek - Wprowadzanie głosowe"
-description: "Użyj klawiatury głosowej za pomocą KeyMod. Obsługuje systemowe rozpoznawanie mowy, sztuczną inteligencję na urządzeniu i wiele języków."
+description: Użyj klawiatury głosowej za pomocą KeyMod. Obsługuje systemowe rozpoznawanie mowy, sztuczną inteligencję na urządzeniu i wiele języków. Konwertuj mowę na…
 keywords: "KeyMod wprowadzanie głosowe, zamiana mowy na tekst, Whisper, pisanie głosowe, klawiatura głośnomówiąca"
 ---
 

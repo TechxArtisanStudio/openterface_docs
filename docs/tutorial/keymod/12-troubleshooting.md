@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Troubleshooting"
-description: "Fix common KeyMod issues: connection problems, keys not registering, Bluetooth pairing failures, voice input errors, and more."
+description: "KeyMod Tutorial - Troubleshooting: Common problems and solutions for the KeyMod app on Android. Open-source KVM-over-USB guides. Open-source KVM-over-USB…"
 keywords: "KeyMod troubleshooting, KeyMod not connecting, KeyMod Bluetooth issues, KeyMod keys not working"
 ---
 

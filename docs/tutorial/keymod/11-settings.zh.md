@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 设置"
-description: "配置 KeyMod 设置，包括自动连接、主题、语言、BLE 按键延迟、触控板灵敏度与目标系统。"
+description: 配置 KeyMod 设置，包括自动连接、主题、语言、BLE 按键延迟、触控板灵敏度与目标系统。 配置 KeyMod 的行为与外观。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
 keywords: "KeyMod 设置, 自动连接, 主题, 语言, BLE 延迟, 触控板灵敏度"
 ---
 

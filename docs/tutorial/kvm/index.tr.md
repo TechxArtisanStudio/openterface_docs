@@ -1,3 +1,8 @@
+---
+title: "KVM Yazılım Tutorialsu"
+description: "Full KVM-over-USB: klavye, video ve fare kontrolü bir cihazda. Bu öğretici, Openterface KVM serisi — hedefin HDMI video çıkışını yakalayan ve HID… Openterface."
+---
+
 
 # KVM Yazılım Tutorialsu
 

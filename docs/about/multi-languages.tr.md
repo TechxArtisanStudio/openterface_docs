@@ -1,3 +1,8 @@
+---
+title: "Mehrsprachig"
+description: "🌍 Wir bieten die Website in verschiedenen Sprachen an. Fühlen Sie sich frei, in Ihrer bevorzugten Sprache zu browsen: Resmi Openterface belgeleri: kurulum,…"
+---
+
 # Mehrsprachig
 
 ## Liste der Unterstützten Sprachen

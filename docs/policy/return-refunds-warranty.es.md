@@ -1,3 +1,8 @@
+---
+title: "Política de Devolución, Reembolso y Garantía"
+description: (Versión 2 – Febrero 2026) Esta política se aplica a los productos Openterface, incluidos Mini-KVM, KVM-GO, etc. Por favor, lea atentamente, ya que las…
+---
+
 # Política de Devolución, Reembolso y Garantía
 
 **(Versión 2 – Febrero 2026)**

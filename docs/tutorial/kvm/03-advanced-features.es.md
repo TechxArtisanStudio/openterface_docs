@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 03 — Funciones avanzadas"
+description: "Público: Intermedio a experto — funciones avanzadas y configuración Documentación Openterface: configuración, preguntas frecuentes y soporte KVM-over-USB."
+---
+
 # Tutorial KVM 03 — Funciones avanzadas
 
 **Público:** Intermedio a experto — funciones avanzadas y configuración

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Kısayol Merkezi"
-description: "Blender, VS Code, Photoshop ve KiCAD gibi popüler uygulamalar için profil tabanlı klavye kısayollarını kullanın."
+description: Blender, VS Code, Photoshop ve KiCAD gibi popüler uygulamalar için profil tabanlı klavye kısayollarını kullanın. Uygulamaya göre düzenlenen ortak klavye…
 keywords: "KeyMod kısayollar, kısayol profilleri, Blender kısayollar, VS Code kısayollar, klavye kısayolları"
 ---
 

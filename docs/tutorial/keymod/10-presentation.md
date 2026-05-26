@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Presentation"
-description: "Use KeyMod as a presentation remote to control slides from your phone. Supports PowerPoint, Keynote, Google Slides, and more."
+description: "KeyMod Tutorial - Presentation: Control your slideshow from your phone — no clicker needed. Open-source KVM-over-USB guides. Open-source KVM-over-USB guides."
 keywords: "KeyMod presentation, slide remote, PowerPoint remote, Keynote remote, presentation timer"
 ---
 

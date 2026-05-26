@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Presentatie"
-description: "Gebruik KeyMod als afstandsbediening voor presentaties om dia's vanaf uw telefoon te bedienen. Ondersteunt PowerPoint, Keynote, Google Dia's en meer."
+description: Gebruik KeyMod als afstandsbediening voor presentaties om dia's vanaf uw telefoon te bedienen. Ondersteunt PowerPoint, Keynote, Google Dia's en meer. Bedien…
 keywords: "KeyMod presentatie, schuifafstandsbediening, PowerPoint afstandsbediening, Keynote afstandsbediening, presentatietimer"
 ---
 

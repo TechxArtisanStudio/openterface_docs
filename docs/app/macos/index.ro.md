@@ -1,3 +1,8 @@
+---
+title: "Openterface MacOS"
+description: În prezent lucrăm la adăugarea documentației detaliate pentru software-ul nostru. Vă rugăm să reveniți în curând! Între timp, vă invităm să explorați…
+---
+
 # Openterface MacOS
 
 În prezent lucrăm la adăugarea documentației detaliate pentru software-ul nostru. Vă rugăm să reveniți în curând!

@@ -1,3 +1,8 @@
+---
+title: "KVM 軟件教程"
+description: "KVM 軟件教程: 全面的KVM-over-USB：在同一個設備上控制目標的鍵盤、視頻和鼠標。 本教程涵蓋Openterface KVM系列——這些設備可以捕捉目標的HDMI視頻輸出，並通過HID模擬將鍵盤/鼠標輸入傳遞過去： — tutorial/kvm"
+---
+
 # KVM 軟件教程
 
 > 全面的KVM-over-USB：在同一個設備上控制目標的鍵盤、視頻和鼠標。

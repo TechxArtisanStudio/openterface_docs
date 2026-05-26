@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM (Windows) - 하드웨어 진단 자기 점검 가이드"
-description: "Windows Openterface 앱에서 하드웨어 진단 자기 점검을 실행하는 단계별 가이드입니다. USB 연결 테스트, 문제 감지 및 지원팀에 진단 보고서를 보내는 방법을 학습하세요."
+description: Windows Openterface 앱에서 하드웨어 진단 자기 점검을 실행하는 단계별 가이드입니다. USB 연결 테스트, 문제 감지 및 지원팀에 진단 보고서를 보내는 방법을 학습하세요. 이 가이드는 Windows 버전 Openterface 앱에서 하드웨어 진단 자기 점검을…
 keywords: "Openterface Mini-KVM, Windows, 하드웨어 진단, 진단 자기 점검, KVM 문제 해결, USB KVM 진단, Mini-KVM 지원, KVM 장치 테스트, Windows KVM, KVM 결함 보고, Mini-KVM 문제 해결 가이드"
 ---
 

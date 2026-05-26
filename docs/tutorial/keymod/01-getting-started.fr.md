@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Mise en route"
-description: "Installez l'application KeyMod, connectez-vous à votre appareil KeyMod et envoyez votre première frappe en moins de 5 minutes."
+description: "Installez l'application KeyMod, connectez-vous à votre appareil KeyMod et envoyez votre première frappe en moins de 5 minutes. Documentation Openterface :…"
 keywords: "KeyMod démarrage, KeyMod configuration, KeyMod installation, connexion KeyMod"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 대상 OS"
-description: "KeyMod가 올바른 키 매핑을 Windows, macOS 또는 Linux 컴퓨터에 보내도록 대상 운영 체제를 설정합니다."
+description: KeyMod가 올바른 키 매핑을 Windows, macOS 또는 Linux 컴퓨터에 보내도록 대상 운영 체제를 설정합니다. KeyMod은 대상 컴퓨터의 운영 체제에 맞는 키 입력을 보냅니다. 이를 올바르게 구성하면 올바른 키가 대상에 도착합니다. 헤더 표시줄에서 OS 아이콘을…
 keywords: "KeyMod 대상 OS, 키 매핑, 수정자 키, 유니코드 입력"
 ---
 

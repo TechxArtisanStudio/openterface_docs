@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Poradnik - Ustawienia"
-description: "Skonfiguruj ustawienia KeyMod, w tym automatyczne łączenie, motywy, język, opóźnienie klawisza BLE, czułość touchpad i docelowy system operacyjny."
+description: Skonfiguruj ustawienia KeyMod, w tym automatyczne łączenie, motywy, język, opóźnienie klawisza BLE, czułość touchpad i docelowy system operacyjny.… Openterface.
 keywords: "KeyMod ustawienia, automatyczne łączenie, motyw, język, BLE opóźnienie, touchpad czułość"
 ---
 

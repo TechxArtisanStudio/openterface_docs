@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: 您好！ 再次感谢您加入我们的 beta 计划。我们非常期待您与早期访问小组一起试用 KVM-GO。这个小东西基本上就是一个钥匙扣大小的 KVM，让您无需任何常见麻烦即可连接无头设备。 KVM-GO（HDMI、DP 和 VGA 版本）小到可以挂在钥匙扣上，但比之前的 Mini-KVM…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

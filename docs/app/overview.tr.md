@@ -1,3 +1,8 @@
+---
+title: "Yazılım"
+description: "Yazılım: Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der unten aufgeführten Apps auf Ihrem Host-Computer installieren. Sie können…"
+---
+
 # Yazılım
 
 Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der unten aufgeführten Apps auf Ihrem Host-Computer installieren. Sie können diese Apps von verschiedenen App-Plattformen herunterladen veya einfach auf die bereitgestellten Links klicken. Wenn Sie sich abenteuerlustig fühlen, können Sie sie auch aus dem Quellcode ile unseren GitHub-Repositories erstellen!

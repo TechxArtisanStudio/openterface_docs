@@ -1,6 +1,6 @@
 ---
 title: "Cablu Type-C la Type-C de Mare Viteză cu Adaptor USB-A"
-description: "Asigură transfer rapid de date și încărcare cu cablul nostru Type-C la Type-C de mare viteză, complet cu adaptor USB-A pentru versatilitate."
+description: Asigură transfer rapid de date și încărcare cu cablul nostru Type-C la Type-C de mare viteză, complet cu adaptor USB-A pentru versatilitate. Acest cablu…
 keywords: "Cablu Type-C, adaptor USB-A, transfer date rapid, încărcare rapidă"
 ---
 

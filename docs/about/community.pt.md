@@ -1,3 +1,8 @@
+---
+title: "Comunidade"
+description: Bem-vindos à nossa vibrante comunidade! Conectem-se connosco através de múltiplas plataformas e juntem-se à nossa rede crescente de desenvolvedores,… Openterfac
+---
+
 # Comunidade
 
 Bem-vindos à nossa vibrante comunidade! Conectem-se connosco através de múltiplas plataformas e juntem-se à nossa rede crescente de desenvolvedores, utilizadores e entusiastas.

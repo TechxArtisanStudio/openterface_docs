@@ -1,3 +1,8 @@
+---
+title: "Software"
+description: Pentru a face funcționale gadget-urile Openterface™ KVM, va trebui să instalați una dintre aplicațiile enumerate mai jos pe computerul dvs. gazdă. Puteți…
+---
+
 # Software
 
 Pentru a face funcționale gadget-urile Openterface™ KVM, va trebui să instalați una dintre aplicațiile enumerate mai jos pe computerul dvs. gazdă. Puteți descărca aceste aplicații de pe diferite platforme de aplicații sau pur și simplu să faceți clic pe linkurile furnizate. Dacă vă simțiți aventuroși, le puteți construi și din codul sursă folosind repository-urile noastre GitHub!

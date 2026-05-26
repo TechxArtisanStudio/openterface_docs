@@ -1,6 +1,6 @@
 ---
 title: "Des problèmes avec le Mini-KVM ? Commencez ici - Support Openterface"
-description: "Guide de support et dépannage pour les problèmes de clavier et souris du Mini-KVM. Apprenez à exécuter les diagnostics, contacter le support et obtenir un remplacement ou un remboursement."
+description: "Des problèmes avec le Mini-KVM ? Commencez ici - Support Openterface: Guide de support et dépannage Nous comprenons à quel point c'est frustrant quand un…"
 keywords: "Openterface Mini-KVM, support Mini-KVM, dépannage Mini-KVM, problèmes clavier souris, remplacement Mini-KVM, remboursement Mini-KVM, support Openterface"
 ---
 

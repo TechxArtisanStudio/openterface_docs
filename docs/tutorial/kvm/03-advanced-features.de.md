@@ -1,3 +1,8 @@
+---
+title: "KVM-Tutorial 03 — Erweiterte Funktionen"
+description: "Zielgruppe: Fortgeschrittene bis Experten — Power-User-Funktionen und Konfiguration Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung für…"
+---
+
 
 # KVM-Tutorial 03 — Erweiterte Funktionen
 

@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: "Openterface KVM-GO Beta Test Programına Hoş Geldiniz! — letter / kvm go beta invit (KVM-GO). Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB sorun…"
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

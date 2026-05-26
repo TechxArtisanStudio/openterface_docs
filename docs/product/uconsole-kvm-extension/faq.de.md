@@ -1,6 +1,6 @@
 ---
 title: FAQs für Openterface KVM Extension for uConsole
-description: Häufig gestellte Fragen zur KVM Extension für uConsole, die Funktionen, Kompatibilität, Fehlerbehebung und Installation abdecken.
+description: Häufig gestellte Fragen zur KVM Extension für uConsole, die Funktionen, Kompatibilität, Fehlerbehebung und Installation abdecken. Willkommen zu den FAQs für…
 keywords: KVM Extension, uConsole KVM, Fehlerbehebung, Videoaufnahme, USB HID, Kompatibilität, Installation
 ---
 

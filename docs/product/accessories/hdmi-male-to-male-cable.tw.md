@@ -1,6 +1,6 @@
 ---
 title: "緊湊型HDMI公對公數據線高清視頻傳輸"
-description: "使用我們緊湊型HDMI公對公數據線無縫連接您的設備，完美適用於高清視頻傳輸。"
+description: "緊湊型HDMI公對公數據線高清視頻傳輸: 這款緊湊型HDMI數據線完美適用於將您的目標設備連接到視頻輸出捕獲，確保與Openterface Mini-KVM的無縫集成。 — accessories/hdmi-male-to-male-cable"
 keywords: "HDMI數據線, 公對公HDMI, 高清視頻數據線, 緊湊型HDMI"
 ---
 

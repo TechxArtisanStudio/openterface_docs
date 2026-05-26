@@ -1,3 +1,8 @@
+---
+title: "Richtlinien"
+description: Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten و die Abwicklung von Käufen.
+---
+
 # Richtlinien
 
 Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten و die Abwicklung von Käufen.

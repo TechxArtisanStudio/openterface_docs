@@ -1,6 +1,6 @@
 ---
 title: "如何連接"
-description: "Openterface Mini-KVM 設置分步指南。學習如何使用 USB-C、HDMI 和外設連接來連接您的主機電腦和目標設備。包含接口說明和重要設置提示。"
+description: Openterface Mini-KVM 設置分步指南。學習如何使用 USB-C、HDMI 和外設連接來連接您的主機電腦和目標設備。包含接口說明和重要設置提示。 4 個簡單步驟完成設置： 1. 主機連接（橙色端）：使用 1.5m Type-C 線纜連接主機電腦 2. 目標連接（黑色端）：使用 0.3m…
 keywords: "Mini-KVM 設置, KVM 連接指南, USB-C KVM 設置, HDMI KVM 連接, KVM 安裝指南, 電腦外設設置, USB 設備連接, KVM 接口指南, 無頭電腦設置, KVM 配置"
 ---
 

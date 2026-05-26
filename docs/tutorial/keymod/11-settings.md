@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Settings"
-description: "Configure KeyMod settings including auto-connect, themes, language, BLE key delay, touchpad sensitivity, and target OS."
+description: "KeyMod Tutorial - Settings: Configure KeyMod's behavior and appearance. Open-source KVM-over-USB guides. Open-source KVM-over-USB guides. Open-source…"
 keywords: "KeyMod settings, auto-connect, theme, language, BLE delay, touchpad sensitivity"
 ---
 

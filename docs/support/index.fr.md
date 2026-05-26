@@ -1,3 +1,8 @@
+---
+title: "Support Technique"
+description: Nous comprenons que c'est frustrant quand les choses ne fonctionnent pas comme prévu, et nous sommes là pour vous aider. Notre formulaire de dépannage vous…
+---
+
 # Support Technique
 
 Nous comprenons que c'est frustrant quand les choses ne fonctionnent pas comme prévu, et **nous sommes là pour vous aider**. Notre formulaire de dépannage vous guidera **étape par étape** pour partager les détails de votre configuration et le problème auquel vous êtes confronté. Avec ces informations, nous pouvons mieux comprendre le problème et vous soutenir plus efficacement.

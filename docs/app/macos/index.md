@@ -1,3 +1,8 @@
+---
+title: "Openterface macOS"
+description: "Openterface macOS app for Mini-KVM and KVM-GO: download, install, and control target devices over USB and HDMI. Open-source builds, release notes, and community support on Discord."
+---
+
 # Openterface MacOS
 
 We're currently working on adding detailed documentation for our software. Please check back soon!

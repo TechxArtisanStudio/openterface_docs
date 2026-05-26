@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 설정"
-description: "자동 연결, 테마, 언어, BLE 키 지연, touchpad 감도 및 대상 OS를 포함한 KeyMod 설정을 구성합니다."
+description: 자동 연결, 테마, 언어, BLE 키 지연, touchpad 감도 및 대상 OS를 포함한 KeyMod 설정을 구성합니다. KeyMod의 동작과 모양을 구성합니다.
 keywords: "KeyMod 설정, 자동 연결, 테마, 언어, BLE 지연, touchpad 감도"
 ---
 

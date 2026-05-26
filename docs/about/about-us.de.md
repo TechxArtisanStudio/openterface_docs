@@ -1,3 +1,8 @@
+---
+title: "Über uns"
+description: "entstand aus einer einfachen, aber kraftvollen Idee: Open – Transparenz, Open-Source-Zusammenarbeit und das Öffnen geschlossener Systeme. Enter – Nahtloser…"
+---
+
 # Über uns
 
 ## Unsere Marke und unser Slogan

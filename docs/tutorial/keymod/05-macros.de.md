@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial – Makros"
-description: "Zeichnen Sie automatisierte Tastenfolgen mit KeyMod Makros auf und spielen Sie sie ab, einschließlich Modifikatoren, Verzögerungen und Zeitplanung."
+description: Zeichnen Sie automatisierte Tastenfolgen mit KeyMod Makros auf und spielen Sie sie ab, einschließlich Modifikatoren, Verzögerungen und Zeitplanung. Mit…
 keywords: "KeyMod Makros, automatisierte Tastenanschläge, Makroplaner, Makro-Tokens, Tastensequenzen"
 ---
 

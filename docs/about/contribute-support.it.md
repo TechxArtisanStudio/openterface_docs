@@ -1,3 +1,8 @@
+---
+title: "Contribuire e supportare"
+description: L'hardware open source consente a tutti di controllare, personalizzare e comprendere davvero la propria tecnologia. Costruirlo — e mantenerlo aperto —…
+---
+
 # Contribuire e supportare
 
 L'hardware open source consente a tutti di controllare, personalizzare e comprendere davvero la propria tecnologia. Costruirlo — e mantenerlo aperto — richiede una comunità dedicata. Con il tuo aiuto, possiamo sfidare i sistemi chiusi e creare un futuro in cui la tecnologia appartiene ai suoi utenti.

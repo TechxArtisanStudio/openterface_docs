@@ -1,6 +1,6 @@
 ---
 title: "包装内容"
-description: "探索 Openterface KVM-Go 系列套装 - 超紧凑型 KVM，内置视频连接器。预发布套装包含无缝设备管理和文件传输所需的必备配件。"
+description: 探索 Openterface KVM-Go 系列套装 - 超紧凑型 KVM，内置视频连接器。预发布套装包含无缝设备管理和文件传输所需的必备配件。 我们提供三种完整的工具包选项——HDMI、DP 或 VGA 版本。它们之间唯一的区别是核心产品本身。所有其他内容在三个选项中都是相同的。 每个工具包包含： 1.…
 keywords: "KVM-Go, 超紧凑型 KVM, 内置 HDMI, 钥匙扣 KVM, KVM 工具包, KVM 配件, 便携式 KVM, 服务器管理工具, IT 工具, headless 控制"
 ---
 

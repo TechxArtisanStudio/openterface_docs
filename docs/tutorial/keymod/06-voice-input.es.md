@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Entrada de voz"
-description: "Utilice voz al teclado con KeyMod. Admite reconocimiento de voz del sistema, Whisper AI en el dispositivo y varios idiomas."
+description: Utilice voz al teclado con KeyMod. Admite reconocimiento de voz del sistema, Whisper AI en el dispositivo y varios idiomas. Convierta su discurso en… Openterfac
 keywords: "KeyMod entrada de voz, voz a texto, Whisper, escritura por voz, teclado manos libres"
 ---
 

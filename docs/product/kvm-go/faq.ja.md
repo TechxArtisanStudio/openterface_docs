@@ -1,6 +1,6 @@
 ---
 title: Openterface KVM-Go シリーズのよくある質問
-description: KVM-Go シリーズに関するよくある質問。機能、互換性、プレローンチ情報をカバーしています。
+description: KVM-Go シリーズに関するよくある質問。機能、互換性、プレローンチ情報をカバーしています。 次世代 Openterface KVM-Go シリーズのよくある質問へようこそ。 必要な情報が見つからない場合は、 までメールでお問い合わせいただくか、 または でコミュニティに参加してください。 ⚠️…
 keywords: KVM-Go, Openterface, 超コンパクト KVM, HDMI 内蔵, キーチェーン KVM, オープンソース, プレローンチ, ビデオキャプチャ, USB, 互換性, MicroSD
 ---
 

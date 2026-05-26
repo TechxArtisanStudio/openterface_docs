@@ -1,3 +1,8 @@
+---
+title: "KVM Software Tutorial"
+description: "KVM software tutorial for Openterface Mini-KVM, KVM-GO, and uConsole extension. Learn setup, basic operations, advanced features, and troubleshooting for USB KVM control."
+---
+
 # KVM Software Tutorial
 
 > Full KVM-over-USB: keyboard, video, and mouse control in one device.

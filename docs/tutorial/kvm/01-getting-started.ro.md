@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 01 — Primii pași"
+description: "Public: Începători — utilizatori care folosesc pentru prima dată dispozitive KVM Openterface Documentație Openterface: configurare, întrebări frecvente și…"
+---
+
 # Tutorial KVM 01 — Primii pași
 
 **Public:** Începători — utilizatori care folosesc pentru prima dată dispozitive KVM Openterface

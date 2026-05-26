@@ -1,3 +1,8 @@
+---
+title: "政策"
+description: 政策 — policy (Openterface KVM-over-USB). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — policy
+---
+
 # 政策
 
 我們的政策規定了我們的運營方式、數據保護以及購買處理。

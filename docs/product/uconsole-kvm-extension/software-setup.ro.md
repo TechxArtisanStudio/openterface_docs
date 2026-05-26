@@ -1,6 +1,6 @@
 ---
 title: "Configurare Software"
-description: "Ghid complet de configurare software pentru extensia KVM Openterface pentru uConsole."
+description: Ghid complet de configurare software pentru extensia KVM Openterface pentru uConsole. Aplicația Openterface permite uConsole-ului să funcționeze ca… Openterface
 keywords: "instalare Openterface, software uConsole, configurare KVM, instalare aplicație"
 ---
 

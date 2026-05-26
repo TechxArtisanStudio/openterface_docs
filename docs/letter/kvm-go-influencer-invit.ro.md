@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: Salut! Îți mulțumim din nou că te-ai alăturat programului nostru beta. Suntem cu adevărat entuziasmați să încerci KVM-GO cu grupul nostru de acces timpuriu.…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

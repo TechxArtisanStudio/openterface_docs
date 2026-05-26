@@ -1,3 +1,8 @@
+---
+title: "Technischer Wsparcie"
+description: Wir verstehen, dass es frustrierend ist, wenn Dinge nie wie erwartet funktionieren, i wir sind hier, um zu helfen. Unser Fehlerbehebungsformular führt Sie…
+---
+
 # Technischer Wsparcie
 
 Wir verstehen, dass es frustrierend ist, wenn Dinge nie wie erwartet funktionieren, i **wir sind hier, um zu helfen**. Unser Fehlerbehebungsformular führt Sie **Schritt dla Schritt** durch die Angabe von Details zu Ihrer Einrichtung i dem Problem, z dem Sie konfrontiert sind. Mit diesen Informationen können wir das Problem besser verstehen i Sie effektiver unterstützen.

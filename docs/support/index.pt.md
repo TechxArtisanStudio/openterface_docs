@@ -1,3 +1,8 @@
+---
+title: "Suporte Técnico"
+description: Compreendemos que é frustrante quando as coisas não funcionam como esperado, e estamos aqui para ajudar. O nosso formulário de resolução de problemas irá…
+---
+
 # Suporte Técnico
 
 Compreendemos que é frustrante quando as coisas não funcionam como esperado, e **estamos aqui para ajudar**. O nosso formulário de resolução de problemas irá guiá-lo **passo a passo** para partilhar detalhes sobre a sua configuração e o problema que está a enfrentar. Com esta informação, podemos compreender melhor o problema e apoiá-lo de forma mais eficaz.

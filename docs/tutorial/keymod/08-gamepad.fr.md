@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Manette de jeu"
-description: "Utilisez KeyMod comme contrôleur de jeu virtuel avec des dispositions personnalisables pour les jeux, l'émulation rétro et les tests de jeux."
+description: Utilisez KeyMod comme contrôleur de jeu virtuel avec des dispositions personnalisables pour les jeux, l'émulation rétro et les tests de jeux. Transformez…
 keywords: "Manette de jeu KeyMod, contrôleur virtuel, contrôleur de jeu, cartographie WASD, stick analogique"
 ---
 

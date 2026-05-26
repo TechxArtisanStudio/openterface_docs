@@ -1,6 +1,6 @@
 ---
 title: "MicroSD 카드 전환 가이드"
-description: "Openterface KVM-Go의 이중 하드웨어-소프트웨어 MicroSD 전환 시스템 사용 방법을 배웁니다. 4가지 작동 상태, LED 표시등, 안전 지침 및 파일 전송 기능을 이해합니다."
+description: Openterface KVM-Go의 이중 하드웨어-소프트웨어 MicroSD 전환 시스템 사용 방법을 배웁니다. 4가지 작동 상태, LED 표시등, 안전 지침 및 파일 전송 기능을 이해합니다. Openterface KVM-Go는 호스트 컴퓨터와 대상 장치 간에 공유할 수 있는 단일…
 keywords: "MicroSD 전환, KVM 스위치, 하드웨어 스위치, 소프트웨어 스위치, MicroSD 카드 제어, KVM over USB, 파일 전송, USB 장치 관리, 컴퓨터 주변기기, MicroSD 전원 관리, LED 표시등"
 ---
 

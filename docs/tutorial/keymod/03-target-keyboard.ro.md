@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - OS țintă"
-description: "Setați sistemul de operare țintă astfel încât KeyMod să trimită mapările corecte ale tastelor către computere Windows, macOS sau Linux."
+description: Setați sistemul de operare țintă astfel încât KeyMod să trimită mapările corecte ale tastelor către computere Windows, macOS sau Linux. KeyMod trimite…
 keywords: "KeyMod OS țintă, maparea tastelor, tastele modificatoare, introducerea Unicode"
 ---
 

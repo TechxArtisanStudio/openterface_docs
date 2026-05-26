@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Gamepad"
-description: "Usa KeyMod come controller di gioco virtuale con layout personalizzabili per giochi, emulazione retrò e test di giochi."
+description: Usa KeyMod come controller di gioco virtuale con layout personalizzabili per giochi, emulazione retrò e test di giochi. Trasforma il tuo telefono in un…
 keywords: "KeyMod gamepad, controller virtuale, controller di gioco, mappatura WASD, levetta analogica"
 ---
 

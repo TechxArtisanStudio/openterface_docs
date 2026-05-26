@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien: <a href=\"https://www.cnx-software.com/\"<img src=\"https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Программное…"
+---
+
 # Bewertungen & Medien
 
 ## Medienberichte

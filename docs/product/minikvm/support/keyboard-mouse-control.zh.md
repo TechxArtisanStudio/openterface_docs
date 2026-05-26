@@ -1,6 +1,6 @@
 ---
 title: "键盘和鼠标控制问题排查 - Openterface Mini-KVM"
-description: "Openterface Mini-KVM 键盘和鼠标控制问题排查指南。了解如何解决 HID 通信问题、错误的电缆连接、USB 集线器问题和 HID 芯片僵尸状态。"
+description: Openterface Mini-KVM 键盘和鼠标控制问题排查指南。了解如何解决 HID 通信问题、错误的电缆连接、USB 集线器问题和 HID 芯片僵尸状态。 偶尔，用户可能会遇到 Openterface 设备的键盘和鼠标功能无法正常工作的情况。本文档概述了最常见的原因及其解决或预防方法。 软件反馈： 当…
 keywords: "Openterface Mini-KVM, 键盘鼠标故障排除, KVM HID问题, 键盘鼠标不工作, Mini-KVM支持, USB KVM故障排除, HID芯片重置, KVM控制问题, 键盘鼠标无响应, Openterface故障排除, KVM设备问题, USB集线器问题, 波特率KVM, 串行通信错误"
 ---
 

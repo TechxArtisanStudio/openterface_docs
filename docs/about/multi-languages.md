@@ -1,3 +1,8 @@
+---
+title: "Multi-Languages"
+description: "Multi-Languages: 🌍 We offer the website in various languages. Feel free to browse in your preferred one: Open-source KVM-over-USB guides. Open-source…"
+---
+
 # Multi-Languages
 
 ## List of Supported Languages

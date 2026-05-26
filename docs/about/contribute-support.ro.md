@@ -1,3 +1,8 @@
+---
+title: "Contribuie și susține"
+description: Hardware-ul open-source le oferă tuturor puterea de a-și controla, personaliza și înțelege cu adevărat propria tehnologie. Construirea lui — și menținerea…
+---
+
 # Contribuie și susține
 
 Hardware-ul open-source le oferă tuturor puterea de a-și controla, personaliza și înțelege cu adevărat propria tehnologie. Construirea lui — și menținerea deschiderii — necesită o comunitate dedicată. Cu ajutorul tău, putem provoca sistemele închise și crea un viitor în care tehnologia aparține utilizatorilor.

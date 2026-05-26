@@ -1,3 +1,8 @@
+---
+title: "Tuto sur le logiciel KVM"
+description: "Contrôle complet du KVM par USB : contrôle de la souris, de l'écran et du clavier à partir d'un seul appareil. Ce tuto couvre les séries Openterface KVM —…"
+---
+
 # Tuto sur le logiciel KVM
 
 > Contrôle complet du KVM par USB : contrôle de la souris, de l'écran et du clavier à partir d'un seul appareil.

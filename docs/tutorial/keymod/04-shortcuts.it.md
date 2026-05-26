@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Hub delle scorciatoie"
-description: "Utilizza le scorciatoie da tastiera basate sul profilo per le app più diffuse come Blender, VS Code, Photoshop e KiCAD."
+description: Utilizza le scorciatoie da tastiera basate sul profilo per le app più diffuse come Blender, VS Code, Photoshop e KiCAD. Accesso con un solo tocco alle…
 keywords: "KeyMod scorciatoie, profili scorciatoia, Blender scorciatoie, VS Code scorciatoie, scorciatoie da tastiera"
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Avaliações e Mídia"
+description: "Avaliações e Mídia: | Revisor: \"[Openterface Mini-KVM] promete ser uma forma econômica e repleta de recursos de usar um laptop como monitor, teclado e mouse…"
+---
+
 # Avaliações e Mídia
 
 ## Cobertura da mídia

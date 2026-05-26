@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Numpad"
-description: "Utilizați tastatura numerică KeyMod pentru introducerea datelor, cu coduri de taste HID și grile specifice aplicației."
+description: Utilizați tastatura numerică KeyMod pentru introducerea datelor, cu coduri de taste HID și grile specifice aplicației. O tastatură numerică completă pentru…
 keywords: "KeyMod tastatură numerică, tastatură numerică, HID tastatură numerică, introducerea datelor"
 ---
 

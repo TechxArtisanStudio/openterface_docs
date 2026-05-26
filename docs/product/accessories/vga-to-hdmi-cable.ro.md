@@ -1,6 +1,6 @@
 ---
 title: "Cablu convertor VGA la HDMI cu audio integrat"
-description: "Conectați cu ușurință dispozitive VGA legacy la ecrane HDMI moderne cu cablul nostru convertor, complet cu suport audio integrat și alimentare USB."
+description: Conectați cu ușurință dispozitive VGA legacy la ecrane HDMI moderne cu cablul nostru convertor, complet cu suport audio integrat și alimentare USB.… Openterface
 keywords: "VGA la HDMI, cablu convertor, audio VGA la HDMI, conexiune dispozitiv legacy, conversie video"
 ---
 

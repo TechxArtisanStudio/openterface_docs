@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Système d'exploitation cible"
-description: "Définissez le système d'exploitation cible de sorte que KeyMod envoie les mappages de touches corrects aux ordinateurs Windows, macOS ou Linux."
+description: Définissez le système d'exploitation cible de sorte que KeyMod envoie les mappages de touches corrects aux ordinateurs Windows, macOS ou Linux. KeyMod…
 keywords: "KeyMod système d'exploitation cible, mappage des touches, touches de modification, entrée Unicode"
 ---
 

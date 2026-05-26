@@ -1,3 +1,8 @@
+---
+title: "Openterface QT için Win & Linux"
+description: Dieses Dokument bietet einen Überblick hakkında eine plattformhakkındagreifende KVM-Yazılım (Tastatur, Video, Maus), die ile Qt entwickelt wurde ve ile den…
+---
+
 # Openterface QT için Win & Linux
 
 Dieses Dokument bietet einen Überblick hakkında eine plattformhakkındagreifende KVM-Yazılım (Tastatur, Video, Maus), die ile Qt entwickelt wurde ve ile den Betriebssystemen Linux ve Windows kompatibel ist. Die Yazılım ermöglicht die Steuerung eines Zielgeräts von einem Hostsystem aus ve bietet eine Vielzahl von Özellikler, die hakkında die Menüleiste ve zusätzliche Özellikler zugänglich sind.

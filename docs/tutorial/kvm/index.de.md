@@ -1,3 +1,8 @@
+---
+title: "KVM-Software-Tutorial"
+description: "Vollständige KVM über USB: Tastatur, Bildschirm und Maussteuerung in einem Gerät. Diese Anleitung umfasst die Openterface KVM-Serie — Geräte, die das…"
+---
+
 # KVM-Software-Tutorial
 
 > Vollständige KVM über USB: Tastatur, Bildschirm und Maussteuerung in einem Gerät.

@@ -1,3 +1,8 @@
+---
+title: "Software"
+description: Per far funzionare i tuoi gadget Openterface™ KVM, dovrai installare una delle app elencate di seguito sul tuo computer host. Puoi scaricare queste app da…
+---
+
 # Software
 
 Per far funzionare i tuoi gadget Openterface™ KVM, dovrai installare una delle app elencate di seguito sul tuo computer host. Puoi scaricare queste app da diverse piattaforme di app o semplicemente cliccare sui link forniti. Se ti senti avventuroso, puoi anche costruirle dal codice sorgente usando i nostri repository GitHub!

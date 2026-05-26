@@ -1,3 +1,8 @@
+---
+title: "Politique de confidentialité"
+description: (Version 2 – Février 2026) Cette Politique de confidentialité s'applique au site web Openterface, aux appareils matériels Openterface et à leurs… Openterface.
+---
+
 # Politique de confidentialité
 
 **(Version 2 – Février 2026)**

@@ -1,8 +1,10 @@
 ---
 title: "KeyMod Tutorial - Primeiros passos"
-description: "Instale o aplicativo KeyMod, conecte-se ao seu dispositivo KeyMod e envie a primeira tecla digitada em menos de 5 minutos."
+description: "Instale o app KeyMod, ligue o dispositivo e envie a primeira tecla em minutos. Tutorial oficial Openterface para configurar o emulador USB e Bluetooth de teclado e rato."
 keywords: "KeyMod introdução, KeyMod configuração, KeyMod instalação, conexão KeyMod"
----Nº 1. Primeiros passos
+---
+
+# 1. Primeiros passos
 
 Instale o aplicativo KeyMod, conecte-se ao seu hardware KeyMod e envie a primeira tecla digitada em menos de 5 minutos.
 

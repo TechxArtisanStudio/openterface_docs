@@ -1,6 +1,6 @@
 ---
 title: Întrebări frecvente despre Openterface Mini-KVM
-description: Întrebări frecvente despre Mini-KVM, acoperind funcționalități, compatibilitate, depanare și planuri viitoare.
+description: Întrebări frecvente despre Mini-KVM, acoperind funcționalități, compatibilitate, depanare și planuri viitoare. Bun venit la întrebările frecvente despre…
 keywords: Mini-KVM, Openterface, comutator KVM, open-source, depanare, captură video, USB, compatibilitate, verificare auto-diagnostic, control tastatură mouse, diagnostic hardware, suport
 ---
 

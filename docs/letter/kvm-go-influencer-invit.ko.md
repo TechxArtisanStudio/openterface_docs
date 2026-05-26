@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: 안녕하세요! 베타 프로그램에 다시 한번 참여해 주셔서 감사합니다. 조기 액세스 그룹과 함께 KVM-GO를 체험해 주시게 되어 정말 기쁩니다. 이 작은 기기는 기본적으로 열쇠고리 크기의 KVM으로, 일반적인 번거로움 없이 헤드리스 장치에 연결할 수 있습니다. KVM-GO(HDMI,…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macros"
-description: "Grabe y reproduzca secuencias de teclas automatizadas con macros KeyMod, incluidos modificadores, retrasos y programación."
+description: Grabe y reproduzca secuencias de teclas automatizadas con macros KeyMod, incluidos modificadores, retrasos y programación. Graba y reproduce secuencias de…
 keywords: "KeyMod macros, pulsaciones de teclas automatizadas, programador de macros, tokens de macro, secuencias de teclas"
 ---
 

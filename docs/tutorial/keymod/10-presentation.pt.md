@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Apresentação"
-description: "Use KeyMod como controle remoto de apresentação para controlar os slides do seu telefone. Suporta PowerPoint, Keynote, Google Slides e muito mais."
+description: Use KeyMod como controle remoto de apresentação para controlar os slides do seu telefone. Suporta PowerPoint, Keynote, Google Slides e muito mais. Controle…
 keywords: "KeyMod apresentação, controle remoto de slides, PowerPoint controle remoto, Keynote controle remoto, temporizador de apresentação"
 ---
 

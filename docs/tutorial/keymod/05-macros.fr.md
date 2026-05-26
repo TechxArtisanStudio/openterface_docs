@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Macros"
-description: "Enregistrez et rejouez des séquences de touches automatisées avec KeyMod macros, y compris les modificateurs, les délais et la planification."
+description: Enregistrez et rejouez des séquences de touches automatisées avec KeyMod macros, y compris les modificateurs, les délais et la planification. Documentation…
 keywords: "KeyMod macros, frappes automatisées, planificateur de macros, jetons de macro, séquences de touches"
 ---
 

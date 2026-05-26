@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 目標系統"
-description: "設置目標操作系統，使 KeyMod 向 Windows、macOS 或 Linux 電腦發送正確的按鍵映射。"
+description: 設置目標操作系統，使 KeyMod 向 Windows、macOS 或 Linux 電腦發送正確的按鍵映射。 KeyMod 發送的按鍵會適配目標電腦的操作系統。正確配置可確保目標端收到正確的按鍵。 點擊標題欄中的 系統圖標 打開選擇器： 説明：…
 keywords: "KeyMod 目標系統, 按鍵映射, 修飾鍵, Unicode 輸入"
 ---
 

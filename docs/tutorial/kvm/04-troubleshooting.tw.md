@@ -1,3 +1,8 @@
+---
+title: "KVM教程 04 — 故障排除"
+description: KVM教程 04 — 故障排除 — kvm / 04 troubleshooting (Openterface KVM-over-USB). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — kvm/04-troubleshooting
+---
+
 
 # KVM教程 04 — 故障排除
 

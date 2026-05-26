@@ -1,3 +1,8 @@
+---
+title: "KVM-Tutorial 01 — Erste Schritte"
+description: "Zielgruppe: Anfänger — Erstbenutzer von Openterface KVM-Geräten Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung für KVM-over-USB. Openterface."
+---
+
 # KVM-Tutorial 01 — Erste Schritte
 
 **Zielgruppe:** Anfänger — Erstbenutzer von Openterface KVM-Geräten

@@ -1,6 +1,6 @@
 ---
 title: "Type-C轉USB-A數據線帶適配器30cm"
-description: "探索我們Type-C轉USB-A數據線帶適配器的靈活性，專為無縫數據傳輸和控制信號傳輸而設計。完美連接具有USB-A或Type-C端口的設備。"
+description: "Type-C轉USB-A數據線帶適配器30cm: 這款多功能的Type-C公頭轉USB-A公頭數據線，搭配USB-A母頭轉USB-C公頭適配器，為目標設備提供靈活的連接。無論目標設備使用USB-A還是Type-C端口，都能實現數據傳輸以及鍵盤和鼠標控制信號的傳輸。"
 keywords: "Type-C轉USB-A數據線, USB適配器, 數據傳輸線, 控制信號線, 多功能連接"
 ---
 

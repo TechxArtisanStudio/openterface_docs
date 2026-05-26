@@ -1,3 +1,8 @@
+---
+title: "Chi siamo"
+description: "nasce da un'idea semplice ma potente: Open – Trasparenza, collaborazione open‑source e sblocco dei sistemi chiusi. Enter – Accesso senza problemi e design…"
+---
+
 # Chi siamo
 
 ## Il nostro brand e il nostro slogan

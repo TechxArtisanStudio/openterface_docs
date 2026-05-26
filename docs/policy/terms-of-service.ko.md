@@ -1,3 +1,8 @@
+---
+title: "서비스 약관"
+description: "（버전 2 – 2026년 2월） 본 웹사이트는 Guangzhou Billio Tech Co., Ltd.에서 이전에 수행한 사업을 인수한 TechxArtisan Limited(\"TechxArtisan\")의 브랜드인 Openterface가 운영합니다. \"당사\", \"저희\", \"우리\"는…"
+---
+
 # 서비스 약관
 
 **（버전 2 – 2026년 2월）**

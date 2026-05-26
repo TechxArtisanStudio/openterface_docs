@@ -1,6 +1,6 @@
 ---
 title: "Cablu HDMI Tată-la-Tată Compact pentru Video de Înaltă Definiție"
-description: "Conectează-ți dispozitivele fără probleme cu cablul nostru HDMI tată-la-tată compact, perfect pentru transmisia video de înaltă definiție."
+description: Conectează-ți dispozitivele fără probleme cu cablul nostru HDMI tată-la-tată compact, perfect pentru transmisia video de înaltă definiție. Acest cablu HDMI…
 keywords: "Cablu HDMI, HDMI tată-la-tată, cablu video înaltă definiție, HDMI compact"
 ---
 

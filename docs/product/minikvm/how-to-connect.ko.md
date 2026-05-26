@@ -1,6 +1,6 @@
 ---
 title: "연결 방법"
-description: "Openterface Mini-KVM 설정 단계별 가이드. USB-C, HDMI, 주변 장치 연결을 사용하여 호스트 컴퓨터와 대상 장치를 연결하는 방법을 학습하세요. 인터페이스 설명과 중요한 설정 팁이 포함되어 있습니다."
+description: "Openterface Mini-KVM 설정 단계별 가이드. USB-C, HDMI, 주변 장치 연결을 사용하여 호스트 컴퓨터와 대상 장치를 연결하는 방법을 학습하세요. 인터페이스 설명과 중요한 설정 팁이 포함되어 있습니다. 4단계로 간단하게 설정: 1. 호스트 연결 (주황색…"
 keywords: "Mini-KVM 설정, KVM 연결 가이드, USB-C KVM 설정, HDMI KVM 연결, KVM 설치 가이드, 컴퓨터 주변 장치 설정, USB 장치 연결, KVM 인터페이스 가이드, 헤드리스 컴퓨터 설정, KVM 구성"
 ---
 

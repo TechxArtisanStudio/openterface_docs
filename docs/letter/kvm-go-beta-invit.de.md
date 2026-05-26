@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: "Willkommen beim Openterface KVM-GO Beta-Testprogramm! — letter / kvm go beta invit (KVM-GO). Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung…"
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

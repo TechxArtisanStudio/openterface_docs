@@ -1,3 +1,8 @@
+---
+title: "개인정보 처리방침"
+description: "(버전 2 – 2026년 2월) 본 개인정보 처리방침은 Openterface 웹사이트, Openterface 하드웨어 기기 및 관련 애플리케이션(통칭 \"서비스\")에 적용됩니다. 이 서비스는 TechxArtisan Limited(\"TechxArtisan\")가 개발 및 운영합니다.…"
+---
+
 # 개인정보 처리방침
 
 **(버전 2 – 2026년 2월)**

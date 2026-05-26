@@ -1,7 +1,7 @@
 ---
 title: 批量订购与合作 | Openterface Mini-KVM 批发
 keywords: Openterface Mini-KVM, 批量订购, 批发价格, 经销商合作, 分销商计划, 企业定价, Crowd Supply 批发, 批量 KVM 解决方案
-description: 了解 Openterface 通过 Crowd Supply 提供的批发价格与批量订购选项。了解针对企业部署的经销商与分销商合作机会。
+description: 了解 Openterface 通过 Crowd Supply 提供的批发价格与批量订购选项。了解针对企业部署的经销商与分销商合作机会。 Openterface Mini-KVM 为需要多台设备或计划转售我们产品的组织提供具有竞争力的批发价格与合作机会。 Openterface 产品仅通过 Crowd…
 ---
 
 # 批量订购与合作

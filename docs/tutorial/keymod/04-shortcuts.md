@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Shortcut Hub"
-description: "Use profile-based keyboard shortcuts for popular apps like Blender, VS Code, Photoshop, and KiCAD."
+description: "KeyMod Tutorial - Shortcut Hub: One-tap access to common keyboard shortcuts, organized by application. Shortcut labels automatically adapt to the target…"
 keywords: "KeyMod shortcuts, shortcut profiles, Blender shortcuts, VS Code shortcuts, keyboard shortcuts"
 ---
 

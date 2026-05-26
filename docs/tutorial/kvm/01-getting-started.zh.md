@@ -1,3 +1,8 @@
+---
+title: "KVM教程 01 — 开始使用"
+description: 受众： 初学者 — 第一次使用 Openterface KVM 设备的用户 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
+---
+
 # KVM教程 01 — 开始使用
 
 **受众：** 初学者 — 第一次使用 Openterface KVM 设备的用户

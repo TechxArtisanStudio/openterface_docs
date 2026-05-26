@@ -1,6 +1,6 @@
 ---
 title: USB KVM と Openterface のよくある質問
-description: 私たちのフラッグシップ製品 Mini-KVM の詳細な FAQ、技術仕様、使用方法ガイド、トラブルシューティングのヒントをカバーします。
+description: 私たちのフラッグシップ製品 Mini-KVM の詳細な FAQ、技術仕様、使用方法ガイド、トラブルシューティングのヒントをカバーします。 Openterface 公式ドキュメント。セットアップ、FAQ、トラブルシューティング。IT・開発者向け。
 keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, network-free KVM, headless device control, IT solutions, troubleshooting, 診断自己チェック, キーボードマウス制御, Openterface products
 ---
 

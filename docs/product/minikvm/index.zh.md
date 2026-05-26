@@ -1,8 +1,7 @@
 ---
 title: "Openterface Mini-KVM | 无头计算机控制的KVM-over-USB解决方案"
-description: "使用Openterface Mini-KVM直接从您的笔记本电脑控制无头计算机。即插即用的KVM-over-USB解决方案，支持HDMI，无需网络连接。非常适合开发者、IT专业人员和远程工作站。"
+description: 使用Openterface Mini-KVM直接从您的笔记本电脑控制无头计算机。即插即用的KVM-over-USB解决方案，支持HDMI，无需网络连接。非常适合开发者、IT专业人员和远程工作站。 我们的 Openterface™ Mini-KVM 是一个即插即用的…
 keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB KVM, KVM switch, KVM console, usb crash cart adapter, JetKVM, NanoKVM, KiwiKVM, PiKVM, plug and play KVM, VNC, computer peripherals"
-
 ---
 
 # **Openterface Mini-KVM**

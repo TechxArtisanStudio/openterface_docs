@@ -1,6 +1,6 @@
 ---
 title: "可切換USB端口"
-description: "瞭解Openterface Mini-KVM中的雙硬件-軟件USB切換系統。瞭解四種操作狀態、安全指南和未來遠程訪問功能。"
+description: "可切換USB端口: mini-KVM 設備有一個 USB-A 2.0 端口，可以連接到主機或目標計算機，但絕不能同時連接兩者。 控制來自兩個開關：. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — minikvm/usb-switch"
 keywords: "USB切換, KVM切換器, 硬件開關, 軟件開關, USB端口控制, USB KVM, IP KVM, 遠程訪問, USB設備管理, 計算機外設, USB電源管理"
 ---
 

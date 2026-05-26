@@ -1,6 +1,6 @@
 ---
 title: "Câble HDMI Mâle-Mâle Compact pour Vidéo Haute Définition"
-description: "Connectez vos appareils en toute simplicité avec notre câble HDMI mâle-mâle compact, parfait pour la transmission vidéo haute définition."
+description: Connectez vos appareils en toute simplicité avec notre câble HDMI mâle-mâle compact, parfait pour la transmission vidéo haute définition. Ce câble HDMI…
 keywords: "Câble HDMI, HDMI mâle-mâle, câble vidéo haute définition, HDMI compact"
 ---
 

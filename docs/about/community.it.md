@@ -1,3 +1,8 @@
+---
+title: "Comunità"
+description: Benvenuti nella nostra vivace comunità! Connettetevi con noi su più piattaforme e unitevi alla nostra rete in crescita di sviluppatori, utenti ed… Openterface.
+---
+
 # Comunità
 
 Benvenuti nella nostra vivace comunità! Connettetevi con noi su più piattaforme e unitevi alla nostra rete in crescita di sviluppatori, utenti ed entusiasti.

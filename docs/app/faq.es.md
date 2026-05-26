@@ -1,3 +1,8 @@
+---
+title: "Preguntas Frecuentes de las Apps"
+description: Bienvenidos a las preguntas frecuentes de nuestras apps. Si no encuentran la respuesta que necesitan, envíennos un email a o únanse a nuestra comunidad en o…
+---
+
 # Preguntas Frecuentes de las Apps
 
 Bienvenidos a las preguntas frecuentes de nuestras apps. Si no encuentran la respuesta que necesitan, **envíennos un email a [info@openterface.com](mailto:info@openterface.com)** o **únanse a nuestra comunidad** en [Discord](/discord) o [Reddit](/reddit) para conectarse con nuestro equipo de desarrollo y otros usuarios.

@@ -1,3 +1,8 @@
+---
+title: "Mitmachen & Unterstützen"
+description: Open-Source-الأجهزة ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen و wirklich zu verstehen. Sie zu bauen — و offen zu halten — erfordert…
+---
+
 # Mitmachen & Unterstützen
 
 Open-Source-الأجهزة ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen و wirklich zu verstehen. Sie zu bauen — و offen zu halten — erfordert eine engagierte Community. Mit deiner Hilfe können wir geschlossene Systeme herausfordern و eine Zukunft schaffen, in der Technologie ihren Nutzerinnen و Nutzern gehört.

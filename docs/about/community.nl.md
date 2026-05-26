@@ -1,3 +1,8 @@
+---
+title: "Community"
+description: Willkommen in unserer lebendigen Community! Verbinden Sie sich met uns over mehrere Plattformen en treten Sie unserem wachsenden Netzwerk von Entwicklern,…
+---
+
 # Community
 
 Willkommen in unserer lebendigen Community! Verbinden Sie sich met uns over mehrere Plattformen en treten Sie unserem wachsenden Netzwerk von Entwicklern, Benutzern en Enthusiasten bei.

@@ -1,3 +1,8 @@
+---
+title: "Openterface QT pour Win & Linux"
+description: Ce document fournit un aperçu d'un logiciel KVM (Clavier, Vidéo, Souris) multiplateforme développé avec Qt, compatible avec les systèmes d'exploitation…
+---
+
 # Openterface QT pour Win & Linux
 
 Ce document fournit un aperçu d'un logiciel KVM (Clavier, Vidéo, Souris) multiplateforme développé avec Qt, compatible avec les systèmes d'exploitation Linux et Windows. Le logiciel permet de contrôler un appareil cible depuis un système hôte, offrant diverses fonctionnalités accessibles via sa barre de menu et des fonctionnalités supplémentaires.

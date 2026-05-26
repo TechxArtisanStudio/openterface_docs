@@ -1,7 +1,7 @@
 ---
 title: KVM-over-USB の基礎 | USB KVM とは？
 keywords: KVM-over-USB, USB KVM, keyboard video mouse control, headless computer, plug-and-play, network-independent, IT professionals, system builders, portable KVM, BIOS access
-description: KVM-over-USB テクノロジー、その利点、および他の KVM ソリューションとの比較について学びます。ポータブルでネットワークに依存しないデバイス制御が必要な IT プロフェッショナルやシステムビルダーに最適です。
+description: KVM-over-USB テクノロジー、その利点、および他の KVM ソリューションとの比較について学びます。ポータブルでネットワークに依存しないデバイス制御が必要な IT プロフェッショナルやシステムビルダーに最適です。 USB KVM——しばしば KVM-over-USB と呼ばれる——は、USB と通常…
 ---
 
 # KVM-over-USB の基礎

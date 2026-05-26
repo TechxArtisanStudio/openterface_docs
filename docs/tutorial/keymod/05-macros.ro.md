@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macro-uri"
-description: "Înregistrați și redați secvențele de taste automate cu KeyMod macrocomenzi, inclusiv modificatori, întârzieri și programare."
+description: "Înregistrați și redați secvențele de taste automate cu KeyMod macrocomenzi, inclusiv modificatori, întârzieri și programare. Documentație Openterface:…"
 keywords: "KeyMod macrocomenzi, apăsări automate ale tastelor, programator macro, jetoane macro, secvențe de taste"
 ---
 

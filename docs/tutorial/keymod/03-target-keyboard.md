@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Target OS"
-description: "Set the target operating system so KeyMod sends the correct key mappings to Windows, macOS, or Linux computers."
+description: "KeyMod Tutorial - Target OS: KeyMod sends keystrokes that adapt to the target computer's operating system. Configuring this correctly ensures the right…"
 keywords: "KeyMod target OS, key mapping, modifier keys, Unicode input"
 ---
 

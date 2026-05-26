@@ -1,3 +1,8 @@
+---
+title: "Mitmachen & Unterstützen"
+description: Open-Source-Hardware ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen und wirklich zu verstehen. Sie zu bauen — und offen zu halten —…
+---
+
 # Mitmachen & Unterstützen
 
 Open-Source-Hardware ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen und wirklich zu verstehen. Sie zu bauen — und offen zu halten — erfordert eine engagierte Community. Mit deiner Hilfe können wir geschlossene Systeme herausfordern und eine Zukunft schaffen, in der Technologie ihren Nutzerinnen und Nutzern gehört.

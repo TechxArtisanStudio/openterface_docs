@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macro"
-description: "Registra e riproduci sequenze di tasti automatizzate con macro KeyMod, inclusi modificatori, ritardi e pianificazione."
+description: "Registra e riproduci sequenze di tasti automatizzate con macro KeyMod, inclusi modificatori, ritardi e pianificazione. Documentazione Openterface:… Openterface."
 keywords: "KeyMod macro, sequenze di tasti automatizzate, pianificatore di macro, token macro, sequenze di tasti"
 ---
 

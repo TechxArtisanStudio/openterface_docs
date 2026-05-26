@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM - 诊断自检指南（macOS）"
-description: "使用 macOS 应用运行 Openterface Mini-KVM 设备诊断自检的逐步指南。学习如何测试 USB 连接，检测问题，并将缺陷报告发送给支持团队。"
+description: 使用 macOS 应用运行 Openterface Mini-KVM 设备诊断自检的逐步指南。学习如何测试 USB 连接，检测问题，并将缺陷报告发送给支持团队。 本指南提供运行 Openterface Mini-KVM 设备诊断自检的逐步说明。
 keywords: "Openterface Mini-KVM, macOS, 诊断自检, KVM 故障排除, USB KVM 诊断, Mini-KVM 支持, KVM 设备测试, USB 连接测试, KVM 缺陷报告, Mini-KVM 故障排除指南, KVM 诊断工具, 无头服务器诊断, IT 故障排除工具"
 ---
 

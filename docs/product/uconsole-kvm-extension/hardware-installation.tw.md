@@ -1,6 +1,6 @@
 ---
 title: "硬件安裝"
-description: "Openterface KVM Extension for uConsole 的逐步硬件安裝指南。學習如何在 uConsole 的擴展槽中正確安裝擴展板，並提供詳細的安全指南。"
+description: "硬件安裝: KVM Extension 替換 uConsole 擴展槽中的 4G/LTE 模塊，添加直接 HDMI 輸入和 USB HID 控制。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 —…"
 keywords: "KVM擴展安裝, uConsole硬件設置, 擴展板安裝, uConsole擴展槽, KVM硬件指南, 物理安裝"
 ---
 

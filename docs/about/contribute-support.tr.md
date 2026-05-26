@@ -1,3 +1,8 @@
+---
+title: "Mitmachen & Unterstützen"
+description: Open-Source-Donanım ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen ve wirklich zu verstehen. Sie zu bauen — ve offen zu halten —… Openterfac
+---
+
 # Mitmachen & Unterstützen
 
 Open-Source-Donanım ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen ve wirklich zu verstehen. Sie zu bauen — ve offen zu halten — erfordert eine engagierte Community. Mit deiner Hilfe können wir geschlossene Systeme herausfordern ve eine Zukunft schaffen, in der Technologie ihren Nutzerinnen ve Nutzern gehört.

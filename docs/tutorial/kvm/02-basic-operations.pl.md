@@ -1,3 +1,8 @@
+---
+title: "Samouczek KVM 02 — Podstawowe operacje"
+description: "Grupa docelowa: Początkujący do średniozaawansowanych — funkcje codziennego użytku Oficjalna dokumentacja Openterface: konfiguracja, FAQ i rozwiązywanie…"
+---
+
 # Samouczek KVM 02 — Podstawowe operacje
 
 **Grupa docelowa:** Początkujący do średniozaawansowanych — funkcje codziennego użytku

@@ -1,3 +1,8 @@
+---
+title: "KVM 튜토리얼 02 — 기본 작업"
+description: "대상: 초보자~중급 — 일상 사용 기능 Openterface 공식 문서: 설치, FAQ, 문제 해결. IT 및 개발자를 위한 KVM-over-USB 가이드."
+---
+
 
 # KVM 튜토리얼 02 — 기본 작업
 

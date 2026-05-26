@@ -1,7 +1,7 @@
 ---
 title: 定製企業級解決方案 | Openterface Mini-KVM 集成
 keywords: Openterface Mini-KVM, 企業定製解決方案, 企業 KVM 集成, IT 工作流優化
-description: 瞭解 Openterface 如何通過定製的 KVM 方案與集成支持您的企業，優化 IT 工作流。
+description: 瞭解 Openterface 如何通過定製的 KVM 方案與集成支持您的企業，優化 IT 工作流。 Openterface Mini-KVM 提供靈活、開源的 KVM-over-USB 解決方案，可根據不同的企業環境進行適配。從管理多台系統到與既有工作流集成，我們的方案旨在幫助您的團隊更高效地工作。
 ---
 
 # 定製企業級解決方案

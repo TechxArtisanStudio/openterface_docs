@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM 데이터시트 | 기술 사양 및 제품 세부 정보"
-description: "Openterface Mini-KVM의 완전한 기술 데이터시트를 확인하세요. 이 KVM-over-USB 솔루션의 사양, 차원, 비디오/오디오 기능, 전력 요구사항, 액세서리 및 연결 옵션을 확인하세요."
+description: Openterface Mini-KVM의 완전한 기술 데이터시트를 확인하세요. 이 KVM-over-USB 솔루션의 사양, 차원, 비디오/오디오 기능, 전력 요구사항, 액세서리 및 연결 옵션을 확인하세요. Openterface™ Mini-KVM은 기능이 풍부하고, 생산용이며,…
 keywords: "Mini-KVM 데이터시트, Mini-KVM 사양, KVM over USB 기술 사양, Mini-KVM 차원, Mini-KVM 액세서리, HDMI KVM 사양, USB KVM 기술 세부 정보, 헤드리스 컴퓨터 제어 사양, KVM 스위치 사양, 서버 관리 도구"
 ---
 

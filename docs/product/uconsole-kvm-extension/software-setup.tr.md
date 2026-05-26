@@ -1,6 +1,6 @@
 ---
 title: "Yazılım-Setup"
-description: "Vollständige Kılavuz zur Yazılımeinrichtung için die Openterface KVM-Erweiterung için uConsole."
+description: Vollständige Kılavuz zur Yazılımeinrichtung için die Openterface KVM-Erweiterung için uConsole. Die Openterface App ermöglicht Ihrer uConsole, als… Openterface.
 keywords: "Openterface App Kurulum, uConsole Yazılım, KVM App Kurulum, uConsole Konfiguration"
 ---
 

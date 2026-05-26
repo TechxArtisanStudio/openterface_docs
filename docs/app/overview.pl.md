@@ -1,3 +1,8 @@
+---
+title: "Oprogramowanie"
+description: "Oprogramowanie: Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der unten aufgeführten Apps auf Ihrem Host-Computer installieren. Sie…"
+---
+
 # Oprogramowanie
 
 Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der unten aufgeführten Apps auf Ihrem Host-Computer installieren. Sie können diese Apps von verschiedenen App-Plattformen herunterladen lub einfach auf die bereitgestellten Links klicken. Wenn Sie sich abenteuerlustig fühlen, können Sie sie auch aus dem Quellcode z unseren GitHub-Repositories erstellen!

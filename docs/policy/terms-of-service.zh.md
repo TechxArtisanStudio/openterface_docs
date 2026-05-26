@@ -1,3 +1,8 @@
+---
+title: "服务条款"
+description: "（版本 2 – 2026 年 2 月） 本网站由 Openterface 运营，Openterface 是 TechxArtisan Limited（\"TechxArtisan\"）的品牌，该公司已承接原广州比尔奥科技有限公司的业务。\"我们\"、\"我方\"和\"我们的\"均指 Openterface。…"
+---
+
 # 服务条款
 
 **（版本 2 – 2026 年 2 月）**

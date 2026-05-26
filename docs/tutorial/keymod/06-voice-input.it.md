@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Inserimento vocale"
-description: "Utilizza la voce sulla tastiera con KeyMod. Supporta il riconoscimento vocale del sistema, l'IA Whisper sul dispositivo e più lingue."
+description: Utilizza la voce sulla tastiera con KeyMod. Supporta il riconoscimento vocale del sistema, l'IA Whisper sul dispositivo e più lingue. Converti il tuo…
 keywords: "KeyMod input vocale, sintesi vocale, Whisper, digitazione vocale, tastiera vivavoce"
 ---
 

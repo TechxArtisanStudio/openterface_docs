@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Gamepad"
-description: "Use KeyMod as a virtual game controller with customizable layouts for gaming, retro emulation, and game testing."
+description: "KeyMod Tutorial - Gamepad: Transform your phone into a virtual game controller for gaming, retro emulation, and game testing. The gamepad provides a full…"
 keywords: "KeyMod gamepad, virtual controller, game controller, WASD mapping, analog stick"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek — pierwsze kroki"
-description: "Zainstaluj aplikację KeyMod, połącz się z urządzeniem KeyMod i wyślij pierwsze naciśnięcie klawisza w mniej niż 5 minut."
+description: "Zainstaluj aplikację KeyMod, połącz się z urządzeniem KeyMod i wyślij pierwsze naciśnięcie klawisza w mniej niż 5 minut. Oficjalna dokumentacja Openterface:…"
 keywords: "KeyMod pierwsze kroki, KeyMod konfiguracja, KeyMod instalacja, podłączenie KeyMod"
 ---
 

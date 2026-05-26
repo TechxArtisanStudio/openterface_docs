@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程"
-description: "KeyMod 应用完整使用指南。学习如何连接、用手机控制电脑，以及键盘、鼠标、手柄、宏和语音输入等模式。"
+description: KeyMod 应用完整使用指南。学习如何连接、用手机控制电脑，以及键盘、鼠标、手柄、宏和语音输入等模式。 本教程涵盖 Android 版 KeyMod 应用。iOS 版本正在开发中。 KeyMod 将您的手机或平板变成面向任意电脑的 通用输入设备。它通过 Openterface KeyMod…
 keywords: "KeyMod 教程, 如何使用 KeyMod, 手机键盘指南, KeyMod 应用教程"
 ---
 

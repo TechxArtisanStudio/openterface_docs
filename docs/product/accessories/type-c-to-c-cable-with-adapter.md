@@ -1,6 +1,6 @@
 ---
 title: "High-Speed Type-C to Type-C Cable with USB-A Adapter"
-description: "Ensure fast data transfer and charging with our high-speed Type-C to Type-C cable, complete with a USB-A adapter for versatility."
+description: "High-Speed Type-C to Type-C Cable with USB-A Adapter: This stylish and soft-feel Type-C Male-to-Male cable in vibrant orange is designed for host computer…"
 keywords: "Type-C cable, USB-A adapter, fast data transfer, high-speed charging"
 ---
 

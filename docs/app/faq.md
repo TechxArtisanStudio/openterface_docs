@@ -1,3 +1,8 @@
+---
+title: "FAQs for Apps"
+description: "FAQs for Apps: Welcome to the FAQ for our apps. If you don’t find the answer you need, email us at or join our community on or to connect with our dev…"
+---
+
 # FAQs for Apps
 
 Welcome to the FAQ for our apps. If you don’t find the answer you need, **email us at [info@openterface.com](mailto:info@openterface.com)** or **join our community** on [Discord](/discord) or [Reddit](/reddit) to connect with our dev team and fellow users.

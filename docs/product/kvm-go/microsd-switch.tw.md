@@ -1,6 +1,6 @@
 ---
 title: "MicroSD 卡切換指南"
-description: "瞭解如何使用 Openterface KVM-Go 中的雙硬件軟件 MicroSD 切換系統。瞭解四種操作狀態、LED 指示燈、安全指南和文件傳輸功能。"
+description: "MicroSD 卡切換指南: Openterface KVM-Go 包含一個 MicroSD 卡插槽，可在主機和目標設備之間共享，但不能同時使用。 此設計允許您在設備之間快速切換進行文件傳輸，無需物理移除卡，使您的工作流程更快、更高效。它也可以作為您的常規 MicroSD 讀卡器使用。 牢固插入 MicroSD……"
 keywords: "MicroSD 切換, KVM 切換, 硬件切換, 軟件切換, MicroSD 卡控制, KVM over USB, 文件傳輸, USB 設備管理, 計算機外設, MicroSD 電源管理, LED 指示燈"
 ---
 

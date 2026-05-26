@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM (Windows) - ハードウェア診断自己チェックガイド"
-description: "Windows版Openterfaceアプリでハードウェア診断自己チェックを実行するためのステップバイステップガイド。USB接続のテスト、問題の検出、サポートへの診断レポートの送信方法を学びましょう。"
+description: Windows版Openterfaceアプリでハードウェア診断自己チェックを実行するためのステップバイステップガイド。USB接続のテスト、問題の検出、サポートへの診断レポートの送信方法を学びましょう。……
 keywords: "Openterface Mini-KVM, Windows, ハードウェア診断, 診断自己チェック, KVMトラブルシューティング, USB KVM診断, Mini-KVMサポート, KVMデバイステスト, Windows KVM, KVM欠陥報告, Mini-KVMトラブルシューティングガイド"
 ---
 

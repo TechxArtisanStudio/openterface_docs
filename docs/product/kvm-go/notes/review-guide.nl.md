@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Reviewgids (Engineeringprototype)"
+description: Bedankt dat u de tijd neemt om ons aankomende product te testen. Deze unit is een engineeringprototype, en onze firmware en software evolueren snel. Uw…
+---
+
 # Openterface KVM-Go — Reviewgids (Engineeringprototype)
 
 ## Overzicht

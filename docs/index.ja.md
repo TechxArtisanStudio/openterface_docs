@@ -1,6 +1,6 @@
 ---
 title: ドキュメント
-description: Openterface KVM-over-USB 製品とソフトウェアの公式ドキュメントへようこそ。
+description: Openterface KVM-over-USB 製品とソフトウェアの公式ドキュメントへようこそ。 Openterface 公式ドキュメント。セットアップ、FAQ、トラブルシューティング。IT・開発者向け。
 ---
 
 # Openterface ドキュメント

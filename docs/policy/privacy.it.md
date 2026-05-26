@@ -1,3 +1,8 @@
+---
+title: "Informativa sulla Privacy"
+description: (Versione 2 – Febbraio 2026) Questa Informativa sulla Privacy si applica al sito web Openterface, ai dispositivi hardware Openterface e alle relative…
+---
+
 # Informativa sulla Privacy
 
 **(Versione 2 – Febbraio 2026)**

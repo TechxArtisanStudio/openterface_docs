@@ -1,3 +1,8 @@
+---
+title: "Richtlinien"
+description: "Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten и die Abwicklung von Käufen. Официальная документация Openterface: настройка, FAQ и…"
+---
+
 # Richtlinien
 
 Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten и die Abwicklung von Käufen.

@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: مرحبًا! شكرًا مرة أخرى على انضمامك إلى برنامجنا التجريبي. نحن متحمسون حقًا لأنك تجرب KVM-GO مع مجموعة الوصول المبكر. هذا الجهاز الصغير هو في الأساس KVM بحجم…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

@@ -1,8 +1,7 @@
 ---
 title: "Openterface KVM-Go | 内置视频连接器的超紧凑KVM-over-USB"
-description: "使用超紧凑的Openterface KVM-Go控制无头计算机。内置HDMI/DP/VGA连接器消除线缆需求。钥匙扣大小的KVM-over-USB解决方案，支持4K，专为IT专业人士和开发者设计。"
+description: 使用超紧凑的Openterface KVM-Go控制无头计算机。内置HDMI/DP/VGA连接器消除线缆需求。钥匙扣大小的KVM-over-USB解决方案，支持4K，专为IT专业人士和开发者设计。 继Openterface… 继Openterface… 继Openterface…
 keywords: "KVM-Go, KVM over USB, 超紧凑KVM, 内置HDMI, 钥匙扣KVM, 4K KVM, 无头控制, USB KVM, 便携KVM, DisplayPort KVM, VGA KVM, IT工具, 服务器管理"
-
 ---
 
 # **Openterface KVM-Go系列**

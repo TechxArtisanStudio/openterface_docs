@@ -1,3 +1,8 @@
+---
+title: "Actualización de firmware KVM-Go"
+description: KVM-Go utiliza el chip CH32V208 de WCH para la emulación de teclado y ratón. Actualmente, el flasheo de firmware requiere la herramienta de programación…
+---
+
 # Actualización de firmware KVM-Go
 
 ## Descripción general

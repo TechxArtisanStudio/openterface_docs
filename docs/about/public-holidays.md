@@ -1,3 +1,8 @@
+---
+title: "Public Holidays"
+description: "Public Holidays: As a Hong Kong–based company, we mainly follow the public holidays of Chinese mainland and Hong Kong. Our office is closed on these days.…"
+---
+
 # Public Holidays
 
 As a Hong Kong–based company, we mainly follow the public holidays of **Chinese mainland** and **Hong Kong**. Our office is closed on these days. For our regular working hours, please see [About Us](about-us.md).

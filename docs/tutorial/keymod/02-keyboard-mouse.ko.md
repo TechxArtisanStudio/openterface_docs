@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 키보드 및 마우스"
-description: "KeyMod 키보드와 touchpad을 사용하여 휴대폰에서 입력하고, 단축키를 보내고, 대상 컴퓨터의 마우스를 제어하는 ​​방법을 알아보세요."
+description: KeyMod 키보드와 touchpad을 사용하여 휴대폰에서 입력하고, 단축키를 보내고, 대상 컴퓨터의 마우스를 제어하는 ​​방법을 알아보세요. 키보드 및 마우스 모드는 가장 자주 사용되는 모드입니다. 휴대폰에서 대상 컴퓨터를 제어할 수 있는 가상 키보드와 touchpad를…
 keywords: "KeyMod 키보드, KeyMod 마우스, touchpad, 수정자 키, 키보드 단축키"
 ---
 

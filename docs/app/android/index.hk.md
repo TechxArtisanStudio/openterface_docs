@@ -1,3 +1,8 @@
+---
+title: "Openterface Android"
+description: "Openterface Android: Openterface Mini-KVM 是一個開源硬件和軟件解決方案，旨在通過基於 Android 的界面提供基本的 KVM（鍵盤、視頻、鼠標）功能來控制設備。此倉庫包含 Android 應用程序源代碼、構建配置和支持腳本來設置和部署項目。…"
+---
+
 # Openterface Android
 
 ## 概述

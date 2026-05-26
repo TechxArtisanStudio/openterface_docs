@@ -1,7 +1,7 @@
 ---
 title: カスタムエンタープライズソリューション | Openterface Mini-KVM統合
 keywords: Openterface Mini-KVM, カスタムエンタープライズソリューション, エンタープライズKVM統合, ITワークフロー最適化
-description: Openterfaceが、ITワークフローを最適化するためのカスタムKVMソリューションと統合でエンタープライズをサポートする方法をご覧ください。
+description: Openterfaceが、ITワークフローを最適化するためのカスタムKVMソリューションと統合でエンタープライズをサポートする方法をご覧ください。 Openterface… Openterface…
 ---
 
 # カスタムエンタープライズソリューション

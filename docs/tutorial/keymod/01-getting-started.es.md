@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Primeros pasos"
-description: "Instala la aplicación KeyMod, conéctate a tu dispositivo KeyMod y envía tu primera pulsación de tecla en menos de 5 minutos."
+description: Instala la aplicación KeyMod, conéctate a tu dispositivo KeyMod y envía tu primera pulsación de tecla en menos de 5 minutos. Instale la aplicación KeyMod,…
 keywords: "KeyMod introducción, KeyMod configuración, KeyMod instalación, conexión KeyMod"
 ---
 

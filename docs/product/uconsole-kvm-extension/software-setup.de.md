@@ -1,6 +1,6 @@
 ---
 title: "Software-Setup"
-description: "Vollständige Anleitung zur Softwareeinrichtung für die Openterface KVM-Erweiterung für uConsole."
+description: "Vollständige Anleitung zur Softwareeinrichtung der Openterface KVM-Erweiterung für uConsole: App installieren, KVM über Bildschirm, Tastatur und Trackball steuern."
 keywords: "Openterface App Installation, uConsole Software, KVM App Installation, uConsole Konfiguration"
 ---
 

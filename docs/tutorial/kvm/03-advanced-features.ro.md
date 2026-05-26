@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 03 — Funcții avansate"
+description: "Public: Intermediar la Expert — funcții pentru utilizatori avansați și configurare Documentație Openterface: configurare, întrebări frecvente și depanare…"
+---
+
 
 # Tutorial KVM 03 — Funcții avansate
 

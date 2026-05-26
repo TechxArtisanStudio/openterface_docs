@@ -1,3 +1,8 @@
+---
+title: "服務條款"
+description: "服務條款: （版本 2 – 2026 年 2 月） 本網站由 Openterface 運營，Openterface 是 TechxArtisan Limited（\"TechxArtisan\"）的品牌，該公司已承接原廣州比爾奧科技有限公司的業務。\"我們\"、\"我方\"和\"我們的\"均指 Openterface。…"
+---
+
 # 服務條款
 
 **（版本 2 – 2026 年 2 月）**

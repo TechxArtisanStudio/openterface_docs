@@ -1,3 +1,8 @@
+---
+title: "Politica de Returnare, Rambursare și Garanție"
+description: (Versiunea 2 – Februarie 2026) Această politică se aplică produselor Openterface, inclusiv Mini-KVM, KVM-GO, etc. Vă rugăm să citiți cu atenție, deoarece…
+---
+
 # Politica de Returnare, Rambursare și Garanție
 
 **(Versiunea 2 – Februarie 2026)**

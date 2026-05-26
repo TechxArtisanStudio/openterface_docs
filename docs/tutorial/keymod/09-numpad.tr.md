@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Numpad"
-description: "Veri girişi için HID sayısal tuş takımı kodları ve uygulamaya özel ızgaralar ile KeyMod sayısal tuş takımını kullanın."
+description: Veri girişi için HID sayısal tuş takımı kodları ve uygulamaya özel ızgaralar ile KeyMod sayısal tuş takımını kullanın. Veri girişi için tam sayısal tuş…
 keywords: "KeyMod sayısal tuş takımı, sayısal tuş takımı, HID sayısal tuş takımı, veri girişi"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "소프트웨어 설치"
-description: "uConsole용 Openterface KVM 확장 소프트웨어 설치 가이드입니다."
+description: uConsole용 Openterface KVM 확장 소프트웨어 설치 가이드입니다. Openterface 앱은 uConsole을 KVM 인터페이스로 사용하여 내장 화면, 키보드, 트랙볼로 대상 기기를 제어할 수 있게 합니다.
 keywords: "Openterface 앱 설치, uConsole 소프트웨어, KVM 설정, uConsole 구성"
 ---
 

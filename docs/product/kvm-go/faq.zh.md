@@ -1,6 +1,6 @@
 ---
 title: Openterface KVM-Go 系列常见问题
-description: 关于 KVM-Go 系列的常见问题，涵盖功能、兼容性和预发布信息。
+description: 关于 KVM-Go 系列的常见问题，涵盖功能、兼容性和预发布信息。 欢迎访问我们下一代 Openterface KVM-Go 系列的常见问题页面。 如果您没有找到所需的答案，请发送邮件至 或加入我们的社区 或 。 ⚠️ 注意：KVM-Go 目前处于预发布开发阶段。随着我们完善产品，功能、规格和设计可能会有所变化。
 keywords: KVM-Go, Openterface, 超紧凑型 KVM, 内置 HDMI, 钥匙扣 KVM, 开源, 预发布, 视频采集, USB, 兼容性, MicroSD
 ---
 

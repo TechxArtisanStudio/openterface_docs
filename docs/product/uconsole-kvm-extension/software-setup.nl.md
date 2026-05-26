@@ -1,6 +1,6 @@
 ---
 title: "Software-Setup"
-description: "Vollständige Handleiding zur Softwareeinrichtung voor die Openterface KVM-Erweiterung voor uConsole."
+description: Vollständige Handleiding zur Softwareeinrichtung voor die Openterface KVM-Erweiterung voor uConsole. Die Openterface App ermöglicht Ihrer uConsole, als…
 keywords: "Openterface App Installatie, uConsole Software, KVM App Installatie, uConsole Konfiguration"
 ---
 

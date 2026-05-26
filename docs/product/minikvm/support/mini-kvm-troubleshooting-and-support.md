@@ -1,6 +1,6 @@
 ---
 title: "Having Trouble with Mini-KVM? Start Here - Openterface Support"
-description: "Support and troubleshooting guide for Mini-KVM keyboard and mouse issues. Learn how to run diagnostics, contact support, and get replacement or refund."
+description: "Having Trouble with Mini-KVM? Start Here - Openterface Support: Support & Troubleshooting Guide We understand how frustrating it can be when a device doesn’t……"
 keywords: "Openterface Mini-KVM, Mini-KVM support, Mini-KVM troubleshooting, keyboard mouse issues, Mini-KVM replacement, Mini-KVM refund, Openterface support"
 ---
 

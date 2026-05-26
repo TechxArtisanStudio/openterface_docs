@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Oyun Kumandası"
-description: "KeyMod'ı oyun, retro emülasyon ve oyun testi için özelleştirilebilir düzenlere sahip sanal oyun kumandası olarak kullanın."
+description: KeyMod'ı oyun, retro emülasyon ve oyun testi için özelleştirilebilir düzenlere sahip sanal oyun kumandası olarak kullanın. Telefonunuzu oyun, retro… Openterface
 keywords: "KeyMod gamepad, sanal kumanda, oyun kumandası, WASD haritalama, analog çubuk"
 ---
 

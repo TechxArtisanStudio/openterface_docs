@@ -1,3 +1,8 @@
+---
+title: "Mitmachen & Unterstützen"
+description: Open-Source-Sprzęt ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen i wirklich zu verstehen. Sie zu bauen — i offen zu halten — erfordert…
+---
+
 # Mitmachen & Unterstützen
 
 Open-Source-Sprzęt ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen i wirklich zu verstehen. Sie zu bauen — i offen zu halten — erfordert eine engagierte Community. Mit deiner Hilfe können wir geschlossene Systeme herausfordern i eine Zukunft schaffen, in der Technologie ihren Nutzerinnen i Nutzern gehört.

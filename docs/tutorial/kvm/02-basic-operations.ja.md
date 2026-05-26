@@ -1,3 +1,8 @@
+---
+title: "KVMチュートリアル 02 — 基本操作"
+description: "対象: 初級〜中級 — 日常使用機能 Openterface 公式ドキュメント。セットアップ、FAQ、トラブルシューティング。IT・開発者向け。 Openterface."
+---
+
 
 # KVMチュートリアル 02 — 基本操作
 

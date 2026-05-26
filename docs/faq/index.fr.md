@@ -1,6 +1,6 @@
 ---
 title: FAQ pour USB KVM et Openterface
-description: FAQ détaillée pour notre produit phare Mini-KVM, couvrant les spécifications techniques, guides d'utilisation et conseils de dépannage.
+description: FAQ détaillée pour notre produit phare Mini-KVM, couvrant les spécifications techniques, guides d'utilisation et conseils de dépannage. Documentation…
 keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, network-free KVM, headless device control, IT solutions, troubleshooting, auto-vérification diagnostique, contrôle clavier souris, Openterface products
 ---
 

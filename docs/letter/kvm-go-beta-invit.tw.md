@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: 歡迎加入 Openterface KVM-GO Beta 測試計劃！ — letter / kvm go beta invit (KVM-GO). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — letter/kvm-go-beta-invit
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

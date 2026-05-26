@@ -1,3 +1,8 @@
+---
+title: "Aktualizacja firmware KVM-Go"
+description: KVM-Go wykorzystuje układ CH32V208 od WCH do emulacji klawiatury i myszy. Obecnie flashowanie firmware wymaga oficjalnego narzędzia programującego WCH,…
+---
+
 # Aktualizacja firmware KVM-Go
 
 ## Przegląd

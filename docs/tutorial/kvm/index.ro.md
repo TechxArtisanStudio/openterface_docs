@@ -1,3 +1,8 @@
+---
+title: "Tutorial pentru Software KVM"
+description: Controlul tastaturii, video și mouse-ului prin un singur dispozitiv. Această tutoriale abordează seria Openterface KVM — dispozitive care capturează… Openterfac
+---
+
 # Tutorial pentru Software KVM
 
 > Controlul tastaturii, video și mouse-ului prin un singur dispozitiv.

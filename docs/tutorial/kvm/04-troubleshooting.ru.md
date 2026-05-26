@@ -1,3 +1,8 @@
+---
+title: "KVM Tutorial 04 — Устранение неполадок"
+description: "Распространённые проблемы и решения для устройств Openterface KVM. Официальная документация Openterface: настройка, FAQ и устранение неполадок KVM-over-USB."
+---
+
 
 # KVM Tutorial 04 — Устранение неполадок
 

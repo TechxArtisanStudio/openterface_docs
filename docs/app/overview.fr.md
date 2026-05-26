@@ -1,3 +1,8 @@
+---
+title: "Logiciel"
+description: Pour faire fonctionner vos gadgets Openterface™ KVM, vous devrez installer l'une des applications listées ci-dessous sur votre ordinateur hôte. Vous pouvez…
+---
+
 # Logiciel
 
 Pour faire fonctionner vos gadgets Openterface™ KVM, vous devrez installer l'une des applications listées ci-dessous sur votre ordinateur hôte. Vous pouvez récupérer ces applications depuis différentes plateformes d'applications ou simplement cliquer sur les liens fournis. Si vous vous sentez aventureux, vous pouvez également les construire à partir du code source en utilisant nos dépôts GitHub !

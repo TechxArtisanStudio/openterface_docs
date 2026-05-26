@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Poradnik - Rozwiązywanie problemów"
-description: "Napraw typowe problemy KeyMod: problemy z połączeniem, brak rejestracji kluczy, błędy parowania Bluetooth, błędy wprowadzania głosowego i inne."
+description: "Napraw typowe problemy KeyMod: problemy z połączeniem, brak rejestracji kluczy, błędy parowania Bluetooth, błędy wprowadzania głosowego i inne. Typowe…"
 keywords: "KeyMod rozwiązywanie problemów, KeyMod brak połączenia, KeyMod problemy z Bluetooth, KeyMod klawisze nie działają"
 ---
 

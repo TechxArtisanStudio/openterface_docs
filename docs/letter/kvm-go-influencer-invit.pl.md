@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: Cześć! Jeszcze raz dziękujemy za dołączenie do naszego programu beta. Jesteśmy naprawdę podekscytowani, że testujesz KVM-GO z naszą grupą wczesnego dostępu.…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

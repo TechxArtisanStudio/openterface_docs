@@ -1,3 +1,8 @@
+---
+title: "Tutoriel KVM 04 — Dépannage"
+description: "Problèmes courants et solutions pour les appareils Openterface KVM. Documentation Openterface : configuration, FAQ et dépannage KVM-over-USB. Openterface."
+---
+
 # Tutoriel KVM 04 — Dépannage
 
 Problèmes courants et solutions pour les appareils Openterface KVM.

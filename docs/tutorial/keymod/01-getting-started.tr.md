@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Başlarken"
-description: "KeyMod uygulamasını yükleyin, KeyMod cihazınıza bağlanın ve ilk tuş vuruşunuzu 5 dakikadan kısa sürede gönderin."
+description: "KeyMod uygulamasını yükleyin, KeyMod cihazınıza bağlanın ve ilk tuş vuruşunuzu 5 dakikadan kısa sürede gönderin. Resmi Openterface belgeleri: kurulum, SSS…"
 keywords: "KeyMod başlangıç, KeyMod kurulum, KeyMod kurulum, bağlanma KeyMod"
 ---
 

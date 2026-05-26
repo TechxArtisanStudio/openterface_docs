@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Centro de accesos directos"
-description: "Utilice atajos de teclado basados ​​en perfiles para aplicaciones populares como Blender, VS Code, Photoshop y KiCAD."
+description: Utilice atajos de teclado basados ​​en perfiles para aplicaciones populares como Blender, VS Code, Photoshop y KiCAD. Acceso con un solo toque a atajos de…
 keywords: "KeyMod atajos, perfiles de atajos, Blender atajos, VS Code atajos, atajos de teclado"
 ---
 

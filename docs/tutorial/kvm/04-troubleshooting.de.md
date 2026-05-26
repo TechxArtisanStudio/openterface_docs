@@ -1,3 +1,8 @@
+---
+title: "KVM-Tutorial 04 — Fehlerbehebung"
+description: "Häufige Probleme und Lösungen für Openterface KVM-Geräte. Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung für KVM-over-USB. Openterface."
+---
+
 
 # KVM-Tutorial 04 — Fehlerbehebung
 

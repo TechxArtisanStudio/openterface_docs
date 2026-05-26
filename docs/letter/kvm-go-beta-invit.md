@@ -1,4 +1,6 @@
 ---
+title: "KVM-GO Beta Invitation"
+description: "Invitation to beta test Openterface KVM-GO: engineering prototype program, feedback expectations, shipping details, and how to report issues during pre-launch testing."
 hide:
   - sitemap
 ---

@@ -1,6 +1,6 @@
 ---
 title: "البرمجيات-Setup"
-description: "Vollständige دليل zur البرمجياتeinrichtung لـ die Openterface KVM-Erweiterung لـ uConsole."
+description: Vollständige دليل zur البرمجياتeinrichtung لـ die Openterface KVM-Erweiterung لـ uConsole. Die Openterface App ermöglicht Ihrer uConsole, als…
 keywords: "Openterface App التثبيت, uConsole البرمجيات, KVM App التثبيت, uConsole Konfiguration"
 ---
 

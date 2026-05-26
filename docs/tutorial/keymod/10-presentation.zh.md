@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 演示"
-description: "将 KeyMod 用作演示遥控器，用手机控制幻灯片。支持 PowerPoint、Keynote、Google Slides 等。"
+description: 将 KeyMod 用作演示遥控器，用手机控制幻灯片。支持 PowerPoint、Keynote、Google Slides 等。 用手机控制幻灯片——无需翻页笔。
 keywords: "KeyMod 演示, 幻灯片遥控, PowerPoint 遥控, Keynote 遥控, 演示计时器"
 ---
 

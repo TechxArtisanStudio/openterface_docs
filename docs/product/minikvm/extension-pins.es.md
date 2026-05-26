@@ -1,6 +1,6 @@
 ---
 title: "Pines de extensión"
-description: "Explora el potencial de los pines de extensión del Openterface Mini-KVM para el desarrollo de hardware a medida y proyectos de código abierto."
+description: Explora el potencial de los pines de extensión del Openterface Mini-KVM para el desarrollo de hardware a medida y proyectos de código abierto. Openterface…
 keywords: "Mini-KVM pines de extensión, desarrollo a medida, modificación de hardware, KVM de código abierto"
 ---
 

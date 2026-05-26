@@ -1,3 +1,8 @@
+---
+title: "多語言"
+description: 多語言 — about / multi languages (Openterface KVM-over-USB). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
+---
+
 # 多語言
 
 ## 支持的語言列表

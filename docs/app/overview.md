@@ -1,3 +1,8 @@
+---
+title: "Software"
+description: "Software: Openterface provides open-source applications for every product line. Download the app that matches your hardware and host platform, or build…"
+---
+
 # Software
 
 Openterface provides open-source applications for every product line. Download the app that matches your hardware and host platform, or build from source on GitHub.

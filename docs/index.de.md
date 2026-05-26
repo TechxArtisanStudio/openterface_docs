@@ -1,6 +1,6 @@
 ---
 title: Dokumentation
-description: Willkommen in der offiziellen Dokumentation für Openterface KVM-over-USB Produkte und Software.
+description: "Willkommen in der offiziellen Dokumentation für Openterface KVM-over-USB Produkte und Software. Offizielle Openterface-Doku: Einrichtung, FAQ und… Openterface."
 ---
 
 # Openterface Dokumentation

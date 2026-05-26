@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Snelkoppelingshub"
-description: "Gebruik profielgebaseerde sneltoetsen voor populaire apps zoals Blender, VS Code, Photoshop en KiCAD."
+description: Gebruik profielgebaseerde sneltoetsen voor populaire apps zoals Blender, VS Code, Photoshop en KiCAD. Met één tik toegang tot veelgebruikte sneltoetsen,…
 keywords: "KeyMod snelkoppelingen, snelkoppelingsprofielen, Blender snelkoppelingen, VS Code snelkoppelingen, sneltoetsen"
 ---
 

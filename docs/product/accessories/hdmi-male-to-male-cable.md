@@ -1,6 +1,6 @@
 ---
 title: "Compact HDMI Male-to-Male Cable for High-Definition Video"
-description: "Connect your devices seamlessly with our compact HDMI male-to-male cable, perfect for high-definition video transmission."
+description: "Compact HDMI Male-to-Male Cable for High-Definition Video: This compact HDMI cable is perfect for connecting your target device to capture video output,…"
 keywords: "HDMI cable, male-to-male HDMI, high-definition video cable, compact HDMI"
 ---
 

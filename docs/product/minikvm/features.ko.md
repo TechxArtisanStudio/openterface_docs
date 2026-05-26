@@ -1,6 +1,6 @@
 ---
 title: "기능 및 사양"
-description: "Openterface Mini-KVM 완전 개요: BIOS 레벨 액세스, 4K 비디오 지원, 크로스 플랫폼 호환성, USB 공유 및 상세한 기술 사양을 포함한 강력한 기능. 이 헤드리스 컴퓨터 제어 솔루션에 대해 알아야 할 모든 것."
+description: "Openterface Mini-KVM 완전 개요: BIOS 레벨 액세스, 4K 비디오 지원, 크로스 플랫폼 호환성, USB 공유 및 상세한 기술 사양을 포함한 강력한 기능. 이 헤드리스 컴퓨터 제어 솔루션에 대해 알아야 할 모든 것. width=\"560\" height=\"315\"…"
 keywords: "Mini-KVM 기능, KVM 사양, BIOS 액세스, 헤드리스 제어, 4K KVM, USB 공유, 크로스 플랫폼 KVM, 텍스트 전송, 플러그 앤 플레이 KVM, 오픈 소스 KVM, 기술 사양"
 ---
 

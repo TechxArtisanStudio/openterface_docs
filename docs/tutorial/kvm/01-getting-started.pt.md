@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 01 — Primeiros passos"
+description: "Público-alvo: Iniciantes — utilizadores pela primeira vez de dispositivos KVM Openterface Documentação Openterface: configuração, FAQs e suporte KVM-over-USB."
+---
+
 # Tutorial KVM 01 — Primeiros passos
 
 **Público-alvo:** Iniciantes — utilizadores pela primeira vez de dispositivos KVM Openterface

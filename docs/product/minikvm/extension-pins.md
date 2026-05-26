@@ -1,6 +1,6 @@
 ---
 title: "Extension Pins"
-description: "Explore the potential of Openterface Mini-KVM's extension pins for custom hardware development and open-source projects."
+description: "Extension Pins: The Openterface Mini-KVM features extension pins for advanced development and experimentation. These pins are not exposed in the standard…"
 keywords: "Mini-KVM extension pins, custom development, hardware modification, open-source KVM"
 ---
 

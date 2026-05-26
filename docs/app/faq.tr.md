@@ -1,3 +1,8 @@
+---
+title: "FAQs için Apps"
+description: Willkommen bei den FAQs için unsere Apps. Wenn Sie die Antwort değil finden, die Sie benötigen, senden Sie uns eine E-Mail an veya treten Sie unserer…
+---
+
 # FAQs için Apps
 
 Willkommen bei den FAQs için unsere Apps. Wenn Sie die Antwort değil finden, die Sie benötigen, **senden Sie uns eine E-Mail an [info@openterface.com](mailto:info@openterface.com)** veya **treten Sie unserer Community** auf [Discord](/discord) veya [Reddit](/reddit) bei, um sich ile unserem Entwicklungsteam ve anderen Benutzern zu verbinden.

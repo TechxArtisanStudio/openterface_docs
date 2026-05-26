@@ -1,3 +1,8 @@
+---
+title: "Samouczek KVM 01 — Pierwsze kroki"
+description: "Grupa docelowa: Początkujący — użytkownicy urządzeń Openterface KVM po raz pierwszy Oficjalna dokumentacja Openterface: konfiguracja, FAQ i rozwiązywanie…"
+---
+
 # Samouczek KVM 01 — Pierwsze kroki
 
 **Grupa docelowa:** Początkujący — użytkownicy urządzeń Openterface KVM po raz pierwszy

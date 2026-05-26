@@ -1,3 +1,8 @@
+---
+title: "KVM 튜토리얼 01 — 시작하기"
+description: "대상: 초보자 — Openterface KVM 장치의 처음 사용자 Openterface 공식 문서: 설치, FAQ, 문제 해결. IT 및 개발자를 위한 KVM-over-USB 가이드."
+---
+
 
 # KVM 튜토리얼 01 — 시작하기
 

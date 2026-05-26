@@ -1,3 +1,8 @@
+---
+title: "Tutorial de Software KVM"
+description: "Tutorial de software KVM para Openterface Mini-KVM, KVM-GO y extensión uConsole. Configuración, operaciones básicas, funciones avanzadas y solución de problemas USB KVM."
+---
+
 
 # Tutorial de Software KVM
 

@@ -1,6 +1,6 @@
 ---
 title: "高速Type-C轉Type-C數據線帶USB-A適配器"
-description: "使用我們高速Type-C轉Type-C數據線確保快速數據傳輸和充電，配備USB-A適配器實現多功能性。"
+description: "accessories/type-c-to-c-cable-with-adapter (tw): 高速Type-C轉Type-C數據線帶USB-A適配器: 這款時尚且觸感柔軟的Type-C公對公數據線採用鮮豔的橙色設計，專為主機連接而設計。它配備USB-C母頭轉USB-A公頭適配器，增強兼容性，確保您可以使用Type…"
 keywords: "Type-C數據線, USB-A適配器, 快速數據傳輸, 高速充電"
 ---
 

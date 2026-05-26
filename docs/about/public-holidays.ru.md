@@ -1,3 +1,8 @@
+---
+title: "Feiertage"
+description: Als in Hongkong ansässiges Unternehmen folgen wir hauptsächlich den Feiertagen von Festlandchina и Hongkong. An diesen Tagen ist unser Büro geschlossen. Für…
+---
+
 # Feiertage
 
 Als in Hongkong ansässiges Unternehmen folgen wir hauptsächlich den Feiertagen von **Festlandchina** и **Hongkong**. An diesen Tagen ist unser Büro geschlossen. Für unsere regulären Arbeitszeiten siehe [Über uns](about-us.md).

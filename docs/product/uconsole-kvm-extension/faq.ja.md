@@ -1,6 +1,6 @@
 ---
 title: Openterface KVM Extension for uConsole よくある質問
-description: uConsole KVM Extensionに関するよくある質問、機能、互換性、トラブルシューティング、インストールについて。
+description: uConsole KVM Extensionに関するよくある質問、機能、互換性、トラブルシューティング、インストールについて。 Openterface KVM Extension for uConsoleのよくある質問へようこそ。…
 keywords: KVM拡張, uConsole KVM, トラブルシューティング, ビデオキャプチャ, USB HID, 互換性, インストール
 ---
 
@@ -10,7 +10,6 @@ keywords: KVM拡張, uConsole KVM, トラブルシューティング, ビデオ�
 必要な情報が見つからない場合は、**[support@openterface.com](mailto:support@openterface.com)にメール**を送信するか、[Discord](/discord)で**コミュニティに参加**してください。
 
 ⚠️ _よくある質問は古くなっている可能性があります—更新が必要な内容を見つけた場合はお知らせください。_
-
 ---
 
 ## :material-clipboard-list: クイックナビゲーション

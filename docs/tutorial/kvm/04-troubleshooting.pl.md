@@ -1,3 +1,8 @@
+---
+title: "Samouczek KVM 04 — Rozwiązywanie problemów"
+description: "Typowe problemy i rozwiązania dla urządzeń Openterface KVM. Oficjalna dokumentacja Openterface: konfiguracja, FAQ i rozwiązywanie problemów KVM-over-USB."
+---
+
 
 # Samouczek KVM 04 — Rozwiązywanie problemów
 

@@ -1,3 +1,8 @@
+---
+title: "KVM Software Tutorial"
+description: "Full KVM-over-USB: kontrola klawiatury, ekranu i myszki w jednym urządzeniu. Tutaj znajdziesz szczegółowy przewodnik po serii Openterface KVM —… Openterface."
+---
+
 # KVM Software Tutorial
 
 > Full KVM-over-USB: kontrola klawiatury, ekranu i myszki w jednym urządzeniu.

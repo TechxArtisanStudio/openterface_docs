@@ -1,3 +1,8 @@
+---
+title: "Datenschutzrichtlinie"
+description: (Version 2 – Februar 2026) Diese Datenschutzrichtlinie gilt для die Openterface-Website, Openterface-Оборудованиеgeräte и die zugehörigen Anwendungen…
+---
+
 # Datenschutzrichtlinie
 
 **(Version 2 – Februar 2026)**

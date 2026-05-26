@@ -1,6 +1,6 @@
 ---
 title: "機能と仕様"
-description: "Openterface KVM Extension for uConsole の完全な概要：直接 HDMI 入力、USB HID 制御、完璧なフォームファクター、詳細な技術仕様を含む強力な機能。このポータブル KVM ソリューションについて知っておくべきすべて。"
+description: Openterface KVM Extension for uConsole の完全な概要：直接 HDMI 入力、USB HID 制御、完璧なフォームファクター、詳細な技術仕様を含む強力な機能。このポータブル KVM ソリューションについて知っておくべきすべて。
 keywords: "KVM拡張機能, uConsole KVM, HDMI KVM, USB HID制御, ポータブルKVM, headless制御, 4G LTE置換, 技術仕様, uConsole拡張"
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: "Openterface Mini-KVM의 컴플라이언스 인증: OSHWA 인증 (UID CN000015), OSI 승인 AGPL-3.0 라이선스, CE, UKCA, WEEE 및 RoHS 준수. 전체 문서가 제공되는 완전 오픈 소스 하드웨어 및 소프트웨어."
+description: "Openterface Mini-KVM의 컴플라이언스 인증: OSHWA 인증 (UID CN000015), OSI 승인 AGPL-3.0 라이선스, CE, UKCA, WEEE 및 RoHS 준수. 전체 문서가 제공되는 완전 오픈 소스 하드웨어 및 소프트웨어. Openterface…"
 keywords: "오픈 소스 하드웨어, OSHWA 인증, OSI 준수, AGPL-3.0 라이선스, CE 인증, UKCA 마크, WEEE 준수, RoHS 표준, 하드웨어 인증, 오픈 소스 문서, TechxArtisan, 하드웨어 컴플라이언스, Mini-KVM 인증, 오픈 하드웨어 디자인"
 ---
 

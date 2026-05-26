@@ -1,3 +1,8 @@
+---
+title: "レビューとメディア"
+description: レビューとメディア — minikvm / reviews (Mini-KVM). Openterface 公式ドキュメント。セットアップ、FAQ、トラブルシューティング。IT・開発者向け。
+---
+
 # レビューとメディア
 
 ## メディア報道

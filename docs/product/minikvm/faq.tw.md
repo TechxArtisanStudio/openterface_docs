@@ -1,6 +1,6 @@
 ---
 title: Openterface Mini-KVM 常見問題
-description: 關於 Mini-KVM 的常見問題，涵蓋功能、兼容性、故障排除和未來計劃。
+description: "Openterface Mini-KVM 常見問題: 歡迎來到我們旗艦產品 Openterface Mini-KVM 的常見問題頁面。 如果您找不到需要的信息，請發送郵件至 或加入我們的社區 或 。 ⚠️ 常見問題可能已過時 — 如果您發現需要更新的內容，請告知我們。 — minikvm/faq"
 keywords: Mini-KVM, Openterface, KVM 切換器, 開源, 故障排除, 視頻捕獲, USB, 兼容性, 診斷自檢, 鍵盤鼠標控制, 硬件診斷, 支持
 ---
 

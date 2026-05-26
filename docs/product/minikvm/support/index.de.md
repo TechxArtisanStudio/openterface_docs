@@ -1,6 +1,6 @@
 ---
 title: "Probleme mit dem Mini-KVM? Hier starten - Openterface Support"
-description: "Support- und Fehlerbehebungsanleitung für Mini-KVM Tastatur- und Mausprobleme. Erfahren Sie, wie Sie Diagnosen durchführen, den Support kontaktieren und Ersatz oder Rückerstattung erhalten."
+description: "Probleme mit dem Mini-KVM? Hier starten - Openterface Support: Support- und Fehlerbehebungsanleitung Wir verstehen, wie frustrierend es sein kann, wenn ein…"
 keywords: "Openterface Mini-KVM, Mini-KVM Support, Mini-KVM Fehlerbehebung, Tastatur Maus Probleme, Mini-KVM Ersatz, Mini-KVM Rückerstattung, Openterface Support"
 ---
 

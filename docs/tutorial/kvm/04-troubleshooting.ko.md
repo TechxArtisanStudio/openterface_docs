@@ -1,3 +1,8 @@
+---
+title: "KVM 튜토리얼 04 — 고장 해결"
+description: "Openterface KVM 장치의 일반적인 문제와 해결책. Openterface 공식 문서: 설치, FAQ, 문제 해결. IT 및 개발자를 위한 KVM-over-USB 가이드."
+---
+
 
 # KVM 튜토리얼 04 — 고장 해결
 

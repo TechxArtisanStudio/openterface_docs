@@ -1,8 +1,7 @@
 ---
 title: "Openterface Mini-KVM | ヘッドレスコンピューター制御のためのKVM-over-USBソリューション"
-description: "Openterface Mini-KVMを使用して、ヘッドレスコンピューターを直接ノートパソコンから制御。HDMI対応のプラグアンドプレイKVM-over-USBソリューションで、ネットワーク接続は不要。開発者、IT専門家、リモートワークステーションに最適。"
+description: Openterface Mini-KVMを使用して、ヘッドレスコンピューターを直接ノートパソコンから制御。HDMI対応のプラグアンドプレイKVM-over-USBソリューションで、ネットワーク接続は不要。開発者、IT専門家、リモートワークステーションに最適。 私たちの Openterface™ Mini-KVM…
 keywords: "Mini-KVM, KVM over USB, KVM over IP, headless control, HDMI KVM, USB KVM, KVM switch, KVM console, usb crash cart adapter, JetKVM, NanoKVM, KiwiKVM, PiKVM, plug and play KVM, VNC, computer peripherals"
-
 ---
 
 # **Openterface Mini-KVM**

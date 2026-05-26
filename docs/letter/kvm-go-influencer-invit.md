@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: "Openterface KVM-GO: Beta Review Guide: Hey there! Thanks again for joining our beta program. We’re genuinely excited to have you trying out the KVM-GO…"
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

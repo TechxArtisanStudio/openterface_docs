@@ -1,3 +1,8 @@
+---
+title: "Software"
+description: Para poner en marcha tus gadgets Openterface™ KVM, necesitarás instalar una de las aplicaciones listadas abajo en tu ordenador anfitrión. Puedes obtener…
+---
+
 # Software
 
 Para poner en marcha tus gadgets Openterface™ KVM, necesitarás instalar una de las aplicaciones listadas abajo en tu ordenador anfitrión. Puedes obtener estas aplicaciones desde diferentes plataformas de aplicaciones o simplemente hacer clic en los enlaces proporcionados. ¡Si te sientes aventurero, también puedes construirlas desde el código fuente usando nuestros repositorios de GitHub!

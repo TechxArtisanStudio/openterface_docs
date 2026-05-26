@@ -1,3 +1,8 @@
+---
+title: "Privacy Policy"
+description: "Privacy Policy: (Version 2 – February 2026) This Privacy Policy applies to the Openterface website, Openterface hardware devices, and their associated…"
+---
+
 # Privacy Policy
 
 **(Version 2 – February 2026)**

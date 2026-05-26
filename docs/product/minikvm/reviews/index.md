@@ -1,3 +1,8 @@
+---
+title: "Mini-KVM Reviews & Media"
+description: "Press coverage, YouTube reviews, and community testimonials for Openterface Mini-KVM. See how creators and IT pros use our open-source KVM-over-USB adapter in real workflows."
+---
+
 # Reviews & Media
 
 ## Media Coverage

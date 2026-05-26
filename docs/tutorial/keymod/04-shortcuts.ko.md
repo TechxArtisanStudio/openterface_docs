@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 바로가기 허브"
-description: "Blender, VS Code, Photoshop, KiCAD 등 인기 앱에 프로필 기반 키보드 단축키를 사용하세요."
+description: Blender, VS Code, Photoshop, KiCAD 등 인기 앱에 프로필 기반 키보드 단축키를 사용하세요. 애플리케이션별로 정리된 일반적인 키보드 단축키에 한 번의 탭으로 액세스할 수 있습니다. 바로가기 라벨은 대상 OS에 자동으로…
 keywords: "KeyMod 단축키, 단축키 프로필, Blender 단축키, VS Code 단축키, 키보드 단축키"
 ---
 

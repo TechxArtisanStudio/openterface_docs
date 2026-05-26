@@ -16,7 +16,8 @@
     "build": "astro build",
     "postbuild": "node scripts/post-build.mjs",
     "preview": "astro preview --port 8000 --host",
-    "test:smoke": "playwright test tests/smoke"
+    "test:smoke": "playwright test tests/smoke",
+    "audit:meta-descriptions": "node scripts/audit-meta-descriptions.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

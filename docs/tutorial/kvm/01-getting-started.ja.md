@@ -1,3 +1,8 @@
+---
+title: "KVMチュートリアル 01 — 初期設定"
+description: "対象: ファーストユーザー（Openterface KVMデバイスの初心者） Openterface 公式ドキュメント。セットアップ、FAQ、トラブルシューティング。IT・開発者向け。"
+---
+
 
 # KVMチュートリアル 01 — 初期設定
 

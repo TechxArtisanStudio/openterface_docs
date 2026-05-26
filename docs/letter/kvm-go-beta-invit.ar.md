@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: مرحبًا بكم في برنامج اختبار Openterface KVM-GO التجريبي! — letter / kvm go beta invit (KVM-GO)
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

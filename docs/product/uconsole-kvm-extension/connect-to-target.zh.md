@@ -1,6 +1,6 @@
 ---
 title: "连接到目标设备"
-description: "学习如何将目标设备连接到Openterface KVM Extension for uConsole。硬件安装和软件设置后USB控制和视频输入设置的完整指南。"
+description: 学习如何将目标设备连接到Openterface KVM Extension for uConsole。硬件安装和软件设置后USB控制和视频输入设置的完整指南。 在连接目标设备之前，请确保您已完成： 1. - KVM Extension板的物理安装 2. - Openterface App的安装…
 keywords: "KVM连接设置, 目标设备连接, USB控制设置, HDMI输入设置, uConsole KVM扩展连接"
 ---
 

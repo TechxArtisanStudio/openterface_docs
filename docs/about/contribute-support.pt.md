@@ -1,3 +1,8 @@
+---
+title: "Contribuir e apoiar"
+description: Hardware open-source permite que todos controlem, personalizem e realmente compreendam sua tecnologia. Construí-lo — e mantê-lo aberto — exige uma… Openterface.
+---
+
 # Contribuir e apoiar
 
 Hardware open-source permite que todos controlem, personalizem e realmente compreendam sua tecnologia. Construí-lo — e mantê-lo aberto — exige uma comunidade dedicada. Com a sua ajuda, podemos desafiar sistemas fechados e criar um futuro em que a tecnologia pertença aos seus usuários.

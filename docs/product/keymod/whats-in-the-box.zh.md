@@ -1,6 +1,6 @@
 ---
 title: "包装内容"
-description: "KeyMod 系列包装内容。预发布：包装和配件仍在开发中。预计包含：KeyMod 主机、线缆和快速入门指南。"
+description: KeyMod 系列包装内容。预发布：包装和配件仍在开发中。预计包含：KeyMod 主机、线缆和快速入门指南。 KeyMod 目前处于预发布阶段。包装内容和包装设计仍在开发中，发货前可能会有所变化。 1. KeyMod 主机 — USB + 蓝牙 HID 模拟器（可选 2 合 1 或 USB C 版本） 2.…
 keywords: "KeyMod, 包装内容, 包装清单, 配件, 预发布"
 ---
 

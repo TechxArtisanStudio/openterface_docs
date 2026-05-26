@@ -1,6 +1,6 @@
 ---
 title: "パッケージ内容"
-description: "Openterface KVM-Go シリーズのパッケージをご紹介 - ビデオコネクタ内蔵の超コンパクトKVM。シームレスなデバイス管理とファイル転送のための必須アクセサリを含む事前発売パッケージ。"
+description: Openterface KVM-Go シリーズのパッケージをご紹介 - ビデオコネクタ内蔵の超コンパクトKVM。シームレスなデバイス管理とファイル転送のための必須アクセサリを含む事前発売パッケージ。 完全なツールキットオプションとして、HDMI、DP、または VGA…
 keywords: "KVM-Go, 超コンパクトKVM, HDMI内蔵, キーチェーンKVM, KVMツールキット, KVMアクセサリ, ポータブルKVM, サーバー管理ツール, ITツール, headless制御"
 ---
 

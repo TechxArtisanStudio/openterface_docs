@@ -1,8 +1,7 @@
 ---
 title: "Openterface配件 | 增強您的Mini-KVM體驗"
-description: "探索一系列專為補充和增強Openterface Mini-KVM功能而設計的配件。從數據線到工具包袋，找到優化您設置所需的一切。"
+description: "Openterface配件 | 增強您的Mini-KVM體驗: 發現各種補充和增強您Openterface設備功能的產品。我們的配件旨在讓您與Mini-KVM的體驗更加多功能和便捷。"
 keywords: "Mini-KVM配件, VGA轉HDMI, USB-C數據線, HDMI數據線, 工具包袋, 擴展針帽"
-
 ---
 
 # **配件**

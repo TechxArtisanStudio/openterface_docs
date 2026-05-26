@@ -1,3 +1,8 @@
+---
+title: "macOS DMG-Paket Kurulumsanleitung"
+description: "macOS DMG-Paket Kurulumsanleitung: Um das DMG-Paket herunterzuladen, folgen Sie diesen Schritten: 1. Öffnen Sie Ihren Webbrowser. 2. Sie können das DMG-Paket…"
+---
+
 # macOS DMG-Paket Kurulumsanleitung
 
 ## 1. Herunterladen

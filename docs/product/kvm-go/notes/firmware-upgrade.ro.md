@@ -1,3 +1,8 @@
+---
+title: "Actualizare firmware KVM-Go"
+description: KVM-Go folosește cipul CH32V208 de la WCH pentru emularea tastaturii și mouse-ului. În prezent, flasharea firmware-ului necesită instrumentul oficial de…
+---
+
 # Actualizare firmware KVM-Go
 
 ## Prezentare generală

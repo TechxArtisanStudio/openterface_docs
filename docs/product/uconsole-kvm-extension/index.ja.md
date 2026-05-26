@@ -1,6 +1,6 @@
 ---
 title: "Openterface KVM Extension for uConsole | ポータブルKVMコンソールソリューション"
-description: "このプラグアンドプレイ拡張ボードでuConsoleをポータブルKVMコンソールに変換。直接HDMI入力とUSB HID制御により、どこでもヘッドレスデバイスを管理できます。"
+description: このプラグアンドプレイ拡張ボードでuConsoleをポータブルKVMコンソールに変換。直接HDMI入力とUSB HID制御により、どこでもヘッドレスデバイスを管理できます。 Openterface KVM… Openterface KVM…
 keywords: "KVM拡張, uConsole KVM, ポータブルKVM, HDMI KVM, USB HID制御, ヘッドレス制御, 4G LTE代替, uConsole拡張, モバイルKVMコンソール"
 ---
 

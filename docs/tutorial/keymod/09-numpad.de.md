@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial – Numpad"
-description: "Verwenden Sie für die Dateneingabe den KeyMod Ziffernblock mit HID Ziffernblock-Tastencodes und anwendungsspezifischen Rastern."
+description: Verwenden Sie für die Dateneingabe den KeyMod Ziffernblock mit HID Ziffernblock-Tastencodes und anwendungsspezifischen Rastern. Ein vollständiger… Openterface.
 keywords: "KeyMod Ziffernblock, Ziffernblock, HID Ziffernblock, Dateneingabe"
 ---
 

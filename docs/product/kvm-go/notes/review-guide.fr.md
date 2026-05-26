@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Guide de test (Prototype d'ingénierie)"
+description: Merci d'avoir pris le temps de tester notre produit à venir . Cette unité est un prototype d'ingénierie, et notre firmware et logiciel évoluent rapidement.…
+---
+
 # Openterface KVM-Go — Guide de test (Prototype d'ingénierie)
 
 ## Aperçu

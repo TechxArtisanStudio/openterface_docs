@@ -1,8 +1,7 @@
 ---
 title: KVM-over-USB 基础知识 | 什么是 USB KVM？
 keywords: KVM-over-USB, USB KVM, keyboard video mouse control, headless computer, plug-and-play, network-independent, IT professionals, system builders, portable KVM, BIOS access
-description: 了解 KVM-over-USB 技术、其优势以及与其他 KVM 解决方案的比较。适合需要便携和网络独立设备控制的 IT 专业人士和系统构建者。
----
+description: 了解 KVM-over-USB 技术、其优势以及与其他 KVM 解决方案的比较。适合需要便携、免网络设备控制的 IT 专业人士与系统构建者。官方 Openterface 文档涵盖 USB KVM 原理、对比与使用场景。
 
 # KVM-over-USB 基础知识
 
@@ -49,7 +48,6 @@ USB KVM 专为以下用途而设计：
 - **[使用案例](/use-cases)**：完美适用于无头系统、现场故障排除和 BIOS/OS 级修复。
 
 与依赖网络的解决方案相比，USB KVM 允许 IT 专业人士和技术爱好者在可靠性和离线可访问性至关重要的场景中快速配置和故障排除设备。
-
 ---
 
 ## :material-chat-question:{ .faq } 为什么选择 USB KVM 而不是 IP KVM？ {: #usb-vs-ip }

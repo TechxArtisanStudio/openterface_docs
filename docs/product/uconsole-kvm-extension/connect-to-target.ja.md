@@ -1,6 +1,6 @@
 ---
 title: "ターゲットデバイスに接続"
-description: "Openterface KVM Extension for uConsoleにターゲットデバイスを接続する方法を学びます。ハードウェアインストールとソフトウェア設定後のUSB制御とビデオ入力設定の完全ガイド。"
+description: Openterface KVM Extension for uConsoleにターゲットデバイスを接続する方法を学びます。ハードウェアインストールとソフトウェア設定後のUSB制御とビデオ入力設定の完全ガイド。 ターゲットデバイスを接続する前に、以下が完了していることを確認してください： 1. - KVM…
 keywords: "KVM接続設定, ターゲットデバイス接続, USB制御設定, HDMI入力設定, uConsole KVM拡張接続"
 ---
 

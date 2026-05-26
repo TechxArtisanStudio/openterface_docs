@@ -1,6 +1,6 @@
 ---
 title: Openterface KeyMod 系列常見問題
-description: 關於 KeyMod 系列的常見問題，涵蓋功能、兼容性、平臺和預發佈信息。
+description: 關於 KeyMod 系列的常見問題，涵蓋功能、兼容性、平臺和預發佈信息。 歡迎訪問 Openterface KeyMod 的常見問題頁面。 如果您沒有找到所需的答案，請發送郵件至 或加入我們的社區 或 。 ⚠️ 注意：KeyMod 目前處於預發佈開發階段。隨著我們完善產品，功能、規格和設計可能會有所變化。
 keywords: KeyMod, Openterface, HID 模擬器, 藍牙鍵盤, 手機鍵盤, 開源, 預發佈, Android, iPadOS
 ---
 

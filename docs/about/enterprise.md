@@ -1,7 +1,7 @@
 ---
 title: Custom Enterprise Solutions | Openterface Mini-KVM Integration
 keywords: Openterface Mini-KVM, custom enterprise solutions, enterprise KVM integration, IT workflow optimization
-description: Explore how Openterface can support your enterprise with tailored KVM solutions and integrations to optimize IT workflows.
+description: "Custom Enterprise Solutions | Openterface Mini-KVM Integration: Openterface Mini-KVM offers flexible, open-source KVM-over-USB solutions that can be……"
 ---
 
 # Custom Enterprise Solutions

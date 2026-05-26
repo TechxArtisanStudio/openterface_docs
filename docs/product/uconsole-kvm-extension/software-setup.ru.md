@@ -1,6 +1,6 @@
 ---
 title: "Программное обеспечение-Setup"
-description: "Vollständige Руководство zur Программное обеспечениеeinrichtung для die Openterface KVM-Erweiterung для uConsole."
+description: Vollständige Руководство zur Программное обеспечениеeinrichtung для die Openterface KVM-Erweiterung для uConsole. Die Openterface App ermöglicht Ihrer…
 keywords: "Openterface App Установка, uConsole Программное обеспечение, KVM App Установка, uConsole Konfiguration"
 ---
 

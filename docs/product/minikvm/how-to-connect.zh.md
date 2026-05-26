@@ -1,6 +1,6 @@
 ---
 title: "如何连接"
-description: "Openterface Mini-KVM 设置分步指南。学习如何使用 USB-C、HDMI 和外设连接来连接您的主机电脑和目标设备。包含接口说明和重要设置提示。"
+description: Openterface Mini-KVM 设置分步指南。学习如何使用 USB-C、HDMI 和外设连接来连接您的主机电脑和目标设备。包含接口说明和重要设置提示。 4 个简单步骤完成设置： 1. 主机连接（橙色端）：使用 1.5m Type-C 线缆连接主机电脑 2. 目标连接（黑色端）：使用 0.3m…
 keywords: "Mini-KVM 设置, KVM 连接指南, USB-C KVM 设置, HDMI KVM 连接, KVM 安装指南, 电脑外设设置, USB 设备连接, KVM 接口指南, 无头电脑设置, KVM 配置"
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — İnceleme Kılavuzu (Mühendislik Prototipi)"
+description: Yakında çıkacak ürünümüz 'yu test etmek için zaman ayırdığınız için teşekkürler. Bu birim bir mühendislik prototipidir ve firmware ile yazılımımız hızla…
+---
+
 # Openterface KVM-Go — İnceleme Kılavuzu (Mühendislik Prototipi)
 
 ## Genel Bakış

@@ -1,3 +1,8 @@
+---
+title: "Días festivos"
+description: Como empresa con sede en Hong Kong, seguimos principalmente los días festivos de China continental y Hong Kong. Nuestra oficina permanece cerrada en estas…
+---
+
 # Días festivos
 
 Como empresa con sede en Hong Kong, seguimos principalmente los días festivos de **China continental** y **Hong Kong**. Nuestra oficina permanece cerrada en estas fechas. Para conocer nuestro horario habitual, consulte [Sobre nosotros](about-us.md).

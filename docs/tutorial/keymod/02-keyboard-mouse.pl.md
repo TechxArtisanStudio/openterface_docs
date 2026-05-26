@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek — klawiatura i mysz"
-description: "Dowiedz się, jak używać klawiatury KeyMod i touchpad do pisania, wysyłania skrótów i sterowania myszą komputera docelowego za pomocą telefonu."
+description: Dowiedz się, jak używać klawiatury KeyMod i touchpad do pisania, wysyłania skrótów i sterowania myszą komputera docelowego za pomocą telefonu. Tryb… Openterface
 keywords: "KeyMod klawiatura, KeyMod mysz, touchpad, klawisze modyfikujące, skróty klawiaturowe"
 ---
 

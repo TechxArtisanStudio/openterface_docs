@@ -1,3 +1,8 @@
+---
+title: "评测与媒体报道"
+description: 评测与媒体报道 — minikvm / reviews (Mini-KVM). 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
+---
+
 # 评测与媒体报道
 
 ## 媒体报道

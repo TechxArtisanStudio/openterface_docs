@@ -1,3 +1,8 @@
+---
+title: "KVM Eğitimi 03 — Gelişmiş Özellikler"
+description: "Hedef kitle: Orta ile Uzman — güç kullanıcı özellikleri ve yapılandırma Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB sorun giderme. Openterface."
+---
+
 
 # KVM Eğitimi 03 — Gelişmiş Özellikler
 

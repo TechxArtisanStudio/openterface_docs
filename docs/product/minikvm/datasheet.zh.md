@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM 产品手册 | 技术规格与产品详情"
-description: "Openterface Mini-KVM 的完整技术规格书。查看此 KVM-over-USB 解决方案的规格、尺寸、视频/音频功能、电源需求、配件和连接选项。"
+description: Openterface Mini-KVM 的完整技术规格书。查看此 KVM-over-USB 解决方案的规格、尺寸、视频/音频功能、电源需求、配件和连接选项。 Openterface™ Mini-KVM 是一款功能丰富、生产级的开源设备，由社区驱动开发。它提供了一种轻量且快速的 KVM-over-USB…
 keywords: "Mini-KVM 产品手册, Mini-KVM 规格, KVM over USB 技术规格, Mini-KVM 尺寸, Mini-KVM 配件, HDMI KVM 规格, USB KVM 技术详情, 无头电脑控制规格, KVM 开关规格, 服务器管理工具"
 ---
 

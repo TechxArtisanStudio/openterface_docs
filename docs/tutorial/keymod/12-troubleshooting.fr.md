@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Dépannage"
-description: "Résolvez les problèmes courants : problèmes de connexion, clés non enregistrées, échecs de couplage Bluetooth, erreurs de saisie vocale, etc."
+description: "Résolvez les problèmes courants : problèmes de connexion, clés non enregistrées, échecs de couplage Bluetooth, erreurs de saisie vocale, etc. Problèmes…"
 keywords: "KeyMod dépannage, KeyMod connexion impossible, KeyMod problèmes Bluetooth, KeyMod touches ne fonctionnent pas"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Documentatie
-description: Welkom bij de officiële documentatie voor Openterface KVM-over-USB-producten en -software.
+description: "Welkom bij de officiële documentatie voor Openterface KVM-over-USB-producten en -software. Officiële Openterface-documentatie: installatie, FAQ en… Openterface."
 ---
 
 # Openterface-documentatie

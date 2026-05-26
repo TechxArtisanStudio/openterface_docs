@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Teclado e Mouse"
-description: "Aprenda como usar o teclado KeyMod e touchpad para digitar, enviar atalhos e controlar o mouse do computador de destino a partir do seu telefone."
+description: Aprenda como usar o teclado KeyMod e touchpad para digitar, enviar atalhos e controlar o mouse do computador de destino a partir do seu telefone. O modo…
 keywords: "KeyMod teclado, KeyMod mouse, touchpad, teclas modificadoras, atalhos de teclado"
 ---
 

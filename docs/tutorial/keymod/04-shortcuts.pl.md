@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek - Hub skrótów"
-description: "Używaj skrótów klawiaturowych opartych na profilach dla popularnych aplikacji, takich jak Blender, VS Code, Photoshop i KiCAD."
+description: Używaj skrótów klawiaturowych opartych na profilach dla popularnych aplikacji, takich jak Blender, VS Code, Photoshop i KiCAD. Dostęp jednym dotknięciem do…
 keywords: "KeyMod skróty, profile skrótów, Blender skróty, VS Code skróty, skróty klawiaturowe"
 ---
 

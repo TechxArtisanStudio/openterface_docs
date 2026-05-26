@@ -1,6 +1,6 @@
 ---
 title: "What's In The Box"
-description: "Discover what's included with the Openterface KVM Extension for uConsole. Complete package contents for seamless installation and immediate use."
+description: "See everything in the Openterface KVM Extension for uConsole box: extension board, cables, and quick-start items for slot installation and immediate portable KVM control."
 keywords: "KVM extension package, uConsole KVM, what's included, package contents, installation accessories, KVM extension accessories"
 ---
 

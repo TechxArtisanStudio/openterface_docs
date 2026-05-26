@@ -1,3 +1,8 @@
+---
+title: "Technischer Поддержка"
+description: Wir verstehen, dass es frustrierend ist, wenn Dinge не wie erwartet funktionieren, и wir sind hier, um zu helfen. Unser Fehlerbehebungsformular führt Sie…
+---
+
 # Technischer Поддержка
 
 Wir verstehen, dass es frustrierend ist, wenn Dinge не wie erwartet funktionieren, и **wir sind hier, um zu helfen**. Unser Fehlerbehebungsformular führt Sie **Schritt для Schritt** durch die Angabe von Details zu Ihrer Einrichtung и dem Problem, с dem Sie konfrontiert sind. Mit diesen Informationen können wir das Problem besser verstehen и Sie effektiver unterstützen.

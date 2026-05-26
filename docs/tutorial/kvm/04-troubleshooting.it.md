@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 04 — Risoluzione dei problemi"
+description: "Problemi comuni e soluzioni per i dispositivi Openterface KVM. Documentazione Openterface: configurazione, FAQ e risoluzione problemi KVM-over-USB. Openterface."
+---
+
 # Tutorial KVM 04 — Risoluzione dei problemi
 
 Problemi comuni e soluzioni per i dispositivi Openterface KVM.

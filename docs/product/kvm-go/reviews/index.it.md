@@ -1,3 +1,8 @@
+---
+title: "Recensioni & Media"
+description: "Recensioni & Media: --8<-- \"product/kvm-go/reviews/social-posts.html\" Documentazione Openterface: configurazione, FAQ e risoluzione problemi KVM-over-USB."
+---
+
 # Recensioni & Media
 
 ## Copertura dei media

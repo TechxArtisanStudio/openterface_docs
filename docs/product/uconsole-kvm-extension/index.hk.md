@@ -1,6 +1,6 @@
 ---
 title: "Openterface KVM Extension for uConsole | 便攜式KVM控制台解決方案"
-description: "通過這個即插即用的擴展板，將您的uConsole轉換為便攜式KVM控制台。直接HDMI輸入和USB HID控制，隨時隨地管理無頭設備。"
+description: "Openterface KVM Extension for uConsole | 便攜式KVM控制台解決方案: Openterface KVM Extension 替換了您uConsole擴展槽中的原始4G/LTE調製解調器，提供直接的HDMI輸入和USB…"
 keywords: "KVM擴展, uConsole KVM, 便攜式KVM, HDMI KVM, USB HID控制, 無頭控制, 4G LTE替代, uConsole擴展, 移動KVM控制台"
 ---
 

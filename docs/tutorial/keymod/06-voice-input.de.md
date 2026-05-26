@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial – Spracheingabe"
-description: "Verwenden Sie Voice-to-Keyboard mit KeyMod. Unterstützt System-Spracherkennung, On-Device-KI und mehrere Sprachen."
+description: Verwenden Sie Voice-to-Keyboard mit KeyMod. Unterstützt System-Spracherkennung, On-Device-KI und mehrere Sprachen. Wandeln Sie Ihre Sprache in… Openterface.
 keywords: "KeyMod Spracheingabe, Sprache in Text umwandeln, Whisper, Spracheingabe, Freisprechtastatur"
 ---
 

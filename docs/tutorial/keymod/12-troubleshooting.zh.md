@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 故障排除"
-description: "解决常见 KeyMod 问题：连接、按键无响应、蓝牙配对失败、语音输入错误等。"
+description: 解决常见 KeyMod 问题：连接、按键无响应、蓝牙配对失败、语音输入错误等。 Android 版 KeyMod 应用的常见问题与解决方案。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
 keywords: "KeyMod 故障排除, KeyMod 无法连接, KeyMod 蓝牙问题, KeyMod 按键无效"
 ---
 

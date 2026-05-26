@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial – Shortcut Hub"
-description: "Verwenden Sie profilbasierte Tastaturkürzel für beliebte Apps wie Blender, VS Code, Photoshop und KiCAD."
+description: Verwenden Sie profilbasierte Tastaturkürzel für beliebte Apps wie Blender, VS Code, Photoshop und KiCAD. Zugriff auf gängige Tastaturkürzel mit nur einem…
 keywords: "KeyMod Verknüpfungen, Verknüpfungsprofile, Blender Verknüpfungen, VS Code Verknüpfungen, Tastaturkürzel"
 ---
 

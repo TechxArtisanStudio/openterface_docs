@@ -1,3 +1,8 @@
+---
+title: "Openterface QT для Win & Linux"
+description: Dieses Dokument bietet einen Überblick о eine plattformоgreifende KVM-Программное обеспечение (Tastatur, Video, Maus), die с Qt entwickelt wurde и с den…
+---
+
 # Openterface QT для Win & Linux
 
 Dieses Dokument bietet einen Überblick о eine plattformоgreifende KVM-Программное обеспечение (Tastatur, Video, Maus), die с Qt entwickelt wurde и с den Betriebssystemen Linux и Windows kompatibel ist. Die Программное обеспечение ermöglicht die Steuerung eines Zielgeräts von einem Hostsystem aus и bietet eine Vielzahl von Функции, die о die Menüleiste и zusätzliche Функции zugänglich sind.

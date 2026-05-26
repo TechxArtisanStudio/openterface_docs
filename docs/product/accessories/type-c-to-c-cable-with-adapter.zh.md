@@ -1,6 +1,6 @@
 ---
 title: "高速Type-C转Type-C数据线带USB-A适配器"
-description: "使用我们高速Type-C转Type-C数据线确保快速数据传输和充电，配备USB-A适配器实现多功能性。"
+description: 使用我们高速Type-C转Type-C数据线确保快速数据传输和充电，配备USB-A适配器实现多功能性。… Openterface. Openterface. Openterface.…
 keywords: "Type-C数据线, USB-A适配器, 快速数据传输, 高速充电"
 ---
 

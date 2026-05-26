@@ -1,3 +1,8 @@
+---
+title: "Soporte Técnico"
+description: Entendemos que es frustrante cuando las cosas no funcionan como se espera, y estamos aquí para ayudar. Nuestro formulario de solución de problemas te guiará…
+---
+
 # Soporte Técnico
 
 Entendemos que es frustrante cuando las cosas no funcionan como se espera, y **estamos aquí para ayudar**. Nuestro formulario de solución de problemas te guiará **paso a paso** para compartir detalles sobre tu configuración y el problema que enfrentas. Con esta información, podemos entender mejor el problema y apoyarte de manera más efectiva.

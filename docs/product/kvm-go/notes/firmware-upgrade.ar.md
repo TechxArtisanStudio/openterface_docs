@@ -1,3 +1,8 @@
+---
+title: "ترقية firmware KVM-Go"
+description: يستخدم KVM-Go شريحة CH32V208 من WCH لمحاكاة لوحة المفاتيح والفأرة. حاليًا، يتطلب تفليش firmware أداة البرمجة الرسمية من WCH، المتاحة فقط لـ Windows. لذلك،…
+---
+
 # ترقية firmware KVM-Go
 
 ## نظرة عامة

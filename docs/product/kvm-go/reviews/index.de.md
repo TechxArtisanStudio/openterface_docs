@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien: --8<-- \"product/kvm-go/reviews/social-posts.html\" Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung für KVM-over-USB."
+---
+
 # Bewertungen & Medien
 
 ## Medienberichte

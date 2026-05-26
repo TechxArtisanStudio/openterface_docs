@@ -1,6 +1,6 @@
 ---
 title: "優質尼龍USB-C轉USB-C數據線240W快充"
-description: "體驗我們優質尼龍USB-C轉USB-C數據線的高速數據傳輸和快充功能，專為耐用性和性能而設計。"
+description: "優質尼龍USB-C轉USB-C數據線240W快充: 體驗我們全新升級的USB-C數據線的卓越耐用性和性能，現採用優質尼龍材料製作。這款多功能數據線提供快充和高速數據傳輸，是您技術設置的重要伴侶。 — accessories/nylong-c-to-c-150"
 keywords: "USB-C數據線, 尼龍USB-C, 快充數據線, 240W充電, 高速數據傳輸"
 ---
 

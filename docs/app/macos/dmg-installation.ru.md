@@ -1,3 +1,8 @@
+---
+title: "macOS DMG-Paket Установкаsanleitung"
+description: "macOS DMG-Paket Установкаsanleitung: Um das DMG-Paket herunterzuladen, folgen Sie diesen Schritten: 1. Öffnen Sie Ihren Webbrowser. 2. Sie können das…"
+---
+
 # macOS DMG-Paket Установкаsanleitung
 
 ## 1. Herunterladen

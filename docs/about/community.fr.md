@@ -1,3 +1,8 @@
+---
+title: "Communauté"
+description: Bienvenue dans notre communauté dynamique ! Connectez-vous avec nous sur plusieurs plateformes et rejoignez notre réseau croissant de développeurs,… Openterface
+---
+
 # Communauté
 
 Bienvenue dans notre communauté dynamique ! Connectez-vous avec nous sur plusieurs plateformes et rejoignez notre réseau croissant de développeurs, utilisateurs et passionnés.

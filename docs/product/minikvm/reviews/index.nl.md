@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien: --8<-- \"product/minikvm/reviews/social-posts.html\" Officiële Openterface-documentatie: installatie, FAQ en KVM-over-USB probleemoplossing."
+---
+
 # Bewertungen & Medien
 
 ## Medienberichterstattung

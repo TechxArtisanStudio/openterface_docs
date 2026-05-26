@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 快捷方式中心"
-description: "使用面向 Blender、VS Code、Photoshop、KiCAD 等常用应用的配置文件快捷键。"
+description: 使用面向 Blender、VS Code、Photoshop、KiCAD 等常用应用的配置文件快捷键。 一键访问常用键盘快捷键，按应用组织。快捷方式标签会根据 目标系统 自动适配（Windows/Linux 为 Ctrl+Z，macOS 为 Cmd+Z）。
 keywords: "KeyMod 快捷键, 快捷方式配置, Blender 快捷键, VS Code 快捷键, 键盘快捷键"
 ---
 

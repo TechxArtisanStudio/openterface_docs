@@ -1,3 +1,8 @@
+---
+title: "KVM-tutorial 03 — Geavanceerde functies"
+description: "Doelgroep: Gevorderd tot expert — power-userfuncties en configuratie Officiële Openterface-documentatie: installatie, FAQ en KVM-over-USB probleemoplossing."
+---
+
 
 # KVM-tutorial 03 — Geavanceerde functies
 

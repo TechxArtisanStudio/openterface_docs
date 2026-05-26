@@ -1,6 +1,6 @@
 ---
 title: "包装内容"
-description: "了解Openterface KVM Extension for uConsole的包装内容。完整的包装内容，确保无缝安装和即时使用。"
+description: 了解Openterface KVM Extension for uConsole的包装内容。完整的包装内容，确保无缝安装和即时使用。 核心组件 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
 keywords: "KVM扩展包装, uConsole KVM, 包装内容, 安装配件, KVM扩展配件"
 ---
 

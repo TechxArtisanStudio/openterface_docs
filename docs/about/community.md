@@ -1,3 +1,8 @@
+---
+title: "Community"
+description: "Join the Openterface community on Discord, Reddit, and social channels. Connect with developers and users, get support, share projects, and stay updated on KVM-over-USB news."
+---
+
 # Community
 
 Welcome to our vibrant community! Connect with us across multiple platforms and join our growing network of developers, users, and enthusiasts.

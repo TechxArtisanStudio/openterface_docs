@@ -1,6 +1,6 @@
 ---
 title: "功能与规格"
-description: "Openterface KVM Extension for uConsole 的完整概述：强大功能包括直接 HDMI 输入、USB HID 控制、完美外形尺寸，以及详细技术规格。关于这个便携式 KVM 解决方案您需要了解的一切。"
+description: Openterface KVM Extension for uConsole 的完整概述：强大功能包括直接 HDMI 输入、USB HID 控制、完美外形尺寸，以及详细技术规格。关于这个便携式 KVM 解决方案您需要了解的一切。
 keywords: "KVM扩展功能, uConsole KVM, HDMI KVM, USB HID控制, 便携式KVM, headless控制, 4G LTE替换, 技术规格, uConsole扩展"
 ---
 

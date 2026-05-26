@@ -1,3 +1,8 @@
+---
+title: "KVM Eğitimi 02 — Temel İşlemler"
+description: "Hedef kitle: Yeni başlayanlar ile Orta düzey — günlük kullanım özellikleri Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB sorun giderme. Openterface."
+---
+
 # KVM Eğitimi 02 — Temel İşlemler
 
 **Hedef kitle:** Yeni başlayanlar ile Orta düzey — günlük kullanım özellikleri

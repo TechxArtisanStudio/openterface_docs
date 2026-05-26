@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Ghid de recenzie (Prototip de inginerie)"
+description: Vă mulțumim că v-ați făcut timp să testați produsul nostru viitor . Această unitate este un prototip de inginerie, iar firmware-ul și software-ul nostru…
+---
+
 # Openterface KVM-Go — Ghid de recenzie (Prototip de inginerie)
 
 ## Prezentare generală

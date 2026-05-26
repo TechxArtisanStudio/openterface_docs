@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Review-Leitfaden (Engineering-Prototyp)"
+description: Vielen Dank, dass Sie sich die Zeit nehmen, unser kommendes Produkt zu testen. Diese Einheit ist ein Engineering-Prototyp, und unsere Firmware und Software…
+---
+
 # Openterface KVM-Go — Review-Leitfaden (Engineering-Prototyp)
 
 ## Übersicht

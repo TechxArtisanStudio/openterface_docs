@@ -1,3 +1,8 @@
+---
+title: "Openterface QT dla Win & Linux"
+description: Dieses Dokument bietet einen Überblick o eine plattformogreifende KVM-Oprogramowanie (Tastatur, Video, Maus), die z Qt entwickelt wurde i z den… Openterface.
+---
+
 # Openterface QT dla Win & Linux
 
 Dieses Dokument bietet einen Überblick o eine plattformogreifende KVM-Oprogramowanie (Tastatur, Video, Maus), die z Qt entwickelt wurde i z den Betriebssystemen Linux i Windows kompatibel ist. Die Oprogramowanie ermöglicht die Steuerung eines Zielgeräts von einem Hostsystem aus i bietet eine Vielzahl von Funkcje, die o die Menüleiste i zusätzliche Funkcje zugänglich sind.

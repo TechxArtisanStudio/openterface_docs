@@ -1,3 +1,8 @@
+---
+title: "Contribute & Support"
+description: "Contribute & Support: Open-source hardware empowers everyone to control, customize, and truly understand their technology. Building it — and keeping it…"
+---
+
 # Contribute & Support
 
 Open-source hardware empowers everyone to control, customize, and truly understand their technology. Building it — and keeping it open — takes a dedicated community. With your help, we can challenge closed systems and create a future where technology belongs to its users.

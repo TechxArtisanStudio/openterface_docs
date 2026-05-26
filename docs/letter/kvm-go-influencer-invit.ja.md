@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: こんにちは！ ベータプログラムへのご参加、改めてありがとうございます。早期アクセスグループと一緒に KVM-GO をお試しいただけることを心から楽しみにしています。この小さなデバイスは、基本的にキーホルダーサイズの KVM で、通常の面倒なしにヘッドレスデバイスに接続できます。…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

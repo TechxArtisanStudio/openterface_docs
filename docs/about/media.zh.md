@@ -1,7 +1,7 @@
 ---
 title: 媒体与影响者合作 | Openterface Mini-KVM
 keywords: Openterface Mini-KVM, 媒体合作, 影响者合作, 产品评测, 开源技术
-description: 探索与Openterface合作的机会。我们正在寻找与我们一样热爱开源硬件和问题解决工具的技术创作者和评测者。
+description: 探索与Openterface合作的机会。我们正在寻找与我们一样热爱开源硬件和问题解决工具的技术创作者和评测者。… Openterface. Openterface.…
 ---
 
 # 媒体与影响者合作

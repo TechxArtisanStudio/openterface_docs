@@ -1,3 +1,8 @@
+---
+title: "Mehrsprachig"
+description: "🌍 Wir bieten die Website in verschiedenen Sprachen an. Fühlen Sie sich frei, in Ihrer bevorzugten Sprache zu browsen: Offizielle Openterface-Doku:… Openterface"
+---
+
 # Mehrsprachig
 
 ## Liste der Unterstützten Sprachen

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - SO de destino"
-description: "Configure el sistema operativo de destino para que KeyMod envíe las asignaciones de teclas correctas a Windows, macOS o Linux computadoras."
+description: Configure el sistema operativo de destino para que KeyMod envíe las asignaciones de teclas correctas a Windows, macOS o Linux computadoras. KeyMod envía…
 keywords: "KeyMod SO de destino, asignación de teclas, teclas modificadoras, entrada Unicode"
 ---
 

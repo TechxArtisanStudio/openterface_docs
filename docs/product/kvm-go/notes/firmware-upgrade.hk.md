@@ -1,3 +1,8 @@
+---
+title: "KVM-Go 固件升級"
+description: "KVM-Go 固件升級: KVM-Go 使用 WCH 的 CH32V208 芯片進行鍵盤和鼠標模擬。目前，固件刷寫需要使用 WCH 官方編程工具，該工具僅適用於 Windows。因此，目前必須在 Windows 系統上進行固件更新。…"
+---
+
 # KVM-Go 固件升級
 
 ## 概述

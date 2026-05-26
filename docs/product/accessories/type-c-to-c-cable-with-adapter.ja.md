@@ -1,6 +1,6 @@
 ---
 title: "ハイスピードType-C to Type-Cケーブル（USB-Aアダプター付き）"
-description: "ハイスピードType-C to Type-CケーブルとUSB-Aアダプターを使用して、迅速なデータ転送と充電を実現します。"
+description: ハイスピードType-C to Type-CケーブルとUSB-Aアダプターを使用して、迅速なデータ転送と充電を実現します。… Openterface. Openterface.…
 keywords: "Type-Cケーブル, USB-Aアダプター, 高速データ転送, ハイスピード充電"
 ---
 

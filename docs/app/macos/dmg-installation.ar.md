@@ -1,3 +1,8 @@
+---
+title: "macOS DMG-Paket التثبيتsanleitung"
+description: "macOS DMG-Paket التثبيتsanleitung: Um das DMG-Paket herunterzuladen, folgen Sie diesen Schritten: 1. Öffnen Sie Ihren Webbrowser. 2. Sie können das DMG-Paket…"
+---
+
 # macOS DMG-Paket التثبيتsanleitung
 
 ## 1. Herunterladen

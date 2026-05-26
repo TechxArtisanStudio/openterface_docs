@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 數字鍵盤"
-description: "使用 KeyMod 數字鍵盤進行數據錄入，支持 HID 小鍵盤鍵碼與應用專用網格。"
+description: "KeyMod 教程 - 數字鍵盤: 完整數字鍵盤，用於數據錄入。每個按鍵發送對應的 HID 小鍵盤鍵碼。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/09-numpad"
 keywords: "KeyMod 數字鍵盤, 小鍵盤, HID numpad, 數據錄入"
 ---
 

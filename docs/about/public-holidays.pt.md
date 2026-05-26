@@ -1,3 +1,8 @@
+---
+title: "Feriados"
+description: Como empresa sediada em Hong Kong, seguimos principalmente os feriados da China continental e de Hong Kong. Nosso escritório permanece fechado nesses dias.…
+---
+
 # Feriados
 
 Como empresa sediada em Hong Kong, seguimos principalmente os feriados da **China continental** e de **Hong Kong**. Nosso escritório permanece fechado nesses dias. Para nossos horários regulares, consulte [Sobre nós](about-us.md).

@@ -1,3 +1,8 @@
+---
+title: "Términos de Servicio"
+description: "(Versión 2 – Febrero 2026) Este sitio web es operado por Openterface, una marca de TechxArtisan Limited (\"TechxArtisan\"), que ha sucedido a las operaciones…"
+---
+
 # Términos de Servicio
 
 **(Versión 2 – Febrero 2026)**

@@ -1,3 +1,8 @@
+---
+title: "Revisiones & Medios"
+description: "Revisiones & Medios: --8<-- \"product/kvm-go/reviews/social-posts.html\" Documentación Openterface: configuración, preguntas frecuentes y soporte KVM-over-USB."
+---
+
 # Revisiones & Medios
 
 ## Cobertura de medios

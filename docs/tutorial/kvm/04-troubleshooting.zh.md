@@ -1,3 +1,8 @@
+---
+title: "KVM教程 04 — 故障排除"
+description: Openterface KVM 设备的常见问题与解决方案。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。 Openterface.
+---
+
 
 # KVM教程 04 — 故障排除
 

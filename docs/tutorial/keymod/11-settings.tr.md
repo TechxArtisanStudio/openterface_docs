@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Ayarlar"
-description: "Otomatik bağlantı, temalar, dil, BLE tuş gecikmesi, touchpad hassasiyeti ve hedef işletim sistemi dahil KeyMod ayarlarını yapılandırın."
+description: Otomatik bağlantı, temalar, dil, BLE tuş gecikmesi, touchpad hassasiyeti ve hedef işletim sistemi dahil KeyMod ayarlarını yapılandırın. KeyMod'ın… Openterface.
 keywords: "KeyMod ayarlar, otomatik bağlantı, tema, dil, BLE gecikme, touchpad hassasiyet"
 ---
 

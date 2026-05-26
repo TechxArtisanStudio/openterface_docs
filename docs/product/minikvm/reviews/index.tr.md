@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien: | Rezensent: \"[Openterface Mini-KVM] verspricht, eine kostengünstige, funktionsreiche Möglichkeit zu sein, einen Laptop als Monitor,…"
+---
+
 # Bewertungen & Medien
 
 ## Medienberichterstattung

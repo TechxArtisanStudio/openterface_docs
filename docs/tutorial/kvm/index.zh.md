@@ -1,3 +1,8 @@
+---
+title: "KVM 软件教程"
+description: 全面的KVM-over-USB：在同一个设备上控制目标的键盘、视频和鼠标。 本教程涵盖Openterface KVM系列——这些设备可以捕捉目标的HDMI视频输出，并通过HID模拟将键盘/鼠标输入传递过去：
+---
+
 # KVM 软件教程
 
 > 全面的KVM-over-USB：在同一个设备上控制目标的键盘、视频和鼠标。

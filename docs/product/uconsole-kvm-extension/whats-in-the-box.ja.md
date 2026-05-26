@@ -1,6 +1,6 @@
 ---
 title: "パッケージ内容"
-description: "Openterface KVM Extension for uConsoleに含まれる内容を発見してください。シームレスなインストールと即座の使用のための完全なパッケージ内容。"
+description: Openterface KVM Extension for uConsoleに含まれる内容を発見してください。シームレスなインストールと即座の使用のための完全なパッケージ内容。 コアコンポーネント
 keywords: "KVM拡張パッケージ, uConsole KVM, 含まれる内容, パッケージ内容, インストールアクセサリー, KVM拡張アクセサリー"
 ---
 

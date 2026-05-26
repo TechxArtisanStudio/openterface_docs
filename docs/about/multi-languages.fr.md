@@ -1,3 +1,8 @@
+---
+title: "Multi-Langues"
+description: "🌍 Nous proposons le site web dans diverses langues. N'hésitez pas à naviguer dans votre langue préférée : Documentation Openterface : configuration, FAQ et…"
+---
+
 # Multi-Langues
 
 ## Liste des Langues Supportées

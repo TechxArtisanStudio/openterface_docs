@@ -1,6 +1,6 @@
 ---
 title: "紧凑型HDMI公对公数据线高清视频传输"
-description: "使用我们紧凑型HDMI公对公数据线无缝连接您的设备，完美适用于高清视频传输。"
+description: 使用我们紧凑型HDMI公对公数据线无缝连接您的设备，完美适用于高清视频传输。 这款紧凑型HDMI数据线完美适用于将您的目标设备连接到视频输出捕获，确保与Openterface Mini-KVM的无缝集成。
 keywords: "HDMI数据线, 公对公HDMI, 高清视频数据线, 紧凑型HDMI"
 ---
 

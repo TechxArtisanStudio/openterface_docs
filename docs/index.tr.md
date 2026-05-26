@@ -1,6 +1,6 @@
 ---
 title: Dokümantasyon
-description: Openterface KVM-over-USB ürünleri ve yazılımı için resmi dokümantasyon merkezine hoş geldiniz.
+description: "Openterface KVM-over-USB ürünleri ve yazılımı için resmi dokümantasyon merkezine hoş geldiniz. Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB…"
 ---
 
 # Openterface Dokümantasyonu

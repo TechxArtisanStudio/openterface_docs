@@ -1,6 +1,6 @@
 ---
 title: Întrebări frecvente despre Openterface KeyMod Series
-description: Întrebări frecvente despre KeyMod Series: funcționalități, compatibilitate, platforme și informații despre pre-lansare.
+description: "Întrebări frecvente despre KeyMod Series: funcționalități, compatibilitate, platforme și informații despre pre-lansare. Bine ați venit la întrebările…"
 keywords: KeyMod, Openterface, emulator HID, tastatură Bluetooth, tastatură telefon, open source, pre-lansare, Android, iPadOS
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Openterface Mini-KVM 자주 묻는 질문
-description: Mini-KVM에 대한 자주 묻는 질문으로, 기능, 호환성, 문제 해결 및 향후 계획을 다룹니다.
+description: Mini-KVM에 대한 자주 묻는 질문으로, 기능, 호환성, 문제 해결 및 향후 계획을 다룹니다. 우리의 플래그십 제품 Openterface Mini-KVM에 대한 자주 묻는 질문에 오신 것을 환영합니다. 필요한 정보를 찾지 못하셨다면 으로 이메일을 보내거나 또는 에서커뮤니티에…
 keywords: Mini-KVM, Openterface, KVM 스위치, 오픈소스, 문제 해결, 비디오 캡처, USB, 호환성, 진단 자기 점검, 키보드 마우스 제어, 하드웨어 진단, 지원
 ---
 

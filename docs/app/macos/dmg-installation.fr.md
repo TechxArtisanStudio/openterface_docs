@@ -1,3 +1,8 @@
+---
+title: "Guide d'Installation du Paquet DMG macOS"
+description: "Pour télécharger le paquet DMG, suivez ces étapes : 1. Ouvrez votre navigateur web. 2. Vous pouvez télécharger le paquet DMG depuis l'une des sources…"
+---
+
 # Guide d'Installation du Paquet DMG macOS
 
 ## 1. Comment Télécharger

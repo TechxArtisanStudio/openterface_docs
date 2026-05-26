@@ -1,3 +1,8 @@
+---
+title: "Tutorial sul software KVM"
+description: Controllo del tastierino, video e mouse tramite un singolo dispositivo. Questa guida copre la serie Openterface KVM — dispositivi che capturano l'uscita…
+---
+
 
 # Tutorial sul software KVM
 

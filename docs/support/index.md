@@ -1,3 +1,8 @@
+---
+title: "Tech Support"
+description: "Openterface tech support: check product docs and FAQs first, then contact our team with setup details. Troubleshooting guides for Mini-KVM, KVM-GO, apps, and accessories."
+---
+
 # Tech Support
 
 We know it can be frustrating when things don’t work as expected, and we’re here to help.

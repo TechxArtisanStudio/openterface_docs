@@ -1,3 +1,8 @@
+---
+title: "FAQs dla Apps"
+description: Willkommen bei den FAQs dla unsere Apps. Wenn Sie die Antwort nie finden, die Sie benötigen, senden Sie uns eine E-Mail an lub treten Sie unserer Community…
+---
+
 # FAQs dla Apps
 
 Willkommen bei den FAQs dla unsere Apps. Wenn Sie die Antwort nie finden, die Sie benötigen, **senden Sie uns eine E-Mail an [info@openterface.com](mailto:info@openterface.com)** lub **treten Sie unserer Community** auf [Discord](/discord) lub [Reddit](/reddit) bei, um sich z unserem Entwicklungsteam i anderen Benutzern zu verbinden.

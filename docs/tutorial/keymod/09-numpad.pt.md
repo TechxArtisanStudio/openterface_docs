@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Teclado numérico"
-description: "Use o teclado numérico KeyMod para entrada de dados, com códigos de teclas HID do teclado numérico e grades específicas da aplicação."
+description: Use o teclado numérico KeyMod para entrada de dados, com códigos de teclas HID do teclado numérico e grades específicas da aplicação. Um teclado numérico…
 keywords: "KeyMod teclado numérico, teclado numérico, HID teclado numérico, entrada de dados"
 ---
 

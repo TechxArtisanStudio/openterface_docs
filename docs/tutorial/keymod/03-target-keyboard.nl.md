@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Doelbesturingssysteem"
-description: "Stel het doelbesturingssysteem zo in dat KeyMod de juiste toetstoewijzingen naar Windows-, macOS- of Linux-computers verzendt."
+description: Stel het doelbesturingssysteem zo in dat KeyMod de juiste toetstoewijzingen naar Windows-, macOS- of Linux-computers verzendt. KeyMod verzendt… Openterface.
 keywords: "KeyMod doelbesturingssysteem, sleuteltoewijzing, modificatietoetsen, Unicode-invoer"
 ---
 

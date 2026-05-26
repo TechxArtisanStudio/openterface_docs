@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: "Welkom bij het Openterface KVM-GO bètatestprogramma!: Bedankt voor jullie deelname aan het bètatestprogramma van Openterface KVM-GO! Jullie bijdrage is…"
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

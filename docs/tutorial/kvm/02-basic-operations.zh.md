@@ -1,3 +1,8 @@
+---
+title: "KVM教程 02 — 基本操作"
+description: 受众： 初学者至中级 — 日常使用功能 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。 Openterface. Openterface.
+---
+
 
 # KVM教程 02 — 基本操作
 

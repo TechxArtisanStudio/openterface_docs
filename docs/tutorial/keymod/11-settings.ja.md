@@ -1,6 +1,6 @@
 ---
 title: "KeyMod チュートリアル - 設定"
-description: "自動接続、テーマ、言語、BLE キー遅延、touchpad 感度、ターゲット OS などの KeyMod 設定を構成します。"
+description: 自動接続、テーマ、言語、BLE キー遅延、touchpad 感度、ターゲット OS などの KeyMod 設定を構成します。 KeyMod の動作と外観を構成します。
 keywords: "KeyMod設定、自動接続、テーマ、言語、BLE遅延、touchpad感度"
 ---
 

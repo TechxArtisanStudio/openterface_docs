@@ -1,3 +1,8 @@
+---
+title: "Politică"
+description: "Politicile noastre reglementează modul nostru de funcționare, protecția datelor dvs. și tratarea achizițiilor. Documentație Openterface: configurare,…"
+---
+
 # Politică
 
 Politicile noastre reglementează modul nostru de funcționare, protecția datelor dvs. și tratarea achizițiilor.

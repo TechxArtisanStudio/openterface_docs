@@ -1,3 +1,8 @@
+---
+title: "Politica di Reso, Rimborso e Garanzia"
+description: (Versione 2 – Febbraio 2026) Questa politica si applica ai prodotti Openterface, inclusi Mini-KVM, KVM-GO, ecc. Si prega di leggere attentamente, poiché…
+---
+
 # Politica di Reso, Rimborso e Garanzia
 
 **(Versione 2 – Febbraio 2026)**

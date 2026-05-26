@@ -1,6 +1,6 @@
 ---
 title: "기능 및 사양"
-description: "Openterface KVM-Go 시리즈 전체 개요: 내장 비디오 커넥터가 있는 초소형 디자인, 4K/60Hz 지원, MicroSD 슬롯 및 상세한 기술 사양. IT 전문가를 위한 열쇠고리 크기의 KVM-over-USB 솔루션."
+description: "Openterface KVM-Go 시리즈 전체 개요: 내장 비디오 커넥터가 있는 초소형 디자인, 4K/60Hz 지원, MicroSD 슬롯 및 상세한 기술 사양. IT 전문가를 위한 열쇠고리 크기의 KVM-over-USB 솔루션. KVM-Go 시리즈는 본격적인 생산 및 출고 단계에…"
 keywords: "KVM-Go 기능, 초소형 KVM, 내장 HDMI, 4K KVM, MicroSD KVM, 열쇠고리 KVM, KVM 사양, 헤드리스 제어, 휴대용 KVM, IT 도구, 서버 관리"
 ---
 

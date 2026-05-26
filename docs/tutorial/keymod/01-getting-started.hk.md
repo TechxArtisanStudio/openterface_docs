@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 入門"
-description: "安裝 KeyMod 應用、連接 KeyMod 設備，並在 5 分鐘內發送第一個按鍵。"
+description: "KeyMod 教程 - 入門: 安裝 KeyMod 應用、連接 KeyMod 硬件，並在 5 分鐘內發送第一個按鍵。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。"
 keywords: "KeyMod 入門, KeyMod 設置, KeyMod 安裝, 連接 KeyMod"
 ---
 

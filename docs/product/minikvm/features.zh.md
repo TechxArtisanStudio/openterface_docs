@@ -1,6 +1,6 @@
 ---
 title: "功能与规格"
-description: "Openterface Mini-KVM 完整概览：强大功能包括 BIOS 级访问、4K 视频支持、跨平台兼容性、USB 共享以及详细技术规格。关于这款无头计算机控制解决方案，您需要了解的一切。"
+description: "Openterface Mini-KVM 完整概览：强大功能包括 BIOS 级访问、4K 视频支持、跨平台兼容性、USB 共享以及详细技术规格。关于这款无头计算机控制解决方案，您需要了解的一切。 width=\\"560\\" height=\\"315\\"… width=\"560\" height=\"315\"…"
 keywords: "Mini-KVM 功能, KVM 规格, BIOS 访问, 无头控制, 4K KVM, USB 共享, 跨平台 KVM, 文本传输, 即插即用 KVM, 开源 KVM, 技术规格"
 ---
 

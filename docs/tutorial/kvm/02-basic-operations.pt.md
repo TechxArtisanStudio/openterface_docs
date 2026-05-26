@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 02 — Operações básicas"
+description: "Público-alvo: Iniciantes a intermédio — funcionalidades de uso diário Documentação Openterface: configuração, FAQs e suporte KVM-over-USB. Openterface."
+---
+
 # Tutorial KVM 02 — Operações básicas
 
 **Público-alvo:** Iniciantes a intermédio — funcionalidades de uso diário

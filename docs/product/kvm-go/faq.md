@@ -1,6 +1,6 @@
 ---
 title: FAQs for Openterface KVM-Go Series
-description: Frequently asked questions about the KVM-Go Series, covering features, compatibility, and pre-launch information.
+description: "FAQs for Openterface KVM-Go Series: Welcome to the FAQ for our next-generation Openterface KVM-Go Series. If you don't find what you need, email us at or…"
 keywords: KVM-Go, Openterface, ultra-compact KVM, built-in HDMI, keychain KVM, open-source, pre-launch, video capture, USB, compatibility, MicroSD
 ---
 

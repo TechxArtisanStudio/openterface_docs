@@ -1,6 +1,6 @@
 ---
 title: "ソフトウェアのセットアップ"
-description: "uConsole向けOpenterface KVM拡張のソフトウェアセットアップ完全ガイド。"
+description: uConsole向けOpenterface KVM拡張のソフトウェアセットアップ完全ガイド。 Openterfaceアプリにより、uConsoleをKVMインターフェースとして使用でき、内蔵の画面・キーボード・トラックボールでターゲット機器を操作できます。 詳細はを参照してください。
 keywords: "Openterface アプリ インストール, uConsole ソフトウェア, KVM セットアップ, uConsole 設定"
 ---
 
@@ -30,7 +30,6 @@ Openterfaceアプリにより、uConsoleをKVMインターフェースとして�
    sudo apt install ./openterfaceqt_*_arm64.deb
    ```
    *(実際のファイル名に置き換えてください)*
-
 ---
 
 ### **オプション2: Flatpakでのインストール**

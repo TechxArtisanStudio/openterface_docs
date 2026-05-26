@@ -1,3 +1,8 @@
+---
+title: "FAQs لـ Apps"
+description: Willkommen bei den FAQs لـ unsere Apps. Wenn Sie die Antwort لا finden, die Sie benötigen, senden Sie uns eine E-Mail an أو treten Sie unserer Community auf…
+---
+
 # FAQs لـ Apps
 
 Willkommen bei den FAQs لـ unsere Apps. Wenn Sie die Antwort لا finden, die Sie benötigen, **senden Sie uns eine E-Mail an [info@openterface.com](mailto:info@openterface.com)** أو **treten Sie unserer Community** auf [Discord](/discord) أو [Reddit](/reddit) bei, um sich مع unserem Entwicklungsteam و anderen Benutzern zu verbinden.

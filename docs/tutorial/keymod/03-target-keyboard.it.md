@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Sistema operativo di destinazione"
-description: "Imposta il sistema operativo di destinazione in modo che KeyMod invii la mappatura dei tasti corretta ai computer Windows, macOS o Linux."
+description: Imposta il sistema operativo di destinazione in modo che KeyMod invii la mappatura dei tasti corretta ai computer Windows, macOS o Linux. KeyMod invia…
 keywords: "KeyMod sistema operativo di destinazione, mappatura dei tasti, tasti di modifica, input Unicode"
 ---
 

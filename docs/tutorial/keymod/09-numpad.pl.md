@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Poradnik — klawiatura numeryczna"
-description: "Do wprowadzania danych używaj klawiatury numerycznej KeyMod, z kodami klawiszy numerycznych HID i siatkami specyficznymi dla aplikacji."
+description: Do wprowadzania danych używaj klawiatury numerycznej KeyMod, z kodami klawiszy numerycznych HID i siatkami specyficznymi dla aplikacji. Pełna klawiatura…
 keywords: "KeyMod klawiatura numeryczna, klawiatura numeryczna, HID klawiatura numeryczna, wprowadzanie danych"
 ---
 

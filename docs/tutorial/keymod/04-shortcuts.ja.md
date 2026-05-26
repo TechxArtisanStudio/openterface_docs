@@ -1,6 +1,6 @@
 ---
 title: "KeyMod チュートリアル - ショートカットハブ"
-description: "Blender、VS Code、Photoshop、KiCAD など人気アプリ向けのプロファイルベースのキーボードショートカット。"
+description: Blender、VS Code、Photoshop、KiCAD など人気アプリ向けのプロファイルベースのキーボードショートカット。 ワンタップで一般的なキーボードショートカットにアクセス。アプリ別に整理され、ラベルは ターゲット OS に自動適応（Windows/Linux は Ctrl+Z、macOS は…
 keywords: "KeyMod ショートカット, ショートカットプロファイル, Blender ショートカット, VS Code ショートカット"
 ---
 

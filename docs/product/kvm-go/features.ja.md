@@ -1,6 +1,6 @@
 ---
 title: "機能と仕様"
-description: "Openterface KVM-Go シリーズの完全概要：ビデオコネクタ内蔵の超コンパクト設計、4K/60Hz対応、MicroSDスロット、および詳細な技術仕様。IT プロフェッショナル向けのキーホルダーサイズ KVM-over-USB ソリューション。"
+description: Openterface KVM-Go シリーズの完全概要：ビデオコネクタ内蔵の超コンパクト設計、4K/60Hz対応、MicroSDスロット、および詳細な技術仕様。IT プロフェッショナル向けのキーホルダーサイズ KVM-over-USB ソリューション。 KVM-Go… KVM-Go…
 keywords: "KVM-Go 機能, 超コンパクト KVM, 内蔵 HDMI, 4K KVM, MicroSD KVM, キーホルダー KVM, KVM 仕様, ヘッドレス制御, ポータブル KVM, IT ツール, サーバー管理"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Voice Input"
-description: "Use voice-to-keyboard with KeyMod. Supports system speech recognition, on-device Whisper AI, and multiple languages."
+description: "Dictate text into the target PC with KeyMod voice input: system speech recognition, on-device Whisper AI, and multi-language support. Setup and tips in Openterface docs."
 keywords: "KeyMod voice input, speech to text, Whisper, voice typing, hands-free keyboard"
 ---
 

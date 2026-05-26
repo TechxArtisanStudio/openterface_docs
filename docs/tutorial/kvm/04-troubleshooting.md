@@ -1,3 +1,8 @@
+---
+title: "KVM Tutorial 04 — Troubleshooting"
+description: "KVM Tutorial 04 — Troubleshooting: Common problems and solutions for Openterface KVM devices. Open-source KVM-over-USB guides. Open-source KVM-over-USB…"
+---
+
 # KVM Tutorial 04 — Troubleshooting
 
 Common problems and solutions for Openterface KVM devices.

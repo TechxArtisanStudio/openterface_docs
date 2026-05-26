@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Hedef İşletim Sistemi"
-description: "Hedef işletim sistemini, KeyMod'nin Windows, macOS veya Linux bilgisayarlara doğru tuş eşlemelerini göndereceği şekilde ayarlayın."
+description: Hedef işletim sistemini, KeyMod'nin Windows, macOS veya Linux bilgisayarlara doğru tuş eşlemelerini göndereceği şekilde ayarlayın. KeyMod hedef bilgisayarın…
 keywords: "KeyMod hedef işletim sistemi, anahtar eşleme, değiştirici tuşlar, Unicode girişi"
 ---
 

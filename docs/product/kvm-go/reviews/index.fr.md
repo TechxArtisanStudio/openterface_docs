@@ -1,3 +1,8 @@
+---
+title: "Avis et médias"
+description: "Avis et médias — KVM-GO press reviews, media coverage, and community testimonials. Documentation Openterface : configuration, FAQ et dépannage KVM-over-USB."
+---
+
 # Avis et médias
 
 ## Couverture médiatique

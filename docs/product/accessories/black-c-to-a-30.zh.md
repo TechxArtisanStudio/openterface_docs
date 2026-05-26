@@ -1,6 +1,6 @@
 ---
 title: "Type-C转USB-A数据线带适配器30cm"
-description: "探索我们Type-C转USB-A数据线带适配器的灵活性，专为无缝数据传输和控制信号传输而设计。完美连接具有USB-A或Type-C端口的设备。"
+description: 探索我们Type-C转USB-A数据线带适配器的灵活性，专为无缝数据传输和控制信号传输而设计。完美连接具有USB-A或Type-C端口的设备。… Openterface.…
 keywords: "Type-C转USB-A数据线, USB适配器, 数据传输线, 控制信号线, 多功能连接"
 ---
 

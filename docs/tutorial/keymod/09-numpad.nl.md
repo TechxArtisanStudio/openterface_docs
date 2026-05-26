@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Numpad"
-description: "Gebruik het numerieke toetsenbord KeyMod voor gegevensinvoer, met numerieke toetscodes HID en toepassingsspecifieke rasters."
+description: Gebruik het numerieke toetsenbord KeyMod voor gegevensinvoer, met numerieke toetscodes HID en toepassingsspecifieke rasters. Een volledig numeriek… Openterface.
 keywords: "KeyMod numeriek toetsenbord, numeriek toetsenbord, HID numpad, gegevensinvoer"
 ---
 

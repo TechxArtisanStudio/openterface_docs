@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macro's"
-description: "Neem geautomatiseerde toetsreeksen op en speel deze opnieuw af met KeyMod-macro's, inclusief modifiers, vertragingen en planning."
+description: Neem geautomatiseerde toetsreeksen op en speel deze opnieuw af met KeyMod-macro's, inclusief modifiers, vertragingen en planning. Officiële… Openterface.
 keywords: "KeyMod macro's, geautomatiseerde toetsaanslagen, macroplanner, macrotokens, toetsreeksen"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Cable HDMI Macho a Macho Compacto para Video de Alta Definición"
-description: "Conecte sus dispositivos sin problemas con nuestro cable HDMI macho a macho compacto, perfecto para la transmisión de video de alta definición."
+description: Conecte sus dispositivos sin problemas con nuestro cable HDMI macho a macho compacto, perfecto para la transmisión de video de alta definición. Este cable…
 keywords: "cable HDMI, HDMI macho a macho, cable de video de alta definición, HDMI compacto"
 ---
 

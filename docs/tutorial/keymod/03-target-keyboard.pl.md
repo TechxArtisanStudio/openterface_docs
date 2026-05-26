@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek — docelowy system operacyjny"
-description: "Ustaw docelowy system operacyjny tak, aby KeyMod wysyłał prawidłowe mapowania klawiszy do Windows, macOS lub Linux komputerów."
+description: Ustaw docelowy system operacyjny tak, aby KeyMod wysyłał prawidłowe mapowania klawiszy do Windows, macOS lub Linux komputerów. KeyMod wysyła naciśnięcia…
 keywords: "Docelowy system operacyjny, mapowanie klawiszy, klawisze modyfikujące, wejście Unicode"
 ---
 

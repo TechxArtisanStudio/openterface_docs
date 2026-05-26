@@ -1,6 +1,6 @@
 ---
 title: "Probleme cu Mini-KVM? Începeți aici - Suport Openterface"
-description: "Ghid de suport și depanare pentru problemele de tastatură și mouse ale Mini-KVM. Aflați cum să rulați diagnostice, să contactați suportul și să obțineți înlocuire sau rambursare."
+description: "Probleme cu Mini-KVM? Începeți aici - Suport Openterface: Ghid de suport și depanare Înțelegem cât de frustrant poate fi când un dispozitiv nu funcționează… —…"
 keywords: "Openterface Mini-KVM, suport Mini-KVM, depanare Mini-KVM, probleme tastatură mouse, înlocuire Mini-KVM, rambursare Mini-KVM, suport Openterface"
 ---
 

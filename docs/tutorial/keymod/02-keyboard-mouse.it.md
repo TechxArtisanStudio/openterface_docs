@@ -1,8 +1,10 @@
 ---
 title: "KeyMod Tutorial - Tastiera e mouse"
-description: "Scopri come utilizzare la tastiera KeyMod e touchpad per digitare, inviare scorciatoie e controllare il mouse del computer di destinazione dal telefono."
+description: "Usa tastiera e touchpad KeyMod per digitare, inviare scorciatoie e controllare il mouse del PC di destinazione dal telefono. Guida Openterface per la modalità tastiera e mouse."
 keywords: "KeyMod tastiera, KeyMod mouse, touchpad, tasti modificatori, scorciatoie da tastiera"
----N. 2. Tastiera e mouse
+---
+
+# 2. Tastiera e mouse
 
 La modalità Tastiera e Mouse è la modalità utilizzata più frequentemente. Fornisce una tastiera virtuale e touchpad per controllare il computer di destinazione dal telefono.
 

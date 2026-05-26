@@ -1,3 +1,8 @@
+---
+title: "macOS DMG 包安装指南"
+description: 要下载 DMG 包，请按照以下步骤操作： 1. 打开您的网页浏览器。 2. 您可以从以下来源之一下载 DMG 包： 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
+---
+
 # macOS DMG 包安装指南
 
 ## 1. 如何下载

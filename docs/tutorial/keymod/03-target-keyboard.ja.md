@@ -1,6 +1,6 @@
 ---
 title: "KeyMod チュートリアル - ターゲット OS"
-description: "ターゲット OS を設定し、KeyMod が Windows、macOS、Linux に正しいキーマッピングを送るようにします。"
+description: ターゲット OS を設定し、KeyMod が Windows、macOS、Linux に正しいキーマッピングを送るようにします。 KeyMod はターゲット PC の OS に合わせたキー入力を送信します。正しく設定するとターゲットに正しいキーが届きます。 ヘッダーの OS アイコン…
 keywords: "KeyMod ターゲット OS, キーマッピング, 修飾キー, Unicode 入力"
 ---
 

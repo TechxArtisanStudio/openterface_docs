@@ -1,3 +1,8 @@
+---
+title: "À propos de nous"
+description: "est née d'une idée simple mais puissante : Open – Transparence, collaboration open-source et déverrouillage des systèmes fermés. Enter – Accès fluide et…"
+---
+
 # À propos de nous
 
 ## Notre marque et notre slogan

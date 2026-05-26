@@ -1,3 +1,8 @@
+---
+title: "Technischer Ondersteuning"
+description: Wir verstehen, dass es frustrierend ist, wenn Dinge niet wie erwartet funktionieren, en wir sind hier, um zu helfen. Unser Fehlerbehebungsformular führt Sie…
+---
+
 # Technischer Ondersteuning
 
 Wir verstehen, dass es frustrierend ist, wenn Dinge niet wie erwartet funktionieren, en **wir sind hier, um zu helfen**. Unser Fehlerbehebungsformular führt Sie **Schritt voor Schritt** durch die Angabe von Details zu Ihrer Einrichtung en dem Problem, met dem Sie konfrontiert sind. Mit diesen Informationen können wir das Problem besser verstehen en Sie effektiver unterstützen.

@@ -1,3 +1,8 @@
+---
+title: "Nutzungsbedingungen"
+description: (Version 2 – Februar 2026) Diese Website wird von Openterface betrieben, einer Marke von TechxArtisan Liсed („TechxArtisan“), die die zuvor unter Guangzhou…
+---
+
 # Nutzungsbedingungen
 
 **(Version 2 – Februar 2026)**

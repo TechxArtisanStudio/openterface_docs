@@ -1,3 +1,8 @@
+---
+title: "KVM 튜토리얼 03 — 고급 기능"
+description: "대상: 중급~전문가 — 파워 유저 기능 및 설정 Openterface 공식 문서: 설치, FAQ, 문제 해결. IT 및 개발자를 위한 KVM-over-USB 가이드."
+---
+
 
 # KVM 튜토리얼 03 — 고급 기능
 

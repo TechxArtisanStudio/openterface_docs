@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 語音輸入"
-description: "使用 KeyMod 語音轉鍵盤。支持系統語音識別、設備端 Whisper AI 及多語言。"
+description: 使用 KeyMod 語音轉鍵盤。支持系統語音識別、設備端 Whisper AI 及多語言。 將語音轉換為發送到目標電腦的按鍵——免提輸入與無障礙使用。 1. 點擊 麥克風 按鈕 2. 説出要輸入的內容 3. 語音轉換為文字 4. 文字作為按鍵發送到目標電腦
 keywords: "KeyMod 語音輸入, 語音轉文字, Whisper, 語音輸入, 免提鍵盤"
 ---
 

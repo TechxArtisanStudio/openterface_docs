@@ -1,7 +1,7 @@
 ---
 title: まとめ買いとパートナーシップ | Openterface Mini-KVM 卸売
 keywords: Openterface Mini-KVM, まとめ買い, 卸売価格, 再販パートナー, 販売代理店プログラム, 企業向け価格, Crowd Supply 卸売, 大量 KVM ソリューション
-description: Crowd Supply を通じた Openterface の卸売価格と大量発注オプションをご紹介。企業導入向けの再販・販売代理店パートナーシップの機会についてもご案内します。
+description: Crowd Supply を通じた Openterface の卸売価格と大量発注オプションをご紹介。企業導入向けの再販・販売代理店パートナーシップの機会についてもご案内します。 Openterface Mini-KVM… Openterface Mini-KVM…
 ---
 
 # まとめ買いとパートナーシップ

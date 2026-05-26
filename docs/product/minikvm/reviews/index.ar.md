@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien — minikvm / reviews (Mini-KVM). وثائق Openterface الرسمية: الإعداد والأسئلة الشائعة واستكشاف أخطاء KVM-over-USB."
+---
+
 # Bewertungen & Medien
 
 ## Medienberichterstattung

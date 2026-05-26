@@ -1,6 +1,6 @@
 ---
 title: "KeyMod チュートリアル - はじめに"
-description: "KeyMod アプリをインストールし、KeyMod デバイスに接続して、5分以内に最初のキー入力を送信します。"
+description: KeyMod アプリをインストールし、KeyMod デバイスに接続して、5分以内に最初のキー入力を送信します。 KeyMod アプリをインストールし、KeyMod ハードウェアに接続して、5分以内に最初のキー入力を送信します。
 keywords: "KeyMod はじめに, KeyMod セットアップ, KeyMod インストール, KeyMod 接続"
 ---
 

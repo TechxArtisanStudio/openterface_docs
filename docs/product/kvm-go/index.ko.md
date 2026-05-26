@@ -1,8 +1,7 @@
 ---
 title: "Openterface KVM-Go | 내장 비디오 커넥터가 있는 초소형 KVM-over-USB"
-description: "초소형 Openterface KVM-Go로 헤드리스 컴퓨터를 제어하세요. 내장 HDMI/DP/VGA 커넥터로 케이블 불필요. 키체인 크기의 KVM-over-USB 솔루션, 4K 지원, IT 전문가와 개발자용."
+description: 초소형 Openterface KVM-Go로 헤드리스 컴퓨터를 제어하세요. 내장 HDMI/DP/VGA 커넥터로 케이블 불필요. 키체인 크기의 KVM-over-USB 솔루션, 4K 지원, IT 전문가와 개발자용. Openterface Mini-KVM의 성공에 이어 오픈 소스…
 keywords: "KVM-Go, KVM over USB, 초소형 KVM, 내장 HDMI, 키체인 KVM, 4K KVM, 헤드리스 제어, USB KVM, 휴대용 KVM, DisplayPort KVM, VGA KVM, IT 도구, 서버 관리"
-
 ---
 
 # **Openterface KVM-Go 시리즈**

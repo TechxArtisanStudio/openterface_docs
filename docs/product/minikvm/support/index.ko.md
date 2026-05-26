@@ -1,6 +1,6 @@
 ---
 title: "Mini-KVM에 문제가 있으신가요? 여기서 시작하세요 - Openterface 지원"
-description: "Mini-KVM 키보드 및 마우스 문제에 대한 지원 및 문제 해결 가이드. 진단 실행, 지원 문의, 교체 또는 환불 방법을 알아보세요."
+description: "Mini-KVM에 문제가 있으신가요? 여기서 시작하세요 - Openterface 지원: 지원 및 문제 해결 가이드 기기가 예상대로 작동하지 않을 때의 답답함을 잘 이해합니다. 특히 사용을 시작하려 할 때 더욱 그렇습니다. 이 페이지에서는 Mini-KVM에서 키보드 또는 마우스 제어…"
 keywords: "Openterface Mini-KVM, Mini-KVM 지원, Mini-KVM 문제 해결, 키보드 마우스 문제, Mini-KVM 교체, Mini-KVM 환불, Openterface 지원"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "박스 내용물"
-description: "Openterface KVM-Go 시리즈 패키지를 만나보세요 - 비디오 커넥터가 내장된 초소형 KVM. 원활한 장치 관리 및 파일 전송을 위한 필수 액세서리가 포함된 사전 출시 패키지."
+description: Openterface KVM-Go 시리즈 패키지를 만나보세요 - 비디오 커넥터가 내장된 초소형 KVM. 원활한 장치 관리 및 파일 전송을 위한 필수 액세서리가 포함된 사전 출시 패키지. HDMI, DP, 또는 VGA 버전의 세 가지 완전한 툴킷 옵션을 제공합니다. 이들 간의…
 keywords: "KVM-Go, 초소형 KVM, HDMI 내장, 키체인 KVM, KVM 툴킷, KVM 액세서리, 휴대용 KVM, 서버 관리 도구, IT 도구, headless 제어"
 ---
 

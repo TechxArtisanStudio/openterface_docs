@@ -1,6 +1,6 @@
 ---
 title: Openterface KVM Extension for uConsole 자주 묻는 질문
-description: uConsole KVM Extension에 대한 자주 묻는 질문, 기능, 호환성, 문제 해결 및 설치에 대해 다룹니다.
+description: uConsole KVM Extension에 대한 자주 묻는 질문, 기능, 호환성, 문제 해결 및 설치에 대해 다룹니다. Openterface KVM Extension for uConsole 자주 묻는 질문에 오신 것을 환영합니다. 필요한 정보를 찾지 못하셨다면 으로 이메일을…
 keywords: KVM 확장, uConsole KVM, 문제 해결, 비디오 캡처, USB HID, 호환성, 설치
 ---
 

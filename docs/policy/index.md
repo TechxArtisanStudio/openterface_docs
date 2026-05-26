@@ -1,3 +1,8 @@
+---
+title: "Policy"
+description: "Policy: Our policies govern how we operate, protect your data, and handle purchases. Open-source KVM-over-USB guides. Open-source KVM-over-USB guides."
+---
+
 # Policy
 
 Our policies govern how we operate, protect your data, and handle purchases.

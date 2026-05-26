@@ -1,3 +1,8 @@
+---
+title: "KVM Eğitimi 01 — Başlangıç"
+description: "Hedef kitle: Yeni başlayanlar — Openterface KVM cihazlarını ilk kez kullananlar Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB sorun giderme."
+---
+
 # KVM Eğitimi 01 — Başlangıç
 
 **Hedef kitle:** Yeni başlayanlar — Openterface KVM cihazlarını ilk kez kullananlar

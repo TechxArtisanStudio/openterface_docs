@@ -1,6 +1,6 @@
 ---
 title: USB KVM 和 Openterface 常見問題
-description: 我們旗艦產品 Mini-KVM 的詳細常見問題，涵蓋技術規格、使用指南和故障排除技巧。
+description: USB KVM 和 Openterface 常見問題 — faq (Openterface KVM-over-USB). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, network-free KVM, headless device control, IT solutions, troubleshooting, 診斷自檢, 鍵盤鼠標控制, Openterface products
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "대상 디바이스에 연결"
-description: "Openterface KVM Extension for uConsole에 대상 디바이스를 연결하는 방법을 배우세요. 하드웨어 설치 및 소프트웨어 설정 후 USB 제어 및 비디오 입력 설정에 대한 완전한 가이드입니다."
+description: "Openterface KVM Extension for uConsole에 대상 디바이스를 연결하는 방법을 배우세요. 하드웨어 설치 및 소프트웨어 설정 후 USB 제어 및 비디오 입력 설정에 대한 완전한 가이드입니다. 대상 디바이스를 연결하기 전에 다음이 완료되었는지 확인하세요:…"
 keywords: "KVM 연결 설정, 대상 디바이스 연결, USB 제어 설정, HDMI 입력 설정, uConsole KVM 확장 연결"
 ---
 

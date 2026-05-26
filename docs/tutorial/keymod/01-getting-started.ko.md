@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 시작하기"
-description: "KeyMod 앱을 설치하고 KeyMod 장치에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요."
+description: KeyMod 앱을 설치하고 KeyMod 장치에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요. KeyMod 앱을 설치하고 KeyMod 하드웨어에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요.
 keywords: "KeyMod 시작하기, KeyMod 설정, KeyMod 설치, KeyMod 연결"
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Openterface Android"
+description: Openterface Mini-KVM è una soluzione hardware e software open-source progettata per fornire funzionalità KVM (Keyboard, Video, Mouse) di base per… Openterface.
+---
+
 # Openterface Android
 
 ## Panoramica

@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM - 진단 자기 점검 가이드 (macOS)"
-description: "macOS 앱으로 Openterface Mini-KVM 장치에서 진단 자기 점검을 실행하는 단계별 가이드입니다. USB 연결 테스트, 문제 감지 및 지원팀에 결함 보고서를 보내는 방법을 학습하세요."
+description: macOS 앱으로 Openterface Mini-KVM 장치에서 진단 자기 점검을 실행하는 단계별 가이드입니다. USB 연결 테스트, 문제 감지 및 지원팀에 결함 보고서를 보내는 방법을 학습하세요. 이 가이드는 Openterface Mini-KVM 장치에서 진단 자기 점검을…
 keywords: "Openterface Mini-KVM, macOS, 진단 자기 점검, KVM 문제 해결, USB KVM 진단, Mini-KVM 지원, KVM 장치 테스트, USB 연결 테스트, KVM 결함 보고, Mini-KVM 문제 해결 가이드, KVM 진단 도구, 헤드리스 서버 진단, IT 문제 해결 도구"
 ---
 

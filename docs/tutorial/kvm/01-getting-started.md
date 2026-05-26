@@ -1,3 +1,8 @@
+---
+title: "KVM Tutorial 01 — Getting Started"
+description: "Get started with Openterface KVM-over-USB: connect Mini-KVM or KVM-GO, install host apps, and control a target PC from your laptop with keyboard, video, and mouse over USB."
+---
+
 # KVM Tutorial 01 — Getting Started
 
 **Audience:** Beginners — first-time users of Openterface KVM devices

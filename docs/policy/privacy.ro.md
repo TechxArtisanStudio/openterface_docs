@@ -1,3 +1,8 @@
+---
+title: "Politica de Confidențialitate"
+description: (Versiunea 2 – Februarie 2026) Această Politică de Confidențialitate se aplică site-ului web Openterface, dispozitivelor hardware Openterface și… Openterface.
+---
+
 # Politica de Confidențialitate
 
 **(Versiunea 2 – Februarie 2026)**

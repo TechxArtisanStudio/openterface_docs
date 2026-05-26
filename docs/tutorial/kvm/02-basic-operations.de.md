@@ -1,3 +1,8 @@
+---
+title: "KVM-Tutorial 02 — Grundlegende Bedienung"
+description: "Zielgruppe: Anfänger bis Fortgeschrittene — Funktionen für den täglichen Gebrauch Offizielle Openterface-Doku: Einrichtung, FAQ und Fehlerbehebung für…"
+---
+
 # KVM-Tutorial 02 — Grundlegende Bedienung
 
 **Zielgruppe:** Anfänger bis Fortgeschrittene — Funktionen für den täglichen Gebrauch

@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Guía de reseña (Prototipo de ingeniería)"
+description: Gracias por dedicar tiempo a probar nuestro próximo producto . Esta unidad es un prototipo de ingeniería, y nuestro firmware y software evolucionan… Openterface
+---
+
 # Openterface KVM-Go — Guía de reseña (Prototipo de ingeniería)
 
 ## Descripción general

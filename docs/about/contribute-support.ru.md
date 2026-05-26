@@ -1,3 +1,8 @@
+---
+title: "Mitmachen & Unterstützen"
+description: Open-Source-Оборудование ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen и wirklich zu verstehen. Sie zu bauen — и offen zu halten —…
+---
+
 # Mitmachen & Unterstützen
 
 Open-Source-Оборудование ermöglicht es allen, ihre Technologie zu kontrollieren, anzupassen и wirklich zu verstehen. Sie zu bauen — и offen zu halten — erfordert eine engagierte Community. Mit deiner Hilfe können wir geschlossene Systeme herausfordern и eine Zukunft schaffen, in der Technologie ihren Nutzerinnen и Nutzern gehört.

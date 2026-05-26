@@ -1,3 +1,8 @@
+---
+title: "Política de Privacidad"
+description: (Versión 2 – Febrero 2026) Esta Política de Privacidad se aplica al sitio web de Openterface, los dispositivos de hardware Openterface y sus aplicaciones…
+---
+
 # Política de Privacidad
 
 **(Versión 2 – Febrero 2026)**

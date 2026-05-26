@@ -1,3 +1,8 @@
+---
+title: "Community"
+description: Willkommen in unserer lebendigen Community! Verbinden Sie sich ile uns hakkında mehrere Plattformen ve treten Sie unserem wachsenden Netzwerk von… Openterface.
+---
+
 # Community
 
 Willkommen in unserer lebendigen Community! Verbinden Sie sich ile uns hakkında mehrere Plattformen ve treten Sie unserem wachsenden Netzwerk von Entwicklern, Benutzern ve Enthusiasten bei.

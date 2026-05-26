@@ -1,3 +1,8 @@
+---
+title: "Contribuir y apoyar"
+description: El hardware de código abierto permite a todas las personas controlar, personalizar y comprender realmente su tecnología. Construirlo —y mantenerlo abierto—…
+---
+
 # Contribuir y apoyar
 
 El hardware de código abierto permite a todas las personas controlar, personalizar y comprender realmente su tecnología. Construirlo —y mantenerlo abierto— requiere una comunidad dedicada. Con tu ayuda, podemos desafiar los sistemas cerrados y crear un futuro en el que la tecnología pertenezca a sus usuarios.

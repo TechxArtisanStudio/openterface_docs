@@ -1,6 +1,6 @@
 ---
 title: "擴展引腳"
-description: "探索 Openterface Mini-KVM 擴展引腳在自定義硬件開發和開源項目中的潛力。"
+description: "擴展引腳: Openterface Mini-KVM 配備用於高級開發和 實驗的擴展引腳。這些引腳在標準外殼配置中不會外露。 1. 拆解設備。 2. 將原裝外殼上蓋替換為專用的擴展引腳蓋（Extension Pin Cap）。 3. 下載擴展引腳蓋的 。 4. 查看我們的 。…"
 keywords: "Mini-KVM 擴展引腳, 自定義開發, 硬件改裝, 開源 KVM"
 ---
 

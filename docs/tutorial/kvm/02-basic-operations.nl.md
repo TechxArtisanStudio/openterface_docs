@@ -1,3 +1,8 @@
+---
+title: "KVM-tutorial 02 — Basisbewerkingen"
+description: "Doelgroep: Beginners tot gevorderd — functies voor dagelijks gebruik Officiële Openterface-documentatie: installatie, FAQ en KVM-over-USB probleemoplossing."
+---
+
 # KVM-tutorial 02 — Basisbewerkingen
 
 **Doelgroep:** Beginners tot gevorderd — functies voor dagelijks gebruik

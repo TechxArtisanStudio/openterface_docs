@@ -1,3 +1,8 @@
+---
+title: "Openterface Android"
+description: Openterface… Openterface. Openterface. Openterface. Openterface. Openterface. Openterface. Openterface…
+---
+
 # Openterface Android
 
 ## 概要

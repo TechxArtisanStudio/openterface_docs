@@ -1,6 +1,6 @@
 ---
 title: "盒子裏有什麼"
-description: "探索 Openterface Mini-KVM 包裝 - 在基礎版和工具包選項之間選擇。完整的 KVM 解決方案，配備 HDMI、USB-C 連接和配件，實現無縫設備管理。"
+description: 盒子裏有什麼 — minikvm / whats in the box (Mini-KVM). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: "Mini-KVM, KVM 切換器, HDMI KVM, USB KVM, headless 控制, 計算機外設, KVM 工具包, KVM 配件, 遠程工作設置, 多設備控制"
 ---
 

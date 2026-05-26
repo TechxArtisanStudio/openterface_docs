@@ -1,3 +1,8 @@
+---
+title: "Ghid de Instalare Pachet DMG macOS"
+description: "Pentru a descărca pachetul DMG, urmați acești pași: 1. Deschideți browserul web. 2. Puteți descărca pachetul DMG din una din următoarele surse: Documentație…"
+---
+
 # Ghid de Instalare Pachet DMG macOS
 
 ## 1. Cum să Descărcați

@@ -1,6 +1,6 @@
 ---
 title: Întrebări Frecvente pentru Openterface KVM-Go Series
-description: Întrebări frecvente despre seria KVM-Go, acoperind caracteristici, compatibilitate și informații de pre-lansare.
+description: Întrebări frecvente despre seria KVM-Go, acoperind caracteristici, compatibilitate și informații de pre-lansare. Bine ați venit la întrebările frecvente…
 keywords: KVM-Go, Openterface, KVM ultra-compact, HDMI integrat, KVM breloc, open-source, pre-lansare, captură video, USB, compatibilitate, MicroSD
 ---
 

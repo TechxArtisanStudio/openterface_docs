@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien: --8<-- \"product/minikvm/reviews/social-posts.html\" Oficjalna dokumentacja Openterface: konfiguracja, FAQ i rozwiązywanie problemów…"
+---
+
 # Bewertungen & Medien
 
 ## Medienberichterstattung

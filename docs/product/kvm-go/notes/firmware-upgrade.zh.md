@@ -1,3 +1,8 @@
+---
+title: "KVM-Go 固件升级"
+description: KVM-Go 使用 WCH 的 CH32V208 芯片进行键盘和鼠标模拟。目前，固件刷写需要使用 WCH 官方编程工具，该工具仅适用于 Windows。因此，目前必须在 Windows 系统上进行固件更新。…
+---
+
 # KVM-Go 固件升级
 
 ## 概述

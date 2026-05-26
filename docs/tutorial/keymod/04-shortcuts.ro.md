@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Hub de comandă rapidă"
-description: "Utilizați comenzi rapide de la tastatură bazate pe profil pentru aplicații populare precum Blender, VS Code, Photoshop și KiCAD."
+description: Utilizați comenzi rapide de la tastatură bazate pe profil pentru aplicații populare precum Blender, VS Code, Photoshop și KiCAD. Acces cu o singură atingere…
 keywords: "KeyMod comenzi rapide, profiluri de comenzi rapide, Blender comenzi rapide, VS Code comenzi rapide, comenzi rapide de la tastatură"
 ---
 

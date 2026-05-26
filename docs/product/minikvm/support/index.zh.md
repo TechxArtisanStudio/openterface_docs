@@ -1,6 +1,6 @@
 ---
 title: "Mini-KVM 遇到问题？从这里开始 - Openterface 支持"
-description: "Mini-KVM 键盘和鼠标问题的支持与故障排查指南。了解如何运行诊断、联系支持以及获得更换或退款。"
+description: "Mini-KVM 遇到问题？从这里开始 - Openterface 支持: 支持与故障排查指南 我们理解当设备无法按预期工作时会有多令人沮丧——尤其是当您急于开始使用它时。 本页说明接下来该做什么、我们将如何帮助您，以及如果您的 Mini-KVM 遇到键盘或鼠标控制问题可以期待什么。…"
 keywords: "Openterface Mini-KVM, Mini-KVM 支持, Mini-KVM 故障排查, 键盘鼠标问题, Mini-KVM 更换, Mini-KVM 退款, Openterface 支持"
 ---
 

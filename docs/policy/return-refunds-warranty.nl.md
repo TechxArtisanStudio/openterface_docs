@@ -1,3 +1,8 @@
+---
+title: "Rückgabe-, Erstattungs- en Garantierichtlinie"
+description: (Version 2 – Februar 2026) Diese Richtlinie gilt voor Openterface-Producte, einschließlich Mini-KVM, KVM-GO usw. Bitte lesen Sie sorgfältig, da Rückgaben,…
+---
+
 # Rückgabe-, Erstattungs- en Garantierichtlinie
 
 **(Version 2 – Februar 2026)**

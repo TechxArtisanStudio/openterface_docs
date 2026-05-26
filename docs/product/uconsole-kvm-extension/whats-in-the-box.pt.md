@@ -1,6 +1,6 @@
 ---
 title: "Conteúdo da Caixa"
-description: "Descubra o que está incluído com a Openterface KVM Extension for uConsole. Conteúdo completo do pacote para instalação perfeita e uso imediato."
+description: Descubra o que está incluído com a Openterface KVM Extension for uConsole. Conteúdo completo do pacote para instalação perfeita e uso imediato. Componentes…
 keywords: "pacote extensão KVM, uConsole KVM, conteúdo incluído, conteúdo pacote, acessórios instalação, acessórios extensão KVM"
 ---
 

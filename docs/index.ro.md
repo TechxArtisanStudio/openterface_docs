@@ -1,6 +1,6 @@
 ---
 title: Documentație
-description: Bun venit la documentația oficială pentru produsele și software-ul Openterface KVM-over-USB.
+description: "Bun venit la documentația oficială pentru produsele și software-ul Openterface KVM-over-USB. Documentație Openterface: configurare, întrebări frecvente și…"
 ---
 
 # Documentație Openterface

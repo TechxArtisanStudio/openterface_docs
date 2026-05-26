@@ -1,3 +1,8 @@
+---
+title: "KVM-tutorial 04 — Probleemoplossing"
+description: "Veelvoorkomende problemen en oplossingen voor Openterface KVM-apparaten. Officiële Openterface-documentatie: installatie, FAQ en KVM-over-USB probleemoplossing."
+---
+
 
 # KVM-tutorial 04 — Probleemoplossing
 

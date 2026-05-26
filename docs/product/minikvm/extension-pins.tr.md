@@ -1,6 +1,6 @@
 ---
 title: "Erweiterungs-Pins"
-description: "Entdecken Sie das Potenzial der Erweiterungs-Pins des Openterface Mini-KVM için kveenspezifische Donanımentwicklung ve Open-Source-Projekte."
+description: Entdecken Sie das Potenzial der Erweiterungs-Pins des Openterface Mini-KVM için kveenspezifische Donanımentwicklung ve Open-Source-Projekte. Der Openterface…
 keywords: "Mini-KVM Erweiterungs-Pins, kveenspezifische Entwicklung, Donanım-Modifikation, Open-Source KVM"
 ---
 

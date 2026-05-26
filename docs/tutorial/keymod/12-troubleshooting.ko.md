@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 문제 해결"
-description: "연결 문제, 키 등록 안 됨, Bluetooth 페어링 실패, 음성 입력 오류 등 일반적인 KeyMod 문제를 해결합니다."
+description: 연결 문제, 키 등록 안 됨, Bluetooth 페어링 실패, 음성 입력 오류 등 일반적인 KeyMod 문제를 해결합니다. Android의 KeyMod 앱에 대한 일반적인 문제 및 해결 방법.
 keywords: "KeyMod 문제 해결, KeyMod 연결 안 됨, KeyMod Bluetooth 문제, KeyMod 키가 작동하지 않음"
 ---
 

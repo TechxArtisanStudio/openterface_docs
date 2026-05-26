@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM データシート | 技術仕様と製品詳細"
-description: "Openterface Mini-KVM の完全な技術データシートをご覧ください。このUSB経由のKVMソリューションの仕様、寸法、動画/オーディオ機能、電源要件、アクセサリ、接続オプションを確認できます。"
+description: Openterface Mini-KVM の完全な技術データシートをご覧ください。このUSB経由のKVMソリューションの仕様、寸法、動画/オーディオ機能、電源要件、アクセサリ、接続オプションを確認できます。 Openterface™ Mini-KVM… Openterface™ Mini-KVM…
 keywords: "Mini-KVM データシート, Mini-KVM 仕様, USB経由のKVM 技術仕様, Mini-KVM 寸法, Mini-KVM アクセサリ, HDMI KVM 仕様, USB KVM 技術詳細, ヘッドレスコンピュータ制御仕様, KVM スイッチ 仕様, サーバー管理ツール"
 ---
 

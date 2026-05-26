@@ -1,3 +1,8 @@
+---
+title: "Terms of Service"
+description: "Openterface Terms of Service (February 2026): website use, product purchases, software licenses, liability, privacy references, and governing rules for TechxArtisan services."
+---
+
 # Terms of Service
 
 **(Version 2 – February 2026)**

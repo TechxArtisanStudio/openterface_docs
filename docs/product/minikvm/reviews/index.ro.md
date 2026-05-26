@@ -1,3 +1,8 @@
+---
+title: "Recenzii și Mass-Media"
+description: "Recenzii și Mass-Media: --8<-- \"product/minikvm/reviews/social-posts.html\" Documentație Openterface: configurare, întrebări frecvente și depanare KVM-over-USB."
+---
+
 # Recenzii și Mass-Media
 
 ## Acoperire media

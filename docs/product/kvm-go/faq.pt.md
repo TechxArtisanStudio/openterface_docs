@@ -1,6 +1,6 @@
 ---
 title: Perguntas Frequentes para Openterface KVM-Go Series
-description: Perguntas frequentes sobre a série KVM-Go, cobrindo recursos, compatibilidade e informações de pré-lançamento.
+description: Perguntas frequentes sobre a série KVM-Go, cobrindo recursos, compatibilidade e informações de pré-lançamento. Bem-vindo às perguntas frequentes da nossa…
 keywords: KVM-Go, Openterface, KVM ultra-compacto, HDMI integrado, KVM porta-chaves, código aberto, pré-lançamento, captura de vídeo, USB, compatibilidade, MicroSD
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "拡張ピン"
-description: "Openterface Mini-KVM の拡張ピンを活用して、カスタムハードウェア開発やオープンソースプロジェクトの可能性を探りましょう。"
+description: Openterface Mini-KVM の拡張ピンを活用して、カスタムハードウェア開発やオープンソースプロジェクトの可能性を探りましょう。 Openterface Mini-KVM には高度な開発や の実験のための拡張ピンが搭載されています。これらのピンは標準のケース構成では露出していません。 1.…
 keywords: "Mini-KVM 拡張ピン, カスタム開発, ハードウェア改造, オープンソース KVM"
 ---
 

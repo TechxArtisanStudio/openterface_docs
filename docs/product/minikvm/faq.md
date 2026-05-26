@@ -1,6 +1,6 @@
 ---
 title: FAQs for Openterface Mini-KVM
-description: Frequently asked questions about the Mini-KVM, covering features, compatibility, troubleshooting, and future plans.
+description: "Frequently asked questions about Openterface Mini-KVM: features, compatibility, BIOS access, troubleshooting, diagnostics, keyboard-mouse issues, and support options for USB KVM users."
 keywords: Mini-KVM, Openterface, KVM switch, open-source, troubleshooting, video capture, USB, compatibility, diagnostic self-check, keyboard mouse control, hardware diagnostics, support
 ---
 

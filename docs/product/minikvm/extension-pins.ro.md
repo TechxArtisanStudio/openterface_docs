@@ -1,6 +1,6 @@
 ---
 title: "Pini de extensie"
-description: "Explorați potențialul pinilor de extensie ai Openterface Mini-KVM pentru dezvoltare hardware personalizată și proiecte open-source."
+description: Explorați potențialul pinilor de extensie ai Openterface Mini-KVM pentru dezvoltare hardware personalizată și proiecte open-source. Openterface Mini-KVM…
 keywords: "Mini-KVM pini de extensie, dezvoltare personalizată, modificare hardware, KVM open-source"
 ---
 

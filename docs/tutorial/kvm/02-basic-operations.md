@@ -1,3 +1,8 @@
+---
+title: "KVM Tutorial 02 — Basic Operations"
+description: "KVM Tutorial 02 — Basic Operations: Audience: Beginners to Intermediate — daily use features Open-source KVM-over-USB guides. Open-source KVM-over-USB guides."
+---
+
 # KVM Tutorial 02 — Basic Operations
 
 **Audience:** Beginners to Intermediate — daily use features

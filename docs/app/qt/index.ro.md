@@ -1,3 +1,8 @@
+---
+title: "Openterface QT pentru Windows și Linux"
+description: Acest document oferă o prezentare generală a unui software KVM (Tastatură, Video, Mouse) multi-platformă dezvoltat folosind Qt, compatibil atât cu sistemele…
+---
+
 # Openterface QT pentru Windows și Linux
 
 Acest document oferă o prezentare generală a unui software KVM (Tastatură, Video, Mouse) multi-platformă dezvoltat folosind Qt, compatibil atât cu sistemele de operare Linux cât și Windows. Software-ul facilitează controlul asupra unui dispozitiv țintă de pe un sistem gazdă, oferind o varietate de funcții accesibile prin bara de meniu și funcționalități suplimentare.

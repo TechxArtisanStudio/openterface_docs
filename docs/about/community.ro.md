@@ -1,3 +1,8 @@
+---
+title: "Comunitate"
+description: Bun venit în comunitatea noastră vibrantă! Conectați-vă cu noi pe mai multe platforme și alăturați-vă rețelei noastre în creștere de dezvoltatori,… Openterface.
+---
+
 # Comunitate
 
 Bun venit în comunitatea noastră vibrantă! Conectați-vă cu noi pe mai multe platforme și alăturați-vă rețelei noastre în creștere de dezvoltatori, utilizatori și entuziaști.

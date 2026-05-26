@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Noțiuni introductive"
-description: "Instalați aplicația KeyMod, conectați-vă la dispozitivul KeyMod și trimiteți prima apăsare a tastei în mai puțin de 5 minute."
+description: "Instalați aplicația KeyMod, conectați-vă la dispozitivul KeyMod și trimiteți prima apăsare a tastei în mai puțin de 5 minute. Documentație Openterface:…"
 keywords: "KeyMod începere, KeyMod configurare, KeyMod instalare, conectare KeyMod"
 ---
 

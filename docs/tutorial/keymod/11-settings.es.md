@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Configuración"
-description: "Configure KeyMod ajustes que incluyen conexión automática, temas, idioma, retardo de tecla BLE, sensibilidad touchpad y sistema operativo de destino."
+description: Configure KeyMod ajustes que incluyen conexión automática, temas, idioma, retardo de tecla BLE, sensibilidad touchpad y sistema operativo de destino.…
 keywords: "KeyMod configuración, conexión automática, tema, idioma, BLE retraso, touchpad sensibilidad"
 ---
 

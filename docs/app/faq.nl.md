@@ -1,3 +1,8 @@
+---
+title: "FAQs voor Apps"
+description: Willkommen bei den FAQs voor unsere Apps. Wenn Sie die Antwort niet finden, die Sie benötigen, senden Sie uns eine E-Mail an of treten Sie unserer Community…
+---
+
 # FAQs voor Apps
 
 Willkommen bei den FAQs voor unsere Apps. Wenn Sie die Antwort niet finden, die Sie benötigen, **senden Sie uns eine E-Mail an [info@openterface.com](mailto:info@openterface.com)** of **treten Sie unserer Community** auf [Discord](/discord) of [Reddit](/reddit) bei, um sich met unserem Entwicklungsteam en anderen Benutzern zu verbinden.

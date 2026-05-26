@@ -1,6 +1,6 @@
 ---
 title: "ハードウェアインストール"
-description: "Openterface KVM Extension for uConsole のステップバイステップハードウェアインストールガイド。詳細な安全ガイドラインとともに、uConsole の拡張スロットに拡張ボードを正しくインストールする方法を学びます。"
+description: Openterface KVM Extension for uConsole のステップバイステップハードウェアインストールガイド。詳細な安全ガイドラインとともに、uConsole の拡張スロットに拡張ボードを正しくインストールする方法を学びます。 KVM Extension は uConsole…
 keywords: "KVM拡張インストール, uConsoleハードウェアセットアップ, 拡張ボードインストール, uConsole拡張スロット, KVMハードウェアガイド, 物理インストール"
 ---
 

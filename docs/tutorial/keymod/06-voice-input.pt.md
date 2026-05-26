@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Entrada de voz"
-description: "Use voz para teclado com KeyMod. Suporta reconhecimento de fala do sistema, IA Whisper no dispositivo e vários idiomas."
+description: Use voz para teclado com KeyMod. Suporta reconhecimento de fala do sistema, IA Whisper no dispositivo e vários idiomas. Converta sua fala em pressionamentos…
 keywords: "KeyMod entrada de voz, fala para texto, Whisper, digitação por voz, teclado viva-voz"
 ---
 

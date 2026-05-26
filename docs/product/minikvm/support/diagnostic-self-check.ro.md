@@ -2,6 +2,7 @@
 titlu: „Openterface Mini-KVM - Ghid pentru verificare auto-diagnostic (macOS)”
 descriere: „Ghid pas cu pas pentru rularea verificărilor auto-diagnostice pe dispozitivul Openterface Mini-KVM cu aplicația macOS. Învață cum să testezi conexiunile USB, să detectezi probleme și să trimiti rapoarte de defecte către suport.”
 cuvinte cheie: „Openterface Mini-KVM, macOS, verificare auto-diagnostic, depanare KVM, diagnostic USB KVM, suport Mini-KVM, testare dispozitiv KVM, test conexiune USB, raport de defect KVM, ghid pentru depanare Mini-KVM, instrument diagnostic KVM, diagnostice server headless, unelte pentru depanare IT”
+description: "Acest ghid oferă instrucțiuni pas cu pas pentru rularea verificărilor auto-diagnostice pe dispozitivul Openterface Mini-KVM. Documentație Openterface:…"
 ---
 
 # Openterface Mini-KVM - Ghid pentru verificare auto-diagnostic (macOS)

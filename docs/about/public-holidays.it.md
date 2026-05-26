@@ -1,3 +1,8 @@
+---
+title: "Festività"
+description: Come azienda con sede a Hong Kong, seguiamo principalmente le festività della Cina continentale e di Hong Kong. Il nostro ufficio è chiuso in questi giorni.…
+---
+
 # Festività
 
 Come azienda con sede a Hong Kong, seguiamo principalmente le festività della **Cina continentale** e di **Hong Kong**. Il nostro ufficio è chiuso in questi giorni. Per gli orari regolari, consultare [Chi siamo](about-us.md).

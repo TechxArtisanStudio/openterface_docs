@@ -1,3 +1,8 @@
+---
+title: "Tutorial KVM 04 — Depanare"
+description: "Probleme frecvente și soluții pentru dispozitivele Openterface KVM. Documentație Openterface: configurare, întrebări frecvente și depanare KVM-over-USB."
+---
+
 
 # Tutorial KVM 04 — Depanare
 

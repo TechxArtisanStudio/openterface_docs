@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Teclado y ratón"
-description: "Aprenda a usar el teclado KeyMod y touchpad para escribir, enviar atajos y controlar el mouse de su computadora objetivo desde su teléfono."
+description: Aprenda a usar el teclado KeyMod y touchpad para escribir, enviar atajos y controlar el mouse de su computadora objetivo desde su teléfono. El modo Teclado…
 keywords: "KeyMod teclado, KeyMod ratón, touchpad, teclas modificadoras, atajos de teclado"
 ---
 

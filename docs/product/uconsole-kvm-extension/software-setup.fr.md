@@ -1,6 +1,6 @@
 ---
 title: "Configuration du logiciel"
-description: "Guide complet de configuration logicielle pour l'extension KVM Openterface pour uConsole."
+description: Guide complet de configuration logicielle pour l'extension KVM Openterface pour uConsole. L'application Openterface permet à votre uConsole de fonctionner…
 keywords: "installation Openterface, uConsole logiciel, configuration KVM, installation de l'application"
 ---
 

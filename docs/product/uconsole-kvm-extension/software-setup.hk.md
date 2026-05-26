@@ -1,6 +1,6 @@
 ---
 title: "軟件安裝"
-description: "Openterface KVM 擴展（適用於 uConsole）的完整軟件安裝與配置指南。"
+description: "軟件安裝: Openterface 應用使您的 uConsole 能作為 KVM 接口使用，可通過內置屏幕、鍵盤和軌跡球控制目標設備。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。"
 keywords: "Openterface 應用 安裝, uConsole 軟件, KVM 應用 安裝, uConsole 配置"
 ---
 

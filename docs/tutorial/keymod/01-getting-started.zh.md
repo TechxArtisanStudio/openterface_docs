@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 入门"
-description: "安装 KeyMod 应用、连接 KeyMod 设备，并在 5 分钟内发送第一个按键。"
+description: 安装 KeyMod 应用、连接 KeyMod 设备，并在 5 分钟内发送第一个按键。 安装 KeyMod 应用、连接 KeyMod 硬件，并在 5 分钟内发送第一个按键。
 keywords: "KeyMod 入门, KeyMod 设置, KeyMod 安装, 连接 KeyMod"
 ---
 

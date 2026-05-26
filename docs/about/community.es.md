@@ -1,3 +1,8 @@
+---
+title: "Comunidad"
+description: ¡Bienvenidos a nuestra vibrante comunidad! Conéctate con nosotros a través de múltiples plataformas y únete a nuestra creciente red de desarrolladores,…
+---
+
 # Comunidad
 
 ¡Bienvenidos a nuestra vibrante comunidad! Conéctate con nosotros a través de múltiples plataformas y únete a nuestra creciente red de desarrolladores, usuarios y entusiastas.

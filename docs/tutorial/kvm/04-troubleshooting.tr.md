@@ -1,3 +1,8 @@
+---
+title: "KVM Eğitimi 04 — Sorun Giderme"
+description: "Openterface KVM cihazları için yaygın sorunlar ve çözümler. Resmi Openterface belgeleri: kurulum, SSS ve KVM-over-USB sorun giderme. Openterface. Openterface."
+---
+
 
 # KVM Eğitimi 04 — Sorun Giderme
 

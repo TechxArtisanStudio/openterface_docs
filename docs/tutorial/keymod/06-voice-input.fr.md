@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutoriel - Saisie vocale"
-description: "Utilisez la voix au clavier avec KeyMod. Prend en charge la reconnaissance vocale du système, l'IA Whisper sur l'appareil et plusieurs langues."
+description: Utilisez la voix au clavier avec KeyMod. Prend en charge la reconnaissance vocale du système, l'IA Whisper sur l'appareil et plusieurs langues. Convertissez…
 keywords: "KeyMod saisie vocale, synthèse vocale, Whisper, saisie vocale, clavier mains libres"
 ---
 

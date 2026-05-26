@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Intrare vocală"
-description: "Folosiți voce la tastatură cu KeyMod. Acceptă recunoașterea vorbirii sistemului, AI Whisper pe dispozitiv și mai multe limbi."
+description: Folosiți voce la tastatură cu KeyMod. Acceptă recunoașterea vorbirii sistemului, AI Whisper pe dispozitiv și mai multe limbi. Transformați-vă vorbirea în…
 keywords: "KeyMod introducere vocală, vorbire în text, Whisper, tastare vocală, tastatură hands-free"
 ---
 

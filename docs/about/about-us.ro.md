@@ -1,3 +1,8 @@
+---
+title: "Despre noi"
+description: "s-a născut dintr-o idee simplă, dar puternică: Open – Transparență, colaborare open-source și deblocarea sistemelor închise. Enter – Acces fără probleme și…"
+---
+
 # Despre noi
 
 ## Marca și sloganul nostru

@@ -1,3 +1,8 @@
+---
+title: "Sobre nosotros"
+description: "nació de una idea simple pero poderosa: Open – Transparencia, colaboración de código abierto y desbloqueo de sistemas cerrados. Enter – Acceso sin problemas…"
+---
+
 # Sobre nosotros
 
 ## Nuestra marca y eslogan

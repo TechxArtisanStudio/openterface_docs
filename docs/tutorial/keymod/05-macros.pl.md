@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Poradnik - Makra"
-description: "Nagrywaj i odtwarzaj zautomatyzowane sekwencje klawiszy z KeyMod makrami, w tym modyfikatorami, opóźnieniami i harmonogramem."
+description: Nagrywaj i odtwarzaj zautomatyzowane sekwencje klawiszy z KeyMod makrami, w tym modyfikatorami, opóźnieniami i harmonogramem. Nagrywaj i odtwarzaj… Openterface.
 keywords: "KeyMod makra, automatyczne naciśnięcia klawiszy, harmonogram makr, tokeny makr, sekwencje klawiszy"
 ---
 

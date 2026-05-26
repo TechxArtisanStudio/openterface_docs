@@ -1,3 +1,8 @@
+---
+title: "Suport Tehnic"
+description: Înțelegem că este frustrant când lucrurile nu funcționează cum ne așteptăm, și suntem aici să vă ajutăm. Formularul nostru de rezolvare a problemelor vă va…
+---
+
 # Suport Tehnic
 
 Înțelegem că este frustrant când lucrurile nu funcționează cum ne așteptăm, și **suntem aici să vă ajutăm**. Formularul nostru de rezolvare a problemelor vă va ghida **pas cu pas** pentru a împărtăși detalii despre configurația voastră și problema cu care vă confruntați. Cu aceste informații, putem înțelege mai bine problema și vă putem susține mai eficient.

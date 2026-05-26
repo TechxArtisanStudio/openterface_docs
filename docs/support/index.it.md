@@ -1,3 +1,8 @@
+---
+title: "Support Tecnico"
+description: Capiamo che è frustrante quando le cose non funzionano come previsto, e siamo qui per aiutare. Il nostro modulo di risoluzione dei problemi vi guiderà passo…
+---
+
 # Support Tecnico
 
 Capiamo che è frustrante quando le cose non funzionano come previsto, e **siamo qui per aiutare**. Il nostro modulo di risoluzione dei problemi vi guiderà **passo dopo passo** per condividere i dettagli della vostra configurazione e del problema che state affrontando. Con queste informazioni, possiamo comprendere meglio il problema e supportarvi più efficacemente.

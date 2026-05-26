@@ -1,3 +1,8 @@
+---
+title: "Sobre nós"
+description: "nascemos de uma ideia simples, porém poderosa: Open – Transparência, colaboração open source e desbloqueio de sistemas fechados. Enter – Acesso sem… Openterface"
+---
+
 # Sobre nós
 
 ## Nossa marca e slogan

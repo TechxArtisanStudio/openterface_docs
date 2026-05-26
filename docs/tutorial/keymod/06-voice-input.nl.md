@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Spraakinvoer"
-description: "Gebruik stem-naar-toetsenbord met KeyMod. Ondersteunt systeemspraakherkenning, Whisper AI op het apparaat en meerdere talen."
+description: Gebruik stem-naar-toetsenbord met KeyMod. Ondersteunt systeemspraakherkenning, Whisper AI op het apparaat en meerdere talen. Zet uw spraak om in… Openterface.
 keywords: "KeyMod spraakinvoer, spraak naar tekst, Whisper, spraakgestuurd typen, handsfree toetsenbord"
 ---
 

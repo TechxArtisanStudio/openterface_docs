@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 数字键盘"
-description: "使用 KeyMod 数字键盘进行数据录入，支持 HID 小键盘键码与应用专用网格。"
+description: 使用 KeyMod 数字键盘进行数据录入，支持 HID 小键盘键码与应用专用网格。 完整数字键盘，用于数据录入。每个按键发送对应的 HID 小键盘键码。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
 keywords: "KeyMod 数字键盘, 小键盘, HID numpad, 数据录入"
 ---
 

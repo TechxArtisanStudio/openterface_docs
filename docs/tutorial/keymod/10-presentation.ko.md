@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 튜토리얼 - 프레젠테이션"
-description: "KeyMod을 프레젠테이션 리모컨으로 사용하여 휴대폰에서 슬라이드를 제어하세요. PowerPoint, Keynote, Google 슬라이드 등을 지원합니다."
+description: KeyMod을 프레젠테이션 리모컨으로 사용하여 휴대폰에서 슬라이드를 제어하세요. PowerPoint, Keynote, Google 슬라이드 등을 지원합니다. 휴대폰에서 슬라이드쇼를 제어하세요. 클릭커가 필요하지 않습니다.
 keywords: "KeyMod 프리젠테이션, 슬라이드 리모콘, PowerPoint 리모트, Keynote 리모콘, 프리젠테이션 타이머"
 ---
 

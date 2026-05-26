@@ -1,3 +1,8 @@
+---
+title: "Openterface KVM-Go — Przewodnik recenzji (Prototyp inżynieryjny)"
+description: Dziękujemy za poświęcenie czasu na test naszego nadchodzącego produktu . Ta jednostka to prototyp inżynieryjny, a nasz firmware i oprogramowanie szybko się…
+---
+
 # Openterface KVM-Go — Przewodnik recenzji (Prototyp inżynieryjny)
 
 ## Przegląd

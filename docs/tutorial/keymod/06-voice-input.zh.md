@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 语音输入"
-description: "使用 KeyMod 语音转键盘。支持系统语音识别、设备端 Whisper AI 及多语言。"
+description: 使用 KeyMod 语音转键盘。支持系统语音识别、设备端 Whisper AI 及多语言。 将语音转换为发送到目标电脑的按键——免提输入与无障碍使用。 1. 点击 麦克风 按钮 2. 说出要输入的内容 3. 语音转换为文字 4. 文字作为按键发送到目标电脑
 keywords: "KeyMod 语音输入, 语音转文字, Whisper, 语音输入, 免提键盘"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Openterface KVM Extension for uConsole 常见问题
-description: 关于uConsole KVM Extension的常见问题，涵盖功能、兼容性、故障排除和安装。
+description: 关于uConsole KVM Extension的常见问题，涵盖功能、兼容性、故障排除和安装。 欢迎来到我们的Openterface KVM Extension for uConsole常见问题页面。 如果您没有找到需要的信息，请发送邮件至 或加入我们的社区 。 ⚠️…
 keywords: KVM扩展, uConsole KVM, 故障排除, 视频捕获, USB HID, 兼容性, 安装
 ---
 

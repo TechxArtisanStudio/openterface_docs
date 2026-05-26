@@ -1,6 +1,6 @@
 ---
 title: "软件安装"
-description: "Openterface KVM 扩展（适用于 uConsole）的完整软件安装与配置指南。"
+description: Openterface KVM 扩展（适用于 uConsole）的完整软件安装与配置指南。 Openterface 应用使您的 uConsole 能作为 KVM 接口使用，可通过内置屏幕、键盘和轨迹球控制目标设备。 请参阅我们的 获取详细步骤。
 keywords: "Openterface 应用 安装, uConsole 软件, KVM 应用 安装, uConsole 配置"
 ---
 
@@ -30,7 +30,6 @@ Openterface 应用使您的 uConsole 能作为 KVM 接口使用，可通过内�
    sudo apt install ./openterfaceqt_*_arm64.deb
    ```
    *(如文件名不同请替换为实际文件名。)*
-
 ---
 
 ### **选项2：Flatpak 安装**

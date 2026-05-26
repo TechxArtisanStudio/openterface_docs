@@ -1,6 +1,6 @@
 ---
 title: "Broches d’extension"
-description: "Explorez le potentiel des broches d’extension de l’Openterface Mini-KVM pour le développement matériel personnalisé et les projets open source."
+description: Explorez le potentiel des broches d’extension de l’Openterface Mini-KVM pour le développement matériel personnalisé et les projets open source. Openterface…
 keywords: "Mini-KVM broches d’extension, développement personnalisé, modification matérielle, KVM open source"
 ---
 

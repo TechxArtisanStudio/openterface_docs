@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: "Openterface KVM-GO：Beta 評測指南: 您好！ 再次感謝您加入我們的 beta 計劃。我們非常期待您與早期訪問小組一起試用 KVM-GO。這個小東西基本上就是一個鑰匙扣大小的 KVM，讓您無需任何常見麻煩即可連接無頭設備。 KVM-GO（HDMI、DP 和 VGA… —…"
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

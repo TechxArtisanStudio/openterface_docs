@@ -1,3 +1,8 @@
+---
+title: "KVM-GO Review Guide"
+description: "Engineering prototype review guide for Openterface KVM-GO beta testers: test scope, reporting format, known limitations, and feedback channels for pre-launch hardware evaluation."
+---
+
 # Openterface KVM-Go — Review Guide (Engineering Prototype)
 
 ## Overview

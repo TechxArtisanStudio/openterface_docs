@@ -1,3 +1,8 @@
+---
+title: "FAQs для Apps"
+description: Willkommen bei den FAQs для unsere Apps. Wenn Sie die Antwort не finden, die Sie benötigen, senden Sie uns eine E-Mail an или treten Sie unserer Community…
+---
+
 # FAQs для Apps
 
 Willkommen bei den FAQs для unsere Apps. Wenn Sie die Antwort не finden, die Sie benötigen, **senden Sie uns eine E-Mail an [info@openterface.com](mailto:info@openterface.com)** или **treten Sie unserer Community** auf [Discord](/discord) или [Reddit](/reddit) bei, um sich с unserem Entwicklungsteam и anderen Benutzern zu verbinden.

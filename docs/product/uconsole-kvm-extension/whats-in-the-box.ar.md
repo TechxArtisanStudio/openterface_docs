@@ -1,6 +1,6 @@
 ---
 title: "Was ist in der Box"
-description: "Entdecken Sie, was مع der Openterface KVM Extension for uConsole enthalten ist. Vollständiger Paketinhalt لـ nahtlose التثبيت و sofortige Verwendung."
+description: Entdecken Sie, was مع der Openterface KVM Extension for uConsole enthalten ist. Vollständiger Paketinhalt لـ nahtlose التثبيت و sofortige Verwendung.…
 keywords: "KVM Extension Paket, uConsole KVM, enthaltene Inhalte, Paketinhalt, التثبيتszubehör, KVM Extension Zubehör"
 ---
 

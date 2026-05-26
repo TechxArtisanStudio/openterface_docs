@@ -1,3 +1,8 @@
+---
+title: "Politique"
+description: "Nos politiques régissent notre fonctionnement, la protection de vos données et le traitement des achats. Documentation Openterface : configuration, FAQ et…"
+---
+
 # Politique
 
 Nos politiques régissent notre fonctionnement, la protection de vos données et le traitement des achats.

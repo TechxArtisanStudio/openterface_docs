@@ -1,3 +1,8 @@
+---
+title: "Termini di Servizio"
+description: "(Versione 2 – Febbraio 2026) Questo sito web è gestito da Openterface, un marchio di TechxArtisan Limited (\"TechxArtisan\"), che ha succeduto alle operazioni…"
+---
+
 # Termini di Servizio
 
 **(Versione 2 – Febbraio 2026)**

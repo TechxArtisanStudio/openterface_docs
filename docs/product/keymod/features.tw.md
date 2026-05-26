@@ -1,6 +1,6 @@
 ---
 title: "功能與規格"
-description: "KeyMod 系列功能：藍牙 HID 鍵盤和鼠標、USB + 藍牙雙連接、自定義配置、宏、手柄模式。適用於 Android 和 iPadOS 的開源移動應用。"
+description: KeyMod 系列功能：藍牙 HID 鍵盤和鼠標、USB + 藍牙雙連接、自定義配置、宏、手柄模式。適用於 Android 和 iPadOS 的開源移動應用。 KeyMod 目前處於預發佈開發階段。我們正在完善硬件和軟件。在訂閱以瞭解最新進展和發佈通知。 注意： 功能、規格和設計在開發過程中仍可能發生變化。
 keywords: "KeyMod 功能, HID 模擬器, 藍牙鍵盤, USB 鍵盤, 可編程按鈕, 手柄, 宏, 開源, CH9329"
 ---
 

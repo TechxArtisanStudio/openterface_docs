@@ -1,3 +1,8 @@
+---
+title: "Termeni de Serviciu"
+description: "(Versiunea 2 – Februarie 2026) Acest site web este operat de Openterface, o marcă a TechxArtisan Limited („TechxArtisan\"), care a preluat operațiunile…"
+---
+
 # Termeni de Serviciu
 
 **(Versiunea 2 – Februarie 2026)**

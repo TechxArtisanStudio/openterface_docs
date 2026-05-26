@@ -1,6 +1,6 @@
 ---
 title: "Openterface Mini-KVM (Windows) - 硬件診斷自檢指南"
-description: "在 Windows 版 Openterface 應用中運行硬件診斷自檢的逐步指南。學習如何測試 USB 連接，檢測問題，並將診斷報告發送給支持團隊。"
+description: "Openterface Mini-KVM (Windows) - 硬件診斷自檢指南: 本指南介紹如何在 Windows 版 Openterface 應用中運行硬件診斷自檢，以及如何在檢測到問題時將診斷報告發送給支持團隊。 — support/diagnostic-self-check-windows"
 keywords: "Openterface Mini-KVM, Windows, 硬件診斷, 診斷自檢, KVM 故障排除, USB KVM 診斷, Mini-KVM 支持, KVM 設備測試, Windows KVM, KVM 缺陷報告, Mini-KVM 故障排除指南"
 ---
 

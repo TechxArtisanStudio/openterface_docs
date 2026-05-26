@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Handleiding - Aan de slag"
-description: "Installeer de KeyMod-app, maak verbinding met uw KeyMod-apparaat en verzend binnen 5 minuten uw eerste toetsaanslag."
+description: "Installeer de KeyMod-app, maak verbinding met uw KeyMod-apparaat en verzend binnen 5 minuten uw eerste toetsaanslag. Officiële Openterface-documentatie:…"
 keywords: "KeyMod aan de slag, KeyMod instellen, KeyMod installatie, aansluiten KeyMod"
 ---
 

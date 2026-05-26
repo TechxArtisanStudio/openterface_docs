@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Per iniziare"
-description: "Installa l'app KeyMod, connettiti al tuo dispositivo KeyMod e invia la prima sequenza di tasti in meno di 5 minuti."
+description: "Installa l'app KeyMod, connettiti al tuo dispositivo KeyMod e invia la prima sequenza di tasti in meno di 5 minuti. Documentazione Openterface:… Openterface."
 keywords: "KeyMod iniziare, KeyMod configurazione, KeyMod installazione, connessione KeyMod"
 ---
 

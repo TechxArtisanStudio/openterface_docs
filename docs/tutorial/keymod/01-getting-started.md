@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Getting Started"
-description: "Install the KeyMod app, connect to your KeyMod device, and send your first keystroke in under 5 minutes."
+description: "KeyMod Tutorial - Getting Started: Install the KeyMod app, connect to your KeyMod hardware, and send your first keystroke in under 5 minutes. Open-source…"
 keywords: "KeyMod getting started, KeyMod setup, KeyMod installation, connect KeyMod"
 ---
 

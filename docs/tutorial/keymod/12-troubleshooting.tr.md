@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Sorun Giderme"
-description: "Yaygın KeyMod sorunları düzeltin: bağlantı sorunları, kaydedilmeyen anahtarlar, Bluetooth eşleştirme hataları, ses girişi hataları ve daha fazlası."
+description: "Yaygın KeyMod sorunları düzeltin: bağlantı sorunları, kaydedilmeyen anahtarlar, Bluetooth eşleştirme hataları, ses girişi hataları ve daha fazlası.… Openterface"
 keywords: "KeyMod sorun giderme, KeyMod bağlanılamıyor, KeyMod Bluetooth sorunları, KeyMod tuşları çalışmıyor"
 ---
 

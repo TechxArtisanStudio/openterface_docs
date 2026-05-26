@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Gamepad"
-description: "Utilizați KeyMod ca controler de joc virtual cu aspecte personalizabile pentru jocuri, emulare retro și testare a jocului."
+description: Utilizați KeyMod ca controler de joc virtual cu aspecte personalizabile pentru jocuri, emulare retro și testare a jocului. Transformă-ți telefonul într-un…
 keywords: "KeyMod gamepad, controler virtual, controler de joc, mapare WASD, stick analogic"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Keyboard & Mouse"
-description: "Learn how to use the KeyMod keyboard and touchpad to type, send shortcuts, and control your target computer's mouse from your phone."
+description: "Use KeyMod keyboard and touchpad to type, send shortcuts, and control the target PC mouse from your phone. Official Openterface guide to the primary KeyMod input mode."
 keywords: "KeyMod keyboard, KeyMod mouse, touchpad, modifier keys, keyboard shortcuts"
 ---
 

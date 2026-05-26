@@ -1,3 +1,8 @@
+---
+title: "Community"
+description: Willkommen in unserer lebendigen Community! Verbinden Sie sich z uns o mehrere Plattformen i treten Sie unserem wachsenden Netzwerk von Entwicklern,… Openterfac
+---
+
 # Community
 
 Willkommen in unserer lebendigen Community! Verbinden Sie sich z uns o mehrere Plattformen i treten Sie unserem wachsenden Netzwerk von Entwicklern, Benutzern i Enthusiasten bei.

@@ -1,6 +1,6 @@
 ---
 title: "확장 핀"
-description: "Openterface Mini-KVM의 확장 핀을 통해 맞춤 하드웨어 개발과 오픈 소스 프로젝트의 가능성을 탐색하세요."
+description: Openterface Mini-KVM의 확장 핀을 통해 맞춤 하드웨어 개발과 오픈 소스 프로젝트의 가능성을 탐색하세요. Openterface Mini-KVM에는 고급 개발 및 실험을 위한 확장 핀이 제공됩니다. 이러한 핀은 기본 케이스 구성에서는 노출되지 않습니다. 1. 기기를…
 keywords: "Mini-KVM 확장 핀, 커스텀 개발, 하드웨어 개조, 오픈 소스 KVM"
 ---
 

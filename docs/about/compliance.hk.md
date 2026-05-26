@@ -1,5 +1,5 @@
 ---
-description: "Openterface Mini-KVM的合規認證：OSHWA認證（UID CN000015）、OSI批准的AGPL-3.0許可證，以及CE、UKCA、WEEE和RoHS合規。完全開源硬件和軟件，提供完整文檔。"
+description: "合規: 我們的Openterface設備應用程序採用AGPL-3.0許可證，這是開源倡議®批准的許可證。OSI標誌®是的商標，我們自豪地遵守開源定義。 我們的由TechxArtisan積極開發和維護。如果您有興趣貢獻並想成為創新開發團隊的一員，請加入我們的Discord社區或立即！…"
 keywords: "開源硬件, OSHWA認證, OSI合規, AGPL-3.0許可證, CE認證, UKCA標誌, WEEE合規, RoHS標準, 硬件認證, 開源文檔, TechxArtisan, 硬件合規, Mini-KVM認證, 開源硬件設計"
 ---
 

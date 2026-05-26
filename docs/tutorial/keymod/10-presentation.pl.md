@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Samouczek - Prezentacja"
-description: "Użyj KeyMod jako pilota do prezentacji i steruj slajdami za pomocą telefonu. Obsługuje slajdy PowerPoint, Keynote, Google i nie tylko."
+description: Użyj KeyMod jako pilota do prezentacji i steruj slajdami za pomocą telefonu. Obsługuje slajdy PowerPoint, Keynote, Google i nie tylko. Steruj pokazem…
 keywords: "Prezentacja KeyMod, pilot slajdów, pilot PowerPoint, pilot Keynote, timer prezentacji"
 ---
 

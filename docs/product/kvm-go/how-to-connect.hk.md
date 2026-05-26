@@ -1,6 +1,6 @@
 ---
 title: "如何連接"
-description: "設置 Openterface KVM-Go 的分步指南。瞭解如何使用內置視頻接口連接主機和目標設備，體驗超簡單的直接插入式連接。"
+description: 如何連接 — kvm-go / how to connect (KVM-GO). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: "KVM-Go 設置, 超緊湊 KVM 設置, 內置 HDMI 連接, KVM 安裝指南, 鑰匙扣 KVM 設置, USB KVM 連接, 無顯示器設置, 便攜式 KVM 設置"
 ---
 

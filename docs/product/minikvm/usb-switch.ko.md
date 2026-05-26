@@ -1,6 +1,6 @@
 ---
 title: "전환 가능한 USB 포트"
-description: "Openterface Mini-KVM의 듀얼 하드웨어-소프트웨어 USB 전환 시스템에 대해 알아보세요. 네 가지 작동 상태, 안전 가이드라인 및 향후 원격 액세스 기능을 이해하세요."
+description: Openterface Mini-KVM의 듀얼 하드웨어-소프트웨어 USB 전환 시스템에 대해 알아보세요. 네 가지 작동 상태, 안전 가이드라인 및 향후 원격 액세스 기능을 이해하세요. mini-KVM 장치는 호스트 또는 대상 컴퓨터 중 하나에 연결할 수 있는 단일 USB-A 2.0…
 keywords: "USB 전환, KVM 스위치, 하드웨어 스위치, 소프트웨어 스위치, USB 포트 제어, USB over KVM, IP over KVM, 원격 액세스, USB 장치 관리, 컴퓨터 주변 장치, USB 전원 관리"
 ---
 

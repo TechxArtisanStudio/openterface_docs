@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 手柄"
-description: "將 KeyMod 用作可自定義佈局的虛擬遊戲控制器，用於遊戲、復古模擬與遊戲測試。"
+description: "KeyMod 教程 - 手柄: 將手機變成虛擬遊戲控制器，用於遊戲、復古模擬與遊戲測試。 手柄提供完整控制器佈局：方向鍵、動作鍵、肩鍵、模擬搖桿與 Start/Select。 — keymod/08-gamepad"
 keywords: "KeyMod 手柄, 虛擬控制器, 遊戲控制器, WASD 映射, 模擬搖桿"
 ---
 

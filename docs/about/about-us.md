@@ -1,3 +1,8 @@
+---
+title: "About Us"
+description: "About Us: was created with a simple but powerful idea: Open – Transparency, open-source collaboration, and unlocking closed systems. Enter – Seamless…"
+---
+
 # About Us
 
 ## Our Brand & Slogan

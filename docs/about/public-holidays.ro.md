@@ -1,3 +1,8 @@
+---
+title: "Sărbători legale"
+description: Ca companie cu sediul în Hong Kong, respectăm în principal sărbătorile din China continentală și Hong Kong. Biroul nostru este închis în aceste zile. Pentru…
+---
+
 # Sărbători legale
 
 Ca companie cu sediul în Hong Kong, respectăm în principal sărbătorile din **China continentală** și **Hong Kong**. Biroul nostru este închis în aceste zile. Pentru programul nostru regulat, consultați [Despre noi](about-us.md).

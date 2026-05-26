@@ -1,3 +1,8 @@
+---
+title: "Richtlinien"
+description: "Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten en die Abwicklung von Käufen. Officiële Openterface-documentatie: installatie, FAQ en…"
+---
+
 # Richtlinien
 
 Unsere Richtlinien regeln unseren Betrieb, den Schutz Ihrer Daten en die Abwicklung von Käufen.

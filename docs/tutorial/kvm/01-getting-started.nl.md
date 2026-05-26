@@ -1,3 +1,8 @@
+---
+title: "KVM-tutorial 01 — Aan de slag"
+description: "Doelgroep: Beginners — eerste gebruikers van Openterface KVM-apparaten Officiële Openterface-documentatie: installatie, FAQ en KVM-over-USB probleemoplossing."
+---
+
 # KVM-tutorial 01 — Aan de slag
 
 **Doelgroep:** Beginners — eerste gebruikers van Openterface KVM-apparaten

@@ -1,3 +1,8 @@
+---
+title: "Conditions d'Utilisation"
+description: (Version 2 – Février 2026) Ce site web est exploité par Openterface, une marque de TechxArtisan Limited (« TechxArtisan »), qui a succédé aux opérations…
+---
+
 # Conditions d'Utilisation
 
 **(Version 2 – Février 2026)**

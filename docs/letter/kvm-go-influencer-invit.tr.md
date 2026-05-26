@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: Merhaba! Beta programına katıldığınız için tekrar teşekkürler. KVM-GO'yu erken erişim grubumuzla denemenizden gerçekten heyecan duyuyoruz. Bu küçük cihaz,…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}

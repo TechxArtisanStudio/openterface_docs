@@ -1,3 +1,8 @@
+---
+title: "利用規約"
+description: （バージョン 2 – 2026年2月） 本ウェブサイトは、広州比尔奥科技有限公司の事業を引き継いだ TechxArtisan Limited（「TechxArtisan」）のブランドである Openterface が運営しています。「当社」「弊社」および「当社の」とは Openterface を指します。…
+---
+
 # 利用規約
 
 **（バージョン 2 – 2026年2月）**

@@ -1,3 +1,8 @@
+---
+title: "Samouczek KVM 03 — Zaawansowane funkcje"
+description: "Grupa docelowa: Średniozaawansowani do ekspertów — funkcje power userów i konfiguracja Oficjalna dokumentacja Openterface: konfiguracja, FAQ i rozwiązywanie…"
+---
+
 
 # Samouczek KVM 03 — Zaawansowane funkcje
 

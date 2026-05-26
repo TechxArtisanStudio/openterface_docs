@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Poradnik - Gamepad"
-description: "Użyj KeyMod jako wirtualnego kontrolera gier z konfigurowalnymi układami do gier, emulacji retro i testowania gier."
+description: Użyj KeyMod jako wirtualnego kontrolera gier z konfigurowalnymi układami do gier, emulacji retro i testowania gier. Zmień swój telefon w wirtualny kontroler…
 keywords: "gamepad KeyMod, kontroler wirtualny, kontroler gier, mapowanie WASD, drążek analogowy"
 ---
 

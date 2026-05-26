@@ -1,3 +1,8 @@
+---
+title: "Mise à niveau du firmware KVM-Go"
+description: KVM-Go utilise la puce CH32V208 de WCH pour l'émulation clavier et souris. Actuellement, le flashage du firmware nécessite l'outil de programmation officiel…
+---
+
 # Mise à niveau du firmware KVM-Go
 
 ## Aperçu

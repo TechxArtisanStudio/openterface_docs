@@ -1,6 +1,6 @@
 ---
 title: "Erweiterungs-Pins"
-description: "Entdecken Sie das Potenzial der Erweiterungs-Pins des Openterface Mini-KVM für kundenspezifische Hardwareentwicklung und Open-Source-Projekte."
+description: Entdecken Sie das Potenzial der Erweiterungs-Pins des Openterface Mini-KVM für kundenspezifische Hardwareentwicklung und Open-Source-Projekte. Der… Openterface.
 keywords: "Mini-KVM Erweiterungs-Pins, kundenspezifische Entwicklung, Hardware-Modifikation, Open-Source KVM"
 ---
 

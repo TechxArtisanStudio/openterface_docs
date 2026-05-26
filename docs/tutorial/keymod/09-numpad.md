@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Numpad"
-description: "Use the KeyMod numeric keypad for data entry, with HID numpad key codes and application-specific grids."
+description: "KeyMod Tutorial - Numpad: A full numeric keypad for data entry. Each key sends the corresponding HID numpad key code. Open-source KVM-over-USB guides."
 keywords: "KeyMod numpad, numeric keypad, HID numpad, data entry"
 ---
 

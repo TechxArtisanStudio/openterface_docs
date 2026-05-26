@@ -1,3 +1,8 @@
+---
+title: "Reseñas y Medios"
+description: "Reseñas y Medios: --8<-- \"product/minikvm/reviews/social-posts.html\" Documentación Openterface: configuración, preguntas frecuentes y soporte KVM-over-USB."
+---
+
 # Reseñas y Medios
 
 ## Cobertura mediática

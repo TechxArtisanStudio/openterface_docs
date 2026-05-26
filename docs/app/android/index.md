@@ -1,3 +1,8 @@
+---
+title: "Openterface Android"
+description: "Openterface Android app for Mini-KVM and KVM-GO: stream target HDMI video on your phone, send keyboard and mouse over USB, and control headless devices without a network."
+---
+
 # Openterface Android
 
 ## Overview

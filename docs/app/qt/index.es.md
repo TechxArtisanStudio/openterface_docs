@@ -1,3 +1,8 @@
+---
+title: "Openterface QT para Win y Linux"
+description: Este documento proporciona una visión general de un software KVM (Teclado, Video, Ratón) multiplataforma desarrollado utilizando Qt, compatible con los…
+---
+
 # Openterface QT para Win y Linux
 
 Este documento proporciona una visión general de un software KVM (Teclado, Video, Ratón) multiplataforma desarrollado utilizando Qt, compatible con los sistemas operativos Linux y Windows. El software facilita el control de un dispositivo objetivo desde un sistema anfitrión, ofreciendo una variedad de características accesibles a través de su barra de menú y funcionalidades adicionales.

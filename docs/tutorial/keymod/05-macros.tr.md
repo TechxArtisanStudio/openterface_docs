@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Eğitim - Makrolar"
-description: "Değiştiriciler, gecikmeler ve planlama dahil olmak üzere otomatik tuş dizilerini KeyMod makrolarıyla kaydedin ve yeniden oynatın."
+description: Değiştiriciler, gecikmeler ve planlama dahil olmak üzere otomatik tuş dizilerini KeyMod makrolarıyla kaydedin ve yeniden oynatın. Tek bir dokunuşla otomatik…
 keywords: "KeyMod makrolar, otomatik tuş vuruşları, makro zamanlayıcı, makro belirteçleri, tuş dizileri"
 ---
 

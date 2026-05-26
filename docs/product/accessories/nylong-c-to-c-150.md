@@ -1,6 +1,6 @@
 ---
 title: "Premium Nylon USB-C to USB-C Cable with 240W Fast Charging"
-description: "Experience high-speed data transfer and fast charging with our premium nylon USB-C to USB-C cable, designed for durability and performance."
+description: "Premium nylon USB-C to USB-C cable for Openterface setups: fast charging and high-speed data, rugged jacket, and reliable pairing with Mini-KVM, KVM-GO, and mobile host devices."
 keywords: "USB-C cable, nylon USB-C, fast charging cable, 240W charging, high-speed data transfer"
 ---
 

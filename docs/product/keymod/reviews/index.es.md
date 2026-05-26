@@ -1,3 +1,8 @@
+---
+title: "Reseñas y medios"
+description: KeyMod está actualmente en pre-lanzamiento. La cobertura de medios y los testimonios aparecerán aquí cuando el producto se lance y reciba cobertura.… Openterfac
+---
+
 # Reseñas y medios
 
 KeyMod está actualmente en pre-lanzamiento. La cobertura de medios y los testimonios aparecerán aquí cuando el producto se lance y reciba cobertura.

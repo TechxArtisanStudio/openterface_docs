@@ -1,3 +1,8 @@
+---
+title: "FAQ per le App"
+description: Benvenuti alle FAQ per le nostre app. Se non trovate la risposta di cui avete bisogno, inviateci un'email a o unitevi alla nostra comunità su o per… Openterface
+---
+
 # FAQ per le App
 
 Benvenuti alle FAQ per le nostre app. Se non trovate la risposta di cui avete bisogno, **inviateci un'email a [info@openterface.com](mailto:info@openterface.com)** o **unitevi alla nostra comunità** su [Discord](/discord) o [Reddit](/reddit) per connettervi con il nostro team di sviluppo e altri utenti.

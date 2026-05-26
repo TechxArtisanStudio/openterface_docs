@@ -1,6 +1,6 @@
 ---
 title: "Pin di estensione"
-description: "Esplora il potenziale dei pin di estensione di Openterface Mini-KVM per lo sviluppo hardware personalizzato e i progetti open source."
+description: Esplora il potenziale dei pin di estensione di Openterface Mini-KVM per lo sviluppo hardware personalizzato e i progetti open source. Openterface Mini-KVM…
 keywords: "Mini-KVM pin di estensione, sviluppo personalizzato, modifica hardware, KVM open source"
 ---
 

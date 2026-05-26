@@ -1,3 +1,8 @@
+---
+title: "KVM教程 03 — 高級功能"
+description: 受眾： 中級至專家 — 高級用戶功能與配置 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 Openterface. Openterface.
+---
+
 
 # KVM教程 03 — 高級功能
 

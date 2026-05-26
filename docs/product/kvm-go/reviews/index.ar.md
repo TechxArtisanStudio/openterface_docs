@@ -1,3 +1,8 @@
+---
+title: "Bewertungen & Medien"
+description: "Bewertungen & Medien — kvm-go / reviews (KVM-GO). وثائق Openterface الرسمية: الإعداد والأسئلة الشائعة واستكشاف أخطاء KVM-over-USB."
+---
+
 # Bewertungen & Medien
 
 ## Medienberichte

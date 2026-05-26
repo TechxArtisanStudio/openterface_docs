@@ -1,6 +1,6 @@
 ---
 title: "如何连接"
-description: "KeyMod 系列设置分步指南。通过 USB 或蓝牙将手机连接到 KeyMod，然后将 KeyMod 连接到目标设备以实现键盘和鼠标控制。"
+description: KeyMod 系列设置分步指南。通过 USB 或蓝牙将手机连接到 KeyMod，然后将 KeyMod 连接到目标设备以实现键盘和鼠标控制。 KeyMod 将您的手机（运行 KeyMod 应用）连接到目标设备。您的手机充当键盘和触控板；KeyMod 向目标设备模拟 HID 输入。 连接流程： 手机（KeyMod…
 keywords: "KeyMod 设置, 如何连接 KeyMod, 手机键盘设置, Bluetooth HID, USB HID"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Configurazione del software"
-description: "Guida completa alla configurazione del software per l'estensione KVM Openterface per uConsole."
+description: Guida completa alla configurazione del software per l'estensione KVM Openterface per uConsole. L'app Openterface consente alla tua uConsole di funzionare…
 keywords: "installazione Openterface, uConsole software, configurazione KVM, installazione app"
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Openterface QT for Win & Linux"
+description: 本文檔提供了一個跨平台KVM（鍵盤、視頻、鼠標）軟件的概述，該軟件使用Qt開發，兼容Linux和Windows操作系統。該軟件便於從主機系統控制目標設備，通過其菜單欄和各種附加功能提供多種功能。 首選項菜單允許用户通過包含四個頁面的對話框自定義設置：<br
+---
+
 # Openterface QT for Win & Linux
 
 本文檔提供了一個跨平台KVM（鍵盤、視頻、鼠標）軟件的概述，該軟件使用Qt開發，兼容Linux和Windows操作系統。該軟件便於從主機系統控制目標設備，通過其菜單欄和各種附加功能提供多種功能。

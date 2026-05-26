@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macros"
-description: "Record and replay automated key sequences with KeyMod macros, including modifiers, delays, and scheduling."
+description: "KeyMod Tutorial - Macros: Record and replay automated key sequences with a single tap. A macro is a recorded sequence of keystrokes that you can replay.…"
 keywords: "KeyMod macros, automated keystrokes, macro scheduler, macro tokens, key sequences"
 ---
 

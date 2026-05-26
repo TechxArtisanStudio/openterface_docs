@@ -1,6 +1,6 @@
 ---
 title: "Oprogramowanie-Setup"
-description: "Vollständige Przewodnik zur Oprogramowanieeinrichtung dla die Openterface KVM-Erweiterung dla uConsole."
+description: Vollständige Przewodnik zur Oprogramowanieeinrichtung dla die Openterface KVM-Erweiterung dla uConsole. Die Openterface App ermöglicht Ihrer uConsole, als…
 keywords: "Openterface App Instalacja, uConsole Oprogramowanie, KVM App Instalacja, uConsole Konfiguration"
 ---
 

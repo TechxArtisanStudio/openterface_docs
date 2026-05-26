@@ -1,6 +1,6 @@
 ---
 title: "KeyMod Tutorial - Macros"
-description: "Grave e reproduza sequências de teclas automatizadas com macros KeyMod, incluindo modificadores, atrasos e agendamento."
+description: "Grave e reproduza sequências de teclas automatizadas com macros KeyMod, incluindo modificadores, atrasos e agendamento. Documentação Openterface:… Openterface."
 keywords: "KeyMod macros, teclas automatizadas, agendador de macro, tokens de macro, sequências de teclas"
 ---
 

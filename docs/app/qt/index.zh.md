@@ -1,3 +1,8 @@
+---
+title: "Openterface QT for Win & Linux"
+description: 本文档提供了一个跨平台KVM（键盘、视频、鼠标）软件的概述，该软件使用Qt开发，兼容Linux和Windows操作系统。该软件便于从主机系统控制目标设备，通过其菜单栏和各种附加功能提供多种功能。 首选项菜单允许用户通过包含四个页面的对话框自定义设置：<br
+---
+
 # Openterface QT for Win & Linux
 
 本文档提供了一个跨平台KVM（键盘、视频、鼠标）软件的概述，该软件使用Qt开发，兼容Linux和Windows操作系统。该软件便于从主机系统控制目标设备，通过其菜单栏和各种附加功能提供多种功能。

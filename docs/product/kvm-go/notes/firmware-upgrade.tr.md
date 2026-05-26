@@ -1,3 +1,8 @@
+---
+title: "KVM-Go Firmware Güncelleme"
+description: KVM-Go, klavye ve fare emülasyonu için WCH'nin CH32V208 çipini kullanır. Şu anda firmware yazma, yalnızca Windows için kullanılabilen WCH'nin resmi… Openterface
+---
+
 # KVM-Go Firmware Güncelleme
 
 ## Genel Bakış

@@ -1,6 +1,6 @@
 ---
 title: "Openterface KeyMod 系列 | 将手机变成智能键盘"
-description: "KeyMod 系列是一款紧凑的 USB + 蓝牙 HID 模拟器，可将您的手机变成便携式键盘和触控板。即插即用，100% 开源。适用于信息亭、智能电视和快速工作流快捷方式。"
+description: KeyMod 系列是一款紧凑的 USB + 蓝牙 HID 模拟器，可将您的手机变成便携式键盘和触控板。即插即用，100% 开源。适用于信息亭、智能电视和快速工作流快捷方式。 继 2024 年 和 2025 年 活动成功后，我们带来了一款新的日常控制工具：Openterface KeyMod。 KeyMod…
 keywords: "KeyMod, HID 模拟器, 手机键盘, 蓝牙键盘, USB 键盘, 便携键盘, 开源, Android, iPadOS, 手柄, 宏"
 ---
 

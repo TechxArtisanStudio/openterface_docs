@@ -1,3 +1,8 @@
+---
+title: "隱私政策"
+description: "隱私政策: （版本 2 – 2026 年 2 月） 本隱私政策適用於 Openterface 網站、Openterface 硬件設備及其相關應用程序（統稱“服務”），由 TechxArtisan Limited（“TechxArtisan”）開發和運營。Openterface 是 TechxArtisan 的品牌。…"
+---
+
 # 隱私政策
 
 **（版本 2 – 2026 年 2 月）**

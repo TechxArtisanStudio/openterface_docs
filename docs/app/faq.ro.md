@@ -1,3 +1,8 @@
+---
+title: "Întrebări Frecvente pentru Aplicații"
+description: Bun venit la întrebările frecvente pentru aplicațiile noastre. Dacă nu găsiți răspunsul de care aveți nevoie, trimiteți-ne un email la sau alăturați-vă…
+---
+
 # Întrebări Frecvente pentru Aplicații
 
 Bun venit la întrebările frecvente pentru aplicațiile noastre. Dacă nu găsiți răspunsul de care aveți nevoie, **trimiteți-ne un email la [info@openterface.com](mailto:info@openterface.com)** sau **alăturați-vă comunității noastre** pe [Discord](/discord) sau [Reddit](/reddit) pentru a vă conecta cu echipa noastră de dezvoltare și alți utilizatori.

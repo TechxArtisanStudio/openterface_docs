@@ -1,6 +1,7 @@
 ---
 hide:
   - sitemap
+description: Hallo! Nogmaals bedankt voor je deelname aan ons bètaprogramma. We zijn echt enthousiast dat je KVM-GO uitprobeert met onze early-accessgroep. Dit kleine…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}
