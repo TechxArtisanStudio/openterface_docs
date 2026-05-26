@@ -5,7 +5,7 @@ const PROD_NEWS = 'https://news.openterface.com';
 export const SHOP_URL = 'https://shop.techxartisan.com/';
 
 const PROD_MARKETING: Record<SiteLocale, string> = {
-  en: 'https://en.openterface.com',
+  en: 'https://openterface.com',
   de: 'https://de.openterface.com',
   es: 'https://es.openterface.com',
   fr: 'https://fr.openterface.com',
