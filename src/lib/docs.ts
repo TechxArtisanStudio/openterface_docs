@@ -2,9 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { sidebarSlugsForPage } from '../config/sidebar';
+import { sidebarSlugsForPage } from '../config/sidebar-utils';
 import { newsPath } from '../config/surface-urls';
-import { DEFAULT_LOCALE, localizedPath, type SiteLocale } from './locale';
+import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } from './locale';
 
 const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
 
@@ -575,6 +575,67 @@ export function getDocPage(slug: string, locale: SiteLocale): DocPage | undefine
   return collectDocPages().find((p) => p.slug === slug && p.locale === locale);
 }
 
+let slugIndexCache: Map<SiteLocale, Set<string>> | null = null;
+
+function slugIndex(): Map<SiteLocale, Set<string>> {
+  if (!slugIndexCache) {
+    slugIndexCache = new Map();
+    for (const page of collectDocPages()) {
+      if (!slugIndexCache.has(page.locale)) slugIndexCache.set(page.locale, new Set());
+      slugIndexCache.get(page.locale)!.add(page.slug);
+    }
+  }
+  return slugIndexCache;
+}
+
+export function docExists(slug: string, locale: SiteLocale): boolean {
+  return slugIndex().get(locale)?.has(slug) ?? false;
+}
+
+/** Href for a doc slug in the preferred locale, falling back to English when untranslated. */
+export function resolveDocHref(slug: string, preferredLocale: SiteLocale): string {
+  const segments = slug.split('/').filter(Boolean);
+  if (docExists(slug, preferredLocale)) {
+    return localizedPath(preferredLocale, ...segments);
+  }
+  if (preferredLocale !== DEFAULT_LOCALE && docExists(slug, DEFAULT_LOCALE)) {
+    return localizedPath(DEFAULT_LOCALE, ...segments);
+  }
+  return localizedPath(preferredLocale, ...segments);
+}
+
+/**
+ * Locale-switch target path: same slug in target locale when available, else English + lang_fallback query.
+ */
+export function switchLocaleDocPath(
+  pathname: string,
+  targetLocale: SiteLocale,
+  search = '',
+): string {
+  const { segments } = stripLocalePrefix(pathname);
+  const slug = segments.length ? segments.join('/') : 'index';
+
+  let href: string;
+  let useFallback = false;
+
+  if (docExists(slug, targetLocale)) {
+    href = localizedPath(targetLocale, ...segments);
+  } else if (docExists(slug, DEFAULT_LOCALE)) {
+    href = localizedPath(DEFAULT_LOCALE, ...segments);
+    useFallback = targetLocale !== DEFAULT_LOCALE;
+  } else {
+    href = localizedPath(targetLocale, ...segments);
+  }
+
+  const raw = search.startsWith('?') ? search.slice(1) : search;
+  const params = new URLSearchParams(raw);
+  if (useFallback) params.set('lang_fallback', targetLocale);
+  else params.delete('lang_fallback');
+
+  const qs = params.toString();
+  return qs ? `${href}?${qs}` : href;
+}
+
 export function getDocAlternates(slug: string): { locale: SiteLocale; path: string }[] {
   const locales = new Set(
     collectDocPages()
@@ -591,7 +652,7 @@ export function getAdjacentPages(
   slug: string,
   locale: SiteLocale,
 ): { prev?: DocPage; next?: DocPage } {
-  const slugs = sidebarSlugsForPage(slug);
+  const slugs = sidebarSlugsForPage(slug).filter((s) => docExists(s, locale));
   if (!slugs.length) return {};
 
   const idx = slugs.indexOf(slug);
@@ -614,4 +675,5 @@ export function pageTitle(page: DocPage): string {
 /** Clear page cache (tests). */
 export function resetDocCache(): void {
   cachedPages = null;
+  slugIndexCache = null;
 }

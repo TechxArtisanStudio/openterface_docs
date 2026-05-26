@@ -4,6 +4,7 @@ import DocEmbeds from '../components/DocEmbeds.astro';
 import DocPageNav from '../components/DocPageNav.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
 import DocsTOC from '../components/DocsTOC.astro';
+import LocaleFallbackBanner from '../components/LocaleFallbackBanner.astro';
 import { sidebarForSlug, sidebarNavLabel } from '../config/sidebar';
 import { getAdjacentPages, getDocAlternates, pageTitle, type DocPage } from '../lib/docs';
 
@@ -33,7 +34,9 @@ const nextLink = next ? { href: next.href, label: navLabel(next) } : undefined;
   canonicalPath={href}
   hreflangAlternates={alternates}
 >
-  <div class="mx-auto flex max-w-7xl flex-col gap-0 px-4 lg:flex-row lg:items-start lg:px-6">
+  <div class="mx-auto max-w-7xl px-4 lg:px-6">
+    <LocaleFallbackBanner />
+    <div class="flex flex-col gap-0 lg:flex-row lg:items-start">
     {
       sidebar && (
         <DocsSidebar locale={locale} items={sidebar} slug={slug} currentPath={href} />
@@ -46,6 +49,7 @@ const nextLink = next ? { href: next.href, label: navLabel(next) } : undefined;
     </article>
 
     <DocsTOC locale={locale} headings={headings} />
+    </div>
   </div>
   <DocEmbeds />
 </BaseLayout>

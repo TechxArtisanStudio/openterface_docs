@@ -118,14 +118,10 @@ Wenn Sie die von Rex gepflegte Community-Build bevorzugen:
 ```bash
 wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
 sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-```
-
 2. **Paket installieren**:
 ```bash
 sudo apt update
 sudo apt install openterfaceqt
-```
-
 !!! warning "Repository-Hinweise"
     Diese Befehle erfordern sudo. Das Repository zielt auf arm64 Bookworm-Pakete ab; оprüfen Sie die Kompatibilität с Ihrem Gerät vor der Установка.
 

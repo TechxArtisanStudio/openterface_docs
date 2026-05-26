@@ -1,6 +1,7 @@
 ---
 import { docsNav } from '../config/site';
-import { LOCALE_LABELS, localizedPath, switchLocalePath, type SiteLocale } from '../lib/locale';
+import { switchLocaleDocPath } from '../lib/docs';
+import { LOCALE_LABELS, localizedPath, type SiteLocale } from '../lib/locale';
 import { t } from '../i18n/ui';
 import { preserveQueryForLocaleSwitch } from '../lib/preserve-query';
 import Logo from './Logo.astro';
@@ -72,7 +73,7 @@ const homeHref = localizedPath(locale);
             Object.entries(LOCALE_LABELS).map(([loc, label]) => (
               <li>
                 <a
-                  href={switchLocalePath(currentPath, loc as SiteLocale, preservedSearch)}
+                  href={switchLocaleDocPath(currentPath, loc as SiteLocale, preservedSearch)}
                   data-locale-switch
                   class:list={[
                     'block px-3 py-2 text-sm hover:bg-brand-light hover:text-primary-dark',
@@ -162,7 +163,7 @@ const homeHref = localizedPath(locale);
                 {
                   Object.entries(LOCALE_LABELS).map(([loc, label]) => (
                     <a
-                      href={switchLocalePath(currentPath, loc as SiteLocale, preservedSearch)}
+                      href={switchLocaleDocPath(currentPath, loc as SiteLocale, preservedSearch)}
                       data-locale-switch
                       class:list={[
                         'mobile-nav-link',

@@ -118,14 +118,10 @@ Openterface App 使您的 uConsole 能夠作為 KVM 接口運行，允許您通�
 ```bash
 wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
 sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-```
-
 2. **安裝包**：
 ```bash
 sudo apt update
 sudo apt install openterfaceqt
-```
-
 !!! warning "倉庫說明"
     這些命令需要 sudo。倉庫針對 arm64 Bookworm 包；安裝前請驗證與您設備的兼容性。
 

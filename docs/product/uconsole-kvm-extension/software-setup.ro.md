@@ -117,14 +117,10 @@ Dacă preferi build-ul comunității întreținut de Rex:
 ```bash
 wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
 sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-```
-
 2. **Instalează pachetul**:
 ```bash
 sudo apt update
 sudo apt install openterfaceqt
-```
-
 !!! warning "Note depozitar"
     Aceste comenzi necesită sudo. Depozitarul țintește pachete arm64 Bookworm; verifică compatibilitatea cu dispozitivul tău înainte de instalare.
 

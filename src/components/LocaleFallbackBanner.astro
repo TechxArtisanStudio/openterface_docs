@@ -1,0 +1,21 @@
+---
+import { DEFAULT_LOCALE, LOCALE_LABELS, isSiteLocale } from '../lib/locale';
+
+const fallbackParam = Astro.url.searchParams.get('lang_fallback');
+const showBanner =
+  fallbackParam &&
+  isSiteLocale(fallbackParam) &&
+  fallbackParam !== DEFAULT_LOCALE;
+---
+
+{
+  showBanner && (
+    <aside
+      class="doc-locale-fallback mx-auto mb-4 max-w-7xl rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950"
+      role="status"
+    >
+      This page is not available in {LOCALE_LABELS[fallbackParam!]}. Showing the English
+      version.
+    </aside>
+  )
+}

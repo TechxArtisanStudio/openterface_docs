@@ -1,4 +1,5 @@
 import { docsPath, newsPath, SHOP_URL, surfaceMarketingHost } from '../config/surface-urls';
+import { resolveDocHref } from '../lib/docs';
 import { localizedPath, type SiteLocale } from '../lib/locale';
 
 export interface UiStrings {
@@ -976,22 +977,22 @@ export type NavItem = {
 
 export function docsNav(locale: SiteLocale): NavItem[] {
   const ui = t(locale);
-  const prefix = (path: string) => localizedPath(locale, ...path.split('/').filter(Boolean));
+  const docPath = (path: string) => resolveDocHref(path, locale);
   return [
     {
       label: ui.nav.product,
-      href: prefix('product/kvm-go'),
+      href: docPath('product/kvm-go'),
       children: [
-        { label: 'KVM-GO', href: prefix('product/kvm-go') },
-        { label: 'Mini-KVM', href: prefix('product/minikvm') },
-        { label: 'KeyMod', href: prefix('product/keymod') },
-        { label: 'uConsole KVM', href: prefix('product/uconsole-kvm-extension') },
+        { label: 'KVM-GO', href: docPath('product/kvm-go') },
+        { label: 'Mini-KVM', href: docPath('product/minikvm') },
+        { label: 'KeyMod', href: docPath('product/keymod') },
+        { label: 'uConsole KVM', href: docPath('product/uconsole-kvm-extension') },
       ],
     },
-    { label: ui.nav.app, href: prefix('app/overview') },
-    { label: ui.nav.tutorial, href: prefix('tutorial/kvm') },
-    { label: ui.nav.faqs, href: prefix('faq/kvm-over-usb') },
-    { label: ui.nav.support, href: prefix('support') },
+    { label: ui.nav.app, href: docPath('app/overview') },
+    { label: ui.nav.tutorial, href: docPath('tutorial/kvm') },
+    { label: ui.nav.faqs, href: docPath('faq/kvm-over-usb') },
+    { label: ui.nav.support, href: docPath('support') },
     { label: ui.nav.home, href: surfaceMarketingHost(locale), external: true },
     { label: ui.nav.news, href: newsPath(locale), external: true },
     { label: ui.nav.shop, href: SHOP_URL, external: true },
