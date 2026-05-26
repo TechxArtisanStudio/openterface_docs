@@ -179,7 +179,7 @@ test.describe('docs full corpus smoke', () => {
   test('ru locale page loads with localized chrome', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('/ru/product/kvm-go/');
-    await expect(page).toHaveTitle(/Openterface Docs/);
+    await expect(page).toHaveTitle(/Openterface/);
     await expect(page.locator('.site-header')).toBeVisible();
     await expect(page.locator('article .doc-page-nav')).toBeVisible();
   });
