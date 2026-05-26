@@ -6,7 +6,7 @@ import DocsSidebar from '../components/DocsSidebar.astro';
 import DocsTOC from '../components/DocsTOC.astro';
 import LocaleFallbackBanner from '../components/LocaleFallbackBanner.astro';
 import { sidebarForSlug, sidebarNavLabel } from '../config/sidebar';
-import { getAdjacentPages, getDocAlternates, pageTitle, type DocPage } from '../lib/docs';
+import { getAdjacentPages, getDocAlternates, pageDescription, pageTitle, type DocPage } from '../lib/docs';
 
 interface Props {
   page: DocPage;
@@ -31,7 +31,7 @@ const hasH1 = /<h1[\s>]/i.test(html);
 <BaseLayout
   locale={locale}
   title={title}
-  description={page.frontmatter.description}
+  description={pageDescription(page)}
   canonicalPath={href}
   hreflangAlternates={alternates}
 >

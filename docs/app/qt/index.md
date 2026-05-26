@@ -1,3 +1,8 @@
+---
+title: "Openterface Qt for Windows & Linux"
+description: "Openterface Qt desktop app for Windows and Linux: cross-platform KVM-over-USB control, preferences, video capture, and keyboard-mouse switching for Mini-KVM and KVM-GO hardware."
+---
+
 # Openterface QT for Win & Linux
 
 This document provides an overview of a cross-platform KVM (Keyboard, Video, Mouse) software developed using Qt, compatible with both Linux and Windows operating systems. The software facilitates control over a target device from a host system, offering a variety of features accessible through its menu bar and additional functionalities.

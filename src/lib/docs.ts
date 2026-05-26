@@ -680,6 +680,38 @@ export function pageTitle(page: DocPage): string {
   return firstLine?.replace(/^#+\s*/, '').replace(/\*\*/g, '') ?? page.slug;
 }
 
+function stripMarkdownInline(text: string): string {
+  return text
+    .replace(/\{%[^%]*%\}/g, '')
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+    .replace(/\[[^\]]*\]\([^)]+\)/g, '$1')
+    .replace(/[#>*_`]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function firstParagraph(content: string): string {
+  const lines = content.split('\n');
+  const buf: string[] = [];
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t || t.startsWith('#') || t.startsWith('!') || t.startsWith('<')) continue;
+    if (t.startsWith('-') || t.startsWith('|')) break;
+    buf.push(t);
+    if (buf.join(' ').length > 400) break;
+  }
+  return stripMarkdownInline(buf.join(' '));
+}
+
+/** Page-specific meta description; undefined lets BaseLayout use locale siteDescription fallback. */
+export function pageDescription(page: DocPage): string | undefined {
+  if (page.frontmatter.description?.trim()) return page.frontmatter.description.trim();
+  const lead = firstParagraph(page.content);
+  if (lead.length < 80) return undefined;
+  if (lead.length > 160) return `${lead.slice(0, 157).replace(/\s+\S*$/, '')}…`;
+  return lead;
+}
+
 /** Clear page cache (tests). */
 export function resetDocCache(): void {
   cachedPages = null;
