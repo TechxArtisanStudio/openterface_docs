@@ -8,14 +8,22 @@ import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } fro
 
 const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
 
-/** MkDocs extra macros — keep in sync with archive/mkdocs/mkdocs.yml */
-const MKDOCS_MACROS: Record<string, string> = {
-  qt_version: '0.5.23',
-  android_version: '1.2.2',
-  macos_version: '2.1',
-  qt_linux_stable: '0.3.19',
-  copyright_year: '2026',
-};
+const CONFIG_DIR = path.join(process.cwd(), 'src/config');
+
+/** Load synced release tags (prebuild) or committed defaults. */
+function loadAppVersions(): Record<string, string> {
+  const generated = path.join(CONFIG_DIR, 'app-versions.generated.json');
+  const defaults = path.join(CONFIG_DIR, 'app-versions.defaults.json');
+  const source = fs.existsSync(generated) ? generated : defaults;
+  const versions = JSON.parse(fs.readFileSync(source, 'utf8')) as Record<string, string>;
+  return {
+    ...versions,
+    qt_linux_stable: '0.3.19',
+  };
+}
+
+/** MkDocs extra macros — versions synced by scripts/sync-app-versions.mjs at prebuild */
+const MKDOCS_MACROS: Record<string, string> = loadAppVersions();
 
 /** MkDocs config.extra purchase / external links */
 const MKDOCS_EXTRA: Record<string, string> = {

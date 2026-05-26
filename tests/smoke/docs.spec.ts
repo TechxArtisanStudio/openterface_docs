@@ -1,10 +1,83 @@
 import { test, expect } from '@playwright/test';
+import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+
+function loadExpectedVersions() {
+  const configDir = join(process.cwd(), 'src/config');
+  const generated = join(configDir, 'app-versions.generated.json');
+  const defaults = join(configDir, 'app-versions.defaults.json');
+  const source = existsSync(generated) ? generated : defaults;
+  return JSON.parse(readFileSync(source, 'utf8')) as {
+    qt_version: string;
+    android_version: string;
+  };
+}
+
+async function assertReleaseDownloadOk(href: string) {
+  const res = await fetch(href, {
+    method: 'HEAD',
+    redirect: 'follow',
+    signal: AbortSignal.timeout(30_000),
+  });
+  expect(res.status, href).toBeLessThan(400);
+}
 
 test.describe('docs full corpus smoke', () => {
   test('home renders with shared chrome', async ({ page }) => {
     await page.goto('/');
     await expect(page).toHaveTitle(/Openterface Docs/);
     await expect(page.locator('.site-header')).toBeVisible();
+  });
+
+  test('app overview download links resolve', async ({ page }) => {
+    test.setTimeout(180_000);
+    const { qt_version, android_version } = loadExpectedVersions();
+    await page.goto('/app/overview/');
+    const hrefs = await page.locator('a[href*="releases/download/"]').evaluateAll((els) =>
+      els.map((el) => el.getAttribute('href')).filter((href): href is string => Boolean(href)),
+    );
+    expect(hrefs.length).toBeGreaterThanOrEqual(7);
+
+    for (const href of hrefs) {
+      if (href.includes('Openterface_QT')) {
+        expect(href, href).toContain(`/releases/download/${qt_version}/`);
+      }
+      if (href.includes('Openterface_Android')) {
+        expect(href, href).toContain(`/releases/download/${android_version}/`);
+        expect(android_version).toMatch(/^v/);
+      }
+    }
+
+    if (process.env.CI) {
+      for (const href of hrefs) {
+        await assertReleaseDownloadOk(href);
+      }
+    }
+  });
+
+  test('zh app overview download links resolve', async ({ page }) => {
+    test.setTimeout(180_000);
+    const { qt_version, android_version } = loadExpectedVersions();
+    await page.goto('/zh/app/overview/');
+    const hrefs = await page.locator('a[href*="releases/download/"]').evaluateAll((els) =>
+      els.map((el) => el.getAttribute('href')).filter((href): href is string => Boolean(href)),
+    );
+    expect(hrefs.length).toBeGreaterThanOrEqual(7);
+
+    for (const href of hrefs) {
+      if (href.includes('Openterface_QT')) {
+        expect(href, href).toContain(`/releases/download/${qt_version}/`);
+      }
+      if (href.includes('Openterface_Android')) {
+        expect(href, href).toContain(`/releases/download/${android_version}/`);
+      }
+    }
+
+    if (process.env.CI) {
+      for (const href of hrefs) {
+        await assertReleaseDownloadOk(href);
+      }
+    }
   });
 
   test('kvm-go overview has doc page nav without edit link', async ({ page }) => {

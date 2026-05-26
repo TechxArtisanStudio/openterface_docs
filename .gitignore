@@ -9,6 +9,7 @@ __pycache__/
 test-results/
 playwright-report/
 config/mkdocs.generated.yml
+src/config/app-versions.generated.json
 
 # internal dev (do not commit)
 .cursor/
