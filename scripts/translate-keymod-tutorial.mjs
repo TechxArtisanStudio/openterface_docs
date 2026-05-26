@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Bulk-translate KeyMod tutorial pages via Python deep-translator.
- * @deprecated Do not use for new translation work — use web-dev-tool/scripts/translate-i18n.mjs
- * with web-dev-tool/.secrets/ai-txa-api.json instead.
+ * @deprecated Do not use for new translation work — use web-dev-tool `npm run translate-i18n` instead.
  */
 import { spawnSync } from 'child_process';
 import { existsSync } from 'fs';

@@ -18,6 +18,8 @@ translation_guide/
 
 ### How It Works
 
+Batch LLM translation for missing doc locales runs from the private **web-dev-tool** repo (`npm run translate-docs-batch`), not from this public repo.
+
 1. **Prompt Generation**: `python3 openterface-cms/scripts/i18n-docs-tools/generate_prompts.py --docs docs --overwrite`
 2. **Auto-Loading**: System loads global + language-specific guides
 3. **LLM Translation**: Guides embedded in prompts for consistent translations

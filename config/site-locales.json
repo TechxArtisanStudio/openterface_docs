@@ -70,5 +70,5 @@
       "path": "nl"
     }
   },
-  "_note": "Mirrors web-dev-tool/analytics/locales.json auxiliary_sites.docs.path_locale"
+  "_note": "Docs path_locale map for locale switcher and builds; keep in sync when adding locales."
 }
