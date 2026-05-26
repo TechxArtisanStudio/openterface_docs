@@ -25,6 +25,7 @@ function navLabel(doc: DocPage): string {
 
 const prevLink = prev ? { href: prev.href, label: navLabel(prev) } : undefined;
 const nextLink = next ? { href: next.href, label: navLabel(next) } : undefined;
+const hasH1 = /<h1[\s>]/i.test(html);
 ---
 
 <BaseLayout
@@ -44,7 +45,10 @@ const nextLink = next ? { href: next.href, label: navLabel(next) } : undefined;
     }
 
     <article class="min-w-0 flex-1 py-6 lg:py-8 xl:max-w-3xl">
-      <div class="prose-docs mx-auto max-w-none px-0 lg:px-6" set:html={html}></div>
+      <div class="prose-docs mx-auto max-w-none px-0 lg:px-6">
+        {!hasH1 && <h1>{title}</h1>}
+        <div set:html={html} />
+      </div>
       <DocPageNav prev={prevLink} next={nextLink} />
     </article>
 
