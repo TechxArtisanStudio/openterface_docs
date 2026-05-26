@@ -89,8 +89,8 @@ Se você vê uma tela preta, a razão mais comum é **alimentação faltante**.
     > Ainda travado? Tire uma foto da sua configuração completa e envie para nossa equipe de suporte para solução de problemas.
 
 Exemplo de conexão USB faltante:  
-<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
-<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
+<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="Example photo: VGA-to-HDMI setup missing USB power to the host" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
+<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="Example photo: VGA-to-HDMI adapter connected without USB host power" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
 
 ## Vídeo de demonstração
 

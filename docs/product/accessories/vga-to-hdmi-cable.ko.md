@@ -89,8 +89,8 @@ keywords: "VGA to HDMI, 변환 케이블, VGA 오디오 to HDMI, 레거시 장�
     > 여전히 막혀 있나요? 전체 설정 사진을 찍어서 문제 해결을 위해 지원 팀에 보내주세요.
 
 USB 연결이 누락된 예시:  
-<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
-<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
+<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="Example photo: VGA-to-HDMI setup missing USB power to the host" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
+<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="Example photo: VGA-to-HDMI adapter connected without USB host power" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
 
 ## 데모 비디오
 

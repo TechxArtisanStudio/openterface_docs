@@ -89,8 +89,8 @@ USB 插头**必须连接**到有电源的 USB 端口，内部的 VGA 到 HDMI �
     > 还是卡住了？拍摄您完整设置的照片并发送给我们的支持团队进行故障排除。
 
 缺少 USB 连接的示例：  
-<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
-<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
+<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="Example photo: VGA-to-HDMI setup missing USB power to the host" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
+<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="Example photo: VGA-to-HDMI adapter connected without USB host power" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
 
 ## 演示视频
 

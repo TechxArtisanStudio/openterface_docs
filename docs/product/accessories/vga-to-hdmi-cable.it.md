@@ -89,8 +89,8 @@ Se vedi una schermata nera, la ragione più comune è l'**alimentazione mancante
     > Ancora bloccato? Scatta una foto della tua configurazione completa e inviala al nostro team di supporto per la risoluzione dei problemi.
 
 Esempio di connessione USB mancante:  
-<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
-<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
+<img src="https://pbs.twimg.com/media/GnCqHVlWgAAVGqY?format=jpg&name=small" alt="Example photo: VGA-to-HDMI setup missing USB power to the host" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">  
+<img src="https://pbs.twimg.com/media/GnCqGa8WQAAOr6m?format=jpg&name=small" alt="Example photo: VGA-to-HDMI adapter connected without USB host power" style="max-width:180px;vertical-align:middle;" onerror="this.style.display='none'">
 
 ## Video dimostrativo
 
