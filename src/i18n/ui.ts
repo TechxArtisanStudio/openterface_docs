@@ -992,7 +992,7 @@ export function docsNav(locale: SiteLocale): NavItem[] {
         { label: 'uConsole KVM', href: docPath('product/uconsole-kvm-extension') },
       ],
     },
-    { label: ui.nav.app, href: docPath('app/overview') },
+    { label: ui.nav.app, href: docPath('app/kvm') },
     { label: ui.nav.tutorial, href: docPath('tutorial/kvm') },
     { label: ui.nav.faqs, href: docPath('faq/kvm-over-usb') },
     { label: ui.nav.support, href: docPath('support') },
