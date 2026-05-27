@@ -83,6 +83,14 @@
     @apply list-decimal;
   }
 
+  .filter-chip {
+    @apply shrink-0 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-muted transition-colors hover:border-primary-dark hover:text-primary-dark;
+  }
+
+  .filter-chip-active {
+    @apply border-brand-dark bg-brand-light text-accent-on-light;
+  }
+
   .prose-docs li {
     @apply leading-relaxed text-ink/90;
   }

@@ -1,0 +1,105 @@
+---
+import type { SiteLocale } from '../lib/locale';
+
+interface Props {
+  locale: SiteLocale;
+  basePath: string;
+  activeProduct?: string | null;
+  activeApp?: string | null;
+  activeTopic?: string | null;
+}
+
+const { basePath, activeProduct = null, activeApp = null, activeTopic = null } = Astro.props;
+
+const PRODUCTS = [
+  { value: 'minikvm', label: 'Mini-KVM' },
+  { value: 'kvmgo', label: 'KVM-GO' },
+  { value: 'keymod', label: 'KeyMod' },
+  { value: 'kvmext', label: 'KVM Ext' },
+] as const;
+
+const APPS = [
+  { value: 'kvm', label: 'KVM Control' },
+  { value: 'keycmd', label: 'KeyCmd' },
+] as const;
+
+const TOPICS = [
+  { value: 'basics', label: 'Basics' },
+  { value: 'hardware', label: 'Hardware' },
+  { value: 'pre-launch', label: 'Pre-launch' },
+  { value: 'apps', label: 'Apps' },
+  { value: 'hid', label: 'Keyboard & HID' },
+  { value: 'macos', label: 'macOS' },
+  { value: 'gamepad', label: 'Gamepad' },
+  { value: 'connectivity', label: 'Connectivity' },
+  { value: 'troubleshooting', label: 'Troubleshooting' },
+] as const;
+
+function chipHref(params: { product?: string | null; app?: string | null; topic?: string | null }) {
+  const search = new URLSearchParams();
+  const product = 'product' in params ? params.product : activeProduct;
+  const app = 'app' in params ? params.app : activeApp;
+  const topic = 'topic' in params ? params.topic : activeTopic;
+  if (product) search.set('product', product);
+  if (app) search.set('app', app);
+  if (topic) search.set('topic', topic);
+  const qs = search.toString();
+  return qs ? `${basePath}?${qs}` : basePath;
+}
+---
+
+<div class="faq-filter-bar not-prose mb-8" data-faq-filter-bar>
+  <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Filter FAQs</p>
+
+  <div class="flex flex-wrap gap-2">
+    <a
+      href={chipHref({ product: null, app: null, topic: null })}
+      data-faq-chip="all"
+      class:list={['filter-chip', !activeProduct && !activeApp && !activeTopic && 'filter-chip-active']}
+    >
+      All
+    </a>
+    {
+      PRODUCTS.map((item) => (
+        <a
+          href={chipHref({ product: item.value, app: activeApp, topic: activeTopic })}
+          data-faq-chip="product"
+          data-faq-value={item.value}
+          class:list={['filter-chip', activeProduct === item.value && 'filter-chip-active']}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="mt-2 flex flex-wrap gap-2">
+    {
+      APPS.map((item) => (
+        <a
+          href={chipHref({ product: activeProduct, app: item.value, topic: activeTopic })}
+          data-faq-chip="app"
+          data-faq-value={item.value}
+          class:list={['filter-chip text-sm', activeApp === item.value && 'filter-chip-active']}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="mt-2 flex flex-wrap gap-2">
+    {
+      TOPICS.map((item) => (
+        <a
+          href={chipHref({ product: activeProduct, app: activeApp, topic: item.value })}
+          data-faq-chip="topic"
+          data-faq-value={item.value}
+          class:list={['filter-chip text-xs', activeTopic === item.value && 'filter-chip-active']}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+</div>

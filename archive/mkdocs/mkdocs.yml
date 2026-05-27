@@ -1020,7 +1020,8 @@ nav:
 - App:
   - KVM Control: app/kvm/index.md
   - KeyCmd: app/keycmd/index.md
-  - FAQs: app/kvm/faq.md
+  - KVM Control FAQs: app/kvm/faq.md
+  - KeyCmd FAQs: app/keycmd/faq.md
 - Tutorial:
   - KVM Series:
     - Overview: tutorial/kvm/index.md

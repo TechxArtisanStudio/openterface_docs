@@ -4,6 +4,7 @@ import DocEmbeds from '../components/DocEmbeds.astro';
 import DocPageNav from '../components/DocPageNav.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
 import DocsTOC from '../components/DocsTOC.astro';
+import FaqFilterChips from '../components/FaqFilterChips.astro';
 import LocaleFallbackBanner from '../components/LocaleFallbackBanner.astro';
 import { sidebarForSlug, sidebarNavLabel } from '../config/sidebar';
 import { getAdjacentPages, getDocAlternates, pageDescription, pageTitle, type DocPage } from '../lib/docs';
@@ -46,6 +47,17 @@ const hasH1 = /<h1[\s>]/i.test(html);
 
     <article class="min-w-0 flex-1 py-6 lg:py-8 xl:max-w-3xl">
       <div class="prose-docs mx-auto max-w-none px-0 lg:px-6">
+        {
+          slug === 'faq' && (
+            <FaqFilterChips
+              locale={locale}
+              basePath={href}
+              activeProduct={Astro.url.searchParams.get('product')}
+              activeApp={Astro.url.searchParams.get('app')}
+              activeTopic={Astro.url.searchParams.get('topic')}
+            />
+          )
+        }
         {!hasH1 && <h1>{title}</h1>}
         <div set:html={html} />
       </div>
@@ -56,4 +68,10 @@ const hasH1 = /<h1[\s>]/i.test(html);
     </div>
   </div>
   <DocEmbeds />
+  {slug === 'faq' && (
+    <script>
+      import { initFaqFilter } from '../scripts/faq-filter';
+      initFaqFilter();
+    </script>
+  )}
 </BaseLayout>

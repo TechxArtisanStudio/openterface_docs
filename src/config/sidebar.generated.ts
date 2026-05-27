@@ -255,8 +255,12 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
         "slug": "app/keycmd"
       },
       {
-        "label": "FAQs",
+        "label": "KVM Control FAQs",
         "slug": "app/kvm/faq"
+      },
+      {
+        "label": "KeyCmd FAQs",
+        "slug": "app/keycmd/faq"
       }
     ]
   },
