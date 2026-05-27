@@ -9,9 +9,9 @@ description: "Добро пожаловать в официальную доку
 
 ## Quick links
 
-- [KVM-GO](/ru/product/kvm-go/)
-- [Mini-KVM](/ru/product/minikvm/)
-- [KeyMod](/ru/product/keymod/)
-- [Скачать приложение](/ru/app/overview/)
+- [KVM-GO](/ru/products/kvmgo/)
+- [Mini-KVM](/ru/products/minikvm/)
+- [KeyMod](/ru/products/keymod/)
+- [Скачать приложение](/ru/app/kvm/)
 - [Поддержка](/ru/support/)
 - [Новости ↗](https://news.openterface.com/ru/)

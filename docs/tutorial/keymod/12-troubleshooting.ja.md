@@ -1,12 +1,12 @@
 ---
 title: "KeyMod チュートリアル - トラブルシューティング"
-description: "一般的な KeyMod 問題を修正します: 接続の問題、キーが登録されない、Bluetooth ペアリングの失敗、音声入力エラーなど。 Android の KeyMod アプリに関する一般的な問題と解決策。"
+description: "一般的な KeyMod 問題を修正します: 接続の問題、キーが登録されない、Bluetooth ペアリングの失敗、音声入力エラーなど。 Android の KeyCmd アプリに関する一般的な問題と解決策。"
 keywords: "KeyMod トラブルシューティング、KeyMod 接続不可、KeyMod Bluetooth の問題、KeyMod キーが機能しない"
 ---
 
 #12. トラブルシューティング
 
-Android の KeyMod アプリに関する一般的な問題と解決策。
+Android の KeyCmd アプリに関する一般的な問題と解決策。
 
 ## 接続の問題
 
@@ -108,6 +108,6 @@ Play ストアから Google 音声入力をインストールします。 Androi
 
 まだ問題が解決しない場合:
 
-- **バグレポート:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **バグレポート:** [Discord](https://discord.gg/techxartisan)
 - **コミュニティ:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface ドキュメント:** [openterface.com](https://openterface.com)

@@ -38,9 +38,9 @@ description: التحكم في لوحة المفاتيح، الشاشة، وال
 
 ## الروابط السريعة
 
-- [ملخص التطبيق](/app/overview.md) — دليل التحميل والإعداد
-- [صفحة منتج Mini-KVM](/product/minikvm/)
-- [صفحة منتج KVM-Go](/product/kvm-go/)
-- [صفحة منتج uConsole KVM Extension](/product/uconsole-kvm-extension/)
+- [ملخص التطبيق](/app/kvm/) — دليل التحميل والإعداد
+- [صفحة منتج Mini-KVM](/products/minikvm/)
+- [صفحة منتج KVM-Go](/products/kvmgo/)
+- [صفحة منتج uConsole KVM Extension](/products/kvmext/)
 - [تطبيق iPadOS](/app/ipados/) — دليل التحميل والإعداد
 - [دورة دعم Discord](https://discord.gg/sFTJD6a3R8) — الدعم المجتمعي

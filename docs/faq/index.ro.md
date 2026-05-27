@@ -15,15 +15,15 @@ keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, n
 
 #### **Openterface Mini-KVM**
 
-- [Întrebări frecvente despre Openterface Mini-KVM](/product/minikvm/faq) — FAQ complet despre funcționalități, compatibilitate și utilizare
-- [Tastatura și mausul nu pot controla ținta?](/product/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Depanare HID/control
-- [Cum rulez diagnosticele?](/product/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Verificați dispozitivul cu verificarea auto integrată
-- [Cum raportez o problemă hardware către suport?](/product/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Când diagnosticul arată ECHEC
+- [Întrebări frecvente despre Openterface Mini-KVM](/products/minikvm/faq) — FAQ complet despre funcționalități, compatibilitate și utilizare
+- [Tastatura și mausul nu pot controla ținta?](/products/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Depanare HID/control
+- [Cum rulez diagnosticele?](/products/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Verificați dispozitivul cu verificarea auto integrată
+- [Cum raportez o problemă hardware către suport?](/products/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Când diagnosticul arată ECHEC
 
 #### **Openterface KVM Extension pentru uConsole**
 
-- [Întrebări Frecvente pentru Openterface KVM Extension pentru uConsole](/product/uconsole-kvm-extension/faq)
+- [Întrebări Frecvente pentru Openterface KVM Extension pentru uConsole](/products/kvmext/faq)
 
 #### **Aplicații Host Openterface**
 
-- [Întrebări Frecvente pentru Aplicații](/app/faq)
+- [Întrebări Frecvente pentru Aplicații](/app/kvm/faq)

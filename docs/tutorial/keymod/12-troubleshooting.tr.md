@@ -108,6 +108,6 @@ Ağ bağlantınızı kontrol edin. Daha hızlı bir model deneyin; daha küçük
 
 Hâlâ sorun yaşıyorsanız:
 
-- **Hata raporları:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Hata raporları:** [Discord](https://discord.gg/techxartisan)
 - **Topluluk:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface belgeler:** [openterface.com](https://openterface.com)

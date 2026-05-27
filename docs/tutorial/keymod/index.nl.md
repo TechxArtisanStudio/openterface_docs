@@ -1,7 +1,7 @@
 ---
 title: "KeyMod Handleiding"
 description: "Volledige handleiding voor het gebruik van de KeyMod-app. Leer hoe u verbinding kunt maken, uw computer kunt bedienen vanaf uw telefoon en de toetsenbord-, muis-, gamepad-, macro's- en spraakinvoermodi kunt gebruiken."
-keywords: "KeyMod handleiding, hoe u KeyMod gebruikt, handleiding voor het toetsenbord van de telefoon, KeyMod app handleiding"
+keywords: "KeyMod handleiding, hoe u KeyMod gebruikt, handleiding voor het toetsenbord van de telefoon, KeyCmd app handleiding"
 ---
 
 # KeyMod Handleiding
@@ -16,7 +16,7 @@ KeyMod verandert uw telefoon of tablet in een **universeel invoerapparaat** voor
 
 ### Hoe de verbinding werkt```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 De app communiceert met de KeyMod hardware via het **CH9329 protocol** via een seriële verbinding (USB-C op 115200 baud, 8N1 of Bluetooth BLE). Het KeyMod-apparaat verschijnt op de doelcomputer als een standaard USB-toetsenbord en -muis – er zijn geen stuurprogramma's nodig.
 
 ### Voor wie is dit?
@@ -49,6 +49,6 @@ De app communiceert met de KeyMod hardware via het **CH9329 protocol** via een s
 
 ## Hulp krijgen
 
-- **Bugrapporten:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Bugrapporten:** [Discord](https://discord.gg/techxartisan)
 - **Gemeenschap:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Broncode:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Broncode:** KeyCmd *(coming soon)*

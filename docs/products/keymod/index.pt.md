@@ -1,0 +1,97 @@
+---
+title: "Openterface KeyMod Series | Transforme seu telefone em um teclado inteligente"
+description: "KeyMod Series é um emulador HID USB + Bluetooth compacto que transforma seu telefone em um teclado e trackpad portáteis. Plug and play, 100% open source. Perfeito para quiosques, smart TVs e atalhos de fluxo de trabalho."
+keywords: "KeyMod, emulador HID, teclado telefone, teclado Bluetooth, teclado USB, teclado portátil, open source, Android, iPadOS, gamepad, macro"
+---
+
+# **Openterface KeyMod Series**
+
+{% include "partials/keymod-slideshow.html" %}
+
+<div class="slogan-highlight">
+  <h2 class="slogan-text">Transforme seu telefone em um teclado inteligente</h2>
+  <div class="slogan-subtitle">Controle de teclado e mouse programável para tecnologia, profissionais e gaming.</div>
+</div>
+
+Após o sucesso de nossas campanhas de 2024 [Mini-KVM](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm) e 2025 [KVM-GO](https://www.crowdsupply.com/techxartisan/openterface-kvm-go), voltamos com um novo tipo de ferramenta de controle cotidiano: **Openterface KeyMod**.
+
+Um emulador HID (teclado e mouse) compacto e programável **USB + Bluetooth**, KeyMod transforma seu telefone em um console de teclado e trackpad portáteis para controle local rápido e atalhos de fluxo de trabalho. Construído sobre o núcleo HID comprovado do Openterface Mini-KVM, é plug and play, 100% open source.
+
+<div class="doc-keymod-variants">
+  <p class="doc-keymod-variants__title">Variantes planejadas</p>
+  <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Série Openterface KeyMod" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
+  <div class="doc-keymod-variants__grid">
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
+      <p class="doc-keymod-variants__name">Versão conector 2-em-1</p>
+      <p class="doc-keymod-variants__desc">Design de plug USB A + USB C combinado para ampla compatibilidade com laptops, tablets e telefones</p>
+    </div>
+    <div class="doc-keymod-variants__card">
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">Versão USB C</p>
+      <p class="doc-keymod-variants__desc">Plug USB C dedicado para dispositivos modernos e gerenciamento de cabos limpo</p>
+    </div>
+  </div>
+  <p class="doc-keymod-variants__note">Ambas as variantes compartilham a mesma funcionalidade principal: teclado e mouse HID Bluetooth, perfis personalizados, macros e modos gamepad.</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <button class="md-button" onclick="window.open('{{ config.extra.keymod_crowdsupply_link }}', '_blank')">
+    Apoie AGORA
+    <img 
+      class="skip-lightbox"
+      src="https://assets.openterface.com/images/trademark/crowd-supply.svg" 
+      alt="Crowd Supply" 
+      style="vertical-align: middle; height: 26px; margin-left: 8px;">
+  </button>
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-feature-search-outline:{ .lg } __Especificações e recursos__
+
+    ---
+
+    Descubra os poderosos recursos do KeyMod
+
+    [:octicons-arrow-right-24: Ver recursos](/products/keymod/features)
+
+    [:octicons-arrow-right-24: O que vem na caixa](/products/keymod/whats-in-the-box/)
+
+    [:octicons-arrow-right-24: Como conectar](/products/keymod/how-to-connect/)
+
+
+-   :material-power-plug:{ .lg } __Como usar__
+
+    ---
+
+    Aprenda a configurar e começar a controlar seu dispositivo de destino
+
+    [:octicons-arrow-right-24: Baixar app KeyMod](/app)
+
+    [:octicons-arrow-right-24: Como conectar](/products/keymod/how-to-connect)
+
+    [:octicons-arrow-right-24: Casos de uso](/products/keymod/use-cases/)
+
+    [:octicons-arrow-right-24: Ver perguntas frequentes](/products/keymod/faq)
+
+</div>
+
+
+<div class="grid cards" markdown>
+
+-   :material-calendar-star:{ .lg } __Pré-lançamento e atualizações__
+
+    ---
+
+    [:material-newspaper-variant-outline: Atualizações do produto](/products/keymod/updates/) / [:material-play-circle-outline: Vídeos do YouTube](/videos/?p=keymod) / [:material-account-group-outline: Inscrever-se abaixo](/products/keymod/#product-signup-form)
+
+</div>
+
+{% set product_signup_anchor = false %}
+{% include "partials/product-signup.html" %}
+
+<div markdown="0">
+{% include "partials/videos-grid-keymod.html" %}
+</div>
+

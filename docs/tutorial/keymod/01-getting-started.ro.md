@@ -19,12 +19,13 @@ Instalați aplicația KeyMod, conectați-vă la hardware-ul KeyMod și trimiteț
 
 **Android:**
 
-1. Deschideți browserul telefonului și accesați [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Deschideți browserul telefonului și accesați [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Descărcați cel mai recent fișier `.apk`
 3. Atingeți fișierul descărcat pentru a instala
 4. Dacă Android vă întreabă, permiteți **„Instalați aplicații necunoscute”** pentru browserul dvs.
 
-Alternativ, construiți din sursă - vezi [Build from Source](#build-from-source) de mai jos.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Pasul 2: Conectați-vă la dispozitivul dvs. KeyMod
 
@@ -87,19 +88,6 @@ Asta e! Acum controlați computerul țintă de la distanță.
 | **Gri** (pictogramă deconectată) | Nicio conexiune activă |
 | **Bare de semnal** | BLE puterea semnalului sau USB stare activă |
 
-## Construire din sursă (Android, pentru dezvoltatori)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Următorii pași
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Tastare, modificatori, touchpad și introducere text

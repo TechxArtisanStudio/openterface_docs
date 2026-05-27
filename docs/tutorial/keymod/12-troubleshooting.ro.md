@@ -108,6 +108,6 @@ Verificați conexiunea la rețea. Încercați un model mai rapid — modelele ma
 
 Dacă încă mai întâmpinați probleme:
 
-- **Rapoarte erori:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Rapoarte erori:** [Discord](https://discord.gg/techxartisan)
 - **Comunitate:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface documentație:** [openterface.com](https://openterface.com)

@@ -37,9 +37,9 @@ description: "KVM 軟件教程: 全面的KVM-over-USB：在同一個設備上控
 
 ## 快速鏈接
 
-- [應用程序概述](/app/overview.md) — 下載和安裝指南
-- [Mini-KVM產品頁面](/product/minikvm/)
-- [KVM-Go產品頁面](/product/kvm-go/)
-- [uConsole KVM擴展產品頁面](/product/uconsole-kvm-extension/)
+- [應用程序概述](/app/kvm/) — 下載和安裝指南
+- [Mini-KVM產品頁面](/products/minikvm/)
+- [KVM-Go產品頁面](/products/kvmgo/)
+- [uConsole KVM擴展產品頁面](/products/kvmext/)
 - [iPadOS應用](/app/ipados/) — 下載和安裝指南
 - [Discord](https://discord.gg/sFTJD6a3R8) — 社區支持

@@ -16,8 +16,8 @@ KeyMod transforme votre téléphone ou votre tablette en un **périphérique d'e
 
 ### Comment fonctionne la connexion```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
-L'application communique avec le matériel KeyMod à l'aide du protocole **CH9329** via une connexion série (USB-C à 115 200 bauds, 8N1 ou Bluetooth BLE). Le périphérique KeyMod apparaît à l'ordinateur cible comme un clavier et une souris USB standard — aucun pilote n'est nécessaire.
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
+L'application communique avec le matériel KeyMod à l'aide du protocole **CH9329** via une connexion série (USB-C à 115 200 bauds, 8N1 ou Bluetooth BLE). Le périphérique KeyCmd apparaît à l'ordinateur cible comme un clavier et une souris USB standard — aucun pilote n'est nécessaire.
 
 ### C'est pour qui ?
 
@@ -49,6 +49,6 @@ L'application communique avec le matériel KeyMod à l'aide du protocole **CH932
 
 ## Obtenir de l'aide
 
-- **Rapports de bogues :** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Rapports de bogues :** [Discord](https://discord.gg/techxartisan)
 - **Communauté :** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Code source :** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Code source :** KeyCmd *(coming soon)*

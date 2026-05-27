@@ -54,6 +54,81 @@ function collectEnPaths(dir, base = DIST, acc = []) {
   return acc;
 }
 
+const PRODUCT_SLUG_LEGACY = {
+  kvmgo: 'kvm-go',
+  kvmext: 'uconsole-kvm-extension',
+  minikvm: 'minikvm',
+  keymod: 'keymod',
+  accessories: 'accessories',
+};
+
+const LOCALE_PREFIXES = [
+  '',
+  'zh/',
+  'ja/',
+  'ko/',
+  'de/',
+  'fr/',
+  'es/',
+  'it/',
+  'pt/',
+  'ro/',
+  'hk/',
+  'tw/',
+  'ru/',
+  'ar/',
+  'tr/',
+  'pl/',
+  'nl/',
+];
+
+function toLegacyProductPath(newPath) {
+  const match = newPath.match(/^\/products\/([^/]+)(\/.*)?$/);
+  if (!match) return null;
+  const [, slug, rest = ''] = match;
+  const legacySlug = PRODUCT_SLUG_LEGACY[slug] ?? slug;
+  return `/product/${legacySlug}${rest}`;
+}
+
+function writeRedirectStub(fromPath, toPath) {
+  const legacyFile = join(DIST, fromPath.replace(/^\//, ''), 'index.html');
+  if (existsSync(legacyFile)) return false;
+  mkdirSync(dirname(legacyFile), { recursive: true });
+  const target = toPath.endsWith('/') ? toPath : `${toPath}/`;
+  writeFileSync(legacyFile, redirectHtml(target));
+  return true;
+}
+
+function writeRefactorRedirects() {
+  let count = 0;
+  const enPaths = collectEnPaths(DIST, DIST);
+
+  for (const enPath of enPaths) {
+    const target = enPath === '/' ? '/' : `${enPath}/`;
+    const legacyProduct = toLegacyProductPath(enPath.startsWith('/') ? enPath : `/${enPath}`);
+    if (!legacyProduct) continue;
+
+    for (const prefix of LOCALE_PREFIXES) {
+      const from = `/${prefix}${legacyProduct.replace(/^\//, '')}`.replace(/\/+/g, '/');
+      const to = prefix ? `/${prefix}${target.replace(/^\//, '')}`.replace(/\/+/g, '/') : target;
+      if (writeRedirectStub(from, to)) count++;
+    }
+  }
+
+  for (const [from, to] of [
+    ['/app/overview/', '/app/kvm/'],
+    ['/app/faq/', '/app/kvm/faq/'],
+  ]) {
+    for (const prefix of LOCALE_PREFIXES) {
+      const fromPath = `/${prefix}${from.replace(/^\//, '')}`.replace(/\/+/g, '/');
+      const toPath = prefix ? `/${prefix}${to.replace(/^\//, '')}`.replace(/\/+/g, '/') : to;
+      if (writeRedirectStub(fromPath, toPath)) count++;
+    }
+  }
+
+  return count;
+}
+
 if (!existsSync(DIST)) {
   console.error('post-build: dist/ missing — run npm run build first');
   process.exit(1);
@@ -85,3 +160,6 @@ for (const name of readdirSync(DIST)) {
 }
 
 console.log(`post-build: ${redirectCount} /en/* redirect stubs → unprefixed EN`);
+
+const refactorCount = writeRefactorRedirects();
+console.log(`post-build: ${refactorCount} /product/* and /app/overview|faq/ redirect stubs`);

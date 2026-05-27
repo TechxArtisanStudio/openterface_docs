@@ -15,15 +15,15 @@ keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, n
 
 #### **Openterface Mini-KVM**
 
-- [Perguntas frequentes sobre Openterface Mini-KVM](/product/minikvm/faq) — FAQ completo sobre recursos, compatibilidade e uso
-- [Teclado e mouse não conseguem controlar o alvo?](/product/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Solução de problemas HID/controle
-- [Como executo diagnósticos?](/product/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Verifique seu dispositivo com a autoverificação integrada
-- [Como reporto um problema de hardware ao suporte?](/product/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Quando os diagnósticos mostram FALHA
+- [Perguntas frequentes sobre Openterface Mini-KVM](/products/minikvm/faq) — FAQ completo sobre recursos, compatibilidade e uso
+- [Teclado e mouse não conseguem controlar o alvo?](/products/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Solução de problemas HID/controle
+- [Como executo diagnósticos?](/products/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Verifique seu dispositivo com a autoverificação integrada
+- [Como reporto um problema de hardware ao suporte?](/products/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Quando os diagnósticos mostram FALHA
 
 #### **Openterface KVM Extension para uConsole**
 
-- [FAQs para Openterface KVM Extension para uConsole](/product/uconsole-kvm-extension/faq)
+- [FAQs para Openterface KVM Extension para uConsole](/products/kvmext/faq)
 
 #### **Aplicativos Host Openterface**
 
-- [FAQs para Aplicativos](/app/faq)
+- [FAQs para Aplicativos](/app/kvm/faq)

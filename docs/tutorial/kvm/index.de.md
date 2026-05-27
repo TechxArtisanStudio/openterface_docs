@@ -38,10 +38,10 @@ Diese Anleitung umfasst die **Openterface KVM-Serie** — Geräte, die das Zielb
 
 ## Schnelllinks
 
-- [App-Highlight](/app/overview.md) — Download- und Installationsanleitung
-- [Mini-KVM-Produktseite](/product/minikvm/)
-- [KVM-Go-Produktseite](/product/kvm-go/)
-- [uConsole KVM-Erweiterung Produktsseite](/product/uconsole-kvm-extension/)
+- [App-Highlight](/app/kvm/) — Download- und Installationsanleitung
+- [Mini-KVM-Produktseite](/products/minikvm/)
+- [KVM-Go-Produktseite](/products/kvmgo/)
+- [uConsole KVM-Erweiterung Produktsseite](/products/kvmext/)
 - [iPadOS-App](/app/ipados/) — Download- und Installationsanleitung
 - [Discord](https://discord.gg/sFTJD6a3R8) — Communityunterstützung
 

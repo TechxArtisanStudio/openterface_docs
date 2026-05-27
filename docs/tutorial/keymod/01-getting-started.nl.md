@@ -11,20 +11,21 @@ Installeer de KeyMod-app, maak verbinding met uw KeyMod-hardware en verzend uw e
 ## Wat je nodig hebt
 
 - **Openterface KeyMod hardware** — ingeschakeld en binnen bereik
-- **Telefoon of tablet** — Android met de KeyMod app geïnstalleerd
-- **USB kabel** (voor eerste installatie) — USB-C om uw telefoon aan te sluiten op het KeyMod apparaat
+- **Telefoon of tablet** — Android met de KeyCmd app geïnstalleerd
+- **USB kabel** (voor eerste installatie) — USB-C om uw telefoon aan te sluiten op het KeyCmd apparaat
 - **Bluetooth** (optioneel) — voor draadloze verbinding na de eerste installatie
 
 ## Stap 1: Installeer de KeyMod-app
 
 **Android:**
 
-1. Open de browser van uw telefoon en ga naar [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Open de browser van uw telefoon en ga naar [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Download het nieuwste `.apk`-bestand
 3. Tik op het gedownloade bestand om te installeren
 4. Als Android daarom vraagt, sta dan **"Installeer onbekende apps"** toe voor uw browser
 
-U kunt ook vanaf de bron bouwen — zie [Build from Source](#build-from-source) hieronder.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Stap 2: Maak verbinding met uw KeyMod-apparaat
 
@@ -32,7 +33,7 @@ KeyMod wordt op twee manieren verbonden met de Openterface KeyMod hardware:
 
 ### USB Verbinding (aanbevolen voor eerste installatie)
 
-1. Sluit uw telefoon aan op het KeyMod apparaat met behulp van een USB-C kabel
+1. Sluit uw telefoon aan op het KeyCmd apparaat met behulp van een USB-C kabel
 2. Open de app KeyMod
 3. Tik op het verbindingspictogram (rechterbovenhoek van het hoofdscherm)
 4. Tik op **"USB Verbinding"**
@@ -42,7 +43,7 @@ KeyMod wordt op twee manieren verbonden met de Openterface KeyMod hardware:
 ### Bluetooth-verbinding (draadloos)
 
 1. Zorg ervoor dat Bluetooth is ingeschakeld op uw telefoon
-2. Open KeyMod en tik op het verbindingspictogram
+2. Open KeyCmd en tik op het verbindingspictogram
 3. Tik op **"Bluetooth-verbinding"**
 4. Wacht tot uw KeyMod-apparaat in de scanlijst verschijnt
 5. Tik erop om te koppelen
@@ -87,19 +88,6 @@ Dat is het! U bestuurt nu uw doelcomputer op afstand.
 | **Grijs** (pictogram verbroken) | Geen actieve verbinding |
 | **Signaalbalken** | BLE signaalsterkte of USB actieve status |
 
-## Bouwen vanuit bron (Android, voor ontwikkelaars)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Volgende stappen
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Typen, modificaties, touchpad en tekstinvoer

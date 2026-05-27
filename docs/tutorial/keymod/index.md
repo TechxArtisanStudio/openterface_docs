@@ -1,27 +1,27 @@
 ---
 title: "KeyMod Tutorial"
-description: "Complete guide to using the KeyMod app. Learn how to connect, control your computer from your phone, and use keyboard, mouse, gamepad, macros, and voice input modes."
-keywords: "KeyMod tutorial, how to use KeyMod, phone keyboard guide, KeyMod app tutorial"
+description: "Complete guide to using KeyCmd with KeyMod hardware. Learn how to connect, control your computer from your phone, and use keyboard, mouse, gamepad, macros, and voice input modes."
+keywords: "KeyMod tutorial, how to use KeyMod, phone keyboard guide, KeyCmd tutorial"
 ---
 
 # KeyMod Tutorial
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-This tutorial covers the **Android** version of the KeyMod app. The iOS version is under development.
+This tutorial covers the **Android** version of **KeyCmd** with KeyMod hardware. The iOS version is under development.
 
 ## What is KeyMod?
 
-KeyMod transforms your phone or tablet into a **universal input device** for any computer. It connects to the **Openterface KeyMod** hardware (a KVM — Keyboard, Video, Mouse switcher), which then sends your phone's keystrokes, mouse movements, and gamepad inputs to a target computer as if they came from a real USB keyboard and mouse.
+KeyMod is Openterface **hardware** that turns your phone into a keyboard and trackpad for any computer. Pair it with the **KeyCmd** app on your phone — KeyCmd sends keystrokes, mouse movements, and gamepad inputs through KeyMod to a target computer as if they came from a real USB keyboard and mouse.
 
 ### How the connection works
 
 ```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd)                   (CH9329 protocol)              (Windows/macOS/Linux)
 ```
 
-The app communicates with the KeyMod hardware using the **CH9329 protocol** over a serial connection (USB-C at 115200 baud, 8N1, or Bluetooth BLE). The KeyMod device appears to the target computer as a standard USB keyboard and mouse — no drivers needed.
+The KeyCmd app communicates with the KeyMod hardware using the **CH9329 protocol** over a serial connection (USB-C at 115200 baud, 8N1, or Bluetooth BLE). The KeyMod device appears to the target computer as a standard USB keyboard and mouse — no drivers needed.
 
 ### Who is this for?
 
@@ -53,6 +53,6 @@ The app communicates with the KeyMod hardware using the **CH9329 protocol** over
 
 ## Getting Help
 
-- **Bug reports:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Bug reports:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Source code:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Source code:** *(coming soon)*

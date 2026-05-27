@@ -60,10 +60,10 @@ We willen je eerlijke mening. Echt waar. Als iets niet klopt, laat het ons weten
 
 **Aan de slag:**
 
-* **Setupgids**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Beta snelstart**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **Functies en specificaties**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **FAQ**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **Setupgids**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Beta snelstart**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **Functies en specificaties**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **FAQ**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **App downloaden**: [openterface.com/app](https://openterface.com/app)
 
 **Hulp nodig?**

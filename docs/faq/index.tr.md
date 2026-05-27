@@ -15,15 +15,15 @@ keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, n
 
 #### **Openterface Mini-KVM**
 
-- [FAQs için Openterface Mini-KVM](/product/minikvm/faq) — Vollständige FAQ zu Özellikler, Kompatibilität ve Nutzung
-- [Tastatur ve Maus können den Zielcomputer değil steuern?](/product/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Fehlerbehebung HID/Steuerung
-- [Wie führe ich Diagnosen durch?](/product/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Gerät ile integriertem Selbsttest prüfen
-- [Wie melde ich ein Donanım-Problem an den Destek?](/product/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Wenn die Diagnose FEHLER anzeigt
+- [FAQs için Openterface Mini-KVM](/products/minikvm/faq) — Vollständige FAQ zu Özellikler, Kompatibilität ve Nutzung
+- [Tastatur ve Maus können den Zielcomputer değil steuern?](/products/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — Fehlerbehebung HID/Steuerung
+- [Wie führe ich Diagnosen durch?](/products/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — Gerät ile integriertem Selbsttest prüfen
+- [Wie melde ich ein Donanım-Problem an den Destek?](/products/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — Wenn die Diagnose FEHLER anzeigt
 
 #### **Openterface KVM Extension için uConsole**
 
-- [FAQs için Openterface KVM Extension için uConsole](/product/uconsole-kvm-extension/faq)
+- [FAQs için Openterface KVM Extension için uConsole](/products/kvmext/faq)
 
 #### **Openterface Host-Apps**
 
-- [FAQs için Apps](/app/faq)
+- [FAQs için Apps](/app/kvm/faq)

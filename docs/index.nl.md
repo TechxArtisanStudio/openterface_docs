@@ -9,9 +9,9 @@ Welkom bij de officiële documentatie voor Openterface KVM-over-USB-producten en
 
 ## Quick links
 
-- [KVM-GO](/nl/product/kvm-go/)
-- [Mini-KVM](/nl/product/minikvm/)
-- [KeyMod](/nl/product/keymod/)
-- [App downloaden](/nl/app/overview/)
+- [KVM-GO](/nl/products/kvmgo/)
+- [Mini-KVM](/nl/products/minikvm/)
+- [KeyMod](/nl/products/keymod/)
+- [App downloaden](/nl/app/kvm/)
 - [Ondersteuning](/nl/support/)
 - [Nieuws ↗](https://news.openterface.com/nl/)

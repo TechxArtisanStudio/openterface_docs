@@ -19,12 +19,13 @@ keywords: "KeyMod البدء، KeyMod الإعداد، KeyMod التثبيت، �
 
 **Android:**
 
-1. افتح متصفح هاتفك وانتقل إلى [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. افتح متصفح هاتفك وانتقل إلى [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. قم بتنزيل أحدث ملف `.apk`
 3. اضغط على الملف الذي تم تنزيله للتثبيت
 4. إذا طلب Android السماح بـ **"تثبيت تطبيقات غير معروفة"** لمتصفحك
 
-وبدلاً من ذلك، يمكنك البناء من المصدر — راجع [Build from Source](#build-from-source) أدناه.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## الخطوة 2: اتصل بجهاز KeyMod الخاص بك
 
@@ -87,19 +88,6 @@ keywords: "KeyMod البدء، KeyMod الإعداد، KeyMod التثبيت، �
 | **الرمادي** (أيقونة غير متصلة) | لا يوجد اتصال نشط |
 | **أشرطة الإشارة** | BLE قوة الإشارة أو USB الحالة النشطة |
 
-## البناء من المصدر (Android، للمطورين)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## الخطوات التالية
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — الكتابة، والمعدلات، touchpad، وإدخال النص

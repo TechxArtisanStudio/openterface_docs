@@ -60,10 +60,10 @@ Dürüst görüşünüzü istiyoruz. Gerçekten. Bir şey ters geliyorsa bize s�
 
 **Başlarken:**
 
-* **Kurulum Kılavuzu**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Beta Hızlı Başlangıç**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **Özellikler ve Spesifikasyonlar**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **SSS**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **Kurulum Kılavuzu**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Beta Hızlı Başlangıç**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **Özellikler ve Spesifikasyonlar**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **SSS**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **Uygulamayı İndir**: [openterface.com/app](https://openterface.com/app)
 
 **Yardıma mı ihtiyacınız var?**

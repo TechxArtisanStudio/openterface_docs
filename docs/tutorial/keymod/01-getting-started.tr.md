@@ -19,7 +19,7 @@ KeyMod uygulamasını yükleyin, KeyMod donanımınıza bağlanın ve ilk tuş v
 
 **Android:**
 
-1. Telefonunuzun tarayıcısını açın ve [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags) menüsüne gidin.
+1. Telefonunuzun tarayıcısını açın ve [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk) menüsüne gidin.
 2. En son `.apk` dosyasını indirin
 3. Yüklemek için indirilen dosyaya dokunun
 4. Android sorarsa tarayıcınız için **"Bilinmeyen uygulamaları yükle"** seçeneğine izin verin
@@ -87,19 +87,6 @@ Modları istediğiniz zaman değiştirmek için yan menüyü (hamburger simgesi,
 | **Gri** (bağlantı kesildi simgesi) | Aktif bağlantı yok |
 | **Sinyal çubukları** | BLE sinyal gücü veya USB aktif durum |
 
-## Kaynaktan Derleme (Android, Geliştiriciler için)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Sonraki Adımlar
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Yazma, değiştiriciler, touchpad ve metin girişi

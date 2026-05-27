@@ -15,15 +15,15 @@ keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, n
 
 #### **Openterface Mini-KVM**
 
-- [Openterface Mini-KVM 常見問題](/product/minikvm/faq) — 涵蓋功能、兼容性和使用的完整常見問題
-- [鍵盤和鼠標無法控制目標？](/product/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — HID/控制問題故障排除
-- [如何運行診斷？](/product/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — 使用內置自檢驗證設備
-- [如何向支持團隊報告硬件問題？](/product/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — 當診斷顯示失敗時
+- [Openterface Mini-KVM 常見問題](/products/minikvm/faq) — 涵蓋功能、兼容性和使用的完整常見問題
+- [鍵盤和鼠標無法控制目標？](/products/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — HID/控制問題故障排除
+- [如何運行診斷？](/products/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — 使用內置自檢驗證設備
+- [如何向支持團隊報告硬件問題？](/products/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — 當診斷顯示失敗時
 
 #### **Openterface KVM Extension for uConsole**
 
-- [Openterface KVM Extension for uConsole 常見問題](/product/uconsole-kvm-extension/faq)
+- [Openterface KVM Extension for uConsole 常見問題](/products/kvmext/faq)
 
 #### **Openterface 主機應用**
 
-- [應用常見問題](/app/faq)
+- [應用常見問題](/app/kvm/faq)

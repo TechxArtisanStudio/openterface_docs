@@ -439,10 +439,11 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
   md = md.replace(/(\]\([^)]+\))\{:[^}]+\}/g, '$1');
 
   // Absolute internal doc links → site paths
-  md = md.replace(/\]\(\/app\)/g, '](/app/overview/)');
+  md = md.replace(/\]\(\/app\)/g, '](/app/kvm/)');
   md = md.replace(/\]\(\/faq\)/g, '](/faq/)');
   md = md.replace(/\]\(\/support\)/g, '](/support/)');
-  md = md.replace(/\]\(\/product\//g, '](/product/');
+  md = md.replace(/\]\(\/products\//g, '](/products/');
+  md = md.replace(/\]\(\/product\//g, '](/products/');
   md = md.replace(/\]\(\/tutorial\//g, '](/tutorial/');
   md = md.replace(/\]\(\/about\//g, '](/about/');
   md = md.replace(/\]\(\/policy\//g, '](/policy/');
@@ -462,7 +463,7 @@ function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): str
         break;
       }
     }
-    if (pageSlug.startsWith('product/')) {
+    if (pageSlug.startsWith('products/')) {
       const product = pageSlug.split('/')[1];
       return `](${newsPath(locale, `product/${product}/${slug}`)})`;
     }

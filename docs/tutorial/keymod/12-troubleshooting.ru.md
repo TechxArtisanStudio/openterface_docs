@@ -108,6 +108,6 @@ KeyMod отслеживает трансляционные события USB п
 
 Если у вас все еще возникают проблемы:
 
-- **Сообщения об ошибках:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Сообщения об ошибках:** [Discord](https://discord.gg/techxartisan)
 - **Сообщество:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface документация:** [openterface.com](https://openterface.com)

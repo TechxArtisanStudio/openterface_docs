@@ -9,9 +9,9 @@ description: "مرحبًا بك في مركز التوثيق الرسمي لمن
 
 ## Quick links
 
-- [KVM-GO](/ar/product/kvm-go/)
-- [Mini-KVM](/ar/product/minikvm/)
-- [KeyMod](/ar/product/keymod/)
-- [تنزيل التطبيق](/ar/app/overview/)
+- [KVM-GO](/ar/products/kvmgo/)
+- [Mini-KVM](/ar/products/minikvm/)
+- [KeyMod](/ar/products/keymod/)
+- [تنزيل التطبيق](/ar/app/kvm/)
 - [الدعم](/ar/support/)
 - [الأخبار ↗](https://news.openterface.com/ar/)

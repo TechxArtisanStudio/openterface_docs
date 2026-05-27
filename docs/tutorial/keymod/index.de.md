@@ -16,7 +16,7 @@ KeyMod verwandelt Ihr Telefon oder Tablet in ein **universelles Eingabegerät** 
 
 ### So funktioniert die Verbindung```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 Die App kommuniziert mit der KeyMod-Hardware über das **CH9329-Protokoll** über eine serielle Verbindung (USB-C bei 115200 Baud, 8N1 oder Bluetooth BLE). Das KeyMod-Gerät erscheint auf dem Zielcomputer als Standard-USB-Tastatur und -Maus – es sind keine Treiber erforderlich.
 
 ### Für wen ist das?
@@ -49,6 +49,6 @@ Die App kommuniziert mit der KeyMod-Hardware über das **CH9329-Protokoll** übe
 
 ## Hilfe bekommen
 
-- **Fehlerberichte:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Fehlerberichte:** [Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Quellcode:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Quellcode:** KeyCmd *(coming soon)*

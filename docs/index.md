@@ -9,8 +9,8 @@ Welcome to the official documentation hub for Openterface KVM-over-USB products 
 
 ## Quick links
 
-- [Product documentation](/product/kvm-go/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
-- [Download the app](/app/overview/) — macOS, Windows, Linux, Android
+- [Product documentation](/products/kvmgo/) — KVM-GO, Mini-KVM, KeyMod, uConsole KVM Extension, Accessories
+- [Download the app](/app/kvm/) — macOS, Windows, Linux, Android
 - [Tutorials](/tutorial/kvm/) — KVM and KeyMod getting started guides
 - [FAQs](/faq/) — Common questions
 - [Support](/support/) — Help, forum, and latest news

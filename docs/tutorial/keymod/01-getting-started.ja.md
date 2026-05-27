@@ -1,25 +1,25 @@
 ---
 title: "KeyMod チュートリアル - はじめに"
-description: KeyMod アプリをインストールし、KeyMod デバイスに接続して、5分以内に最初のキー入力を送信します。 KeyMod アプリをインストールし、KeyMod ハードウェアに接続して、5分以内に最初のキー入力を送信します。
+description: KeyCmd アプリをインストールし、KeyMod デバイスに接続して、5分以内に最初のキー入力を送信します。 KeyCmd アプリをインストールし、KeyMod ハードウェアに接続して、5分以内に最初のキー入力を送信します。
 keywords: "KeyMod はじめに, KeyMod セットアップ, KeyMod インストール, KeyMod 接続"
 ---
 
 # 1. はじめに
 
-KeyMod アプリをインストールし、KeyMod ハードウェアに接続して、5分以内に最初のキー入力を送信します。
+KeyCmd アプリをインストールし、KeyMod ハードウェアに接続して、5分以内に最初のキー入力を送信します。
 
 ## 必要なもの
 
 - **Openterface KeyMod ハードウェア** — 電源オンで範囲内にあること
-- **スマートフォンまたはタブレット** — KeyMod アプリがインストールされた Android
+- **スマートフォンまたはタブレット** — KeyCmd アプリがインストールされた Android
 - **USB ケーブル**（初回設定用）— スマホを KeyMod に接続する USB-C
 - **Bluetooth**（任意）— 初回設定後のワイヤレス接続
 
-## ステップ 1: KeyMod アプリのインストール
+## ステップ 1: KeyCmd アプリのインストール
 
 **Android:**
 
-1. ブラウザで [KeyMod GitHub Releases ページ](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags) を開く
+1. ブラウザで [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk) を開く
 2. 最新の `.apk` をダウンロード
 3. ダウンロードしたファイルをタップしてインストール
 4. 求められたらブラウザに **「提供元不明のアプリをインストール」** を許可
@@ -33,7 +33,7 @@ KeyMod は Openterface KeyMod ハードウェアに次の2通りで接続しま�
 ### USB 接続（初回設定に推奨）
 
 1. USB-C ケーブルでスマホを KeyMod に接続
-2. KeyMod アプリを開く
+2. KeyCmd アプリを開く
 3. メイン画面右上の接続アイコンをタップ
 4. **「USB Connection」** をタップ
 5. 表示されたら USB 権限を許可
@@ -87,21 +87,6 @@ KeyMod は Openterface KeyMod ハードウェアに次の2通りで接続しま�
 | **灰**（未接続） | アクティブな接続なし |
 | **信号バー** | BLE 信号強度または USB アクティブ |
 
-## ソースからビルド（Android、開発者向け）
-
-```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## 次のステップ
 
 - **[キーボードとマウス →](02-keyboard-mouse.md)** — 入力、修飾キー、タッチパッド、テキスト入力

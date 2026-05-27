@@ -9,9 +9,9 @@ Bun venit la documentația oficială pentru produsele și software-ul Openterfac
 
 ## Quick links
 
-- [KVM-GO](/ro/product/kvm-go/)
-- [Mini-KVM](/ro/product/minikvm/)
-- [KeyMod](/ro/product/keymod/)
-- [Download App](/ro/app/overview/)
+- [KVM-GO](/ro/products/kvmgo/)
+- [Mini-KVM](/ro/products/minikvm/)
+- [KeyMod](/ro/products/keymod/)
+- [Download App](/ro/app/kvm/)
 - [Support](/ro/support/)
 - [News ↗](https://news.openterface.com/ro/)

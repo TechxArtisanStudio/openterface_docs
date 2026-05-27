@@ -60,10 +60,10 @@ description: 안녕하세요! 베타 프로그램에 다시 한번 참여해 주
 
 **시작하기:**
 
-* **설정 가이드**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **베타 빠른 시작**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **기능 및 사양**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **FAQ**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **설정 가이드**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **베타 빠른 시작**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **기능 및 사양**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **FAQ**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **앱 다운로드**: [openterface.com/app](https://openterface.com/app)
 
 **도움이 필요하신가요?**

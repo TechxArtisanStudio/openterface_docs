@@ -1,14 +1,14 @@
 ---
 title: "KeyMod 튜토리얼"
-description: KeyMod 앱 사용에 대한 전체 가이드입니다. 휴대폰에서 컴퓨터를 연결하고 제어하며 키보드, 마우스, 게임패드, 매크로 및 음성 입력 모드를 사용하는 방법을 알아보세요. 이 튜토리얼에서는 KeyMod 앱의 Android 버전을 다룹니다. iOS 버전은 개발 중입니다.…
-keywords: "KeyMod 튜토리얼, KeyMod 사용 방법, 휴대폰 키보드 가이드, KeyMod 앱 튜토리얼"
+description: KeyCmd 앱 사용에 대한 전체 가이드입니다. 휴대폰에서 컴퓨터를 연결하고 제어하며 키보드, 마우스, 게임패드, 매크로 및 음성 입력 모드를 사용하는 방법을 알아보세요. 이 튜토리얼에서는 KeyCmd 앱의 Android 버전을 다룹니다. iOS 버전은 개발 중입니다.…
+keywords: "KeyMod 튜토리얼, KeyMod 사용 방법, 휴대폰 키보드 가이드, KeyCmd 앱 튜토리얼"
 ---
 
 # KeyMod 튜토리얼
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-이 튜토리얼에서는 KeyMod 앱의 **Android** 버전을 다룹니다. iOS 버전은 개발 중입니다.
+이 튜토리얼에서는 KeyCmd 앱의 **Android** 버전을 다룹니다. iOS 버전은 개발 중입니다.
 
 ## KeyMod란 무엇인가요?
 
@@ -16,7 +16,7 @@ KeyMod는 휴대폰이나 태블릿을 모든 컴퓨터의 **범용 입력 장�
 
 ### 연결 작동 방식```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 앱은 직렬 연결(115200 보드에서 USB-C, 8N1 또는 Bluetooth BLE)을 통해 **CH9329 프로토콜**을 사용하여 KeyMod 하드웨어와 통신합니다. KeyMod 장치는 대상 컴퓨터에 표준 USB 키보드 및 마우스로 표시되며 드라이버가 필요하지 않습니다.
 
 ### 이것은 누구를 위한 것인가요?
@@ -49,6 +49,6 @@ KeyMod는 휴대폰이나 태블릿을 모든 컴퓨터의 **범용 입력 장�
 
 ## 도움 받기
 
-- **버그 신고:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **버그 신고:** [Discord](https://discord.gg/techxartisan)
 - **커뮤니티:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **소스 코드:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **소스 코드:** KeyCmd *(coming soon)*

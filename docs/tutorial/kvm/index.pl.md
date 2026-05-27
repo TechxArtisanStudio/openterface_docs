@@ -38,9 +38,9 @@ Tutaj znajdziesz szczegółowy przewodnik po serii **Openterface KVM** — urzą
 
 ## Szybkie Linki
 
-- [Przegląd Aplikacji](/app/overview.md) — Przewodnik do pobrania i instalacji
-- [Strona Produktu Mini-KVM](/product/minikvm/)
-- [Strona Produktu KVM-Go](/product/kvm-go/)
-- [Strona Produktu uConsole KVM Extension](/product/uconsole-kvm-extension/)
+- [Przegląd Aplikacji](/app/kvm/) — Przewodnik do pobrania i instalacji
+- [Strona Produktu Mini-KVM](/products/minikvm/)
+- [Strona Produktu KVM-Go](/products/kvmgo/)
+- [Strona Produktu uConsole KVM Extension](/products/kvmext/)
 - [Aplikacja iPadOS](/app/ipados/) — Przewodnik do pobrania i instalacji
 - [Discord](https://discord.gg/sFTJD6a3R8) — Wsparcie społeczności

@@ -60,10 +60,10 @@ description: "Openterface KVM-GO：Beta 評測指南: 您好！ 再次感謝您�
 
 **入門：**
 
-* **設置指南**：[openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Beta 快速入門**：[openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **功能與規格**：[openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **常見問題**：[openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **設置指南**：[openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Beta 快速入門**：[openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **功能與規格**：[openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **常見問題**：[openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **下載應用**：[openterface.com/app](https://openterface.com/app)
 
 **需要幫助？**

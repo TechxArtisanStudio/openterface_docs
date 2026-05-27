@@ -108,6 +108,6 @@ KeyMod يراقب Android USB أحداث البث المرفقة/الفصلية.
 
 إذا كنت لا تزال تواجه مشكلات:
 
-- **تقارير الأخطاء:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **تقارير الأخطاء:** [Discord](https://discord.gg/techxartisan)
 - **المجتمع:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface الوثائق:** [openterface.com](https://openterface.com)

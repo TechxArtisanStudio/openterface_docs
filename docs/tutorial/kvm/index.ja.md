@@ -38,10 +38,10 @@ description: USB経由のフルKVM：キーボード、ビデオ、マウスを1
 
 ## クイックリンク
 
-- [アプリの概要](/app/overview.md) — ダウンロードとインストールガイド
-- [Mini-KVM製品ページ](/product/minikvm/)
-- [KVM-Go製品ページ](/product/kvm-go/)
-- [uConsole KVM拡張製品ページ](/product/uconsole-kvm-extension/)
+- [アプリの概要](/app/kvm/) — ダウンロードとインストールガイド
+- [Mini-KVM製品ページ](/products/minikvm/)
+- [KVM-Go製品ページ](/products/kvmgo/)
+- [uConsole KVM拡張製品ページ](/products/kvmext/)
 - [iPadOSアプリ](/app/ipados/) — ダウンロードとインストールガイド
 - [Discord](https://discord.gg/sFTJD6a3R8) — コミュニティサポート
 

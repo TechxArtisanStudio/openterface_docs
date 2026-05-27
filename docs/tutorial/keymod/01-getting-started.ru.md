@@ -19,12 +19,13 @@ keywords: "KeyMod начало работы, KeyMod настройка, KeyMod �
 
 **Android:**
 
-1. Откройте браузер телефона и перейдите на страницу [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Откройте браузер телефона и перейдите на страницу [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Загрузите последнюю версию файла `.apk`.
 3. Нажмите загруженный файл для установки.
 4. Если появится запрос Android, разрешите **"Установить неизвестные приложения"** для вашего браузера.
 
-Альтернативно, создайте сборку из исходного кода — см. [Build from Source](#build-from-source) ниже.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Шаг 2. Подключитесь к устройству KeyMod
 
@@ -87,19 +88,6 @@ KeyMod подключается к оборудованию Openterface KeyMod �
 | **Серый** (значок отключен) | Нет активного соединения |
 | **Сигнальные полосы** | BLE уровень сигнала или USB активное состояние |
 
-## Сборка из исходного кода (Android, для разработчиков)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Следующие шаги
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — ввод текста, модификаторы, touchpad и ввод текста.

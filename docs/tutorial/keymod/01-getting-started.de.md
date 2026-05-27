@@ -19,12 +19,13 @@ Installieren Sie die KeyMod-App, stellen Sie eine Verbindung zu Ihrer KeyMod-Har
 
 **Android:**
 
-1. Öffnen Sie den Browser Ihres Telefons und gehen Sie zu [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Öffnen Sie den Browser Ihres Telefons und gehen Sie zu [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Laden Sie die neueste `.apk`-Datei herunter
 3. Tippen Sie auf die heruntergeladene Datei, um sie zu installieren
 4. Wenn Android Sie dazu auffordert, erlauben Sie **„Unbekannte Apps installieren“** für Ihren Browser
 
-Alternativ können Sie aus dem Quellcode erstellen – siehe [Build from Source](#build-from-source) unten.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Schritt 2: Verbinden Sie sich mit Ihrem KeyMod-Gerät
 
@@ -42,7 +43,7 @@ KeyMod stellt auf zwei Arten eine Verbindung zur Openterface KeyMod-Hardware her
 ### Bluetooth-Verbindung (kabellos)
 
 1. Stellen Sie sicher, dass Bluetooth auf Ihrem Telefon aktiviert ist
-2. Öffnen Sie KeyMod und tippen Sie auf das Verbindungssymbol
+2. Öffnen Sie KeyCmd und tippen Sie auf das Verbindungssymbol
 3. Tippen Sie auf **„Bluetooth-Verbindung“**
 4. Warten Sie, bis Ihr KeyMod-Gerät in der Scanliste erscheint
 5. Tippen Sie zum Koppeln darauf
@@ -87,19 +88,6 @@ Das ist es! Sie steuern jetzt Ihren Zielcomputer aus der Ferne.
 | **Grau** (getrenntes Symbol) | Keine aktive Verbindung |
 | **Signalbalken** | BLE Signalstärke oder USB aktiver Status |
 
-## Build from Source (Android, für Entwickler)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Nächste Schritte
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** – Tippen, Modifikatoren, touchpad und Texteingabe

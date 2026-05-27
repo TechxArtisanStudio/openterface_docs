@@ -37,10 +37,10 @@ Această tutoriale abordează seria **Openterface KVM** — dispozitive care cap
 
 ## Link-uri Rapide
 
-- [Perspectivă Aplicație](/app/overview.md) — Ghid de descărcare și instalare
-- [Pagină Produs Mini-KVM](/product/minikvm/)
-- [Pagină Produs KVM-Go](/product/kvm-go/)
-- [Pagină Produs uConsole KVM Ext.](/product/uconsole-kvm-extension/)
+- [Perspectivă Aplicație](/app/kvm/) — Ghid de descărcare și instalare
+- [Pagină Produs Mini-KVM](/products/minikvm/)
+- [Pagină Produs KVM-Go](/products/kvmgo/)
+- [Pagină Produs uConsole KVM Ext.](/products/kvmext/)
 - [Aplicație iPadOS](/app/ipados/) — Ghid de descărcare și instalare
 - [Discord](https://discord.gg/sFTJD6a3R8) — Suport comunitar
 

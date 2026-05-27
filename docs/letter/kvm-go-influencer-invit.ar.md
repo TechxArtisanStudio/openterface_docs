@@ -60,10 +60,10 @@ description: مرحبًا! شكرًا مرة أخرى على انضمامك إل
 
 **للبدء:**
 
-* **دليل الإعداد**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **بدء سريع للنسخة التجريبية**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **الميزات والمواصفات**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **الأسئلة الشائعة**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **دليل الإعداد**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **بدء سريع للنسخة التجريبية**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **الميزات والمواصفات**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **الأسئلة الشائعة**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **تنزيل التطبيق**: [openterface.com/app](https://openterface.com/app)
 
 **تحتاج مساعدة؟**

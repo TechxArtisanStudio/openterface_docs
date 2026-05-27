@@ -1,25 +1,25 @@
 ---
 title: "KeyMod 튜토리얼 - 시작하기"
-description: KeyMod 앱을 설치하고 KeyMod 장치에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요. KeyMod 앱을 설치하고 KeyMod 하드웨어에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요.
+description: KeyCmd 앱을 설치하고 KeyMod 장치에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요. KeyCmd 앱을 설치하고 KeyMod 하드웨어에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요.
 keywords: "KeyMod 시작하기, KeyMod 설정, KeyMod 설치, KeyMod 연결"
 ---
 
 # 1. 시작하기
 
-KeyMod 앱을 설치하고 KeyMod 하드웨어에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요.
+KeyCmd 앱을 설치하고 KeyMod 하드웨어에 연결한 후 5분 이내에 첫 번째 키 입력을 보내세요.
 
 ## 필요한 것
 
 - **Openterface KeyMod 하드웨어** — 전원이 켜져 있고 범위 내에 있습니다.
-- **휴대전화 또는 태블릿** — KeyMod 앱이 설치된 Android
+- **휴대전화 또는 태블릿** — KeyCmd 앱이 설치된 Android
 - **USB 케이블**(초기 설정용) — USB-C: 휴대폰을 KeyMod 장치에 연결
 - **블루투스**(옵션) — 초기 설정 후 무선 연결용
 
-## 1단계: KeyMod 앱 설치
+## 1단계: KeyCmd 앱 설치
 
 **Android:**
 
-1. 휴대폰의 브라우저를 열고 [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)로 이동합니다.
+1. 휴대폰의 브라우저를 열고 [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)로 이동합니다.
 2. 최신 `.apk` 파일을 다운로드하세요.
 3. 다운로드한 파일을 눌러 설치하세요.
 4. Android 메시지가 나타나면 브라우저에서 **"알 수 없는 앱 설치"**를 허용하세요.
@@ -33,7 +33,7 @@ KeyMod은 두 가지 방법으로 Openterface KeyMod 하드웨어에 연결됩�
 ### USB 연결(처음 설정 시 권장)
 
 1. USB-C 케이블을 사용하여 휴대폰을 KeyMod 장치에 연결합니다
-2. KeyMod 앱을 엽니다
+2. KeyCmd 앱을 엽니다
 3. 연결 아이콘(메인 화면 오른쪽 상단)을 탭하세요.
 4. **"USB 연결"**을 탭합니다.
 5. 메시지가 표시되면 USB 권한 프롬프트를 수락합니다.
@@ -87,19 +87,6 @@ KeyMod은 두 가지 방법으로 Openterface KeyMod 하드웨어에 연결됩�
 | **회색**(연결이 끊어진 아이콘) | 활성 연결이 없습니다 |
 | **신호바** | BLE 신호 강도 또는 USB 활성 상태 |
 
-## 소스에서 빌드(Android, 개발자용)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## 다음 단계
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — 입력, 수정자, touchpad 및 텍스트 입력

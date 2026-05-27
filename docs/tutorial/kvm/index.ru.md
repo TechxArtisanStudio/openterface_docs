@@ -39,10 +39,10 @@ description: "Полное управление KVM через USB: управл
 
 ## Быстрые ссылки
 
-- [Обзор приложения](/app/overview.md) — инструкция по установке и загрузке
-- [Страница продукта Mini-KVM](/product/minikvm/)
-- [Страница продукта KVM-Go](/product/kvm-go/)
-- [Страница продукта uConsole KVM Extension](/product/uconsole-kvm-extension/)
+- [Обзор приложения](/app/kvm/) — инструкция по установке и загрузке
+- [Страница продукта Mini-KVM](/products/minikvm/)
+- [Страница продукта KVM-Go](/products/kvmgo/)
+- [Страница продукта uConsole KVM Extension](/products/kvmext/)
 - [Приложение для iPadOS](/app/ipados/) — инструкция по установке и загрузке
 - [Discord](https://discord.gg/sFTJD6a3R8) — поддержка сообщества
 

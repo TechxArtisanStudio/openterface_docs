@@ -22,7 +22,7 @@ Seria **KVM-GO** (versiuni HDMI/DP/VGA) încape pe **breloc** și oferă acces i
 
 ### **1. Configurare**
 
-- Urmați ghidul nostru de pornire rapidă: **openterface.com/product/kvm-go/how-to-connect**
+- Urmați ghidul nostru de pornire rapidă: **openterface.com/products/kvmgo/how-to-connect**
 - Testați pe diferite platforme (Windows, macOS, Linux, Android) și dispozitive țintă (servere, mini-PC-uri, acces la nivel BIOS)
 
 ### **2. Testare în condiții reale**
@@ -49,12 +49,12 @@ Aici veți putea:
 
 ## **Răspândiți vestea**
 
-Ajutați-ne să creștem: împărtășiți experiențe pe rețelele sociale, bloguri și forumuri tehnice. Menționați **campania noastră de crowdfunding viitoare** la **openterface.com/product/kvm-go** — fiecare postare ajută la aducerea KVM-GO pe piață mai rapid!
+Ajutați-ne să creștem: împărtășiți experiențe pe rețelele sociale, bloguri și forumuri tehnice. Menționați **campania noastră de crowdfunding viitoare** la **openterface.com/products/kvm-go** — fiecare postare ajută la aducerea KVM-GO pe piață mai rapid!
 
 ## **Mai multe resurse**
 
-- **Funcții și specificații**: openterface.com/product/kvm-go/features
-- **Întrebări frecvente**: openterface.com/product/kvm-go/faq
+- **Funcții și specificații**: openterface.com/products/kvmgo/features
+- **Întrebări frecvente**: openterface.com/products/kvmgo/faq
 - **Descărcați aplicația**: openterface.com/app
 
 ---

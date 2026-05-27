@@ -39,10 +39,10 @@ Bu öğretici, **Openterface KVM serisi** — hedefin HDMI video çıkışını 
 
 ## Hızlı Bağlantılar
 
-- [Uygulama Genel Bakış](/app/overview.md) — Uygulama indirme ve kurulum rehberi
-- [Mini-KVM Ürün Sayfası](/product/minikvm/)
-- [KVM-Go Ürün Sayfası](/product/kvm-go/)
-- [uConsole KVM Ekstensiyonu Ürün Sayfası](/product/uconsole-kvm-extension/)
+- [Uygulama Genel Bakış](/app/kvm/) — Uygulama indirme ve kurulum rehberi
+- [Mini-KVM Ürün Sayfası](/products/minikvm/)
+- [KVM-Go Ürün Sayfası](/products/kvmgo/)
+- [uConsole KVM Ekstensiyonu Ürün Sayfası](/products/kvmext/)
 - [iPadOS Uygulaması](/app/ipados/) — Uygulama indirme ve kurulum rehberi
 - [Discord](https://discord.gg/sFTJD6a3R8) — Topluluğumuz destekleme
 

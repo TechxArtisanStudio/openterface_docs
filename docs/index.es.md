@@ -9,9 +9,9 @@ Bienvenido al centro de documentación oficial de productos y software Openterfa
 
 ## Quick links
 
-- [KVM-GO](/es/product/kvm-go/)
-- [Mini-KVM](/es/product/minikvm/)
-- [KeyMod](/es/product/keymod/)
-- [Download App](/es/app/overview/)
+- [KVM-GO](/es/products/kvmgo/)
+- [Mini-KVM](/es/products/minikvm/)
+- [KeyMod](/es/products/keymod/)
+- [Download App](/es/app/kvm/)
 - [Support](/es/support/)
 - [News ↗](https://news.openterface.com/es/)

@@ -1,12 +1,12 @@
 ---
 title: "KeyMod 教程 - 故障排除"
-description: 解决常见 KeyMod 问题：连接、按键无响应、蓝牙配对失败、语音输入错误等。 Android 版 KeyMod 应用的常见问题与解决方案。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
+description: 解决常见 KeyMod 问题：连接、按键无响应、蓝牙配对失败、语音输入错误等。 Android 版 KeyCmd 应用的常见问题与解决方案。 官方 Openterface 文档：安装步骤、常见问题与故障排查，面向 IT 与开发者。
 keywords: "KeyMod 故障排除, KeyMod 无法连接, KeyMod 蓝牙问题, KeyMod 按键无效"
 ---
 
 # 12. 故障排除
 
-Android 版 KeyMod 应用的常见问题与解决方案。
+Android 版 KeyCmd 应用的常见问题与解决方案。
 
 ## 连接问题
 
@@ -108,6 +108,6 @@ KeyMod 监听 Android USB 插拔广播。拔出 USB 线时连接状态立即更�
 
 若问题仍未解决：
 
-- **错误报告：** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **错误报告：** [Discord](https://discord.gg/techxartisan)
 - **社区：** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface 文档：** [openterface.com](https://openterface.com)

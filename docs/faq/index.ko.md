@@ -15,15 +15,15 @@ keywords: USB KVM, Openterface, KVM-over-USB, portable KVM, plug-and-play KVM, n
 
 #### **Openterface Mini-KVM**
 
-- [Openterface Mini-KVM 자주 묻는 질문](/product/minikvm/faq) — 기능, 호환성, 사용법을 다루는 전체 FAQ
-- [키보드와 마우스로 대상을 제어할 수 없나요?](/product/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — HID/제어 문제 해결
-- [진단을 실행하려면?](/product/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — 내장 자기 점검으로 장치 검증
-- [하드웨어 문제를 지원팀에 보고하려면?](/product/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — 진단에서 실패가 표시될 때
+- [Openterface Mini-KVM 자주 묻는 질문](/products/minikvm/faq) — 기능, 호환성, 사용법을 다루는 전체 FAQ
+- [키보드와 마우스로 대상을 제어할 수 없나요?](/products/minikvm/faq#keyboard-and-mouse-cannot-control-the-target-computer) — HID/제어 문제 해결
+- [진단을 실행하려면?](/products/minikvm/faq#how-do-i-run-diagnostics-to-check-if-my-mini-kvm-is-working) — 내장 자기 점검으로 장치 검증
+- [하드웨어 문제를 지원팀에 보고하려면?](/products/minikvm/faq#how-do-i-report-a-hardware-issue-to-support) — 진단에서 실패가 표시될 때
 
 #### **Openterface KVM Extension for uConsole**
 
-- [Openterface KVM Extension for uConsole 자주 묻는 질문](/product/uconsole-kvm-extension/faq)
+- [Openterface KVM Extension for uConsole 자주 묻는 질문](/products/kvmext/faq)
 
 #### **Openterface 호스트 앱**
 
-- [앱 자주 묻는 질문](/app/faq)
+- [앱 자주 묻는 질문](/app/kvm/faq)

@@ -60,10 +60,10 @@ Queremos a sua opinião honesta. A sério. Se algo não parecer certo, diga-nos.
 
 **Para começar:**
 
-* **Guia de configuração**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Início rápido beta**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **Funcionalidades e especificações**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **FAQs**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **Guia de configuração**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Início rápido beta**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **Funcionalidades e especificações**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **FAQs**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **Transferir app**: [openterface.com/app](https://openterface.com/app)
 
 **Precisa de ajuda?**

@@ -968,57 +968,59 @@ nav:
   - KVM-over-USB: faq/kvm-over-usb.md
 - Support: support/index.md
 - Product:
+  - Overview: products/index.md
   - KeyMod Series:
-    - Overview: product/keymod/index.md
-    - Features: product/keymod/features.md
-    - What's In The Box: product/keymod/whats-in-the-box.md
-    - How To Connect: product/keymod/how-to-connect.md
-    - Use Cases: product/keymod/use-cases.md
-    - FAQs: product/keymod/faq.md
-    - Reviews: product/keymod/reviews/index.md
+    - Overview: products/keymod/index.md
+    - Features: products/keymod/features.md
+    - What's In The Box: products/keymod/whats-in-the-box.md
+    - How To Connect: products/keymod/how-to-connect.md
+    - Use Cases: products/keymod/use-cases.md
+    - FAQs: products/keymod/faq.md
+    - Reviews: products/keymod/reviews/index.md
   - KVM-Go Series:
-    - Overview: product/kvm-go/index.md
-    - Features: product/kvm-go/features.md
-    - What's In The Box: product/kvm-go/whats-in-the-box.md
-    - How To Connect: product/kvm-go/how-to-connect.md
-    - Use Cases: product/kvm-go/use-cases.md
-    - Beta Quick Start: product/kvm-go/beta-quick-start.md
-    - MicroSD Switch: product/kvm-go/microsd-switch.md
-    - FAQs: product/kvm-go/faq.md
-    - Reviews: product/kvm-go/reviews/index.md
+    - Overview: products/kvmgo/index.md
+    - Features: products/kvmgo/features.md
+    - What's In The Box: products/kvmgo/whats-in-the-box.md
+    - How To Connect: products/kvmgo/how-to-connect.md
+    - Use Cases: products/kvmgo/use-cases.md
+    - Beta Quick Start: products/kvmgo/beta-quick-start.md
+    - MicroSD Switch: products/kvmgo/microsd-switch.md
+    - FAQs: products/kvmgo/faq.md
+    - Reviews: products/kvmgo/reviews/index.md
   - Mini-KVM:
-    - Overview: product/minikvm/index.md
-    - Features: product/minikvm/features.md
-    - What's In The Box: product/minikvm/whats-in-the-box.md
-    - How To Connect: product/minikvm/how-to-connect.md
-    - USB Switch: product/minikvm/usb-switch.md
-    - Extension Pins: product/minikvm/extension-pins.md
-    - FAQs: product/minikvm/faq.md
+    - Overview: products/minikvm/index.md
+    - Features: products/minikvm/features.md
+    - What's In The Box: products/minikvm/whats-in-the-box.md
+    - How To Connect: products/minikvm/how-to-connect.md
+    - USB Switch: products/minikvm/usb-switch.md
+    - Extension Pins: products/minikvm/extension-pins.md
+    - FAQs: products/minikvm/faq.md
     - Tech Support:
-      - Troubleshooting: product/minikvm/support/mini-kvm-troubleshooting-and-support.md
-      - Diagnostic (macOS): product/minikvm/support/diagnostic-self-check.md
-      - Diagnostic (Windows): product/minikvm/support/diagnostic-self-check-windows.md
-      - Keyboard and Mouse: product/minikvm/support/keyboard-mouse-control.md
-    - Reviews: product/minikvm/reviews/index.md
+      - Troubleshooting: products/minikvm/support/mini-kvm-troubleshooting-and-support.md
+      - Diagnostic (macOS): products/minikvm/support/diagnostic-self-check.md
+      - Diagnostic (Windows): products/minikvm/support/diagnostic-self-check-windows.md
+      - Keyboard and Mouse: products/minikvm/support/keyboard-mouse-control.md
+    - Reviews: products/minikvm/reviews/index.md
   - uConsole KVM Extension:
-    - Overview: product/uconsole-kvm-extension/index.md
-    - Features: product/uconsole-kvm-extension/features.md
-    - What's In The Box: product/uconsole-kvm-extension/whats-in-the-box.md
-    - Hardware Installation: product/uconsole-kvm-extension/hardware-installation.md
-    - Software Setup: product/uconsole-kvm-extension/software-setup.md
-    - Connect to Target: product/uconsole-kvm-extension/connect-to-target.md
-    - FAQs: product/uconsole-kvm-extension/faq.md
+    - Overview: products/kvmext/index.md
+    - Features: products/kvmext/features.md
+    - What's In The Box: products/kvmext/whats-in-the-box.md
+    - Hardware Installation: products/kvmext/hardware-installation.md
+    - Software Setup: products/kvmext/software-setup.md
+    - Connect to Target: products/kvmext/connect-to-target.md
+    - FAQs: products/kvmext/faq.md
   - Accessories:
-    - Overview: product/accessories/index.md
-    - VGA to HDMI Cable 1m: product/accessories/vga-to-hdmi-cable.md
-    - Type-C to C Cable Nylon 1.5m: product/accessories/nylong-c-to-c-150.md
-    - Type-C to C Cable Orange 1.5m: product/accessories/type-c-to-c-cable-with-adapter.md
-    - Type-C to A Cable Black 30cm: product/accessories/black-c-to-a-30.md
-    - HDMI Cable 30cm: product/accessories/hdmi-male-to-male-cable.md
-    - Toolkit Bag: product/accessories/openterface-toolkit-bag.md
+    - Overview: products/accessories/index.md
+    - VGA to HDMI Cable 1m: products/accessories/vga-to-hdmi-cable.md
+    - Type-C to C Cable Nylon 1.5m: products/accessories/nylong-c-to-c-150.md
+    - Type-C to C Cable Orange 1.5m: products/accessories/type-c-to-c-cable-with-adapter.md
+    - Type-C to A Cable Black 30cm: products/accessories/black-c-to-a-30.md
+    - HDMI Cable 30cm: products/accessories/hdmi-male-to-male-cable.md
+    - Toolkit Bag: products/accessories/openterface-toolkit-bag.md
 - App:
-  - Overview: app/overview.md
-  - FAQs: app/faq.md
+  - KVM Control: app/kvm/index.md
+  - KeyCmd: app/keycmd/index.md
+  - FAQs: app/kvm/faq.md
 - Tutorial:
   - KVM Series:
     - Overview: tutorial/kvm/index.md

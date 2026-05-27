@@ -19,12 +19,13 @@ Instale la aplicación KeyMod, conéctese a su hardware KeyMod y envíe su prime
 
 **Android:**
 
-1. Abra el navegador de su teléfono y vaya a [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Abra el navegador de su teléfono y vaya a [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Descargue el archivo `.apk` más reciente
 3. Toque el archivo descargado para instalarlo.
 4. Si Android te pregunta, permite **"Instalar aplicaciones desconocidas"** en tu navegador.
 
-Alternativamente, compila desde el código fuente; consulta [Build from Source](#build-from-source) a continuación.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Paso 2: Conéctese a su dispositivo KeyMod
 
@@ -87,19 +88,6 @@ Utilice el menú lateral (ícono de hamburguesa, arriba a la izquierda) para cam
 | **Gris** (icono desconectado) | Ninguna conexión activa |
 | **Barras de señal** | BLE intensidad de la señal o USB estado activo |
 
-## Construir desde el código fuente (Android, para desarrolladores)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Próximos pasos
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Escritura, modificadores, touchpad e introducción de texto

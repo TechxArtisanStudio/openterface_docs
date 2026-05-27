@@ -9,9 +9,9 @@ Openterface KVM-over-USB ürünleri ve yazılımı için resmi dokümantasyon me
 
 ## Quick links
 
-- [KVM-GO](/tr/product/kvm-go/)
-- [Mini-KVM](/tr/product/minikvm/)
-- [KeyMod](/tr/product/keymod/)
-- [Uygulamayı indir](/tr/app/overview/)
+- [KVM-GO](/tr/products/kvmgo/)
+- [Mini-KVM](/tr/products/minikvm/)
+- [KeyMod](/tr/products/keymod/)
+- [Uygulamayı indir](/tr/app/kvm/)
 - [Destek](/tr/support/)
 - [Haberler ↗](https://news.openterface.com/tr/)

@@ -15,7 +15,7 @@ Veelvoorkomende problemen en oplossingen voor de KeyMod-app op Android.
 | Symptoom | Oplossing |
 |---|---|
 | **"Niet verbonden"**-indicator | Controleer kabelverbinding; probeer opnieuw aan te sluiten. Voor BLE schakelt u Bluetooth uit/in en koppelt u opnieuw. |
-| **USB toestemming geweigerd** | Ga naar Android Instellingen → Apps → KeyMod → Toestemmingen → schakel USB in. Sluit de kabel opnieuw aan. |
+| **USB toestemming geweigerd** | Ga naar Android Instellingen → Apps → KeyCmd → Toestemmingen → schakel USB in. Sluit de kabel opnieuw aan. |
 | **Bluetooth koppelt niet** | Schakel Bluetooth uit/in. Vergeet het apparaat in de Bluetooth-instellingen en koppel het opnieuw. Zorg ervoor dat het KeyMod-apparaat in de koppelingsmodus staat. |
 | **Verbinding valt regelmatig weg** | Controleer de RSSI-waarde onder de BLE button in de app. Onder -75 dBm duidt op een zwak signaal: ga dichterbij staan. Verwijder fysieke obstakels. |
 
@@ -108,6 +108,6 @@ Controleer uw netwerkverbinding. Probeer een sneller model — kleinere modellen
 
 Als u nog steeds problemen ondervindt:
 
-- **Bugrapporten:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Bugrapporten:** [Discord](https://discord.gg/techxartisan)
 - **Gemeenschap:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface documentatie:** [openterface.com](https://openterface.com)

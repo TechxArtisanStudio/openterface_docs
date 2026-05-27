@@ -60,10 +60,10 @@ description: Привет! Ещё раз спасибо, что присоеди
 
 **Начало работы:**
 
-* **Руководство по настройке**: [openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Бета быстрый старт**: [openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **Функции и характеристики**: [openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **FAQ**: [openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **Руководство по настройке**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Бета быстрый старт**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **Функции и характеристики**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **FAQ**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **Скачать приложение**: [openterface.com/app](https://openterface.com/app)
 
 **Нужна помощь?**

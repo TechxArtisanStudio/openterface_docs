@@ -22,7 +22,7 @@ description: 歡迎加入 Openterface KVM-GO Beta 測試計劃！ — letter / k
 
 ### **1. 設置**
 
-- 請按照我們的快速入門指南：**openterface.com/product/kvm-go/how-to-connect**
+- 請按照我們的快速入門指南：**openterface.com/products/kvmgo/how-to-connect**
 - 在不同平台（Windows、macOS、Linux、Android）和目標設備（服務器、迷你 PC、BIOS 級訪問）上進行測試
 
 ### **2. 真實場景測試**
@@ -49,12 +49,12 @@ description: 歡迎加入 Openterface KVM-GO Beta 測試計劃！ — letter / k
 
 ## **傳播口碑**
 
-幫助我們成長：在社交媒體、博客和技術論壇上分享您的體驗。提及我們在 **openterface.com/product/kvm-go** 的**即將開始的眾籌活動**——每一篇帖子都有助於 KVM-GO 更快推向市場！
+幫助我們成長：在社交媒體、博客和技術論壇上分享您的體驗。提及我們在 **openterface.com/products/kvm-go** 的**即將開始的眾籌活動**——每一篇帖子都有助於 KVM-GO 更快推向市場！
 
 ## **更多資源**
 
-- **功能與規格**：openterface.com/product/kvm-go/features
-- **常見問題**：openterface.com/product/kvm-go/faq
+- **功能與規格**：openterface.com/products/kvmgo/features
+- **常見問題**：openterface.com/products/kvmgo/faq
 - **下載應用**：openterface.com/app
 
 ---

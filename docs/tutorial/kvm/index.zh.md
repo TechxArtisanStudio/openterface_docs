@@ -37,9 +37,9 @@ description: 全面的KVM-over-USB：在同一个设备上控制目标的键盘�
 
 ## 快速链接
 
-- [应用程序概述](/app/overview.md) — 下载和安装指南
-- [Mini-KVM产品页面](/product/minikvm/)
-- [KVM-Go产品页面](/product/kvm-go/)
-- [uConsole KVM扩展产品页面](/product/uconsole-kvm-extension/)
+- [应用程序概述](/app/kvm/) — 下载和安装指南
+- [Mini-KVM产品页面](/products/minikvm/)
+- [KVM-Go产品页面](/products/kvmgo/)
+- [uConsole KVM扩展产品页面](/products/kvmext/)
 - [iPadOS应用](/app/ipados/) — 下载和安装指南
 - [Discord](https://discord.gg/sFTJD6a3R8) — 社区支持

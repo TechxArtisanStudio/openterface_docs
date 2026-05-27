@@ -108,6 +108,6 @@ Controlla la tua connessione di rete. Prova un modello più veloce: i modelli pi
 
 Se i problemi persistono:
 
-- **Segnalazioni di bug:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Segnalazioni di bug:** [Discord](https://discord.gg/techxartisan)
 - **Comunità:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface documentazione:** [openterface.com](https://openterface.com)

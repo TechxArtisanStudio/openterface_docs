@@ -15,7 +15,7 @@ Häufige Probleme und Lösungen für die KeyMod-App auf Android.
 | Symptom | Lösung |
 |---|---|
 | **Anzeige „Nicht verbunden“** | Kabelverbindung prüfen; Versuchen Sie es erneut. Schalten Sie für BLE Bluetooth aus/ein und koppeln Sie es erneut. |
-| **USB Berechtigung verweigert** | Gehen Sie zu Android Einstellungen → Apps → KeyMod → Berechtigungen → aktivieren USB. Stecken Sie das Kabel wieder ein. |
+| **USB Berechtigung verweigert** | Gehen Sie zu Android Einstellungen → Apps → KeyCmd → Berechtigungen → aktivieren USB. Stecken Sie das Kabel wieder ein. |
 | **Bluetooth lässt sich nicht koppeln** | Schalten Sie Bluetooth aus/ein. Vergessen Sie das Gerät in den Bluetooth-Einstellungen und koppeln Sie es erneut. Stellen Sie sicher, dass sich das KeyMod-Gerät im Kopplungsmodus befindet. |
 | **Verbindung bricht häufig ab** | Prüfen Sie in der App, ob der Wert RSSI unter BLE button liegt. Unter -75 dBm weist auf ein schwaches Signal hin – gehen Sie näher heran. Entfernen Sie physische Hindernisse. |
 
@@ -108,6 +108,6 @@ Installieren Sie Google Voice Typing aus dem Play Store. Auf Android 11+ benöti
 
 Wenn weiterhin Probleme auftreten:
 
-- **Fehlerberichte:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Fehlerberichte:** [Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface Dokumentation:** [openterface.com](https://openterface.com)

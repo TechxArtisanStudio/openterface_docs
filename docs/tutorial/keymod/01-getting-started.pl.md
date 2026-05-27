@@ -19,12 +19,13 @@ Zainstaluj aplikację KeyMod, połącz się ze sprzętem KeyMod i wyślij pierws
 
 **Android:**
 
-1. Otwórz przeglądarkę w telefonie i przejdź do [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Otwórz przeglądarkę w telefonie i przejdź do [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Pobierz najnowszy plik `.apk`
 3. Stuknij pobrany plik, aby go zainstalować
 4. Jeśli Android zapyta, zezwól na **„Zainstaluj nieznane aplikacje”** w przeglądarce
 
-Alternatywnie, zbuduj ze źródeł — patrz [Build from Source](#build-from-source) poniżej.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Krok 2: Połącz się z urządzeniem KeyMod
 
@@ -87,19 +88,6 @@ To wszystko! Teraz zdalnie sterujesz komputerem docelowym.
 | **Szary** (ikona połączenia) | Brak aktywnego połączenia |
 | **Paski sygnałowe** | BLE siła sygnału lub USB stan aktywny |
 
-## Kompiluj ze źródła (Android, dla programistów)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Następne kroki
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Wpisywanie, modyfikatory, touchpad i wprowadzanie tekstu

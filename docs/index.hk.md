@@ -9,9 +9,9 @@ description: 歡迎閲讀 Openterface KVM-over-USB 產品與軟件的官方文�
 
 ## Quick links
 
-- [KVM-GO](/hk/product/kvm-go/)
-- [Mini-KVM](/hk/product/minikvm/)
-- [KeyMod](/hk/product/keymod/)
-- [Download App](/hk/app/overview/)
+- [KVM-GO](/hk/products/kvmgo/)
+- [Mini-KVM](/hk/products/minikvm/)
+- [KeyMod](/hk/products/keymod/)
+- [Download App](/hk/app/kvm/)
 - [Support](/hk/support/)
 - [News ↗](https://news.openterface.com/hk/)

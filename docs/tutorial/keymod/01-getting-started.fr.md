@@ -19,12 +19,13 @@ Installez l'application KeyMod, connectez-vous à votre matériel KeyMod et envo
 
 **Android :**
 
-1. Ouvrez le navigateur de votre téléphone et accédez au [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Ouvrez le navigateur de votre téléphone et accédez au [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Téléchargez le dernier fichier `.apk`
 3. Appuyez sur le fichier téléchargé pour l'installer
 4. Si Android vous le demande, autorisez **« Installer des applications inconnues »** pour votre navigateur.
 
-Vous pouvez également construire à partir des sources — voir [Build from Source](#build-from-source) ci-dessous.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Étape 2 : Connectez-vous à votre appareil KeyMod
 
@@ -44,7 +45,7 @@ KeyMod se connecte au matériel Openterface KeyMod de deux manières :
 1. Assurez-vous que Bluetooth est activé sur votre téléphone
 2. Ouvrez KeyMod et appuyez sur l'icône de connexion
 3. Appuyez sur **"Connexion Bluetooth"**
-4. Attendez que votre appareil KeyMod apparaisse dans la liste de numérisation
+4. Attendez que votre appareil KeyCmd apparaisse dans la liste de numérisation
 5. Appuyez dessus pour associer
 6. Vous devriez voir un indicateur d'état vert **"Connecté"**.
 
@@ -87,19 +88,6 @@ C'est tout ! Vous contrôlez désormais votre ordinateur cible à distance.
 | **Gris** (icône déconnectée) | Aucune connexion active |
 | **Barres de signal** | BLE force du signal ou USB état actif |
 
-## Construire à partir des sources (Android, pour les développeurs)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Prochaines étapes
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Saisie, modificateurs, touchpad et saisie de texte

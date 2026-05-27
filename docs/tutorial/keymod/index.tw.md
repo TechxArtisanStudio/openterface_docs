@@ -1,14 +1,14 @@
 ---
 title: "KeyMod 教程"
-description: "KeyMod 教程: 本教程涵蓋 Android 版 KeyMod 應用。iOS 版本正在開發中。 KeyMod 將您的手機或平板變成面向任意電腦的 通用輸入設備。它通過 Openterface KeyMod 硬件（KVM——鍵盤、視頻、鼠標切換器）連接，再把手機上的按鍵、鼠標移動和手柄輸入，以真實 USB… —…"
-keywords: "KeyMod 教程, 如何使用 KeyMod, 手機鍵盤指南, KeyMod 應用教程"
+description: "KeyMod 教程: 本教程涵蓋 Android 版 KeyCmd 應用。iOS 版本正在開發中。 KeyMod 將您的手機或平板變成面向任意電腦的 通用輸入設備。它通過 Openterface KeyMod 硬件（KVM——鍵盤、視頻、鼠標切換器）連接，再把手機上的按鍵、鼠標移動和手柄輸入，以真實 USB… —…"
+keywords: "KeyMod 教程, 如何使用 KeyMod, 手機鍵盤指南, KeyCmd 應用教程"
 ---
 
 # KeyMod 教程
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-本教程涵蓋 **Android** 版 KeyMod 應用。iOS 版本正在開發中。
+本教程涵蓋 **Android** 版 KeyCmd 應用。iOS 版本正在開發中。
 
 ## 什麼是 KeyMod？
 
@@ -17,7 +17,7 @@ KeyMod 將您的手機或平板變成面向任意電腦的 **通用輸入設備*
 ### 連接方式
 
 [ 您的手機 ] ──USB/BLE──> [ KeyMod 硬件 ] ──USB HID──> [ 目標電腦 ]
-   (KeyMod 應用)              (CH9329 協議)              (Windows/macOS/Linux)
+   (KeyCmd 應用)              (CH9329 協議)              (Windows/macOS/Linux)
 應用通過串口（USB-C，115200 波特、8N1，或藍牙 BLE）使用 **CH9329 協議** 與 KeyMod 硬件通信。KeyMod 在目標電腦上顯示為標準 USB 鍵盤和鼠標——無需驅動。
 
 ### 適合誰？
@@ -50,6 +50,6 @@ KeyMod 將您的手機或平板變成面向任意電腦的 **通用輸入設備*
 
 ## 獲取幫助
 
-- **錯誤報告：** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **錯誤報告：** [Discord](https://discord.gg/techxartisan)
 - **社區：** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **源代碼：** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **源代碼：** KeyCmd *(coming soon)*

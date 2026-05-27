@@ -19,12 +19,13 @@ Installa l'app KeyMod, connettiti al tuo hardware KeyMod e invia la prima sequen
 
 **Android:**
 
-1. Apri il browser del tuo telefono e vai su [KeyMod GitHub Releases page](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/tags)
+1. Apri il browser del tuo telefono e vai su [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
 2. Scarica l'ultimo file `.apk`
 3. Tocca il file scaricato per installarlo
 4. Se Android lo richiede, consenti **"Installa app sconosciute"** per il tuo browser
 
-In alternativa, crea dal sorgente: vedi [Build from Source](#build-from-source) di seguito.
+
+> **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## Passaggio 2: connettiti al tuo dispositivo KeyMod
 
@@ -87,19 +88,6 @@ Questo è tutto! Ora stai controllando il tuo computer di destinazione da remoto
 | **Grigio** (icona disconnesso) | Nessuna connessione attiva |
 | **Barre del segnale** | BLE intensità del segnale o USB stato attivo |
 
-## Crea dalla sorgente (Android, per sviluppatori)```bash
-# Clone the repository
-git clone https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android.git
-cd Openterface_KeyMod_Android
-
-# Build (requires Java 21 and Android SDK 35)
-./gradlew assembleDebug
-
-# The APK will be at:
-ls app/build/outputs/apk/debug/KeyMod-debug.apk
-
-# Install on a connected device
-adb install -r app/build/outputs/apk/debug/KeyMod-debug.apk
 ## Passaggi successivi
 
 - **[Keyboard & Mouse →](02-keyboard-mouse.md)**: digitazione, modificatori, touchpad e immissione di testo

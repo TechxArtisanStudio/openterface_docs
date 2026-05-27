@@ -1,12 +1,12 @@
 ---
 title: "KeyMod 教程 - 故障排除"
-description: "KeyMod 教程 - 故障排除: Android 版 KeyMod 應用的常見問題與解決方案。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/12-troubleshooting"
+description: "KeyMod 教程 - 故障排除: Android 版 KeyCmd 應用的常見問題與解決方案。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/12-troubleshooting"
 keywords: "KeyMod 故障排除, KeyMod 無法連接, KeyMod 藍牙問題, KeyMod 按鍵無效"
 ---
 
 # 12. 故障排除
 
-Android 版 KeyMod 應用的常見問題與解決方案。
+Android 版 KeyCmd 應用的常見問題與解決方案。
 
 ## 連接問題
 
@@ -108,6 +108,6 @@ KeyMod 監聽 Android USB 插拔廣播。拔出 USB 線時連接狀態立即更�
 
 若問題仍未解決：
 
-- **錯誤報告：** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **錯誤報告：** [Discord](https://discord.gg/techxartisan)
 - **社區：** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface 文檔：** [openterface.com](https://openterface.com)

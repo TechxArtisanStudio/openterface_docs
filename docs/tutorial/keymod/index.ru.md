@@ -16,7 +16,7 @@ KeyMod превращает ваш телефон или планшет в **у�
 
 ### Как работает соединение```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 Приложение взаимодействует с оборудованием KeyMod, используя протокол **CH9329** через последовательное соединение (USB-C со скоростью 115200 бод, 8N1 или Bluetooth BLE). Устройство KeyMod отображается на целевом компьютере как стандартная клавиатура и мышь USB — драйверы не требуются.
 
 ### Для кого это?
@@ -49,6 +49,6 @@ KeyMod превращает ваш телефон или планшет в **у�
 
 ## Получение помощи
 
-- **Сообщения об ошибках:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Сообщения об ошибках:** [Discord](https://discord.gg/techxartisan)
 - **Сообщество:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Исходный код:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Исходный код:** KeyCmd *(coming soon)*

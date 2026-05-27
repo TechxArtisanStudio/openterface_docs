@@ -1,14 +1,14 @@
 ---
 title: "KeyMod チュートリアル"
-description: KeyMod アプリの完全ガイド。接続、スマートフォンからの PC 操作、キーボード・マウス・ゲームパッド・マクロ・音声入力モードの使い方を学びます。 本チュートリアルは Android 版 KeyMod アプリを対象とします。iOS 版は開発中です。 KeyMod はスマートフォンやタブレットを、あらゆる…
-keywords: "KeyMod チュートリアル, KeyMod の使い方, スマホキーボードガイド, KeyMod アプリチュートリアル"
+description: KeyCmd アプリの完全ガイド。接続、スマートフォンからの PC 操作、キーボード・マウス・ゲームパッド・マクロ・音声入力モードの使い方を学びます。 本チュートリアルは Android 版 KeyCmd アプリを対象とします。iOS 版は開発中です。 KeyMod はスマートフォンやタブレットを、あらゆる…
+keywords: "KeyMod チュートリアル, KeyMod の使い方, スマホキーボードガイド, KeyCmd アプリチュートリアル"
 ---
 
 # KeyMod チュートリアル
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-本チュートリアルは **Android** 版 KeyMod アプリを対象とします。iOS 版は開発中です。
+本チュートリアルは **Android** 版 KeyCmd アプリを対象とします。iOS 版は開発中です。
 
 ## KeyMod とは？
 
@@ -17,7 +17,7 @@ KeyMod はスマートフォンやタブレットを、あらゆる PC 向けの
 ### 接続の仕組み
 
 [ スマートフォン ] ──USB/BLE──> [ KeyMod ハードウェア ] ──USB HID──> [ ターゲット PC ]
-   (KeyMod アプリ)                (CH9329 プロトコル)              (Windows/macOS/Linux)
+   (KeyCmd アプリ)                (CH9329 プロトコル)              (Windows/macOS/Linux)
 アプリはシリアル接続（USB-C 115200 baud 8N1、または Bluetooth BLE）で **CH9329 プロトコル** を使い KeyMod ハードウェアと通信します。KeyMod はターゲット PC 上で標準 USB キーボード・マウスとして認識され、ドライバは不要です。
 
 ### こんな方に
@@ -50,6 +50,6 @@ KeyMod はスマートフォンやタブレットを、あらゆる PC 向けの
 
 ## ヘルプ
 
-- **バグ報告:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **バグ報告:** [Discord](https://discord.gg/techxartisan)
 - **コミュニティ:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **ソースコード:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **ソースコード:** KeyCmd *(coming soon)*

@@ -35,36 +35,46 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     ]
   },
   {
+    "title": "Product",
+    "groupTitle": "Product",
+    "items": [
+      {
+        "label": "Overview",
+        "slug": "products"
+      }
+    ]
+  },
+  {
     "title": "KeyMod Series",
     "groupTitle": "KeyMod Series",
     "items": [
       {
         "label": "Overview",
-        "slug": "product/keymod"
+        "slug": "products/keymod"
       },
       {
         "label": "Features",
-        "slug": "product/keymod/features"
+        "slug": "products/keymod/features"
       },
       {
         "label": "What's In The Box",
-        "slug": "product/keymod/whats-in-the-box"
+        "slug": "products/keymod/whats-in-the-box"
       },
       {
         "label": "How To Connect",
-        "slug": "product/keymod/how-to-connect"
+        "slug": "products/keymod/how-to-connect"
       },
       {
         "label": "Use Cases",
-        "slug": "product/keymod/use-cases"
+        "slug": "products/keymod/use-cases"
       },
       {
         "label": "FAQs",
-        "slug": "product/keymod/faq"
+        "slug": "products/keymod/faq"
       },
       {
         "label": "Reviews",
-        "slug": "product/keymod/reviews"
+        "slug": "products/keymod/reviews"
       }
     ]
   },
@@ -74,39 +84,39 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "items": [
       {
         "label": "Overview",
-        "slug": "product/kvm-go"
+        "slug": "products/kvmgo"
       },
       {
         "label": "Features",
-        "slug": "product/kvm-go/features"
+        "slug": "products/kvmgo/features"
       },
       {
         "label": "What's In The Box",
-        "slug": "product/kvm-go/whats-in-the-box"
+        "slug": "products/kvmgo/whats-in-the-box"
       },
       {
         "label": "How To Connect",
-        "slug": "product/kvm-go/how-to-connect"
+        "slug": "products/kvmgo/how-to-connect"
       },
       {
         "label": "Use Cases",
-        "slug": "product/kvm-go/use-cases"
+        "slug": "products/kvmgo/use-cases"
       },
       {
         "label": "Beta Quick Start",
-        "slug": "product/kvm-go/beta-quick-start"
+        "slug": "products/kvmgo/beta-quick-start"
       },
       {
         "label": "MicroSD Switch",
-        "slug": "product/kvm-go/microsd-switch"
+        "slug": "products/kvmgo/microsd-switch"
       },
       {
         "label": "FAQs",
-        "slug": "product/kvm-go/faq"
+        "slug": "products/kvmgo/faq"
       },
       {
         "label": "Reviews",
-        "slug": "product/kvm-go/reviews"
+        "slug": "products/kvmgo/reviews"
       }
     ]
   },
@@ -116,51 +126,51 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "items": [
       {
         "label": "Overview",
-        "slug": "product/minikvm"
+        "slug": "products/minikvm"
       },
       {
         "label": "Features",
-        "slug": "product/minikvm/features"
+        "slug": "products/minikvm/features"
       },
       {
         "label": "What's In The Box",
-        "slug": "product/minikvm/whats-in-the-box"
+        "slug": "products/minikvm/whats-in-the-box"
       },
       {
         "label": "How To Connect",
-        "slug": "product/minikvm/how-to-connect"
+        "slug": "products/minikvm/how-to-connect"
       },
       {
         "label": "USB Switch",
-        "slug": "product/minikvm/usb-switch"
+        "slug": "products/minikvm/usb-switch"
       },
       {
         "label": "Extension Pins",
-        "slug": "product/minikvm/extension-pins"
+        "slug": "products/minikvm/extension-pins"
       },
       {
         "label": "FAQs",
-        "slug": "product/minikvm/faq"
+        "slug": "products/minikvm/faq"
       },
       {
         "label": "Troubleshooting",
-        "slug": "product/minikvm/support/mini-kvm-troubleshooting-and-support"
+        "slug": "products/minikvm/support/mini-kvm-troubleshooting-and-support"
       },
       {
         "label": "Diagnostic (macOS)",
-        "slug": "product/minikvm/support/diagnostic-self-check"
+        "slug": "products/minikvm/support/diagnostic-self-check"
       },
       {
         "label": "Diagnostic (Windows)",
-        "slug": "product/minikvm/support/diagnostic-self-check-windows"
+        "slug": "products/minikvm/support/diagnostic-self-check-windows"
       },
       {
         "label": "Keyboard and Mouse",
-        "slug": "product/minikvm/support/keyboard-mouse-control"
+        "slug": "products/minikvm/support/keyboard-mouse-control"
       },
       {
         "label": "Reviews",
-        "slug": "product/minikvm/reviews"
+        "slug": "products/minikvm/reviews"
       }
     ]
   },
@@ -170,31 +180,31 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "items": [
       {
         "label": "Overview",
-        "slug": "product/uconsole-kvm-extension"
+        "slug": "products/kvmext"
       },
       {
         "label": "Features",
-        "slug": "product/uconsole-kvm-extension/features"
+        "slug": "products/kvmext/features"
       },
       {
         "label": "What's In The Box",
-        "slug": "product/uconsole-kvm-extension/whats-in-the-box"
+        "slug": "products/kvmext/whats-in-the-box"
       },
       {
         "label": "Hardware Installation",
-        "slug": "product/uconsole-kvm-extension/hardware-installation"
+        "slug": "products/kvmext/hardware-installation"
       },
       {
         "label": "Software Setup",
-        "slug": "product/uconsole-kvm-extension/software-setup"
+        "slug": "products/kvmext/software-setup"
       },
       {
         "label": "Connect to Target",
-        "slug": "product/uconsole-kvm-extension/connect-to-target"
+        "slug": "products/kvmext/connect-to-target"
       },
       {
         "label": "FAQs",
-        "slug": "product/uconsole-kvm-extension/faq"
+        "slug": "products/kvmext/faq"
       }
     ]
   },
@@ -204,31 +214,31 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "items": [
       {
         "label": "Overview",
-        "slug": "product/accessories"
+        "slug": "products/accessories"
       },
       {
         "label": "VGA to HDMI Cable 1m",
-        "slug": "product/accessories/vga-to-hdmi-cable"
+        "slug": "products/accessories/vga-to-hdmi-cable"
       },
       {
         "label": "Type-C to C Cable Nylon 1.5m",
-        "slug": "product/accessories/nylong-c-to-c-150"
+        "slug": "products/accessories/nylong-c-to-c-150"
       },
       {
         "label": "Type-C to C Cable Orange 1.5m",
-        "slug": "product/accessories/type-c-to-c-cable-with-adapter"
+        "slug": "products/accessories/type-c-to-c-cable-with-adapter"
       },
       {
         "label": "Type-C to A Cable Black 30cm",
-        "slug": "product/accessories/black-c-to-a-30"
+        "slug": "products/accessories/black-c-to-a-30"
       },
       {
         "label": "HDMI Cable 30cm",
-        "slug": "product/accessories/hdmi-male-to-male-cable"
+        "slug": "products/accessories/hdmi-male-to-male-cable"
       },
       {
         "label": "Toolkit Bag",
-        "slug": "product/accessories/openterface-toolkit-bag"
+        "slug": "products/accessories/openterface-toolkit-bag"
       }
     ]
   },
@@ -237,12 +247,16 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "groupTitle": "App",
     "items": [
       {
-        "label": "Overview",
-        "slug": "app/overview"
+        "label": "KVM Control",
+        "slug": "app/kvm"
+      },
+      {
+        "label": "KeyCmd",
+        "slug": "app/keycmd"
       },
       {
         "label": "FAQs",
-        "slug": "app/faq"
+        "slug": "app/kvm/faq"
       }
     ]
   },

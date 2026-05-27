@@ -1,12 +1,12 @@
 ---
 title: "KeyMod Tutorial - Troubleshooting"
-description: "KeyMod Tutorial - Troubleshooting: Common problems and solutions for the KeyMod app on Android. Open-source KVM-over-USB guides. Open-source KVM-over-USB…"
+description: "KeyMod Tutorial - Troubleshooting: Common problems and solutions for KeyCmd on Android with KeyMod hardware."
 keywords: "KeyMod troubleshooting, KeyMod not connecting, KeyMod Bluetooth issues, KeyMod keys not working"
 ---
 
 # 12. Troubleshooting
 
-Common problems and solutions for the KeyMod app on Android.
+Common problems and solutions for KeyCmd on Android.
 
 ## Connection Issues
 
@@ -15,7 +15,7 @@ Common problems and solutions for the KeyMod app on Android.
 | Symptom | Solution |
 |---|---|
 | **"Not Connected"** indicator | Check cable connection; try re-plugging. For BLE, toggle Bluetooth off/on and re-pair. |
-| **USB permission denied** | Go to Android Settings → Apps → KeyMod → Permissions → enable USB. Re-plug the cable. |
+| **USB permission denied** | Go to Android Settings → Apps → KeyCmd → Permissions → enable USB. Re-plug the cable. |
 | **Bluetooth won't pair** | Toggle Bluetooth off/on. Forget the device in Bluetooth settings and re-pair. Make sure the KeyMod device is in pairing mode. |
 | **Connection drops frequently** | Check the RSSI value below the BLE button in the app. Below -75 dBm indicates weak signal — move closer. Remove physical obstructions. |
 
@@ -30,11 +30,11 @@ Common problems and solutions for the KeyMod app on Android.
 
 ### Auto-Connect
 
-Enable **"Auto-connect on startup"** in the connection dialog. KeyMod remembers your last connection type (USB or BLE) and last paired BLE device.
+Enable **"Auto-connect on startup"** in the connection dialog. KeyCmd remembers your last connection type (USB or BLE) and last paired BLE device.
 
 ### USB Attach/Detach Detection
 
-KeyMod monitors Android's USB attach/detach broadcast events. If you unplug the USB cable, the connection status updates immediately. Re-plugging triggers a reconnection attempt if auto-connect is enabled.
+KeyCmd monitors Android's USB attach/detach broadcast events. If you unplug the USB cable, the connection status updates immediately. Re-plugging triggers a reconnection attempt if auto-connect is enabled.
 
 ---
 
@@ -75,7 +75,7 @@ If Unicode characters appear incorrectly, verify the **Target OS** is set correc
 
 ### Speech Recognizer Unavailable
 
-Install Google Voice Typing from Play Store. On Android 11+, KeyMod needs the queries permission (included in the APK).
+Install Google Voice Typing from Play Store. On Android 11+, KeyCmd needs the queries permission (included in the APK).
 
 ### Silence Detection Not Working
 
@@ -108,6 +108,6 @@ Check your network connection. Try a faster model — smaller models (gpt-3.5-tu
 
 If you're still experiencing issues:
 
-- **Bug reports:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Bug reports:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Openterface documentation:** [openterface.com](https://openterface.com)

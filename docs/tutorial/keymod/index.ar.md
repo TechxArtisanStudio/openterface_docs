@@ -17,7 +17,7 @@ KeyMod يحول هاتفك أو جهازك اللوحي إلى **جهاز إدخ
 ### كيف يعمل الاتصال
 
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 ```
 
 يتواصل التطبيق مع أجهزة KeyMod باستخدام بروتوكول **CH9329** عبر اتصال تسلسلي (USB-C عند 115200 baud، 8N1، أو Bluetooth BLE). يظهر جهاز KeyMod للكمبيوتر المستهدف كلوحة مفاتيح وماوس USB قياسيين — لا حاجة إلى برامج تشغيل.
@@ -52,6 +52,6 @@ KeyMod يحول هاتفك أو جهازك اللوحي إلى **جهاز إدخ
 
 ## الحصول على المساعدة
 
-- **تقارير الأخطاء:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **تقارير الأخطاء:** [Discord](https://discord.gg/techxartisan)
 - **المجتمع:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **كود المصدر:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **كود المصدر:** KeyCmd *(coming soon)*

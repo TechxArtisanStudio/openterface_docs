@@ -9,9 +9,9 @@ Witamy w oficjalnej dokumentacji produktów i oprogramowania Openterface KVM-ove
 
 ## Quick links
 
-- [KVM-GO](/pl/product/kvm-go/)
-- [Mini-KVM](/pl/product/minikvm/)
-- [KeyMod](/pl/product/keymod/)
-- [Pobierz aplikację](/pl/app/overview/)
+- [KVM-GO](/pl/products/kvmgo/)
+- [Mini-KVM](/pl/products/minikvm/)
+- [KeyMod](/pl/products/keymod/)
+- [Pobierz aplikację](/pl/app/kvm/)
 - [Wsparcie](/pl/support/)
 - [Aktualności ↗](https://news.openterface.com/pl/)

@@ -16,7 +16,7 @@ KeyMod telefonunuzu veya tabletinizi herhangi bir bilgisayar için **evrensel gi
 
 ### Bağlantı nasıl çalışır?```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 Uygulama, seri bağlantı (115200 baud'da USB-C, 8N1 veya Bluetooth BLE) üzerinden **CH9329 protokolünü** kullanarak KeyMod donanımıyla iletişim kurar. KeyMod aygıtı hedef bilgisayara standart USB klavye ve fare olarak görünür; sürücüye gerek yoktur.
 
 ### Bu kimin için?
@@ -49,6 +49,6 @@ Uygulama, seri bağlantı (115200 baud'da USB-C, 8N1 veya Bluetooth BLE) üzerin
 
 ## Yardım Alma
 
-- **Hata raporları:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Hata raporları:** [Discord](https://discord.gg/techxartisan)
 - **Topluluk:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Kaynak kodu:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Kaynak kodu:** KeyCmd *(coming soon)*

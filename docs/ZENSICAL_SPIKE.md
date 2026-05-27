@@ -35,7 +35,7 @@ Sync scripts update `zensical.toml` and re-export `mkdocs.yml`.
 - **Full i18n (10 locales):** `npm run build` uses `mkdocs build -f mkdocs.yml` (exported from `zensical.toml`) — Zensical 0.0.43 does not emit per-locale site dirs (`/zh/`, …); EN-only dev uses `zensical build -f zensical.toml`
 - English at site root `/` (unprefixed, same as news); other locales under `/{locale}/`
 - Post-build `post-build-en-legacy-redirects.mjs` stubs `/en/*` → unprefixed paths for bookmarks
-- Resolve legacy absolute links (`/app/overview.md` → `/app/overview/`)
+- Resolve legacy absolute links (`/app/kvm/` → `/app/kvm/`)
 - `config/locales.yml` nav_translations synced via `scripts/sync-i18n-config.py`
 
 ## Fallback

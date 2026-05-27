@@ -16,7 +16,7 @@ KeyMod transformă telefonul sau tableta într-un **dispozitiv de intrare univer
 
 ### Cum funcționează conexiunea```
 [ Your Phone ] ──USB/BLE──> [ KeyMod Hardware ] ──USB HID──> [ Target Computer ]
-   (KeyMod app)                (CH9329 protocol)              (Windows/macOS/Linux)
+   (KeyCmd app)                (CH9329 protocol)              (Windows/macOS/Linux)
 Aplicația comunică cu hardware-ul KeyMod utilizând protocolul **CH9329** printr-o conexiune serială (USB-C la 115200 baud, 8N1 sau Bluetooth BLE). Dispozitivul KeyMod apare computerului țintă ca o tastatură și un mouse standard USB — nu sunt necesare drivere.
 
 ### Pentru cine este asta?
@@ -49,6 +49,6 @@ Aplicația comunică cu hardware-ul KeyMod utilizând protocolul **CH9329** prin
 
 ## Obține ajutor
 
-- **Rapoarte erori:** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **Rapoarte erori:** [Discord](https://discord.gg/techxartisan)
 - **Comunitate:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Cod sursă:** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **Cod sursă:** KeyCmd *(coming soon)*

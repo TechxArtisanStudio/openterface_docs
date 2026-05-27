@@ -38,9 +38,9 @@ Deze tutorial behandelt de **Openterface KVM-serie** — apparaten die de HDMI-v
 
 ## Snelle links
 
-- [App-overzicht](/app/overview.md) — Download- en installatiehandleiding
-- [Mini-KVM-productpagina](/product/minikvm/)
-- [KVM-Go-productpagina](/product/kvm-go/)
-- [uConsole KVM-uitbreiding](/product/uconsole-kvm-extension/)
+- [App-overzicht](/app/kvm/) — Download- en installatiehandleiding
+- [Mini-KVM-productpagina](/products/minikvm/)
+- [KVM-Go-productpagina](/products/kvmgo/)
+- [uConsole KVM-uitbreiding](/products/kvmext/)
 - [iPadOS-app](/app/ipados/) — Download- en installatiehandleiding
 - [Discord](https://discord.gg/sFTJD6a3R8) — Community-ondersteuning

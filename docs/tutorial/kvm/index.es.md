@@ -39,10 +39,10 @@ Este tutorial cubre la **serie Openterface KVM** — dispositivos que capturan e
 
 ## Enlaces rápidos
 
-- [Descripción general del App](/app/overview.md) — Guía de descarga e instalación
-- [Página del producto Mini-KVM](/product/minikvm/)
-- [Página del producto KVM-Go](/product/kvm-go/)
-- [Página del producto uConsole KVM Ext.](/product/uconsole-kvm-extension/)
+- [Descripción general del App](/app/kvm/) — Guía de descarga e instalación
+- [Página del producto Mini-KVM](/products/minikvm/)
+- [Página del producto KVM-Go](/products/kvmgo/)
+- [Página del producto uConsole KVM Ext.](/products/kvmext/)
 - [App para iPadOS](/app/ipados/) — Guía de descarga e instalación
 - [Discord](https://discord.gg/sFTJD6a3R8) — Apoyo comunitario
 

@@ -38,9 +38,9 @@ description: "USB를 통한 완전한 KVM: 키보드, 비디오 및 마우스 �
 
 ## 빠른 링크
 
-- [앱 개요](/app/overview.md) — 다운로드 및 설치 가이드
-- [Mini-KVM 제품 페이지](/product/minikvm/)
-- [KVM-Go 제품 페이지](/product/kvm-go/)
-- [uConsole KVM 확장 제품 페이지](/product/uconsole-kvm-extension/)
+- [앱 개요](/app/kvm/) — 다운로드 및 설치 가이드
+- [Mini-KVM 제품 페이지](/products/minikvm/)
+- [KVM-Go 제품 페이지](/products/kvmgo/)
+- [uConsole KVM 확장 제품 페이지](/products/kvmext/)
 - [iPadOS 앱](/app/ipados/) — 다운로드 및 설치 가이드
 - [디스코드](https://discord.gg/sFTJD6a3R8) — 커뮤니티 지원

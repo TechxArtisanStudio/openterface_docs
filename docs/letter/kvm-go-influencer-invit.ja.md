@@ -60,10 +60,10 @@ description: こんにちは！ ベータプログラムへのご参加、改め
 
 **はじめに：**
 
-* **セットアップガイド**：[openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **ベータクイックスタート**：[openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **機能と仕様**：[openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **FAQ**：[openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **セットアップガイド**：[openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **ベータクイックスタート**：[openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **機能と仕様**：[openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **FAQ**：[openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **アプリのダウンロード**：[openterface.com/app](https://openterface.com/app)
 
 **ヘルプが必要？**

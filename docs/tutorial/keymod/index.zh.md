@@ -1,24 +1,27 @@
 ---
 title: "KeyMod 教程"
-description: KeyMod 应用完整使用指南。学习如何连接、用手机控制电脑，以及键盘、鼠标、手柄、宏和语音输入等模式。 本教程涵盖 Android 版 KeyMod 应用。iOS 版本正在开发中。 KeyMod 将您的手机或平板变成面向任意电脑的 通用输入设备。它通过 Openterface KeyMod…
-keywords: "KeyMod 教程, 如何使用 KeyMod, 手机键盘指南, KeyMod 应用教程"
+description: KeyCmd 应用完整使用指南。学习如何连接、用手机控制电脑，以及键盘、鼠标、手柄、宏和语音输入等模式。 本教程涵盖 Android 版 KeyCmd 应用。iOS 版本正在开发中。 KeyMod 将您的手机或平板变成面向任意电脑的 通用输入设备。它通过 Openterface KeyMod…
+keywords: "KeyMod 教程, 如何使用 KeyMod, 手机键盘指南, KeyCmd 应用教程"
 ---
 
 # KeyMod 教程
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-本教程涵盖 **Android** 版 KeyMod 应用。iOS 版本正在开发中。
+本教程涵盖 **Android** 版 KeyCmd 应用。iOS 版本正在开发中。
 
 ## 什么是 KeyMod？
 
-KeyMod 将您的手机或平板变成面向任意电脑的 **通用输入设备**。它通过 **Openterface KeyMod** 硬件（KVM——键盘、视频、鼠标切换器）连接，再把手机上的按键、鼠标移动和手柄输入，以真实 USB 键盘和鼠标的形式发送到目标电脑。
+KeyMod 是 Openterface **硬件**，可将手机变成面向任意电脑的键盘和触控板。**KeyCmd** 是配套的手机应用——KeyCmd 通过 KeyMod 向目标电脑发送按键、鼠标移动和手柄输入，就像来自真实的 USB 键盘和鼠标一样。
 
 ### 连接方式
 
+```
 [ 您的手机 ] ──USB/BLE──> [ KeyMod 硬件 ] ──USB HID──> [ 目标电脑 ]
-   (KeyMod 应用)              (CH9329 协议)              (Windows/macOS/Linux)
-应用通过串口（USB-C，115200 波特、8N1，或蓝牙 BLE）使用 **CH9329 协议** 与 KeyMod 硬件通信。KeyMod 在目标电脑上显示为标准 USB 键盘和鼠标——无需驱动。
+   (KeyCmd)                   (CH9329 协议)              (Windows/macOS/Linux)
+```
+
+KeyCmd 通过串口（USB-C，115200 波特、8N1，或蓝牙 BLE）使用 **CH9329 协议** 与 KeyMod 硬件通信。KeyMod 在目标电脑上显示为标准 USB 键盘和鼠标——无需驱动。
 
 ### 适合谁？
 
@@ -50,6 +53,6 @@ KeyMod 将您的手机或平板变成面向任意电脑的 **通用输入设备*
 
 ## 获取帮助
 
-- **错误报告：** [GitHub Issues](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android/issues)
+- **错误报告：** [Discord](https://discord.gg/techxartisan)
 - **社区：** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **源代码：** [Openterface_KeyMod_Android](https://github.com/TechxArtisanStudio/Openterface_KeyMod_Android)
+- **源代码：** KeyCmd *(coming soon)*

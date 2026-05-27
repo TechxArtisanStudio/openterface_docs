@@ -60,10 +60,10 @@ description: 您好！ 再次感谢您加入我们的 beta 计划。我们非常
 
 **入门：**
 
-* **设置指南**：[openterface.com/product/kvm-go/how-to-connect](https://openterface.com/product/kvm-go/how-to-connect)
-* **Beta 快速入门**：[openterface.com/product/kvm-go/beta-quick-start/](https://openterface.com/product/kvm-go/beta-quick-start/)
-* **功能与规格**：[openterface.com/product/kvm-go/features](https://openterface.com/product/kvm-go/features/)
-* **常见问题**：[openterface.com/product/kvm-go/faq](https://openterface.com/product/kvm-go/faq)
+* **设置指南**：[openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
+* **Beta 快速入门**：[openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
+* **功能与规格**：[openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
+* **常见问题**：[openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
 * **下载应用**：[openterface.com/app](https://openterface.com/app)
 
 **需要帮助？**
