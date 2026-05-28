@@ -16,7 +16,7 @@ export const siteConfig = {
     enabled: import.meta.env.PROD,
     google: {
       measurementId: 'G-EKZEH6QYWT',
-            linkerDomains: ['openterface.com', 'forum.openterface.com']
+                  linkerDomains: ['openterface.com', 'forum.openterface.com']
     },
     ahrefs: {
       dataKey: 'b3G5nUND8OglcZwfjfwixQ',
