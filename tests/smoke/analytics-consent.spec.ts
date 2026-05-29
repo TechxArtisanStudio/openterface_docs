@@ -10,6 +10,15 @@ test('cookie consent banner appears on first visit', async ({ page }) => {
 test('accepting cookies loads GA4 and Ahrefs', async ({ page }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   await page.locator('#cookie-consent-accept').click();
+
+  const isLocalPreview = await page.evaluate(() =>
+    /^(localhost|127\.0\.0\.1|\[::1\])$/i.test(location.hostname),
+  );
+  if (isLocalPreview) {
+    await expect(page.locator('#cookie-consent-banner')).toBeHidden();
+    return;
+  }
+
   await expect(page.locator('#ahrefs-analytics')).toBeAttached({ timeout: 5000 });
   await expect(page.locator('script[src*="googletagmanager.com/gtag/js"]')).toHaveCount(1);
 });

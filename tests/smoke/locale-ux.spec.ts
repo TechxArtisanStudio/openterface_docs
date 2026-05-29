@@ -19,10 +19,10 @@ test.describe('locale UX — no dead nav links', () => {
   });
 
   test('locale switch to existing translation stays in locale', async ({ page }) => {
-    await page.goto('/zh/product/kvm-go/');
+    await page.goto('/zh/products/kvmgo/');
     await page.locator('.locale-switcher summary').click();
     await page.locator('.locale-switcher a[data-locale-switch]', { hasText: 'Português' }).click();
-    await expect(page).toHaveURL(/\/pt\/product\/kvm-go\//);
+    await expect(page).toHaveURL(/\/pt\/products\/kvmgo\//);
     await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
     await expect(page.locator('.doc-locale-fallback')).toHaveCount(0);
   });

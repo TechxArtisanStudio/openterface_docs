@@ -30,7 +30,9 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('header product nav uses /products/ paths', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('/');
+    await page.locator('.nav-dropdown summary').first().click();
     const kvmGo = page.locator('.site-header a[href="/products/kvmgo/"]');
     await expect(kvmGo.first()).toBeVisible();
     await kvmGo.first().click();
@@ -90,12 +92,12 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('kvm-go overview has doc page nav without edit link', async ({ page }) => {
-    await page.goto('/product/kvm-go/');
+    await page.goto('/products/kvmgo/');
     await expect(page.locator('article .doc-page-nav')).toBeVisible();
     await expect(page.getByText('Edit this page')).toHaveCount(0);
     await expect(page.locator('.doc-page-nav__link--next')).toHaveAttribute(
       'href',
-      /\/product\/kvm-go\/features\/?$/,
+      /\/products\/kvmgo\/features\/?$/,
     );
   });
 
