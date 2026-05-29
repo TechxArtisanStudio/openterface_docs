@@ -29,10 +29,19 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.locator('.site-header')).toBeVisible();
   });
 
-  test('app overview download links resolve', async ({ page }) => {
+  test('header product nav uses /products/ paths', async ({ page }) => {
+    await page.goto('/');
+    const kvmGo = page.locator('.site-header a[href="/products/kvmgo/"]');
+    await expect(kvmGo.first()).toBeVisible();
+    await kvmGo.first().click();
+    await expect(page).toHaveURL(/\/products\/kvmgo\/?$/);
+    await expect(page.locator('h1')).toBeVisible();
+  });
+
+  test('app kvm download links resolve', async ({ page }) => {
     test.setTimeout(180_000);
     const { qt_version, android_version } = loadExpectedVersions();
-    await page.goto('/app/overview/');
+    await page.goto('/app/kvm/');
     const hrefs = await page.locator('a[href*="releases/download/"]').evaluateAll((els) =>
       els.map((el) => el.getAttribute('href')).filter((href): href is string => Boolean(href)),
     );
@@ -55,10 +64,10 @@ test.describe('docs full corpus smoke', () => {
     }
   });
 
-  test('zh app overview download links resolve', async ({ page }) => {
+  test('zh app kvm download links resolve', async ({ page }) => {
     test.setTimeout(180_000);
     const { qt_version, android_version } = loadExpectedVersions();
-    await page.goto('/zh/app/overview/');
+    await page.goto('/zh/app/kvm/');
     const hrefs = await page.locator('a[href*="releases/download/"]').evaluateAll((els) =>
       els.map((el) => el.getAttribute('href')).filter((href): href is string => Boolean(href)),
     );

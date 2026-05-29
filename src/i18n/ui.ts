@@ -984,12 +984,12 @@ export function docsNav(locale: SiteLocale): NavItem[] {
   return [
     {
       label: ui.nav.product,
-      href: docPath('product/kvm-go'),
+      href: docPath('products'),
       children: [
-        { label: 'KVM-GO', href: docPath('product/kvm-go') },
-        { label: 'Mini-KVM', href: docPath('product/minikvm') },
-        { label: 'KeyMod', href: docPath('product/keymod') },
-        { label: 'uConsole KVM', href: docPath('product/uconsole-kvm-extension') },
+        { label: 'KVM-GO', href: docPath('products/kvmgo') },
+        { label: 'Mini-KVM', href: docPath('products/minikvm') },
+        { label: 'KeyMod', href: docPath('products/keymod') },
+        { label: 'uConsole KVM', href: docPath('products/kvmext') },
       ],
     },
     { label: ui.nav.app, href: docPath('app/kvm') },

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "predev": "node scripts/sync-app-versions.mjs && node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
-    "dev": "astro dev --host --port 8000",
+    "dev": "astro dev --host --port 4320",
     "serve": "npm run dev",
     "prebuild": "node scripts/sync-app-versions.mjs && node scripts/generate-sidebar.mjs && node scripts/load-nav-translations.mjs",
     "build": "astro build",

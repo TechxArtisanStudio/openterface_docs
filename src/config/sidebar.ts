@@ -44,5 +44,5 @@ export { sidebarSlugsForPage } from './sidebar-utils';
 
 /** @deprecated use sidebarForSlug */
 export function kvmGoSidebar(locale: SiteLocale): SidebarItem[] {
-  return sidebarForSlug(locale, 'product/kvm-go') ?? [];
+  return sidebarForSlug(locale, 'products/kvmgo') ?? [];
 }
