@@ -5,6 +5,9 @@ description: レビューとメディア — kvm-go / reviews (KVM-GO). Openterf
 
 # レビューとメディア
 
+!!! tip "メディアハブ"
+    動画・プレス・投稿・お客様の声など、コミュニティメディアの一覧は [openterface.com/media/]({{marketing.media_hub?product=kvm-go}}) をご覧ください。
+
 ## メディア掲載
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[CNX Software:](https://www.cnx-software.com/2026/01/05/openterface-kvm-go-an-ultra-compact-kvm-over-usb-solution-with-hdmi-dp-or-vga-video-input/)** *"キーチェーンに収まるほど小さく、Openterface KVM-GOはHDMI、DisplayPort（DP）、またはVGAコネクタで提供される超小型のオープンソースハードウェアKVM-over-USBデバイスで、ヘッドレスデバイスのトラブルシューティングやリモートサーバーの監視に設計されています。"*

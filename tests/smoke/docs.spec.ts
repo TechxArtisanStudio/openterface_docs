@@ -179,6 +179,12 @@ test.describe('docs full corpus smoke', () => {
     expect(packagesBeforeCta).toBe(true);
   });
 
+  test('minikvm reviews links to marketing media hub', async ({ page }) => {
+    await page.goto('/products/minikvm/reviews/');
+    const link = page.locator('.prose-docs a[href*="product=minikvm"]');
+    await expect(link).toBeVisible();
+  });
+
   test('zh minikvm overview shows localized package options', async ({ page }) => {
     await page.goto('/zh/product/minikvm/');
     await expect(page.locator('.doc-minikvm-packages')).toBeVisible();

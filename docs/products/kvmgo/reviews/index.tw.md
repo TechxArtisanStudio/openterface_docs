@@ -5,6 +5,9 @@ description: 評測與媒體報道 — kvm-go / reviews (KVM-GO). 官方 Openter
 
 # 評測與媒體報道
 
+!!! tip "媒體中心"
+    在 [openterface.com/media/]({{marketing.media_hub?product=kvm-go}}) 查看全部社區媒體內容 — 影片、媒體報導、貼文和用戶評價。
+
 ## 媒體報道
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[CNX Software:](https://www.cnx-software.com/2026/01/05/openterface-kvm-go-an-ultra-compact-kvm-over-usb-solution-with-hdmi-dp-or-vga-video-input/)** *"小到可以放在鑰匙扣上，Openterface KVM-GO 是一款小巧的開源硬件 KVM-over-USB 設備，提供 HDMI、DisplayPort（DP）或 VGA 接口，並專為無頭設備故障排除和遠程服務器監控而設計。"*

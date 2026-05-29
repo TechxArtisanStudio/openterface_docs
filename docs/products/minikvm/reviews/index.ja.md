@@ -5,6 +5,9 @@ description: レビューとメディア — minikvm / reviews (Mini-KVM). Opent
 
 # レビューとメディア
 
+!!! tip "メディアハブ"
+    動画・プレス・投稿・お客様の声など、コミュニティメディアの一覧は [openterface.com/media/]({{marketing.media_hub?product=minikvm}}) をご覧ください。
+
 ## メディア報道
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[Jean-Luc Aufranc (CNXSoft):](https://www.cnx-software.com/2024/05/09/openterface-mini-kvm-affordable-kvm-over-usb-device/)** *"Openterface Mini-KVM は、ホストコンピューターと対象デバイス間の直接的な HDMI および USB 接続を確立する、プラグアンドプレイでネットワーク独立型の KVM-over-USB デバイスとして、かなり異なる（そしてより安価な）製品です。"*

@@ -5,6 +5,9 @@ description: "Reviews & Media: Press coverage and community reactions to KVM-GO 
 
 # Reviews & Media
 
+!!! tip "Media hub"
+    See all community media — videos, press coverage, posts, and testimonials — on [openterface.com/media/]({{marketing.media_hub?product=kvm-go}}).
+
 Press coverage and community reactions to KVM-GO — articles from tech media plus posts from early users on X.
 
 ## Media Coverage

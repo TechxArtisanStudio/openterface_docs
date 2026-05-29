@@ -5,6 +5,9 @@ description: "Revisiones & Medios: --8<-- \"product/kvm-go/reviews/social-posts.
 
 # Revisiones & Medios
 
+!!! tip "Hub de medios"
+    Ver todo el contenido de la comunidad — vídeos, prensa, publicaciones y testimonios — en [openterface.com/media/]({{marketing.media_hub?product=kvm-go}}).
+
 ## Cobertura de medios
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[CNX Software:](https://www.cnx-software.com/2026/01/05/openterface-kvm-go-an-ultra-compact-kvm-over-usb-solution-with-hdmi-dp-or-vga-video-input/)** *"Lo suficientemente pequeño para caber en una llave, el Openterface KVM-GO es un dispositivo de hardware pequeño, de código abierto para KVM-over-USB disponible con un conector HDMI, DisplayPort (DP) o VGA y está diseñado para la solución de problemas en dispositivos headless y monitoreo remoto de servidores."*

@@ -5,6 +5,9 @@ description: "리뷰 및 미디어 — kvm-go / reviews (KVM-GO). Openterface �
 
 # 리뷰 및 미디어
 
+!!! tip "미디어 허브"
+    동영상, 언론 보도, 게시물, 후기 등 모든 커뮤니티 미디어는 [openterface.com/media/]({{marketing.media_hub?product=kvm-go}})에서 확인하세요.
+
 ## 미디어 커버리지
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[CNX Software:](https://www.cnx-software.com/2026/01/05/openterface-kvm-go-an-ultra-compact-kvm-over-usb-solution-with-hdmi-dp-or-vga-video-input/)** *"키 체인에 들어갈 수 있을 정도로 작고, Openterface KVM-GO는 HDMI, DisplayPort(DP), VGA 커넥터로 제공되는 초소형 오픈소스 하드웨어 KVM-USB 기기로, 헤드리스 장치의 문제 해결 및 원격 서버 모니터링을 위해 설계되었습니다."*

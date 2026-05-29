@@ -3,7 +3,7 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { sidebarSlugsForPage } from '../config/sidebar-utils';
-import { newsPath } from '../config/surface-urls';
+import { newsPath, surfaceMarketingHost } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } from './locale';
 
 const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
@@ -99,8 +99,40 @@ function slugify(text: string): string {
     .replace(/\s+/g, '-');
 }
 
+function resolveSnippetPath(snippetPath: string): string {
+  const candidates = [snippetPath];
+  if (snippetPath.startsWith('product/')) {
+    const mapped = snippetPath
+      .replace(/^product\/uconsole-kvm-extension\//, 'products/kvmext/')
+      .replace(/^product\/kvm-go\//, 'products/kvmgo/')
+      .replace(/^product\/accessories\//, 'products/accessories/')
+      .replace(/^product\/minikvm\//, 'products/minikvm/')
+      .replace(/^product\/keymod\//, 'products/keymod/')
+      .replace(/^product\//, 'products/');
+    if (mapped !== snippetPath) candidates.push(mapped);
+  }
+  for (const candidate of candidates) {
+    const full = path.join(docsRoot(), candidate);
+    if (fs.existsSync(full)) return full;
+  }
+  return path.join(docsRoot(), snippetPath);
+}
+
+function marketingMediaHubUrl(locale: SiteLocale, product?: string): string {
+  const base = surfaceMarketingHost(locale).replace(/\/$/, '');
+  if (product) return `${base}/media/?product=${encodeURIComponent(product)}`;
+  return `${base}/media/`;
+}
+
+function resolveMarketingHubMacros(raw: string, locale: SiteLocale): string {
+  return raw.replace(
+    /\{\{marketing\.media_hub(?:\?product=([^}]+))?\}\}/g,
+    (_match, product?: string) => marketingMediaHubUrl(locale, product?.trim()),
+  );
+}
+
 function inlineSnippet(snippetPath: string): string {
-  const full = path.join(docsRoot(), snippetPath);
+  const full = resolveSnippetPath(snippetPath);
   if (!fs.existsSync(full)) return `<!-- missing snippet: ${snippetPath} -->`;
   let html = fs.readFileSync(full, 'utf8');
   html = html.replace(/\.\.\/\.\.\/\.\.\/\.\.\/assets\//g, '/assets/');
@@ -476,6 +508,7 @@ function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): str
 /** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
 export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageSlug?: string): string {
   let md = preprocessMkdocsMarkdownInner(raw);
+  if (locale) md = resolveMarketingHubMacros(md, locale);
   if (locale && pageSlug) md = rewriteNewsLinks(md, locale, pageSlug);
   return parseGridCards(md);
 }

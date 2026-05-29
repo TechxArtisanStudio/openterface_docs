@@ -5,6 +5,9 @@ description: "Press coverage, YouTube reviews, and community testimonials for Op
 
 # Reviews & Media
 
+!!! tip "Media hub"
+    See all community media — videos, press coverage, posts, and testimonials — on [openterface.com/media/]({{marketing.media_hub?product=minikvm}}).
+
 ## Media Coverage
 
 - <a href="https://www.cnx-software.com/"><img src="https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-100x100.png.webp" alt="CNX Software logo" width="28" style="border-radius: 50%; vertical-align: middle;" onerror="this.style.display='none'"></a> **[Jean-Luc Aufranc (CNXSoft):](https://www.cnx-software.com/2024/05/09/openterface-mini-kvm-affordable-kvm-over-usb-device/)** *"Openterface Mini-KVM is quite different (and cheaper) as a plug-and-play and network-independent KVM-over-USB device that establishes a direct HDMI and USB connection between the host computer and the target device."*
