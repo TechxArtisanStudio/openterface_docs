@@ -6,8 +6,8 @@
     Home: 首页
     FAQs: 常见问题
     Support: 支持
-    Product: 产品
-    App: 应用
+    Products: 产品
+    Apps: 应用
     Use Cases: 使用场景
     Reviews: 评测
     Compliance: 合规
@@ -117,8 +117,8 @@
     Home: ホーム
     FAQs: よくある質問
     Support: サポート
-    Product: 製品
-    App: アプリ
+    Products: 製品
+    Apps: アプリ
     Use Cases: 使用例
     Reviews: レビュー
     Compliance: コンプライアンス
@@ -228,8 +228,8 @@
     Home: 홈
     FAQs: 자주 묻는 질문
     Support: 지원
-    Product: 제품
-    App: 앱
+    Products: 제품
+    Apps: 앱
     Use Cases: 사용 사례
     Reviews: 리뷰
     Compliance: 규정 준수
@@ -339,8 +339,8 @@
     Home: Accueil
     FAQs: FAQ
     Support: Support
-    Product: Produits
-    App: Application
+    Products: Produits
+    Apps: Application
     Use Cases: Cas d'utilisation
     Reviews: Avis
     Compliance: Conformité
@@ -450,8 +450,8 @@
     Home: Startseite
     FAQs: Häufige Fragen
     Support: Support
-    Product: Produkte
-    App: App
+    Products: Produkte
+    Apps: App
     Use Cases: Anwendungsfälle
     Reviews: Bewertungen
     Compliance: Konformität
@@ -561,8 +561,8 @@
     Home: Home
     FAQs: Domande frequenti
     Support: Supporto
-    Product: Prodotti
-    App: App
+    Products: Prodotti
+    Apps: App
     Use Cases: Casi d'uso
     Reviews: Recensioni
     Compliance: Conformità
@@ -672,8 +672,8 @@
     Home: Inicio
     FAQs: Preguntas frecuentes
     Support: Soporte
-    Product: Producto
-    App: Aplicación
+    Products: Producto
+    Apps: Aplicación
     Use Cases: Casos de uso
     Reviews: Reseñas
     Compliance: Cumplimiento
@@ -783,8 +783,8 @@
     Home: Início
     FAQs: Perguntas frequentes
     Support: Suporte
-    Product: Produtos
-    App: Aplicativo
+    Products: Produtos
+    Apps: Aplicativo
     Use Cases: Casos de uso
     Reviews: Avaliações
     Compliance: Conformidade
@@ -894,8 +894,8 @@
     Home: Acasă
     FAQs: Întrebări frecvente
     Support: Suport
-    Product: Produse
-    App: Aplicație
+    Products: Produse
+    Apps: Aplicație
     Use Cases: Cazuri de utilizare
     Reviews: Recenzii
     Compliance: Conformitate
@@ -1005,8 +1005,8 @@
     Home: 首頁
     FAQs: 常見問題
     Support: 支持
-    Product: 產品
-    App: 應用
+    Products: 產品
+    Apps: 應用
     Use Cases: 使用場景
     Reviews: 評測
     Compliance: 合規
@@ -1116,8 +1116,8 @@
     Home: 首頁
     FAQs: 常見問題
     Support: 支持
-    Product: 產品
-    App: 應用
+    Products: 產品
+    Apps: 應用
     Use Cases: 使用場景
     Reviews: 評測
     Compliance: 合規
@@ -1227,8 +1227,8 @@
     Home: Главная
     FAQs: Часто задаваемые вопросы
     Support: Поддержка
-    Product: Продукты
-    App: Приложение
+    Products: Продукты
+    Apps: Приложение
     Use Cases: Сценарии использования
     Reviews: Отзывы
     Compliance: Соответствие требованиям
@@ -1338,8 +1338,8 @@
     Home: الرئيسية
     FAQs: الأسئلة الشائعة
     Support: الدعم
-    Product: المنتجات
-    App: التطبيق
+    Products: المنتجات
+    Apps: التطبيق
     Use Cases: حالات الاستخدام
     Reviews: المراجعات
     Compliance: الامتثال
@@ -1449,8 +1449,8 @@
     Home: Ana Sayfa
     FAQs: Sık Sorulan Sorular
     Support: Destek
-    Product: Ürünler
-    App: Uygulama
+    Products: Ürünler
+    Apps: Uygulama
     Use Cases: Kullanım Senaryoları
     Reviews: İncelemeler
     Compliance: Uyumluluk
@@ -1560,8 +1560,8 @@
     Home: Strona główna
     FAQs: Często zadawane pytania
     Support: Wsparcie
-    Product: Produkty
-    App: Aplikacja
+    Products: Produkty
+    Apps: Aplikacja
     Use Cases: Przypadki użycia
     Reviews: Recenzje
     Compliance: Zgodność
@@ -1671,8 +1671,8 @@
     Home: Home
     FAQs: Veelgestelde vragen
     Support: Ondersteuning
-    Product: Producten
-    App: App
+    Products: Producten
+    Apps: App
     Use Cases: Toepassingsgevallen
     Reviews: Beoordelingen
     Compliance: Naleving

@@ -967,7 +967,7 @@ nav:
   - Overview: faq/index.md
   - KVM-over-USB: faq/kvm-over-usb.md
 - Support: support/index.md
-- Product:
+- Products:
   - Overview: products/index.md
   - KeyMod Series:
     - Overview: products/keymod/index.md
@@ -1017,7 +1017,7 @@ nav:
     - Type-C to A Cable Black 30cm: products/accessories/black-c-to-a-30.md
     - HDMI Cable 30cm: products/accessories/hdmi-male-to-male-cable.md
     - Toolkit Bag: products/accessories/openterface-toolkit-bag.md
-- App:
+- Apps:
   - KVM Control: app/kvm/index.md
   - KeyCmd: app/keycmd/index.md
   - KVM Control FAQs: app/kvm/faq.md

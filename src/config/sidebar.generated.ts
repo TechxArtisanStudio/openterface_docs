@@ -35,8 +35,8 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     ]
   },
   {
-    "title": "Product",
-    "groupTitle": "Product",
+    "title": "Products",
+    "groupTitle": "Products",
     "items": [
       {
         "label": "Overview",
@@ -243,8 +243,8 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     ]
   },
   {
-    "title": "App",
-    "groupTitle": "App",
+    "title": "Apps",
+    "groupTitle": "Apps",
     "items": [
       {
         "label": "KVM Control",
