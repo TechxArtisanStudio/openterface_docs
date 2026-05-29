@@ -29,15 +29,16 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.locator('.site-header')).toBeVisible();
   });
 
-  test('header product nav uses /products/ paths', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
+  test('header exposes unified ecosystem nav with marketing product links', async ({ page }) => {
+    await page.setViewportSize({ width: 1400, height: 900 });
     await page.goto('/');
+    const header = page.locator('header');
+    for (const label of ['Products', 'Apps', 'Docs', 'Media', 'News', 'Community']) {
+      await expect(header).toContainText(label);
+    }
     await page.locator('.nav-dropdown summary').first().click();
-    const kvmGo = page.locator('.site-header a[href="/products/kvmgo/"]');
+    const kvmGo = page.locator('.site-header a[href="https://openterface.com/kvmgo/"]');
     await expect(kvmGo.first()).toBeVisible();
-    await kvmGo.first().click();
-    await expect(page).toHaveURL(/\/products\/kvmgo\/?$/);
-    await expect(page.locator('h1')).toBeVisible();
   });
 
   test('app kvm download links resolve', async ({ page }) => {
