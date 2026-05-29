@@ -20,12 +20,8 @@ const { locale, currentPath, currentSearch = '', searchIndex } = Astro.props;
 const preservedSearch = preserveQueryForLocaleSwitch(currentSearch);
 const ui = t(locale);
 const nav = docsNav(locale);
-const productItem = nav.find((item) => item.children);
-const productLinks = productItem?.children ?? [];
-const primaryLinks = nav.filter(
-  (item) => !item.children && !item.external && item.href !== localizedPath(locale),
-);
-const externalLinks = nav.filter((item) => item.external);
+const dropdownSections = nav.filter((item) => item.children);
+const ecosystemLinks = nav.filter((item) => !item.children);
 const homeHref = localizedPath(locale);
 ---
 
@@ -48,10 +44,8 @@ const homeHref = localizedPath(locale);
             <a
               href={item.href}
               class="site-header__nav-link"
-              target={item.external ? '_blank' : undefined}
-              rel={item.external ? 'noopener noreferrer' : undefined}
             >
-              {item.label}{item.external ? ' ↗' : ''}
+              {item.label}
             </a>
           ),
         )
@@ -113,42 +107,27 @@ const homeHref = localizedPath(locale);
             </div>
 
             {
-              productItem && (
+              dropdownSections.map((section) => (
                 <div class="mobile-nav-section">
-                  <p class="mobile-nav-section-label">{productItem.label}</p>
+                  <p class="mobile-nav-section-label">{section.label}</p>
                   <div class="mobile-nav-section-links">
-                    {productLinks.map((child) => (
+                    {section.children?.map((child) => (
                       <a href={child.href} class="mobile-nav-link">{child.label}</a>
                     ))}
                   </div>
                 </div>
-              )
+              ))
             }
 
-            <div class="mobile-nav-section">
-              <p class="mobile-nav-section-label">{ui.mobile.sections}</p>
-              <div class="mobile-nav-section-links">
-                {primaryLinks.map((item) => (
-                  <a href={item.href} class="mobile-nav-link">{item.label}</a>
-                ))}
-              </div>
-            </div>
-
             {
-              externalLinks.length > 0 && (
+              ecosystemLinks.length > 0 && (
                 <div class="mobile-nav-section pb-1">
                   <p class="mobile-nav-section-label">{ui.mobile.ecosystem}</p>
                   <div class="mobile-nav-section-links">
                     {
-                      externalLinks.map((item) => (
-                        <a
-                          href={item.href}
-                          class="mobile-nav-link"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                      ecosystemLinks.map((item) => (
+                        <a href={item.href} class="mobile-nav-link">
                           {item.label}
-                          <span class="ml-1.5 text-xs text-muted" aria-hidden="true">↗</span>
                         </a>
                       ))
                     }
