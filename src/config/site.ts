@@ -6,6 +6,7 @@ export const siteConfig = {
   description:
     'Official documentation for Openterface KVM-over-USB products and software.',
   ogImage: 'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
+  headerBrandLogo: 'https://assets2.openterface.com/images/icon/op-docs.svg',
   editBase: 'https://github.com/TechxArtisan/openterface_docs/edit/main/docs',
   links: {
     forum: 'https://forum.openterface.com',

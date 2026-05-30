@@ -1,5 +1,5 @@
 ---
-import { docsNav } from '../config/site';
+import { docsNav, siteConfig } from '../config/site';
 import { switchLocaleDocPath } from '../lib/docs';
 import { LOCALE_LABELS, localizedPath, type SiteLocale } from '../lib/locale';
 import { t } from '../i18n/ui';
@@ -29,9 +29,8 @@ const homeHref = localizedPath(locale);
   <div class="site-header__inner">
     <div class="site-header__start">
       <a href={homeHref} class="site-header__brand">
-        <Logo variant="onPrimary" class="site-header__logo" />
+        <Logo brandSrc={siteConfig.headerBrandLogo} alt={siteConfig.name} class="site-header__logo" />
       </a>
-      <a href={homeHref} class="site-header__suffix">{ui.nav.docsBadge}</a>
       <span class="site-header__lead" aria-hidden="true"></span>
     </div>
 
