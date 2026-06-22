@@ -1,46 +1,39 @@
 ---
-title: "ソフトウェアのセットアップ"
-description: uConsole向けOpenterface KVM拡張のソフトウェアセットアップ完全ガイド。 Openterfaceアプリにより、uConsoleをKVMインターフェースとして使用でき、内蔵の画面・キーボード・トラックボールでターゲット機器を操作できます。 詳細はを参照してください。
-keywords: "Openterface アプリ インストール, uConsole ソフトウェア, KVM セットアップ, uConsole 設定"
+title: "ソフトウェアセットアップ | 拡張モジュール v2"
+description: "uConsoleにOpenterfaceホストアプリをインストール・設定して、KVM拡張モジュール v2 — HDMIキャプチャ、USB HID、SDカード切替、USB共有を利用するための手順です。"
+keywords: "Openterfaceアプリインストール, uConsoleソフトウェアセットアップ, KVM拡張 v2, openterfaceqt"
 ---
 
-# **ソフトウェアのセットアップ** | Openterface KVM拡張 for uConsole
+# **ソフトウェアセットアップ** | 拡張モジュール v2
 
-## インストール概要
+## インストールの概要
 
-Openterfaceアプリにより、uConsoleをKVMインターフェースとして使用でき、内蔵の画面・キーボード・トラックボールでターゲット機器を操作できます。
+Openterfaceホストアプリは、uConsoleをHDMIキャプチャ、USB HID制御、**SDカード切替**、ホストとターゲット間の**USBポート共有**機能を備えたKVMインターフェースとして動作させます。
 
 !!! note "要件"
-    - **uConsole**: Openterfaceアプリのインストールが必要
-    - **ターゲット**: アプリ不要 — Windows, macOS, Linux, Android, iOS対応
-    - **映像**: 標準のHDMIケーブルを使用してください。電源付きのHDMIコンバータを使用すると、**VGA**や**DP**などの形式にも対応します。*ヒント: コンバータに十分な電力が供給されていることを確認してください。供給不足だと黒画面になる場合があります。*
-
-    - **推奨ビデオバックエンド**: arm64 GPU（例: Raspberry Pi）でのパフォーマンスと互換性を高めるため、ビデオバックエンドに**GStreamer**を推奨します。ただし、**Kali Linux**ではGStreamerのサポートが不十分な場合があります。
+    - **uConsole（ホスト）**: Openterface QTアプリが必要です
+    - **ターゲットデバイス**: アプリ不要 — Windows、macOS、Linux、Android、iOSがKVMに対応
+    - **映像**: 標準HDMIケーブル。給電付きコンバーターでVGA、DP、その他のフォーマットに対応
+    - **推奨バックエンド**: arm64 GPUパフォーマンスに最も優れた **GStreamer**（Kali LinuxではGStreamerのサポートが限定的な場合があります）
 
 ## インストール方法
 
-### **オプション1: GitHub Releasesからダウンロード（arm64推奨）**
+### **オプション 1: GitHub Releases（arm64推奨）**
 
-最新のOpenterfaceアプリ（**arm64**）を当プロジェクトの[GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases)から直接ダウンロードしてください。
+1. [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) にアクセスします。
+2. **arm64** 用の最新の `.deb` をダウンロードします（例: `openterfaceqt_*_arm64.deb`）。
+3. インストール:
+    ```bash
+    sudo apt install ./openterfaceqt_*_arm64.deb
+    ```
 
-1. [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases)ページにアクセスします。
-2. **arm64**用の最新の`.deb`パッケージをダウンロードします（例: `openterfaceqt_*_arm64.deb`）。
-3. パッケージをインストールします:
-   ```bash
-   sudo apt install ./openterfaceqt_*_arm64.deb
-   ```
-   *(実際のファイル名に置き換えてください)*
----
+### **オプション 2: Flatpak**
 
-### **オプション2: Flatpakでのインストール**
+[Flatpakインストールガイド](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) に従ってください。
 
-詳細は[Flatpakインストールガイド](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md)を参照してください。
+### **オプション 3: コミュニティリポジトリ（ClockworkPi Bookworm）**
 
----
-
-### **オプション3: コミュニティリポジトリ**
-
-Rexがメンテナンスするコミュニティビルドを利用する場合：
+ClockworkPiイメージ向けにRexがメンテナンスしています:
 
 1. **リポジトリを追加**:
     ```bash
@@ -48,94 +41,55 @@ Rexがメンテナンスするコミュニティビルドを利用する場合�
     sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
     ```
 
-2. **パッケージをインストール**:
+2. **インストール**:
     ```bash
     sudo apt update
     sudo apt install openterfaceqt
     ```
 
-!!! warning "リポジトリについて"
-    これらのコマンドは`sudo`が必要です。リポジトリはarm64 Bookwormパッケージを対象としているため、導入前にデバイスの互換性を確認してください。
+!!! warning "リポジトリに関する注意"
+    コマンドには `sudo` が必要です。リポジトリはarm64 Bookwormパッケージを対象としているため、インストール前にuConsole OSとの互換性を確認してください。
 
-## 重要な注意点
+## 重要な注意事項
 
-!!! tip "電源と初回セットアップ"
-    - **uConsoleが十分に充電されているか、安定した電源に接続されていることを確認してください。** 電力不足は不安定な動作や接続問題を引き起こす可能性があります。
-    - **初回にターゲットを制御できない場合:**
+!!! tip "電源 & 初回セットアップ"
+    - uConsoleを充電状態にするか、安定した電源に接続してください — バッテリー残量が少ないと接続問題が発生することがあります。
+    - 初回試行時にキーボード/マウス制御が失敗する場合:
         1. uConsoleを完全にシャットダウンします。
         2. 少なくとも10秒待ちます。
-        3. 再度起動して試してください。
+        3. 電源を入れて再試行します。
 
 !!! tip "シリアル通信のボーレート"
-    - シリアル通信では**9600ボーレート**を使用してください。uConsoleは115200を安定して維持するのに十分な電力を供給できないことが多く、エラー率が上がるためです。
+    シリアル通信のボーレートは **9600** に設定してください — uConsoleでは115200を安定して維持できない場合があります。
 
-## 使用手順
+## 使い方
 
 ### **KVMセッションの開始**
-1. uConsoleでOpenterfaceアプリを起動します
-2. アプリがKVM拡張ボードを自動検出します
-3. HDMIでターゲット機器を接続します
-4. uConsole内蔵のキーボードとトラックボールでターゲットを操作します
+
+1. uConsoleでOpenterface QTを起動します。
+2. アプリが拡張モジュール v2を自動的に検出します。
+3. HDMIとUSBでターゲットを接続します。
+4. uConsoleのキーボードとトラックボールを使ってターゲットを制御します。
 
 ### **制御機能**
-- **キーボード**: マルチメディアキーを含むフルキーボードエミュレーション
-- **マウス**: 絶対および相対位置指定
-- **オーディオ**: HDMIオーディオをuConsoleスピーカーにパススルー
 
-### **高度な機能**
-- **テキスト転送**: キーストロークをエミュレートしてテキストを素早く送信—ユーザー名、パスワード、コード断片に最適
-- **切替可能なUSB**: ホストアプリでuConsoleとターゲット間のUSBアクセスを切り替え可能
----
-title: "ソフトウェアセットアップ"
-description: "Openterface KVM Extension for uConsole の完全なソフトウェアセットアップガイド。シームレスな KVM 機能のために uConsole に Openterface App をインストールして設定する方法を学びます。"
-keywords: "Openterfaceアプリインストール, uConsoleソフトウェアセットアップ, KVMアプリセットアップ, uConsoleアプリ設定, ソフトウェアインストールガイド"
----
+- **キーボード**: マルチメディアキーを含む完全なエミュレーション
+- **マウス**: 絶対座標と相対座標の両方に対応
+- **オーディオ**: HDMIオーディオをuConsoleスピーカーへパススルー
+- **テキスト転送**: ユーザー名、パスワード、スニペットをキー入力として貼り付け
+- **USB切替**: ホストアプリ経由でUSBストレージをuConsoleとターゲットで共有 — [ターゲットへの接続](/products/kvmext/connect-to-target/) を参照
+- **SDカード切替**: ホストアプリ経由でSDカードをホストまたはターゲットにマウント — [SDカードガイド](/products/kvmext/sd-card/) を参照
 
-# **ソフトウェアセットアップ** | Openterface KVM Extension for uConsole
+### **ソフトウェアインストールのトラブルシューティング**
 
-## インストール概要
+アプリのインストールが難しい場合、またはマウス/キーボードが動作しない場合:
 
-Openterface App により、uConsole が KVM インターフェースとして機能し、内蔵画面、キーボード、トラックボールを使用してターゲットデバイスを制御できます。
+- uConsole CM4/モジュールに **arm64** ビルドをインストールしたことを確認してください
+- リアルタイムサポートは [Discord](https://openterface.com/discord) に参加してください
+- [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT/issues) で問題を報告してください
 
-!!! note "要件"
-    - **uConsole**：Openterface App のインストールが必要
-    - **ターゲット**：アプリ不要 - Windows、macOS、Linux、Android、iOS をサポート
-    - **ビデオ**：標準 HDMI ケーブルを使用してください。標準 HDMI ケーブルを使用してください。電源付き HDMI コンバーターを使用すると、**VGA**、**DP** などの他のフォーマットもサポートします。*ヒント：コンバーターが適切に電源供給されていることを確認してください。そうしないと、黒い画面が表示される可能性があります。*
+## 関連項目
 
-## インストール方法
-
-### **オプション 1：Flatpak インストール**
-
-詳細なセットアップ手順については、[Flatpak インストールガイド](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) に従ってください。
-
-### **オプション 2：コミュニティリポジトリ（推奨）**
-
-Rex が管理するコミュニティビルドを希望する場合：
-
-1. **リポジトリの追加**：
-```bash
-wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
-sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-2. **パッケージのインストール**：
-```bash
-sudo apt update
-sudo apt install openterfaceqt
-!!! warning "リポジトリの注意事項"
-    これらのコマンドには sudo が必要です。リポジトリは arm64 Bookworm パッケージを対象としています。インストール前にデバイスとの互換性を確認してください。
-
-## 使用方法
-
-### **KVM セッションの開始**
-1. uConsole で Openterface App を起動
-2. アプリは自動的に KVM Extension ボードを検出
-3. HDMI でターゲットデバイスを接続
-4. uConsole の内蔵キーボードとトラックボールを使用してターゲットデバイスを制御
-
-### **制御機能**
-- **キーボード**：マルチメディアキーを含む完全なキーボードエミュレーション
-- **マウス**：絶対および相対マウス位置
-- **オーディオ**：HDMI オーディオを uConsole スピーカーにパススルー
-
-### **高度な機能**
-- **テキスト転送**：キーストロークをシミュレートしてテキストを迅速に転送—ユーザー名、パスワード、コードスニペットに最適
-- **切り替え可能 USB**：ホストアプリを使用して uConsole とターゲットデバイス間で USB アクセスを簡単に切り替え
+- [ターゲットへの接続](/products/kvmext/connect-to-target/)
+- [SDカードガイド](/products/kvmext/sd-card/)
+- [FAQ](/products/kvmext/faq/)

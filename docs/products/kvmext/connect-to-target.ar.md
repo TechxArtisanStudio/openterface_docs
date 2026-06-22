@@ -1,37 +1,64 @@
 ---
-title: "Mit Zielgerät Verbinden"
-description: "Lernen Sie, wie Sie Ihr Zielgerät مع der Openterface KVM Extension for uConsole verbinden. Vollständige دليل لـ USB-Steuerung و Videoeingang-Setup nach الأجهزة-التثبيت و البرمجيات-Setup."
-keywords: "KVM-الاتصالssetup, Zielgerät-الاتصال, USB-Steuerungssetup, HDMI-Eingangssetup, uConsole KVM-Erweiterung الاتصال"
+title: "الاتصال بالجهاز الهدف | وحدة التوسعة v2"
+description: "وصّل جهازك الهدف بوحدة توسعة Openterface uConsole KVM v2 عبر HDMI وUSB HID، واختيارياً عبر Ethernet لتصحيح أخطاء الشبكة."
+keywords: "إعداد اتصال KVM، الجهاز الهدف، HDMI، USB HID، تصحيح أخطاء Ethernet، uConsole KVM v2"
 ---
 
-# **Mit Zielgerät Verbinden** | Openterface KVM Extension for uConsole
+# **الاتصال بالجهاز الهدف** | وحدة التوسعة v2
 
-## الاتصالsحولsicht
+## نظرة عامة على الاتصال
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![kvmext-v2-use-case-2](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-2.webp){:style="max-height:480px"}
 
-## Voraussetzungen
+تتصل وحدة التوسعة v2 بالجهاز الهدف عبر **HDMI** (فيديو/صوت) و**USB** (محاكاة لوحة المفاتيح/الفأرة). اختيارياً، استخدم **Ethernet** للوصول عبر SSH أو إدارة الويب أو التقاط السجلات بينما يتولى KVM العرض والإدخال.
 
-Bevor Sie Ihr Zielgerät verbinden, stellen Sie sicher, dass Sie folgendes abgeschlossen haben:
+## المتطلبات الأساسية
 
-1. [الأجهزة-التثبيت](/products/kvmext/hardware-installation/) - Physische التثبيت der KVM Extension-Karte
-2. [البرمجيات-Setup](/products/kvmext/software-setup/) - التثبيت der Openterface App
+1. [تثبيت العتاد](/products/kvmext/hardware-installation/) — الوحدة مثبتة في فتحة التوسعة
+2. [إعداد البرمجيات](/products/kvmext/software-setup/) — تم تثبيت Openterface QT على uConsole
+3. [اختيار بطاقة Ethernet](/products/kvmext/ethernet/) (في حال استخدام ميزات الشبكة)
 
-## الاتصالsschritte
+## خطوات الاتصال
 
-### **USB-Steuerung**
-Verbinden Sie den Type-C-Buchsenport مع dem USB-Port des Zielgeräts, um Tastatur- و Maussignale zu emulieren.
+### **التحكم عبر USB (مطلوب لـ KVM)**
 
-### **Videoeingang**
-Verbinden Sie den Videoausgang des Zielgeräts مع dem HDMI-Port auf der KVM Extension:
+وصّل **منفذ Type-C** الخاص بلوحة التوسعة بمنفذ USB في الجهاز الهدف. هذا يحاكي لوحة المفاتيح والفأرة (USB HID).
 
-- Verwenden Sie ein Standard-HDMI-Kabel لـ HDMI-Ausgabegeräte
-- Verwenden Sie ein VGA-to-HDMI-Konverterkabel لـ VGA-Ausgabegeräte.
-    - *Hinweis*: Stellen Sie sicher, dass der Konverter حول seinen USB-Anschluss مع Strom versorgt wird لـ ordnungsgemäßen Betrieb.
-- Verwenden Sie andere geeignete Adapter لـ verschiedene Videosignaltypen
+الجهاز الهدف **لا يحتاج** إلى تعريفات أو برمجيات إضافية للتحكم عبر HID.
 
-## الاتصال Testen
+### **إدخال الفيديو (مطلوب لـ KVM)**
 
-1. Schalten Sie die Stromversorgung ein و starten Sie das uConsole
-2. Führen Sie die Openterface QT App aus
-3. Testen Sie HDMI-, Audio- و USB HID-Funktionalität, um ordnungsgemäßen Betrieb zu bestätigen
+وصّل خرج HDMI الخاص بالهدف بمدخل HDMI في وحدة التوسعة:
+
+- كابل HDMI قياسي لمخارج HDMI
+- **محول VGA-to-HDMI** لمخرج VGA (تأكد من توصيل طاقة USB للمحول)
+- محولات أخرى لـ DVI وDisplayPort وMicro HDMI حسب الحاجة
+
+### **Ethernet (اختياري — تصحيح أخطاء الشبكة)**
+
+إذا ركّبت بطاقة شبكة:
+
+- وصّل كابل Ethernet من البطاقة بالجهاز الهدف أو بمحوّل الشبكة
+- استخدم uConsole للوصول عبر SSH أو واجهة الويب أو التقاط السجلات بالتوازي مع KVM
+- راجع [دليل Ethernet](/products/kvmext/ethernet/) لإعداد 100M مقابل 1000M
+
+### **بطاقة SD (اختياري — نسخ الصور والملفات)**
+
+أدرج بطاقة microSD في فتحة الوحدة. استخدم تطبيق المضيف لتبديل الوصول بين uConsole والهدف. راجع [دليل بطاقة SD](/products/kvmext/sd-card/).
+
+## تبديل USB 2.0 المشترك
+
+يمكن لتطبيق المضيف تبديل منفذ USB 2.0 المشترك بين uConsole والهدف — مفيد لمحركات الأقراص المحمولة وسير عمل الصيانة دون فصل الكابلات.
+
+## اختبار الاتصال
+
+1. شغّل uConsole وأقلع الجهاز الهدف
+2. شغّل Openterface QT
+3. تأكد من ظهور فيديو HDMI على شاشة uConsole
+4. اختبر لوحة المفاتيح والكرة المتعقبة ومرور الصوت
+5. في حال استخدام تبديل SD أو USB، اختبر التحميل/التبديل في تطبيق المضيف
+
+## ذات صلة
+
+- [حالات الاستخدام](/products/kvmext/use-cases/) — سيناريوهات دعم تقنية الميدان، المختبر المنزلي، تصحيح أخطاء الأنظمة المدمجة
+- [الأسئلة الشائعة](/products/kvmext/faq/) — استكشاف الأخطاء وإصلاحها

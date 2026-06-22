@@ -1,53 +1,63 @@
 ---
-title: "Funzionalità e specifiche"
-description: "Panoramica completa di Openterface KVM Extension for uConsole: funzionalità potenti inclusi input HDMI diretto, controllo USB HID, fattore di forma perfetto e specifiche tecniche dettagliate. Tutto quello che devi sapere su questa soluzione KVM portatile."
-keywords: "funzionalità estensione KVM, uConsole KVM, HDMI KVM, controllo USB HID, KVM portatile, controllo headless, sostituzione 4G LTE, specifiche tecniche, espansione uConsole"
+title: "Caratteristiche e Specifiche | Modulo di Estensione v2"
+description: "Panoramica completa del Modulo di Estensione KVM v2 per Openterface uConsole: KVM HDMI, doppia Ethernet, scheda SD, commutazione USB e specifiche tecniche."
+keywords: "caratteristiche modulo estensione KVM v2, uConsole KVM, HDMI KVM, espansione Ethernet, scheda SD, KVM portatile, specifiche tecniche"
 ---
 
-# **Funzionalità e specifiche** | Openterface KVM Extension for uConsole
+# **Caratteristiche e Specifiche** | Modulo di Estensione v2
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
-## Funzionalità principali
+## Caratteristiche Principali
 
-- **HDMI diretto + USB HID**: Sfrutta lo schermo e i controlli integrati del uConsole con input HDMI diretto ed emulazione USB HID.
-- **Plug-and-Play**: Controllo istantaneo senza installazione software o tracce residue sul dispositivo target.
-- **Bassa latenza**: Ottimizzato per troubleshooting a livello BIOS e interazioni in tempo reale.
-- **Portatile**: Strumento mobile tutto-in-uno—nessun bisogno di monitor aggiuntivi, tastiere o configurazione di rete.
-- **Senza rete**: Controllo headless stabile tramite cattura HDMI e input HID, nessuna rete richiesta.
-- **Trasferimento testo**: Trasferisci rapidamente testo simulando pressioni di tasti—ideale per nomi utente, password e frammenti di codice. Supporta ASCII completo, inclusi simboli e punteggiatura. [Controlla la nostra app](/app) per i dettagli.
-- **Open Source**: Costruito su [Openterface KVM QT](https://github.com/techxArtisanStudio/openterface_qt) con supporto attivo della comunità.
+- **Controllo KVM Diretto**: Visualizza e controlla un dispositivo target tramite ingresso HDMI ed emulazione di tastiera/mouse USB HID — ideale per accesso al BIOS, installazione del sistema operativo e recupero di server headless.
+- **Supporto Doppia Scheda di Rete**: Sono incluse sia la scheda Ethernet **100M** che **1000M**. Usa la 100M su tutte le schede base uConsole; usa la 1000M con l'[HackerGadgets uConsole Upgrade Kit](https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole) per il networking gigabit.
+- **Lettura/Scrittura Scheda SD**: Scrivi immagini, esporta log e trasferisci file dalla tua uConsole senza un lettore di schede esterno.
+- **Commutazione Condivisa USB 2.0**: Commuta l'accesso USB tra l'uConsole e il dispositivo target per debug e manutenzione flessibili.
+- **Bassa Latenza**: Latenza video inferiore a **70 ms** con uscita **1080p @ 60 Hz** sullo schermo dell'uConsole.
+- **Portatile e Alimentato dallo Slot**: Design compatto **77.3 × 34.7 mm**, alimentato dallo slot di espansione dell'uConsole — nessun alimentatore esterno necessario.
+- **Allineato all'Open Source**: Costruito sulla piattaforma Openterface KVM con app host open source e supporto della community.
 
-## Specifiche tecniche
+## Specifiche Tecniche
 
-### Dimensioni fisiche
+| Voce | Specifica |
+|------|-----------|
+| **Nome prodotto** | Openterface uConsole KVM Extension Module v2 |
+| **Dimensioni scheda** | 77.3 × 34.7 mm |
+| **Ingresso video** | HDMI fino a 4K @ 30 Hz (RGB/YCBCR444) o 4K @ 60 Hz (YCBCR420) |
+| **Uscita video** | 1080p @ 60 Hz sullo schermo dell'uConsole |
+| **Latenza** | &lt; 70 ms |
+| **Controllo KVM** | Emulazione di tastiera e mouse USB HID |
+| **Rete** | 100M funziona su tutte le schede base uConsole; 1000M richiede l'uConsole Upgrade Kit |
+| **Scheda SD** | Lettura/scrittura con commutazione host/target tramite app host |
+| **Condivisione USB** | Commutazione condivisa USB 2.0 Full Speed (12 Mbps) |
+| **Piattaforme target** | Windows, macOS, Linux, sistemi x86, SBC ARM |
+| **Alimentazione** | Alimentato dallo slot di espansione dell'uConsole |
+| **Alimentazione esterna** | Non richiesta |
 
-- **Dimensione:** 37 × 77 mm (corrisponde al modulo 4G/LTE)
-- **Spessore:** 1,0 mm (più sottile del modulo 4G/LTE originale a 1,2 mm)
-- **Materiale:** PCB di alta qualità con contatti a molla
+### Emulazione Completa di Tastiera e Mouse
 
-### Emulazione completa tastiera e mouse
+- **USB HID**: Posizionamento mouse assoluto e relativo, supporto tastiera completo, tasti multimediali.
+- **Connessione**: Collegamento USB al target tramite la porta Type-C della scheda di estensione.
 
-- **USB HID:** Posizionamento assoluto e relativo del mouse, supporto completo tastiera, tasti multimediali.
-- **Connessione:** Collegamento USB al target tramite la porta femmina Type-C della scheda di estensione.
+### Video e Audio
 
-### Video e audio
+- **Ingresso**: Fino a 4K tramite HDMI (vedere la tabella sopra per i dettagli sulle modalità)
+- **Uscita**: Full HD 1080p @ 60 Hz con latenza inferiore a 70 ms
+- **Display**: Utilizza lo schermo integrato dell'uConsole
+- **Compressione**: Supporto YUV e MJPEG
+- **Compatibilità**: VGA, DVI, Micro HDMI (tramite adattatori)
+- **Audio**: Passthrough audio integrato HDMI
 
-- **Input:** Fino a 4K (3840×2160) @ 30Hz tramite HDMI
-- **Output:** Full HD (1920×1080) @ 30Hz con latenza inferiore a 140ms
-- **Display:** Utilizza lo schermo integrato del uConsole
-- **Compressione:** Supporto YUV e MJPEG
-- **Compatibilità:** VGA, DVI, Micro HDMI (tramite adattatori)
-- **Audio:** Pass-through audio incorporato HDMI
+### Connettività e Alimentazione
 
-### Porta USB 2.0 commutabile
+- **Alimentazione**: Assorbe energia direttamente dallo slot di espansione dell'uConsole
+- **Software target**: Nessuna installazione richiesta sul dispositivo target
 
-- **Porta condivisa:** Commuta facilmente l'accesso USB tra uConsole e dispositivo target (es. chiavi USB) utilizzando l'app host.
-- **Velocità USB:** Trasmissione a velocità completa 12Mbps
+## Correlati
 
-### Connettività e alimentazione
-
-- **Alimentazione:** Attinge energia direttamente dallo slot di espansione del uConsole (nessuna alimentazione esterna necessaria)
-- **Compatibilità target:** Windows, macOS, Linux, Android, iOS
-- **Software target:** Nessuna installazione richiesta
+- [Guida Ethernet](/products/kvmext/ethernet/) — scegli tra scheda 100M e 1000M
+- [Guida Scheda SD](/products/kvmext/sd-card/) — creazione immagini e trasferimento file
+- [Opzioni di Acquisto](/products/kvmext/purchase-options/) — Solo Estensione vs bundle Upgrade Kit
+- [Specifiche v1 legacy](/products/kvmext/v1/features/) — modulo di prima generazione

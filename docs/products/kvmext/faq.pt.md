@@ -1,154 +1,155 @@
 ---
-title: Perguntas Frequentes para Openterface KVM Extension for uConsole
-description: Perguntas frequentes sobre a Extensão KVM para uConsole, cobrindo funcionalidades, compatibilidade, resolução de problemas e instalação. Bem-vindos às…
-keywords: extensão KVM, uConsole KVM, resolução problemas, captura vídeo, USB HID, compatibilidade, instalação
+title: "Perguntas Frequentes | Módulo de Extensão v2"
+description: "Perguntas frequentes sobre o Módulo de Extensão v2 do Openterface uConsole KVM: placas Ethernet, Kit de Upgrade, cartão SD, configuração de software, compatibilidade e solução de problemas."
+keywords: "FAQ extensão KVM v2, uConsole KVM, Ethernet, cartão SD, solução de problemas, Kit de Upgrade"
 ---
 
-# Perguntas Frequentes para Openterface KVM Extension for uConsole
+# Perguntas Frequentes | Módulo de Extensão v2
 
-Bem-vindos às Perguntas Frequentes para a nossa **Openterface KVM Extension for uConsole**.  
-Se não encontrarem o que precisam, **enviem-nos um email para [support@openterface.com](mailto:support@openterface.com)** ou **juntem-se à nossa comunidade** no [Discord](/discord).
+Bem-vindo às perguntas frequentes do **Módulo de Extensão v2 do Openterface uConsole KVM**.
 
-⚠️ _As Perguntas Frequentes podem estar desatualizadas — façam-nos saber se virem algo que precisa de atualização._
+Se você não encontrar o que precisa, envie um e-mail para [support@openterface.com](mailto:support@openterface.com) ou entre na nossa comunidade no [Discord](/discord).
 
 ---
 
 ## :material-clipboard-list: Navegação Rápida
 
-- [Perguntas Frequentes para Openterface KVM Extension for uConsole](#perguntas-frequentes-para-openterface-kvm-extension-for-uconsole)
-  - [:material-clipboard-list: Navegação Rápida](#material-clipboard-list-navegação-rápida)
-  - [Instalação e Hardware](#instalação-e-hardware)
-  - [Compatibilidade](#compatibilidade)
-  - [Controlo e Funcionalidades](#controlo-e-funcionalidades)
-  - [Vídeo e Áudio](#vídeo-e-áudio)
-  - [Resolução de Problemas](#resolução-de-problemas)
-  - [Mais](#mais)
+- [Produto e compra](#produto-e-compra)
+- [Instalação e hardware](#instala%C3%A7%C3%A3o-e-hardware)
+- [Compatibilidade](#compatibilidade)
+- [Controle e recursos](#controle-e-recursos)
+- [Vídeo e áudio](#v%C3%ADdeo-e-%C3%A1udio)
+- [Solução de problemas](#solu%C3%A7%C3%A3o-de-problemas)
+- [Mais](#mais)
 
 ---
 
-## Instalação e Hardware
+## Produto e compra
 
-**:material-chat-question:{ .faq } Como funciona a placa Extensão KVM?**
+**:material-chat-question:{ .faq } O Módulo de Extensão v2 é um produto ou duas versões de rede?**
 
-Captura a saída HDMI de um dispositivo alvo e exibe-a no uConsole. Ao mesmo tempo, o teclado e trackball do uConsole são utilizados para controlar o dispositivo alvo através de emulação USB HID.
+É **um produto**. Tanto a placa Ethernet 100M quanto a 1000M estão incluídas na caixa. Veja [Opções de Compra](/products/kvmext/purchase-options/).
 
-**:material-chat-question:{ .faq } Posso usar isto com o módulo 4G/LTE instalado?**
+**:material-chat-question:{ .faq } Qual placa Ethernet devo usar?**
 
-Não. Esta placa ocupa o mesmo slot de expansão. Terão de escolher entre conectividade celular ou funcionalidade KVM.
+Use a placa **100M** em todas as placas-base do uConsole. Use a placa **1000M** apenas se você tiver o **Kit de Upgrade uConsole da HackerGadgets** e precisar de rede gigabit. Veja o [Guia Ethernet](/products/kvmext/ethernet/).
 
-**:material-chat-question:{ .faq } Por que preciso das arruelas?**
+**:material-chat-question:{ .faq } Eu preciso do Kit de Upgrade uConsole da HackerGadgets?**
 
-A placa Extensão KVM tem 1,0 mm de espessura (mais fina que a original 4G/LTE de 1,2 mm). As arruelas compensam esta diferença e asseguram pressão apropriada do contactor de mola para conexões confiáveis.
+Apenas para **Ethernet gigabit**. A placa 100M funciona sem o Kit de Upgrade. Se você não tem o kit, escolha a opção de bundle no checkout ou compre o kit separadamente.
 
-**:material-chat-question:{ .faq } Que ferramentas preciso para a instalação?**
+**:material-chat-question:{ .faq } O uConsole está incluído?**
 
-Precisarão de uma chave de fendas hexagonal para remover e instalar os parafusos de montagem. Precauções ESD (pulseira de pulso ou superfície aterrada) são recomendadas mas não obrigatórias.
+Não. O dispositivo ClockworkPi uConsole é vendido separadamente.
+
+---
+
+## Instalação e hardware
+
+**:material-chat-question:{ .faq } Como funciona o Módulo de Extensão v2?**
+
+Ele captura o HDMI de um dispositivo alvo e exibe no uConsole. O teclado e o trackball do uConsole controlam o alvo via emulação USB HID. Os recursos opcionais de Ethernet e cartão SD ampliam os fluxos de trabalho de depuração de rede e criação de imagens.
+
+**:material-chat-question:{ .faq } Posso usar isso com o módulo 4G/LTE instalado?**
+
+Não. O Módulo de Extensão v2 usa o slot de expansão do uConsole e **não pode** ser usado ao mesmo tempo que o módulo 4G ou LTE.
+
+**:material-chat-question:{ .faq } Quais ferramentas eu preciso para a instalação?**
+
+Uma chave hexagonal para os parafusos de fixação. Recomenda-se precauções contra ESD.
 
 **:material-chat-question:{ .faq } A instalação é reversível?**
 
-Sim, podem remover a placa Extensão KVM e reinstalar o módulo 4G/LTE original a qualquer momento. Guardem o módulo original e os parafusos num local seguro.
+Sim. Remova o Módulo de Extensão v2 e reinstale seu módulo 4G/LTE original, se necessário.
 
 ---
 
 ## Compatibilidade
 
-**:material-chat-question:{ .faq } Que modelos uConsole são compatíveis?**
+**:material-chat-question:{ .faq } Quais modelos de uConsole são compatíveis?**
 
-Compatível com dispositivos uConsole que têm o slot de expansão 4G/LTE padrão. Verifiquem as especificações do vosso dispositivo para confirmar compatibilidade.
+Compatível com dispositivos uConsole que possuem o slot de expansão padrão. Verifique as especificações do seu dispositivo para confirmar.
 
-**:material-chat-question:{ .faq } Que dispositivos alvo posso controlar?**
+**:material-chat-question:{ .faq } Quais dispositivos alvo posso controlar?**
 
-Qualquer dispositivo com saída HDMI, incluindo:
+Qualquer dispositivo com saída HDMI: desktops, servidores, SBCs (Raspberry Pi, etc.), sistemas embarcados, PCs industriais e muito mais.
 
-- Computadores desktop e servidores
-- Computadores de placa única (Raspberry Pi, etc.)
-- Sistemas embebidos
-- PCs industriais
-- Consolas de jogos
-- Leitores multimédia
+**:material-chat-question:{ .faq } O alvo precisa de software especial?**
 
-**:material-chat-question:{ .faq } O dispositivo alvo precisa de software especial?**
+Não. O KVM usa emulação USB HID — não são necessários drivers no alvo para teclado e mouse. Saiba mais sobre a [tecnologia KVM baseada em USB](/tutorial/kvm/01-getting-started/).
 
-Nenhuma instalação de software é necessária no dispositivo alvo. A Extensão KVM funciona com qualquer dispositivo que tenha saída HDMI.
+**:material-chat-question:{ .faq } Posso controlar vários alvos ao mesmo tempo?**
 
-**:material-chat-question:{ .faq } Posso controlar múltiplos dispositivos alvo?**
-
-Podem controlar um dispositivo alvo de cada vez. Para alternar entre dispositivos, desliguem o cabo HDMI e conectem-no a um dispositivo alvo diferente.
+Um alvo por vez para KVM. Troque de alvo movendo os cabos HDMI e USB.
 
 ---
 
-## Controlo e Funcionalidades
+## Controle e recursos
 
-**:material-chat-question:{ .faq } Que métodos de entrada são suportados?**
+**:material-chat-question:{ .faq } Posso transferir arquivos via cartão SD?**
 
-- Emulação completa do teclado incluindo teclas multimédia
-- Posicionamento absoluto e relativo do rato
-- Função de despertar do computador
-- Pass-through de áudio via HDMI
+Sim. O Módulo de Extensão v2 suporta leitura/escrita de cartão SD com comutação host/alvo via aplicativo Openterface. Veja o [Guia do Cartão SD](/products/kvmext/sd-card/).
 
-**:material-chat-question:{ .faq } Posso transferir ficheiros entre uConsole e dispositivo alvo?**
+**:material-chat-question:{ .faq } Ele suporta acesso em nível de BIOS?**
 
-A Extensão KVM fornece apenas controlo de vídeo e entrada. Para transferência de ficheiros, precisarão usar outros métodos como partilha de rede, unidades USB ou armazenamento na nuvem.
+Sim. O USB HID direto permite acesso completo à BIOS/UEFI sem dependências de rede.
 
-**:material-chat-question:{ .faq } Suporta acesso a nível BIOS?**
+**:material-chat-question:{ .faq } E quanto ao módulo legado v1?**
 
-Sim, a emulação USB HID direta permite controlo completo a nível BIOS, ao contrário das ferramentas de acesso remoto baseadas em rede.
-
-**:material-chat-question:{ .faq } Posso usá-lo para jogos?**
-
-Embora tecnicamente possível, a latência e método de controlo podem não ser ideais para jogos rápidos. É mais adequado para tarefas de administração de sistema e desenvolvimento.
+O módulo de primeira geração de 37 × 77 mm (sem Ethernet/SD) está documentado em [Documentação Legado v1](/products/kvmext/v1/).
 
 ---
 
-## Vídeo e Áudio
+## Vídeo e áudio
 
-**:material-chat-question:{ .faq } Que resoluções de vídeo são suportadas?**
+**:material-chat-question:{ .faq } Quais resoluções de vídeo são suportadas?**
 
-A extensão aceita entrada de vídeo HDMI padrão. A resolução de exibição real depende das capacidades do ecrã do vosso uConsole.
+- **Entrada**: Até 4K @ 30 Hz (RGB/YCBCR444) ou 4K @ 60 Hz (YCBCR420) via HDMI
+- **Saída**: 1080p @ 60 Hz na tela do uConsole
 
-**:material-chat-question:{ .faq } O áudio é suportado?**
+**:material-chat-question:{ .faq } Qual é a latência de vídeo?**
 
-Sim, o áudio embebido HDMI é passado para os altifalantes do uConsole.
+Abaixo de **70 ms** — adequado para acesso à BIOS, manutenção e diagnósticos.
 
-**:material-chat-question:{ .faq } E a latência de vídeo?**
+**:material-chat-question:{ .faq } Áudio é suportado?**
 
-A extensão fornece vídeo de baixa latência adequado para interação em tempo real e resolução de problemas a nível BIOS.
-
-**:material-chat-question:{ .faq } Posso usar adaptadores para diferentes saídas de vídeo?**
-
-Sim, podem usar adaptadores HDMI para dispositivos com saídas VGA, DVI ou DisplayPort.
+Sim. O áudio embutido no HDMI passa para os alto-falantes do uConsole.
 
 ---
 
-## Resolução de Problemas
+## Solução de problemas
 
-**:material-chat-question:{ .faq } Nenhum sinal de vídeo aparece**
+**:material-chat-question:{ .faq } Sem sinal de vídeo**
 
-- Verifiquem a conexão do cabo HDMI em ambas as extremidades
-- Confirmem que o dispositivo alvo está ligado e configurado para sair via HDMI
-- Tentem um cabo HDMI diferente
-- Reiniciem a App Openterface
+- Verifique as conexões HDMI em ambas as extremidades
+- Confirme se o alvo está ligado e emitindo via HDMI
+- Tente um cabo HDMI diferente
+- Reinicie o Openterface QT
 
-**:material-chat-question:{ .faq } A entrada de controlo não funciona**
+**:material-chat-question:{ .faq } Teclado ou mouse não funcionam**
 
-- Assegurem-se de que a placa Extensão KVM está corretamente instalada
-- Verifiquem que os contactores de mola fazem bom contacto
-- Reiniciem a App Openterface
-- Confirmem que o dispositivo alvo reconhece entrada USB
+- Confirme o cabo USB do módulo de extensão para o alvo
+- Desligue completamente o uConsole, aguarde 10 segundos, ligue e tente novamente
+- Reinstale o Openterface QT (build arm64 para o seu uConsole)
+- Reporte sua distribuição Linux e módulo CM4 no [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) ou [Discord](https://openterface.com/discord)
 
-**:material-chat-question:{ .faq } A placa não encaixa corretamente**
+**:material-chat-question:{ .faq } O software foi difícil de instalar**
 
-- Assegurem-se de que as arruelas estão corretamente posicionadas
-- Verifiquem que os parafusos não estão demasiado apertados
-- Confirmem que a placa se assenta plana sem movimento
-- Assegurem-se de que estão usando os parafusos de montagem corretos
+Tente o GitHub Releases (Opção 1) ou o repositório da comunidade ClockworkPi (Opção 3) em [Configuração de Software](/products/kvmext/software-setup/). Entre no [Discord](https://openterface.com/discord) para ajuda passo a passo.
 
-**:material-chat-question:{ .faq } A App não deteta a extensão**
+**:material-chat-question:{ .faq } A porta de comutação USB não funciona**
 
-- Verifiquem que a placa está corretamente instalada
-- Reiniciem o uConsole
-- Reinstalem a App Openterface
-- Confirmem que estão usando a versão de software correta
+Certifique-se de estar em uma versão recente do Openterface QT. Alterne o acesso USB no aplicativo host. Se o problema persistir, abra uma issue no [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues).
+
+**:material-chat-question:{ .faq } O HDMI só exibe em uma caixa / sem menu de configurações do app**
+
+Atualize para a versão mais recente do Openterface QT. Consulte [Configuração de Software](/products/kvmext/software-setup/) e tópicos da comunidade no Discord para configurações de exibição específicas do uConsole.
+
+**:material-chat-question:{ .faq } O aplicativo não detecta o módulo**
+
+- Reencaixe a placa no slot de expansão
+- Reinicie o uConsole
+- Reinstale o Openterface QT
 
 ---
 
@@ -156,10 +157,10 @@ Sim, podem usar adaptadores HDMI para dispositivos com saídas VGA, DVI ou Displ
 
 **:material-chat-question:{ .faq } O software é open source?**
 
-Sim! As nossas Apps **Openterface Connect** são completamente open source e estão disponíveis no nosso [repositório GitHub](https://github.com/TechxArtisanStudio/Openterface_QT).
+Sim. Os aplicativos host Openterface são open source no [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT).
 
 **:material-chat-question:{ .faq } Onde posso obter suporte?**
 
-- **Email**: [support@openterface.com](mailto:support@openterface.com)
-- **Discord**: [Juntem-se à nossa comunidade](https://discord.gg/ruAD9kcYbq)
+- **E-mail**: [support@openterface.com](mailto:support@openterface.com)
+- **Discord**: [Entre na nossa comunidade](https://openterface.com/discord)
 - **GitHub**: [Reportar problemas](https://github.com/TechxArtisanStudio/Openterface_QT/issues)

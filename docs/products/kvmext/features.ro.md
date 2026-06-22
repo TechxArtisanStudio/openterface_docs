@@ -1,53 +1,63 @@
 ---
-title: "Funcționalități și specificații"
-description: "Prezentare completă a Openterface KVM Extension for uConsole: funcționalități puternice incluzând intrare HDMI directă, control USB HID, factor de formă perfect și specificații tehnice detaliate. Tot ce trebuie să știi despre această soluție KVM portabilă."
-keywords: "funcționalități extensie KVM, uConsole KVM, HDMI KVM, control USB HID, KVM portabil, control headless, înlocuire 4G LTE, specificații tehnice, expansiune uConsole"
+title: "Caracteristici și Specificații | Modul de Extensie v2"
+description: "Prezentare completă a Modulului de Extensie KVM Openterface uConsole v2: HDMI KVM, Ethernet dual, card SD, comutare USB și specificații tehnice."
+keywords: "caracteristici extensie KVM v2, uConsole KVM, HDMI KVM, expansiune Ethernet, card SD, KVM portabil, specificații tehnice"
 ---
 
-# **Funcționalități și specificații** | Openterface KVM Extension for uConsole
+# **Caracteristici și Specificații** | Modul de Extensie v2
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
-## Funcționalități principale
+## Caracteristici Principale
 
-- **HDMI direct + USB HID**: Folosește ecranul și controalele integrate ale uConsole cu intrare HDMI directă și emulare USB HID.
-- **Plug-and-Play**: Control instantaneu fără instalare software sau urme reziduale pe dispozitivul țintă.
-- **Latență mică**: Optimizat pentru depanare la nivel BIOS și interacțiuni în timp real.
-- **Portabil**: Instrument mobil all-in-one—nu ai nevoie de monitoare suplimentare, tastaturi sau configurare de rețea.
-- **Fără rețea**: Control headless stabil prin captură HDMI și intrare HID, nicio rețea necesară.
-- **Transfer de text**: Transferă rapid text prin simularea apăsărilor de taste—ideal pentru nume de utilizator, parole și fragmente de cod. Suportă ASCII complet, incluzând simboluri și punctuație. [Verifică aplicația noastră](/app) pentru detalii.
-- **Open Source**: Construit pe [Openterface KVM QT](https://github.com/techxArtisanStudio/openterface_qt) cu suport activ al comunității.
+- **Control KVM Direct**: Vizualizează și controlează un dispozitiv țintă prin intrare HDMI și emulare USB HID tastatură/maus — ideal pentru acces BIOS, instalare OS și recuperare servere headless.
+- **Suport Dual Placă de Rețea**: Sunt incluse ambele plăci de rețea **100M** și **1000M**. Folosește 100M pe toate plăcile de bază uConsole; folosește 1000M cu [Kit-ul de Upgrade uConsole HackerGadgets](https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole) pentru rețelistică gigabit.
+- **Citire/Scriere Card SD**: Scrie imagini, exportă jurnale și transferă fișiere de pe uConsole-ul tău fără un cititor de carduri extern.
+- **Comutare Partajată USB 2.0**: Comută accesul USB între uConsole și dispozitivul țintă pentru depanare și întreținere flexibile.
+- **Latentă Redusă**: Latentă video sub **70 ms** cu ieșire **1080p @ 60 Hz** pe ecranul uConsole.
+- **Portabil și Alimentat prin Slot**: Design compact **77.3 × 34.7 mm**, alimentat din slotul de expansiune al uConsole — fără adaptor de alimentare extern.
+- **Aliniat cu Open Source**: Construit pe platforma Openterface KVM cu aplicații host open source și suport comunitar.
 
-## Specificații tehnice
+## Specificații Tehnice
 
-### Dimensiuni fizice
+| Element | Specificație |
+|------|---------------|
+| **Numele produsului** | Modul de Extensie KVM Openterface uConsole v2 |
+| **Dimensiune placă** | 77.3 × 34.7 mm |
+| **Intrare video** | HDMI până la 4K @ 30 Hz (RGB/YCBCR444) sau 4K @ 60 Hz (YCBCR420) |
+| **Ieșire video** | 1080p @ 60 Hz către ecranul uConsole |
+| **Latentă** | &lt; 70 ms |
+| **Control KVM** | Emulare tastatură și maus USB HID |
+| **Rețea** | 100M funcționează pe toate plăcile de bază uConsole; 1000M necesită Kit-ul de Upgrade uConsole |
+| **Card SD** | Citire/scriere cu comutare host/țintă prin aplicația host |
+| **Partajare USB** | Comutare partajată USB 2.0 Full Speed (12 Mbps) |
+| **Platforme țintă** | Windows, macOS, Linux, sisteme x86, SBC-uri ARM |
+| **Alimentare** | Alimentat prin slotul de expansiune uConsole |
+| **Alimentare externă** | Nu este necesară |
 
-- **Mărime:** 37 × 77 mm (se potrivește cu modulul 4G/LTE)
-- **Grosime:** 1,0 mm (mai subțire decât modulul 4G/LTE original de 1,2 mm)
-- **Material:** PCB de înaltă calitate cu contacte cu arc
+### Emulare Completă Tastatură și Maus
 
-### Emulare completă tastatură și mouse
+- **USB HID**: Poziționare absolută și relativă a mausului, suport complet tastatură, taste multimedia.
+- **Conexiune**: Legătură USB către țintă prin portul Type-C al plăcii de extensie.
 
-- **USB HID:** Poziționare absolută și relativă a mouse-ului, suport complet tastatură, taste multimedia.
-- **Conexiune:** Legătură USB către țintă prin portul femelă Type-C al plăcii de extensie.
+### Video și Audio
 
-### Video și audio
+- **Intrare**: Până la 4K prin HDMI (vezi tabelul de mai sus pentru detalii despre moduri)
+- **Ieșire**: Full HD 1080p @ 60 Hz cu latentă sub 70 ms
+- **Afișaj**: Folosește ecranul integrat al uConsole
+- **Compresie**: Suport YUV și MJPEG
+- **Compatibilitate**: VGA, DVI, Micro HDMI (prin adaptoare)
+- **Audio**: Trecere audio încorporată HDMI
 
-- **Intrare:** Până la 4K (3840×2160) @ 30Hz prin HDMI
-- **Ieșire:** Full HD (1920×1080) @ 30Hz cu latență sub 140ms
-- **Display:** Folosește ecranul integrat al uConsole
-- **Compresie:** Suport YUV și MJPEG
-- **Compatibilitate:** VGA, DVI, Micro HDMI (prin adaptoare)
-- **Audio:** Passthrough audio încorporat HDMI
+### Conectivitate și Alimentare
 
-### Port USB 2.0 comutabil
+- **Alimentare**: Se alimentează direct din slotul de expansiune al uConsole
+- **Software țintă**: Nu este necesară instalarea pe dispozitivul țintă
 
-- **Port partajat:** Comută ușor accesul USB între uConsole și dispozitivul țintă (ex. unități flash) folosind aplicația gazdă.
-- **Viteza USB:** Transmisie la viteză completă de 12Mbps
+## Related
 
-### Conectivitate și alimentare
-
-- **Alimentare:** Obține energie direct din slotul de expansiune al uConsole (nicio sursă externă necesară)
-- **Compatibilitate țintă:** Windows, macOS, Linux, Android, iOS
-- **Software țintă:** Nicio instalare necesară
+- [Ghid Ethernet](/products/kvmext/ethernet/) — alege placa 100M vs 1000M
+- [Ghid Card SD](/products/kvmext/sd-card/) — imagistică și transfer de fișiere
+- [Opțiuni de Achiziție](/products/kvmext/purchase-options/) — Doar Extensie vs pachetul Kit de Upgrade
+- [Specificații v1 legacy](/products/kvmext/v1/features/) — modul de prima generație

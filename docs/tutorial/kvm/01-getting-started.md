@@ -25,7 +25,7 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 |--------|------------|-------------|
 | **Mini-KVM** | Compact USB dongle | Desktop KVM-over-USB |
 | **KVM-Go** | Toolkit-style portable | On-the-go KVM with built-in cables, **iPadOS support via BLE** |
-| **uConsole KVM Extension** | Internal module | Built-in KVM for ClockworkPi uConsole |
+| **uConsole KVM Extension v2** | Internal module | Built-in KVM + Ethernet + SD for ClockworkPi uConsole |
 
 > Looking for **KeyMod** (keyboard & mouse emulator only, no video)? See the [KeyMod Tutorial](../../keymod/index.md).
 

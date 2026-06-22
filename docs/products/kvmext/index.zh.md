@@ -1,19 +1,25 @@
 ---
-title: "Openterface KVM Extension for uConsole | 便携式KVM控制台解决方案"
-description: 通过这个即插即用的扩展板，将您的uConsole转换为便携式KVM控制台。直接HDMI输入和USB HID控制，随时随地管理无头设备。 Openterface KVM Extension 替换了您uConsole扩展槽中的原始4G/LTE调制解调器，提供直接的HDMI输入和USB…
-keywords: "KVM扩展, uConsole KVM, 便携式KVM, HDMI KVM, USB HID控制, 无头控制, 4G LTE替代, uConsole扩展, 移动KVM控制台"
+title: "Openterface uConsole KVM Extension Module v2 | 便携式 KVM 控制台"
+description: "通过 Extension Module v2 将您的 uConsole 转变为便携式 KVM 控制台、网络调试终端和 SD 卡工具。HDMI 输入、USB HID、双以太网和 SD 读写。"
+keywords: "KVM extension v2, uConsole KVM, 便携式 KVM, HDMI KVM, USB HID, 以太网扩展, SD 卡, 无头控制, uConsole 扩展"
 ---
 
-# **Openterface KVM Extension for uConsole**
+# **Openterface uConsole KVM Extension Module v2**
 
-{% include "partials/uconsole-kvm-slideshow.html" %}
+![kvmext-v2-hero-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-hero-1.webp){:style="max-height:360px"}
+![kvmext-v2-use-case-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-1.webp){:style="max-height:360px"}
 
 <div class="slogan-highlight">
-  <h2 class="slogan-text">将您的uConsole转换为便携式KVM控制台</h2>
-  <div class="slogan-subtitle">插入。掌控。随时随地。</div>
+  <h2 class="slogan-text">将您的 uConsole 转变为便携式 KVM 控制台</h2>
+  <div class="slogan-subtitle">KVM。网络。SD 卡。一个扩展槽位。</div>
 </div>
 
-**Openterface KVM Extension** 替换了您uConsole扩展槽中的原始4G/LTE调制解调器，提供直接的**HDMI输入和USB HID控制**，让您能够随时随地管理无头设备——无需外部显示器、键盘或网络配置。它还支持**BIOS级访问**，让您轻松排除故障和配置目标设备。
+**Openterface uConsole KVM Extension Module v2** 插入您的 uConsole 扩展槽位，将其转变为便携式 **KVM 控制台**、**网络调试终端**和 **SD 卡工具模块**。获得直接的 **HDMI 输入**、**USB HID 键盘和鼠标控制**、**以太网扩展**（包含 100M 和 1000M 网卡）、**SD 卡读写**以及 **USB 2.0 共享切换**——由扩展槽直接供电，无需外部适配器。
+
+专为 IT 专业人员、家庭实验室搭建者、嵌入式开发者和现场技术人员打造，他们需要 BIOS 级别的访问、网络维护和 SD 镜像，而无需携带额外的显示器、键盘或读卡器。
+
+!!! note "单一 SKU — 两张网卡均包含"
+    Extension Module v2 包装内**同时**包含 100M 和 1000M 以太网卡。这是一个产品，而非两个独立的网络版本。请参阅 [购买选项](/products/kvmext/purchase-options/) 和 [以太网指南](/products/kvmext/ethernet/)。
 
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole', '_blank')">
@@ -33,26 +39,32 @@ keywords: "KVM扩展, uConsole KVM, 便携式KVM, HDMI KVM, USB HID控制, 无�
 
     ---
 
-    探索KVM Extension的强大功能
+    探索 Extension Module v2 的功能
 
     [:octicons-arrow-right-24: 包装内容](/products/kvmext/whats-in-the-box/)
 
-    [:octicons-arrow-right-24: 查看功能](/products/kvmext/features)
+    [:octicons-arrow-right-24: 查看功能](/products/kvmext/features/)
 
-    [:octicons-arrow-right-24: 硬件安装](/products/kvmext/hardware-installation)
+    [:octicons-arrow-right-24: 以太网指南](/products/kvmext/ethernet/)
+
+    [:octicons-arrow-right-24: SD 卡指南](/products/kvmext/sd-card/)
+
+    [:octicons-arrow-right-24: 硬件安装](/products/kvmext/hardware-installation/)
 
 
 -   :material-power-plug:{ .lg } __使用方法__
 
     ---
 
-    学习如何设置并开始控制您的目标设备
+    设置并控制您的目标设备
 
-    [:octicons-arrow-right-24: 下载并安装Host App](/app)
+    [:octicons-arrow-right-24: 下载并安装 Host App](/app)
 
-    [:octicons-arrow-right-24: 软件设置](/products/kvmext/software-setup)
+    [:octicons-arrow-right-24: 软件设置](/products/kvmext/software-setup/)
 
-    [:octicons-arrow-right-24: 查看常见问题](/products/kvmext/faq)
+    [:octicons-arrow-right-24: 连接目标设备](/products/kvmext/connect-to-target/)
+
+    [:octicons-arrow-right-24: 查看常见问题](/products/kvmext/faq/)
 
 </div>
 
@@ -63,13 +75,15 @@ keywords: "KVM扩展, uConsole KVM, 便携式KVM, HDMI KVM, USB HID控制, 无�
 
     ---
 
-    [:material-newspaper-variant-outline: 产品更新](/products/kvmext/updates/) / [:material-account-group-outline: 社区支持](/discord) / [:material-play-circle-outline: YouTube 视频](/zh/videos/?p=uconsole-kvm-extension)
+    [:material-newspaper-variant-outline: 产品更新](/products/kvmext/updates/) / [:material-account-group-outline: 社区支持](/discord) / [:material-play-circle-outline: YouTube 视频](/videos/?p=uconsole-kvm-extension)
 
 </div>
+
+!!! info "第一代（v1）用户"
+    原始 37 × 77 mm KVM Extension（无以太网/SD）的文档已归档在 [Legacy v1 Docs](/products/kvmext/v1/)。
 
 {% include "partials/product-signup.html" %}
 
 <div markdown="0">
-{% include "partials/videos-grid-uconsole-kvm-extension.zh.html" %}
+{% include "partials/videos-grid-uconsole-kvm-extension.html" %}
 </div>
-

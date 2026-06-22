@@ -1,53 +1,63 @@
 ---
-title: "功能与规格"
-description: Openterface KVM Extension for uConsole 的完整概述：强大功能包括直接 HDMI 输入、USB HID 控制、完美外形尺寸，以及详细技术规格。关于这个便携式 KVM 解决方案您需要了解的一切。
-keywords: "KVM扩展功能, uConsole KVM, HDMI KVM, USB HID控制, 便携式KVM, headless控制, 4G LTE替换, 技术规格, uConsole扩展"
+title: "功能与规格 | 扩展模块 v2"
+description: "Openterface uConsole KVM 扩展模块 v2 完整概览：HDMI KVM、双以太网、SD 卡、USB 切换及技术规格。"
+keywords: "KVM 扩展 v2 功能, uConsole KVM, HDMI KVM, 以太网扩展, SD 卡, 便携式 KVM, 技术规格"
 ---
 
-# **功能与规格** | Openterface KVM Extension for uConsole
+# **功能与规格** | 扩展模块 v2
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## 核心功能
 
-- **直接 HDMI + USB HID**：利用 uConsole 的内置屏幕和控件，具有直接 HDMI 输入和 USB HID 模拟。
-- **即插即用**：即时控制，无需软件安装或在目标设备上留下痕迹。
-- **低延迟**：针对 BIOS 级故障排除和实时交互进行了优化。
-- **便携式**：一体化移动工具——无需额外的显示器、键盘或网络设置。
-- **无网络**：通过 HDMI 捕获和 HID 输入实现稳定的 headless 控制，无需网络。
-- **文本传输**：通过模拟按键快速传输文本——非常适合用户名、密码和代码片段。支持完整 ASCII，包括符号和标点符号。[查看我们的应用](/app)了解详情。
-- **开源**：基于 [Openterface KVM QT](https://github.com/techxArtisanStudio/openterface_qt) 构建，拥有活跃的社区支持。
+- **直接 KVM 控制**：通过 HDMI 输入和 USB HID 键盘/鼠标模拟查看并控制目标设备 — 非常适合 BIOS 访问、操作系统安装和无头服务器恢复。
+- **双网卡支持**：包含 **100M** 和 **1000M** 以太网卡。所有 uConsole 主板均可使用 100M；如需千兆网络，请搭配 [HackerGadgets uConsole 升级套件](https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole) 使用 1000M。
+- **SD 卡读写**：无需外接读卡器，即可从 uConsole 写入镜像、导出日志和传输文件。
+- **USB 2.0 共享切换**：在 uConsole 和目标设备之间切换 USB 访问，便于灵活的调试和维护。
+- **低延迟**：输出至 uConsole 屏幕时，**1080p @ 60 Hz** 视频延迟低于 **70 ms**。
+- **便携式插槽供电**：紧凑的 **77.3 × 34.7 mm** 设计，由 uConsole 扩展插槽供电 — 无需外接电源适配器。
+- **开源生态**：基于 Openterface KVM 平台构建，配备开源主机应用和社区支持。
 
 ## 技术规格
 
-### 物理尺寸
+| 项目 | 规格 |
+|------|---------------|
+| **产品名称** | Openterface uConsole KVM 扩展模块 v2 |
+| **板卡尺寸** | 77.3 × 34.7 mm |
+| **视频输入** | HDMI 最高 4K @ 30 Hz（RGB/YCBCR444）或 4K @ 60 Hz（YCBCR420） |
+| **视频输出** | 1080p @ 60 Hz 输出至 uConsole 屏幕 |
+| **延迟** | &lt; 70 ms |
+| **KVM 控制** | USB HID 键盘和鼠标模拟 |
+| **网络** | 100M 适用于所有 uConsole 主板；1000M 需要 uConsole 升级套件 |
+| **SD 卡** | 通过主机应用在主机/目标之间切换进行读写 |
+| **USB 共享** | USB 2.0 全速（12 Mbps）共享切换 |
+| **目标平台** | Windows、macOS、Linux、x86 系统、ARM SBC |
+| **供电** | 由 uConsole 扩展插槽供电 |
+| **外部电源** | 不需要 |
 
-- **尺寸：** 37 × 77 mm（匹配 4G/LTE 模块）
-- **厚度：** 1.0 mm（比原始 4G/LTE 模块的 1.2 mm 更薄）
-- **材料：** 带弹簧接触器的高质量 PCB
+### 完整键盘与鼠标模拟
 
-### 完整键盘和鼠标模拟
+- **USB HID**：支持绝对和相对鼠标定位、完整键盘支持、多媒体按键。
+- **连接**：通过扩展板的 Type-C 端口与目标设备建立 USB 链路。
 
-- **USB HID：** 绝对和相对鼠标定位，完整键盘支持，多媒体键。
-- **连接：** 通过扩展板的 Type-C 母端口 USB 连接到目标设备。
+### 视频与音频
 
-### 视频和音频
+- **输入**：通过 HDMI 最高支持 4K（模式详情见上表）
+- **输出**：全高清 1080p @ 60 Hz，延迟低于 70 ms
+- **显示**：使用 uConsole 内置屏幕
+- **压缩**：支持 YUV 和 MJPEG
+- **兼容性**：VGA、DVI、Micro HDMI（通过转接器）
+- **音频**：HDMI 嵌入式音频透传
 
-- **输入：** 通过 HDMI 最高支持 4K (3840×2160) @ 30Hz
-- **输出：** 全高清 (1920×1080) @ 30Hz，延迟低于 140ms
-- **显示器：** 使用 uConsole 的内置屏幕
-- **压缩：** 支持 YUV 和 MJPEG
-- **兼容性：** VGA、DVI、Micro HDMI（通过适配器）
-- **音频：** HDMI 嵌入式音频直通
+### 连接与供电
 
-### 可切换 USB 2.0 端口
+- **供电**：直接由 uConsole 扩展插槽取电
+- **目标软件**：目标设备无需安装任何软件
 
-- **共享端口**：使用主机应用轻松在 uConsole 和目标设备（如闪存驱动器）之间切换 USB 访问。
-- **USB 速度：** 12Mbps 全速传输
+## 相关
 
-### 连接和电源
-
-- **电源：** 直接从 uConsole 的扩展槽获取电源（无需外部电源）
-- **目标兼容性：** Windows、macOS、Linux、Android、iOS
-- **目标软件：** 无需安装
+- [以太网指南](/products/kvmext/ethernet/) — 选择 100M 或 1000M 网卡
+- [SD 卡指南](/products/kvmext/sd-card/) — 镜像烧录与文件传输
+- [购买选项](/products/kvmext/purchase-options/) — 仅扩展模块 vs 升级套件捆绑包
+- [旧版 v1 规格](/products/kvmext/v1/features/) — 第一代模块

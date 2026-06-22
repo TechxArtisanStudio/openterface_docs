@@ -175,8 +175,8 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     ]
   },
   {
-    "title": "uConsole KVM Extension",
-    "groupTitle": "uConsole KVM Extension",
+    "title": "uConsole KVM Extension v2",
+    "groupTitle": "uConsole KVM Extension v2",
     "items": [
       {
         "label": "Overview",
@@ -189,6 +189,22 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
       {
         "label": "What's In The Box",
         "slug": "products/kvmext/whats-in-the-box"
+      },
+      {
+        "label": "Ethernet Guide",
+        "slug": "products/kvmext/ethernet"
+      },
+      {
+        "label": "SD Card Guide",
+        "slug": "products/kvmext/sd-card"
+      },
+      {
+        "label": "Purchase Options",
+        "slug": "products/kvmext/purchase-options"
+      },
+      {
+        "label": "Use Cases",
+        "slug": "products/kvmext/use-cases"
       },
       {
         "label": "Hardware Installation",
@@ -205,6 +221,14 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
       {
         "label": "FAQs",
         "slug": "products/kvmext/faq"
+      },
+      {
+        "label": "Updates",
+        "slug": "products/kvmext/updates"
+      },
+      {
+        "label": "Legacy v1 Docs",
+        "slug": "products/kvmext/v1"
       }
     ]
   },

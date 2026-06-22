@@ -1001,14 +1001,20 @@ nav:
       - Diagnostic (Windows): products/minikvm/support/diagnostic-self-check-windows.md
       - Keyboard and Mouse: products/minikvm/support/keyboard-mouse-control.md
     - Reviews: products/minikvm/reviews/index.md
-  - uConsole KVM Extension:
+  - uConsole KVM Extension v2:
     - Overview: products/kvmext/index.md
     - Features: products/kvmext/features.md
     - What's In The Box: products/kvmext/whats-in-the-box.md
+    - Ethernet Guide: products/kvmext/ethernet.md
+    - SD Card Guide: products/kvmext/sd-card.md
+    - Purchase Options: products/kvmext/purchase-options.md
+    - Use Cases: products/kvmext/use-cases.md
     - Hardware Installation: products/kvmext/hardware-installation.md
     - Software Setup: products/kvmext/software-setup.md
     - Connect to Target: products/kvmext/connect-to-target.md
     - FAQs: products/kvmext/faq.md
+    - Updates: products/kvmext/updates/index.md
+    - Legacy v1 Docs: products/kvmext/v1/index.md
   - Accessories:
     - Overview: products/accessories/index.md
     - VGA to HDMI Cable 1m: products/accessories/vga-to-hdmi-cable.md

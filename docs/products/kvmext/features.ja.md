@@ -1,53 +1,63 @@
 ---
-title: "機能と仕様"
-description: Openterface KVM Extension for uConsole の完全な概要：直接 HDMI 入力、USB HID 制御、完璧なフォームファクター、詳細な技術仕様を含む強力な機能。このポータブル KVM ソリューションについて知っておくべきすべて。
-keywords: "KVM拡張機能, uConsole KVM, HDMI KVM, USB HID制御, ポータブルKVM, headless制御, 4G LTE置換, 技術仕様, uConsole拡張"
+title: "機能と仕様 | 拡張モジュール v2"
+description: "Openterface uConsole KVM 拡張モジュール v2 の完全概要：HDMI KVM、デュアル Ethernet、SD カード、USB 切り替え、技術仕様。"
+keywords: "KVM 拡張 v2 機能, uConsole KVM, HDMI KVM, Ethernet 拡張, SD カード, ポータブル KVM, 技術仕様"
 ---
 
-# **機能と仕様** | Openterface KVM Extension for uConsole
+# **機能と仕様** | 拡張モジュール v2
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
-## コア機能
+## 主な機能
 
-- **直接 HDMI + USB HID**：uConsole の内蔵画面とコントロールを活用し、直接 HDMI 入力と USB HID エミュレーションを提供。
-- **プラグアンドプレイ**：ソフトウェアのインストールやターゲットデバイスへの痕跡を残すことなく、即座に制御。
-- **低遅延**：BIOS レベルのトラブルシューティングとリアルタイムインタラクションに最適化。
-- **ポータブル**：オールインワンのモバイルツール—追加のモニター、キーボード、ネットワーク設定は不要。
-- **ネットワーク不要**：HDMI キャプチャと HID 入力による安定した headless 制御、ネットワークは不要。
-- **テキスト転送**：キーストロークをシミュレートしてテキストを迅速に転送—ユーザー名、パスワード、コードスニペットに最適。記号や句読点を含む完全な ASCII をサポート。[詳細はアプリをご確認ください](/app)。
-- **オープンソース**：[Openterface KVM QT](https://github.com/techxArtisanStudio/openterface_qt) をベースに構築され、活発なコミュニティサポートを提供。
+- **ダイレクト KVM コントロール**: HDMI 入力と USB HID キーボード/マウス エミュレーションを通じてターゲット デバイスを表示および操作 — BIOS アクセス、OS インストール、ヘッドレス サーバーの復旧に最適。
+- **デュアル ネットワーク カード対応**: **100M** と **1000M** の両方の Ethernet カードが付属。すべての uConsole ベースボードでは 100M を使用。ギガビット ネットワークには [HackerGadgets uConsole Upgrade Kit](https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole) と組み合わせて 1000M を使用。
+- **SD カード読み書き**: 外部カード リーダーなしで、uConsole からイメージ書き込み、ログ出力、ファイル転送が可能。
+- **USB 2.0 共有切り替え**: uConsole とターゲット デバイス間で USB アクセスを切り替え、柔軟なデバッグとメンテナンスを実現。
+- **低遅延**: uConsole 画面に **1080p @ 60 Hz** 出力で **70 ms 未満** の映像遅延。
+- **ポータブル & スロット給電**: コンパクトな **77.3 × 34.7 mm** 設計。uConsole 拡張スロットから給電され、外部電源アダプターは不要。
+- **オープン ソース連携**: オープンなホストアプリとコミュニティ サポートを備えた Openterface KVM プラットフォーム上に構築。
 
 ## 技術仕様
 
-### 物理寸法
+| 項目 | 仕様 |
+|------|---------------|
+| **製品名** | Openterface uConsole KVM 拡張モジュール v2 |
+| **ボード サイズ** | 77.3 × 34.7 mm |
+| **映像入力** | HDMI 最大 4K @ 30 Hz (RGB/YCBCR444) または 4K @ 60 Hz (YCBCR420) |
+| **映像出力** | uConsole 画面に 1080p @ 60 Hz |
+| **遅延** | &lt; 70 ms |
+| **KVM コントロール** | USB HID キーボードおよびマウス エミュレーション |
+| **ネットワーク** | 100M はすべての uConsole ベースボードで動作。1000M には uConsole Upgrade Kit が必要 |
+| **SD カード** | ホストアプリ経由でホスト/ターゲット切り替えによる読み書き |
+| **USB 共有** | USB 2.0 Full Speed (12 Mbps) 共有切り替え |
+| **対応プラットフォーム** | Windows、macOS、Linux、x86 システム、ARM SBC |
+| **電源** | uConsole 拡張スロットから給電 |
+| **外部電源** | 不要 |
 
-- **サイズ：** 37 × 77 mm（4G/LTE モジュールと一致）
-- **厚さ：** 1.0 mm（元の 4G/LTE モジュールの 1.2 mm より薄い）
-- **材質：** スプリングコンタクタ付き高品質 PCB
+### 完全なキーボード & マウス エミュレーション
 
-### フルキーボード＆マウスエミュレーション
+- **USB HID**: 絶対および相対マウス位置指定、完全なキーボード サポート、マルチメディア キー。
+- **接続**: 拡張ボードの Type-C ポート経由でターゲットへ USB リンク。
 
-- **USB HID：** 絶対および相対マウス位置、フルキーボードサポート、マルチメディアキー。
-- **接続：** 拡張ボードの Type-C メスポート経由でターゲットに USB リンク。
+### 映像 & 音声
 
-### ビデオ＆オーディオ
+- **入力**: HDMI 経由で最大 4K（モードの詳細は上表を参照）
+- **出力**: 70 ms 未満の遅延で Full HD 1080p @ 60 Hz
+- **ディスプレイ**: uConsole 内蔵スクリーンを使用
+- **圧縮**: YUV および MJPEG 対応
+- **互換性**: VGA、DVI、Micro HDMI（アダプター経由）
+- **音声**: HDMI エンベデッド音声パススルー
 
-- **入力：** HDMI 経由で最大 4K (3840×2160) @ 30Hz
-- **出力：** 140ms 未満の遅延でフル HD (1920×1080) @ 30Hz
-- **ディスプレイ：** uConsole の内蔵画面を使用
-- **圧縮：** YUV と MJPEG サポート
-- **互換性：** VGA、DVI、Micro HDMI（アダプター経由）
-- **オーディオ：** HDMI 埋め込みオーディオパススルー
+### 接続 & 電源
 
-### 切り替え可能 USB 2.0 ポート
+- **電源**: uConsole 拡張スロットから直接給電
+- **ターゲット ソフトウェア**: ターゲット デバイスへのインストール不要
 
-- **共有ポート**：ホストアプリを使用して uConsole とターゲットデバイス（例：フラッシュドライブ）間で USB アクセスを簡単に切り替え。
-- **USB 速度：** 12Mbps フルスピード伝送
+## 関連項目
 
-### 接続性と電源
-
-- **電源：** uConsole の拡張スロットから直接電力を供給（外部電源不要）
-- **ターゲット互換性：** Windows、macOS、Linux、Android、iOS
-- **ターゲットソフトウェア：** インストール不要
+- [Ethernet ガイド](/products/kvmext/ethernet/) — 100M と 1000M カードの選択
+- [SD カード ガイド](/products/kvmext/sd-card/) — イメージングとファイル転送
+- [購入オプション](/products/kvmext/purchase-options/) — 拡張モジュールのみと Upgrade Kit バンドルの比較
+- [レガシー v1 仕様](/products/kvmext/v1/features/) — 初世代モジュール

@@ -1,60 +1,76 @@
 ---
-title: "Instalare hardware"
-description: "Ghid pas cu pas pentru instalarea hardware-ului Openterface KVM Extension for uConsole. Învață cum să instalezi corect placa de extensie în slotul de expansiune al uConsole-ului tău cu ghiduri de siguranță detaliate."
-keywords: "instalare extensie KVM, configurare hardware uConsole, instalare placă expansiune, slot expansiune uConsole, ghid hardware KVM, instalare fizică"
+title: "Instalare Hardware | Modul de Extensie v2"
+description: "Instalați Modulul de Extensie KVM Openterface uConsole v2 în slotul de extensie. Alegeți placa Ethernet și conectați HDMI și USB la dispozitivul țintă."
+keywords: "instalare extensie KVM v2, configurare hardware uConsole, slot de extensie, instalare placă Ethernet"
 ---
 
-# **Instalare hardware** | Openterface KVM Extension for uConsole
+# **Instalare Hardware** | Modul de Extensie v2
 
 ## Prezentare generală
-Extensia KVM înlocuiește modulul 4G/LTE din slotul de expansiune al uConsole-ului, adăugând intrare HDMI directă și control USB HID.
 
-## Ce ai nevoie
-- Verifică [Conținutul pachetului](whats-in-the-box.md) înainte de instalare  
-- Placa Openterface KVM Extension  
-- **Șaibe** furnizate (pentru a asigura montaj stabil și presiune uniformă)  
-- Șurubelniță hexagonală (pentru șuruburile de montare)  
-- Protecție ESD (brățară sau suprafață împământată) — recomandat  
+Modul de Extensie v2 se potrivește în **slotul de extensie** al uConsole (același slot folosit de modulul 4G/LTE). Nu poate fi utilizat în același timp cu modulul 4G sau LTE — alegeți funcționalitatea celulară **sau** KVM.
+
+## De ce aveți nevoie
+
+- [Conținutul pachetului](/products/kvmext/whats-in-the-box/) verificat înainte de instalare
+- Placa Openterface Extension Module v2
+- **O placă Ethernet** (100M sau 1000M — consultați [Ghidul Ethernet](/products/kvmext/ethernet/))
+- Capacul slotului de extensie (inclus)
+- Șurubelniță hexagonală pentru șuruburile de montare
+- Protecție ESD (brățară antistatică sau suprafață împământată) — recomandată
 
 ## Pași de instalare
 
-### **1. Oprire alimentare**
-Oprește uConsole-ul și deconectează toată alimentarea și cablurile.
+### **1. Opriți alimentarea**
 
-### **2. Eliminare modul existent**
-Folosește o șurubelniță hexagonală pentru a elimina cele două șuruburi.  
-Ridică placa **drept în sus** pentru a evita îndoirea contactelor cu arc.
+Opriți uConsole și deconectați toate sursele de alimentare și cablurile.
 
-### **3. Instalare Extensia KVM**
-- Plasează **șaiba** pe postul șurubului.  
-- Așează ferm Extensia KVM în slotul de expansiune.  
-- Șaiba compensează PCB-ul ușor mai subțire (1,0 mm vs 1,2 mm), menținând presiunea de contact cu arc corespunzătoare.
+### **2. Demontați modulul existent**
 
-??? note "Verifică potrivirea înainte de instalarea finală"
-    Poți mai întâi să așezi placa **fără șaibă** pentru a testa potrivirea. Dacă placa pare slăbită sau contactele sunt neuniforme, adaugă șaiba și reașează placa. Openterface KVM Extension are 1,0 mm grosime, ușor mai subțire decât modulul LTE original (1,2 mm). Folosirea șaibei furnizate asigură montaj stabil și contact cu arc fiabil.  
-    ![extension-slot-loose](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-slot-loose.webp){:style="max-height:220px"}
+Dacă este instalat un modul de extensie 4G/LTE sau altul:
 
-### **4. Fixare placă**
-Reinserează șuruburile și strânge **ușor** — **nu strânge prea mult**, deoarece aceasta poate deteriora placa sau deteriora filetele.
+- Folosiți o șurubelniță hexagonală pentru a demonta cele două șuruburi de montare.
+- Ridicați placa **drept în sus** pentru a evita îndoirea contactelor cu arc.
+- Depozitați modulul original și șuruburile în siguranță dacă intenționați să îl reinstalați mai târziu.
 
-![extension-screw-washer-installed](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installed.jpg){:style="max-height:220px"}
-![extension-screw-washer-installing](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installing.jpg){:style="max-height:220px"}
-![extension-install-1](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-install-1.webp){:style="max-height:220px"}
+### **3. Alegeți placa Ethernet**
 
-### **5. Verificare instalare**
-Placa ar trebui să stea **plat și stabilă**, cu contact cu arc uniform pe toate pad-urile. Nu ar trebui să existe mișcare sau balansare vizibilă.
+Înainte de a monta placa principală, decideți ce placă să instalați:
 
-### **6. Instalare capac slot expansiune**
-Reinstalează capacul slotului de expansiune pentru a proteja placa Extensia KVM și pentru a menține aspectul original al uConsole-ului.
+| Placă | Când să o utilizați |
+|-------|---------------------|
+| **100M** | Toate plăcile de bază uConsole — compatibilitate universală |
+| **1000M** | Doar dacă aveți **HackerGadgets uConsole Upgrade Kit** și aveți nevoie de gigabit |
 
-??? note "Orientarea textului pe capacul slotului de expansiune"
-    Textul de pe capacul slotului de expansiune poate părea "cu susul în jos" când este privit din anumite unghiuri. Acesta este un design intenționat - textul este orientat să fie lizibil când ții uConsole-ul și privești porturile de sus în jos, care este poziția naturală de vizualizare când folosești dispozitivul.
-    ![expansion-slot-text-orientation](https://assets.openterface.com/images/products/openterface-kvm-uconsole-expansion-slot-text-orientation.webp){:style="max-height:220px"}
+Consultați [Ghidul Ethernet](/products/kvmext/ethernet/) pentru detalii complete.
+
+### **4. Instalați Modulul de Extensie v2**
+
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+
+- Așezați ferm Modulul de Extensie v2 în slotul de extensie.
+- Asigurați-vă că contactele cu arc se aliniază uniform pe toate punctele de contact.
+- Reintroduceți șuruburile de montare și strângeți-le **ușor** — nu le strângeți excesiv.
+
+### **5. Verificați instalarea**
+
+Placa ar trebui să stea **plat și stabil**, fără oscilații vizibile. Toate contactele cu arc ar trebui să apese uniform.
+
+### **6. Instalați capacul slotului de extensie**
+
+Reinstalați capacul slotului de extensie pentru a proteja modulul și a menține aspectul uConsole.
+
+??? note "Orientarea textului pe capacul slotului de extensie"
+    Textul de pe capac poate părea răsturnat din anumite unghiuri de vizualizare. Este orientat pentru a fi lizibil atunci când țineți uConsole și priviți porturile de sus — poziția naturală în timpul utilizării.
 
 ---
 
-**Următorii pași**
+**Pașii următori**
 
-1. Mergi la [Configurare software](/products/kvmext/software-setup/) pentru a instala App-ul Openterface.  
-2. Mergi la [Conectare la dispozitivul țintă](/products/kvmext/connect-to-target/) pentru a conecta dispozitivul tău țintă.  
-3. Revizuiește [Caracteristici și specificații](/products/kvmext/features/) pentru specificații tehnice detaliate.
+1. [Configurare Software](/products/kvmext/software-setup/) — instalați aplicația gazdă Openterface pe uConsole
+2. [Conectare la dispozitivul țintă](/products/kvmext/connect-to-target/) — cablare HDMI + USB
+3. [Caracteristici și specificații](/products/kvmext/features/) — specificații tehnice complete
+
+## Instalare versiunea v1 (Legacy)
+
+Modulul de primă generație (37 × 77 mm) folosea șaibe pentru compensarea grosimii PCB-ului. Consultați [Legacy v1 — Instalare Hardware](/products/kvmext/v1/hardware-installation/).

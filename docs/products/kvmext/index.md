@@ -1,19 +1,25 @@
 ---
-title: "Openterface KVM Extension for uConsole | Portable KVM Console Solution"
-description: "Transform your uConsole into a portable KVM console with this plug-and-play extension board. Direct HDMI input and USB HID control for headless device management on the go."
-keywords: "KVM extension, uConsole KVM, portable KVM, HDMI KVM, USB HID control, headless control, 4G LTE replacement, uConsole expansion, mobile KVM console"
+title: "Openterface uConsole KVM Extension Module v2 | Portable KVM Console"
+description: "Transform your uConsole into a portable KVM console, network debug terminal, and SD card utility with Extension Module v2. HDMI input, USB HID, dual Ethernet, and SD read/write."
+keywords: "KVM extension v2, uConsole KVM, portable KVM, HDMI KVM, USB HID, Ethernet expansion, SD card, headless control, uConsole expansion"
 ---
 
-# **Openterface KVM Extension for uConsole**
+# **Openterface uConsole KVM Extension Module v2**
 
-{% include "partials/uconsole-kvm-slideshow.html" %}
+![kvmext-v2-hero-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-hero-1.webp){:style="max-height:360px"}
+![kvmext-v2-use-case-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-1.webp){:style="max-height:360px"}
 
 <div class="slogan-highlight">
   <h2 class="slogan-text">Transform Your uConsole into a Portable KVM Console</h2>
-  <div class="slogan-subtitle">Plug in. Take Control. Anywhere.</div>
+  <div class="slogan-subtitle">KVM. Network. SD Card. One Expansion Slot.</div>
 </div>
 
-The **Openterface KVM Extension** replaces the original 4G/LTE modem in your uConsole's expansion slot and provides direct **HDMI input and USB HID control**, allowing you to manage headless devices on the go—without the need for external monitors, keyboards, or network configuration. It also enables **BIOS-level access**, letting you troubleshoot and configure target devices easy.
+The **Openterface uConsole KVM Extension Module v2** plugs into your uConsole expansion slot and turns it into a portable **KVM console**, **network debug terminal**, and **SD card utility module**. Get direct **HDMI input**, **USB HID keyboard and mouse control**, **Ethernet expansion** (100M and 1000M cards included), **SD card read/write**, and **USB 2.0 shared switching** — powered directly from the slot with no external adapter.
+
+Built for IT professionals, homelab builders, embedded developers, and field technicians who need BIOS-level access, network maintenance, and SD imaging without carrying extra monitors, keyboards, or card readers.
+
+!!! note "Single SKU — both network cards included"
+    Extension Module v2 ships with **both** the 100M and 1000M Ethernet cards in the box. It is one product, not two separate network versions. See [Purchase Options](/products/kvmext/purchase-options/) and [Ethernet Guide](/products/kvmext/ethernet/).
 
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole', '_blank')">
@@ -33,26 +39,32 @@ The **Openterface KVM Extension** replaces the original 4G/LTE modem in your uCo
 
     ---
 
-    Discover the powerful features of the KVM Extension
+    Discover Extension Module v2 capabilities
 
     [:octicons-arrow-right-24: What's in the Box](/products/kvmext/whats-in-the-box/)
 
-    [:octicons-arrow-right-24: View Features](/products/kvmext/features)
+    [:octicons-arrow-right-24: View Features](/products/kvmext/features/)
 
-    [:octicons-arrow-right-24: Hardware Installation](/products/kvmext/hardware-installation)
+    [:octicons-arrow-right-24: Ethernet Guide](/products/kvmext/ethernet/)
+
+    [:octicons-arrow-right-24: SD Card Guide](/products/kvmext/sd-card/)
+
+    [:octicons-arrow-right-24: Hardware Installation](/products/kvmext/hardware-installation/)
 
 
 -   :material-power-plug:{ .lg } __How to Use__
 
     ---
 
-    Learn how to set up and start controlling your target device
+    Set up and control your target device
 
     [:octicons-arrow-right-24: Download & Install Host App](/app)
 
-    [:octicons-arrow-right-24: Software Setup](/products/kvmext/software-setup)
+    [:octicons-arrow-right-24: Software Setup](/products/kvmext/software-setup/)
 
-    [:octicons-arrow-right-24: View FAQs](/products/kvmext/faq)
+    [:octicons-arrow-right-24: Connect to Target](/products/kvmext/connect-to-target/)
+
+    [:octicons-arrow-right-24: View FAQs](/products/kvmext/faq/)
 
 </div>
 
@@ -66,6 +78,9 @@ The **Openterface KVM Extension** replaces the original 4G/LTE modem in your uCo
     [:material-newspaper-variant-outline: Product Updates](/products/kvmext/updates/) / [:material-account-group-outline: Community Support](/discord) / [:material-play-circle-outline: YouTube Videos](/videos/?p=uconsole-kvm-extension)
 
 </div>
+
+!!! info "First-generation (v1) owners"
+    Documentation for the original 37 × 77 mm KVM Extension (no Ethernet/SD) is archived at [Legacy v1 Docs](/products/kvmext/v1/).
 
 {% include "partials/product-signup.html" %}
 

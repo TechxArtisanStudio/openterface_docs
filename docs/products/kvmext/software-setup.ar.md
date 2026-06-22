@@ -1,143 +1,95 @@
 ---
-title: "البرمجيات-Setup"
-description: Vollständige دليل zur البرمجياتeinrichtung لـ die Openterface KVM-Erweiterung لـ uConsole. Die Openterface App ermöglicht Ihrer uConsole, als…
-keywords: "Openterface App التثبيت, uConsole البرمجيات, KVM App التثبيت, uConsole Konfiguration"
+title: "إعداد البرنامج | Extension Module v2"
+description: "قم بتثبيت وتكوين تطبيق Openterface المضيف على جهاز uConsole الخاص بك لوحدة KVM Extension Module v2 — التقاط HDMI، وUSB HID، وتبديل بطاقة SD، ومشاركة USB."
+keywords: "تثبيت تطبيق Openterface، إعداد برنامج uConsole، KVM extension v2، openterfaceqt"
 ---
 
-# **البرمجيات-Setup** | Openterface KVM-Erweiterung لـ uConsole
+# **إعداد البرنامج** | Extension Module v2
 
-## التثبيتsحولsicht
+## نظرة عامة على التثبيت
 
-Die Openterface App ermöglicht Ihrer uConsole, als KVM-Schnittstelle zu fungieren, sodass Sie Zielgeräte حول Bildschirm, Tastatur و Trackball steuern können.
+يتيح تطبيق Openterface المضيف لجهاز uConsole الخاص بك العمل كواجهة KVM مع التقاط HDMI، والتحكم عبر USB HID، و**تبديل بطاقة SD**، و**مشاركة منفذ USB** بين المضيف والهدف.
 
-!!! note "Anforderungen"
-    - **uConsole**: Erfordert installierte Openterface App
-    - **Ziel**: Keine App erforderlich – unterstützt Windows, macOS, Linux, Android, iOS
-    - **Video**: Verwenden Sie ein Standard-HDMI-Kabel. Mit einem aktiven HDMI-Konverter werden auch Formate wie **VGA** و **DP** unterstützt. *Tipp: Stellen Sie sicher, dass der Konverter ausreichend مع Strom versorgt ist, sonst kann es zu einem schwarzen Bildschirm kommen.*
+!!! note "المتطلبات"
+    - **uConsole (المضيف)**: مطلوب تطبيق Openterface QT
+    - **الجهاز الهدف**: لا يلزم تطبيق — يتم دعم Windows وmacOS وLinux وAndroid وiOS لـ KVM
+    - **الفيديو**: كابل HDMI قياسي؛ المحولات المزودة بالطاقة تدعم VGA وDP وتنسيقات أخرى
+    - **الواجهة الخلفية الموصى بها**: **GStreamer** للحصول على أفضل أداء لوحدة معالجة الرسومات arm64 (قد يكون دعم GStreamer محدودًا في Kali Linux)
 
-    - **Empfohlenes Video-Backend**: Für beste Leistung و Kompatibilität مع arm64-GPUs (z. B. Raspberry Pi) empfehlen wir **GStreamer** als Video-Backend. Beachten Sie, dass **Kali Linux** GStreamer möglicherweise لا gut unterstützt.
+## طرق التثبيت
 
-## التثبيتsmethoden
+### **الخيار 1: إصدارات GitHub (موصى به لـ arm64)**
 
-### **Option 1: تنزيل von GitHub Releases (Empfohlen لـ arm64)**
+1. قم بزيارة [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases).
+2. قم بتنزيل أحدث إصدار `.deb` لـ **arm64** (على سبيل المثال `openterfaceqt_*_arm64.deb`).
+3. التثبيت:
+    ```bash
+    sudo apt install ./openterfaceqt_*_arm64.deb
+    ```
 
-Laden Sie die neueste Openterface App لـ **arm64** direkt von unserer [GitHub Releases-Seite](https://github.com/TechxArtisanStudio/Openterface_QT/releases) herunter.
+### **الخيار 2: Flatpak**
 
-1. Besuchen Sie die [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) Seite.
-2. Laden Sie das neueste `.deb`-Paket لـ **arm64** herunter (z. B. `openterfaceqt_*_arm64.deb`).
-3. Installieren Sie das Paket:
-   ```bash
-   sudo apt install ./openterfaceqt_*_arm64.deb
-   ```
-   *(Ersetzen Sie den Dateinamen gegebenenfalls durch den tatsächlichen Dateinamen.)*
+اتبع [دليل تثبيت Flatpak](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md).
 
----
+### **الخيار 3: مستودع المجتمع (ClockworkPi Bookworm)**
 
-### **Option 2: Flatpak-التثبيت**
+يتم صيانته بواسطة Rex لصور ClockworkPi:
 
-Befolgen Sie unsere [Flatpak-التثبيتsanleitung](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) لـ detaillierte Schritte.
-
----
-
-### **Option 3: Community-Repository**
-
-Wenn Sie den Community-Build von Rex bevorzugen:
-
-1. **Repository hinzufügen**:
+1. **إضافة المستودع**:
     ```bash
     wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
     sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
     ```
 
-2. **Paket installieren**:
+2. **التثبيت**:
     ```bash
     sudo apt update
     sudo apt install openterfaceqt
     ```
 
-!!! warning "Repository-Hinweis"
-    Diese Befehle erfordern `sudo`. Das Repository richtet sich an arm64 Bookworm-Pakete; prüfen Sie die Kompatibilität مع Ihrem Gerät vor der التثبيت.
+!!! warning "ملاحظات حول المستودع"
+    تتطلب الأوامر `sudo`. يستهدف المستودع حزم arm64 Bookworm — تحقق من التوافق مع نظام تشغيل uConsole الخاص بك قبل التثبيت.
 
-## Wichtige Hinweise
+## تذكيرات هامة
 
-!!! tip "Stromversorgung & Erstinbetriebnahme"
-    - **Stellen Sie sicher, dass Ihre uConsole ausreichend geladen ist أو an eine stabile Stromquelle angeschlossen ist.** Niedrige Spannung kann zu unzuverlässigem Betrieb أو الاتصالsproblemen führen.
-    - **Wenn Sie beim ersten Versuch das Zielgerät لا steuern können:**
-        1. Schalten Sie die uConsole vollständig aus.
-        2. Warten Sie mindestens 10 Sekوen.
-        3. Schalten Sie sie wieder ein و versuchen Sie es erneut.
-    Dies kann helfen, die الأجهزة zu initialisieren و الاتصالsprobleme beim ersten Start zu beheben.
+!!! tip "الطاقة والإعداد لأول مرة"
+    - حافظ على شحن uConsole أو قم بتوصيله بمصدر طاقة مستقر — يمكن أن تتسبب البطارية المنخفضة في حدوث مشكلات في الاتصال.
+    - إذا فشل التحكم بلوحة المفاتيح/الماوس في المحاولة الأولى:
+        1. قم بإيقاف تشغيل uConsole بالكامل.
+        2. انتظر 10 ثوانٍ على الأقل.
+        3. قم بتشغيله وحاول مرة أخرى.
 
-!!! tip "Serielle Kommunikation Baudrate"
-    - **Stellen Sie die Baudrate auf 9600** ein, wenn Sie serielle Kommunikation verwenden. Dies reduziert Fehler, da die uConsole oft لا genug Leistung liefert, um 115200 zuverlässig zu halten.
+!!! tip "معدل الباود للاتصال التسلسلي"
+    اضبط معدل الباود على **9600** للاستخدام التسلسلي — قد لا يتمكن uConsole من الحفاظ على 115200 بشكل موثوق.
 
-## Gebrauchsanleitung
+## الاستخدام
 
-### **Starten der KVM-Sitzung**
-1. Starten Sie die Openterface App auf Ihrer uConsole
-2. Die App erkennt automatisch die KVM-Erweiterungsplatine
-3. Verbinden Sie Ihr Zielgerät حول HDMI
-4. Verwenden Sie die eingebaute Tastatur و den Trackball der uConsole, um das Zielgerät zu steuern
+### **بدء جلسة KVM**
 
-### **Steuerfunktionen**
-- **Tastatur**: Volle Tastatur-Emulation einschließlich Multimedia-Tasten
-- **Maus**: Absolute و relative Mauspositionierung
-- **Audio**: HDMI-Audio-Passthrough zu den uConsole-Lautsprechern
+1. قم بتشغيل Openterface QT على جهاز uConsole الخاص بك.
+2. يكتشف التطبيق Extension Module v2 تلقائيًا.
+3. قم بتوصيل الهدف عبر HDMI وUSB.
+4. استخدم لوحة مفاتيح uConsole وكرة التتبع (trackball) للتحكم في الهدف.
 
-### **Erweiterte الميزات**
-- **Textحولtragung**: Schnelles Übertragen von Text durch Simulieren von Tastenanschlägen—ideal لـ Benutzernamen, Passwörter و Code-Snippets
-- **Umschaltbares USB**: Wechseln Sie einfach den USB-Zugriff zwischen der uConsole و dem Zielgerät حول die Host-App
----
-title: "البرمجيات-Setup"
-description: "Vollständiger البرمجيات-Setup-Leitfaden لـ Openterface KVM Extension for uConsole. Lernen Sie, wie Sie die Openterface App auf Ihrem uConsole installieren و konfigurieren لـ nahtlose KVM-Funktionalität."
-keywords: "Openterface App التثبيت, uConsole البرمجيات Setup, KVM App Setup, uConsole App Konfiguration, البرمجيات التثبيت Guide"
----
+### **ميزات التحكم**
 
-# **البرمجيات-Setup** | Openterface KVM Extension for uConsole
+- **لوحة المفاتيح**: محاكاة كاملة بما في ذلك مفاتيح الوسائط المتعددة
+- **الماوس**: تحديد الموضع المطلق والنسبي
+- **الصوت**: تمرير صوت HDMI إلى مكبرات صوت uConsole
+- **نقل النص**: لصق أسماء المستخدمين وكلمات المرور والمقتطفات كضغطات مفاتيح محاكاة
+- **تبديل USB**: مشاركة وحدة تخزين USB بين uConsole والهدف عبر تطبيق المضيف — راجع [الاتصال بالهدف](/products/kvmext/connect-to-target/)
+- **تبديل بطاقة SD**: تركيب بطاقة SD على المضيف أو الهدف عبر تطبيق المضيف — راجع [دليل بطاقة SD](/products/kvmext/sd-card/)
 
-## التثبيتsحولsicht
+### **استكشاف أخطاء تثبيت البرنامج وإصلاحها**
 
-Die Openterface App ermöglicht es Ihrem uConsole, als KVM-Interface zu fungieren, sodass Sie Zielgeräte حول den eingebauten Bildschirm, die Tastatur و das Trackball steuern können.
+إذا كان من الصعب تثبيت التطبيق أو إذا كان الماوس/لوحة المفاتيح لا يعملان:
 
-!!! note "Anforderungen"
-    - **uConsole**: Erfordert التثبيت der Openterface App
-    - **Ziel**: Keine App erforderlich - unterstützt Windows, macOS, Linux, Android, iOS
-    - **Video**: Verwenden Sie ein Standard-HDMI-Kabel. Verwenden Sie ein Standard-HDMI-Kabel. Mit einem netzbetriebenen HDMI-Konverter unterstützt es auch andere Formate wie **VGA**, **DP** و mehr. *Tipp: Stellen Sie sicher, dass der Konverter ordnungsgemäß مع Strom versorgt wird; andernfalls können Sie einen schwarzen Bildschirm erleben.*
+- تأكد من تثبيت إصدار **arm64** على وحدة uConsole CM4/الوحدة النمطية الخاصة بك
+- انضم إلى [Discord](https://openterface.com/discord) للحصول على مساعدة فورية
+- أبلغ عن المشكلات على [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT/issues)
 
-## التثبيتsmethoden
+## مواضيع ذات صلة
 
-### **Option 1: Flatpak-التثبيت**
-
-Folgen Sie unserem [Flatpak-التثبيتsleitfaden](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) لـ detaillierte Setup-Schritte.
-
-### **Option 2: Community-Repository (Empfohlen)**
-
-Wenn Sie die von Rex gepflegte Community-Build bevorzugen:
-
-1. **Repository hinzufügen**:
-```bash
-wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
-sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-2. **Paket installieren**:
-```bash
-sudo apt update
-sudo apt install openterfaceqt
-!!! warning "Repository-Hinweise"
-    Diese Befehle erfordern sudo. Das Repository zielt auf arm64 Bookworm-Pakete ab; حولprüfen Sie die Kompatibilität مع Ihrem Gerät vor der التثبيت.
-
-## Verwendungsanweisungen
-
-### **KVM-Sitzung starten**
-1. Starten Sie die Openterface App auf Ihrem uConsole
-2. Die App erkennt automatisch die KVM Extension-Karte
-3. Verbinden Sie Ihr Zielgerät حول HDMI
-4. Verwenden Sie die eingebaute Tastatur و das Trackball des uConsole, um das Zielgerät zu steuern
-
-### **Steuerungsfunktionen**
-- **Tastatur**: Vollständige Tastaturemulation einschließlich Multimediatasten
-- **Maus**: Absolute و relative Mauspositionierung
-- **Audio**: HDMI-Audio-Durchgang zu uConsole-Lautsprechern
-
-### **Erweiterte الميزات**
-- **Textحولtragung**: Übertragen Sie schnell Text durch Simulation von Tastenanschlägen—ideal لـ Benutzernamen, Passwörter و Codeschnipsel
-- **Umschaltbares USB**: Wechseln Sie einfach den USB-Zugriff zwischen uConsole و Zielgerät حول die Host-App
+- [الاتصال بالهدف](/products/kvmext/connect-to-target/)
+- [دليل بطاقة SD](/products/kvmext/sd-card/)
+- [الأسئلة الشائعة](/products/kvmext/faq/)

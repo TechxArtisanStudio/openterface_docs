@@ -1,165 +1,166 @@
 ---
-title: FAQs voor Openterface KVM Extension for uConsole
-description: Häufig gestellte Vragen zur KVM Extension voor uConsole, die Functies, Kompatibilität, Fehlerbehebung en Installatie abdecken. Willkommen zu den FAQs voor…
-keywords: KVM Extension, uConsole KVM, Fehlerbehebung, Videoaufnahme, USB HID, Kompatibilität, Installatie
+title: "FAQs | Extensiemodule v2"
+description: "FAQs voor Openterface uConsole KVM-extensiemodule v2: Ethernetkaarten, Upgrade Kit, SD-kaart, software-installatie, compatibiliteit en probleemoplossing."
+keywords: "KVM-extensie v2 FAQ, uConsole KVM, Ethernet, SD-kaart, probleemoplossing, Upgrade Kit"
 ---
 
-# FAQs voor Openterface KVM Extension for uConsole
+# FAQs | Extensiemodule v2
 
-Willkommen zu den FAQs voor unsere **Openterface KVM Extension for uConsole**.  
-Wenn Sie niet finden, was Sie brauchen, **mailen Sie uns unter [support@openterface.com](mailto:support@openterface.com)** of **treten Sie unserer Community** auf [Discord](/discord) bei.
+Welkom bij de FAQ voor **Openterface uConsole KVM-extensiemodule v2**.
 
-⚠️ _FAQs können veraltet sein — bitte lassen Sie uns wissen, wenn Sie etwas sehen, das aktualisiert werden muss._
-
----
-
-## :material-clipboard-list: Schnelle Navigation
-
-- [FAQs voor Openterface KVM Extension for uConsole](#faqs-voor-openterface-kvm-extension-for-uconsole)
-  - [:material-clipboard-list: Schnelle Navigation](#material-clipboard-list-schnelle-navigation)
-  - [Installatie & Hardware](#installation--hardware)
-  - [Kompatibilität](#kompatibilität)
-  - [Steuerung & Functies](#steuerung--funktionen)
-  - [Video & Audio](#video--audio)
-  - [Fehlerbehebung](#fehlerbehebung)
-  - [Mehr](#mehr)
+Als u niet vindt wat u nodig heeft, stuur dan een e-mail naar [support@openterface.com](mailto:support@openterface.com) of word lid van onze community op [Discord](/discord).
 
 ---
 
-## Installatie & Hardware
+## :material-clipboard-list: Snelle navigatie
 
-**:material-chat-question:{ .faq } Wie funktioniert die KVM Extension Board?**
-
-Sie erfasst die HDMI-Ausgabe eines Zielgeräts en zeigt sie auf dem uConsole an. Gleichzeitig werden die Tastatur en das Trackball des uConsole verwendet, um das Zielgerät over USB HID-Emulation zu steuern.
-
-**:material-chat-question:{ .faq } Kann ich das met dem installierten 4G/LTE-Modul verwenden?**
-
-Nein. Diese Karte belegt denselben Erweiterungsslot. Sie müssen zwischen zellularer Konnektivität of KVM-Funktionalität wählen.
-
-**:material-chat-question:{ .faq } Warum brauche ich die Unterlegscheiben?**
-
-Die KVM Extension Board ist 1,0 mm dick (dünner als das ursprüngliche 4G/LTE met 1,2 mm). Die Unterlegscheiben kompensieren diesen Unterschied en sorgen voor ordnungsgemäßen Federkontaktor-Druck voor zuverlässige Verbindingen.
-
-**:material-chat-question:{ .faq } Welche Werkzeuge brauche ich voor die Installatie?**
-
-Sie benötigen einen Sechskantschraubendreher zum Entfernen en Installieren der Montageschrauben. ESD-Vorsichtsmaßnahmen (Handgelenkband of geerdete Oberfläche) werden empfohlen, sind aber niet erforderlich.
-
-**:material-chat-question:{ .faq } Ist die Installatie reversibel?**
-
-Ja, Sie können die KVM Extension Board entfernen en das ursprüngliche 4G/LTE-Modul jederzeit neu installieren. Bewahren Sie das ursprüngliche Modul en die Schrauben an einem sicheren Ort auf.
+- [Product & aankoop](#product--aankoop)
+- [Installatie & hardware](#installatie--hardware)
+- [Compatibiliteit](#compatibiliteit)
+- [Bediening & functies](#bediening--functies)
+- [Video & audio](#video--audio)
+- [Probleemoplossing](#probleemoplossing)
+- [Meer](#meer)
 
 ---
 
-## Kompatibilität
+## Product & aankoop
 
-**:material-chat-question:{ .faq } Welche uConsole-Modelle sind kompatibel?**
+**:material-chat-question:{ .faq } Is Extensiemodule v2 één product of twee netwerkversies?**
 
-Kompatibel met uConsole-Geräten, die den Standard-4G/LTE-Erweiterungsslot haben. Überprüfen Sie Ihre Gerätespezifikationen, um die Kompatibilität zu bestätigen.
+Het is **één product**. Zowel de 100M- als de 1000M-Ethernetkaarten zijn in de doos inbegrepen. Zie [Aankoopopties](/products/kvmext/purchase-options/).
 
-**:material-chat-question:{ .faq } Welche Zielgeräte kann ich steuern?**
+**:material-chat-question:{ .faq } Welke Ethernetkaart moet ik gebruiken?**
 
-Jedes Gerät met HDMI-Ausgabe, einschließlich:
+Gebruik de **100M**-kaart op alle uConsole-basisborden. Gebruik de **1000M**-kaart alleen als u de **HackerGadgets uConsole Upgrade Kit** heeft en gigabit-netwerken nodig heeft. Zie [Ethernet-gids](/products/kvmext/ethernet/).
 
-- Desktop-Computer en Server
-- Einplatinencomputer (Raspberry Pi, etc.)
-- Eingebettete Systeme
-- Industrielle PCs
-- Spielkonsolen
-- Mediaplayer
+**:material-chat-question:{ .faq } Heb ik de HackerGadgets uConsole Upgrade Kit nodig?**
 
-**:material-chat-question:{ .faq } Braucht das Zielgerät spezielle Software?**
+Alleen voor **gigabit Ethernet**. De 100M-kaart werkt zonder de Upgrade Kit. Als u de kit niet heeft, kies dan de bundeloptie bij het afrekenen of koop de kit apart.
 
-Keine Software-Installatie ist auf dem Zielgerät erforderlich. Die KVM Extension funktioniert met jedem Gerät, das eine HDMI-Ausgabe hat.
+**:material-chat-question:{ .faq } Is de uConsole inbegrepen?**
 
-**:material-chat-question:{ .faq } Kann ich mehrere Zielgeräte steuern?**
-
-Sie können ein Zielgerät gleichzeitig steuern. Um zwischen Geräten zu wechseln, trennen Sie das HDMI-Kabel en verbinden Sie es met einem anderen Zielgerät.
+Nee. Het ClockworkPi uConsole-apparaat wordt apart verkocht.
 
 ---
 
-## Steuerung & Functies
+## Installatie & hardware
 
-**:material-chat-question:{ .faq } Welche Eingabemethoden werden unterstützt?**
+**:material-chat-question:{ .faq } Hoe werkt Extensiemodule v2?**
 
-- Vollständige Tastatur-Emulation einschließlich Multimediatasten
-- Absolute en relative Mauspositionierung
-- Computer-Aufweckfunktion
-- Audio-Durchleitung over HDMI
+Het legt HDMI vast van een doelapparaat en geeft dit weer op de uConsole. Het toetsenbord en de trackball van de uConsole besturen het doelapparaat via USB HID-emulatie. Optionele Ethernet- en SD-kaartfuncties breiden de netwerkdebug- en imaging-workflows uit.
 
-**:material-chat-question:{ .faq } Kann ich Dateien zwischen uConsole en Zielgerät overtragen?**
+**:material-chat-question:{ .faq } Kan ik dit gebruiken met de 4G/LTE-module geïnstalleerd?**
 
-Die KVM Extension bietet nur Video- en Eingabesteuerung. Für Dateiovertragung müssen Sie andere Methoden wie Netzwerkfreigabe, USB-Laufwerke of Cloud-Speicher verwenden.
+Nee. Extensiemodule v2 gebruikt de uConsole-uitbreidingssleuf en kan **niet** tegelijk met de 4G- of LTE-module worden gebruikt.
 
-**:material-chat-question:{ .faq } Unterstützt es BIOS-Level-Zugriff?**
+**:material-chat-question:{ .faq } Welk gereedschap heb ik nodig voor de installatie?**
 
-Ja, direkte USB HID-Emulation ermöglicht vollständige BIOS-Level-Steuerung, anders als netzwerkbasierte Remote-Zugriffstools.
+Een inbussleutel voor de montageschroeven. ESD-voorzorgsmaatregelen worden aanbevolen.
 
-**:material-chat-question:{ .faq } Kann ich es voor Gaming verwenden?**
+**:material-chat-question:{ .faq } Is de installatie omkeerbaar?**
 
-Obwohl technisch möglich, sind die Latenz en die Steuerungsmethode möglicherweise niet ideal voor schnelle Spiele. Es ist besser voor Systemadministration en Entwicklungsaufgaben geeignet.
+Ja. Verwijder Extensiemodule v2 en installeer indien nodig uw oorspronkelijke 4G/LTE-module opnieuw.
 
 ---
 
-## Video & Audio
+## Compatibiliteit
 
-**:material-chat-question:{ .faq } Welche Videoauflösungen werden unterstützt?**
+**:material-chat-question:{ .faq } Welke uConsole-modellen zijn compatibel?**
 
-Die Extension akzeptiert Standard-HDMI-Videoeingang. Die tatsächliche Anzeigeauflösung hängt von den Bildschirmfähigkeiten Ihres uConsole ab.
+Compatibel met uConsole-apparaten die de standaard uitbreidingssleuf hebben. Controleer de specificaties van uw apparaat om dit te bevestigen.
 
-**:material-chat-question:{ .faq } Wird Audio unterstützt?**
+**:material-chat-question:{ .faq } Welke doelapparaten kan ik besturen?**
 
-Ja, eingebettetes HDMI-Audio wird an die Lautsprecher des uConsole weitergeleitet.
+Elk apparaat met HDMI-uitgang: desktops, servers, SBC's (Raspberry Pi, enz.), embedded systemen, industriële pc's en meer.
 
-**:material-chat-question:{ .faq } Wie ist es met Video-Latenz?**
+**:material-chat-question:{ .faq } Heeft het doelapparaat speciale software nodig?**
 
-Die Extension bietet niedrige Latenz-Video, das voor Echtzeit-Interaktion en BIOS-Level-Fehlerbehebung geeignet ist.
+Nee. KVM gebruikt USB HID-emulatie — er zijn geen stuurprogramma's nodig op het doelapparaat voor toetsenbord en muis. Meer informatie over [USB-gebaseerde KVM-technologie](/tutorial/kvm/01-getting-started/).
 
-**:material-chat-question:{ .faq } Kann ich Adapter voor verschiedene Videoausgaben verwenden?**
+**:material-chat-question:{ .faq } Kan ik meerdere doelapparaten tegelijk besturen?**
 
-Ja, Sie können HDMI-Adapter voor Geräte met VGA-, DVI- of DisplayPort-Ausgängen verwenden.
-
----
-
-## Fehlerbehebung
-
-**:material-chat-question:{ .faq } Kein Videosignal erscheint**
-
-- Überprüfen Sie die HDMI-Kabelverbindung an beiden Enden
-- Stellen Sie sicher, dass das Zielgerät eingeschaltet en auf HDMI-Ausgabe eingestellt ist
-- Versuchen Sie ein anderes HDMI-Kabel
-- Starten Sie die Openterface App neu
-
-**:material-chat-question:{ .faq } Steuereingabe funktioniert niet**
-
-- Stellen Sie sicher, dass die KVM Extension Board ordnungsgemäß installiert ist
-- Überprüfen Sie, dass die Federkontaktoren guten Kontakt haben
-- Starten Sie die Openterface App neu
-- Stellen Sie sicher, dass das Zielgerät USB-Eingang erkennt
-
-**:material-chat-question:{ .faq } Board passt niet richtig**
-
-- Stellen Sie sicher, dass die Unterlegscheiben ordnungsgemäß positioniert sind
-- Überprüfen Sie, dass die Schrauben niet overdreht sind
-- Stellen Sie sicher, dass das Board flach ohne Bewegung sitzt
-- Stellen Sie sicher, dass Sie die richtigen Montageschrauben verwenden
-
-**:material-chat-question:{ .faq } App erkennt die Extension niet**
-
-- Überprüfen Sie, dass das Board ordnungsgemäß installiert ist
-- Starten Sie das uConsole neu
-- Installieren Sie die Openterface App neu
-- Stellen Sie sicher, dass Sie die richtige Softwareversion verwenden
+Eén doelapparaat tegelijk voor KVM. Schakel tussen doelapparaten door de HDMI- en USB-kabels te verplaatsen.
 
 ---
 
-## Mehr
+## Bediening & functies
 
-**:material-chat-question:{ .faq } Ist die Software Open Source?**
+**:material-chat-question:{ .faq } Kan ik bestanden overdragen via SD-kaart?**
 
-Ja! Unsere **Openterface Connect** Apps sind vollständig Open Source en verfügbar in unserem [GitHub-Repository](https://github.com/TechxArtisanStudio/Openterface_QT).
+Ja. Extensiemodule v2 ondersteunt lezen/schrijven van SD-kaarten met host/doel-schakeling via de Openterface-app. Zie [SD-kaartgids](/products/kvmext/sd-card/).
 
-**:material-chat-question:{ .faq } Wo kann ich Ondersteuning erhalten?**
+**:material-chat-question:{ .faq } Ondersteunt het BIOS-niveau toegang?**
 
-- **E-Mail**: [support@openterface.com](mailto:support@openterface.com)
-- **Discord**: [Treten Sie unserer Community bei](https://discord.gg/ruAD9kcYbq)
-- **GitHub**: [Probleme melden](https://github.com/TechxArtisanStudio/Openterface_QT/issues)
+Ja. Directe USB HID maakt volledige BIOS/UEFI-toegang mogelijk zonder netwerkafhankelijkheden.
+
+**:material-chat-question:{ .faq } Wat met de oudere v1-module?**
+
+De eerste generatie 37 × 77 mm module (geen Ethernet/SD) is gedocumenteerd op [Legacy v1 Docs](/products/kvmext/v1/).
+
+---
+
+## Video & audio
+
+**:material-chat-question:{ .faq } Welke videoresoluties worden ondersteund?**
+
+- **Ingang**: Tot 4K @ 30 Hz (RGB/YCBCR444) of 4K @ 60 Hz (YCBCR420) via HDMI
+- **Uitgang**: 1080p @ 60 Hz op het uConsole-scherm
+
+**:material-chat-question:{ .faq } Wat is de videovertraging?**
+
+Onder **70 ms** — geschikt voor BIOS-toegang, onderhoud en diagnostiek.
+
+**:material-chat-question:{ .faq } Wordt audio ondersteund?**
+
+Ja. In HDMI ingebedde audio wordt doorgegeven aan de uConsole-luidsprekers.
+
+---
+
+## Probleemoplossing
+
+**:material-chat-question:{ .faq } Geen videosignaal**
+
+- Controleer HDMI-verbindingen aan beide kanten
+- Controleer of het doelapparaat is ingeschakeld en via HDMI uitvoert
+- Probeer een andere HDMI-kabel
+- Herstart Openterface QT
+
+**:material-chat-question:{ .faq } Toetsenbord of muis werkt niet**
+
+- Bevestig de USB-kabel van de extensiemodule naar het doelapparaat
+- Schakel de uConsole volledig uit, wacht 10 seconden, schakel in en probeer opnieuw
+- Installeer Openterface QT opnieuw (arm64-build voor uw uConsole)
+- Rapporteer uw Linux-distributie en CM4-module op [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) of [Discord](https://openterface.com/discord)
+
+**:material-chat-question:{ .faq } Software was moeilijk te installeren**
+
+Probeer GitHub Releases (Optie 1) of de ClockworkPi-communityrepo (Optie 3) in [Software-installatie](/products/kvmext/software-setup/). Word lid van [Discord](https://openterface.com/discord) voor stapsgewijze hulp.
+
+**:material-chat-question:{ .faq } USB-schakelpoort werkt niet**
+
+Zorg ervoor dat u een recente Openterface QT-release gebruikt. Schakel USB-toegang in de host-app. Als het probleem aanhoudt, dien dan een issue in op [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues).
+
+**:material-chat-question:{ .faq } HDMI wordt alleen in een vak weergegeven / geen app-instellingenmenu**
+
+Werk bij naar de nieuwste Openterface QT. Controleer [Software-installatie](/products/kvmext/software-setup/) en communitydiscussies op Discord voor uConsole-specifieke weergave-instellingen.
+
+**:material-chat-question:{ .faq } App detecteert de module niet**
+
+- Plaats het bord opnieuw in de uitbreidingssleuf
+- Herstart de uConsole
+- Installeer Openterface QT opnieuw
+
+---
+
+## Meer
+
+**:material-chat-question:{ .faq } Is de software open source?**
+
+Ja. Openterface-host-apps zijn open source op [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT).
+
+**:material-chat-question:{ .faq } Waar kan ik ondersteuning krijgen?**
+
+- **E-mail**: [support@openterface.com](mailto:support@openterface.com)
+- **Discord**: [Word lid van onze community](https://openterface.com/discord)
+- **GitHub**: [Problemen melden](https://github.com/TechxArtisanStudio/Openterface_QT/issues)

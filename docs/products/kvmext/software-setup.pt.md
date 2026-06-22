@@ -1,47 +1,39 @@
 ---
-title: "Configuração de Software"
-description: Guia completo de configuração de software para a extensão KVM Openterface para uConsole. O aplicativo Openterface permite que sua uConsole funcione como uma…
-keywords: "instalação Openterface, software uConsole, configuração KVM, instalação do app"
+title: "Configuração de Software | Módulo de Extensão v2"
+description: "Instale e configure o aplicativo host Openterface no seu uConsole para o Módulo de Extensão KVM v2 — captura HDMI, USB HID, comutação de cartão SD e compartilhamento USB."
+keywords: "instalação do aplicativo Openterface, configuração de software uConsole, extensão KVM v2, openterfaceqt"
 ---
 
-# **Configuração de Software** | Extensão KVM Openterface para uConsole
+# **Configuração de Software** | Módulo de Extensão v2
 
 ## Visão geral da instalação
 
-O aplicativo Openterface permite que sua uConsole funcione como uma interface KVM, permitindo controlar dispositivos alvo através da tela, teclado e trackball integrados.
+O aplicativo host Openterface permite que seu uConsole funcione como uma interface KVM com captura HDMI, controle USB HID, **comutação de cartão SD** e **compartilhamento de porta USB** entre host e alvo.
 
 !!! note "Requisitos"
-    - **uConsole**: Requer o aplicativo Openterface instalado
-    - **Alvo**: Nenhum app necessário — suporta Windows, macOS, Linux, Android, iOS
-    - **Vídeo**: Use um cabo HDMI padrão. Com um conversor HDMI alimentado, também suporta formatos como **VGA** e **DP**. *Dica: verifique se o conversor está devidamente alimentado; caso contrário, pode ocorrer tela preta.*
-
-    - **Backend de vídeo recomendado**: Para melhor desempenho e compatibilidade com GPUs arm64 (por exemplo, Raspberry Pi), use **GStreamer** como backend de vídeo. Note que **Kali Linux** pode não suportar bem o GStreamer.
+    - **uConsole (host)**: Aplicativo Openterface QT necessário
+    - **Dispositivo alvo**: Nenhum aplicativo necessário — Windows, macOS, Linux, Android, iOS suportados para KVM
+    - **Vídeo**: Cabo HDMI padrão; conversores alimentados suportam VGA, DP e outros formatos
+    - **Backend recomendado**: **GStreamer** para melhor desempenho de GPU arm64 (Kali Linux pode ter suporte limitado ao GStreamer)
 
 ## Métodos de instalação
 
-### **Opção 1: Download do GitHub Releases (Recomendado para arm64)**
+### **Opção 1: GitHub Releases (recomendado para arm64)**
 
-Faça o download da versão mais recente do aplicativo Openterface para **arm64** diretamente em nossa [página de Releases no GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/releases).
+1. Visite [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases).
+2. Baixe o último `.deb` para **arm64** (por exemplo, `openterfaceqt_*_arm64.deb`).
+3. Instale:
+    ```bash
+    sudo apt install ./openterfaceqt_*_arm64.deb
+    ```
 
-1. Visite a página [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases).
-2. Baixe o pacote `.deb` mais recente para **arm64** (por exemplo, `openterfaceqt_*_arm64.deb`).
-3. Instale o pacote:
-   ```bash
-   sudo apt install ./openterfaceqt_*_arm64.deb
-   ```
-   *(Substitua o nome do arquivo, se for diferente.)*
+### **Opção 2: Flatpak**
 
----
+Siga o [Guia de Instalação Flatpak](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md).
 
-### **Opção 2: Instalação via Flatpak**
+### **Opção 3: Repositório da comunidade (ClockworkPi Bookworm)**
 
-Siga nosso [Guia de Instalação Flatpak](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) para instruções detalhadas.
-
----
-
-### **Opção 3: Repositório da comunidade**
-
-Se preferir a build mantida pela comunidade (Rex):
+Mantido por Rex para imagens ClockworkPi:
 
 1. **Adicionar repositório**:
     ```bash
@@ -49,94 +41,55 @@ Se preferir a build mantida pela comunidade (Rex):
     sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
     ```
 
-2. **Instalar pacote**:
+2. **Instalar**:
     ```bash
     sudo apt update
     sudo apt install openterfaceqt
     ```
 
 !!! warning "Notas sobre o repositório"
-    Estes comandos requerem `sudo`. O repositório é voltado a pacotes arm64 Bookworm; verifique a compatibilidade com seu dispositivo antes de instalar.
+    Os comandos requerem `sudo`. O repositório tem como alvo pacotes Bookworm arm64 — verifique a compatibilidade com o sistema operacional do seu uConsole antes de instalar.
 
 ## Lembretes importantes
 
-!!! tip "Energia & Primeira Inicialização"
-    - **Certifique-se de que sua uConsole esteja suficientemente carregada ou conectada a uma fonte de energia estável.** Baixa energia pode causar operação instável ou problemas de conexão.
-    - **Se não conseguir controlar o dispositivo alvo na primeira tentativa:**
-        1. Desligue completamente a uConsole.
+!!! tip "Energia e configuração inicial"
+    - Mantenha o uConsole carregado ou em uma fonte de energia estável — bateria fraca pode causar problemas de conexão.
+    - Se o controle de teclado/mouse falhar na primeira tentativa:
+        1. Desligue completamente o uConsole.
         2. Aguarde pelo menos 10 segundos.
-        3. Ligue novamente e tente de novo.
+        3. Ligue e tente novamente.
 
-!!! tip "Baudrate de comunicação serial"
-    - **Configure o baudrate para 9600** ao usar comunicação serial. Isso reduz a taxa de erro, pois a uConsole frequentemente não fornece energia suficiente para manter 115200 de forma confiável.
+!!! tip "Taxa de baud da comunicação serial"
+    Defina a taxa de baud para **9600** para uso serial — o uConsole pode não sustentar 115200 de forma confiável.
 
-## Instruções de uso
+## Uso
 
-### **Iniciar sessão KVM**
-1. Inicie o aplicativo Openterface na sua uConsole
-2. O aplicativo detectará automaticamente a placa de extensão KVM
-3. Conecte o dispositivo alvo via HDMI
-4. Use o teclado e o trackball integrados para controlar o dispositivo
+### **Iniciando uma sessão KVM**
 
-### **Recursos de controle**
-- **Teclado**: Emulação completa de teclado incluindo teclas multimídia
-- **Mouse**: Posicionamento absoluto e relativo do mouse
-- **Áudio**: Passagem de áudio HDMI para os alto-falantes da uConsole
-
-### **Recursos avançados**
-- **Transferência de texto**: Transfira rapidamente texto simulando pressionamentos de tecla — ideal para nomes de usuário, senhas e trechos de código
-- **USB comutável**: Alterne o acesso USB entre a uConsole e o dispositivo alvo usando o app host
----
-title: "Configuração de software"
-description: "Guia completo de configuração de software para Openterface KVM Extension for uConsole. Aprenda como instalar e configurar o App Openterface no seu uConsole para funcionalidade KVM perfeita."
-keywords: "instalação app Openterface, configuração software uConsole, configuração app KVM, configuração app uConsole, guia instalação software"
----
-
-# **Configuração de software** | Openterface KVM Extension for uConsole
-
-## Visão geral da instalação
-
-O App Openterface permite que seu uConsole funcione como uma interface KVM, permitindo que você controle dispositivos alvo através da tela integrada, teclado e trackball.
-
-!!! note "Requisitos"
-    - **uConsole**: Requer instalação do App Openterface
-    - **Alvo**: Nenhum app necessário - suporta Windows, macOS, Linux, Android, iOS
-    - **Vídeo**: Use um cabo HDMI padrão. Use um cabo HDMI padrão. Com um conversor HDMI alimentado, também suporta outros formatos como **VGA**, **DP** e mais. *Dica: Certifique-se de que o conversor esteja adequadamente alimentado; caso contrário, você pode experimentar uma tela preta.*
-
-## Métodos de instalação
-
-### **Opção 1: Instalação Flatpak**
-
-Siga nosso [Guia de instalação Flatpak](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) para etapas de configuração detalhadas.
-
-### **Opção 2: Repositório da comunidade (Recomendado)**
-
-Se você prefere a build da comunidade mantida pelo Rex:
-
-1. **Adicionar repositório**:
-```bash
-wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
-sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-2. **Instalar pacote**:
-```bash
-sudo apt update
-sudo apt install openterfaceqt
-!!! warning "Notas do repositório"
-    Esses comandos requerem sudo. O repositório visa pacotes arm64 Bookworm; verifique a compatibilidade com seu dispositivo antes de instalar.
-
-## Instruções de uso
-
-### **Iniciar sessão KVM**
-1. Lance o App Openterface no seu uConsole
-2. O app detectará automaticamente a placa Extension KVM
-3. Conecte seu dispositivo alvo via HDMI
-4. Use o teclado e trackball integrados do uConsole para controlar o dispositivo alvo
+1. Inicie o Openterface QT no seu uConsole.
+2. O aplicativo detecta o Módulo de Extensão v2 automaticamente.
+3. Conecte o alvo via HDMI e USB.
+4. Use o teclado e o trackball do uConsole para controlar o alvo.
 
 ### **Recursos de controle**
-- **Teclado**: Emulação completa do teclado incluindo teclas multimídia
-- **Mouse**: Posicionamento absoluto e relativo do mouse
-- **Áudio**: Pass-through de áudio HDMI para os alto-falantes do uConsole
 
-### **Recursos avançados**
-- **Transferência de texto**: Transfira rapidamente texto simulando pressionamentos de teclas—ideal para nomes de usuário, senhas e trechos de código
-- **USB comutável**: Mude facilmente o acesso USB entre uConsole e dispositivo alvo usando o app host
+- **Teclado**: Emulação completa, incluindo teclas multimídia
+- **Mouse**: Posicionamento absoluto e relativo
+- **Áudio**: Passagem de áudio HDMI para os alto-falantes do uConsole
+- **Transferência de texto**: Cole nomes de usuário, senhas e snippets como pressionamentos de tecla simulados
+- **Comutação USB**: Compartilhe armazenamento USB entre uConsole e alvo através do aplicativo host — veja [Conectar ao Alvo](/products/kvmext/connect-to-target/)
+- **Comutação de cartão SD**: Monte o cartão SD no host ou no alvo através do aplicativo host — veja [Guia do Cartão SD](/products/kvmext/sd-card/)
+
+### **Solução de problemas de instalação do software**
+
+Se o aplicativo for difícil de instalar ou mouse/teclado não funcionarem:
+
+- Confirme que você instalou a versão **arm64** no seu uConsole CM4/módulo
+- Entre no [Discord](https://openterface.com/discord) para ajuda em tempo real
+- Reporte problemas no [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT/issues)
+
+## Relacionados
+
+- [Conectar ao Alvo](/products/kvmext/connect-to-target/)
+- [Guia do Cartão SD](/products/kvmext/sd-card/)
+- [Perguntas Frequentes](/products/kvmext/faq/)

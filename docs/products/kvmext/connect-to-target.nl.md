@@ -1,37 +1,64 @@
 ---
-title: "Mit Zielgerät Verbinden"
-description: "Lernen Sie, wie Sie Ihr Zielgerät met der Openterface KVM Extension for uConsole verbinden. Vollständige Handleiding voor USB-Steuerung en Videoeingang-Setup nach Hardware-Installatie en Software-Setup."
-keywords: "KVM-Verbindingssetup, Zielgerät-Verbinding, USB-Steuerungssetup, HDMI-Eingangssetup, uConsole KVM-Erweiterung Verbinding"
+title: "Verbinden met doelapparaat | Extensiemodule v2"
+description: "Verbind uw doelapparaat met de Openterface uConsole KVM Extensiemodule v2 via HDMI, USB HID en optionele Ethernet voor netwerkdebugging."
+keywords: "KVM-verbindingsinstellingen, doelapparaat, HDMI, USB HID, Ethernet-debug, uConsole KVM v2"
 ---
 
-# **Mit Zielgerät Verbinden** | Openterface KVM Extension for uConsole
+# **Verbinden met doelapparaat** | Extensiemodule v2
 
-## Verbindingsoversicht
+## Verbindingsoverzicht
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![kvmext-v2-use-case-2](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-2.webp){:style="max-height:480px"}
 
-## Voraussetzungen
+Extensiemodule v2 maakt verbinding met uw doel via **HDMI** (video/audio) en **USB** (toetsenbord-/muisemulatie). Gebruik optioneel **Ethernet** voor SSH, webbeheer of logregistratie terwijl KVM het scherm en invoer afhandelt.
 
-Bevor Sie Ihr Zielgerät verbinden, stellen Sie sicher, dass Sie folgendes abgeschlossen haben:
+## Vereisten
 
-1. [Hardware-Installatie](/products/kvmext/hardware-installation/) - Physische Installatie der KVM Extension-Karte
-2. [Software-Setup](/products/kvmext/software-setup/) - Installatie der Openterface App
+1. [Hardware-installatie](/products/kvmext/hardware-installation/) — module geplaatst in uitbreidingssleuf
+2. [Software-instellingen](/products/kvmext/software-setup/) — Openterface QT geïnstalleerd op uConsole
+3. [Ethernetkaart gekozen](/products/kvmext/ethernet/) (bij gebruik van netwerkfuncties)
 
-## Verbindingsschritte
+## Verbindingsstappen
 
-### **USB-Steuerung**
-Verbinden Sie den Type-C-Buchsenport met dem USB-Port des Zielgeräts, um Tastatur- en Maussignale zu emulieren.
+### **USB-besturing (vereist voor KVM)**
 
-### **Videoeingang**
-Verbinden Sie den Videoausgang des Zielgeräts met dem HDMI-Port auf der KVM Extension:
+Verbind de **Type-C-poort** van de extensiekaart met de USB-poort van het doelapparaat. Dit emuleert toetsenbord en muis (USB HID).
 
-- Verwenden Sie ein Standard-HDMI-Kabel voor HDMI-Ausgabegeräte
-- Verwenden Sie ein VGA-to-HDMI-Konverterkabel voor VGA-Ausgabegeräte.
-    - *Hinweis*: Stellen Sie sicher, dass der Konverter over seinen USB-Anschluss met Strom versorgt wird voor ordnungsgemäßen Betrieb.
-- Verwenden Sie andere geeignete Adapter voor verschiedene Videosignaltypen
+Het doelapparaat heeft **geen** stuurprogramma's of extra software nodig voor HID-besturing.
 
-## Verbinding Testen
+### **Video-ingang (vereist voor KVM)**
 
-1. Schalten Sie die Stromversorgung ein en starten Sie das uConsole
-2. Führen Sie die Openterface QT App aus
-3. Testen Sie HDMI-, Audio- en USB HID-Funktionalität, um ordnungsgemäßen Betrieb zu bestätigen
+Verbind de HDMI-uitgang van het doel met de HDMI-ingang van de extensiemodule:
+
+- Standaard HDMI-kabel voor HDMI-uitgangen
+- **VGA-naar-HDMI**-converter voor VGA (zorg dat de USB-voeding van de converter is aangesloten)
+- Andere adapters voor DVI, DisplayPort, Micro HDMI indien nodig
+
+### **Ethernet (optioneel — netwerkdebug)**
+
+Als u een netwerkkaart hebt geïnstalleerd:
+
+- Sluit een Ethernet-kabel aan van de kaart op uw doelapparaat of netwerkswitch
+- Gebruik de uConsole voor SSH, webinterface of logregistratie naast KVM
+- Zie [Ethernet-gids](/products/kvmext/ethernet/) voor 100M vs 1000M-instellingen
+
+### **SD-kaart (optioneel — imaging & bestanden)**
+
+Plaats een microSD-kaart in de modulesleuf. Gebruik de host-app om de toegang te schakelen tussen uConsole en doel. Zie [SD-kaartgids](/products/kvmext/sd-card/).
+
+## USB 2.0 gedeelde schakeling
+
+De host-app kan een gedeelde USB 2.0-poort schakelen tussen de uConsole en het doel — handig voor flashstations en onderhoudsworkflows zonder kabels los te koppelen.
+
+## De verbinding testen
+
+1. Schakel de uConsole in en start het doelapparaat op
+2. Start Openterface QT
+3. Bevestig dat HDMI-video op het uConsole-scherm verschijnt
+4. Test toetsenbord, trackball en audio-passthrough
+5. Test bij gebruik van SD- of USB-schakeling de mount/schakeling in de host-app
+
+## Gerelateerd
+
+- [Gebruiksscenario's](/products/kvmext/use-cases/) — veld-IT, homelab, embedded debug-scenario's
+- [Veelgestelde vragen](/products/kvmext/faq/) — probleemoplossing

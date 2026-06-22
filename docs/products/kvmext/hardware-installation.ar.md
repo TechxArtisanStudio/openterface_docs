@@ -1,60 +1,76 @@
 ---
-title: "الأجهزة-التثبيت"
-description: "Schritt-لـ-Schritt الأجهزة-التثبيتsanleitung لـ Openterface KVM Extension for uConsole. Lernen Sie, wie Sie die Erweiterungskarte ordnungsgemäß im Erweiterungsslot Ihres uConsole installieren, مع detaillierten Sicherheitsrichtlinien."
-keywords: "KVM-Erweiterung التثبيت, uConsole الأجهزة-Setup, Erweiterungskarte التثبيت, uConsole Erweiterungsslot, KVM الأجهزة-دليل, physische التثبيت"
+title: "تركيب العتاد | وحدة التوسعة الإصدار 2"
+description: "قم بتركيب وحدة توسعة Openterface uConsole KVM الإصدار 2 في فتحة التوسعة. اختر بطاقة الإيثرنت الخاصة بك وقم بتوصيل HDMI وUSB بالجهاز الهدف."
+keywords: "تركيب وحدة توسعة KVM الإصدار 2، إعداد عتاد uConsole، فتحة التوسعة، تركيب بطاقة الإيثرنت"
 ---
 
-# **الأجهزة-التثبيت** | Openterface KVM Extension for uConsole
+# **تركيب العتاد** | وحدة التوسعة الإصدار 2
 
 ## نظرة عامة
-Die KVM Extension ersetzt das 4G/LTE-Modul im Erweiterungsslot des uConsole و fügt direkten HDMI-Eingang و USB HID-Steuerung hinzu.
 
-## Was Sie benötigen
-- Überprüfen Sie Ihren [Paketinhalt](whats-in-the-box.md) vor der التثبيت  
-- Openterface KVM Extension Board  
-- Mitgelieferte **Unterlegscheiben** (لـ stabile Montage و gleichmäßigen Druck)  
-- Sechskantschraubendreher (لـ Montageschrauben)  
-- ESD-Schutz (Handgelenkband أو geerdete Oberfläche) — empfohlen  
+تتوافق وحدة التوسعة الإصدار 2 مع **فتحة التوسعة** في uConsole (نفس الفتحة المستخدمة بوحدة 4G/LTE). لا يمكن استخدامها في نفس الوقت مع وحدة 4G أو LTE — اختر إمكانيات الشبكة الخلوية **أو** إمكانيات KVM.
 
-## التثبيتsschritte
+## ما ستحتاج إليه
 
-### **1. Strom ausschalten**
-Fahren Sie den uConsole herunter و trennen Sie alle Stromversorgungen و Kabel.
+- [محتويات العبوة](/products/kvmext/whats-in-the-box/) تم التحقق منها قبل التركيب
+- لوحة وحدة التوسعة Openterface الإصدار 2
+- **بطاقة إيثرنت واحدة** (100M أو 1000M — راجع [دليل الإيثرنت](/products/kvmext/ethernet/))
+- غطاء فتحة التوسعة (مُتضمن)
+- مفك سداسي (Hex) لبراغي التثبيت
+- حماية من التفريغ الكهروستاتيكي (سوار معصم أو سطح مؤرض) — مُوصى به
 
-### **2. Vorhandenes Modul entfernen**
-Verwenden Sie einen Sechskantschraubendreher, um die beiden Schrauben zu entfernen.  
-Heben Sie das Board **gerade nach oben**, um die Federkontakte لا zu verbiegen.
+## خطوات التركيب
 
-### **3. KVM Extension installieren**
-- Platzieren Sie die **Unterlegscheibe** auf dem Schraubenpfosten.  
-- Setzen Sie die KVM Extension fest in den Erweiterungsslot ein.  
-- Die Unterlegscheibe kompensiert die etwas dünnere PCB (1,0 mm vs 1,2 mm) و hält den angemessenen Federkontaktdruck aufrecht.
+### **1. إيقاف التشغيل**
 
-??? note "Passung vor der finalen التثبيت prüfen"
-    Sie können das Board zunächst **ohne die Unterlegscheibe** einsetzen, um die Passung zu testen. Wenn das Board lose wirkt أو die Kontakte ungleichmäßig sind, fügen Sie die Unterlegscheibe hinzu و setzen Sie das Board erneut ein. Die Openterface KVM Extension ist 1,0 mm dick, etwas dünner als das ursprüngliche LTE-Modul (1,2 mm). Die Verwendung der معgelieferten Unterlegscheibe gewährleistet eine stabile Montage و zuverlässigen Federkontakt.  
-    ![extension-slot-loose](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-slot-loose.webp){:style="max-height:220px"}
+أوقف تشغيل uConsole وافصل جميع مصادر الطاقة والكابلات.
 
-### **4. Board befestigen**
-Setzen Sie die Schrauben wieder ein و ziehen Sie sie **sanft** an — **لا حولdrehen**, da dies das Board beschädigen أو die Gewinde beschädigen könnte.
+### **2. إزالة الوحدة الموجودة**
 
-![extension-screw-washer-installed](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installed.jpg){:style="max-height:220px"}
-![extension-screw-washer-installing](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installing.jpg){:style="max-height:220px"}
-![extension-install-1](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-install-1.webp){:style="max-height:220px"}
+إذا كانت وحدة 4G/LTE أو وحدة توسعة أخرى مُركبة:
 
-### **5. التثبيت حولprüfen**
-Das Board sollte **flach و stabil** sitzen, مع gleichmäßigem Federkontakt حول alle Pads. Es sollte keine merkliche Wackelbewegung أو Bewegung geben.
+- استخدم مفك سداسي (Hex) لإزالة برغي التثبيت.
+- ارفع اللوحة **بشكل مستقيم** لتجنب ثني الموصلات الزنبركية.
+- خزّن الوحدة الأصلية والبراغي بأمان إذا كنت تخطط لإعادة تركيبها لاحقًا.
 
-### **6. Erweiterungsslot-Abdeckung installieren**
-Installieren Sie die Erweiterungsslot-Abdeckung wieder, um das KVM Extension Board zu schützen و das ursprüngliche Aussehen des uConsole zu erhalten.
+### **3. اختر بطاقة الإيثرنت الخاصة بك**
 
-??? note "Textausrichtung auf der Erweiterungsslot-Abdeckung"
-    Der Text auf der Erweiterungsslot-Abdeckung kann aus bestimmten Blickwinkeln "auf dem Kopf" erscheinen. Dies ist ein absichtliches Design - der Text ist so ausgerichtet, dass er lesbar ist, wenn Sie den uConsole halten و die Ports von oben nach unten betrachten, was die natürliche Betrachtungsposition bei der Verwendung des Geräts ist.
-    ![expansion-slot-text-orientation](https://assets.openterface.com/images/products/openterface-kvm-uconsole-expansion-slot-text-orientation.webp){:style="max-height:220px"}
+قبل تثبيت اللوحة الرئيسية، حدد البطاقة التي ستقوم بتركيبها:
+
+| البطاقة | متى تُستخدم |
+|------|-------------|
+| **100M** | جميع اللوحات الأساسية لـ uConsole — توافق شامل |
+| **1000M** | فقط إذا كانت لديك **مجموعة ترقية HackerGadgets uConsole** وتحتاج إلى جيجابت |
+
+راجع [دليل الإيثرنت](/products/kvmext/ethernet/) للتفاصيل الكاملة.
+
+### **4. تركيب وحدة التوسعة الإصدار 2**
+
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+
+- ثبّت وحدة التوسعة الإصدار 2 بإحكام في فتحة التوسعة.
+- تأكد من محاذاة الموصلات الزنبركية بالتساوي عبر جميع الوسادات.
+- أعد إدخال براغي التثبيت وأحكم ربطها **برفق** — لا تُفرط في الإحكام.
+
+### **5. التحقق من التركيب**
+
+يجب أن تستقر اللوحة **بشكل مستوٍ وثابت** دون أي تذبذب ملحوظ. يجب أن تضغط جميع الموصلات الزنبركية بالتساوي.
+
+### **6. تركيب غطاء فتحة التوسعة**
+
+أعد تركيب غطاء فتحة التوسعة لحماية الوحدة والحفاظ على مظهر uConsole.
+
+??? note "اتجاه النص على غطاء فتحة التوسعة"
+    قد يظهر النص على الغطاء مقلوبًا من بعض زوايا الرؤية. إنه موجّه بحيث يكون مقروءًا عند حمل uConsole والنظر إلى المنافذ من الأعلى — الوضع الطبيعي أثناء الاستخدام.
 
 ---
 
-**Nächste Schritte**
+**الخطوات التالية**
 
-1. Gehen Sie zu [البرمجيات-Setup](/products/kvmext/software-setup/), um die Openterface App zu installieren.  
-2. Gehen Sie zu [Mit Zielgerät verbinden](/products/kvmext/connect-to-target/), um Ihr Zielgerät zu verbinden.  
-3. Überprüfen Sie [الميزات & Spezifikationen](/products/kvmext/features/) لـ detaillierte technische Spezifikationen.
+1. [إعداد البرنامج](/products/kvmext/software-setup/) — ثبّت تطبيق Openterface المضيف على uConsole الخاص بك
+2. [الاتصال بالجهاز الهدف](/products/kvmext/connect-to-target/) — توصيل HDMI + USB
+3. [الميزات والمواصفات](/products/kvmext/features/) — المواصفات الفنية الكاملة
+
+## تركيب الإصدار الأول v1
+
+استخدمت الوحدة من الجيل الأول (37 × 77 مم) حلقات (washers) لتعويض سماكة لوحة الدائرة المطبوعة. راجع [الإصدار الأول v1 — تركيب العتاد](/products/kvmext/v1/hardware-installation/).

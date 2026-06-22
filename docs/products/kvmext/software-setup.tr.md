@@ -1,143 +1,95 @@
 ---
-title: "Yazılım-Setup"
-description: Vollständige Kılavuz zur Yazılımeinrichtung için die Openterface KVM-Erweiterung için uConsole. Die Openterface App ermöglicht Ihrer uConsole, als… Openterface.
-keywords: "Openterface App Kurulum, uConsole Yazılım, KVM App Kurulum, uConsole Konfiguration"
+title: "Yazılım Kurulumu | Genişletme Modülü v2"
+description: "uConsole'unuz için Openterface ana bilgisayar uygulamasını KVM Genişletme Modülü v2 için kurun ve yapılandırın — HDMI yakalama, USB HID, SD kart anahtarlama ve USB paylaşımı."
+keywords: "Openterface uygulama kurulumu, uConsole yazılım kurulumu, KVM genişletme v2, openterfaceqt"
 ---
 
-# **Yazılım-Setup** | Openterface KVM-Erweiterung için uConsole
+# **Yazılım Kurulumu** | Genişletme Modülü v2
 
-## Kurulumshakkındasicht
+## Kurulum genel bakış
 
-Die Openterface App ermöglicht Ihrer uConsole, als KVM-Schnittstelle zu fungieren, sodass Sie Zielgeräte hakkında Bildschirm, Tastatur ve Trackball steuern können.
+Openterface ana bilgisayar uygulaması, uConsole'unuzun HDMI yakalama, USB HID kontrolü, **SD kart anahtarlama** ve ana bilgisayar ile hedef arasında **USB port paylaşımı** ile bir KVM arayüzü olarak işlev görmesini sağlar.
 
-!!! note "Anforderungen"
-    - **uConsole**: Erfordert installierte Openterface App
-    - **Ziel**: Keine App erforderlich – unterstützt Windows, macOS, Linux, Android, iOS
-    - **Video**: Verwenden Sie ein Standard-HDMI-Kabel. Mit einem aktiven HDMI-Konverter werden auch Formate wie **VGA** ve **DP** unterstützt. *Tipp: Stellen Sie sicher, dass der Konverter ausreichend ile Strom versorgt ist, sonst kann es zu einem schwarzen Bildschirm kommen.*
+!!! note "Gereksinimler"
+    - **uConsole (ana bilgisayar)**: Openterface QT uygulaması gerekli
+    - **Hedef cihaz**: Uygulama gerekmez — Windows, macOS, Linux, Android, iOS KVM için desteklenir
+    - **Video**: Standart HDMI kablosu; güçlü dönüştürücüler VGA, DP ve diğer formatları destekler
+    - **Önerilen arka uç**: En iyi arm64 GPU performansı için **GStreamer** (Kali Linux'un GStreamer desteği sınırlı olabilir)
 
-    - **Empfohlenes Video-Backend**: Für beste Leistung ve Kompatibilität ile arm64-GPUs (z. B. Raspberry Pi) empfehlen wir **GStreamer** als Video-Backend. Beachten Sie, dass **Kali Linux** GStreamer möglicherweise değil gut unterstützt.
+## Kurulum yöntemleri
 
-## Kurulumsmethoden
+### **Seçenek 1: GitHub Releases (arm64 için önerilir)**
 
-### **Option 1: İndir von GitHub Releases (Empfohlen için arm64)**
+1. [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) sayfasını ziyaret edin.
+2. **arm64** için en son `.deb` dosyasını indirin (örn. `openterfaceqt_*_arm64.deb`).
+3. Kurulum:
+    ```bash
+    sudo apt install ./openterfaceqt_*_arm64.deb
+    ```
 
-Laden Sie die neueste Openterface App için **arm64** direkt von unserer [GitHub Releases-Seite](https://github.com/TechxArtisanStudio/Openterface_QT/releases) herunter.
+### **Seçenek 2: Flatpak**
 
-1. Besuchen Sie die [Openterface_QT Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) Seite.
-2. Laden Sie das neueste `.deb`-Paket için **arm64** herunter (z. B. `openterfaceqt_*_arm64.deb`).
-3. Installieren Sie das Paket:
-   ```bash
-   sudo apt install ./openterfaceqt_*_arm64.deb
-   ```
-   *(Ersetzen Sie den Dateinamen gegebenenfalls durch den tatsächlichen Dateinamen.)*
+[Flatpak Kurulum Kılavuzu](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) sayfasını takip edin.
 
----
+### **Seçenek 3: Topluluk deposu (ClockworkPi Bookworm)**
 
-### **Option 2: Flatpak-Kurulum**
+Rex tarafından ClockworkPi imajları için sürdürülmektedir:
 
-Befolgen Sie unsere [Flatpak-Kurulumsanleitung](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) için detaillierte Schritte.
-
----
-
-### **Option 3: Community-Repository**
-
-Wenn Sie den Community-Build von Rex bevorzugen:
-
-1. **Repository hinzufügen**:
+1. **Depo ekle**:
     ```bash
     wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
     sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
     ```
 
-2. **Paket installieren**:
+2. **Kur**:
     ```bash
     sudo apt update
     sudo apt install openterfaceqt
     ```
 
-!!! warning "Repository-Hinweis"
-    Diese Befehle erfordern `sudo`. Das Repository richtet sich an arm64 Bookworm-Pakete; prüfen Sie die Kompatibilität ile Ihrem Gerät vor der Kurulum.
+!!! warning "Depo notları"
+    Komutlar `sudo` gerektirir. Depo, arm64 Bookworm paketlerini hedefler — kurmadan önce uConsole işletim sisteminizle uyumluluğunu doğrulayın.
 
-## Wichtige Hinweise
+## Önemli hatırlatmalar
 
-!!! tip "Stromversorgung & Erstinbetriebnahme"
-    - **Stellen Sie sicher, dass Ihre uConsole ausreichend geladen ist veya an eine stabile Stromquelle angeschlossen ist.** Niedrige Spannung kann zu unzuverlässigem Betrieb veya Bağlantısproblemen führen.
-    - **Wenn Sie beim ersten Versuch das Zielgerät değil steuern können:**
-        1. Schalten Sie die uConsole vollständig aus.
-        2. Warten Sie mindestens 10 Sekveen.
-        3. Schalten Sie sie wieder ein ve versuchen Sie es erneut.
-    Dies kann helfen, die Donanım zu initialisieren ve Bağlantısprobleme beim ersten Start zu beheben.
+!!! tip "Güç ve ilk kurulum"
+    - uConsole'u şarjda veya kararlı bir güç kaynağında tutun — düşük pil bağlantı sorunlarına neden olabilir.
+    - İlk denemede klavye/fare kontrolü çalışmazsa:
+        1. uConsole'u tamamen kapatın.
+        2. En az 10 saniye bekleyin.
+        3. Açın ve tekrar deneyin.
 
-!!! tip "Serielle Kommunikation Baudrate"
-    - **Stellen Sie die Baudrate auf 9600** ein, wenn Sie serielle Kommunikation verwenden. Dies reduziert Fehler, da die uConsole oft değil genug Leistung liefert, um 115200 zuverlässig zu halten.
+!!! tip "Seri iletişim baud hızı"
+    Seri kullanım için baud hızını **9600** olarak ayarlayın — uConsole 115200'ü güvenilir şekilde sürdüremeyebilir.
 
-## Gebrauchsanleitung
+## Kullanım
 
-### **Starten der KVM-Sitzung**
-1. Starten Sie die Openterface App auf Ihrer uConsole
-2. Die App erkennt automatisch die KVM-Erweiterungsplatine
-3. Verbinden Sie Ihr Zielgerät hakkında HDMI
-4. Verwenden Sie die eingebaute Tastatur ve den Trackball der uConsole, um das Zielgerät zu steuern
+### **KVM oturumu başlatma**
 
-### **Steuerfunktionen**
-- **Tastatur**: Volle Tastatur-Emulation einschließlich Multimedia-Tasten
-- **Maus**: Absolute ve relative Mauspositionierung
-- **Audio**: HDMI-Audio-Passthrough zu den uConsole-Lautsprechern
+1. uConsole'unuzda Openterface QT'yi başlatın.
+2. Uygulama Genişletme Modülü v2'yi otomatik olarak algılar.
+3. Hedef cihazı HDMI ve USB üzerinden bağlayın.
+4. Hedef cihazı kontrol etmek için uConsole klavye ve trackball'unu kullanın.
 
-### **Erweiterte Özellikler**
-- **Texthakkındatragung**: Schnelles Übertragen von Text durch Simulieren von Tastenanschlägen—ideal için Benutzernamen, Passwörter ve Code-Snippets
-- **Umschaltbares USB**: Wechseln Sie einfach den USB-Zugriff zwischen der uConsole ve dem Zielgerät hakkında die Host-App
----
-title: "Yazılım-Setup"
-description: "Vollständiger Yazılım-Setup-Leitfaden için Openterface KVM Extension for uConsole. Lernen Sie, wie Sie die Openterface App auf Ihrem uConsole installieren ve konfigurieren için nahtlose KVM-Funktionalität."
-keywords: "Openterface App Kurulum, uConsole Yazılım Setup, KVM App Setup, uConsole App Konfiguration, Yazılım Kurulum Guide"
----
+### **Kontrol özellikleri**
 
-# **Yazılım-Setup** | Openterface KVM Extension for uConsole
+- **Klavye**: Multimedya tuşları dahil tam emülasyon
+- **Fare**: Mutlak ve göreli konumlandırma
+- **Ses**: uConsole hoparlörlerine HDMI ses geçişi
+- **Metin aktarımı**: Kullanıcı adlarını, parolaları ve kod parçacıklarını simüle edilmiş tuş vuruşları olarak yapıştırın
+- **USB anahtarlama**: USB depolamayı uConsole ve hedef cihaz arasında ana bilgisayar uygulaması aracılığıyla paylaşın — bkz. [Hedefe Bağlan](/products/kvmext/connect-to-target/)
+- **SD kart anahtarlama**: SD kartı ana bilgisayar uygulaması aracılığıyla ana bilgisayara veya hedefe bağlayın — bkz. [SD Kart Kılavuzu](/products/kvmext/sd-card/)
 
-## Kurulumshakkındasicht
+### **Yazılım kurulumu sorunlarını giderme**
 
-Die Openterface App ermöglicht es Ihrem uConsole, als KVM-Interface zu fungieren, sodass Sie Zielgeräte hakkında den eingebauten Bildschirm, die Tastatur ve das Trackball steuern können.
+Uygulama kurulumu zorsa veya fare/klavye çalışmıyorsa:
 
-!!! note "Anforderungen"
-    - **uConsole**: Erfordert Kurulum der Openterface App
-    - **Ziel**: Keine App erforderlich - unterstützt Windows, macOS, Linux, Android, iOS
-    - **Video**: Verwenden Sie ein Standard-HDMI-Kabel. Verwenden Sie ein Standard-HDMI-Kabel. Mit einem netzbetriebenen HDMI-Konverter unterstützt es auch andere Formate wie **VGA**, **DP** ve mehr. *Tipp: Stellen Sie sicher, dass der Konverter ordnungsgemäß ile Strom versorgt wird; andernfalls können Sie einen schwarzen Bildschirm erleben.*
+- uConsole CM4/modülünüze **arm64** yapısını kurduğunuzu doğrulayın
+- Gerçek zamanlı yardım için [Discord](https://openterface.com/discord)'a katılın
+- [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT/issues) üzerinde sorun bildirin
 
-## Kurulumsmethoden
+## İlgili
 
-### **Option 1: Flatpak-Kurulum**
-
-Folgen Sie unserem [Flatpak-Kurulumsleitfaden](https://github.com/TechxArtisanStudio/Openterface_QT/blob/main/docs/flatpak_installation.md) için detaillierte Setup-Schritte.
-
-### **Option 2: Community-Repository (Empfohlen)**
-
-Wenn Sie die von Rex gepflegte Community-Build bevorzugen:
-
-1. **Repository hinzufügen**:
-```bash
-wget -q -O- https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ak-rex.gpg
-sudo add-apt-repository -y "deb [arch=arm64] https://raw.githubusercontent.com/ak-rex/ClockworkPi-apt/main/bookworm stable main"
-2. **Paket installieren**:
-```bash
-sudo apt update
-sudo apt install openterfaceqt
-!!! warning "Repository-Hinweise"
-    Diese Befehle erfordern sudo. Das Repository zielt auf arm64 Bookworm-Pakete ab; hakkındaprüfen Sie die Kompatibilität ile Ihrem Gerät vor der Kurulum.
-
-## Verwendungsanweisungen
-
-### **KVM-Sitzung starten**
-1. Starten Sie die Openterface App auf Ihrem uConsole
-2. Die App erkennt automatisch die KVM Extension-Karte
-3. Verbinden Sie Ihr Zielgerät hakkında HDMI
-4. Verwenden Sie die eingebaute Tastatur ve das Trackball des uConsole, um das Zielgerät zu steuern
-
-### **Steuerungsfunktionen**
-- **Tastatur**: Vollständige Tastaturemulation einschließlich Multimediatasten
-- **Maus**: Absolute ve relative Mauspositionierung
-- **Audio**: HDMI-Audio-Durchgang zu uConsole-Lautsprechern
-
-### **Erweiterte Özellikler**
-- **Texthakkındatragung**: Übertragen Sie schnell Text durch Simulation von Tastenanschlägen—ideal için Benutzernamen, Passwörter ve Codeschnipsel
-- **Umschaltbares USB**: Wechseln Sie einfach den USB-Zugriff zwischen uConsole ve Zielgerät hakkında die Host-App
+- [Hedefe Bağlan](/products/kvmext/connect-to-target/)
+- [SD Kart Kılavuzu](/products/kvmext/sd-card/)
+- [SSS](/products/kvmext/faq/)

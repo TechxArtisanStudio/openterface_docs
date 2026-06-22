@@ -1,60 +1,76 @@
 ---
-title: "Hardware-Installation"
-description: "Schritt-für-Schritt Hardware-Installationsanleitung für Openterface KVM Extension for uConsole. Lernen Sie, wie Sie die Erweiterungskarte ordnungsgemäß im Erweiterungsslot Ihres uConsole installieren, mit detaillierten Sicherheitsrichtlinien."
-keywords: "KVM-Erweiterung Installation, uConsole Hardware-Setup, Erweiterungskarte Installation, uConsole Erweiterungsslot, KVM Hardware-Anleitung, physische Installation"
+title: "Hardware-Installation | Erweiterungsmodul v2"
+description: "Installieren Sie das Openterface uConsole KVM-Erweiterungsmodul v2 im Erweiterungs-Slot. Wählen Sie Ihre Ethernet-Karte und verbinden Sie HDMI und USB mit Ihrem Zielgerät."
+keywords: "KVM-Erweiterung v2 Installation, uConsole Hardware-Einrichtung, Erweiterungs-Slot, Ethernet-Karten-Installation"
 ---
 
-# **Hardware-Installation** | Openterface KVM Extension for uConsole
+# **Hardware-Installation** | Erweiterungsmodul v2
 
-## Übersicht
-Die KVM Extension ersetzt das 4G/LTE-Modul im Erweiterungsslot des uConsole und fügt direkten HDMI-Eingang und USB HID-Steuerung hinzu.
+## Überblick
+
+Das Erweiterungsmodul v2 passt in den **Erweiterungs-Slot** des uConsole (derselbe Slot, der auch vom 4G/LTE-Modul genutzt wird). Es kann nicht gleichzeitig mit dem 4G- oder LTE-Modul verwendet werden — wählen Sie entweder Mobilfunk **oder** KVM-Funktionalität.
 
 ## Was Sie benötigen
-- Überprüfen Sie Ihren [Paketinhalt](whats-in-the-box.md) vor der Installation  
-- Openterface KVM Extension Board  
-- Mitgelieferte **Unterlegscheiben** (für stabile Montage und gleichmäßigen Druck)  
-- Sechskantschraubendreher (für Montageschrauben)  
-- ESD-Schutz (Handgelenkband oder geerdete Oberfläche) — empfohlen  
+
+- [Verpackungsinhalt](/products/kvmext/whats-in-the-box/) vor der Installation überprüft
+- Openterface Erweiterungsmodul v2 Platine
+- **Eine Ethernet-Karte** (100M oder 1000M — siehe [Ethernet-Anleitung](/products/kvmext/ethernet/))
+- Abdeckung für den Erweiterungs-Slot (enthalten)
+- Sechskantschraubendreher für die Befestigungsschrauben
+- ESD-Schutz (Erdungsarmband oder geerdete Oberfläche) — empfohlen
 
 ## Installationsschritte
 
-### **1. Strom ausschalten**
-Fahren Sie den uConsole herunter und trennen Sie alle Stromversorgungen und Kabel.
+### **1. Ausschalten**
+
+Fahren Sie den uConsole herunter und trennen Sie alle Strom- und Datenkabel.
 
 ### **2. Vorhandenes Modul entfernen**
-Verwenden Sie einen Sechskantschraubendreher, um die beiden Schrauben zu entfernen.  
-Heben Sie das Board **gerade nach oben**, um die Federkontakte nicht zu verbiegen.
 
-### **3. KVM Extension installieren**
-- Platzieren Sie die **Unterlegscheibe** auf dem Schraubenpfosten.  
-- Setzen Sie die KVM Extension fest in den Erweiterungsslot ein.  
-- Die Unterlegscheibe kompensiert die etwas dünnere PCB (1,0 mm vs 1,2 mm) und hält den angemessenen Federkontaktdruck aufrecht.
+Falls ein 4G/LTE- oder anderes Erweiterungsmodul installiert ist:
 
-??? note "Passung vor der finalen Installation prüfen"
-    Sie können das Board zunächst **ohne die Unterlegscheibe** einsetzen, um die Passung zu testen. Wenn das Board lose wirkt oder die Kontakte ungleichmäßig sind, fügen Sie die Unterlegscheibe hinzu und setzen Sie das Board erneut ein. Die Openterface KVM Extension ist 1,0 mm dick, etwas dünner als das ursprüngliche LTE-Modul (1,2 mm). Die Verwendung der mitgelieferten Unterlegscheibe gewährleistet eine stabile Montage und zuverlässigen Federkontakt.  
-    ![extension-slot-loose](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-slot-loose.webp){:style="max-height:220px"}
+- Verwenden Sie einen Sechskantschraubendreher, um die beiden Befestigungsschrauben zu entfernen.
+- Heben Sie die Platine **gerade nach oben** an, um ein Verbiegen der Federkontakte zu vermeiden.
+- Bewahren Sie das Originalmodul und die Schrauben sicher auf, falls Sie es später wieder einbauen möchten.
 
-### **4. Board befestigen**
-Setzen Sie die Schrauben wieder ein und ziehen Sie sie **sanft** an — **nicht überdrehen**, da dies das Board beschädigen oder die Gewinde beschädigen könnte.
+### **3. Ethernet-Karte auswählen**
 
-![extension-screw-washer-installed](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installed.jpg){:style="max-height:220px"}
-![extension-screw-washer-installing](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installing.jpg){:style="max-height:220px"}
-![extension-install-1](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-install-1.webp){:style="max-height:220px"}
+Bevor Sie die Hauptplatine einsetzen, entscheiden Sie, welche Karte installiert werden soll:
+
+| Karte | Wann zu verwenden |
+|------|-------------------|
+| **100M** | Alle uConsole Basisplatinen — universelle Kompatibilität |
+| **1000M** | Nur wenn Sie das **HackerGadgets uConsole Upgrade-Kit** besitzen und Gigabit benötigen |
+
+Siehe [Ethernet-Anleitung](/products/kvmext/ethernet/) für alle Details.
+
+### **4. Erweiterungsmodul v2 installieren**
+
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+
+- Setzen Sie das Erweiterungsmodul v2 fest in den Erweiterungs-Slot ein.
+- Stellen Sie sicher, dass die Federkontakte gleichmäßig auf allen Pads anliegen.
+- Setzen Sie die Befestigungsschrauben wieder ein und ziehen Sie sie **leicht** an — nicht überdrehen.
 
 ### **5. Installation überprüfen**
-Das Board sollte **flach und stabil** sitzen, mit gleichmäßigem Federkontakt über alle Pads. Es sollte keine merkliche Wackelbewegung oder Bewegung geben.
 
-### **6. Erweiterungsslot-Abdeckung installieren**
-Installieren Sie die Erweiterungsslot-Abdeckung wieder, um das KVM Extension Board zu schützen und das ursprüngliche Aussehen des uConsole zu erhalten.
+Die Platine sollte **flach und stabil** sitzen, ohne erkennbares Wackeln. Alle Federkontakte sollten gleichmäßig andrücken.
 
-??? note "Textausrichtung auf der Erweiterungsslot-Abdeckung"
-    Der Text auf der Erweiterungsslot-Abdeckung kann aus bestimmten Blickwinkeln "auf dem Kopf" erscheinen. Dies ist ein absichtliches Design - der Text ist so ausgerichtet, dass er lesbar ist, wenn Sie den uConsole halten und die Ports von oben nach unten betrachten, was die natürliche Betrachtungsposition bei der Verwendung des Geräts ist.
-    ![expansion-slot-text-orientation](https://assets.openterface.com/images/products/openterface-kvm-uconsole-expansion-slot-text-orientation.webp){:style="max-height:220px"}
+### **6. Abdeckung des Erweiterungs-Slots installieren**
+
+Bringen Sie die Abdeckung des Erweiterungs-Slots wieder an, um das Modul zu schützen und das Erscheinungsbild des uConsole zu erhalten.
+
+??? note "Textausrichtung auf der Abdeckung des Erweiterungs-Slots"
+    Der Text auf der Abdeckung kann aus bestimmten Blickwinkeln auf dem Kopf stehend erscheinen. Er ist so ausgerichtet, dass er lesbar ist, wenn Sie den uConsole halten und die Anschlüsse von oben betrachten — die natürliche Position während der Nutzung.
 
 ---
 
 **Nächste Schritte**
 
-1. Gehen Sie zu [Software-Setup](/products/kvmext/software-setup/), um die Openterface App zu installieren.  
-2. Gehen Sie zu [Mit Zielgerät verbinden](/products/kvmext/connect-to-target/), um Ihr Zielgerät zu verbinden.  
-3. Überprüfen Sie [Funktionen & Spezifikationen](/products/kvmext/features/) für detaillierte technische Spezifikationen.
+1. [Software-Einrichtung](/products/kvmext/software-setup/) — installieren Sie die Openterface Host-App auf Ihrem uConsole
+2. [Mit Zielgerät verbinden](/products/kvmext/connect-to-target/) — HDMI + USB Verkabelung
+3. [Funktionen & Spezifikationen](/products/kvmext/features/) — vollständige technische Daten
+
+## Legacy v1 Installation
+
+Das Modell der ersten Generation (37 × 77 mm) verwendete Unterlegscheiben zum Ausgleich der Platinenstärke. Siehe [Legacy v1 — Hardware-Installation](/products/kvmext/v1/hardware-installation/).

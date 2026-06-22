@@ -1,37 +1,64 @@
 ---
-title: "Mit Zielgerät Verbinden"
-description: "Lernen Sie, wie Sie Ihr Zielgerät ile der Openterface KVM Extension for uConsole verbinden. Vollständige Kılavuz için USB-Steuerung ve Videoeingang-Setup nach Donanım-Kurulum ve Yazılım-Setup."
-keywords: "KVM-Bağlantıssetup, Zielgerät-Bağlantı, USB-Steuerungssetup, HDMI-Eingangssetup, uConsole KVM-Erweiterung Bağlantı"
+title: "Hedef Cihaza Bağlanma | Genişletme Modülü v2"
+description: "Openterface uConsole KVM Genişletme Modülü v2'yi HDMI, USB HID ve isteğe bağlı Ethernet üzerinden ağ hata ayıklaması için hedef cihazınıza bağlayın."
+keywords: "KVM bağlantı kurulumu, hedef cihaz, HDMI, USB HID, Ethernet hata ayıklama, uConsole KVM v2"
 ---
 
-# **Mit Zielgerät Verbinden** | Openterface KVM Extension for uConsole
+# **Hedef Cihaza Bağlanma** | Genişletme Modülü v2
 
-## Bağlantıshakkındasicht
+## Bağlantı genel bakış
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![kvmext-v2-use-case-2](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-2.webp){:style="max-height:480px"}
 
-## Voraussetzungen
+Genişletme Modülü v2, hedef cihazınıza **HDMI** (video/ses) ve **USB** (klavye/fare emülasyonu) üzerinden bağlanır. İsteğe bağlı olarak, KVM görüntü ve girişi yönetirken SSH, web yönetimi veya günlük yakalama için **Ethernet** kullanabilirsiniz.
 
-Bevor Sie Ihr Zielgerät verbinden, stellen Sie sicher, dass Sie folgendes abgeschlossen haben:
+## Önkoşullar
 
-1. [Donanım-Kurulum](/products/kvmext/hardware-installation/) - Physische Kurulum der KVM Extension-Karte
-2. [Yazılım-Setup](/products/kvmext/software-setup/) - Kurulum der Openterface App
+1. [Donanım Kurulumu](/products/kvmext/hardware-installation/) — modül genişletme yuvasına yerleştirildi
+2. [Yazılım Kurulumu](/products/kvmext/software-setup/) — Openterface QT uConsole'a yüklendi
+3. [Ethernet kartı seçildi](/products/kvmext/ethernet/) (ağ özellikleri kullanılıyorsa)
 
-## Bağlantısschritte
+## Bağlantı adımları
 
-### **USB-Steuerung**
-Verbinden Sie den Type-C-Buchsenport ile dem USB-Port des Zielgeräts, um Tastatur- ve Maussignale zu emulieren.
+### **USB kontrolü (KVM için gerekli)**
 
-### **Videoeingang**
-Verbinden Sie den Videoausgang des Zielgeräts ile dem HDMI-Port auf der KVM Extension:
+Genişletme kartının **Type-C portunu** hedef cihazın USB portuna bağlayın. Bu, klavye ve fareyi (USB HID) taklit eder.
 
-- Verwenden Sie ein Standard-HDMI-Kabel için HDMI-Ausgabegeräte
-- Verwenden Sie ein VGA-to-HDMI-Konverterkabel için VGA-Ausgabegeräte.
-    - *Hinweis*: Stellen Sie sicher, dass der Konverter hakkında seinen USB-Anschluss ile Strom versorgt wird için ordnungsgemäßen Betrieb.
-- Verwenden Sie andere geeignete Adapter için verschiedene Videosignaltypen
+Hedef cihazın HID kontrolü için sürücüye veya ek yazılıma ihtiyacı **yoktur**.
 
-## Bağlantı Testen
+### **Video girişi (KVM için gerekli)**
 
-1. Schalten Sie die Stromversorgung ein ve starten Sie das uConsole
-2. Führen Sie die Openterface QT App aus
-3. Testen Sie HDMI-, Audio- ve USB HID-Funktionalität, um ordnungsgemäßen Betrieb zu bestätigen
+Hedef cihazın HDMI çıkışını genişletme modülünün HDMI girişine bağlayın:
+
+- HDMI çıkışları için standart HDMI kablosu
+- VGA için **VGA-to-HDMI** dönüştürücü (dönüştürücü USB gücünün bağlı olduğundan emin olun)
+- DVI, DisplayPort, Micro HDMI için gerektiği gibi diğer adaptörler
+
+### **Ethernet (isteğe bağlı — ağ hata ayıklama)**
+
+Bir ağ kartı taktıysanız:
+
+- Karttan hedef cihazınıza veya ağ anahtarınıza bir Ethernet kablosu bağlayın
+- KVM ile birlikte SSH, web arayüzü veya günlük yakalama için uConsole'ı kullanın
+- 100M ve 1000M kurulumu için [Ethernet Kılavuzu](/products/kvmext/ethernet/) sayfasına bakın
+
+### **SD kart (isteğe bağlı — imaj alma ve dosyalar)**
+
+Modül yuvasına bir microSD kart takın. uConsole ve hedef cihaz arasında erişimi değiştirmek için ana uygulamayı kullanın. [SD Kart Kılavuzu](/products/kvmext/sd-card/) sayfasına bakın.
+
+## USB 2.0 paylaşımlı anahtarlama
+
+Ana uygulama, paylaşımlı bir USB 2.0 portunu uConsole ve hedef cihaz arasında değiştirebilir — kabloları çıkarmadan flash sürücüler ve bakım iş akışları için kullanışlıdır.
+
+## Bağlantıyı test etme
+
+1. uConsole'ı açın ve hedef cihazı başlatın
+2. Openterface QT'yi başlatın
+3. HDMI videosunun uConsole ekranında göründüğünü doğrulayın
+4. Klavye, trackball ve ses geçişini test edin
+5. SD veya USB anahtarlama kullanıyorsanız, ana uygulamada bağlama/anahtarlamayı test edin
+
+## İlgili
+
+- [Kullanım Senaryoları](/products/kvmext/use-cases/) — saha BT, ev laboratuvarı, gömülü hata ayıklama senaryoları
+- [SSS](/products/kvmext/faq/) — sorun giderme

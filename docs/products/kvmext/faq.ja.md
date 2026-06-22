@@ -1,153 +1,155 @@
 ---
-title: Openterface KVM Extension for uConsole よくある質問
-description: uConsole KVM Extensionに関するよくある質問、機能、互換性、トラブルシューティング、インストールについて。 Openterface KVM Extension for uConsoleのよくある質問へようこそ。…
-keywords: KVM拡張, uConsole KVM, トラブルシューティング, ビデオキャプチャ, USB HID, 互換性, インストール
+title: "FAQ | 拡張モジュール v2"
+description: "Openterface uConsole KVM 拡張モジュール v2 の FAQ：イーサネットカード、アップグレードキット、SD カード、ソフトウェアセットアップ、互換性、トラブルシューティング。"
+keywords: "KVM 拡張 v2 FAQ, uConsole KVM, イーサネット, SD カード, トラブルシューティング, アップグレードキット"
 ---
 
-# Openterface KVM Extension for uConsole よくある質問
+# FAQ | 拡張モジュール v2
 
-**Openterface KVM Extension for uConsole**のよくある質問へようこそ。  
-必要な情報が見つからない場合は、**[support@openterface.com](mailto:support@openterface.com)にメール**を送信するか、[Discord](/discord)で**コミュニティに参加**してください。
+**Openterface uConsole KVM 拡張モジュール v2** の FAQ へようこそ。
 
-⚠️ _よくある質問は古くなっている可能性があります—更新が必要な内容を見つけた場合はお知らせください。_
+お探しの情報が見つからない場合は、[support@openterface.com](mailto:support@openterface.com) までメールするか、[Discord](/discord) コミュニティにご参加ください。
+
 ---
 
 ## :material-clipboard-list: クイックナビゲーション
 
-- [Openterface KVM Extension for uConsole よくある質問](#openterface-kvm-extension-for-uconsole-よくある質問)
-  - [:material-clipboard-list: クイックナビゲーション](#material-clipboard-list-クイックナビゲーション)
-  - [インストールとハードウェア](#インストールとハードウェア)
-  - [互換性](#互換性)
-  - [制御と機能](#制御と機能)
-  - [ビデオとオーディオ](#ビデオとオーディオ)
-  - [トラブルシューティング](#トラブルシューティング)
-  - [その他](#その他)
+- [製品 & 購入](#製品--購入)
+- [取り付け & ハードウェア](#取り付け--ハードウェア)
+- [互換性](#互換性)
+- [操作 & 機能](#操作--機能)
+- [映像 & 音声](#映像--音声)
+- [トラブルシューティング](#トラブルシューティング)
+- [その他](#その他)
 
 ---
 
-## インストールとハードウェア
+## 製品 & 購入
 
-**:material-chat-question:{ .faq } KVM Extension Boardはどのように動作しますか？**
+**:material-chat-question:{ .faq } 拡張モジュール v2 は 1 つの製品ですか、それとも 2 つのネットワークバージョンですか？**
 
-ターゲットデバイスのHDMI出力をキャプチャし、uConsoleに表示します。同時に、uConsoleのキーボードとトラックボールがUSB HIDエミュレーションを通じてターゲットデバイスを制御します。
+**1 つの製品**です。100M と 1000M の両方のイーサネットカードが同梱されています。[購入オプション](/products/kvmext/purchase-options/) をご覧ください。
 
-**:material-chat-question:{ .faq } 4G/LTEモジュールがインストールされた状態でこれを使用できますか？**
+**:material-chat-question:{ .faq } どちらのイーサネットカードを使えばよいですか？**
 
-いいえ。このボードは同じ拡張スロットを占有します。セルラー接続またはKVM機能のいずれかを選択する必要があります。
+すべての uConsole ベースボードでは **100M** カードを使用してください。**1000M** カードは、**HackerGadgets uConsole アップグレードキット** を所有しており、ギガビットネットワーキングが必要な場合にのみ使用してください。[イーサネットガイド](/products/kvmext/ethernet/) をご覧ください。
 
-**:material-chat-question:{ .faq } なぜワッシャーが必要なのですか？**
+**:material-chat-question:{ .faq } HackerGadgets uConsole アップグレードキットは必要ですか？**
 
-KVM Extensionボードは1.0mmの厚さ（元の4G/LTEの1.2mmより薄い）です。ワッシャーはこの差を補償し、信頼性のある接続のために適切なスプリングコンタクタ圧力を確保します。
+**ギガビットイーサネット** の場合にのみ必要です。100M カードはアップグレードキットなしでも動作します。キットをお持ちでない場合は、チェックアウト時にバンドルオプションを選択するか、キットを別途購入してください。
 
-**:material-chat-question:{ .faq } インストールに必要なツールは何ですか？**
+**:material-chat-question:{ .faq } uConsole は付属していますか？**
 
-マウンティングスクリューを外してインストールするために六角スクリュードライバーが必要です。ESD予防措置（リストストラップまたは接地表面）が推奨されますが、必須ではありません。
+いいえ。ClockworkPi uConsole デバイスは別売りです。
 
-**:material-chat-question:{ .faq } インストールは可逆的ですか？**
+---
 
-はい、KVM Extensionボードを外して、いつでも元の4G/LTEモジュールを再インストールできます。元のモジュールとスクリューを安全な場所に保管してください。
+## 取り付け & ハードウェア
+
+**:material-chat-question:{ .faq } 拡張モジュール v2 はどのように動作しますか？**
+
+ターゲットデバイスから HDMI をキャプチャして uConsole に表示します。uConsole のキーボードとトラックボールは、USB HID エミュレーションを介してターゲットを制御します。オプションのイーサネットと SD カード機能で、ネットワークデバッグやイメージングのワークフローを拡張できます。
+
+**:material-chat-question:{ .faq } 4G/LTE モジュールが取り付けられた状態でも使用できますか？**
+
+いいえ。拡張モジュール v2 は uConsole の拡張スロットを使用するため、4G または LTE モジュールと同時に使用することは**できません**。
+
+**:material-chat-question:{ .faq } 取り付けにはどのような工具が必要ですか？**
+
+取り付けネジ用のヘックスドライバーが必要です。ESD 対策をお勧めします。
+
+**:material-chat-question:{ .faq } 取り付けは元に戻せますか？**
+
+はい。拡張モジュール v2 を取り外し、必要に応じて元の 4G/LTE モジュールを再取り付けできます。
 
 ---
 
 ## 互換性
 
-**:material-chat-question:{ .faq } どのuConsoleモデルが互換性がありますか？**
+**:material-chat-question:{ .faq } どの uConsole モデルに対応していますか？**
 
-標準の4G/LTE拡張スロットを備えたuConsoleデバイスと互換性があります。互換性を確認するためにデバイス仕様を確認してください。
+標準拡張スロットを備えた uConsole デバイスに対応しています。お使いのデバイスの仕様で確認してください。
 
-**:material-chat-question:{ .faq } どのターゲットデバイスを制御できますか？**
+**:material-chat-question:{ .faq } どのようなターゲットデバイスを制御できますか？**
 
-HDMI出力を持つ任意のデバイス、以下を含みます：
+HDMI 出力を備えたあらゆるデバイス：デスクトップ、サーバー、SBC（Raspberry Pi など）、組み込みシステム、産業用 PC など。
 
-- デスクトップコンピューターとサーバー
-- シングルボードコンピューター（ラズベリーパイなど）
-- 組み込みシステム
-- 産業用PC
-- ゲーム機
-- メディアプレーヤー
+**:material-chat-question:{ .faq } ターゲットに特別なソフトウェアは必要ですか？**
 
-**:material-chat-question:{ .faq } ターゲットデバイスに特別なソフトウェアが必要ですか？**
+いいえ。KVM は USB HID エミュレーションを使用するため、キーボードとマウス用にターゲット側にドライバは不要です。[USB ベース KVM 技術](/tutorial/kvm/01-getting-started/) について詳しくはこちら。
 
-ターゲットデバイスにソフトウェアインストールは必要ありません。KVM ExtensionはHDMI出力を持つ任意のデバイスで動作します。
+**:material-chat-question:{ .faq } 複数のターゲットを同時に制御できますか？**
 
-**:material-chat-question:{ .faq } 複数のターゲットデバイスを制御できますか？**
-
-一度に1つのターゲットデバイスを制御できます。デバイス間で切り替えるには、HDMIケーブルを外して別のターゲットデバイスに接続してください。
+KVM では一度に 1 つのターゲットです。HDMI ケーブルと USB ケーブルを切り替えてターゲットを変更してください。
 
 ---
 
-## 制御と機能
+## 操作 & 機能
 
-**:material-chat-question:{ .faq } どの入力方法がサポートされていますか？**
+**:material-chat-question:{ .faq } SD カード経由でファイルを転送できますか？**
 
-- マルチメディアキーを含む完全なキーボードエミュレーション
-- 絶対および相対マウス位置指定
-- コンピューター起動機能
-- HDMI経由のオーディオパススルー
+はい。拡張モジュール v2 は、Openterface アプリ経由のホスト/ターゲット切り替えによる SD カードの読み書きに対応しています。[SD カードガイド](/products/kvmext/sd-card/) をご覧ください。
 
-**:material-chat-question:{ .faq } uConsoleとターゲットデバイス間でファイルを転送できますか？**
+**:material-chat-question:{ .faq } BIOS レベルのアクセスに対応していますか？**
 
-KVM Extensionはビデオと入力制御のみを提供します。ファイル転送には、ネットワーク共有、USBドライブ、またはクラウドストレージなどの他の方法を使用する必要があります。
+はい。直接 USB HID により、ネットワーク依存なしの完全な BIOS/UEFI アクセスが可能です。
 
-**:material-chat-question:{ .faq } BIOSレベルアクセスをサポートしていますか？**
+**:material-chat-question:{ .faq } 旧モデルの v1 モジュールはどうですか？**
 
-はい、直接USB HIDエミュレーションにより、ネットワークベースのリモートアクセツールとは異なり、完全なBIOSレベル制御が可能です。
-
-**:material-chat-question:{ .faq } ゲームに使用できますか？**
-
-技術的には可能ですが、レイテンシと制御方法は高速ゲームには理想的ではないかもしれません。システム管理と開発タスクにより適しています。
+初代 37 × 77 mm モジュール（イーサネット/SD なし）は [Legacy v1 Docs](/products/kvmext/v1/) に記載されています。
 
 ---
 
-## ビデオとオーディオ
+## 映像 & 音声
 
-**:material-chat-question:{ .faq } どのビデオ解像度がサポートされていますか？**
+**:material-chat-question:{ .faq } 対応する映像解像度は？**
 
-拡張は標準HDMIビデオ入力を受け入れます。実際の表示解像度はuConsoleの画面機能に依存します。
+- **入力**：HDMI 経由で最大 4K @ 30 Hz（RGB/YCBCR444）または 4K @ 60 Hz（YCBCR420）
+- **出力**：uConsole 画面で 1080p @ 60 Hz
 
-**:material-chat-question:{ .faq } オーディオはサポートされていますか？**
+**:material-chat-question:{ .faq } 映像の遅延はどのくらいですか？**
 
-はい、HDMI埋め込みオーディオはuConsoleのスピーカーに渡されます。
+**70 ms 未満** — BIOS アクセス、メンテナンス、診断に適しています。
 
-**:material-chat-question:{ .faq } ビデオレイテンシはどうですか？**
+**:material-chat-question:{ .faq } 音声に対応していますか？**
 
-拡張はリアルタイムインタラクションとBIOSレベルトラブルシューティングに適した低レイテンシビデオを提供します。
-
-**:material-chat-question:{ .faq } 異なるビデオ出力用のアダプターを使用できますか？**
-
-はい、VGA、DVI、またはDisplayPort出力を持つデバイス用のHDMIアダプターを使用できます。
+はい。HDMI 埋め込み音声は uConsole スピーカーに出力されます。
 
 ---
 
 ## トラブルシューティング
 
-**:material-chat-question:{ .faq } ビデオ信号が表示されない**
+**:material-chat-question:{ .faq } 映像信号が出ない**
 
-- 両端のHDMIケーブル接続を確認
-- ターゲットデバイスが電源オンでHDMI経由の出力に設定されていることを確認
-- 異なるHDMIケーブルを試す
-- Openterface Appを再起動
+- 両端の HDMI 接続を確認
+- ターゲットの電源が入っており、HDMI 経由で出力していることを確認
+- 別の HDMI ケーブルを試す
+- Openterface QT を再起動
 
-**:material-chat-question:{ .faq } 制御入力が動作しない**
+**:material-chat-question:{ .faq } キーボードまたはマウスが動作しない**
 
-- KVM Extensionボードが適切に設置されていることを確認
-- スプリングコンタクタが良好な接触をしていることを確認
-- Openterface Appを再起動
-- ターゲットデバイスがUSB入力を認識していることを確認
+- 拡張モジュールからターゲットへの USB ケーブルを確認
+- uConsole を完全にシャットダウンし、10 秒待ってから電源を入れ直して再試行
+- Openterface QT（uConsole 用 arm64 ビルド）を再インストール
+- Linux ディストリビューションと CM4 モジュールを [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) または [Discord](https://openterface.com/discord) で報告
 
-**:material-chat-question:{ .faq } ボードが適切に収まらない**
+**:material-chat-question:{ .faq } ソフトウェアのインストールが難しい**
 
-- ワッシャーが適切に配置されていることを確認
-- スクリューが過度に締められていないことを確認
-- ボードが動きなく平らに座っていることを確認
-- 正しいマウンティングスクリューを使用していることを確認
+[ソフトウェアセットアップ](/products/kvmext/software-setup/) の GitHub Releases（オプション 1）または ClockworkPi コミュニティリポジトリ（オプション 3）を試してください。ステップバイステップのサポートは [Discord](https://openterface.com/discord) へ。
 
-**:material-chat-question:{ .faq } Appが拡張を検出しない**
+**:material-chat-question:{ .faq } USB 切り替えポートが動作しない**
 
-- ボードが適切にインストールされていることを確認
-- uConsoleを再起動
-- Openterface Appを再インストール
-- 正しいソフトウェアバージョンを使用していることを確認
+最新の Openterface QT リリースを使用していることを確認してください。ホストアプリで USB アクセスを切り替えてください。問題が続く場合は [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) で issue を作成してください。
+
+**:material-chat-question:{ .faq } HDMI が枠の中だけに表示される / アプリ設定メニューが表示されない**
+
+最新の Openterface QT にアップデートしてください。[ソフトウェアセットアップ](/products/kvmext/software-setup/) と Discord のコミュニティスレッドで、uConsole 固有の表示設定を確認してください。
+
+**:material-chat-question:{ .faq } アプリがモジュールを検出しない**
+
+- 拡張スロットにボードを再度装着
+- uConsole を再起動
+- Openterface QT を再インストール
 
 ---
 
@@ -155,10 +157,10 @@ KVM Extensionはビデオと入力制御のみを提供します。ファイル�
 
 **:material-chat-question:{ .faq } ソフトウェアはオープンソースですか？**
 
-はい！私たちの**Openterface Connect** Appsは完全にオープンソースで、[GitHubリポジトリ](https://github.com/TechxArtisanStudio/Openterface_QT)で利用できます。
+はい。Openterface ホストアプリは [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT) でオープンソースとして公開されています。
 
 **:material-chat-question:{ .faq } サポートはどこで受けられますか？**
 
-- **メール**: [support@openterface.com](mailto:support@openterface.com)
-- **Discord**: [コミュニティに参加](https://discord.gg/ruAD9kcYbq)
-- **GitHub**: [問題を報告](https://github.com/TechxArtisanStudio/Openterface_QT/issues)
+- **メール**：[support@openterface.com](mailto:support@openterface.com)
+- **Discord**：[コミュニティに参加](https://openterface.com/discord)
+- **GitHub**：[問題を報告](https://github.com/TechxArtisanStudio/Openterface_QT/issues)

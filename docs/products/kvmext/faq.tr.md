@@ -1,165 +1,166 @@
 ---
-title: FAQs için Openterface KVM Extension for uConsole
-description: Häufig gestellte Sorular zur KVM Extension için uConsole, die Özellikler, Kompatibilität, Fehlerbehebung ve Kurulum abdecken. Willkommen zu den FAQs için…
-keywords: KVM Extension, uConsole KVM, Fehlerbehebung, Videoaufnahme, USB HID, Kompatibilität, Kurulum
+title: "SSS | Extension Module v2"
+description: "Openterface uConsole KVM Extension Module v2 için SSS: Ethernet kartları, Upgrade Kit, SD kart, yazılım kurulumu, uyumluluk ve sorun giderme."
+keywords: "KVM genişletme v2 SSS, uConsole KVM, Ethernet, SD kart, sorun giderme, Upgrade Kit"
 ---
 
-# FAQs için Openterface KVM Extension for uConsole
+# SSS | Extension Module v2
 
-Willkommen zu den FAQs için unsere **Openterface KVM Extension for uConsole**.  
-Wenn Sie değil finden, was Sie brauchen, **mailen Sie uns unter [support@openterface.com](mailto:support@openterface.com)** veya **treten Sie unserer Community** auf [Discord](/discord) bei.
+**Openterface uConsole KVM Extension Module v2** SSS sayfasına hoş geldiniz.
 
-⚠️ _FAQs können veraltet sein — bitte lassen Sie uns wissen, wenn Sie etwas sehen, das aktualisiert werden muss._
-
----
-
-## :material-clipboard-list: Schnelle Navigation
-
-- [FAQs için Openterface KVM Extension for uConsole](#faqs-için-openterface-kvm-extension-for-uconsole)
-  - [:material-clipboard-list: Schnelle Navigation](#material-clipboard-list-schnelle-navigation)
-  - [Kurulum & Donanım](#installation--hardware)
-  - [Kompatibilität](#kompatibilität)
-  - [Steuerung & Özellikler](#steuerung--funktionen)
-  - [Video & Audio](#video--audio)
-  - [Fehlerbehebung](#fehlerbehebung)
-  - [Mehr](#mehr)
+İhtiyacınız olanı bulamazsanız [support@openterface.com](mailto:support@openterface.com) adresine e-posta gönderebilir veya [Discord](/discord) topluluğumuza katılabilirsiniz.
 
 ---
 
-## Kurulum & Donanım
+## :material-clipboard-list: Hızlı Gezinti
 
-**:material-chat-question:{ .faq } Wie funktioniert die KVM Extension Board?**
-
-Sie erfasst die HDMI-Ausgabe eines Zielgeräts ve zeigt sie auf dem uConsole an. Gleichzeitig werden die Tastatur ve das Trackball des uConsole verwendet, um das Zielgerät hakkında USB HID-Emulation zu steuern.
-
-**:material-chat-question:{ .faq } Kann ich das ile dem installierten 4G/LTE-Modul verwenden?**
-
-Nein. Diese Karte belegt denselben Erweiterungsslot. Sie müssen zwischen zellularer Konnektivität veya KVM-Funktionalität wählen.
-
-**:material-chat-question:{ .faq } Warum brauche ich die Unterlegscheiben?**
-
-Die KVM Extension Board ist 1,0 mm dick (dünner als das ursprüngliche 4G/LTE ile 1,2 mm). Die Unterlegscheiben kompensieren diesen Unterschied ve sorgen için ordnungsgemäßen Federkontaktor-Druck için zuverlässige Bağlantıen.
-
-**:material-chat-question:{ .faq } Welche Werkzeuge brauche ich için die Kurulum?**
-
-Sie benötigen einen Sechskantschraubendreher zum Entfernen ve Installieren der Montageschrauben. ESD-Vorsichtsmaßnahmen (Handgelenkband veya geerdete Oberfläche) werden empfohlen, sind aber değil erforderlich.
-
-**:material-chat-question:{ .faq } Ist die Kurulum reversibel?**
-
-Ja, Sie können die KVM Extension Board entfernen ve das ursprüngliche 4G/LTE-Modul jederzeit neu installieren. Bewahren Sie das ursprüngliche Modul ve die Schrauben an einem sicheren Ort auf.
+- [Ürün ve satın alma](#product--purchase)
+- [Kurulum ve donanım](#installation--hardware)
+- [Uyumluluk](#compatibility)
+- [Kontrol ve özellikler](#control--features)
+- [Video ve ses](#video--audio)
+- [Sorun giderme](#troubleshooting)
+- [Daha fazlası](#more)
 
 ---
 
-## Kompatibilität
+## Ürün ve satın alma
 
-**:material-chat-question:{ .faq } Welche uConsole-Modelle sind kompatibel?**
+**:material-chat-question:{ .faq } Extension Module v2 tek bir ürün mü yoksa iki ağ sürümü mü?**
 
-Kompatibel ile uConsole-Geräten, die den Standard-4G/LTE-Erweiterungsslot haben. Überprüfen Sie Ihre Gerätespezifikationen, um die Kompatibilität zu bestätigen.
+Bu **tek bir üründür**. Hem 100M hem de 1000M Ethernet kartları kutuya dahildir. [Satın Alma Seçenekleri](/products/kvmext/purchase-options/) sayfasına bakın.
 
-**:material-chat-question:{ .faq } Welche Zielgeräte kann ich steuern?**
+**:material-chat-question:{ .faq } Hangi Ethernet kartını kullanmalıyım?**
 
-Jedes Gerät ile HDMI-Ausgabe, einschließlich:
+Tüm uConsole temel kartlarında **100M** kartı kullanın. **1000M** kartı yalnızca **HackerGadgets uConsole Upgrade Kit**'e sahipseniz ve gigabit ağa ihtiyacınız varsa kullanın. [Ethernet Kılavuzu](/products/kvmext/ethernet/) sayfasına bakın.
 
-- Desktop-Computer ve Server
-- Einplatinencomputer (Raspberry Pi, etc.)
-- Eingebettete Systeme
-- Industrielle PCs
-- Spielkonsolen
-- Mediaplayer
+**:material-chat-question:{ .faq } HackerGadgets uConsole Upgrade Kit'e ihtiyacım var mı?**
 
-**:material-chat-question:{ .faq } Braucht das Zielgerät spezielle Yazılım?**
+Yalnızca **gigabit Ethernet** için. 100M kart, Upgrade Kit olmadan çalışır. Kite sahip değilseniz, ödeme sırasında paket seçeneğini seçin veya kiti ayrı olarak satın alın.
 
-Keine Yazılım-Kurulum ist auf dem Zielgerät erforderlich. Die KVM Extension funktioniert ile jedem Gerät, das eine HDMI-Ausgabe hat.
+**:material-chat-question:{ .faq } uConsole dahil mi?**
 
-**:material-chat-question:{ .faq } Kann ich mehrere Zielgeräte steuern?**
-
-Sie können ein Zielgerät gleichzeitig steuern. Um zwischen Geräten zu wechseln, trennen Sie das HDMI-Kabel ve verbinden Sie es ile einem anderen Zielgerät.
+Hayır. ClockworkPi uConsole cihazı ayrı olarak satılmaktadır.
 
 ---
 
-## Steuerung & Özellikler
+## Kurulum ve donanım
 
-**:material-chat-question:{ .faq } Welche Eingabemethoden werden unterstützt?**
+**:material-chat-question:{ .faq } Extension Module v2 nasıl çalışır?**
 
-- Vollständige Tastatur-Emulation einschließlich Multimediatasten
-- Absolute ve relative Mauspositionierung
-- Computer-Aufweckfunktion
-- Audio-Durchleitung hakkında HDMI
+Hedef cihazdan HDMI sinyalini yakalar ve uConsole üzerinde görüntüler. uConsole klavyesi ve trackball'u, USB HID emülasyonu aracılığıyla hedefi kontrol eder. İsteğe bağlı Ethernet ve SD kart özellikleri, ağ hata ayıklama ve kalıp alma iş akışlarını genişletir.
 
-**:material-chat-question:{ .faq } Kann ich Dateien zwischen uConsole ve Zielgerät hakkındatragen?**
+**:material-chat-question:{ .faq } Bunu 4G/LTE modülü takılıyken kullanabilir miyim?**
 
-Die KVM Extension bietet nur Video- ve Eingabesteuerung. Für Dateihakkındatragung müssen Sie andere Methoden wie Netzwerkfreigabe, USB-Laufwerke veya Cloud-Speicher verwenden.
+Hayır. Extension Module v2, uConsole genişletme yuvasını kullanır ve 4G veya LTE modülü ile **aynı anda** kullanılamaz.
 
-**:material-chat-question:{ .faq } Unterstützt es BIOS-Level-Zugriff?**
+**:material-chat-question:{ .faq } Kurulum için hangi araçlara ihtiyacım var?**
 
-Ja, direkte USB HID-Emulation ermöglicht vollständige BIOS-Level-Steuerung, anders als netzwerkbasierte Remote-Zugriffstools.
+Montaj vidaları için altıgen tornavida. ESD (Elektrostatik Deşarj) önlemleri alınması önerilir.
 
-**:material-chat-question:{ .faq } Kann ich es için Gaming verwenden?**
+**:material-chat-question:{ .faq } Kurulum geri alınabilir mi?**
 
-Obwohl technisch möglich, sind die Latenz ve die Steuerungsmethode möglicherweise değil ideal için schnelle Spiele. Es ist besser için Systemadministration ve Entwicklungsaufgaben geeignet.
+Evet. Gerekirse Extension Module v2'yi çıkarın ve orijinal 4G/LTE modülünüzü yeniden takın.
 
 ---
 
-## Video & Audio
+## Uyumluluk
 
-**:material-chat-question:{ .faq } Welche Videoauflösungen werden unterstützt?**
+**:material-chat-question:{ .faq } Hangi uConsole modelleri uyumludur?**
 
-Die Extension akzeptiert Standard-HDMI-Videoeingang. Die tatsächliche Anzeigeauflösung hängt von den Bildschirmfähigkeiten Ihres uConsole ab.
+Standart genişletme yuvasına sahip uConsole cihazlarıyla uyumludur. Onaylamak için cihaz özelliklerinizi kontrol edin.
 
-**:material-chat-question:{ .faq } Wird Audio unterstützt?**
+**:material-chat-question:{ .faq } Hangi hedef cihazları kontrol edebilirim?**
 
-Ja, eingebettetes HDMI-Audio wird an die Lautsprecher des uConsole weitergeleitet.
+HDMI çıkışı olan herhangi bir cihaz: masaüstü bilgisayarlar, sunucular, SBC'ler (Raspberry Pi vb.), gömülü sistemler, endüstriyel PC'ler ve daha fazlası.
 
-**:material-chat-question:{ .faq } Wie ist es ile Video-Latenz?**
+**:material-chat-question:{ .faq } Hedef cihazın özel yazılıma ihtiyacı var mı?**
 
-Die Extension bietet niedrige Latenz-Video, das için Echtzeit-Interaktion ve BIOS-Level-Fehlerbehebung geeignet ist.
+Hayır. KVM, USB HID emülasyonu kullanır — klavye ve fare için hedefte sürücü gerekmez. [USB tabanlı KVM teknolojisi](/tutorial/kvm/01-getting-started/) hakkında daha fazla bilgi edinin.
 
-**:material-chat-question:{ .faq } Kann ich Adapter için verschiedene Videoausgaben verwenden?**
+**:material-chat-question:{ .faq } Aynı anda birden fazla hedefi kontrol edebilir miyim?**
 
-Ja, Sie können HDMI-Adapter için Geräte ile VGA-, DVI- veya DisplayPort-Ausgängen verwenden.
-
----
-
-## Fehlerbehebung
-
-**:material-chat-question:{ .faq } Kein Videosignal erscheint**
-
-- Überprüfen Sie die HDMI-Kabelverbindung an beiden Enden
-- Stellen Sie sicher, dass das Zielgerät eingeschaltet ve auf HDMI-Ausgabe eingestellt ist
-- Versuchen Sie ein anderes HDMI-Kabel
-- Starten Sie die Openterface App neu
-
-**:material-chat-question:{ .faq } Steuereingabe funktioniert değil**
-
-- Stellen Sie sicher, dass die KVM Extension Board ordnungsgemäß installiert ist
-- Überprüfen Sie, dass die Federkontaktoren guten Kontakt haben
-- Starten Sie die Openterface App neu
-- Stellen Sie sicher, dass das Zielgerät USB-Eingang erkennt
-
-**:material-chat-question:{ .faq } Board passt değil richtig**
-
-- Stellen Sie sicher, dass die Unterlegscheiben ordnungsgemäß positioniert sind
-- Überprüfen Sie, dass die Schrauben değil hakkındadreht sind
-- Stellen Sie sicher, dass das Board flach ohne Bewegung sitzt
-- Stellen Sie sicher, dass Sie die richtigen Montageschrauben verwenden
-
-**:material-chat-question:{ .faq } App erkennt die Extension değil**
-
-- Überprüfen Sie, dass das Board ordnungsgemäß installiert ist
-- Starten Sie das uConsole neu
-- Installieren Sie die Openterface App neu
-- Stellen Sie sicher, dass Sie die richtige Yazılımversion verwenden
+KVM için bir seferde tek hedef. HDMI ve USB kablolarını taşıyarak hedefleri değiştirin.
 
 ---
 
-## Mehr
+## Kontrol ve özellikler
 
-**:material-chat-question:{ .faq } Ist die Yazılım Open Source?**
+**:material-chat-question:{ .faq } SD kart aracılığıyla dosya aktarabilir miyim?**
 
-Ja! Unsere **Openterface Connect** Apps sind vollständig Open Source ve verfügbar in unserem [GitHub-Repository](https://github.com/TechxArtisanStudio/Openterface_QT).
+Evet. Extension Module v2, Openterface uygulaması aracılığıyla ana bilgisayar/hedef geçişi ile SD kart okuma/yazma işlemlerini destekler. [SD Kart Kılavuzu](/products/kvmext/sd-card/) sayfasına bakın.
 
-**:material-chat-question:{ .faq } Wo kann ich Destek erhalten?**
+**:material-chat-question:{ .faq } BIOS seviyesinde erişimi destekliyor mu?**
 
-- **E-Mail**: [support@openterface.com](mailto:support@openterface.com)
-- **Discord**: [Treten Sie unserer Community bei](https://discord.gg/ruAD9kcYbq)
-- **GitHub**: [Probleme melden](https://github.com/TechxArtisanStudio/Openterface_QT/issues)
+Evet. Doğrudan USB HID, ağ bağımlılıkları olmadan tam BIOS/UEFI erişimine olanak tanır.
+
+**:material-chat-question:{ .faq } Peki ya eski v1 modülü?**
+
+Birinci nesil 37 × 77 mm modül (Ethernet/SD yok) [Eski v1 Belgeleri](/products/kvmext/v1/) sayfasında belgelenmiştir.
+
+---
+
+## Video ve ses
+
+**:material-chat-question:{ .faq } Hangi video çözünürlükleri desteklenir?**
+
+- **Giriş**: HDMI üzerinden 4K @ 30 Hz (RGB/YCBCR444) veya 4K @ 60 Hz (YCBCR420)'e kadar
+- **Çıkış**: uConsole ekranında 1080p @ 60 Hz
+
+**:material-chat-question:{ .faq } Video gecikme süresi nedir?**
+
+**70 ms**'nin altında — BIOS erişimi, bakım ve tanılama için uygundur.
+
+**:material-chat-question:{ .faq } Ses destekleniyor mu?**
+
+Evet. HDMI gömülü sesi uConsole hoparlörlerine aktarılır.
+
+---
+
+## Sorun Giderme
+
+**:material-chat-question:{ .faq } Video sinyali yok**
+
+- Her iki uçtaki HDMI bağlantılarını kontrol edin
+- Hedef cihazın gücünün açık olduğunu ve HDMI üzerinden çıkış verdiğini doğrulayın
+- Farklı bir HDMI kablosu deneyin
+- Openterface QT'yi yeniden başlatın
+
+**:material-chat-question:{ .faq } Klavye veya fare çalışmıyor**
+
+- Genişletme modülünden hedefe giden USB kablosunu doğrulayın
+- uConsole'u tamamen kapatın, 10 saniye bekleyin, açın ve yeniden deneyin
+- Openterface QT'yi yeniden yükleyin (uConsole'unuz için arm64 derlemesi)
+- Linux dağıtımınızı ve CM4 modülünüzü [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) veya [Discord](https://openterface.com/discord) üzerinden bildirin
+
+**:material-chat-question:{ .faq } Yazılımı kurmak zordu**
+
+[Yazılım Kurulumu](/products/kvmext/software-setup/) sayfasındaki GitHub Sürümlerini (Seçenek 1) veya ClockworkPi topluluk deposunu (Seçenek 3) deneyin. Adım adım yardım için [Discord](https://openterface.com/discord)'a katılın.
+
+**:material-chat-question:{ .faq } USB geçiş portu çalışmıyor**
+
+Güncel bir Openterface QT sürümünü kullandığınızdan emin olun. Ana bilgisayar uygulamasında USB erişimini açıp kapatın. Sorun devam ederse, [GitHub](https://github.com/TechxArtisanStudio/Openterface_QT/issues) üzerinden bir sorun bildirin.
+
+**:material-chat-question:{ .faq } HDMI yalnızca bir kutu içinde görüntüleniyor / uygulama ayarları menüsü yok**
+
+En son Openterface QT sürümüne güncelleyin. uConsole'a özgü ekran ayarları için [Yazılım Kurulumu](/products/kvmext/software-setup/) ve Discord'daki topluluk başlıklarını kontrol edin.
+
+**:material-chat-question:{ .faq } Uygulama modülü algılamıyor**
+
+- Kartı genişletme yuvasına yeniden takın
+- uConsole'u yeniden başlatın
+- Openterface QT'yi yeniden yükleyin
+
+---
+
+## Daha Fazlası
+
+**:material-chat-question:{ .faq } Yazılım açık kaynak mı?**
+
+Evet. Openterface ana bilgisayar uygulamaları [GitHub — Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT) üzerinde açık kaynaktır.
+
+**:material-chat-question:{ .faq } Nereden destek alabilirim?**
+
+- **E-posta**: [support@openterface.com](mailto:support@openterface.com)
+- **Discord**: [Topluluğumuza katılın](https://openterface.com/discord)
+- **GitHub**: [Sorun bildirin](https://github.com/TechxArtisanStudio/Openterface_QT/issues)

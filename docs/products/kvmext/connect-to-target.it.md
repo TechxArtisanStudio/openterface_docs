@@ -1,37 +1,64 @@
 ---
-title: "Connettersi al Dispositivo Target"
-description: "Impara come connettere il tuo dispositivo target all'Openterface KVM Extension for uConsole. Guida completa per la configurazione del controllo USB e dell'ingresso video dopo l'installazione hardware e la configurazione software."
-keywords: "configurazione connessione KVM, connessione dispositivo target, configurazione controllo USB, configurazione ingresso HDMI, connessione estensione KVM uConsole"
+title: "Connessione al Dispositivo Target | Modulo di Estensione v2"
+description: "Collega il tuo dispositivo target all'Openterface uConsole KVM Extension Module v2 tramite HDMI, USB HID ed Ethernet opzionale per il debug di rete."
+keywords: "configurazione connessione KVM, dispositivo target, HDMI, USB HID, debug Ethernet, uConsole KVM v2"
 ---
 
-# **Connettersi al Dispositivo Target** | Openterface KVM Extension for uConsole
+# **Connessione al Dispositivo Target** | Modulo di Estensione v2
 
-## Panoramica della Connessione
+## Panoramica della connessione
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![kvmext-v2-use-case-2](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-2.webp){:style="max-height:480px"}
+
+Il Modulo di Estensione v2 si collega al tuo target tramite **HDMI** (video/audio) e **USB** (emulazione di tastiera/mouse). Opzionalmente utilizza **Ethernet** per SSH, gestione web o cattura dei log mentre il KVM gestisce display e input.
 
 ## Prerequisiti
 
-Prima di connettere il tuo dispositivo target, assicurati di aver completato:
+1. [Installazione Hardware](/products/kvmext/hardware-installation/) — modulo inserito nello slot di espansione
+2. [Configurazione Software](/products/kvmext/software-setup/) — Openterface QT installato su uConsole
+3. [Scheda Ethernet scelta](/products/kvmext/ethernet/) (se si utilizzano le funzionalità di rete)
 
-1. [Installazione Hardware](/products/kvmext/hardware-installation/) - Installazione fisica della scheda Extension KVM
-2. [Configurazione Software](/products/kvmext/software-setup/) - Installazione dell'App Openterface
+## Passaggi per la connessione
 
-## Passaggi di Connessione
+### **Controllo USB (richiesto per KVM)**
 
-### **Controllo USB**
-Collega la porta femmina Type-C alla porta USB del dispositivo target per emulare i segnali di tastiera e mouse.
+Collega la **porta Type-C** della scheda di estensione alla porta USB del dispositivo target. Questo emula tastiera e mouse (USB HID).
 
-### **Ingresso Video**
-Collega l'uscita video del dispositivo target alla porta HDMI sull'Extension KVM:
+Il dispositivo target **non** richiede driver o software aggiuntivo per il controllo HID.
 
-- Usa un cavo HDMI standard per dispositivi con uscita HDMI
-- Usa un cavo convertitore VGA-to-HDMI per dispositivi con uscita VGA.
-    - *Nota*: Assicurati che il convertitore sia alimentato tramite il suo connettore USB per un funzionamento corretto.
-- Usa altri adattatori appropriati per diversi tipi di segnali video
+### **Ingresso video (richiesto per KVM)**
 
-## Test della Connessione
+Collega l'uscita HDMI del target all'ingresso HDMI del modulo di estensione:
 
-1. Accendi l'alimentazione e avvia l'uConsole
-2. Esegui l'app Openterface QT
-3. Testa le funzionalità HDMI, audio e USB HID per confermare il funzionamento corretto
+- Cavo HDMI standard per uscite HDMI
+- Convertitore **VGA-to-HDMI** per VGA (assicurati che l'alimentazione USB del convertitore sia collegata)
+- Altri adattatori per DVI, DisplayPort, Micro HDMI secondo necessità
+
+### **Ethernet (opzionale — debug di rete)**
+
+Se hai installato una scheda di rete:
+
+- Collega un cavo Ethernet dalla scheda al tuo dispositivo target o allo switch di rete
+- Usa l'uConsole per SSH, interfaccia web o cattura dei log insieme al KVM
+- Consulta la [Guida Ethernet](/products/kvmext/ethernet/) per la configurazione 100M vs 1000M
+
+### **Scheda SD (opzionale — imaging e file)**
+
+Inserisci una scheda microSD nello slot del modulo. Usa l'app host per commutare l'accesso tra uConsole e target. Consulta la [Guida Scheda SD](/products/kvmext/sd-card/).
+
+## Commutazione condivisa USB 2.0
+
+L'app host può commutare una porta USB 2.0 condivisa tra l'uConsole e il target — utile per unità flash e flussi di lavoro di manutenzione senza scollegare i cavi.
+
+## Test della connessione
+
+1. Accendi l'uConsole e avvia il dispositivo target
+2. Avvia Openterface QT
+3. Verifica che il video HDMI appaia sullo schermo dell'uConsole
+4. Testa tastiera, trackball e passthrough audio
+5. Se utilizzi la commutazione SD o USB, testa il montaggio/la commutazione nell'app host
+
+## Correlati
+
+- [Casi d'Uso](/products/kvmext/use-cases/) — scenari di IT sul campo, homelab, debug embedded
+- [FAQ](/products/kvmext/faq/) — risoluzione dei problemi

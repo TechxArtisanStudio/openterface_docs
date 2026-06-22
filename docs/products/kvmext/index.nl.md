@@ -1,23 +1,29 @@
 ---
-title: "Openterface KVM Extension for uConsole | Tragbare KVM-Konsolen-Lösung"
-description: "Verwandeln Sie Ihr uConsole met dieser Plug-and-Play-Erweiterungskarte in eine tragbare KVM-Konsole. Direkte HDMI-Eingabe en USB HID-Steuerung voor die Verwaltung von Headless-Geräten unterwegs."
-keywords: "KVM-Erweiterung, uConsole KVM, tragbare KVM, HDMI KVM, USB HID-Steuerung, Headless-Steuerung, 4G LTE-Ersatz, uConsole-Erweiterung, mobile KVM-Konsole"
+title: "Openterface uConsole KVM Extensiemodule v2 | Draagbare KVM Console"
+description: "Transformeer je uConsole in een draagbare KVM-console, netwerkdebugterminal en SD-kaarthulpprogramma met Extensiemodule v2. HDMI-ingang, USB HID, dubbele Ethernet en SD lezen/schrijven."
+keywords: "KVM-extensie v2, uConsole KVM, draagbare KVM, HDMI KVM, USB HID, Ethernet-uitbreiding, SD-kaart, headless bediening, uConsole-uitbreiding"
 ---
 
-# **Openterface KVM Extension for uConsole**
+# **Openterface uConsole KVM Extensiemodule v2**
 
-{% include "partials/uconsole-kvm-slideshow.html" %}
+![kvmext-v2-hero-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-hero-1.webp){:style="max-height:360px"}
+![kvmext-v2-use-case-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-1.webp){:style="max-height:360px"}
 
 <div class="slogan-highlight">
-  <h2 class="slogan-text">Verwandeln Sie Ihr uConsole in eine Tragbare KVM-Konsole</h2>
-  <div class="slogan-subtitle">Einstecken. Steuern. Überall.</div>
+  <h2 class="slogan-text">Transformeer je uConsole in een draagbare KVM-console</h2>
+  <div class="slogan-subtitle">KVM. Netwerk. SD-kaart. Eén uitbreidingsslot.</div>
 </div>
 
-Die **Openterface KVM Extension** ersetzt das ursprüngliche 4G/LTE-Modem im Erweiterungsslot Ihres uConsole en bietet direkte **HDMI-Eingabe en USB HID-Steuerung**, sodass Sie Headless-Geräte unterwegs verwalten können—ohne externe Monitore, Tastaturen of Netzwerkkonfiguration. Sie ermöglicht auch **BIOS-Level-Zugriff**, sodass Sie Zielgeräte einfach beheben en konfigurieren können.
+De **Openterface uConsole KVM Extensiemodule v2** wordt in het uitbreidingsslot van je uConsole geplaatst en verandert deze in een draagbare **KVM-console**, **netwerkdebugterminal** en **SD-kaarthulpprogramma-module**. Krijg directe **HDMI-ingang**, **USB HID-toetsenbord- en muisbediening**, **Ethernet-uitbreiding** (100M- en 1000M-kaarten inbegrepen), **SD-kaart lezen/schrijven** en **USB 2.0 gedeelde switching** — rechtstreeks gevoed via het slot, zonder externe adapter.
+
+Gebouwd voor IT-professionals, homelab-bouwers, embedded ontwikkelaars en veldtechnici die BIOS-niveau toegang, netwerkonderhoud en SD-imaging nodig hebben zonder extra monitoren, toetsenborden of kaartlezers mee te dragen.
+
+!!! note "Eén SKU — beide netwerkkaarten inbegrepen"
+    Extensiemodule v2 wordt geleverd met **zowel** de 100M- als 1000M-Ethernet-kaarten in de doos. Het is één product, niet twee afzonderlijke netwerkversies. Zie [Aankoopopties](/products/kvmext/purchase-options/) en [Ethernet-gids](/products/kvmext/ethernet/).
 
 <div style="text-align: center; margin: 20px 0;">
   <button class="md-button" onclick="window.open('https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole', '_blank')">
-    JETZT BESTELLEN
+    Bestel NU
     <img
       class="skip-lightbox"
       src="https://assets.openterface.com/images/trademark/txa.svg"
@@ -29,47 +35,55 @@ Die **Openterface KVM Extension** ersetzt das ursprüngliche 4G/LTE-Modem im Erw
 
 <div class="grid cards" markdown>
 
--   :material-feature-search-outline:{ .lg } __Spezifikationen en Functies__
+-   :material-feature-search-outline:{ .lg } __Specificaties & Functies__
 
     ---
 
-    Entdecken Sie die leistungsstarken Functies der KVM Extension
+    Ontdek de mogelijkheden van Extensiemodule v2
 
-    [:octicons-arrow-right-24: Was ist in der Box](/products/kvmext/whats-in-the-box/)
+    [:octicons-arrow-right-24: Wat zit er in de doos](/products/kvmext/whats-in-the-box/)
 
-    [:octicons-arrow-right-24: Functies Anzeigen](/products/kvmext/features)
+    [:octicons-arrow-right-24: Bekijk functies](/products/kvmext/features/)
 
-    [:octicons-arrow-right-24: Hardware-Installatie](/products/kvmext/hardware-installation)
+    [:octicons-arrow-right-24: Ethernet-gids](/products/kvmext/ethernet/)
+
+    [:octicons-arrow-right-24: SD-kaartgids](/products/kvmext/sd-card/)
+
+    [:octicons-arrow-right-24: Hardware-installatie](/products/kvmext/hardware-installation/)
 
 
--   :material-power-plug:{ .lg } __Verwendung__
+-   :material-power-plug:{ .lg } __Hoe te gebruiken__
 
     ---
 
-    Lernen Sie, wie Sie Ihr Zielgerät einrichten en steuern
+    Stel je doelapparaat in en bedien het
 
-    [:octicons-arrow-right-24: Host App Herunterladen en Installieren](/app)
+    [:octicons-arrow-right-24: Host-app downloaden & installeren](/app)
 
-    [:octicons-arrow-right-24: Software-Einrichtung](/products/kvmext/software-setup)
+    [:octicons-arrow-right-24: Software-installatie](/products/kvmext/software-setup/)
 
-    [:octicons-arrow-right-24: FAQ Anzeigen](/products/kvmext/faq)
+    [:octicons-arrow-right-24: Verbinding maken met doel](/products/kvmext/connect-to-target/)
+
+    [:octicons-arrow-right-24: Veelgestelde vragen bekijken](/products/kvmext/faq/)
 
 </div>
 
 
 <div class="grid cards" markdown>
 
--   :material-calendar-star:{ .lg } __Updates en Community__
+-   :material-calendar-star:{ .lg } __Updates & Community__
 
     ---
 
-    [:material-newspaper-variant-outline: Product-Updates](/products/kvmext/updates/) / [:material-account-group-outline: Community-Ondersteuning](/discord) / [:material-play-circle-outline: YouTube Videos](/nl/videos/?p=uconsole-kvm-extension)
+    [:material-newspaper-variant-outline: Productupdates](/products/kvmext/updates/) / [:material-account-group-outline: Community-ondersteuning](/discord) / [:material-play-circle-outline: YouTube-video's](/videos/?p=uconsole-kvm-extension)
 
 </div>
+
+!!! info "Eigenaars van de eerste generatie (v1)"
+    Documentatie voor de originele 37 × 77 mm KVM-extensie (zonder Ethernet/SD) is gearchiveerd op [Legacy v1 Docs](/products/kvmext/v1/).
 
 {% include "partials/product-signup.html" %}
 
 <div markdown="0">
-{% include "partials/videos-grid-uconsole-kvm-extension.de.html" %}
+{% include "partials/videos-grid-uconsole-kvm-extension.html" %}
 </div>
-

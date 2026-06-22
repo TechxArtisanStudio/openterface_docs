@@ -1,37 +1,64 @@
 ---
-title: "Mit Zielgerät Verbinden"
-description: "Lernen Sie, wie Sie Ihr Zielgerät с der Openterface KVM Extension for uConsole verbinden. Vollständige Руководство для USB-Steuerung и Videoeingang-Setup nach Оборудование-Установка и Программное обеспечение-Setup."
-keywords: "KVM-Подключениеssetup, Zielgerät-Подключение, USB-Steuerungssetup, HDMI-Eingangssetup, uConsole KVM-Erweiterung Подключение"
+title: "Подключение к целевому устройству | Модуль расширения v2"
+description: "Подключите целевое устройство к модулю расширения Openterface uConsole KVM v2 через HDMI, USB HID и опционально Ethernet для сетевой отладки."
+keywords: "настройка KVM-подключения, целевое устройство, HDMI, USB HID, отладка по Ethernet, uConsole KVM v2"
 ---
 
-# **Mit Zielgerät Verbinden** | Openterface KVM Extension for uConsole
+# **Подключение к целевому устройству** | Модуль расширения v2
 
-## Подключениеsоsicht
+## Обзор подключения
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![kvmext-v2-use-case-2](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-2.webp){:style="max-height:480px"}
 
-## Voraussetzungen
+Модуль расширения v2 подключается к целевому устройству через **HDMI** (видео/аудио) и **USB** (эмуляция клавиатуры/мыши). Опционально используйте **Ethernet** для SSH, веб-управления или захвата логов, в то время как KVM обрабатывает дисплей и ввод.
 
-Bevor Sie Ihr Zielgerät verbinden, stellen Sie sicher, dass Sie folgendes abgeschlossen haben:
+## Предварительные требования
 
-1. [Оборудование-Установка](/products/kvmext/hardware-installation/) - Physische Установка der KVM Extension-Karte
-2. [Программное обеспечение-Setup](/products/kvmext/software-setup/) - Установка der Openterface App
+1. [Установка оборудования](/products/kvmext/hardware-installation/) — модуль установлен в слот расширения
+2. [Настройка программного обеспечения](/products/kvmext/software-setup/) — Openterface QT установлен на uConsole
+3. [Выбрана сетевая карта](/products/kvmext/ethernet/) (при использовании сетевых функций)
 
-## Подключениеsschritte
+## Шаги подключения
 
-### **USB-Steuerung**
-Verbinden Sie den Type-C-Buchsenport с dem USB-Port des Zielgeräts, um Tastatur- и Maussignale zu emulieren.
+### **USB-управление (требуется для KVM)**
 
-### **Videoeingang**
-Verbinden Sie den Videoausgang des Zielgeräts с dem HDMI-Port auf der KVM Extension:
+Подключите **порт Type-C** платы расширения к USB-порту целевого устройства. Это эмулирует клавиатуру и мышь (USB HID).
 
-- Verwenden Sie ein Standard-HDMI-Kabel для HDMI-Ausgabegeräte
-- Verwenden Sie ein VGA-to-HDMI-Konverterkabel для VGA-Ausgabegeräte.
-    - *Hinweis*: Stellen Sie sicher, dass der Konverter о seinen USB-Anschluss с Strom versorgt wird для ordnungsgemäßen Betrieb.
-- Verwenden Sie andere geeignete Adapter для verschiedene Videosignaltypen
+Целевому устройству **не требуются** драйверы или дополнительное программное обеспечение для управления HID.
 
-## Подключение Testen
+### **Видеовход (требуется для KVM)**
 
-1. Schalten Sie die Stromversorgung ein и starten Sie das uConsole
-2. Führen Sie die Openterface QT App aus
-3. Testen Sie HDMI-, Audio- и USB HID-Funktionalität, um ordnungsgemäßen Betrieb zu bestätigen
+Подключите HDMI-выход целевого устройства к HDMI-входу модуля расширения:
+
+- Стандартный HDMI-кабель для HDMI-выходов
+- **VGA-to-HDMI** конвертер для VGA (убедитесь, что USB-питание конвертера подключено)
+- Другие адаптеры для DVI, DisplayPort, Micro HDMI по необходимости
+
+### **Ethernet (опционально — сетевая отладка)**
+
+Если вы установили сетевую карту:
+
+- Подключите Ethernet-кабель от карты к целевому устройству или сетевому коммутатору
+- Используйте uConsole для SSH, веб-интерфейса или захвата логов вместе с KVM
+- См. [Руководство по Ethernet](/products/kvmext/ethernet/) для настройки 100M и 1000M
+
+### **SD-карта (опционально — образы и файлы)**
+
+Вставьте карту microSD в слот модуля. Используйте хост-приложение для переключения доступа между uConsole и целевым устройством. См. [Руководство по SD-карте](/products/kvmext/sd-card/).
+
+## Переключение общего порта USB 2.0
+
+Хост-приложение может переключать общий порт USB 2.0 между uConsole и целевым устройством — полезно для флеш-накопителей и рабочих процессов обслуживания без отсоединения кабелей.
+
+## Тестирование подключения
+
+1. Включите uConsole и загрузите целевое устройство
+2. Запустите Openterface QT
+3. Убедитесь, что HDMI-видео отображается на экране uConsole
+4. Проверьте клавиатуру, трекбол и сквозную передачу аудио
+5. При использовании SD или USB-переключения проверьте монтирование/переключение в хост-приложении
+
+## Связанные материалы
+
+- [Варианты использования](/products/kvmext/use-cases/) — сценарии полевого IT, домашней лаборатории, встраиваемой отладки
+- [Часто задаваемые вопросы](/products/kvmext/faq/) — устранение неполадок

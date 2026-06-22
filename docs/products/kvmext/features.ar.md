@@ -1,53 +1,63 @@
 ---
-title: "الميزات و Spezifikationen"
-description: "Vollständige نظرة عامة der Openterface KVM Extension for uConsole: leistungsstarke الميزات einschließlich direkter HDMI-Eingang, USB HID-Steuerung, perfekter Formfaktor و detaillierte technische Spezifikationen. Alles was Sie حول diese tragbare KVM-Lösung wissen müssen."
-keywords: "KVM Extension الميزات, uConsole KVM, HDMI KVM, USB HID Steuerung, tragbare KVM, headless Steuerung, 4G LTE Ersatz, technische Spezifikationen, uConsole Erweiterung"
+title: "الميزات والمواصفات | وحدة التوسعة v2"
+description: "نظرة عامة شاملة على وحدة توسعة Openterface uConsole KVM v2: HDMI KVM، إيثرنت مزدوج، بطاقة SD، تبديل USB، والمواصفات التقنية."
+keywords: "ميزات وحدة توسعة KVM v2، uConsole KVM، HDMI KVM، توسيع إيثرنت، بطاقة SD، KVM محمول، مواصفات تقنية"
 ---
 
-# **الميزات و Spezifikationen** | Openterface KVM Extension for uConsole
+# **الميزات والمواصفات** | وحدة التوسعة v2
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
-## Kernfunktionen
+## الميزات الأساسية
 
-- **Direkter HDMI + USB HID**: Nutzen Sie den eingebauten Bildschirm و die Steuerungen des uConsole مع direktem HDMI-Eingang و USB HID-Emulation.
-- **Plug-and-Play**: Sofortige Steuerung ohne البرمجياتinstallation أو Rückstände auf dem Zielgerät.
-- **Niedrige Latenz**: Optimiert لـ BIOS-Level-Fehlerbehebung و Echtzeit-Interaktionen.
-- **Tragbar**: All-in-One-Mobiltool—keine zusätzlichen Monitore, Tastaturen أو Netzwerkeinrichtung erforderlich.
-- **Netzwerkfrei**: Stabile headless-Steuerung حول HDMI-Capture و HID-Eingang, kein Netzwerk erforderlich.
-- **Textحولtragung**: Übertragen Sie schnell Text durch Simulation von Tastenanschlägen—ideal لـ Benutzernamen, Passwörter و Codeschnipsel. Unterstützt vollständiges ASCII, einschließlich Symbole و Satzzeichen. [Überprüfen Sie unsere App](/app) لـ Details.
-- **Open Source**: Basiert auf [Openterface KVM QT](https://github.com/techxArtisanStudio/openterface_qt) مع aktiver Community-Unterstützung.
+- **التحكم المباشر عبر KVM**: عرض والتحكم في الجهاز الهدف من خلال إدخال HDMI ومحاكاة لوحة المفاتيح/الفأرة عبر USB HID — مثالي للوصول إلى BIOS، وتثبيت نظام التشغيل، واستعادة الخوادم بدون شاشة.
+- **دعم بطاقتي شبكة**: تتضمن بطاقتي إيثرنت **100M** و **1000M**. استخدم 100M مع جميع اللوحات الأساسية لـ uConsole؛ واستخدم 1000M مع [HackerGadgets uConsole Upgrade Kit](https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole) للحصول على شبكات جيجابت.
+- **قراءة/كتابة بطاقة SD**: كتابة الصور، وتصدير السجلات، ونقل الملفات من uConsole الخاص بك دون الحاجة إلى قارئ بطاقات خارجي.
+- **تبديل USB 2.0 المشترك**: تبديل وصول USB بين uConsole والجهاز الهدف لتصحيح الأخطاء والصيانة بمرونة.
+- **زمن استجابة منخفض**: زمن استجابة الفيديو أقل من **70 مللي ثانية** مع إخراج **1080p @ 60 Hz** إلى شاشة uConsole.
+- **محمول ويعمل عبر الفتحة**: تصميم مدمج بأبعاد **77.3 × 34.7 مم**، يعمل بالطاقة من فتحة توسعة uConsole — لا حاجة إلى محول طاقة خارجي.
+- **متوافق مع المصدر المفتوح**: مبني على منصة Openterface KVM مع تطبيقات مضيفة مفتوحة ودعم المجتمع.
 
-## Technische Spezifikationen
+## المواصفات التقنية
 
-### Physikalische Abmessungen
+| العنصر | المواصفة |
+|------|---------------|
+| **اسم المنتج** | Openterface uConsole KVM Extension Module v2 |
+| **حجم اللوحة** | 77.3 × 34.7 مم |
+| **إدخال الفيديو** | HDMI حتى 4K @ 30 Hz (RGB/YCBCR444) أو 4K @ 60 Hz (YCBCR420) |
+| **إخراج الفيديو** | 1080p @ 60 Hz إلى شاشة uConsole |
+| **زمن الاستجابة** | &lt; 70 مللي ثانية |
+| **التحكم عبر KVM** | محاكاة لوحة المفاتيح والفأرة عبر USB HID |
+| **الشبكة** | 100M تعمل مع جميع اللوحات الأساسية لـ uConsole؛ تتطلب 1000M مجموعة ترقية uConsole |
+| **بطاقة SD** | قراءة/كتابة مع تبديل المضيف/الهدف عبر تطبيق المضيف |
+| **مشاركة USB** | تبديل مشترك لـ USB 2.0 Full Speed (12 Mbps) |
+| **منصات الهدف** | Windows، macOS، Linux، أنظمة x86، حواسيب ARM ذات اللوحة الواحدة |
+| **الطاقة** | تعمل بالطاقة من فتحة توسعة uConsole |
+| **الطاقة الخارجية** | غير مطلوبة |
 
-- **Größe:** 37 × 77 mm (entspricht 4G/LTE-Modul)
-- **Dicke:** 1,0 mm (dünner als das ursprüngliche 4G/LTE-Modul مع 1,2 mm)
-- **Material:** Hochwertige PCB مع Federkontakten
+### محاكاة كاملة للوحة المفاتيح والفأرة
 
-### Vollständige Tastatur- و Maus-Emulation
+- **USB HID**: تحديد موضع الفأرة المطلق والنسبي، دعم كامل للوحة المفاتيح، مفاتيح الوسائط المتعددة.
+- **الاتصال**: رابط USB بالهدف عبر منفذ Type-C الخاص بلوحة التوسعة.
 
-- **USB HID:** Absolute و relative Mauspositionierung, vollständige Tastaturunterstützung, Multimediatasten.
-- **الاتصال:** USB-الاتصال zum Ziel حول den Type-C-Stecker-Port der Erweiterungskarte.
+### الفيديو والصوت
 
-### Video و Audio
+- **الإدخال**: حتى 4K عبر HDMI (انظر الجدول أعلاه للتفاصيل حول الأوضاع)
+- **الإخراج**: Full HD 1080p @ 60 Hz مع زمن استجابة أقل من 70 مللي ثانية
+- **العرض**: يستخدم شاشة uConsole المدمجة
+- **الضغط**: دعم YUV و MJPEG
+- **التوافق**: VGA، DVI، Micro HDMI (عبر المحولات)
+- **الصوت**: تمرير صوت HDMI المدمج
 
-- **Eingang:** Bis zu 4K (3840×2160) @ 30Hz حول HDMI
-- **Ausgang:** Full HD (1920×1080) @ 30Hz مع unter 140ms Latenz
-- **Display:** Verwendet den eingebauten Bildschirm des uConsole
-- **Kompression:** YUV- و MJPEG-Unterstützung
-- **Kompatibilität:** VGA, DVI, Micro HDMI (حول Adapter)
-- **Audio:** HDMI-eingebetteter Audio-Durchgang
+### الاتصال والطاقة
 
-### Umschaltbarer USB 2.0-Port
+- **الطاقة**: تسحب الطاقة مباشرة من فتحة توسعة uConsole
+- **برامج الهدف**: لا حاجة إلى تثبيت على الجهاز الهدف
 
-- **Geteilter Port:** Wechseln Sie einfach den USB-Zugriff zwischen uConsole و Zielgerät (z.B. USB-Sticks) حول die Host-App.
-- **USB-Geschwindigkeit:** 12Mbps Vollgeschwindigkeitsحولtragung
+## ذات صلة
 
-### Konnektivität و Stromversorgung
-
-- **Stromversorgung:** Bezieht Strom direkt aus dem Erweiterungsslot des uConsole (keine externe Versorgung erforderlich)
-- **Zielkompatibilität:** Windows, macOS, Linux, Android, iOS
-- **Zielsoftware:** Keine التثبيت erforderlich
+- [دليل الإيثرنت](/products/kvmext/ethernet/) — اختيار بطاقة 100M مقابل 1000M
+- [دليل بطاقة SD](/products/kvmext/sd-card/) — نسخ الصور ونقل الملفات
+- [خيارات الشراء](/products/kvmext/purchase-options/) — وحدة التوسعة فقط مقابل حزمة مجموعة الترقية
+- [مواصفات الإصدار الأول v1](/products/kvmext/v1/features/) — وحدة الجيل الأول
