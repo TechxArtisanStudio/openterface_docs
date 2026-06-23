@@ -67,10 +67,10 @@ Veuillez exécuter l'outil de diagnostic **avant de contacter le support** :
 **Mettez à jour l'application d'abord :** Assurez-vous d'avoir la dernière version de [l'application Openterface](/app) installée avant d'exécuter les diagnostics. Vérifiez le menu de l'application pour les mises à jour.
 
 * **macOS**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check/](https://openterface.com/products/minikvm/support/diagnostic-self-check/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/)
 
 * **Windows / Linux**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
 
 ### Veuillez préparer :
 

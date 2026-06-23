@@ -60,11 +60,11 @@ Dürüst görüşünüzü istiyoruz. Gerçekten. Bir şey ters geliyorsa bize s�
 
 **Başlarken:**
 
-* **Kurulum Kılavuzu**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
-* **Beta Hızlı Başlangıç**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
-* **Özellikler ve Spesifikasyonlar**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
-* **SSS**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
-* **Uygulamayı İndir**: [openterface.com/app](https://openterface.com/app)
+* **Kurulum Kılavuzu**: [docs.openterface.com/products/kvmgo/how-to-connect/](https://docs.openterface.com/products/kvmgo/how-to-connect/)
+* **Beta Hızlı Başlangıç**: [docs.openterface.com/products/kvmgo/beta-quick-start/](https://docs.openterface.com/products/kvmgo/beta-quick-start/)
+* **Özellikler ve Spesifikasyonlar**: [docs.openterface.com/products/kvmgo/features/](https://docs.openterface.com/products/kvmgo/features/)
+* **SSS**: [docs.openterface.com/products/kvmgo/faq/](https://docs.openterface.com/products/kvmgo/faq/)
+* **Uygulamayı İndir**: [openterface.com/apps/](https://docs.openterface.com/app/kvm/)
 
 **Yardıma mı ihtiyacınız var?**
 

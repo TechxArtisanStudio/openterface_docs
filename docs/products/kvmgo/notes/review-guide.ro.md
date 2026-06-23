@@ -7,7 +7,7 @@ description: Vă mulțumim că v-ați făcut timp să testați produsul nostru v
 
 ## Prezentare generală
 
-Vă mulțumim că v-ați făcut timp să testați produsul nostru viitor **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**.
+Vă mulțumim că v-ați făcut timp să testați produsul nostru viitor **[Openterface KVM-Go](https://openterface.com/kvmgo/)**.
 
 Această unitate este un **prototip de inginerie**, iar firmware-ul și software-ul nostru evoluează rapid. Feedback-ul dvs. ne va ajuta direct să îmbunătățim produsul înainte de producția de masă.
 
@@ -21,7 +21,7 @@ Acest dispozitiv este un **prototip de inginerie**. Firmware-ul și software-ul 
 
 ### Folosiți cel mai recent software
 
-Pentru cele mai bune performanțe și compatibilitate, folosiți **ultima versiune** a [software-ului Openterface](https://openterface.com/app/kvm/) de pe pagina noastră GitHub Releases. Actualizăm frecvent, iar versiunile mai vechi pot să nu corespundă firmware-ului prototipului dvs.
+Pentru cele mai bune performanțe și compatibilitate, folosiți **ultima versiune** a [software-ului Openterface](https://docs.openterface.com/app/kvm/) de pe pagina noastră GitHub Releases. Actualizăm frecvent, iar versiunile mai vechi pot să nu corespundă firmware-ului prototipului dvs.
 
 ## Probleme cunoscute și explicații
 

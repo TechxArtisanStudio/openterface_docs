@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 故障排除"
-description: "KeyMod 教程 - 故障排除: Android 版 KeyCmd 應用的常見問題與解決方案。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/12-troubleshooting"
+description: 解決常見 KeyMod 問題：連接、按鍵無響應、藍牙配對失敗、語音輸入錯誤等。 Android 版 KeyCmd 應用的常見問題與解決方案。 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: "KeyMod 故障排除, KeyMod 無法連接, KeyMod 藍牙問題, KeyMod 按鍵無效"
 ---
 

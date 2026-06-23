@@ -8,7 +8,7 @@ keywords: "KVM-GO bêta, test bêta Openterface, guide bêta KVM-GO, instruction
 
 > Rédigé avec ❤️ par [Iker](https://github.com/IkerGarcia) de la communauté Openterface — merci de nous aider à améliorer la documentation !
 
-Bienvenue dans la [version bêta de KVM-GO](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/) ! Vous trouverez ci-dessous une version condensée du questionnaire de retour bêta. Suivez chaque section, consignez vos observations et, une fois terminé, envoyez l’ensemble via le [questionnaire de retour bêta sur Google Form](https://openterface.com/products/kvmgo/beta-questions).
+Bienvenue dans la [version bêta de KVM-GO](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/) ! Vous trouverez ci-dessous une version condensée du questionnaire de retour bêta. Suivez chaque section, consignez vos observations et, une fois terminé, envoyez l’ensemble via le [questionnaire de retour bêta sur Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header).
 
 Félicitations, vous avez été sélectionné(e) comme testeur bêta ! Nous sommes ravis de recueillir vos impressions ; nous sommes certains que vous pourrez mettre l’appareil à l’épreuve dans de nombreux scénarios.
 

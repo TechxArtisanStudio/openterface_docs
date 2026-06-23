@@ -67,10 +67,10 @@ flowchart TD
 **请先更新应用：** 在运行诊断之前，请确保已安装最新版本的 [Openterface 应用](/app)。请在应用菜单中检查更新。
 
 * **macOS**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check/](https://openterface.com/products/minikvm/support/diagnostic-self-check/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/)
 
 * **Windows / Linux**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
 
 ### 请准备：
 

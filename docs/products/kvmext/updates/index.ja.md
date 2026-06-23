@@ -19,7 +19,7 @@ keywords: "KVM拡張v2 アップデート, uConsole KVM ニュース, 製品発�
 - **1080p @ 60 Hz** 出力、**&lt; 70 ms** の低遅延
 - **77.3 × 34.7 mm** のボード、USB 2.0 共有スイッチング搭載
 
-詳細な発表は [Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/) をご覧ください。
+詳細な発表は [Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/) をご覧ください。
 
 **はじめに**
 
@@ -29,7 +29,7 @@ keywords: "KVM拡張v2 アップデート, uConsole KVM ニュース, 製品発�
 
 ## 過去のニュース
 
-- [OSHWA 認証 (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — uConsole KVM Extension シリーズの Open Source Hardware Association 認証 (UID CN000021)
+- [OSHWA 認証 (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — uConsole KVM Extension シリーズの Open Source Hardware Association 認証 (UID CN000021)
 
 ## 旧版 v1
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程"
-description: "KeyMod 教程: 本教程涵蓋 Android 版 KeyCmd 應用。iOS 版本正在開發中。 KeyMod 將您的手機或平板變成面向任意電腦的 通用輸入設備。它通過 Openterface KeyMod 硬件（KVM——鍵盤、視頻、鼠標切換器）連接，再把手機上的按鍵、鼠標移動和手柄輸入，以真實 USB…"
+description: KeyCmd 應用完整使用指南。學習如何連接、用手機控制電腦，以及鍵盤、鼠標、手柄、宏和語音輸入等模式。 本教程涵蓋 Android 版 KeyCmd 應用。iOS 版本正在開發中。 KeyMod 將您的手機或平板變成面向任意電腦的 通用輸入設備。它通過 Openterface KeyMod…
 keywords: "KeyMod 教程, 如何使用 KeyMod, 手機鍵盤指南, KeyCmd 應用教程"
 ---
 
@@ -12,13 +12,16 @@ keywords: "KeyMod 教程, 如何使用 KeyMod, 手機鍵盤指南, KeyCmd 應用
 
 ## 什麼是 KeyMod？
 
-KeyMod 將您的手機或平板變成面向任意電腦的 **通用輸入設備**。它通過 **Openterface KeyMod** 硬件（KVM——鍵盤、視頻、鼠標切換器）連接，再把手機上的按鍵、鼠標移動和手柄輸入，以真實 USB 鍵盤和鼠標的形式發送到目標電腦。
+KeyMod 是 Openterface **硬件**，可將手機變成面向任意電腦的鍵盤和觸控板。**KeyCmd** 是配套的手機應用——KeyCmd 通過 KeyMod 向目標電腦發送按鍵、鼠標移動和手柄輸入，就像來自真實的 USB 鍵盤和鼠標一樣。
 
 ### 連接方式
 
+```
 [ 您的手機 ] ──USB/BLE──> [ KeyMod 硬件 ] ──USB HID──> [ 目標電腦 ]
-   (KeyCmd 應用)              (CH9329 協議)              (Windows/macOS/Linux)
-應用通過串口（USB-C，115200 波特、8N1，或藍牙 BLE）使用 **CH9329 協議** 與 KeyMod 硬件通信。KeyMod 在目標電腦上顯示為標準 USB 鍵盤和鼠標——無需驅動。
+   (KeyCmd)                   (CH9329 協議)              (Windows/macOS/Linux)
+```
+
+KeyCmd 通過串口（USB-C，115200 波特、8N1，或藍牙 BLE）使用 **CH9329 協議** 與 KeyMod 硬件通信。KeyMod 在目標電腦上顯示為標準 USB 鍵盤和鼠標——無需驅動。
 
 ### 適合誰？
 

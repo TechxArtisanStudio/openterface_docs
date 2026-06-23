@@ -67,10 +67,10 @@ flowchart TD
 **먼저 앱을 업데이트하세요:** 진단을 실행하기 전에 [Openterface 앱](/app)의 최신 버전이 설치되어 있는지 확인하세요. 앱 메뉴에서 업데이트를 확인하세요.
 
 * **macOS**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check/](https://openterface.com/products/minikvm/support/diagnostic-self-check/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/)
 
 * **Windows / Linux**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
 
 ### 준비해 주세요:
 

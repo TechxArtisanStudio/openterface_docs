@@ -19,7 +19,7 @@ keywords: "обновления расширения KVM v2, новости uCon
 - Выход **1080p @ 60 Гц** с задержкой **&lt; 70 мс**
 - Плата размером **77,3 × 34,7 мм** с общим коммутатором USB 2.0
 
-Читайте полный анонс в [новостях Openterface](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/).
+Читайте полный анонс в [новостях Openterface](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/).
 
 **Начало работы**
 
@@ -29,7 +29,7 @@ keywords: "обновления расширения KVM v2, новости uCon
 
 ## Ранее
 
-- [Сертификация OSHWA (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — сертификация Open Source Hardware Association для линейки расширений uConsole KVM (UID CN000021)
+- [Сертификация OSHWA (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — сертификация Open Source Hardware Association для линейки расширений uConsole KVM (UID CN000021)
 
 ## Архив v1
 

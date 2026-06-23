@@ -60,11 +60,11 @@ description: مرحبًا! شكرًا مرة أخرى على انضمامك إل
 
 **للبدء:**
 
-* **دليل الإعداد**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
-* **بدء سريع للنسخة التجريبية**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
-* **الميزات والمواصفات**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
-* **الأسئلة الشائعة**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
-* **تنزيل التطبيق**: [openterface.com/app](https://openterface.com/app)
+* **دليل الإعداد**: [docs.openterface.com/products/kvmgo/how-to-connect/](https://docs.openterface.com/products/kvmgo/how-to-connect/)
+* **بدء سريع للنسخة التجريبية**: [docs.openterface.com/products/kvmgo/beta-quick-start/](https://docs.openterface.com/products/kvmgo/beta-quick-start/)
+* **الميزات والمواصفات**: [docs.openterface.com/products/kvmgo/features/](https://docs.openterface.com/products/kvmgo/features/)
+* **الأسئلة الشائعة**: [docs.openterface.com/products/kvmgo/faq/](https://docs.openterface.com/products/kvmgo/faq/)
+* **تنزيل التطبيق**: [openterface.com/apps/](https://docs.openterface.com/app/kvm/)
 
 **تحتاج مساعدة؟**
 

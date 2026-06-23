@@ -19,7 +19,7 @@ keywords: "KVM 扩展 v2 更新, uConsole KVM 新闻, 产品公告"
 - **1080p @ 60 Hz** 输出，延迟 **&lt; 70 ms**
 - **77.3 × 34.7 mm** 板卡，支持 USB 2.0 共享切换
 
-在 [Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/) 阅读完整公告。
+在 [Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/) 阅读完整公告。
 
 **快速开始**
 
@@ -29,7 +29,7 @@ keywords: "KVM 扩展 v2 更新, uConsole KVM 新闻, 产品公告"
 
 ## 早期更新
 
-- [OSHWA 认证 (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — uConsole KVM 扩展产品线获得开源硬件协会认证 (UID CN000021)
+- [OSHWA 认证 (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — uConsole KVM 扩展产品线获得开源硬件协会认证 (UID CN000021)
 
 ## 旧版 v1
 

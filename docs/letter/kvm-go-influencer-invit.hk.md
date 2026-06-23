@@ -1,7 +1,7 @@
 ---
 hide:
   - sitemap
-description: "Openterface KVM-GO：Beta 評測指南: 您好！ 再次感謝您加入我們的 beta 計劃。我們非常期待您與早期訪問小組一起試用 KVM-GO。這個小東西基本上就是一個鑰匙扣大小的 KVM，讓您無需任何常見麻煩即可連接無頭設備。 KVM-GO（HDMI、DP 和 VGA…"
+description: 您好！ 再次感謝您加入我們的 beta 計劃。我們非常期待您與早期訪問小組一起試用 KVM-GO。這個小東西基本上就是一個鑰匙扣大小的 KVM，讓您無需任何常見麻煩即可連接無頭設備。 KVM-GO（HDMI、DP 和 VGA 版本）小到可以掛在鑰匙扣上，但比之前的 Mini-KVM…
 ---
 
 ![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}
@@ -60,11 +60,11 @@ description: "Openterface KVM-GO：Beta 評測指南: 您好！ 再次感謝您�
 
 **入門：**
 
-* **設置指南**：[openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
-* **Beta 快速入門**：[openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
-* **功能與規格**：[openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
-* **常見問題**：[openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
-* **下載應用**：[openterface.com/app](https://openterface.com/app)
+* **設置指南**：[docs.openterface.com/products/kvmgo/how-to-connect/](https://docs.openterface.com/products/kvmgo/how-to-connect/)
+* **Beta 快速入門**：[docs.openterface.com/products/kvmgo/beta-quick-start/](https://docs.openterface.com/products/kvmgo/beta-quick-start/)
+* **功能與規格**：[docs.openterface.com/products/kvmgo/features/](https://docs.openterface.com/products/kvmgo/features/)
+* **常見問題**：[docs.openterface.com/products/kvmgo/faq/](https://docs.openterface.com/products/kvmgo/faq/)
+* **下載應用**：[openterface.com/apps/](https://docs.openterface.com/app/kvm/)
 
 **需要幫助？**
 

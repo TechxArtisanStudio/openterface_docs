@@ -67,10 +67,10 @@ flowchart TD
 **まずアプリを更新:** 診断を実行する前に、[Openterfaceアプリ](/app)の最新バージョンがインストールされていることを確認してください。アプリメニューでアップデートを確認してください。
 
 * **macOS**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check/](https://openterface.com/products/minikvm/support/diagnostic-self-check/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/)
 
 * **Windows / Linux**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
 
 ### ご準備ください：
 

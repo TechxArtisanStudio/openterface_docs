@@ -19,7 +19,7 @@ Birinci nesil modüle kıyasla yenilikler:
 - **&lt; 70 ms** gecikme süresiyle **1080p @ 60 Hz** çıkış
 - **USB 2.0** paylaşımlı anahtarlama özellikli **77.3 × 34.7 mm** kart
 
-Tam duyuruyu [Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/) üzerinden okuyun.
+Tam duyuruyu [Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/) üzerinden okuyun.
 
 **Başlarken**
 
@@ -29,7 +29,7 @@ Tam duyuruyu [Openterface News](https://news.openterface.com/products/kvmext/202
 
 ## Önceki
 
-- [OSHWA sertifikası (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — uConsole KVM Uzatma serisi için Açık Kaynak Donanım Derneği sertifikası (UID CN000021)
+- [OSHWA sertifikası (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — uConsole KVM Uzatma serisi için Açık Kaynak Donanım Derneği sertifikası (UID CN000021)
 
 ## Eski v1
 

@@ -23,7 +23,7 @@ The **KVM-GO** series (HDMI/DP/VGA versions) fits on your **keychain** and provi
 
 ### **1. Setup**
 
-- Follow our Quick Start Guide: **openterface.com/products/kvmgo/how-to-connect**
+- Follow our Quick Start Guide: **docs.openterface.com/products/kvmgo/how-to-connect/**
 - Test across different platforms (Windows, macOS, Linux, Android) and target devices (servers, mini-PCs, BIOS-level access)
 
 ### **2. Real-World Testing**
@@ -50,13 +50,13 @@ This is where you'll:
 
 ## **Spread the Word**
 
-Help us grow: Share experiences on social media, blogs, and tech forums. Mention our **upcoming crowdfunding campaign** at **openterface.com/products/kvm-go** — every post helps bring KVM-GO to market faster!
+Help us grow: Share experiences on social media, blogs, and tech forums. Mention our **upcoming crowdfunding campaign** at **openterface.com/kvmgo/** — every post helps bring KVM-GO to market faster!
 
 ## **More Resources**
 
-- **Features & Specs**: openterface.com/products/kvmgo/features
-- **FAQs**: openterface.com/products/kvmgo/faq
-- **Download App**: openterface.com/app
+- **Features & Specs**: docs.openterface.com/products/kvmgo/features/
+- **FAQs**: docs.openterface.com/products/kvmgo/faq/
+- **Download App**: openterface.com/apps/
 
 ---
 

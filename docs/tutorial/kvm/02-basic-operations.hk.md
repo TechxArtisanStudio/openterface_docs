@@ -1,6 +1,6 @@
 ---
 title: "KVM教程 02 — 基本操作"
-description: KVM教程 02 — 基本操作 — kvm / 02 basic operations (Openterface KVM-over-USB). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
+description: 受眾： 初學者至中級 — 日常使用功能 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 Openterface. Openterface.
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 入門"
-description: "KeyMod 教程 - 入門: 安裝 KeyCmd 應用、連接 KeyMod 硬件，並在 5 分鐘內發送第一個按鍵。. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/01-getting-started"
+description: 安裝 KeyCmd 應用、連接 KeyMod 設備，並在 5 分鐘內發送第一個按鍵。 安裝 KeyCmd 應用、連接 KeyMod 硬件，並在 5 分鐘內發送第一個按鍵。
 keywords: "KeyMod 入門, KeyMod 設置, KeyMod 安裝, 連接 KeyMod"
 ---
 
@@ -20,16 +20,15 @@ keywords: "KeyMod 入門, KeyMod 設置, KeyMod 安裝, 連接 KeyMod"
 **Android：**
 
 1. 打開手機瀏覽器，訪問 [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
-2. 下載最新的 `.apk` 文件
-3. 點擊下載的文件進行安裝
-4. 若 Android 提示，請為瀏覽器允許 **「安裝未知應用」**
+2. 點擊下載的文件進行安裝
+3. 若 Android 提示，請為瀏覽器允許 **「安裝未知應用」**
 
 
 > **Note:** KeyCmd source code is not yet public. Download the beta APK from the [App](/app/kvm/) page.
 
 ## 步驟 2：連接 KeyMod 設備
 
-KeyMod 可通過兩種方式連接 Openterface KeyMod 硬件：
+KeyCmd 可通過兩種方式連接 Openterface KeyMod 硬件：
 
 ### USB 連接（建議首次設置使用）
 

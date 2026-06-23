@@ -7,7 +7,7 @@ description: "Engineering prototype review guide for Openterface KVM-GO beta tes
 
 ## Overview
 
-Thank you for taking the time to test our upcoming product **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**.
+Thank you for taking the time to test our upcoming product **[Openterface KVM-Go](https://openterface.com/kvmgo/)**.
 
 This unit is an **engineering prototype**, and both our firmware and software are evolving quickly. Your feedback will directly help us improve the product before mass production.
 
@@ -21,7 +21,7 @@ This device is an **engineering prototype**. The firmware and software may still
 
 ### Use the Latest Software
 
-For the best performance and compatibility, please use the **latest version** of the [Openterface software](https://openterface.com/app/kvm/) from our GitHub Releases page. We update frequently, and older versions may not match your prototype’s firmware.
+For the best performance and compatibility, please use the **latest version** of the [Openterface software](https://docs.openterface.com/app/kvm/) from our GitHub Releases page. We update frequently, and older versions may not match your prototype’s firmware.
 
 ## Known Issues and Explanations
 

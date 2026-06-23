@@ -7,7 +7,7 @@ description: Merci d'avoir pris le temps de tester notre produit à venir . Cett
 
 ## Aperçu
 
-Merci d'avoir pris le temps de tester notre produit à venir **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**.
+Merci d'avoir pris le temps de tester notre produit à venir **[Openterface KVM-Go](https://openterface.com/kvmgo/)**.
 
 Cette unité est un **prototype d'ingénierie**, et notre firmware et logiciel évoluent rapidement. Vos retours nous aideront directement à améliorer le produit avant la production de masse.
 
@@ -21,7 +21,7 @@ Cet appareil est un **prototype d'ingénierie**. Le firmware et le logiciel peuv
 
 ### Utiliser le logiciel le plus récent
 
-Pour les meilleures performances et compatibilité, veuillez utiliser la **dernière version** du [logiciel Openterface](https://openterface.com/app/kvm/) depuis notre page GitHub Releases. Nous mettons à jour fréquemment, et les anciennes versions peuvent ne pas correspondre au firmware de votre prototype.
+Pour les meilleures performances et compatibilité, veuillez utiliser la **dernière version** du [logiciel Openterface](https://docs.openterface.com/app/kvm/) depuis notre page GitHub Releases. Nous mettons à jour fréquemment, et les anciennes versions peuvent ne pas correspondre au firmware de votre prototype.
 
 ## Problèmes connus et explications
 

@@ -22,7 +22,7 @@ description: Openterface KVM-GO 베타 테스트 프로그램에 오신 것을 �
 
 ### **1. 설정**
 
-- 빠른 시작 가이드를 따르세요: **openterface.com/products/kvmgo/how-to-connect**
+- 빠른 시작 가이드를 따르세요: **docs.openterface.com/products/kvmgo/how-to-connect/**
 - 다양한 플랫폼(Windows, macOS, Linux, Android)과 대상 장치(서버, 미니 PC, BIOS 수준 접근)에서 테스트
 
 ### **2. 실제 환경 테스트**
@@ -49,13 +49,13 @@ description: Openterface KVM-GO 베타 테스트 프로그램에 오신 것을 �
 
 ## **소문 내기**
 
-성장을 도와주세요: 소셜 미디어, 블로그, 기술 포럼에서 경험을 공유하세요. **openterface.com/products/kvm-go**의 **예정된 크라우드펀딩 캠페인**을 언급해 주세요——모든 게시물이 KVM-GO의 시장 출시를 앞당깁니다!
+성장을 도와주세요: 소셜 미디어, 블로그, 기술 포럼에서 경험을 공유하세요. **openterface.com/kvmgo/**의 **예정된 크라우드펀딩 캠페인**을 언급해 주세요——모든 게시물이 KVM-GO의 시장 출시를 앞당깁니다!
 
 ## **추가 리소스**
 
-- **기능 및 사양**: openterface.com/products/kvmgo/features
-- **FAQ**: openterface.com/products/kvmgo/faq
-- **앱 다운로드**: openterface.com/app
+- **기능 및 사양**: docs.openterface.com/products/kvmgo/features/
+- **FAQ**: docs.openterface.com/products/kvmgo/faq/
+- **앱 다운로드**: openterface.com/apps/
 
 ---
 

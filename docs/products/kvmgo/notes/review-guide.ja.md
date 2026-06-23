@@ -7,7 +7,7 @@ description: 近日発売予定の製品 をテストしていただき、あり
 
 ## 概要
 
-近日発売予定の製品 **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)** をテストしていただき、ありがとうございます。
+近日発売予定の製品 **[Openterface KVM-Go](https://openterface.com/kvmgo/)** をテストしていただき、ありがとうございます。
 
 本ユニットは**エンジニアリングプロトタイプ**であり、ファームウェアとソフトウェアは急速に進化しています。皆様のフィードバックは量産前の製品改善に直接役立ちます。
 
@@ -21,7 +21,7 @@ description: 近日発売予定の製品 をテストしていただき、あり
 
 ### 最新ソフトウェアの使用
 
-最高のパフォーマンスと互換性のため、GitHub Releases ページの [Openterface ソフトウェア](https://openterface.com/app/kvm/) **最新版**をご使用ください。頻繁に更新しており、古いバージョンはプロトタイプのファームウェアと一致しない場合があります。
+最高のパフォーマンスと互換性のため、GitHub Releases ページの [Openterface ソフトウェア](https://docs.openterface.com/app/kvm/) **最新版**をご使用ください。頻繁に更新しており、古いバージョンはプロトタイプのファームウェアと一致しない場合があります。
 
 ## 既知の問題と説明
 

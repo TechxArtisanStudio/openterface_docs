@@ -22,7 +22,7 @@ De **KVM-GO**-serie (HDMI/DP/VGA-versies) past op je **sleutelhanger** en biedt 
 
 ### **1. Setup**
 
-- Volg onze snelstartgids: **openterface.com/products/kvmgo/how-to-connect**
+- Volg onze snelstartgids: **docs.openterface.com/products/kvmgo/how-to-connect/**
 - Test op verschillende platforms (Windows, macOS, Linux, Android) en doelapparaten (servers, mini-PC's, BIOS-toegang)
 
 ### **2. Testen in de praktijk**
@@ -49,13 +49,13 @@ Hier kun je:
 
 ## **Verspreid het woord**
 
-Help ons groeien: deel ervaringen op sociale media, blogs en techforums. Noem onze **aankomende crowdfundingcampagne** op **openterface.com/products/kvm-go** — elke post helpt KVM-GO sneller op de markt te brengen!
+Help ons groeien: deel ervaringen op sociale media, blogs en techforums. Noem onze **aankomende crowdfundingcampagne** op **openterface.com/kvmgo/** — elke post helpt KVM-GO sneller op de markt te brengen!
 
 ## **Meer bronnen**
 
-- **Functies en specificaties**: openterface.com/products/kvmgo/features
-- **FAQ**: openterface.com/products/kvmgo/faq
-- **App downloaden**: openterface.com/app
+- **Functies en specificaties**: docs.openterface.com/products/kvmgo/features/
+- **FAQ**: docs.openterface.com/products/kvmgo/faq/
+- **App downloaden**: openterface.com/apps/
 
 ---
 

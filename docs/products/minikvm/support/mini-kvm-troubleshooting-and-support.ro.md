@@ -67,10 +67,10 @@ Vă rugăm să rulați instrumentul de diagnostic **înainte de a contacta supor
 **Actualizați mai întâi aplicația:** Asigurați-vă că aveți cea mai recentă versiune a [aplicației Openterface](/app) instalată înainte de a rula diagnosticele. Verificați meniul aplicației pentru actualizări.
 
 * **macOS**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check/](https://openterface.com/products/minikvm/support/diagnostic-self-check/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check/)
 
 * **Windows / Linux**
-  [https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
+  [https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/](https://docs.openterface.com/products/minikvm/support/diagnostic-self-check-windows/)
 
 ### Vă rugăm să pregătiți:
 

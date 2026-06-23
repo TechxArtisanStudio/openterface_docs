@@ -7,7 +7,7 @@ description: Vielen Dank, dass Sie sich die Zeit nehmen, unser kommendes Produkt
 
 ## Übersicht
 
-Vielen Dank, dass Sie sich die Zeit nehmen, unser kommendes Produkt **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)** zu testen.
+Vielen Dank, dass Sie sich die Zeit nehmen, unser kommendes Produkt **[Openterface KVM-Go](https://openterface.com/kvmgo/)** zu testen.
 
 Diese Einheit ist ein **Engineering-Prototyp**, und unsere Firmware und Software entwickeln sich schnell weiter. Ihr Feedback hilft uns direkt, das Produkt vor der Massenproduktion zu verbessern.
 
@@ -21,7 +21,7 @@ Dieses Gerät ist ein **Engineering-Prototyp**. Die Firmware und Software könne
 
 ### Neueste Software verwenden
 
-Für beste Leistung und Kompatibilität verwenden Sie bitte die **neueste Version** der [Openterface-Software](https://openterface.com/app/kvm/) von unserer GitHub-Releases-Seite. Wir aktualisieren häufig, und ältere Versionen passen möglicherweise nicht zur Firmware Ihres Prototyps.
+Für beste Leistung und Kompatibilität verwenden Sie bitte die **neueste Version** der [Openterface-Software](https://docs.openterface.com/app/kvm/) von unserer GitHub-Releases-Seite. Wir aktualisieren häufig, und ältere Versionen passen möglicherweise nicht zur Firmware Ihres Prototyps.
 
 ## Bekannte Probleme und Erklärungen
 

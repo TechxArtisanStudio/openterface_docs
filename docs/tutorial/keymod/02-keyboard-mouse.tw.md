@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 鍵盤與鼠標"
-description: "KeyMod 教程 - 鍵盤與鼠標: 鍵盤與鼠標模式是最常用的模式，提供虛擬鍵盤與觸控板，用於從手機控制目標電腦。 KeyMod 提供兩種鍵盤體驗：. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/02-keyboard-mouse"
+description: 學習使用 KeyMod 鍵盤與觸控板輸入、發送快捷鍵，以及用手機控制目標電腦的鼠標。 鍵盤與鼠標模式是最常用的模式，提供虛擬鍵盤與觸控板，用於從手機控制目標電腦。 KeyMod 提供兩種鍵盤體驗：
 keywords: "KeyMod 鍵盤, KeyMod 鼠標, 觸控板, 修飾鍵, 鍵盤快捷鍵"
 ---
 

@@ -7,7 +7,7 @@ description: Yakında çıkacak ürünümüz 'yu test etmek için zaman ayırdı
 
 ## Genel Bakış
 
-Yakında çıkacak ürünümüz **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**'yu test etmek için zaman ayırdığınız için teşekkürler.
+Yakında çıkacak ürünümüz **[Openterface KVM-Go](https://openterface.com/kvmgo/)**'yu test etmek için zaman ayırdığınız için teşekkürler.
 
 Bu birim bir **mühendislik prototipidir** ve firmware ile yazılımımız hızla gelişiyor. Geri bildiriminiz seri üretim öncesinde ürünü iyileştirmemize doğrudan yardımcı olacaktır.
 
@@ -21,7 +21,7 @@ Bu cihaz bir **mühendislik prototipidir**. Firmware ve yazılım hâlâ hatalar
 
 ### En son yazılımı kullanın
 
-En iyi performans ve uyumluluk için GitHub Releases sayfamızdaki [Openterface yazılımının](https://openterface.com/app/kvm/) **en son sürümünü** kullanın. Sık güncelliyoruz ve eski sürümler prototipinizin firmware'i ile eşleşmeyebilir.
+En iyi performans ve uyumluluk için GitHub Releases sayfamızdaki [Openterface yazılımının](https://docs.openterface.com/app/kvm/) **en son sürümünü** kullanın. Sık güncelliyoruz ve eski sürümler prototipinizin firmware'i ile eşleşmeyebilir.
 
 ## Bilinen sorunlar ve açıklamalar
 

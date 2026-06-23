@@ -7,7 +7,7 @@ description: "Openterface KVM-Go — 評測指南（工程樣機）: 感謝您�
 
 ## 概述
 
-感謝您花時間測試我們即將推出的產品 **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**。
+感謝您花時間測試我們即將推出的產品 **[Openterface KVM-Go](https://openterface.com/kvmgo/)**。
 
 本單元為**工程樣機**，我們的固件和軟件正在快速迭代。您的反饋將直接幫助我們在量產前改進產品。
 
@@ -21,7 +21,7 @@ description: "Openterface KVM-Go — 評測指南（工程樣機）: 感謝您�
 
 ### 使用最新軟件
 
-為獲得最佳性能和兼容性，請使用我們 GitHub Releases 頁面上的 [Openterface 軟件](https://openterface.com/app/kvm/) **最新版本**。我們更新頻繁，舊版本可能與您的樣機固件不匹配。
+為獲得最佳性能和兼容性，請使用我們 GitHub Releases 頁面上的 [Openterface 軟件](https://docs.openterface.com/app/kvm/) **最新版本**。我們更新頻繁，舊版本可能與您的樣機固件不匹配。
 
 ## 已知問題與説明
 

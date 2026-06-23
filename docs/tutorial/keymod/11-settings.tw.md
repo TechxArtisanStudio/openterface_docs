@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 設置"
-description: KeyMod 教程 - 設置 — keymod / 11 settings (KeyMod). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/11-settings
+description: 配置 KeyMod 設置，包括自動連接、主題、語言、BLE 按鍵延遲、觸控板靈敏度與目標系統。 配置 KeyMod 的行為與外觀。 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: "KeyMod 設置, 自動連接, 主題, 語言, BLE 延遲, 觸控板靈敏度"
 ---
 

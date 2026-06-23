@@ -60,11 +60,11 @@ Vogliamo la tua opinione onesta. Davvero. Se qualcosa non ti convince, faccelo s
 
 **Per iniziare:**
 
-* **Guida alla configurazione**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
-* **Avvio rapido beta**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
-* **Funzionalità e specifiche**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
-* **FAQ**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
-* **Scarica l'app**: [openterface.com/app](https://openterface.com/app)
+* **Guida alla configurazione**: [docs.openterface.com/products/kvmgo/how-to-connect/](https://docs.openterface.com/products/kvmgo/how-to-connect/)
+* **Avvio rapido beta**: [docs.openterface.com/products/kvmgo/beta-quick-start/](https://docs.openterface.com/products/kvmgo/beta-quick-start/)
+* **Funzionalità e specifiche**: [docs.openterface.com/products/kvmgo/features/](https://docs.openterface.com/products/kvmgo/features/)
+* **FAQ**: [docs.openterface.com/products/kvmgo/faq/](https://docs.openterface.com/products/kvmgo/faq/)
+* **Scarica l'app**: [openterface.com/apps/](https://docs.openterface.com/app/kvm/)
 
 **Serve aiuto?**
 

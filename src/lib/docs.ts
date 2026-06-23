@@ -483,9 +483,31 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
   return md;
 }
 
+/** Docs product folder slug → news.openterface.com product channel slug. */
+const DOCS_TO_NEWS_PRODUCT: Record<string, string> = {
+  kvmgo: 'kvm-go',
+  minikvm: 'minikvm',
+  keymod: 'keymod',
+  kvmext: 'uconsole-kvm-extension',
+  accessories: 'accessories',
+};
+
+function newsProductArticleHref(locale: SiteLocale, docsProductSlug: string, articleSlug: string): string {
+  const newsProduct = DOCS_TO_NEWS_PRODUCT[docsProductSlug] ?? docsProductSlug;
+  return newsPath(locale, `product/${newsProduct}/${articleSlug}`);
+}
+
 /** Point legacy in-doc update links at news.openterface.com. */
 function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): string {
   let out = md.replace(/\]\(\/app\/updates\)/g, `](${newsPath(locale, 'software')})`);
+
+  out = out.replace(
+    /\]\(\/products\/([^/]+)\/updates\/([^)/]+)\/?\)/g,
+    (_m, docsProduct: string, articleSlug: string) => {
+      const slug = articleSlug.replace(/\.md$/, '');
+      return `](${newsProductArticleHref(locale, docsProduct, slug)})`;
+    },
+  );
 
   out = out.replace(/\]\(updates\/([^)]+)\)/g, (_m, file: string) => {
     let slug = file.replace(/\.md$/, '');
@@ -497,10 +519,15 @@ function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): str
     }
     if (pageSlug.startsWith('products/')) {
       const product = pageSlug.split('/')[1];
-      return `](${newsPath(locale, `product/${product}/${slug}`)})`;
+      return `](${newsProductArticleHref(locale, product, slug)})`;
     }
     return `](${newsPath(locale, `software/${slug}`)})`;
   });
+
+  out = out.replace(
+    /https:\/\/news\.openterface\.com\/products\/kvmext\//g,
+    'https://news.openterface.com/product/uconsole-kvm-extension/',
+  );
 
   return out;
 }

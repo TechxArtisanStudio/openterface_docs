@@ -8,7 +8,7 @@ keywords: "KVM-GO ベータ, Openterface ベータテスト, KVM-GO ベータガ
 
 > Openterface コミュニティの [Iker](https://github.com/IkerGarcia) さんが ❤️ を込めて作成してくださいました — ドキュメント改善へのご協力に感謝します！
 
-[KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/) へようこそ！以下は Beta フィードバックアンケートのクイック版です。各セクションを順番に進め、結果を記録し、完了したら [Google フォームの Beta フィードバックアンケート](https://openterface.com/products/kvmgo/beta-questions) から提出してください。
+[KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/) へようこそ！以下は Beta フィードバックアンケートのクイック版です。各セクションを順番に進め、結果を記録し、完了したら [Google フォームの Beta フィードバックアンケート](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header) から提出してください。
 
 Beta テスターに選ばれたこと、おめでとうございます！皆さんからのフィードバックをとても楽しみにしています。さまざまな状況でこのデバイスを徹底的に検証していただけると信じています。
 

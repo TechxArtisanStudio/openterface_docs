@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 演示"
-description: KeyMod 教程 - 演示 — keymod / 10 presentation (KeyMod). 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/10-presentation
+description: 將 KeyMod 用作演示遙控器，用手機控制幻燈片。支持 PowerPoint、Keynote、Google Slides 等。 用手機控制幻燈片——無需翻頁筆。
 keywords: "KeyMod 演示, 幻燈片遙控, PowerPoint 遙控, Keynote 遙控, 演示計時器"
 ---
 

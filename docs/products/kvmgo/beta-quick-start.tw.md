@@ -8,7 +8,7 @@ keywords: "KVM-GO 測試, Openterface 測試, KVM-GO 測試指南, 測試者說�
 
 > 由 Openterface 社區的 [Iker](https://github.com/IkerGarcia) ❤️ 撰寫——感謝你幫助我們打造更好的文檔！
 
-歡迎來到 [KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)！下面是 Beta 反饋問卷的快速指南版本。請依次完成每個部分，記錄你的發現，並在完成後通過 [Google Form Beta 反饋問卷](https://openterface.com/products/kvmgo/beta-questions) 提交所有信息。
+歡迎來到 [KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)！下面是 Beta 反饋問卷的快速指南版本。請依次完成每個部分，記錄你的發現，並在完成後通過 [Google Form Beta 反饋問卷](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header) 提交所有信息。
 
 恭喜你被選為 Beta 測試者！我們非常期待聽到你的反饋；相信你一定能在不同場景下徹底測試這款設備！
 

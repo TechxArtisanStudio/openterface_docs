@@ -19,7 +19,7 @@ keywords: "KVM 확장 v2 업데이트, uConsole KVM 뉴스, 제품 발표"
 - **1080p @ 60 Hz** 출력에 **&lt; 70 ms** 지연 시간
 - **77.3 × 34.7 mm** 보드에 USB 2.0 공유 스위칭 지원
 
-[Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/)에서 전체 발표 내용을 확인하세요.
+[Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/)에서 전체 발표 내용을 확인하세요.
 
 **시작하기**
 
@@ -29,7 +29,7 @@ keywords: "KVM 확장 v2 업데이트, uConsole KVM 뉴스, 제품 발표"
 
 ## 이전 업데이트
 
-- [OSHWA 인증 (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — uConsole KVM 확장 라인에 대한 오픈 소스 하드웨어 협회 인증 (UID CN000021)
+- [OSHWA 인증 (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — uConsole KVM 확장 라인에 대한 오픈 소스 하드웨어 협회 인증 (UID CN000021)
 
 ## 레거시 v1
 

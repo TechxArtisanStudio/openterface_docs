@@ -9,7 +9,7 @@ keywords: "KVM-GO beta, Openterface beta testing, KVM-GO beta guide, beta tester
 > Drafted with ❤️ by [Iker](https://github.com/IkerGarcia) from the Openterface community — thank you for helping us build better docs!  
 > Updated by Billy Wang and Kevin Peng.
 
-Welcome to [the KVM-GO beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)! Below is a quick guide version of the beta feedback questionnaire. Follow each section, capture your findings, and please submit everything through the [Google Form beta feedback questionnaire](https://openterface.com/products/kvmgo/beta-questions) when you're done.
+Welcome to [the KVM-GO beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)! Below is a quick guide version of the beta feedback questionnaire. Follow each section, capture your findings, and please submit everything through the [Google Form beta feedback questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header) when you're done.
 
 Congratulations on being selected as a beta tester! We are really excited to get your feedback; we are sure you will be able to thoroughly test this device in different scenarios!
 
@@ -54,4 +54,4 @@ These are some examples of things that will be asked in the beta feedback form, 
 Thank you for your help!
 
 !!! reminder "Don't forget"
-    Submit your completed observations via [the Google Form](https://openterface.com/products/kvmgo/beta-questions) so the team can review them promptly.
+    Submit your completed observations via [the Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header) so the team can review them promptly.

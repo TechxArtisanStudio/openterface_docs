@@ -22,7 +22,7 @@ description: "Openterface KVM-GO Beta Test Programına Hoş Geldiniz! — letter
 
 ### **1. Kurulum**
 
-- Hızlı Başlangıç Kılavuzumuzu takip edin: **openterface.com/products/kvmgo/how-to-connect**
+- Hızlı Başlangıç Kılavuzumuzu takip edin: **docs.openterface.com/products/kvmgo/how-to-connect/**
 - Farklı platformlarda (Windows, macOS, Linux, Android) ve hedef cihazlarda (sunucular, mini-PC'ler, BIOS düzeyinde erişim) test edin
 
 ### **2. Gerçek Dünya Testleri**
@@ -49,13 +49,13 @@ Burada şunları yapabilirsiniz:
 
 ## **Haberi Yayın**
 
-Büyümemize yardımcı olun: deneyimlerinizi sosyal medyada, bloglarda ve teknik forumlarda paylaşın. **openterface.com/products/kvm-go** adresindeki **yaklaşan crowdfunding kampanyamızdan** bahsedin — her gönderi KVM-GO'nun pazara daha hızlı ulaşmasına yardımcı olur!
+Büyümemize yardımcı olun: deneyimlerinizi sosyal medyada, bloglarda ve teknik forumlarda paylaşın. **openterface.com/kvmgo/** adresindeki **yaklaşan crowdfunding kampanyamızdan** bahsedin — her gönderi KVM-GO'nun pazara daha hızlı ulaşmasına yardımcı olur!
 
 ## **Daha Fazla Kaynak**
 
-- **Özellikler ve Spesifikasyonlar**: openterface.com/products/kvmgo/features
-- **SSS**: openterface.com/products/kvmgo/faq
-- **Uygulamayı İndir**: openterface.com/app
+- **Özellikler ve Spesifikasyonlar**: docs.openterface.com/products/kvmgo/features/
+- **SSS**: docs.openterface.com/products/kvmgo/faq/
+- **Uygulamayı İndir**: openterface.com/apps/
 
 ---
 

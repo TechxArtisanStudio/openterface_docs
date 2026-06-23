@@ -19,7 +19,7 @@ What's new vs the first-generation module:
 - **1080p @ 60 Hz** output with **&lt; 70 ms** latency
 - **77.3 × 34.7 mm** board with USB 2.0 shared switching
 
-Read the full announcement on [Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/).
+Read the full announcement on [Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/).
 
 **Get started**
 
@@ -29,7 +29,7 @@ Read the full announcement on [Openterface News](https://news.openterface.com/pr
 
 ## Earlier
 
-- [OSHWA certification (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — Open Source Hardware Association certification for the uConsole KVM Extension line (UID CN000021)
+- [OSHWA certification (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — Open Source Hardware Association certification for the uConsole KVM Extension line (UID CN000021)
 
 ## Legacy v1
 

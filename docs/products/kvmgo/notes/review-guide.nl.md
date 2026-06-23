@@ -7,7 +7,7 @@ description: Bedankt dat u de tijd neemt om ons aankomende product te testen. De
 
 ## Overzicht
 
-Bedankt dat u de tijd neemt om ons aankomende product **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)** te testen.
+Bedankt dat u de tijd neemt om ons aankomende product **[Openterface KVM-Go](https://openterface.com/kvmgo/)** te testen.
 
 Deze unit is een **engineeringprototype**, en onze firmware en software evolueren snel. Uw feedback helpt ons direct het product te verbeteren vóór massaproductie.
 
@@ -21,7 +21,7 @@ Dit apparaat is een **engineeringprototype**. De firmware en software kunnen nog
 
 ### Gebruik de nieuwste software
 
-Voor de beste prestaties en compatibiliteit gebruikt u de **nieuwste versie** van de [Openterface-software](https://openterface.com/app/kvm/) van onze GitHub Releases-pagina. We updaten frequent, en oudere versies passen mogelijk niet bij de firmware van uw prototype.
+Voor de beste prestaties en compatibiliteit gebruikt u de **nieuwste versie** van de [Openterface-software](https://docs.openterface.com/app/kvm/) van onze GitHub Releases-pagina. We updaten frequent, en oudere versies passen mogelijk niet bij de firmware van uw prototype.
 
 ## Bekende problemen en uitleg
 

@@ -7,7 +7,7 @@ description: 感谢您花时间测试我们即将推出的产品 。 本单元�
 
 ## 概述
 
-感谢您花时间测试我们即将推出的产品 **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)**。
+感谢您花时间测试我们即将推出的产品 **[Openterface KVM-Go](https://openterface.com/kvmgo/)**。
 
 本单元为**工程样机**，我们的固件和软件正在快速迭代。您的反馈将直接帮助我们在量产前改进产品。
 
@@ -21,7 +21,7 @@ description: 感谢您花时间测试我们即将推出的产品 。 本单元�
 
 ### 使用最新软件
 
-为获得最佳性能和兼容性，请使用我们 GitHub Releases 页面上的 [Openterface 软件](https://openterface.com/app/kvm/) **最新版本**。我们更新频繁，旧版本可能与您的样机固件不匹配。
+为获得最佳性能和兼容性，请使用我们 GitHub Releases 页面上的 [Openterface 软件](https://docs.openterface.com/app/kvm/) **最新版本**。我们更新频繁，旧版本可能与您的样机固件不匹配。
 
 ## 已知问题与说明
 

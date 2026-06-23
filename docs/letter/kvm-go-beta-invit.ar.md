@@ -22,7 +22,7 @@ description: مرحبًا بكم في برنامج اختبار Openterface KVM-
 
 ### **1. الإعداد**
 
-- اتبع دليل البدء السريع: **openterface.com/products/kvmgo/how-to-connect**
+- اتبع دليل البدء السريع: **docs.openterface.com/products/kvmgo/how-to-connect/**
 - اختبر على منصات مختلفة (Windows وmacOS وLinux وAndroid) وأجهزة مستهدفة (خوادم وأجهزة mini-PC والوصول على مستوى BIOS)
 
 ### **2. الاختبار في العالم الحقيقي**
@@ -49,13 +49,13 @@ description: مرحبًا بكم في برنامج اختبار Openterface KVM-
 
 ## **انشر الخبر**
 
-ساعدنا على النمو: شارك تجاربك على وسائل التواصل والمدونات والمنتديات التقنية. اذكر **حملة التمويل الجماعي القادمة** على **openterface.com/products/kvm-go** — كل منشور يساعد في إطلاق KVM-GO في السوق بشكل أسرع!
+ساعدنا على النمو: شارك تجاربك على وسائل التواصل والمدونات والمنتديات التقنية. اذكر **حملة التمويل الجماعي القادمة** على **openterface.com/kvmgo/** — كل منشور يساعد في إطلاق KVM-GO في السوق بشكل أسرع!
 
 ## **موارد إضافية**
 
-- **الميزات والمواصفات**: openterface.com/products/kvmgo/features
-- **الأسئلة الشائعة**: openterface.com/products/kvmgo/faq
-- **تنزيل التطبيق**: openterface.com/app
+- **الميزات والمواصفات**: docs.openterface.com/products/kvmgo/features/
+- **الأسئلة الشائعة**: docs.openterface.com/products/kvmgo/faq/
+- **تنزيل التطبيق**: openterface.com/apps/
 
 ---
 

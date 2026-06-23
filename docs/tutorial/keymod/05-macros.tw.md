@@ -1,6 +1,6 @@
 ---
 title: "KeyMod 教程 - 宏"
-description: "KeyMod 教程 - 宏: 一鍵錄製並回放自動按鍵序列。 宏是 可錄製的按鍵序列，可重複播放。例如：. 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。 — keymod/05-macros"
+description: 使用 KeyMod 宏錄製並回放自動按鍵序列，支持修飾鍵、延遲與計劃任務。 一鍵錄製並回放自動按鍵序列。 宏是 可錄製的按鍵序列，可重複播放。例如： 官方 Openterface 文檔：安裝步驟、常見問題與故障排查，面向 IT 與開發者。
 keywords: "KeyMod 宏, 自動按鍵, 宏計劃, 宏標記, 按鍵序列"
 ---
 

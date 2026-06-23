@@ -8,7 +8,7 @@ keywords: "KVM-GO Beta, Openterface Beta-Test, KVM-GO Beta-دليل, Beta-Tester
 
 > Mit ❤️ verfasst von [Iker](https://github.com/IkerGarcia) aus der Openterface-Community — vielen Dank, dass du uns hilfst, bessere Dokus zu erstellen!
 
-Willkommen zur [KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)! Nachfolgend findest du eine Kurzversion des Beta-Feedback-Fragebogens. Arbeite jeden Abschnitt durch, halte deine Erkenntnisse fest و reiche alles anschließend حول den [Google-Formular-Beta-Feedback-Fragebogen](https://openterface.com/products/kvmgo/beta-questions) ein.
+Willkommen zur [KVM-GO Beta](/products/kvmgo/updates/251007-kvm-go-beta-test-kits-sent-1/)! Nachfolgend findest du eine Kurzversion des Beta-Feedback-Fragebogens. Arbeite jeden Abschnitt durch, halte deine Erkenntnisse fest و reiche alles anschließend حول den [Google-Formular-Beta-Feedback-Fragebogen](https://docs.google.com/forms/d/e/1FAIpQLSf1WGwGSN-4ZPVav0CwdepNsBQj9iLmtR7AF_c2GETPwnfHCQ/viewform?usp=header) ein.
 
 Herzlichen Glückwunsch zur Auswahl als Beta-Tester! Wir freuen uns sehr auf dein Feedback و sind sicher, dass du das Gerät in unterschiedlichen Szenarien gründlich prüfen wirst.
 

@@ -7,7 +7,7 @@ description: 출시 예정 제품 를 테스트해 주셔서 감사합니다. �
 
 ## 개요
 
-출시 예정 제품 **[Openterface KVM-Go](https://openterface.com/products/kvmgo/)** 를 테스트해 주셔서 감사합니다.
+출시 예정 제품 **[Openterface KVM-Go](https://openterface.com/kvmgo/)** 를 테스트해 주셔서 감사합니다.
 
 본 유닛은 **엔지니어링 프로토타입**이며, 펌웨어와 소프트웨어가 빠르게 발전하고 있습니다. 여러분의 피드백은 양산 전 제품 개선에 직접 도움이 됩니다.
 
@@ -21,7 +21,7 @@ description: 출시 예정 제품 를 테스트해 주셔서 감사합니다. �
 
 ### 최신 소프트웨어 사용
 
-최상의 성능과 호환성을 위해 GitHub Releases 페이지의 [Openterface 소프트웨어](https://openterface.com/app/kvm/) **최신 버전**을 사용해 주세요. 자주 업데이트하며, 이전 버전은 프로토타입 펌웨어와 맞지 않을 수 있습니다.
+최상의 성능과 호환성을 위해 GitHub Releases 페이지의 [Openterface 소프트웨어](https://docs.openterface.com/app/kvm/) **최신 버전**을 사용해 주세요. 자주 업데이트하며, 이전 버전은 프로토타입 펌웨어와 맞지 않을 수 있습니다.
 
 ## 알려진 문제 및 설명
 

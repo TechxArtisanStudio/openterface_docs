@@ -60,11 +60,11 @@ Vrem părerea ta sinceră. Chiar așa. Dacă ceva nu pare în regulă, spune-ne.
 
 **Pentru început:**
 
-* **Ghid de configurare**: [openterface.com/products/kvmgo/how-to-connect](https://openterface.com/products/kvmgo/how-to-connect)
-* **Pornire rapidă beta**: [openterface.com/products/kvmgo/beta-quick-start/](https://openterface.com/products/kvmgo/beta-quick-start/)
-* **Funcții și specificații**: [openterface.com/products/kvmgo/features](https://openterface.com/products/kvmgo/features/)
-* **Întrebări frecvente**: [openterface.com/products/kvmgo/faq](https://openterface.com/products/kvmgo/faq)
-* **Descarcă aplicația**: [openterface.com/app](https://openterface.com/app)
+* **Ghid de configurare**: [docs.openterface.com/products/kvmgo/how-to-connect/](https://docs.openterface.com/products/kvmgo/how-to-connect/)
+* **Pornire rapidă beta**: [docs.openterface.com/products/kvmgo/beta-quick-start/](https://docs.openterface.com/products/kvmgo/beta-quick-start/)
+* **Funcții și specificații**: [docs.openterface.com/products/kvmgo/features/](https://docs.openterface.com/products/kvmgo/features/)
+* **Întrebări frecvente**: [docs.openterface.com/products/kvmgo/faq/](https://docs.openterface.com/products/kvmgo/faq/)
+* **Descarcă aplicația**: [openterface.com/apps/](https://docs.openterface.com/app/kvm/)
 
 **Ai nevoie de ajutor?**
 

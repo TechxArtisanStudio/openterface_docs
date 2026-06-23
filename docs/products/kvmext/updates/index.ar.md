@@ -19,7 +19,7 @@ keywords: "تحديثات تمديد KVM v2, أخبار uConsole KVM, إعلان
 - مخرج **1080p @ 60 Hz** بزمن انتقال أقل من **< 70 ms**
 - لوحة بأبعاد **77.3 × 34.7 mm** مع تبديل مشترك لـ USB 2.0
 
-اقرأ الإعلان الكامل على [أخبار Openterface](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/).
+اقرأ الإعلان الكامل على [أخبار Openterface](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/).
 
 **البدء**
 
@@ -29,7 +29,7 @@ keywords: "تحديثات تمديد KVM v2, أخبار uConsole KVM, إعلان
 
 ## سابقاً
 
-- [شهادة OSHWA (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — شهادة جمعية أجهزة المصدر المفتوح لسلسلة تمديد uConsole KVM (UID CN000021)
+- [شهادة OSHWA (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — شهادة جمعية أجهزة المصدر المفتوح لسلسلة تمديد uConsole KVM (UID CN000021)
 
 ## الإصدار القديم v1
 

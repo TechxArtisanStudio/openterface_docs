@@ -19,7 +19,7 @@ Nouveautés par rapport au module de première génération :
 - Sortie **1080p @ 60 Hz** avec une latence **&lt; 70 ms**
 - Carte **77,3 × 34,7 mm** avec commutation partagée USB 2.0
 
-Lisez l'annonce complète sur [Openterface News](https://news.openterface.com/products/kvmext/2026-06-22-extension-module-v2-launch/).
+Lisez l'annonce complète sur [Openterface News](https://news.openterface.com/product/uconsole-kvm-extension/2026-06-22-extension-module-v2-launch/).
 
 **Pour commencer**
 
@@ -29,7 +29,7 @@ Lisez l'annonce complète sur [Openterface News](https://news.openterface.com/pr
 
 ## Précédemment
 
-- [Certification OSHWA (2025-08-28)](https://news.openterface.com/products/kvmext/2025-08-28-oshwa-certification/) — Certification de l'Open Source Hardware Association pour la gamme d'extension KVM uConsole (UID CN000021)
+- [Certification OSHWA (2025-08-28)](https://news.openterface.com/product/uconsole-kvm-extension/2025-08-28-oshwa-certification/) — Certification de l'Open Source Hardware Association pour la gamme d'extension KVM uConsole (UID CN000021)
 
 ## Version v1 héritée
 
