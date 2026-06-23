@@ -109,7 +109,7 @@ HDMI 嵌入式音頻直通，提供完整的多媒體體驗。
 - **[快速入門指南](https://assets.openterface.com/minikvm/minikvm_quick_start_guide.pdf)** (PDF)
 - **[數據手冊（英文）](https://assets.openterface.com/minikvm/Openterface-Mini-KVM-Basic-and-Toolkit-Datasheet-Eng.pdf)** (PDF)
 
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}

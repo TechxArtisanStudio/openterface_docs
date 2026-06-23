@@ -6,7 +6,7 @@ keywords: "VGA转HDMI，转换线，VGA音频转HDMI，传统设备连接，视�
 
 # VGA 转 HDMI 转换线
 
-![CABLE100-VGA2HDMI](https://assets.openterface.com/images/products/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
+![CABLE100-VGA2HDMI](https://assets.openterface.com/images/product/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
 
 轻松连接较旧的 VGA 设备到现代 HDMI 显示器或电视。  
 此线缆将**VGA 视频**和**3.5mm 音频**组合成单个 HDMI 输出，通过一个连接提供图像和声音。
@@ -18,8 +18,8 @@ keywords: "VGA转HDMI，转换线，VGA音频转HDMI，传统设备连接，视�
 -   **音频输出**: 嵌入 HDMI 信号中
 -   **电源**: USB 供电
 
-![VGA to HDMI Cable Dark](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
-![VGA to HDMI Cable Light](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
+![VGA to HDMI Cable Dark](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
+![VGA to HDMI Cable Light](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
 
 ## ⚡ 重要说明
 

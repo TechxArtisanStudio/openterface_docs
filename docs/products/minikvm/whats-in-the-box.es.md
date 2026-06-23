@@ -8,7 +8,7 @@ keywords: "Mini-KVM, conmutador KVM, KVM HDMI, KVM USB, control headless, perif�
 
 ## Opción 1: **Paquete Toolkit**
 
-![toolkit-open](https://assets.openterface.com/images/products/toolkit-open.webp){:style="max-width:480px"}
+![toolkit-open](https://assets.openterface.com/images/product/toolkit-open.webp){:style="max-width:480px"}
 
 🎯 **Solución completa** - Mejor valor y compatibilidad garantizada:
 
@@ -28,7 +28,7 @@ keywords: "Mini-KVM, conmutador KVM, KVM HDMI, KVM USB, control headless, perif�
 
 ## Opción 2: **Paquete Basic**
 
-![basic-pack](https://assets.openterface.com/images/products/basic-with-maunal.webp){:style="max-width:480px"}
+![basic-pack](https://assets.openterface.com/images/product/basic-with-maunal.webp){:style="max-width:480px"}
 
 **Solución esencial** - Para usuarios que ya tienen cables de alta calidad y prefieren un embalaje mínimo:
 

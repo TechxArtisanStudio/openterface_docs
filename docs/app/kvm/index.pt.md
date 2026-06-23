@@ -7,7 +7,7 @@ description: Para colocar seus gadgets Openterface™ KVM em funcionamento, voc�
 
 Para colocar seus gadgets Openterface™ KVM em funcionamento, você precisará instalar um dos aplicativos listados abaixo no seu computador host. Você pode baixar esses aplicativos de diferentes plataformas de apps ou simplesmente clicar nos links fornecidos. Se você está se sentindo aventureiro, também pode construí-los a partir do código-fonte usando nossos repositórios GitHub!
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/products/use-case-pc-angled-view.webp){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## Download e Instalação
 

@@ -6,7 +6,7 @@ keywords: "KVM擴展包裝, uConsole KVM, 包裝內容, 安裝配件, KVM擴展�
 
 # **包裝內容** | Openterface KVM Extension for uConsole
 
-![KVM Extension Box](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-pcb-front.webp){:style="max-width:480px"}
+![KVM Extension Box](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-pcb-front.webp){:style="max-width:480px"}
 
 **核心組件**
 

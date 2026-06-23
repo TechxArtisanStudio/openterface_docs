@@ -6,7 +6,7 @@ keywords: "Type-C Kabel, USB-A Adapter, schneller Datentransfer, hochgeschwindig
 
 # Type-C zu Type-C Kabel с Adapter
 
-![C2C-150-Cable](https://assets.openterface.com/images/products/part/OP-05-CABLE150-C2C.webp){:style="max-height:360px"}
+![C2C-150-Cable](https://assets.openterface.com/images/product/part/OP-05-CABLE150-C2C.webp){:style="max-height:360px"}
 
 Dieses stilvolle и angenehm anzufassende Type-C Male-to-Male Kabel in lebhaftem Orange ist для Подключениеen zu Host-Computern konzipiert. Es wird с einem USB-C Female zu USB-A Male Adapter geliefert, um die Kompatibilität zu verbessern, sodass Sie Host-Computer sowohl о Type-C- als auch USB-A-Ports anschließen können. Darо hinaus unterstützt dieses Kabel **240W Schnellladung** (Spannung DC50V, Strom 5A, Leistung 240W), was es perfekt macht, не nur для unsere Mini-KVMs, sondern auch zum Laden Ihres Mobiltelefons или Laptops.
 

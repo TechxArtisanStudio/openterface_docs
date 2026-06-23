@@ -95,7 +95,7 @@ HDMI embedded audio passthrough for complete multimedia experience.
 - **[Quick Start Guide](https://assets.openterface.com/minikvm/minikvm_quick_start_guide.pdf)** (PDF)
 - **[Datasheet (English)](https://assets.openterface.com/minikvm/Openterface-Mini-KVM-Basic-and-Toolkit-Datasheet-Eng.pdf)** (PDF)
 
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}

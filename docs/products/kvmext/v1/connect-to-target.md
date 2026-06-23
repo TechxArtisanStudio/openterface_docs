@@ -12,7 +12,7 @@ keywords: "KVM connection setup, target device connection, USB control setup, HD
 
 ## Connection Overview
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![extension-use-case-1a](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
 
 ## Prerequisites
 

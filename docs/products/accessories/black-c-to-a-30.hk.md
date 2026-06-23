@@ -6,7 +6,7 @@ keywords: "Type-C轉USB-A數據線, USB適配器, 數據傳輸線, 控制信號�
 
 # Type-C轉USB-A數據線帶適配器30cm
 
-![C2A-30-Cable](https://assets.openterface.com/images/products/part/OP-04-CABLE30-C2A.webp){:style="max-height:360px"}
+![C2A-30-Cable](https://assets.openterface.com/images/product/part/OP-04-CABLE30-C2A.webp){:style="max-height:360px"}
 
 這款多功能的Type-C公頭轉USB-A公頭數據線，搭配USB-A母頭轉USB-C公頭適配器，為目標設備提供靈活的連接。無論目標設備使用USB-A還是Type-C端口，都能實現數據傳輸以及鍵盤和鼠標控制信號的傳輸。
 

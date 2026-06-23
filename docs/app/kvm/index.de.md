@@ -7,7 +7,7 @@ description: "Software: Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen
 
 Um Ihre Openterface™ KVM-Gadgets zum Laufen zu bringen, müssen Sie eine der unten aufgeführten Apps auf Ihrem Host-Computer installieren. Sie können diese Apps von verschiedenen App-Plattformen herunterladen oder einfach auf die bereitgestellten Links klicken. Wenn Sie sich abenteuerlustig fühlen, können Sie sie auch aus dem Quellcode mit unseren GitHub-Repositories erstellen!
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/products/use-case-pc-angled-view.webp){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## Download & Installation
 

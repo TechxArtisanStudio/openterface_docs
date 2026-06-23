@@ -10,8 +10,8 @@ keywords: "funzionalità estensione KVM, uConsole KVM, HDMI KVM, controllo USB H
     This page documents the **first-generation** Openterface KVM Extension (37 × 77 mm, no Ethernet/SD). The current product is the **[Extension Module v2](../index.md)** with dual Ethernet, SD card, and 60 Hz output.
 
 
-![PCB-front](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
-![PCB-Back](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
+![PCB-front](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension.webp){:style="max-height:320px"}
+![PCB-Back](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-back.webp){:style="max-height:320px"}
 
 ## Funzionalità principali
 

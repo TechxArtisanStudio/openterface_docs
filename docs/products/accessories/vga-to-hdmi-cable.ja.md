@@ -6,7 +6,7 @@ keywords: "VGA to HDMI、変換ケーブル、VGAオーディオ to HDMI、レ�
 
 # VGA to HDMI 変換ケーブル
 
-![CABLE100-VGA2HDMI](https://assets.openterface.com/images/products/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
+![CABLE100-VGA2HDMI](https://assets.openterface.com/images/product/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
 
 従来の VGA デバイスを現代の HDMI モニターやテレビに簡単に接続。  
 このケーブルは**VGA ビデオ**と**3.5mm オーディオ**を単一の HDMI 出力に統合し、1 つの接続で映像と音声の両方を提供します。
@@ -18,8 +18,8 @@ keywords: "VGA to HDMI、変換ケーブル、VGAオーディオ to HDMI、レ�
 -   **オーディオ出力**: HDMI 信号に埋め込み
 -   **電源**: USB 電源
 
-![VGA to HDMI Cable Dark](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
-![VGA to HDMI Cable Light](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
+![VGA to HDMI Cable Dark](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
+![VGA to HDMI Cable Light](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
 
 ## ⚡ 重要な注意事項
 

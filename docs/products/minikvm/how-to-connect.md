@@ -8,8 +8,8 @@ keywords: "Mini-KVM setup, KVM connection guide, USB-C KVM setup, HDMI KVM conne
 
 ## Quick Setup
 
-![to-host](https://assets.openterface.com/images/products/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/products/to-host_1.svg#only-dark){:style="max-height:200px"}
-![to-target](https://assets.openterface.com/images/products/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/products/to-target_1.svg#only-dark){:style="max-height:200px"}
+![to-host](https://assets.openterface.com/images/product/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/product/to-host_1.svg#only-dark){:style="max-height:200px"}
+![to-target](https://assets.openterface.com/images/product/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/product/to-target_1.svg#only-dark){:style="max-height:200px"}
 
 **Setup in 4 simple steps:**
 
@@ -26,8 +26,8 @@ keywords: "Mini-KVM setup, KVM connection guide, USB-C KVM setup, HDMI KVM conne
 
 ## Port Guide
 
-![host-side](https://assets.openterface.com/images/products/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc.svg#only-light){:style="max-width:300px"}
-![host-side](https://assets.openterface.com/images/products/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc_1.svg#only-dark){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc.svg#only-light){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="max-width:300px"}
 
 - ① **Host USB-C**: Data transfer to host computer
 - ② **Target USB-C**: Keyboard/mouse control output

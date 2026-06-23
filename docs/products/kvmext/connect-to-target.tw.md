@@ -8,7 +8,7 @@ keywords: "KVM連接設置, 目標設備連接, USB控制設置, HDMI輸入設�
 
 ## 連接概述
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![extension-use-case-1a](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
 
 ## 前提條件
 

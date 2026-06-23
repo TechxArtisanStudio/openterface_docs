@@ -6,8 +6,8 @@ keywords: "Mini-KVM 擴展引腳, 自定義開發, 硬件改裝, 開源 KVM"
 
 # **擴展引腳** | 開發者模式 | Openterface Mini-KVM
 
-![mini-kvm-pins-port](https://assets.openterface.com/images/products/mini-kvm-pins-port.webp){:style="max-height:360px"}
-![pin-cap](https://assets.openterface.com/images/products/part/pin-cap.webp){:style="max-height:300px"}
+![mini-kvm-pins-port](https://assets.openterface.com/images/product/mini-kvm-pins-port.webp){:style="max-height:360px"}
+![pin-cap](https://assets.openterface.com/images/product/part/pin-cap.webp){:style="max-height:300px"}
 
 Openterface Mini-KVM 配備用於高級開發和 [Open Software](/app) 實驗的擴展引腳。這些引腳在標準外殼配置中不會外露。
 
@@ -18,8 +18,8 @@ Openterface Mini-KVM 配備用於高級開發和 [Open Software](/app) 實驗的
 3. 下載擴展引腳蓋的 [3D 模型](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/models)。
 4. 查看我們的 [硬件 GitHub 倉庫](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware)。
 
-![change-cap](https://assets.openterface.com/images/products/change-cap.svg#only-light){:style="max-height:300px"}
-![change-cap](https://assets.openterface.com/images/products/change-cap_1.svg#only-dark){:style="max-height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap.svg#only-light){:style="max-height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap_1.svg#only-dark){:style="max-height:300px"}
 
 !!! warning "保修失效"
     拆除原裝外殼可能導致產品保修失效。所有改裝或拆解行為均由用户自行承擔風險。
@@ -29,10 +29,10 @@ Openterface Mini-KVM 配備用於高級開發和 [Open Software](/app) 實驗的
 
 ## 引腳配置
 
-![target-side](https://assets.openterface.com/images/products/extension-pins-1.svg#only-light){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/products/extension-pins-2.svg#only-light){:style="max-height:200px"}
-![target-side](https://assets.openterface.com/images/products/extension-pins-1_1.svg#only-dark){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/products/extension-pins-2_1.svg#only-dark){:style="max-height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1.svg#only-light){:style="max-height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2.svg#only-light){:style="max-height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1_1.svg#only-dark){:style="max-height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2_1.svg#only-dark){:style="max-height:200px"}
 
 擴展引腳提供以下連接：
 
@@ -48,7 +48,7 @@ Openterface Mini-KVM 配備用於高級開發和 [Open Software](/app) 實驗的
 
 ## 擴展引腳蓋（Extension Pin Cap）
 
-![pin-cap](https://assets.openterface.com/images/products/part/pin-cap.webp){:style="max-height:360px"}
+![pin-cap](https://assets.openterface.com/images/product/part/pin-cap.webp){:style="max-height:360px"}
 
 該 3D 打印的擴展引腳蓋用於替換 Openterface Mini-KVM 的原裝上蓋，使高級用户能夠暴露並訪問擴展引腳以進行自定義開發。你可以從我們的 GitHub 倉庫下載 3D 模型文件並自行打印此蓋子。
 

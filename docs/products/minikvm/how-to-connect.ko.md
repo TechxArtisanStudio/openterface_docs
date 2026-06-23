@@ -8,8 +8,8 @@ keywords: "Mini-KVM 설정, KVM 연결 가이드, USB-C KVM 설정, HDMI KVM 연
 
 ## 빠른 설정
 
-![to-host](https://assets.openterface.com/images/products/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/products/to-host_1.svg#only-dark){:style="max-height:200px"}
-![to-target](https://assets.openterface.com/images/products/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/products/to-target_1.svg#only-dark){:style="max-height:200px"}
+![to-host](https://assets.openterface.com/images/product/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/product/to-host_1.svg#only-dark){:style="max-height:200px"}
+![to-target](https://assets.openterface.com/images/product/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/product/to-target_1.svg#only-dark){:style="max-height:200px"}
 
 **4단계로 간단하게 설정:**
 
@@ -22,8 +22,8 @@ keywords: "Mini-KVM 설정, KVM 연결 가이드, USB-C KVM 설정, HDMI KVM 연
 
 ## 포트 가이드
 
-![host-side](https://assets.openterface.com/images/products/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc.svg#only-light){:style="max-width:300px"}
-![host-side](https://assets.openterface.com/images/products/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc_1.svg#only-dark){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc.svg#only-light){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="max-width:300px"}
 
 - ① **호스트 USB-C**: 호스트 컴퓨터로의 데이터 전송
 - ② **대상 USB-C**: 키보드/마우스 제어 출력

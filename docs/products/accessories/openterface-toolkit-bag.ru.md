@@ -6,7 +6,7 @@ keywords: "Werkzeugtasche, Kabelmanagementtasche, tragbare Aufbewahrung, Openter
 
 # Openterface Werkzeugtasche
 
-![Toolkit-bag](https://assets.openterface.com/images/products/part/OP-06-BAG-TOOLKIT.webp){:style="max-height:360px"}
+![Toolkit-bag](https://assets.openterface.com/images/product/part/OP-06-BAG-TOOLKIT.webp){:style="max-height:360px"}
 
 Halten Sie Ihren Openterface Mini-KVM и dessen Zubehör с dieser kompakten Werkzeugtasche organisiert и tragbar. Mit einem stilvollen orangefarbenen Reißverschluss и dehnbaren Netzfächern sorgt diese Tasche для hervorragendes Kabelmanagement и einfachen Transport, perfekt для IT-Profis unterwegs.
 

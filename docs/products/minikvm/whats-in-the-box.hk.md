@@ -8,7 +8,7 @@ keywords: "Mini-KVM, KVM 切換器, HDMI KVM, USB KVM, headless 控制, 計算�
 
 ## 選項 1：**工具包包裝**
 
-![toolkit-open](https://assets.openterface.com/images/products/toolkit-open.webp){:style="max-width:480px"}
+![toolkit-open](https://assets.openterface.com/images/product/toolkit-open.webp){:style="max-width:480px"}
 
 🎯 **完整解決方案** - 最佳價值和保證兼容性：
 
@@ -28,7 +28,7 @@ keywords: "Mini-KVM, KVM 切換器, HDMI KVM, USB KVM, headless 控制, 計算�
 
 ## 選項 2：**基礎包裝**
 
-![basic-pack](https://assets.openterface.com/images/products/basic-with-maunal.webp){:style="max-width:480px"}
+![basic-pack](https://assets.openterface.com/images/product/basic-with-maunal.webp){:style="max-width:480px"}
 
 **基礎解決方案** - 適用於已有高質量線纜並偏好最小包裝的用户：
 

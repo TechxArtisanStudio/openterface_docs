@@ -36,14 +36,14 @@ KVM Extension 替換 uConsole 擴展槽中的 4G/LTE 模塊，添加直接 HDMI 
 
 ??? note "最終安裝前檢查適配性"
     您可以先**不使用墊圈**將板子插入以測試適配性。如果板子感覺鬆動或接觸不均勻，請添加墊圈並重新插入板子。Openterface KVM Extension 厚度為 1.0 mm，比原始 LTE 模塊（1.2 mm）稍薄。使用提供的墊圈可確保穩定安裝和可靠的彈簧接觸。  
-    ![extension-slot-loose](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-slot-loose.webp){:style="max-height:220px"}
+    ![extension-slot-loose](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-slot-loose.webp){:style="max-height:220px"}
 
 ### **4. 固定板子**
 重新插入螺絲並**輕柔地**擰緊 — **不要過度擰緊**，因為這可能會損壞板子或損壞螺紋。
 
-![extension-screw-washer-installed](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installed.jpg){:style="max-height:220px"}
-![extension-screw-washer-installing](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-screw-washer-installing.jpg){:style="max-height:220px"}
-![extension-install-1](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-install-1.webp){:style="max-height:220px"}
+![extension-screw-washer-installed](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-screw-washer-installed.jpg){:style="max-height:220px"}
+![extension-screw-washer-installing](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-screw-washer-installing.jpg){:style="max-height:220px"}
+![extension-install-1](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-install-1.webp){:style="max-height:220px"}
 
 ### **5. 驗證安裝**
 板子應該**平整穩定**，所有焊盤上的彈簧接觸均勻。不應該有明顯的擺動或移動。
@@ -53,7 +53,7 @@ KVM Extension 替換 uConsole 擴展槽中的 4G/LTE 模塊，添加直接 HDMI 
 
 ??? note "擴展槽蓋上的文字方向"
     從某些角度觀看時，擴展槽蓋上的文字可能看起來"倒置"。這是有意的設計 - 文字的方向是為了在您手持 uConsole 並從頂部到底部查看端口時能夠閲讀，這是使用設備時的自然觀看位置。
-    ![expansion-slot-text-orientation](https://assets.openterface.com/images/products/openterface-kvm-uconsole-expansion-slot-text-orientation.webp){:style="max-height:220px"}
+    ![expansion-slot-text-orientation](https://assets.openterface.com/images/product/openterface-kvm-uconsole-expansion-slot-text-orientation.webp){:style="max-height:220px"}
 
 ---
 

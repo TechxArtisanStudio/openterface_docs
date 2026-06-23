@@ -8,7 +8,7 @@ keywords: "Mini-KVM, KVM スイッチ, HDMI KVM, USB KVM, headless 制御, コ�
 
 ## オプション 1：**ツールキットパッケージ**
 
-![toolkit-open](https://assets.openterface.com/images/products/toolkit-open.webp){:style="max-width:480px"}
+![toolkit-open](https://assets.openterface.com/images/product/toolkit-open.webp){:style="max-width:480px"}
 
 🎯 **完全ソリューション** - 最高の価値と保証された互換性：
 
@@ -28,7 +28,7 @@ keywords: "Mini-KVM, KVM スイッチ, HDMI KVM, USB KVM, headless 制御, コ�
 
 ## オプション 2：**ベーシックパッケージ**
 
-![basic-pack](https://assets.openterface.com/images/products/basic-with-maunal.webp){:style="max-width:480px"}
+![basic-pack](https://assets.openterface.com/images/product/basic-with-maunal.webp){:style="max-width:480px"}
 
 **基本ソリューション** - すでに高品質ケーブルを持ち、最小限のパッケージングを好むユーザー向け：
 

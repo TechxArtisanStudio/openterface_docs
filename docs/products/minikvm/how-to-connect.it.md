@@ -8,8 +8,8 @@ keywords: "Configurazione Mini-KVM, guida connessione KVM, configurazione KVM US
 
 ## Configurazione rapida
 
-![to-host](https://assets.openterface.com/images/products/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/products/to-host_1.svg#only-dark){:style="max-height:200px"}
-![to-target](https://assets.openterface.com/images/products/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/products/to-target_1.svg#only-dark){:style="max-height:200px"}
+![to-host](https://assets.openterface.com/images/product/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/product/to-host_1.svg#only-dark){:style="max-height:200px"}
+![to-target](https://assets.openterface.com/images/product/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/product/to-target_1.svg#only-dark){:style="max-height:200px"}
 
 **Configurazione in 4 semplici passaggi:**
 
@@ -22,8 +22,8 @@ keywords: "Configurazione Mini-KVM, guida connessione KVM, configurazione KVM US
 
 ## Guida alle porte
 
-![host-side](https://assets.openterface.com/images/products/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc.svg#only-light){:style="max-width:300px"}
-![host-side](https://assets.openterface.com/images/products/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc_1.svg#only-dark){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc.svg#only-light){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="max-width:300px"}
 
 - ① **Host USB-C**: Trasferimento dati al computer host
 - ② **Target USB-C**: Output controllo tastiera/mouse

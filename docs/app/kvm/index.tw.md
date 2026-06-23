@@ -7,7 +7,7 @@ description: 要讓您的 Openterface™ KVM 設備運行起來，您需要在�
 
 要讓您的 Openterface™ KVM 設備運行起來，您需要在主機上安裝下面列出的應用程序之一。您可以從不同的應用平臺獲取這些應用，或者直接點擊提供的鏈接。如果您喜歡冒險，也可以使用我們的 GitHub 倉庫從源代碼構建它們！
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/products/use-case-pc-angled-view.webp){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## 下載與安裝
 

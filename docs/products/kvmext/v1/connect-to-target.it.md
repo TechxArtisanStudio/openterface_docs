@@ -12,7 +12,7 @@ keywords: "configurazione connessione KVM, connessione dispositivo target, confi
 
 ## Panoramica della Connessione
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![extension-use-case-1a](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
 
 ## Prerequisiti
 

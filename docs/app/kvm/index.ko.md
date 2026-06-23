@@ -7,7 +7,7 @@ description: Openterface™ KVM 가젯을 실행하려면 호스트 컴퓨터에
 
 Openterface™ KVM 가젯을 실행하려면 호스트 컴퓨터에 아래 나열된 앱 중 하나를 설치해야 합니다. 다양한 앱 플랫폼에서 이러한 앱을 다운로드하거나 제공된 링크를 클릭할 수 있습니다. 모험을 즐긴다면 GitHub 저장소를 사용하여 소스에서 직접 빌드할 수도 있습니다!
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/products/use-case-pc-angled-view.webp){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## 다운로드 및 설치
 

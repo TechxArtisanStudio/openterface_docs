@@ -10,7 +10,7 @@ keywords: "KVM扩展包装, uConsole KVM, 包装内容, 安装配件, KVM扩展�
     This page documents the **first-generation** Openterface KVM Extension (37 × 77 mm, no Ethernet/SD). The current product is the **[Extension Module v2](../index.md)** with dual Ethernet, SD card, and 60 Hz output.
 
 
-![KVM Extension Box](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-pcb-front.webp){:style="max-width:480px"}
+![KVM Extension Box](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-pcb-front.webp){:style="max-width:480px"}
 
 **核心组件**
 

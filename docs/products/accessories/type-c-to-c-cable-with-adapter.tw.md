@@ -6,7 +6,7 @@ keywords: "Type-C數據線, USB-A適配器, 快速數據傳輸, 高速充電"
 
 # Type-C轉Type-C數據線帶適配器
 
-![C2C-150-Cable](https://assets.openterface.com/images/products/part/OP-05-CABLE150-C2C.webp){:style="max-height:360px"}
+![C2C-150-Cable](https://assets.openterface.com/images/product/part/OP-05-CABLE150-C2C.webp){:style="max-height:360px"}
 
 這款時尚且觸感柔軟的Type-C公對公數據線採用鮮豔的橙色設計，專為主機連接而設計。它配備USB-C母頭轉USB-A公頭適配器，增強兼容性，確保您可以使用Type-C或USB-A端口連接到主機。此外，這款數據線支持**240W快充**（電壓DC50V，電流5A，功率240W），不僅完美適用於我們的Mini-KVM，也適用於為您的手機或筆記本電腦充電。
 

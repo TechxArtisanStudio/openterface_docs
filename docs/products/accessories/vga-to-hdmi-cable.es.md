@@ -6,7 +6,7 @@ keywords: "VGA a HDMI, cable convertidor, audio VGA a HDMI, conexión de disposi
 
 # Cable convertidor VGA a HDMI
 
-![CABLE100-VGA2HDMI](https://assets.openterface.com/images/products/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
+![CABLE100-VGA2HDMI](https://assets.openterface.com/images/product/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
 
 Conecta fácilmente dispositivos VGA más antiguos a monitores o televisores HDMI modernos.  
 Este cable combina **video VGA** y **audio 3.5mm** en una sola salida HDMI, entregando tanto imagen como sonido a través de una conexión.
@@ -18,8 +18,8 @@ Este cable combina **video VGA** y **audio 3.5mm** en una sola salida HDMI, entr
 -   **Salida de audio**: Integrada en la señal HDMI
 -   **Alimentación**: Alimentado por USB
 
-![VGA to HDMI Cable Dark](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
-![VGA to HDMI Cable Light](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
+![VGA to HDMI Cable Dark](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
+![VGA to HDMI Cable Light](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
 
 ## ⚡ Notas importantes
 

@@ -6,7 +6,7 @@ keywords: "HDMI-Kabel, Männlich-zu-Männlich HDMI, hochauflösendes Videokabel,
 
 # HDMI Männlich-zu-Männlich Kabel
 
-![HDMI-Cable](https://assets.openterface.com/images/products/part/OP-03-CABLE30-HDMI.webp){:style="max-height:360px"}
+![HDMI-Cable](https://assets.openterface.com/images/product/part/OP-03-CABLE30-HDMI.webp){:style="max-height:360px"}
 
 Dieses kompakte HDMI-Kabel ist perfekt, um Ihr Zielgerät anzuschließen и Videoausgaben zu erfassen, и sorgt для eine nahtlose Integration с Ihrem Openterface Mini-KVM.
 

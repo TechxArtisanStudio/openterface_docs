@@ -8,8 +8,8 @@ keywords: "Configurare Mini-KVM, ghid conexiune KVM, configurare KVM USB-C, cone
 
 ## Configurare rapidă
 
-![to-host](https://assets.openterface.com/images/products/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/products/to-host_1.svg#only-dark){:style="max-height:200px"}
-![to-target](https://assets.openterface.com/images/products/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/products/to-target_1.svg#only-dark){:style="max-height:200px"}
+![to-host](https://assets.openterface.com/images/product/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/product/to-host_1.svg#only-dark){:style="max-height:200px"}
+![to-target](https://assets.openterface.com/images/product/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/product/to-target_1.svg#only-dark){:style="max-height:200px"}
 
 **Configurare în 4 pași simpli:**
 
@@ -22,8 +22,8 @@ keywords: "Configurare Mini-KVM, ghid conexiune KVM, configurare KVM USB-C, cone
 
 ## Ghidul porturilor
 
-![host-side](https://assets.openterface.com/images/products/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc.svg#only-light){:style="max-width:300px"}
-![host-side](https://assets.openterface.com/images/products/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc_1.svg#only-dark){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc.svg#only-light){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="max-width:300px"}
 
 - ① **USB-C host**: Transfer de date către computerul host
 - ② **USB-C țintă**: Ieșire control tastatură/mouse

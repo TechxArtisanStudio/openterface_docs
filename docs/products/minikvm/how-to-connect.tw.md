@@ -8,8 +8,8 @@ keywords: "Mini-KVM 設置, KVM 連接指南, USB-C KVM 設置, HDMI KVM 連接,
 
 ## 快速設置
 
-![to-host](https://assets.openterface.com/images/products/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/products/to-host_1.svg#only-dark){:style="max-height:200px"}
-![to-target](https://assets.openterface.com/images/products/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/products/to-target_1.svg#only-dark){:style="max-height:200px"}
+![to-host](https://assets.openterface.com/images/product/to-host.svg#only-light){:style="max-height:200px"} ![to-host](https://assets.openterface.com/images/product/to-host_1.svg#only-dark){:style="max-height:200px"}
+![to-target](https://assets.openterface.com/images/product/to-target.svg#only-light){:style="max-height:200px"} ![to-target](https://assets.openterface.com/images/product/to-target_1.svg#only-dark){:style="max-height:200px"}
 
 **4 個簡單步驟完成設置：**
 
@@ -22,8 +22,8 @@ keywords: "Mini-KVM 設置, KVM 連接指南, USB-C KVM 設置, HDMI KVM 連接,
 
 ## 端口指南
 
-![host-side](https://assets.openterface.com/images/products/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc.svg#only-light){:style="max-width:300px"}
-![host-side](https://assets.openterface.com/images/products/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/products/target-htc_1.svg#only-dark){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc.svg#only-light){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc.svg#only-light){:style="max-width:300px"}
+![host-side](https://assets.openterface.com/images/product/host-htc_1.svg#only-dark){:style="max-width:300px"} ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="max-width:300px"}
 
 - ① **主機 USB-C**：數據傳輸到主機電腦
 - ② **目標 USB-C**：鍵盤/鼠標控制輸出

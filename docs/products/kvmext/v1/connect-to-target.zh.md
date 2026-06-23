@@ -12,7 +12,7 @@ keywords: "KVM连接设置, 目标设备连接, USB控制设置, HDMI输入设�
 
 ## 连接概述
 
-![extension-use-case-1a](https://assets.openterface.com/images/products/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
+![extension-use-case-1a](https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension-use-case-1a.webp){:style="max-height:480px"}
 
 ## 前提条件
 

@@ -6,7 +6,7 @@ keywords: "VGA la HDMI, cablu convertor, audio VGA la HDMI, conexiune dispozitiv
 
 # Cablu convertor VGA la HDMI
 
-![CABLE100-VGA2HDMI](https://assets.openterface.com/images/products/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
+![CABLE100-VGA2HDMI](https://assets.openterface.com/images/product/part/CABLE100-VGA2HDMI-1.webp){:style="max-height:360px"}
 
 Conectați cu ușurință dispozitive VGA mai vechi la monitoare sau televizoare HDMI moderne.  
 Acest cablu combină **video VGA** și **audio 3.5mm** într-o singură ieșire HDMI, livrând atât imaginea cât și sunetul printr-o singură conexiune.
@@ -18,8 +18,8 @@ Acest cablu combină **video VGA** și **audio 3.5mm** într-o singură ieșire 
 -   **Ieșire audio**: Integrată în semnalul HDMI
 -   **Alimentare**: Alimentat prin USB
 
-![VGA to HDMI Cable Dark](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
-![VGA to HDMI Cable Light](https://assets.openterface.com/images/products/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
+![VGA to HDMI Cable Dark](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-dark.svg#only-dark)
+![VGA to HDMI Cable Light](https://assets.openterface.com/images/product/accessories/vga-to-hdmi-cable/vga2hdmi-connect-light.svg#only-light)
 
 ## ⚡ Note importante
 

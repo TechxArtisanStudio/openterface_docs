@@ -7,7 +7,7 @@ description: "Openterface ホストアプリの概要 — Mini-KVM・KVM-GO 向�
 
 Openterface™ KVM ガジェットを起動して実行するには、ホストコンピューターに以下にリストされたアプリのいずれかをインストールする必要があります。これらのアプリは、さまざまなアプリプラットフォームから取得するか、提供されたリンクをクリックするだけです。冒険的になりたい場合は、GitHub リポジトリを使用してソースからビルドすることもできます！
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/products/use-case-pc-angled-view.webp){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## ダウンロードとインストール
 

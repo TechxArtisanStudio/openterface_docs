@@ -6,8 +6,8 @@ keywords: "Mini-KVM Erweiterungs-Pins, kienspezifische Entwicklung, Sprzęt-Modi
 
 # **Erweiterungs-Pins** | Entwicklermodus | Openterface Mini-KVM
 
-![mini-kvm-pins-port](https://assets.openterface.com/images/products/mini-kvm-pins-port.webp){:style="max-height:360px"}
-![pin-cap](https://assets.openterface.com/images/products/part/pin-cap.webp){:style="max-height:300px"}
+![mini-kvm-pins-port](https://assets.openterface.com/images/product/mini-kvm-pins-port.webp){:style="max-height:360px"}
+![pin-cap](https://assets.openterface.com/images/product/part/pin-cap.webp){:style="max-height:300px"}
 
 Der Openterface Mini-KVM verfügt o Erweiterungs-Pins dla fortgeschrittene Entwicklung i Experimente z [Open Oprogramowanie](/app). Diese Pins sind in der Standard-Gehäusekonfiguration nie freiliegt.
 
@@ -18,8 +18,8 @@ Der Openterface Mini-KVM verfügt o Erweiterungs-Pins dla fortgeschrittene Entwi
 3. Das [3D-Modell](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Sprzęt/tree/main/models) dla die Extension Pin Cap herunterladen.
 4. Unser [Sprzęt-GitHub-Repository](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Sprzęt) ansehen.
 
-![change-cap](https://assets.openterface.com/images/products/change-cap.svg#only-light){:style="max-height:300px"}
-![change-cap](https://assets.openterface.com/images/products/change-cap_1.svg#only-dark){:style="max-height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap.svg#only-light){:style="max-height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap_1.svg#only-dark){:style="max-height:300px"}
 
 !!! warning "Garantie erlischt"
     Das Entfernen des Originalgehäuses kann die Produktgarantie ungültig machen. Alle Modifikationen lub Demontagen erfolgen auf eigenes Risiko des Nutzers.
@@ -29,10 +29,10 @@ Der Openterface Mini-KVM verfügt o Erweiterungs-Pins dla fortgeschrittene Entwi
 
 ## Pin-Konfiguration
 
-![target-side](https://assets.openterface.com/images/products/extension-pins-1.svg#only-light){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/products/extension-pins-2.svg#only-light){:style="max-height:200px"}
-![target-side](https://assets.openterface.com/images/products/extension-pins-1_1.svg#only-dark){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/products/extension-pins-2_1.svg#only-dark){:style="max-height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1.svg#only-light){:style="max-height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2.svg#only-light){:style="max-height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1_1.svg#only-dark){:style="max-height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2_1.svg#only-dark){:style="max-height:200px"}
 
 Die Erweiterungs-Pins bieten folgende Połączenieen:
 
@@ -48,7 +48,7 @@ Die Erweiterungs-Pins bieten folgende Połączenieen:
 
 ## Extension Pin Cap
 
-![pin-cap](https://assets.openterface.com/images/products/part/pin-cap.webp){:style="max-height:360px"}
+![pin-cap](https://assets.openterface.com/images/product/part/pin-cap.webp){:style="max-height:360px"}
 
 Diese 3D-gedruckte Extension Pin Cap ersetzt die originale Abdeckung des Openterface Mini-KVM i ermöglicht fortgeschrittenen Nutzern, die Erweiterungs-Pins dla kienspezifische Entwicklungen freizulegen i zu nutzen. Sie können die 3D-Modell-Dateien aus unserem GitHub-Repository herunterladen i die Kappe selbst drucken.
 

@@ -109,7 +109,7 @@ HDMI 비디오 캡처와 에뮬레이션된 키보드/마우스(HID) 입력을 �
 - **[빠른 시작 가이드](https://assets.openterface.com/minikvm/minikvm_quick_start_guide.pdf)** (PDF)
 - **[데이터시트 (영어)](https://assets.openterface.com/minikvm/Openterface-Mini-KVM-Basic-and-Toolkit-Datasheet-Eng.pdf)** (PDF)
 
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
-![lig-front](https://assets.openterface.com/images/products/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
-![lig-back](https://assets.openterface.com/images/products/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}

@@ -8,7 +8,7 @@ keywords: "Mini-KVM, comutator KVM, KVM HDMI, KVM USB, control headless, perifer
 
 ## Opțiunea 1: **Pachetul Toolkit**
 
-![toolkit-open](https://assets.openterface.com/images/products/toolkit-open.webp){:style="max-width:480px"}
+![toolkit-open](https://assets.openterface.com/images/product/toolkit-open.webp){:style="max-width:480px"}
 
 🎯 **Soluție completă** - Cea mai bună valoare și compatibilitate garantată:
 
@@ -28,7 +28,7 @@ keywords: "Mini-KVM, comutator KVM, KVM HDMI, KVM USB, control headless, perifer
 
 ## Opțiunea 2: **Pachetul Basic**
 
-![basic-pack](https://assets.openterface.com/images/products/basic-with-maunal.webp){:style="max-width:480px"}
+![basic-pack](https://assets.openterface.com/images/product/basic-with-maunal.webp){:style="max-width:480px"}
 
 **Soluție esențială** - Pentru utilizatorii care au deja cabluri de înaltă calitate și preferă ambalarea minimă:
 
