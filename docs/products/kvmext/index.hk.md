@@ -4,9 +4,10 @@ description: "Openterface KVM Extension for uConsole | 便攜式KVM控制台解�
 keywords: "KVM擴展, uConsole KVM, 便攜式KVM, HDMI KVM, USB HID控制, 無頭控制, 4G LTE替代, uConsole擴展, 移動KVM控制台"
 ---
 
-# **Openterface KVM Extension for uConsole**
+# **Openterface uConsole KVM Extension Module v2**
 
-{% include "partials/uconsole-kvm-slideshow.html" %}
+![kvmext-v2-hero-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-hero-1.webp){:style="max-height:360px"}
+![kvmext-v2-use-case-1](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-use-case-1.webp){:style="max-height:360px"}
 
 <div class="slogan-highlight">
   <h2 class="slogan-text">將您的uConsole轉換為便攜式KVM控制台</h2>
