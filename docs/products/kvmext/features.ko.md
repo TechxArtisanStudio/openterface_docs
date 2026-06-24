@@ -6,7 +6,6 @@ keywords: "KVM 확장 v2 기능, uConsole KVM, HDMI KVM, 이더넷 확장, SD �
 
 # **기능 및 사양** | 확장 모듈 v2
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## 핵심 기능

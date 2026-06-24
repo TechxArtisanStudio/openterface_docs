@@ -6,7 +6,6 @@ keywords: "KVM擴展功能, uConsole KVM, HDMI KVM, USB HID控制, 便攜式KVM,
 
 # **功能與規格** | Openterface KVM Extension for uConsole
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## 核心功能

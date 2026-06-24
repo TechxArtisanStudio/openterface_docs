@@ -6,7 +6,6 @@ keywords: "KVM-Erweiterung v2 Funktionen, uConsole KVM, HDMI KVM, Ethernet-Erwei
 
 # **Funktionen & Spezifikationen** | Extension Module v2
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## Kernfunktionen

@@ -46,7 +46,7 @@ Consultați [Ghidul Ethernet](/products/kvmext/ethernet/) pentru detalii complet
 
 ### **4. Instalați Modulul de Extensie v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Așezați ferm Modulul de Extensie v2 în slotul de extensie.
 - Asigurați-vă că contactele cu arc se aliniază uniform pe toate punctele de contact.

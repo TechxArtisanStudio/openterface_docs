@@ -46,7 +46,7 @@ See [Ethernet Guide](/products/kvmext/ethernet/) for full details.
 
 ### **4. Install Extension Module v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Seat Extension Module v2 firmly into the expansion slot.
 - Ensure spring contactors align evenly across all pads.

@@ -46,7 +46,7 @@ uConsole을 종료하고 모든 전원과 케이블을 분리하세요.
 
 ### **4. 확장 모듈 v2 설치**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - 확장 모듈 v2를 확장 슬롯에 단단히 장착하세요.
 - 스프링 접점이 모든 패드에 고르게 정렬되었는지 확인하세요.

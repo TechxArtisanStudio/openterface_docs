@@ -46,7 +46,7 @@ keywords: "KVM 扩展 v2 安装, uConsole 硬件设置, 扩展槽, 网卡安装"
 
 ### **4. 安装扩展模块 v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - 将扩展模块 v2 牢固地插入扩展槽。
 - 确保弹簧触点在所有焊盘上均匀对齐。

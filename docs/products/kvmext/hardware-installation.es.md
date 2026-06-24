@@ -46,7 +46,7 @@ Consulta la [Guía de Ethernet](/products/kvmext/ethernet/) para obtener todos l
 
 ### **4. Instalar el Módulo de Extensión v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Asienta el Módulo de Extensión v2 firmemente en la ranura de expansión.
 - Asegúrate de que los contactos de resorte se alineen uniformemente sobre todos los pads.

@@ -46,7 +46,7 @@ keywords: "установка KVM extension v2, настройка оборуд�
 
 ### **4. Установка модуля расширения v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Плотно установите модуль расширения v2 в слот расширения.
 - Убедитесь, что пружинные контакты равномерно выровнены по всем площадкам.

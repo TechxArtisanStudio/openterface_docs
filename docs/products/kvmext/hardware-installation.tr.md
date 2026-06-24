@@ -46,7 +46,7 @@ Tam ayrıntılar için bkz. [Ethernet Kılavuzu](/products/kvmext/ethernet/).
 
 ### **4. Genişletme Modülü v2'yi Takın**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Genişletme Modülü v2'yi genişletme yuvasına sıkıca yerleştirin.
 - Yaylı kontakların tüm pedlerde eşit şekilde hizalandığından emin olun.

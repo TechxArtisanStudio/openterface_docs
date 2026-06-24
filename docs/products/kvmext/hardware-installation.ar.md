@@ -46,7 +46,7 @@ keywords: "تركيب وحدة توسعة KVM الإصدار 2، إعداد عت
 
 ### **4. تركيب وحدة التوسعة الإصدار 2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - ثبّت وحدة التوسعة الإصدار 2 بإحكام في فتحة التوسعة.
 - تأكد من محاذاة الموصلات الزنبركية بالتساوي عبر جميع الوسادات.

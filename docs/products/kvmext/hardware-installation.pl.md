@@ -46,7 +46,7 @@ Zobacz [Przewodnik Ethernet](/products/kvmext/ethernet/) po pełne szczegóły.
 
 ### **4. Zainstaluj moduł rozszerzeń v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Osadź moduł rozszerzeń v2 stabilnie w gnieździe rozszerzeń.
 - Upewnij się, że styki sprężynowe są równo wyrównane na wszystkich padach.

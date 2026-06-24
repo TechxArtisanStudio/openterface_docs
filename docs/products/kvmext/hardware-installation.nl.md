@@ -46,7 +46,7 @@ Zie [Ethernet-gids](/products/kvmext/ethernet/) voor alle details.
 
 ### **4. Installeer Extensiemodule v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Plaats Extensiemodule v2 stevig in het uitbreidingsslot.
 - Zorg ervoor dat de veercontacten gelijkmatig over alle contactvlakken zijn uitgelijnd.

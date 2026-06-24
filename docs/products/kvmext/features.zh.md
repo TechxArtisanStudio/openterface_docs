@@ -6,7 +6,6 @@ keywords: "KVM 扩展 v2 功能, uConsole KVM, HDMI KVM, 以太网扩展, SD 卡
 
 # **功能与规格** | 扩展模块 v2
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## 核心功能

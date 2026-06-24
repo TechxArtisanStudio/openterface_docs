@@ -6,7 +6,6 @@ keywords: "KVM 拡張 v2 機能, uConsole KVM, HDMI KVM, Ethernet 拡張, SD カ
 
 # **機能と仕様** | 拡張モジュール v2
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## 主な機能

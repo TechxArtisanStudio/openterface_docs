@@ -46,7 +46,7 @@ uConsoleをシャットダウンし、すべての電源とケーブルを外し
 
 ### **4. 拡張モジュール v2を取り付ける**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - 拡張モジュール v2を拡張スロットにしっかりと装着します。
 - スプリングコンタクターがすべてのパッドに均等に揃っていることを確認します。

@@ -27,7 +27,7 @@ KVM Extension 替換 uConsole 擴展槽中的 4G/LTE 模塊，添加直接 HDMI 
 
 ### **4. 安裝 Extension Module v2**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - 將 Extension Module v2 牢固插入擴展槽。
 - 確保彈簧接觸器在所有焊盤上均勻對齊。

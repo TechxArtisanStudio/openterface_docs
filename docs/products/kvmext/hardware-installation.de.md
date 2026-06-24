@@ -46,7 +46,7 @@ Siehe [Ethernet-Anleitung](/products/kvmext/ethernet/) für alle Details.
 
 ### **4. Erweiterungsmodul v2 installieren**
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:240px"}
+![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:240px"}
 
 - Setzen Sie das Erweiterungsmodul v2 fest in den Erweiterungs-Slot ein.
 - Stellen Sie sicher, dass die Federkontakte gleichmäßig auf allen Pads anliegen.

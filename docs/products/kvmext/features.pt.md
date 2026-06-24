@@ -6,7 +6,6 @@ keywords: "recursos KVM extensão v2, uConsole KVM, HDMI KVM, expansão Ethernet
 
 # **Recursos e Especificações** | Módulo de Extensão v2
 
-![kvmext-v2-pcb-front](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-front.webp){:style="max-height:320px"}
 ![kvmext-v2-pcb-detail](https://assets.openterface.com/images/product/kvmext-v2/kvmext-v2-pcb-detail.webp){:style="max-height:320px"}
 
 ## Recursos Principais
