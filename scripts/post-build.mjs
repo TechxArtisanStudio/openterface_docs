@@ -28,8 +28,10 @@ const SKIP_ROOT = new Set([
   '.nojekyll',
 ]);
 
-function redirectHtml(target) {
-  const canonical = `https://docs.openterface.com${target === '/' ? '/' : target}`;
+function redirectHtml(target, { external = false } = {}) {
+  const canonical = external
+    ? target
+    : `https://docs.openterface.com${target === '/' ? '/' : target}`;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +45,36 @@ function redirectHtml(target) {
 </html>
 `;
 }
+
+/** Legacy MkDocs root shortcuts (apex had CF rules; docs host needs origin stubs). */
+const SHORTCUT_REDIRECTS = [
+  ['/discord/', 'https://discord.gg/sFTJD6a3R8', true],
+  ['/reddit/', 'https://www.reddit.com/r/Openterface_miniKVM/', true],
+  ['/x/', 'https://x.com/TechxArtisan', true],
+  ['/youtube/', 'https://www.youtube.com/@TechxArtisan', true],
+  ['/linkedin/', 'https://www.linkedin.com/company/techxartisan/', true],
+  ['/instagram/', 'https://www.instagram.com/techxartisan/', true],
+  ['/facebook/', 'https://www.facebook.com/techxartisan', true],
+  ['/threads/', 'https://www.threads.net/@techxartisan', true],
+  ['/tiktok/', 'https://www.tiktok.com/@techxartisan', true],
+  ['/mastodon/', 'https://mastodon.social/@youyoubilly', true],
+  ['/bluesky/', 'https://bsky.app/profile/youyoubilly.bsky.social', true],
+  ['/feedback/', 'https://forms.gle/YJLrCKwro8tbi6ar7', true],
+  ['/shop/', 'https://shop.techxartisan.com/', true],
+  ['/appstore/', 'https://apps.apple.com/us/app/openterface-mini-kvm/id6478481082', true],
+  ['/buy-mini-kvm/', 'https://www.crowdsupply.com/techxartisan/openterface-mini-kvm', true],
+  ['/use-cases/', 'https://openterface.com/products/', true],
+  ['/community/', 'https://openterface.com/community/', true],
+  ['/compliance/', '/about/compliance/', false],
+  ['/contributing/', '/about/contribute-support/', false],
+  ['/event/', 'https://news.openterface.com/events/', true],
+  ['/products/kvmgo/updates/', 'https://news.openterface.com/product/kvm-go/', true],
+  ['/products/minikvm/updates/', 'https://news.openterface.com/product/minikvm/', true],
+  ['/products/keymod/updates/', 'https://news.openterface.com/product/keymod/', true],
+  ['/products/kvm-go/', '/products/kvmgo/', false],
+  ['/usb-switch/', '/products/minikvm/extension-pins/', false],
+  ['/videos/', 'https://openterface.com/media/', true],
+];
 
 function collectEnPaths(dir, base = DIST, acc = []) {
   if (!existsSync(dir)) return acc;
@@ -90,12 +122,12 @@ function toLegacyProductPath(newPath) {
   return `/product/${legacySlug}${rest}`;
 }
 
-function writeRedirectStub(fromPath, toPath) {
+function writeRedirectStub(fromPath, toPath, external = false) {
   const legacyFile = join(DIST, fromPath.replace(/^\//, ''), 'index.html');
   if (existsSync(legacyFile)) return false;
   mkdirSync(dirname(legacyFile), { recursive: true });
-  const target = toPath.endsWith('/') ? toPath : `${toPath}/`;
-  writeFileSync(legacyFile, redirectHtml(target));
+  const target = external ? toPath : toPath.endsWith('/') ? toPath : `${toPath}/`;
+  writeFileSync(legacyFile, redirectHtml(target, { external }));
   return true;
 }
 
@@ -126,6 +158,25 @@ function writeRefactorRedirects() {
     }
   }
 
+  return count;
+}
+
+function writeShortcutRedirects() {
+  let count = 0;
+  for (const [from, to, external] of SHORTCUT_REDIRECTS) {
+    if (writeRedirectStub(from, to, external)) count++;
+    for (const prefix of LOCALE_PREFIXES) {
+      if (!prefix) continue;
+      const localizedFrom = `/${prefix}${from.replace(/^\//, '')}`.replace(/\/+/g, '/');
+      let localizedTo = to;
+      if (!external && to.startsWith('/')) {
+        localizedTo = `/${prefix}${to.replace(/^\//, '')}`.replace(/\/+/g, '/');
+      } else if (from === '/event/' && prefix) {
+        localizedTo = `https://news.openterface.com/${prefix.replace(/\/$/, '')}/events/`;
+      }
+      if (writeRedirectStub(localizedFrom, localizedTo, external || from === '/event/')) count++;
+    }
+  }
   return count;
 }
 
@@ -163,3 +214,6 @@ console.log(`post-build: ${redirectCount} /en/* redirect stubs → unprefixed EN
 
 const refactorCount = writeRefactorRedirects();
 console.log(`post-build: ${refactorCount} /product/* and /app/overview|faq/ redirect stubs`);
+
+const shortcutCount = writeShortcutRedirects();
+console.log(`post-build: ${shortcutCount} legacy shortcut redirect stubs`);
