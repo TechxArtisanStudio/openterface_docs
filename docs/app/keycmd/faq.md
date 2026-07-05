@@ -28,9 +28,11 @@ Welcome to the FAQ for **KeyCmd** — the phone-as-keyboard app for KeyMod, Mini
 
 #### :material-chat-question:{ .faq } What is the difference between “Keyboard & Mouse” and “Keyboard & Mouse Pro”? {: #km-basic-vs-pro }
 
-**Keyboard & Mouse** is the **Basic** tier: a dedicated full-screen flow with its own keyboard, numpad, touchpad, and Compose & Send screen, plus a **Setup** gear icon for KM Basic preferences. The usual app header is **hidden** while you are in Basic; those actions live on the keyboard’s top row instead.
+**Design principle:** **Basic** stays as close as possible to a physical keyboard, touchpad, and numpad—no compose buffers or strip rows. **Pro** holds Compose & Send, strip shortcuts, Saved texts, and Shortcut Hub workflows.
 
-**Keyboard & Mouse Pro** is the **advanced** composite mode: strip rows, split options, and **IME** behavior—the same **type a buffer, then Send** flow as Compose & Send in Basic, with Pro’s strips and layout options. Open **Setup** from the app header (between target OS and connection) to edit strip layouts.
+**Keyboard & Mouse** is the **Basic** tier: full-screen **keyboard**, **numpad**, and **touchpad** sub-modes only, plus a **Setup** gear icon for KM Basic preferences. The usual app header is **hidden** while you are in Basic; those actions live on the keyboard’s top row instead. **No Compose & Send** in Basic.
+
+**Keyboard & Mouse Pro** is the **advanced** composite mode: strip rows, split options, **Compose & Send** (**IME** sub-mode), and **Saved texts**. Open **Setup** from the app header (between target OS and connection) to edit strip layouts. **Terminal** is a separate KeyCmd mode (Preview)—not part of Basic or Pro.
 
 ---
 

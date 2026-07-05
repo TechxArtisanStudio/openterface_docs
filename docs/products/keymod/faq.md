@@ -1,12 +1,12 @@
 ---
 title: FAQs for Openterface KeyMod Series
-description: "FAQs for Openterface KeyMod Series: Welcome to the FAQ for Openterface KeyMod Series. If you don't find what you need, email us at or join our community…"
-keywords: KeyMod Series, Openterface, HID emulator, Bluetooth keyboard, phone keyboard, open-source, pre-launch, Android, iPadOS
+description: "FAQs for Openterface KeyMod Series — Mini and Plus USB bridges, KeyCmd app, HID connectivity, and how KeyMod relates to Mini-KVM and KVM-GO."
+keywords: KeyMod, KeyMod Mini, KeyMod Plus, Openterface, HID emulator, Bluetooth keyboard, phone keyboard, open-source, pre-launch, Android, iPadOS, KeyCmd
 ---
 
 # FAQs for Openterface KeyMod Series
 
-Welcome to the FAQ for **Openterface KeyMod Series**.  
+Welcome to the FAQ for **Openterface KeyMod** (Mini and Plus).  
 If you don't find what you need, **email us at [info@openterface.com](mailto:info@openterface.com)** or **join our community** on [Discord](/discord) or [Reddit](/reddit).
 
 ⚠️ **Note**: KeyMod is currently in pre-launch development. Features, specifications, and design are subject to change as we finalize the product.
@@ -18,6 +18,7 @@ If you don't find what you need, **email us at [info@openterface.com](mailto:inf
 - [FAQs for Openterface KeyMod Series](#faqs-for-openterface-keymod-series)
   - [:material-clipboard-list: Quick Navigation](#material-clipboard-list-quick-navigation)
   - [General](#general)
+  - [Hardware — Mini vs Plus](#hardware--mini-vs-plus)
   - [Connectivity](#connectivity)
   - [Features](#features)
   - [Pre-Launch](#pre-launch)
@@ -26,21 +27,40 @@ If you don't find what you need, **email us at [info@openterface.com](mailto:inf
 
 ## General
 
-**:material-chat-question:{ .faq } What is KeyMod Series?**
+**:material-chat-question:{ .faq } What is KeyMod?**
 
-KeyMod Series is a compact USB + Bluetooth HID (keyboard and mouse) emulator that turns your phone into a portable keyboard and trackpad. Use it to control devices that need keyboard/mouse input—kiosks, smart TVs, set top boxes, outdoor displays—without carrying a full keyboard.
+KeyMod is a pocket **Wireless USB Multi-tool** bridge: a compact dongle that plugs into the **target** device and turns your phone into a wireless keyboard, trackpad, and gamepad console via the **KeyCmd** app. The target sees standard USB keyboard and mouse HID—BIOS-capable, zero driver install.
 
-**:material-chat-question:{ .faq } What platforms does the KeyMod Series app support?**
+**:material-chat-question:{ .faq } What platforms does the KeyCmd app support?**
 
-The KeyMod Series controller app focuses on **Android** , **IOS** and **iPadOS**. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
+The KeyCmd controller app focuses on **Android** and **iPadOS**. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
 
 **:material-chat-question:{ .faq } Does the target device need any software?**
 
-No. KeyMod Series emulates a standard USB keyboard and mouse. The target device recognizes it as plug-and-play HID hardware—no drivers or software installation required.
+No. KeyMod emulates a standard USB keyboard and mouse. The target device recognizes it as plug-and-play HID hardware—no drivers or software installation required.
 
-**:material-chat-question:{ .faq } Is KeyMod Series open source?**
+**:material-chat-question:{ .faq } Is KeyMod open source?**
 
-Yes. KeyMod Series is open hardware and open software. We will publish schematics, PCB files, firmware, software, and BOM as the project evolves.
+Yes. KeyMod is open hardware and open software. We will publish schematics, PCB files, firmware, software, and BOM as the project evolves.
+
+---
+
+## Hardware — Mini vs Plus
+
+**:material-chat-question:{ .faq } What is the difference between KeyMod Mini and KeyMod Plus?**
+
+Both SKUs run the same **KeyCmd** app. The difference is which **USB port on the target** they plug into and how your **phone** links to the dongle:
+
+| SKU | Target plug | Phone link |
+|-----|-------------|------------|
+| **KeyMod Mini** | USB-C male → target | **BLE wireless only** — ultra-compact, Type-C-first EDC |
+| **KeyMod Plus** | USB-A male → target | **BLE or USB wired** to the dongle — steadier phone link and more bandwidth (ideal for KM Pro and Terminal Preview) |
+
+BLE range (both): best within ~5 m, up to ~10 m in open space.
+
+**:material-chat-question:{ .faq } Is KeyMod a Bluetooth keyboard for my PC?**
+
+No. KeyMod presents **USB HID** to the target. Bluetooth (or Plus USB) is **phone ↔ KeyMod only**—not “phone pairs to PC as a Bluetooth keyboard.” Your PC never pairs with your phone over Bluetooth for KeyMod control.
 
 ---
 
@@ -48,13 +68,9 @@ Yes. KeyMod Series is open hardware and open software. We will publish schematic
 
 **:material-chat-question:{ .faq } USB vs Bluetooth—which should I use?**
 
-- **USB**: More reliable, lower latency. Use when you want the most stable connection.
-- **Bluetooth**: Cable-free. Use when you want a lighter setup and the scenario allows wireless.
-
-**:material-chat-question:{ .faq } What hardware variants are planned?**
-
-1. **2-in-1 Connector** — Combined USB A + USB C plug for broad compatibility
-2. **USB C Version** — Dedicated USB C plug for modern devices
+- **Phone ↔ KeyMod over BLE**: Cable-free from your pocket. Works on both Mini and Plus.
+- **Phone ↔ KeyMod over USB (Plus only)**: More reliable and higher bandwidth than BLE alone—recommended for heavy KM Pro or Terminal Preview sessions.
+- **KeyMod → target**: Always **USB plug-in** (Mini on USB-C, Plus on USB-A). The target never uses Bluetooth for KeyMod HID.
 
 ---
 
@@ -62,16 +78,31 @@ Yes. KeyMod Series is open hardware and open software. We will publish schematic
 
 **:material-chat-question:{ .faq } Can I create custom profiles and macros?**
 
-Yes. The open source mobile app supports custom input profiles, macros, hotkeys, and workflow shortcuts. You can also use keypad.
+Yes. KeyCmd supports custom gamepad presets, Shortcut Hub profiles, strip layouts (KM Pro), macros, and Saved texts. See the [KeyCmd app FAQ](/app/keycmd/faq/) for mode details.
+
+**:material-chat-question:{ .faq } Does KeyMod capture video?**
+
+No. KeyMod is HID-only. Use [Mini-KVM](/products/minikvm/) or [KVM-GO](/products/kvmgo/) when you need the target screen on your laptop.
+
+**:material-chat-question:{ .faq } Does Gamepad mode make the PC see an Xbox or PlayStation controller?**
+
+Not with current KeyMod hardware. KeyCmd maps sticks and buttons to **keyboard and mouse** actions—the target sees standard keyboard + mouse HID, not native gamepad HID.
 
 ---
 
 ## Pre-Launch
 
-**:material-chat-question:{ .faq } When will KeyMod Series launch?**
+**:material-chat-question:{ .faq } When will KeyMod launch?**
 
-KeyMod Series is in pre-launch development. Subscribe on the [product page](/products/keymod/) for launch notifications and updates.
+KeyMod is in pre-launch development. Back or subscribe on [Crowd Supply](https://www.crowdsupply.com/techxartisan/openterface-keymod) and the [product page](/products/keymod/) for launch notifications and updates.
 
-**:material-chat-question:{ .faq } How is KeyMod Series related to Mini-KVM and KVM-Go?**
+**:material-chat-question:{ .faq } How is KeyMod related to Mini-KVM and KVM-GO?**
 
-KeyMod Series uses the proven HID core from Openterface Mini-KVM. It shares the same hardware-based keyboard and mouse emulation approach but is designed for a different use case: turning your phone into a portable keyboard/trackpad for local device control, rather than KVM-over-USB video capture.
+KeyMod shares Openterface’s proven **HID core** with Mini-KVM and KVM-GO—the same hardware-based keyboard and mouse emulation approach. KeyMod is designed for **local phone-as-console control** over USB HID, not KVM-over-USB **video capture**. KeyCmd also works with Mini-KVM and KVM-GO hardware for keyboard, trackpad, and gamepad modes.
+
+---
+
+## See also
+
+- [KeyCmd app FAQ](/app/keycmd/faq/) — KM Basic vs Pro, modifiers, gamepad, Bluetooth topology
+- [KeyMod product overview](/products/keymod/)
