@@ -5,7 +5,7 @@ export type EcosystemSurface = 'docs';
 
 export interface NavItem {
   label: string;
-  href: string;
+  href?: string;
   external?: boolean;
   children?: NavItem[];
 }
@@ -40,7 +40,6 @@ function marketingHref(locale: SiteLocale, path: string): string {
 
 export function buildEcosystemNav(locale: SiteLocale, labels: EcosystemNavLabels): NavItem[] {
   const productsChildren: NavItem[] = [
-    { label: labels.allProducts, href: marketingHref(locale, '/products/') },
     { label: labels.keymodSeries, href: marketingHref(locale, '/keymod/') },
     { label: labels.kvmGoSeries, href: marketingHref(locale, '/kvmgo/') },
     { label: labels.miniKvm, href: marketingHref(locale, '/minikvm/') },
@@ -48,13 +47,20 @@ export function buildEcosystemNav(locale: SiteLocale, labels: EcosystemNavLabels
     { label: labels.accessories, href: marketingHref(locale, '/accessories/') },
   ];
 
+  const appsChildren: NavItem[] = [
+    { label: labels.kvmControl, href: marketingHref(locale, '/kvm/') },
+    { label: labels.keycmd, href: marketingHref(locale, '/keycmd/') },
+  ];
+
   return [
     {
       label: labels.products,
-      href: marketingHref(locale, '/products/'),
       children: productsChildren,
     },
-    { label: labels.apps, href: marketingHref(locale, '/apps/') },
+    {
+      label: labels.apps,
+      children: appsChildren,
+    },
     { label: labels.docs, href: localizedPath(locale) },
     { label: labels.media, href: marketingHref(locale, '/media/') },
     { label: labels.news, href: newsPath(locale) },
