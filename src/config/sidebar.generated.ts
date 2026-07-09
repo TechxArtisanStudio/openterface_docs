@@ -271,7 +271,7 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     "groupTitle": "Apps",
     "items": [
       {
-        "label": "KVM Control",
+        "label": "Openterface KVM",
         "slug": "app/kvm"
       },
       {
@@ -279,7 +279,7 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
         "slug": "app/keycmd"
       },
       {
-        "label": "KVM Control FAQs",
+        "label": "Openterface KVM FAQs",
         "slug": "app/kvm/faq"
       },
       {

@@ -1,5 +1,5 @@
 ---
-title: "KVM Control Apps"
+title: "Openterface KVM Apps"
 description: "Software: Openterface provides open-source applications for every product line. Download the app that matches your hardware and host platform, or build…"
 ---
 

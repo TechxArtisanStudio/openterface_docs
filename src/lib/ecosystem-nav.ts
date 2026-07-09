@@ -83,7 +83,7 @@ function ecosystemNavLabels(locale: SiteLocale, ui: ReturnType<typeof import('..
     accessories: 'Accessories',
     apps: ui.nav.app,
     allApps: ui.nav.app,
-    kvmControl: 'KVM Control',
+    kvmControl: 'Openterface KVM',
     keycmd: 'KeyCmd',
     docs: ui.nav.docsBadge,
     media: ui.nav.media,
