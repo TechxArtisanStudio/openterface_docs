@@ -48,23 +48,13 @@ export function buildEcosystemNav(locale: SiteLocale, labels: EcosystemNavLabels
     { label: labels.accessories, href: marketingHref(locale, '/accessories/') },
   ];
 
-  const appsChildren: NavItem[] = [
-    { label: labels.allApps, href: marketingHref(locale, '/apps/') },
-    { label: labels.kvmControl, href: marketingHref(locale, '/kvm/') },
-    { label: labels.keycmd, href: marketingHref(locale, '/keycmd/') },
-  ];
-
   return [
     {
       label: labels.products,
       href: marketingHref(locale, '/products/'),
       children: productsChildren,
     },
-    {
-      label: labels.apps,
-      href: marketingHref(locale, '/apps/'),
-      children: appsChildren,
-    },
+    { label: labels.apps, href: marketingHref(locale, '/apps/') },
     { label: labels.docs, href: localizedPath(locale) },
     { label: labels.media, href: marketingHref(locale, '/media/') },
     { label: labels.news, href: newsPath(locale) },

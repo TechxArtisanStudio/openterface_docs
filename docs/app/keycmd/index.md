@@ -19,11 +19,11 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
     [:octicons-download-24: Download beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk) <br>
     :octicons-mark-github-16: Source code *(coming soon)*
 
--   ### :fontawesome-brands-apple:{ .lg } **iOS / iPadOS**
+-   ### :fontawesome-brands-apple:{ .lg } **iOS**
 
     ***
 
-    KeyCmd app for iPhone and iPad. Connect via Bluetooth LE or USB-C.
+    KeyCmd app for iPhone. Connect via Bluetooth LE or USB-C.
 
     :octicons-arrow-right-24: Install from App Store *(coming soon)* <br>
     :octicons-mark-github-16: KeyCmd for iOS *(coming soon)*
