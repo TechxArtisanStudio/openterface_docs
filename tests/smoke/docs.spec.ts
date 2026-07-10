@@ -81,6 +81,11 @@ test.describe('docs full corpus smoke', () => {
     }
   });
 
+  test('/app/ redirects to KVM apps hub', async ({ page }) => {
+    await page.goto('/app/', { waitUntil: 'domcontentloaded' });
+    await expect(page).toHaveURL(/\/app\/kvm\/$/);
+  });
+
   test('zh app kvm download links resolve', async ({ page }) => {
     test.setTimeout(180_000);
     const { qt_version, android_version } = loadExpectedVersions();

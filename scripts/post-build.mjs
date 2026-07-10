@@ -148,6 +148,7 @@ function writeRefactorRedirects() {
   }
 
   for (const [from, to] of [
+    ['/app/', '/app/kvm/'],
     ['/app/overview/', '/app/kvm/'],
     ['/app/faq/', '/app/kvm/faq/'],
   ]) {
