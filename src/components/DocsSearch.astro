@@ -17,7 +17,7 @@ const ui = t(locale);
   <label class="sr-only" for="docs-search-input">{ui.nav.search}</label>
   <div class="relative">
     <svg
-      class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70"
+      class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
@@ -29,7 +29,7 @@ const ui = t(locale);
       id="docs-search-input"
       type="search"
       placeholder={ui.nav.searchPlaceholder}
-      class="w-full rounded-md border border-white/30 bg-white/15 py-2 pl-9 pr-3 text-sm text-white placeholder:text-white/60 focus:border-white/60 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
+      class="w-full rounded-md border border-gray-300 bg-white py-2 pl-9 pr-3 text-sm text-ink placeholder:text-muted focus:border-primary-dark focus:outline-none focus:ring-2 focus:ring-brand-light"
       autocomplete="off"
       data-docs-search-input
     />

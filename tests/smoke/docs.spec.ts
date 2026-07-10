@@ -29,16 +29,30 @@ test.describe('docs full corpus smoke', () => {
     await expect(page.locator('.site-header')).toBeVisible();
   });
 
-  test('header exposes unified ecosystem nav with marketing product links', async ({ page }) => {
+  test('docs header uses dark chrome with orange stripe, back link, and doc section tabs', async ({ page }) => {
     await page.setViewportSize({ width: 1400, height: 900 });
     await page.goto('/');
-    const header = page.locator('header');
-    for (const label of ['Products', 'Apps', 'Docs', 'Media', 'News', 'Community']) {
+    const header = page.locator('header.site-header--docs');
+    await expect(header).toBeVisible();
+    await expect(header).toHaveCSS('background-color', 'rgb(44, 44, 44)');
+    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(248, 249, 251)');
+    const backLink = header.getByRole('link', { name: 'Back to Openterface website' });
+    await expect(backLink).toHaveAttribute('href', /openterface\.com\/?$/);
+    await expect(backLink.locator('img.site-header__op-mark')).toBeVisible();
+    await expect(header.locator('img.site-header__docs-mark')).toBeVisible();
+    for (const label of ['All Docs', 'Products', 'Apps', 'Tutorial', 'FAQs', 'Support']) {
       await expect(header).toContainText(label);
     }
-    await page.locator('.nav-dropdown summary').first().click();
-    const kvmGo = page.locator('.site-header a[href="https://openterface.com/kvmgo/"]');
-    await expect(kvmGo.first()).toBeVisible();
+    const nav = header.locator('nav[aria-label="Documentation sections"]');
+    await expect(nav).not.toContainText('Media');
+  });
+
+  test('products doc tab is active on minikvm pages', async ({ page }) => {
+    await page.setViewportSize({ width: 1400, height: 900 });
+    await page.goto('/products/minikvm/');
+    const productsTab = page.locator('header .site-header__nav-link--active', { hasText: 'Products' });
+    await expect(productsTab).toBeVisible();
+    await expect(productsTab).toHaveAttribute('aria-current', 'page');
   });
 
   test('app kvm download links resolve', async ({ page }) => {

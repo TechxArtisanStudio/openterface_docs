@@ -7,6 +7,10 @@ export const siteConfig = {
     'Official documentation for Openterface KVM-over-USB products and software.',
   ogImage: 'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
   headerBrandLogo: 'https://assets2.openterface.com/images/icon/op-docs.svg',
+  /** Openterface wordmark for split docs header (back to marketing). */
+  headerOpMark: '/images/openterface.svg',
+  /** Docs-only wordmark for split header chrome. */
+  headerDocsMark: '/images/docs-wordmark.svg',
   editBase: 'https://github.com/TechxArtisan/openterface_docs/edit/main/docs',
   links: {
     forum: 'https://forum.openterface.com',

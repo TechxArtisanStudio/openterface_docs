@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: 'default' | 'onPrimary';
+  variant?: 'default' | 'onPrimary' | 'onLight';
   class?: string;
   /** Combined site brand mark (header). Falls back to local wordmark when omitted. */
   brandSrc?: string;
@@ -10,12 +10,18 @@ interface Props {
 const { variant = 'default', class: className = '', brandSrc, alt = 'Openterface' } = Astro.props;
 const src = brandSrc ?? '/images/openterface.svg';
 const invertForHeader = !brandSrc && variant === 'onPrimary';
+const darkBrandOnLight = Boolean(brandSrc) && variant === 'onLight';
 ---
 
 <img
   src={src}
   alt={alt}
-  class:list={['h-8 w-auto max-w-[180px]', invertForHeader && 'brightness-0 invert', className]}
+  class:list={[
+    'h-8 w-auto max-w-[180px]',
+    invertForHeader && 'brightness-0 invert',
+    darkBrandOnLight && 'logo-on-light',
+    className,
+  ]}
   width="180"
   height="27"
   loading="eager"

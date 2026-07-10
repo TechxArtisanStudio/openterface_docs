@@ -1,4 +1,9 @@
-import { docsEcosystemNav } from '../lib/ecosystem-nav';
+import {
+  buildDocsEcosystemLinks,
+  buildDocsHeaderNav,
+  type DocsEcosystemLink,
+  type DocsHeaderNavItem,
+} from '../lib/docs-header-nav';
 import { localizedPath, type SiteLocale } from '../lib/locale';
 
 export interface UiStrings {
@@ -18,6 +23,8 @@ export interface UiStrings {
     media: string;
     community: string;
     docsBadge: string;
+    backToSite: string;
+    backToSiteAria: string;
     search: string;
     searchPlaceholder: string;
   };
@@ -79,6 +86,8 @@ const en: UiStrings = {
     media: 'Media',
     community: 'Community',
     docsBadge: 'Docs',
+    backToSite: 'Openterface',
+    backToSiteAria: 'Back to Openterface website',
     search: 'Search',
     searchPlaceholder: 'Search documentation…',
   },
@@ -981,6 +990,10 @@ export type NavItem = {
   children?: NavItem[];
 };
 
-export function docsNav(locale: SiteLocale): NavItem[] {
-  return docsEcosystemNav(locale, t(locale));
+export function docsNav(locale: SiteLocale): DocsHeaderNavItem[] {
+  return buildDocsHeaderNav(locale, t(locale));
+}
+
+export function docsEcosystemLinks(locale: SiteLocale): DocsEcosystemLink[] {
+  return buildDocsEcosystemLinks(locale, t(locale));
 }

@@ -1,13 +1,13 @@
 ---
-import { docsNav, siteConfig } from '../config/site';
+import { docsNav, marketingHost, siteConfig } from '../config/site';
+import { activeDocsTab } from '../lib/docs-header-nav';
 import { switchLocaleDocPath } from '../lib/docs';
 import { LOCALE_LABELS, localizedPath, type SiteLocale } from '../lib/locale';
-import { t } from '../i18n/ui';
+import { docsEcosystemLinks, t } from '../i18n/ui';
 import { preserveQueryForLocaleSwitch } from '../lib/preserve-query';
-import Logo from './Logo.astro';
+import DocsHeaderBrand from './DocsHeaderBrand.astro';
 import TranslateIcon from './TranslateIcon.astro';
 import DocsSearch from './DocsSearch.astro';
-import NavDropdown from './NavDropdown.astro';
 import NavLinkWithBadge from './NavLinkWithBadge.astro';
 
 interface Props {
@@ -21,39 +21,39 @@ const { locale, currentPath, currentSearch = '', searchIndex } = Astro.props;
 const preservedSearch = preserveQueryForLocaleSwitch(currentSearch);
 const ui = t(locale);
 const nav = docsNav(locale);
-const dropdownSections = nav.filter((item) => item.children);
-const ecosystemLinks = nav.filter((item) => !item.children);
+const ecosystemLinks = docsEcosystemLinks(locale);
 const homeHref = localizedPath(locale);
+const marketingBackHref = marketingHost(locale);
+const activeTab = activeDocsTab(currentPath);
 ---
 
-<header class="site-header sticky top-0 z-50 bg-primary-dark shadow-md">
-  <div class="site-header__inner">
-    <div class="site-header__start">
-      <a href={homeHref} class="site-header__brand">
-        <Logo brandSrc={siteConfig.headerBrandLogo} alt={siteConfig.name} class="site-header__logo" />
-      </a>
-      <span class="site-header__lead" aria-hidden="true"></span>
+<header class="site-header site-header--docs sticky top-0 z-50">
+  <div class="site-header__inner site-header__inner--docs">
+    <div class="site-header__start site-header__start--docs">
+      <DocsHeaderBrand
+        locale={locale}
+        docsHomeHref={homeHref}
+        backAriaLabel={ui.nav.backToSiteAria}
+        opMarkSrc={siteConfig.headerOpMark}
+        docsMarkSrc={siteConfig.headerDocsMark}
+        docsMarkAlt={ui.nav.docsBadge}
+      />
     </div>
 
-    <nav class="site-header__nav" aria-label="Main navigation">
+    <nav class="site-header__nav" aria-label="Documentation sections">
       {
-        nav.map((item) =>
-          item.children ? (
-            <NavDropdown label={item.label} children={item.children} />
-          ) : item.badge || item.external ? (
-            <NavLinkWithBadge
-              href={item.href!}
-              label={item.label}
-              badge={item.badge}
-              external={item.external}
-              variant="header"
-            />
-          ) : (
-            <a href={item.href} class="site-header__nav-link">
-              {item.label}
-            </a>
-          ),
-        )
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'site-header__nav-link',
+              activeTab === item.tabId && 'site-header__nav-link--active',
+            ]}
+            aria-current={activeTab === item.tabId ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
       }
     </nav>
 
@@ -111,18 +111,36 @@ const homeHref = localizedPath(locale);
               <DocsSearch locale={locale} searchIndex={searchIndex} />
             </div>
 
-            {
-              dropdownSections.map((section) => (
-                <div class="mobile-nav-section">
-                  <p class="mobile-nav-section-label">{section.label}</p>
-                  <div class="mobile-nav-section-links">
-                    {section.children?.map((child) => (
-                      <a href={child.href} class="mobile-nav-link">{child.label}</a>
-                    ))}
-                  </div>
-                </div>
-              ))
-            }
+            <a
+              href={marketingBackHref}
+              class="mobile-nav-link mobile-nav-link--back"
+              data-analytics-event="surface_exit_docs"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="mr-2 h-4 w-4 shrink-0" aria-hidden="true">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+              </svg>
+              {ui.nav.backToSite}
+            </a>
+
+            <div class="mobile-nav-section">
+              <p class="mobile-nav-section-label">{ui.mobile.sections}</p>
+              <div class="mobile-nav-section-links">
+                {
+                  nav.map((item) => (
+                    <a
+                      href={item.href}
+                      class:list={[
+                        'mobile-nav-link',
+                        activeTab === item.tabId && 'mobile-nav-link--active',
+                      ]}
+                      aria-current={activeTab === item.tabId ? 'page' : undefined}
+                    >
+                      {item.label}
+                    </a>
+                  ))
+                }
+              </div>
+            </div>
 
             {
               ecosystemLinks.length > 0 && (
@@ -133,7 +151,7 @@ const homeHref = localizedPath(locale);
                       ecosystemLinks.map((item) =>
                         item.badge || item.external ? (
                           <NavLinkWithBadge
-                            href={item.href!}
+                            href={item.href}
                             label={item.label}
                             badge={item.badge}
                             external={item.external}
@@ -183,42 +201,6 @@ const homeHref = localizedPath(locale);
   applyPreservedQueryToLocaleLinks();
 </script>
 
-<script>
-  function initNavDropdowns() {
-    document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
-      if (dropdown.dataset.initialized) return;
-      dropdown.dataset.initialized = 'true';
-
-      dropdown.addEventListener('toggle', () => {
-        if (!(dropdown instanceof HTMLDetailsElement) || !dropdown.open) return;
-        document.querySelectorAll('.nav-dropdown[open]').forEach((other) => {
-          if (other !== dropdown && other instanceof HTMLDetailsElement) other.open = false;
-        });
-      });
-    });
-
-    document.addEventListener('click', (event) => {
-      const target = event.target;
-      if (!(target instanceof Node)) return;
-      document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
-        if (dropdown instanceof HTMLDetailsElement && !dropdown.contains(target)) {
-          dropdown.open = false;
-        }
-      });
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key !== 'Escape') return;
-      document.querySelectorAll('.nav-dropdown[open]').forEach((dropdown) => {
-        if (dropdown instanceof HTMLDetailsElement) dropdown.open = false;
-      });
-    });
-  }
-
-  initNavDropdowns();
-  document.addEventListener('astro:page-load', initNavDropdowns);
-</script>
-
 <style>
   .locale-switcher summary::-webkit-details-marker,
   .mobile-nav summary::-webkit-details-marker {
@@ -235,7 +217,7 @@ const homeHref = localizedPath(locale);
   }
 
   .mobile-nav[open] .mobile-nav-toggle {
-    background-color: rgb(255 255 255 / 0.15);
+    background-color: var(--color-brand-light);
   }
 
   .mobile-nav[open] .mobile-nav-icon-open {
@@ -262,9 +244,16 @@ const homeHref = localizedPath(locale);
     color: var(--color-primary-dark);
   }
 
-  .mobile-nav-link--home {
+  .mobile-nav-link--active {
+    background-color: var(--color-brand-light);
+    color: var(--color-accent-on-light);
+    font-weight: 600;
+  }
+
+  .mobile-nav-link--back {
     margin-bottom: 0.25rem;
     font-weight: 600;
+    color: var(--color-muted);
   }
 
   .mobile-nav-section {
