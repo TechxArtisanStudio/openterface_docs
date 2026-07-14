@@ -5,10 +5,16 @@ import type { t } from '../i18n/ui';
 
 export type DocsTabId = 'home' | 'products' | 'app' | 'tutorial' | 'faq' | 'support';
 
+export type DocsHeaderNavChild = {
+  label: string;
+  href: string;
+};
+
 export type DocsHeaderNavItem = {
   label: string;
   href: string;
   tabId: DocsTabId;
+  children?: DocsHeaderNavChild[];
 };
 
 export type DocsEcosystemLink = {
@@ -45,8 +51,28 @@ export function activeDocsTab(pathname: string): DocsTabId | null {
 
 export function buildDocsHeaderNav(locale: SiteLocale, ui: Ui): DocsHeaderNavItem[] {
   return [
-    { label: ui.nav.product, href: localizedPath(locale, 'products'), tabId: 'products' },
-    { label: ui.nav.app, href: localizedPath(locale, 'app'), tabId: 'app' },
+    {
+      label: ui.nav.product,
+      href: localizedPath(locale, 'products'),
+      tabId: 'products',
+      children: [
+        { label: ui.nav.overview, href: localizedPath(locale, 'products') },
+        { label: 'KeyMod Series', href: localizedPath(locale, 'products', 'keymod') },
+        { label: 'KVM-GO Series', href: localizedPath(locale, 'products', 'kvmgo') },
+        { label: 'Mini-KVM', href: localizedPath(locale, 'products', 'minikvm') },
+        { label: 'uConsole KVM Extension', href: localizedPath(locale, 'products', 'kvmext') },
+        { label: 'Accessories', href: localizedPath(locale, 'products', 'accessories') },
+      ],
+    },
+    {
+      label: ui.nav.app,
+      href: localizedPath(locale, 'app'),
+      tabId: 'app',
+      children: [
+        { label: 'Openterface KVM', href: localizedPath(locale, 'app', 'kvm') },
+        { label: 'KeyCmd', href: localizedPath(locale, 'app', 'keycmd') },
+      ],
+    },
     { label: ui.nav.tutorial, href: localizedPath(locale, 'tutorial', 'kvm'), tabId: 'tutorial' },
     { label: ui.nav.faqs, href: localizedPath(locale, 'faq'), tabId: 'faq' },
     { label: ui.nav.support, href: localizedPath(locale, 'support'), tabId: 'support' },

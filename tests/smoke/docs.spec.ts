@@ -46,6 +46,28 @@ test.describe('docs full corpus smoke', () => {
     await expect(header).not.toContainText('All Docs');
     const nav = header.locator('nav[aria-label="Documentation sections"]');
     await expect(nav).not.toContainText('Media');
+
+    const productsDropdown = nav.locator('.nav-dropdown', { hasText: 'Products' }).first();
+    await productsDropdown.locator('summary').click();
+    await expect(productsDropdown.getByRole('link', { name: 'Overview' })).toHaveAttribute(
+      'href',
+      '/products/',
+    );
+    await expect(productsDropdown.getByRole('link', { name: 'Mini-KVM' })).toHaveAttribute(
+      'href',
+      '/products/minikvm/',
+    );
+
+    const appsDropdown = nav.locator('.nav-dropdown', { hasText: 'Apps' }).first();
+    await appsDropdown.locator('summary').click();
+    await expect(appsDropdown.getByRole('link', { name: 'Openterface KVM' })).toHaveAttribute(
+      'href',
+      '/app/kvm/',
+    );
+    await expect(appsDropdown.getByRole('link', { name: 'KeyCmd' })).toHaveAttribute(
+      'href',
+      '/app/keycmd/',
+    );
   });
 
   test('products doc tab is active on minikvm pages', async ({ page }) => {
@@ -53,7 +75,7 @@ test.describe('docs full corpus smoke', () => {
     await page.goto('/products/minikvm/');
     const productsTab = page.locator('header .site-header__nav-link--active', { hasText: 'Products' });
     await expect(productsTab).toBeVisible();
-    await expect(productsTab).toHaveAttribute('aria-current', 'page');
+    await expect(productsTab).toHaveAttribute('aria-current', 'true');
   });
 
   test('app kvm download links resolve', async ({ page }) => {

@@ -8,13 +8,23 @@ interface ChildLink {
 interface Props {
   label: string;
   children: ChildLink[];
+  active?: boolean;
 }
 
-const { label, children } = Astro.props;
+const { label, children, active = false } = Astro.props;
 ---
 
 <details class="nav-dropdown relative">
-  <summary class="site-header__nav-link list-none cursor-pointer" aria-haspopup="true">
+  <summary
+    class:list={[
+      'site-header__nav-link',
+      'list-none',
+      'cursor-pointer',
+      active && 'site-header__nav-link--active',
+    ]}
+    aria-haspopup="true"
+    aria-current={active ? 'true' : undefined}
+  >
     {label}
     <span class="nav-dropdown__chevron nav-dropdown__chevron--down ml-0.5" aria-hidden="true">▾</span>
     <span class="nav-dropdown__chevron nav-dropdown__chevron--up ml-0.5" aria-hidden="true">▴</span>

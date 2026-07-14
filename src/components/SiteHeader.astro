@@ -8,6 +8,7 @@ import { preserveQueryForLocaleSwitch } from '../lib/preserve-query';
 import DocsHeaderBrand from './DocsHeaderBrand.astro';
 import TranslateIcon from './TranslateIcon.astro';
 import DocsSearch from './DocsSearch.astro';
+import NavDropdown from './NavDropdown.astro';
 import NavLinkWithBadge from './NavLinkWithBadge.astro';
 
 interface Props {
@@ -42,18 +43,26 @@ const activeTab = activeDocsTab(currentPath);
 
     <nav class="site-header__nav" aria-label="Documentation sections">
       {
-        nav.map((item) => (
-          <a
-            href={item.href}
-            class:list={[
-              'site-header__nav-link',
-              activeTab === item.tabId && 'site-header__nav-link--active',
-            ]}
-            aria-current={activeTab === item.tabId ? 'page' : undefined}
-          >
-            {item.label}
-          </a>
-        ))
+        nav.map((item) =>
+          item.children?.length ? (
+            <NavDropdown
+              label={item.label}
+              children={item.children}
+              active={activeTab === item.tabId}
+            />
+          ) : (
+            <a
+              href={item.href}
+              class:list={[
+                'site-header__nav-link',
+                activeTab === item.tabId && 'site-header__nav-link--active',
+              ]}
+              aria-current={activeTab === item.tabId ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          ),
+        )
       }
     </nav>
 
@@ -126,18 +135,39 @@ const activeTab = activeDocsTab(currentPath);
               <p class="mobile-nav-section-label">{ui.mobile.sections}</p>
               <div class="mobile-nav-section-links">
                 {
-                  nav.map((item) => (
-                    <a
-                      href={item.href}
-                      class:list={[
-                        'mobile-nav-link',
-                        activeTab === item.tabId && 'mobile-nav-link--active',
-                      ]}
-                      aria-current={activeTab === item.tabId ? 'page' : undefined}
-                    >
-                      {item.label}
-                    </a>
-                  ))
+                  nav.map((item) =>
+                    item.children?.length ? (
+                      <div class="mobile-nav-subsection">
+                        <p class="mobile-nav-subsection-label">{item.label}</p>
+                        {
+                          item.children.map((child) => (
+                            <a
+                              href={child.href}
+                              class:list={[
+                                'mobile-nav-link',
+                                'mobile-nav-link--child',
+                                currentPath === child.href && 'mobile-nav-link--active',
+                              ]}
+                              aria-current={currentPath === child.href ? 'page' : undefined}
+                            >
+                              {child.label}
+                            </a>
+                          ))
+                        }
+                      </div>
+                    ) : (
+                      <a
+                        href={item.href}
+                        class:list={[
+                          'mobile-nav-link',
+                          activeTab === item.tabId && 'mobile-nav-link--active',
+                        ]}
+                        aria-current={activeTab === item.tabId ? 'page' : undefined}
+                      >
+                        {item.label}
+                      </a>
+                    ),
+                  )
                 }
               </div>
             </div>
@@ -199,6 +229,76 @@ const activeTab = activeDocsTab(currentPath);
   import { applyPreservedQueryToLocaleLinks } from '../lib/preserve-query';
 
   applyPreservedQueryToLocaleLinks();
+
+  function closeAllNavDropdowns(except?: Element | null) {
+    document.querySelectorAll('header .nav-dropdown[open]').forEach((dropdown) => {
+      if (except && dropdown === except) return;
+      if (dropdown instanceof HTMLDetailsElement) dropdown.open = false;
+    });
+  }
+
+  function initNavDropdownHover() {
+    document.querySelectorAll<HTMLDetailsElement>('header .nav-dropdown').forEach((dropdown) => {
+      if (dropdown.dataset.hoverInit) return;
+      dropdown.dataset.hoverInit = 'true';
+
+      let openTimer: ReturnType<typeof setTimeout> | undefined;
+      let closeTimer: ReturnType<typeof setTimeout> | undefined;
+
+      const scheduleOpen = () => {
+        clearTimeout(closeTimer);
+        openTimer = setTimeout(() => {
+          closeAllNavDropdowns(dropdown);
+          dropdown.open = true;
+        }, 80);
+      };
+
+      const scheduleClose = () => {
+        clearTimeout(openTimer);
+        closeTimer = setTimeout(() => {
+          dropdown.open = false;
+        }, 160);
+      };
+
+      dropdown.addEventListener('pointerenter', scheduleOpen);
+      dropdown.addEventListener('pointerleave', scheduleClose);
+      dropdown.addEventListener('focusin', scheduleOpen);
+      dropdown.addEventListener('focusout', (event) => {
+        const related = event.relatedTarget;
+        if (related instanceof Node && dropdown.contains(related)) return;
+        scheduleClose();
+      });
+
+      dropdown.addEventListener('toggle', () => {
+        if (!dropdown.open) return;
+        closeAllNavDropdowns(dropdown);
+      });
+    });
+  }
+
+  let navGlobalListenersBound = false;
+  function bindNavGlobalListeners() {
+    if (navGlobalListenersBound) return;
+    navGlobalListenersBound = true;
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      const inside = [...document.querySelectorAll('header .nav-dropdown[open]')].find((dropdown) =>
+        dropdown.contains(target),
+      );
+      if (!inside) closeAllNavDropdowns();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeAllNavDropdowns();
+    });
+  }
+
+  initNavDropdownHover();
+  bindNavGlobalListeners();
+  document.addEventListener('astro:page-load', () => {
+    initNavDropdownHover();
+    bindNavGlobalListeners();
+  });
 </script>
 
 <style>
@@ -275,5 +375,28 @@ const activeTab = activeDocsTab(currentPath);
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
+  }
+
+  .mobile-nav-subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding-top: 0.25rem;
+  }
+
+  .mobile-nav-subsection + .mobile-nav-subsection,
+  .mobile-nav-subsection + .mobile-nav-link {
+    margin-top: 0.35rem;
+  }
+
+  .mobile-nav-subsection-label {
+    padding: 0.35rem 0.5rem 0.15rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-muted);
+  }
+
+  .mobile-nav-link--child {
+    padding-left: 1rem;
   }
 </style>

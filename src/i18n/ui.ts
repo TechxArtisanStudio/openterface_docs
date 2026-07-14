@@ -15,6 +15,7 @@ export interface UiStrings {
     product: string;
     app: string;
     tutorial: string;
+    overview: string;
     about: string;
     home: string;
     news: string;
@@ -77,6 +78,7 @@ const en: UiStrings = {
     product: 'Products',
     app: 'Apps',
     tutorial: 'Tutorial',
+    overview: 'Overview',
     about: 'About',
     home: 'Home',
     news: 'News',
@@ -137,6 +139,7 @@ const zh: UiStrings = {
   nav: {
     ...en.nav,
     home: '首页',
+    overview: '概览',
     faqs: '常见问题',
     support: '支持',
     product: '产品',
@@ -192,6 +195,7 @@ const hk: UiStrings = {
   nav: {
     ...en.nav,
     home: '首頁',
+    overview: '概覽',
     faqs: '常見問題',
     support: '支持',
     product: '產品',
@@ -247,6 +251,7 @@ const tw: UiStrings = {
   nav: {
     ...en.nav,
     home: '首頁',
+    overview: '概覽',
     faqs: '常見問題',
     support: '支持',
     product: '產品',
