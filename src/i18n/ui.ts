@@ -10,7 +10,6 @@ export interface UiStrings {
   siteName: string;
   siteDescription: string;
   nav: {
-    docsHome: string;
     faqs: string;
     support: string;
     product: string;
@@ -73,7 +72,6 @@ const en: UiStrings = {
   siteDescription:
     'Official Openterface documentation for KVM-over-USB hardware and apps — Mini-KVM, KVM-GO, and uConsole guides, setup, FAQs, and tutorials for IT pros and makers.',
   nav: {
-    docsHome: 'All Docs',
     faqs: 'FAQs',
     support: 'Support',
     product: 'Products',
@@ -138,7 +136,6 @@ const zh: UiStrings = {
     'Openterface KVM-over-USB 产品与软件的官方文档 — Mini-KVM、KVM-GO、uConsole 扩展的安装指南、常见问题、故障排查与教程，面向 IT 与开发者。',
   nav: {
     ...en.nav,
-    docsHome: '全部文档',
     home: '首页',
     faqs: '常见问题',
     support: '支持',
@@ -194,7 +191,6 @@ const hk: UiStrings = {
     'Openterface KVM-over-USB 產品與軟件的官方文檔 — Mini-KVM、KVM-GO、uConsole 擴展的安裝指南、常見問題、故障排查與教程，面向 IT 與開發者。',
   nav: {
     ...en.nav,
-    docsHome: '全部文檔',
     home: '首頁',
     faqs: '常見問題',
     support: '支持',
@@ -250,7 +246,6 @@ const tw: UiStrings = {
     'Openterface KVM-over-USB 產品與軟件的官方文檔 — Mini-KVM、KVM-GO、uConsole 擴展的安裝指南、常見問題、故障排查與教程，面向 IT 與開發者。',
   nav: {
     ...en.nav,
-    docsHome: '全部文檔',
     home: '首頁',
     faqs: '常見問題',
     support: '支持',
@@ -327,7 +322,6 @@ const ja = localeUi({
   siteDescription:
     'Openterface KVM-over-USB 製品とソフトウェアの公式ドキュメント — Mini-KVM・KVM-GO・uConsole 拡張のセットアップ、FAQ、トラブルシューティング、チュートリアル。IT 担当者向け。',
   nav: {
-    docsHome: 'すべてのドキュメント',
     home: 'ホーム',
     faqs: 'FAQ',
     support: 'サポート',
@@ -376,7 +370,6 @@ const ko = localeUi({
   siteDescription:
     'Openterface KVM-over-USB 제품 및 소프트웨어 공식 문서 — Mini-KVM, KVM-GO, uConsole 확장 설정, FAQ, 문제 해결, 튜토리얼. IT 및 개발자용 가이드.',
   nav: {
-    docsHome: '모든 문서',
     home: '홈',
     faqs: 'FAQ',
     support: '지원',
@@ -425,7 +418,6 @@ const de = localeUi({
   siteDescription:
     'Offizielle Openterface-Dokumentation für KVM-over-USB — Mini-KVM, KVM-GO und uConsole: Einrichtung, FAQs, Fehlerbehebung und Tutorials für IT-Profis und Maker.',
   nav: {
-    docsHome: 'Alle Docs',
     home: 'Startseite',
     faqs: 'FAQs',
     support: 'Support',
@@ -474,7 +466,6 @@ const fr = localeUi({
   siteDescription:
     'Documentation officielle Openterface KVM-over-USB — Mini-KVM, KVM-GO et extension uConsole : installation, FAQ, dépannage et tutoriels pour les professionnels IT.',
   nav: {
-    docsHome: 'Toute la doc',
     home: 'Accueil',
     faqs: 'FAQ',
     support: 'Support',
@@ -523,7 +514,6 @@ const es = localeUi({
   siteDescription:
     'Documentación oficial Openterface KVM-over-USB — Mini-KVM, KVM-GO y extensión uConsole: configuración, preguntas frecuentes, soporte y tutoriales para profesionales IT.',
   nav: {
-    docsHome: 'Toda la documentación',
     home: 'Inicio',
     faqs: 'Preguntas frecuentes',
     support: 'Soporte',
@@ -572,7 +562,6 @@ const it = localeUi({
   siteDescription:
     'Documentazione ufficiale Openterface KVM-over-USB — Mini-KVM, KVM-GO ed estensione uConsole: configurazione, FAQ, risoluzione problemi e tutorial per professionisti IT.',
   nav: {
-    docsHome: 'Tutta la documentazione',
     home: 'Home',
     faqs: 'FAQ',
     support: 'Supporto',
@@ -621,7 +610,6 @@ const pt = localeUi({
   siteDescription:
     'Documentação oficial Openterface KVM-over-USB — Mini-KVM, KVM-GO e extensão uConsole: configuração, FAQs, resolução de problemas e tutoriais para profissionais de TI.',
   nav: {
-    docsHome: 'Toda a documentação',
     home: 'Início',
     faqs: 'Perguntas frequentes',
     support: 'Suporte',
@@ -670,7 +658,6 @@ const ro = localeUi({
   siteDescription:
     'Documentație oficială Openterface KVM-over-USB — Mini-KVM, KVM-GO și extensia uConsole: configurare, întrebări frecvente, depanare și tutoriale pentru profesioniști IT.',
   nav: {
-    docsHome: 'Toată documentația',
     home: 'Acasă',
     faqs: 'Întrebări frecvente',
     support: 'Suport',
@@ -719,7 +706,6 @@ const ru = localeUi({
   siteDescription:
     'Официальная документация Openterface KVM-over-USB — Mini-KVM, KVM-GO и uConsole: настройка, FAQ, устранение неполадок и руководства для IT-специалистов.',
   nav: {
-    docsHome: 'Вся документация',
     home: 'Главная',
     faqs: 'FAQ',
     support: 'Поддержка',
@@ -768,7 +754,6 @@ const ar = localeUi({
   siteDescription:
     'التوثيق الرسمي لـ Openterface KVM-over-USB — Mini-KVM وKVM-GO وامتداد uConsole: الإعداد والأسئلة الشائعة واستكشاف الأخطاء والدروس لمحترفي IT.',
   nav: {
-    docsHome: 'كل التوثيق',
     home: 'الرئيسية',
     faqs: 'الأسئلة الشائعة',
     support: 'الدعم',
@@ -817,7 +802,6 @@ const tr = localeUi({
   siteDescription:
     'Resmi Openterface KVM-over-USB belgeleri — Mini-KVM, KVM-GO ve uConsole: kurulum, SSS, sorun giderme ve IT profesyonelleri için eğitimler.',
   nav: {
-    docsHome: 'Tüm dokümantasyon',
     home: 'Ana sayfa',
     faqs: 'SSS',
     support: 'Destek',
@@ -866,7 +850,6 @@ const pl = localeUi({
   siteDescription:
     'Oficjalna dokumentacja Openterface KVM-over-USB — Mini-KVM, KVM-GO i uConsole: konfiguracja, FAQ, rozwiązywanie problemów i samouczki dla specjalistów IT.',
   nav: {
-    docsHome: 'Cała dokumentacja',
     home: 'Strona główna',
     faqs: 'FAQ',
     support: 'Wsparcie',
@@ -915,7 +898,6 @@ const nl = localeUi({
   siteDescription:
     'Officiële Openterface KVM-over-USB-documentatie — Mini-KVM, KVM-GO en uConsole: installatie, FAQ’s, probleemoplossing en tutorials voor IT-professionals.',
   nav: {
-    docsHome: 'Alle documentatie',
     home: 'Home',
     faqs: 'FAQ',
     support: 'Support',

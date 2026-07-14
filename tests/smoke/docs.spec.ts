@@ -40,9 +40,10 @@ test.describe('docs full corpus smoke', () => {
     await expect(backLink).toHaveAttribute('href', /openterface\.com\/?$/);
     await expect(backLink.locator('img.site-header__op-mark')).toBeVisible();
     await expect(header.locator('img.site-header__docs-mark')).toBeVisible();
-    for (const label of ['All Docs', 'Products', 'Apps', 'Tutorial', 'FAQs', 'Support']) {
+    for (const label of ['Products', 'Apps', 'Tutorial', 'FAQs', 'Support']) {
       await expect(header).toContainText(label);
     }
+    await expect(header).not.toContainText('All Docs');
     const nav = header.locator('nav[aria-label="Documentation sections"]');
     await expect(nav).not.toContainText('Media');
   });

@@ -45,7 +45,6 @@ export function activeDocsTab(pathname: string): DocsTabId | null {
 
 export function buildDocsHeaderNav(locale: SiteLocale, ui: Ui): DocsHeaderNavItem[] {
   return [
-    { label: ui.nav.docsHome, href: localizedPath(locale), tabId: 'home' },
     { label: ui.nav.product, href: localizedPath(locale, 'products'), tabId: 'products' },
     { label: ui.nav.app, href: localizedPath(locale, 'app'), tabId: 'app' },
     { label: ui.nav.tutorial, href: localizedPath(locale, 'tutorial', 'kvm'), tabId: 'tutorial' },
