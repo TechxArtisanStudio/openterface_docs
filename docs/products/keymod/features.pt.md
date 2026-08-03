@@ -1,21 +1,21 @@
 ---
 title: "Recursos e especificações"
-description: "Recursos do KeyMod Series: teclado e mouse HID Bluetooth, conexão dual USB + Bluetooth, perfis personalizados, macros, modos gamepad. Aplicativo móvel open source para Android e iPadOS."
-keywords: "recursos KeyMod, emulador HID, teclado Bluetooth, teclado USB, botões programáveis, gamepad, macro, open source, CH9329"
+description: "Recursos KeyMod Series: teclado e mouse HID Bluetooth, conexão dual USB + Bluetooth, perfis personalizados, macros, modos gamepad, controles de apresentação, hub de atalhos. Aplicativo móvel open source para Android e iOS."
+keywords: "recursos KeyMod Series, emulador HID, teclado Bluetooth, teclado USB, botões programáveis, gamepad, macro, open source, CH9329, hub de atalhos, modo apresentação"
 ---
 
-# **Recursos e especificações** | Openterface KeyMod
+# **Recursos e especificações** | Openterface KeyMod Series
 
-## Status de pré-lançamento
+## Status atual
 
-KeyMod está atualmente em desenvolvimento de pré-lançamento. Estamos refinando o hardware e o software. Inscreva-se na [página do produto](/products/keymod/) para se manter atualizado sobre o progresso e notificações de lançamento.
+KeyMod está em desenvolvimento ativo com um [beta público](/tutorial/keymod/) disponível para Android. Inscreva-se na [página do produto](/products/keymod/) para se manter atualizado sobre notificações de lançamento.
 
 > **Nota:** Recursos, especificações e design ainda estão sujeitos a alterações conforme o desenvolvimento continua.
 
 ## Variantes do produto
 
-- **Versão conector 2-em-1** — Design de plug USB A + USB C combinado para ampla compatibilidade com laptops, tablets e telefones
-- **Versão USB C** — Plug USB C dedicado para dispositivos modernos e gerenciamento de cabos limpo
+- **Versão Mini** — Apenas conector Type C macho
+- **Versão Plus** — Conector Type A macho e conector Type C fêmea
 
 ## Recursos principais
 
@@ -34,15 +34,22 @@ KeyMod é projetado para controle local prático diário de dispositivos, não c
 
 Com nosso aplicativo móvel open source, você pode:
 
-- Criar perfis de entrada personalizados
-- Executar macros e configurar atalhos de teclado
-- Criar atalhos de fluxo de trabalho
+- **Teclado e mouse (Basic)** — Teclado de tela inteira com repetição por pressão longa, visualização de teclas e teclado numérico
+- **Teclado e mouse Pro** — Layout composto com tiras Shortcut Hub, teclado dividido e IME
+- **Modo apresentação** — Controle remoto de slides com temporizador para Google Slides e outros aplicativos
+- **Gamepad** — Controlador virtual com layouts predefinidos personalizáveis e suporte a multi-touchpad
+- **Hub de atalhos** — Atalhos de teclado baseados em perfis para ferramentas criativas e de desenvolvimento (Blender, KiCAD, Photoshop, VS Code), com criação, importação e exportação
+- **Macros** — Sequências de teclas programáveis com atrasos
+- **Entrada de voz** — Speech-to-keyboard com IA (Whisper API)
+- **Terminal** — SSH via Bluetooth para acesso remoto a comandos
+- **Agent** — Interação direta com IA usando HID ou comandos SSH para controlar outro computador
 
-O aplicativo controlador KeyMod foca em **Android, IOS e iPadOS**. Também estamos expandindo o controle de desktop com software **Windows e macOS** em nosso ecossistema Openterface mais amplo.
+O aplicativo **KeyCmd** foca em **Android** e **iOS** (incluindo iPadOS). Ele também funciona com **KVM-GO** via USB ou Bluetooth. Também estamos expandindo o controle de desktop com software **Windows e macOS** em nosso ecossistema Openterface mais amplo.
+
 
 ### **HID de hardware real**
 
-Construído sobre o núcleo HID comprovado do Openterface Mini-KVM. Emulação de teclado e mouse baseada em hardware—nenhuma instalação de software necessária no dispositivo de destino.
+Construído sobre o núcleo HID comprovado do Openterface Mini-KVM. Emulação de teclado e mouse baseada em hardware — nenhuma instalação de software necessária no dispositivo de destino.
 
 ### **Open source**
 
@@ -52,20 +59,23 @@ KeyMod é hardware e software abertos. Publicaremos esquemas, arquivos PCB, firm
 
 ### **Conectividade**
 
-- **USB**: Porta USB C (variante 2-em-1: plug USB A + USB C combinado)
+- **USB**: A versão Mini utiliza conector Type C macho; a versão Plus utiliza conector Type A macho e conector Type C fêmea
 - **Bluetooth**: Teclado e mouse HID
 - **Alvo**: Nenhuma instalação de software necessária
 
 ### **Hardware principal**
 
-- Chip emulador HID CH9329
-- Módulo Bluetooth
-- Porta USB C
+- Chip CH32V208 (protocolo compatível com CH9329)
+- Conector(es) USB: a versão Mini utiliza Type C macho; a versão Plus utiliza Type A macho e Type C fêmea
 - MCU
 - Botão(ões) programável(is)
 
 ### **Recursos de entrada**
 
 - Emulação completa de teclado e mouse (HID)
-- Perfis de entrada personalizados
+- Perfis de entrada personalizados (níveis Basic e Pro)
 - Macros e atalhos de teclado
+- Hub de atalhos com perfis específicos para aplicativos
+- Gamepad com layouts baseados em predefinições (esquema v7)
+- Controles de apresentação com temporizador de slides
+- Speech-to-keyboard com IA

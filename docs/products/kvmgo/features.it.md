@@ -53,25 +53,25 @@ Trasferimento file tra dispositivi host e destinazione
 [App host](/app) compatibili con macOS, Windows, Linux, Android e app web Chrome per integrazione universale.
 
 ### **Trasferimento testo**
-Trasmetti facilmente il testo simulando i tasti — perfetto per nomi utente, password e frammenti di codice. Supporta caratteri ASCII inclusi simboli e punteggiatura.
+Trasmetti facilmente testo simulando i tasti della tastiera — perfetto per nomi utente, password e snippet di codice. Supporta caratteri ASCII inclusi simboli e punteggiatura.
 
-- **Host → Target**: Inviare testo tramite simulazione di tasti
-- **Target → Host**: Copiare testo dallo schermo del target all'host tramite OCR (solo macOS)
+- **Host → Destinazione**: Invia testo tramite tasti emulati
+- **Destinazione → Host**: Copia il testo dallo schermo della destinazione all'host tramite OCR (solo macOS)
 
 !!! warning "Limitazioni del trasferimento testo"
-    - **Nessuna integrazione degli appunti**: Emula solo la digitazione, nessun trasferimento di immagini o documenti
+    - **Nessuna integrazione con gli appunti**: Emula solo la digitazione, nessun trasferimento di immagini o documenti
     - **Solo ASCII**: Limitato ai caratteri ASCII (nessun supporto per cinese, giapponese, coreano, ecc.)
     - **Considerazioni sulla lunghezza**: Ideale per testi brevi; blocchi grandi possono causare problemi di prestazioni
-    - **Funzione OCR**: Il trasferimento testo Target → Host è attualmente disponibile solo su macOS
+    - **Funzione OCR**: Il trasferimento di testo Destinazione → Host è attualmente disponibile solo su macOS
 
 ### **Convenienza plug-and-play**
 Nessuna installazione software richiesta sul dispositivo di destinazione. Il controllo inizia immediatamente dopo la connessione senza lasciare tracce software.
 
 ### **Integrazione audio**
-Passthrough audio HDMI integrato per un'esperienza multimediale completa. (Non supportato su KVM-Go VGA; conferma in sospeso per KVM-Go DP.)
+Pass-through audio HDMI integrato per un'esperienza multimediale completa. (Non supportato su KVM-Go VGA; conferma in sospeso per KVM-Go DP.)
 
-### **Capacità Bluetooth**
-Il supporto Bluetooth integrato abilita la funzionalità dell'app nativa iPadOS (in arrivo), rendendo KVM-GO uno dei pochi KVM che funzionano nativamente con gli iPad.
+### **Funzionalità Bluetooth**
+Il supporto Bluetooth integrato abilita la funzionalità nativa dell'app iPadOS (in arrivo), rendendo KVM-GO uno dei pochi KVM che funziona nativamente con gli iPad.
 
 ### **Open-source**
 Hardware e software [completamente open-source](/compliance) per trasparenza e [innovazione della comunità](/discord).

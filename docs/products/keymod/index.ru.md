@@ -54,7 +54,7 @@ Ein kompakter, programmierbarer **USB + Bluetooth** HID-Emulator (Tastatur и Ma
 
     Entdecken Sie die leistungsstarken Функции von KeyMod
 
-    [:octicons-arrow-right-24: Функции anzeigen](/products/keymod/features)
+    [:octicons-arrow-right-24: Функции anzeigen](/products/keymod/features/)
 
     [:octicons-arrow-right-24: Lieferumfang](/products/keymod/whats-in-the-box/)
 

@@ -54,7 +54,7 @@ Un emulator HID (tastatură și mouse) compact și programabil **USB + Bluetooth
 
     Descoperiți funcționalitățile puternice ale KeyMod
 
-    [:octicons-arrow-right-24: Vizualizați funcționalități](/products/keymod/features)
+    [:octicons-arrow-right-24: Vizualizați funcționalități](/products/keymod/features/)
 
     [:octicons-arrow-right-24: Conținutul cutiei](/products/keymod/whats-in-the-box/)
 

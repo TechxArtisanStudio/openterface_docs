@@ -73,6 +73,27 @@ HDMI-eingebetteter Audio-Durchgang için vollständiges Multimedia-Erlebnis. (Ni
 ### **Bluetooth-Fähigkeit**
 Integrierte Bluetooth-Unterstützung ermöglicht native iPadOS-App-Funktionalität (demnächst verfügbar) ve macht KVM-GO zu einem der wenigen KVMs, die nativ ile iPads funktionieren.
 
+### **Metin aktarımı**
+Klavye tuşlarını simüle ederek zahmetsizce metin aktarın — kullanıcı adları, şifreler ve kod parçacıkları için mükemmeldir. Sembolleri ve noktalama işaretlerini içeren ASCII karakterlerini destekler.
+
+- **Host → Hedef**: Simüle edilmiş klavye tuşları aracılığıyla metin gönderin
+- **Hedef → Host**: Hedef ekranındaki metni OCR ile hosta kopyalayın (yalnızca macOS)
+
+!!! warning "Metin aktarım sınırlamaları"
+    - **Pano entegrasyonu yok**: Yalnızca yazma simülasyonu, görüntü veya belge aktarımı yok
+    - **Yalnızca ASCII**: Yalnızca ASCII karakterlerle sınırlı (Çince, Japonca, Korece vb. desteklenmez)
+    - **Uzunluk dikkate alınması**: Kısa metinler için en iyisidir; büyük bloklar performans sorunlarına neden olabilir
+    - **OCR özelliği**: Hedef → Host metin aktarımı şu anda yalnızca macOS'ta kullanılabilir
+
+### **Plug-and-Play rahatlığı**
+Hedef cihazda yazılım kurulumu gerekmez. Bağlantıdan sonra hiçbir yazılım izi bırakmadan kontrol hemen başlar.
+
+### **Ses entegrasyonu**
+Tam multimedya deneyimi için HDMI gömülü ses geçişi. (KVM-Go VGA'da desteklenmez; KVM-Go DP için onay bekleniyor.)
+
+### **Bluetooth yeteneği**
+Yerleşik Bluetooth desteği, yerel iPadOS uygulama işlevselliğini etkinleştirir (yakında), KVM-GO'yu iPad'lerle doğal olarak çalışan birkaç KVM'den biri yapar.
+
 ### **Open-Source**
 [Vollständig Open-Source](/compliance) Donanım ve Yazılım için Transparenz ve [Community-Innovation](/discord).
 

@@ -54,7 +54,7 @@ Un emulador HID (teclado y ratón) compacto y programable **USB + Bluetooth**, K
 
     Descubre las potentes funciones de KeyMod
 
-    [:octicons-arrow-right-24: Ver funciones](/products/keymod/features)
+    [:octicons-arrow-right-24: Ver funciones](/products/keymod/features/)
 
     [:octicons-arrow-right-24: Contenido de la caja](/products/keymod/whats-in-the-box/)
 

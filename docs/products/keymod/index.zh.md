@@ -54,7 +54,7 @@ KeyMod 是一款紧凑、可编程的 **USB + 蓝牙** HID（键盘和鼠标）�
 
     探索 KeyMod 的强大功能
 
-    [:octicons-arrow-right-24: 查看功能](/products/keymod/features)
+    [:octicons-arrow-right-24: 查看功能](/products/keymod/features/)
 
     [:octicons-arrow-right-24: 包装内容](/products/keymod/whats-in-the-box/)
 

@@ -54,7 +54,7 @@ Un emulatore HID (tastiera e mouse) compatto e programmabile **USB + Bluetooth**
 
     Scopri le potenti funzionalità di KeyMod
 
-    [:octicons-arrow-right-24: Visualizza funzionalità](/products/keymod/features)
+    [:octicons-arrow-right-24: Visualizza funzionalità](/products/keymod/features/)
 
     [:octicons-arrow-right-24: Contenuto della confezione](/products/keymod/whats-in-the-box/)
 

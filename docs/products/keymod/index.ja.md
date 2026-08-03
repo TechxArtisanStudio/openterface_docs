@@ -54,7 +54,7 @@ keywords: "KeyMod, HIDエミュレーター, スマホキーボード, Bluetooth
 
     KeyModの強力な機能を発見
 
-    [:octicons-arrow-right-24: 機能を見る](/products/keymod/features)
+    [:octicons-arrow-right-24: 機能を見る](/products/keymod/features/)
 
     [:octicons-arrow-right-24: 同梱物](/products/keymod/whats-in-the-box/)
 

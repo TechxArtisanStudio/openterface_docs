@@ -54,7 +54,7 @@ keywords: "KeyMod, HID 에뮬레이터, 폰 키보드, 블루투스 키보드, U
 
     KeyMod의 강력한 기능 알아보기
 
-    [:octicons-arrow-right-24: 기능 보기](/products/keymod/features)
+    [:octicons-arrow-right-24: 기능 보기](/products/keymod/features/)
 
     [:octicons-arrow-right-24: 구성품](/products/keymod/whats-in-the-box/)
 

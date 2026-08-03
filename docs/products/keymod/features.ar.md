@@ -1,71 +1,81 @@
 ---
-title: "الميزات & Spezifikationen"
-description: "KeyMod Series الميزات: Bluetooth-HID-Tastatur و -Maus, USB + Bluetooth Dual-الاتصال, benutzerdefinierte Profile, Makros, Gamepad-Modi. Open-Source-Mobil-App لـ Android و iPadOS."
-keywords: "KeyMod-الميزات, HID-Emulator, Bluetooth-Tastatur, USB-Tastatur, programmierbare Tasten, Gamepad, Makro, Open Source, CH9329"
+title: "الميزات والمواصفات"
+description: "ميزات سلسلة KeyMod: لوحة مفاتيح وماوس HID عبر البلوتوث، اتصال مزدوج USB + بلوتوث، ملفات تعريف مخصصة، وحدات ماكرو، أوضاع لوحة الألعاب، عناصر تحكم العرض، مركز الاختصارات. تطبيق هاتف محمول مفتوح المصدر لنظامي Android و iOS."
+keywords: "ميزات سلسلة KeyMod, محاكي HID, لوحة مفاتيح بلوتوث, لوحة مفاتيح USB, أزرار قابلة للبرمجة, لوحة ألعاب, ماكرو, مفتوح المصدر, CH9329, مركز الاختصارات, وضع العرض"
 ---
 
-# **الميزات & Spezifikationen** | Openterface KeyMod
+# **الميزات والمواصفات** | Openterface KeyMod Series
 
-## Pre-Launch-Status
+## الحالة الحالية
 
-KeyMod befindet sich derzeit in der Pre-Launch-Entwicklung. Wir verfeinern die الأجهزة و البرمجيات. Abonnieren Sie die [منتجseite](/products/keymod/), um حول Fortschritte و Launch-Benachrichtigungen informiert zu bleiben.
+يخضع KeyMod للتطوير النشط، مع [نسخة تجريبية عامة](/tutorial/keymod/) متاحة لنظام Android. اشترك في [صفحة المنتج](/products/keymod/) لتبقى على اطلاع بإشعارات الإطلاق.
 
-> **Hinweis:** الميزات, Spezifikationen و Design können sich während der Entwicklung noch ändern.
+> **ملاحظة:** الميزات والمواصفات والتصميم لا تزال قابلة للتغيير مع استمرار التطوير.
 
-## منتجvarianten
+## إصدارات المنتج
 
-- **2-in-1-Stecker-Version** — Kombinierter USB-A- و USB-C-Stecker لـ breite Kompatibilität مع Laptops, Tablets و Smartphones
-- **USB-C-Version** — Dedizierter USB-C-Stecker لـ mأوne Geräte و حولsichtliche Kabelverwaltung
+- **إصدار Mini** — منفصل Type C ذكر فقط
+- **إصدار Plus** — منفصل Type A ذكر ومنفصل Type C أنثى
 
-## Kernfunktionen
+## الميزات الأساسية
 
-### **Smartphone als Tastatur و Trackpad**
+### **الهاتف كلوحة مفاتيح ولوحة لمس**
 
-KeyMod verwandelt Ihr Smartphone in eine tragbare Tastatur- و Trackpad-Konsole. Verwenden Sie es, wenn eine vollständige Tastatur و Maus لا verfügbar sind, أو wenn Sie einen schnelleren Workflow als beim Gerätewechsel wünschen. Ideal لـ Außendisplays, LED-Schilder-Player, Kioske, Smart-TVs و Set-Top-Boxen.
+يحول KeyMod هاتفك إلى وحدة تحكم محمولة بلوحة مفاتيح ولوحة لمس. استخدمه عندما لا تتوفر لوحة مفاتيح وماوس كاملين، أو عندما تريد سير عمل أسرع من التبديل بين الأجهزة. مثالي لأجهزة كمبيوتر العرض الخارجي، ومشغلات اللافتات LED، وأكشاك المعلومات، وأجهزة التلفزيون الذكية، وأجهزة استقبال البث.
 
-### **Dual-الاتصال: USB + Bluetooth**
+### **اتصال مزدوج: USB + بلوتوث**
 
-- **USB** — Plug-and-Play-Kabelverbindung لـ zuverlässige, latenzarme Eingabe
-- **Bluetooth** — Kabellose Einrichtung, wenn das Szenario es zulässt; halten Sie Ihr Setup leicht و tragbar
+- **USB** — اتصال سلكي بتشغيل وتوصيل لإدخال موثوق ومنخفض الكمون
+- **بلوتوث** — إعداد لاسلكي عندما يسمح السيناريو؛ حافظ على إعدادك خفيفًا وقابلًا للنقل
 
-KeyMod ist لـ praktische tägliche lokale Gerätesteuerung konzipiert, لا als Ersatz لـ Remote-Desktop.
+تم تصميم KeyMod للتحكم اليومي العملي في الأجهزة المحلية، وليس كبديل لسطح المكتب البعيد.
 
-### **Open-Source-Mobil-App**
+### **تطبيق هاتف محمول مفتوح المصدر**
 
-Mit unserer Open-Source-Mobil-App können Sie:
+باستخدام تطبيقنا المفتوح المصدر للهاتف المحمول، يمكنك:
 
-- Benutzerdefinierte Eingabeprofile erstellen
-- Makros starten و Hotkeys konfigurieren
-- Workflow-Verknüpfungen erstellen
+- **لوحة المفاتيح والماوس (الأساسية)** — لوحة مفاتيح بملء الشاشة مع تكرار الضغط المطول، ومعاينة المفاتيح، ولوحة الأرقام
+- **لوحة المفاتيح والماوس Pro** — تخطيط مركب مع شرائط مركز الاختصارات، ولوحة مفاتيح مقسمة، و IME
+- **وضع العرض** — جهاز تحكم عن بعد للشرائح مع مؤقت لـ Google Slides وتطبيقات أخرى
+- **لوحة الألعاب** — وحدة تحكم افتراضية مع تخطيطات مسبقة قابلة للتخصيص ودعم لوحة لمس متعددة
+- **مركز الاختصارات** — اختصارات لوحة مفاتيح قائمة على ملفات تعريف لأدوات الإبداع والتطوير (Blender، KiCAD، Photoshop، VS Code)، مع الإنشاء والاستيراد والتصدير
+- **وحدات الماكرو** — تسلسلات مفاتيح قابلة للبرمجة مع تأخيرات
+- **الإدخال الصوتي** — تحويل الكلام إلى لوحة مفاتيح باستخدام الذكاء الاصطناعي (Whisper API)
+- **المحطة الطرفية** — SSH عبر البلوتوث للوصول إلى الأوامر عن بُعد
+- **Agent** — تفاعل مباشر مدعوم بالذكاء الاصطناعي مع أوامر HID أو SSH للتحكم في جهاز كمبيوتر آخر
 
-Die KeyMod-Controller-App konzentriert sich auf **Android, IOS و iPadOS**. Wir erweitern auch die Desktop-Steuerung مع **Windows- و macOS-البرمجيات** in unserem breiteren Openterface-Ökosystem.
+يركز تطبيق **KeyCmd** على **Android** و **iOS** (بما في ذلك iPadOS). كما أنه يعمل مع **KVM-GO** عبر USB أو البلوتوث. نقوم أيضًا بتوسيع التحكم في سطح المكتب باستخدام برامج **Windows و macOS** في نظام Openterface البيئي الأوسع.
 
-### **Echte الأجهزة-HID**
 
-Basiert auf dem bewährten HID-Kern von Openterface Mini-KVM. الأجهزةbasierte Tastatur- و Mausemulation—keine البرمجياتinstallation auf dem Zielgerät erforderlich.
+### **HID حقيقي للأجهزة**
 
-### **Open Source**
+مبني على نواة HID المثبتة من Openterface Mini-KVM. محاكاة لوحة مفاتيح وماوس مبنية على الأجهزة — لا يلزم تثبيت أي برنامج على الجهاز المستهدف.
 
-KeyMod ist Open-الأجهزة و Open-Source-البرمجيات. Wir werden Schaltpläne, PCB-Dateien, Firmware, البرمجيات و BOM veröffentlichen, während das Projekt sich weiterentwickelt. [Treten Sie unserer Community bei](/discord), um beizutragen و auf dem Laufenden zu bleiben.
+### **مفتوح المصدر**
 
-## Technische Spezifikationen
+KeyMod هو أجهزة مفتوحة وبرامج مفتوحة المصدر. سننشر المخططات وملفات PCB والبرامج الثابتة والبرامج و BOM مع تطور المشروع. [انضم إلى مجتمعنا](/discord) للمساهمة والبقاء على اطلاع.
 
-### **Konnektivität**
+## المواصفات الفنية
 
-- **USB**: USB-C-Anschluss (2-in-1-Variante: USB A + USB C kombinierter Stecker)
-- **Bluetooth**: HID-Tastatur و -Maus
-- **Zielgerät**: Keine البرمجياتinstallation erforderlich
+### **الاتصال**
 
-### **Wichtige الأجهزة**
+- **USB**: يستخدم إصدار Mini منفصل Type C ذكر؛ يستخدم إصدار Plus منفصل Type A ذكر ومنفصل Type C أنثى
+- **بلوتوث**: لوحة مفاتيح وماوس HID
+- **الهدف**: لا يلزم تثبيت أي برنامج
 
-- CH9329 HID-Emulator-Chip
-- Bluetooth-Modul
-- USB-C-Anschluss
+### **الأجهزة الرئيسية**
+
+- شريحة CH32V208 (بروتوكول متوافق مع CH9329)
+- منفصل (منافذ) USB: يستخدم إصدار Mini منفصل Type C ذكر؛ يستخدم إصدار Plus منفصل Type A ذكر ومنفصل Type C أنثى
 - MCU
-- Programmierbare(r) Taste(n)
+- زر (أزرار) قابلة للبرمجة
 
-### **Eingabefunktionen**
+### **ميزات الإدخال**
 
-- Vollständige Tastatur- و Mausemulation (HID)
-- Benutzerdefinierte Eingabeprofile
-- Makros و Hotkeys
+- محاكاة كاملة للوحة المفاتيح والماوس (HID)
+- ملفات تعريف إدخال مخصصة (مستويان Basic و Pro)
+- وحدات ماكرو ومفاتيح اختصار
+- مركز اختصارات مع ملفات تعريف خاصة بالتطبيق
+- لوحة ألعاب مع تخطيطات مبنية على إعدادات مسبقة (المخطط v7)
+- عناصر تحكم في العرض مع مؤقت للشرائح
+- تحويل الكلام إلى لوحة مفاتيح باستخدام الذكاء الاصطناعي

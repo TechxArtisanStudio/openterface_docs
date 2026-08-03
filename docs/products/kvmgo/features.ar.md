@@ -52,26 +52,26 @@ Dateiحولtragung zwischen Host- و Zielgeräten
 ### **Plattformحولgreifende Unterstützung**
 [Host-Apps](/app) kompatibel مع macOS, Windows, Linux, Android و Chrome-Web-App لـ universelle Integration.
 
-### **Textحولtragung**
-Übertragen Sie mühelos Text durch Simulation von Tastenanschlägen — perfekt لـ Benutzernamen, Passwörter و Code-Snippets. Unterstützt ASCII-Zeichen einschließlich Symbole و Satzzeichen.
+### **Textübertragung**
+Übertragen Sie mühelos Text durch Simulation von Tastenanschlägen — perfekt für Benutzernamen, Passwörter und Code-Snippets. Unterstützt ASCII-Zeichen einschließlich Symbole und Satzzeichen.
 
-- **Host → Ziel**: Text حول emulierte Tastenanschläge senden
-- **Ziel → Host**: Text vom Bildschirm des Ziels حول OCR zum Host kopieren (nur macOS)
+- **Host → Ziel**: Text über emulierte Tastenanschläge senden
+- **Ziel → Host**: Text vom Bildschirm des Ziels über OCR zum Host kopieren (nur macOS)
 
-!!! warning "Textحولtragungsbeschränkungen"
-    - **Keine Zwischenablage-Integration**: Nur Tippenemulation, keine Bild- أو Dokumentحولtragung
-    - **Nur ASCII**: Beschränkt auf ASCII-Zeichen (keine Unterstützung لـ Chinesisch, Japanisch, Koreanisch usw.)
-    - **Längenحولlegungen**: Am besten لـ kurzen Text; große Blöcke können Leistungsprobleme verursachen
-    - **OCR-Funktion**: Ziel → Host Textحولtragung derzeit nur auf macOS verfügbar
+!!! warning "Textübertragungsbeschränkungen"
+    - **Keine Zwischenablage-Integration**: Nur Tippenemulation, keine Bild- oder Dokumentübertragung
+    - **Nur ASCII**: Beschränkt auf ASCII-Zeichen (keine Unterstützung für Chinesisch, Japanisch, Koreanisch usw.)
+    - **Längenüberlegungen**: Am besten für kurzen Text; große Blöcke können Leistungsprobleme verursachen
+    - **OCR-Funktion**: Ziel → Host Textübertragung derzeit nur auf macOS verfügbar
 
 ### **Plug-and-Play-Komfort**
-Keine البرمجياتinstallation auf dem Zielgerät erforderlich. Die Steuerung beginnt sofort nach der الاتصال ohne hinterlassene البرمجياتspuren.
+Keine Softwareinstallation auf dem Zielgerät erforderlich. Die Steuerung beginnt sofort nach der Verbindung ohne hinterlassene Softwarespuren.
 
 ### **Audio-Integration**
-HDMI-eingebetteter Audio-Durchgang لـ vollständiges Multimedia-Erlebnis. (Nicht unterstützt auf KVM-Go VGA; Bestätigung ausstehend لـ KVM-Go DP.)
+HDMI-eingebetteter Audio-Durchgang für vollständiges Multimedia-Erlebnis. (Nicht unterstützt auf KVM-Go VGA; Bestätigung ausstehend für KVM-Go DP.)
 
 ### **Bluetooth-Fähigkeit**
-Integrierte Bluetooth-Unterstützung ermöglicht native iPadOS-App-Funktionalität (demnächst verfügbar) و macht KVM-GO zu einem der wenigen KVMs, die nativ مع iPads funktionieren.
+Integrierte Bluetooth-Unterstützung ermöglicht native iPadOS-App-Funktionalität (demnächst verfügbar) und macht KVM-GO zu einem der wenigen KVMs, die nativ mit iPads funktionieren.
 
 ### **Open-Source**
 [Vollständig Open-Source](/compliance) الأجهزة و البرمجيات لـ Transparenz و [Community-Innovation](/discord).

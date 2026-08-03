@@ -52,26 +52,26 @@ Dateiovertragung zwischen Host- en Zielgeräten
 ### **Plattformovergreifende Unterstützung**
 [Host-Apps](/app) kompatibel met macOS, Windows, Linux, Android en Chrome-Web-App voor universelle Integration.
 
-### **Textovertragung**
-Übertragen Sie mühelos Text durch Simulation von Tastenanschlägen — perfekt voor Benutzernamen, Passwörter en Code-Snippets. Unterstützt ASCII-Zeichen einschließlich Symbole en Satzzeichen.
+### **Tekstoverdracht**
+Verstuur moeiteloos tekst door toetsen te simuleren — perfect voor gebruikersnamen, wachtwoorden en codefragmenten. Ondersteunt ASCII-tekens, inclusief symbolen en leestekens.
 
-- **Host → Ziel**: Text over emulierte Tastenanschläge senden
-- **Ziel → Host**: Text vom Bildschirm des Ziels over OCR zum Host kopieren (nur macOS)
+- **Host → Doel**: Stuur tekst via gesimuleerde toetsaanslagen
+- **Doel → Host**: Kopieer tekst van het scherm van het doel naar de host via OCR (alleen macOS)
 
-!!! warning "Textovertragungsbeschränkungen"
-    - **Keine Zwischenablage-Integration**: Nur Tippenemulation, keine Bild- of Dokumentovertragung
-    - **Nur ASCII**: Beschränkt auf ASCII-Zeichen (keine Unterstützung voor Chinesisch, Japanisch, Koreanisch usw.)
-    - **Längenoverlegungen**: Am besten voor kurzen Text; große Blöcke können Leistungsprobleme verursachen
-    - **OCR-Funktion**: Ziel → Host Textovertragung derzeit nur auf macOS verfügbar
+!!! warning "Beperkingen van tekstoverdracht"
+    - **Geen clipboard-integratie**: Simuleert alleen typen, geen beeld- of documentoverdracht
+    - **Alleen ASCII**: Beperkt tot ASCII-tekens (geen ondersteuning voor Chinees, Japans, Koreaans, enz.)
+    - **Lengteoverwegingen**: Het beste voor korte tekst; grote blokken kunnen prestatieproblemen veroorzaken
+    - **OCR-functie**: Tekstoverdracht Doel → Host is momenteel alleen beschikbaar op macOS
 
-### **Plug-and-Play-Komfort**
-Keine Softwareinstallation auf dem Zielgerät erforderlich. Die Steuerung beginnt sofort nach der Verbinding ohne hinterlassene Softwarespuren.
+### **Plug-and-Play-comfort**
+Geen software-installatie vereist op het doelapparaat. Beheersing begint onmiddellijk na de verbinding zonder software-sporen achter te laten.
 
-### **Audio-Integration**
-HDMI-eingebetteter Audio-Durchgang voor vollständiges Multimedia-Erlebnis. (Nicht unterstützt auf KVM-Go VGA; Bestätigung ausstehend voor KVM-Go DP.)
+### **Audio-integratie**
+HDMI-ingebedde audiopassthrough voor een complete multimedia-ervaring. (Niet ondersteund op KVM-Go VGA; bevestiging in behandeling voor KVM-Go DP.)
 
-### **Bluetooth-Fähigkeit**
-Integrierte Bluetooth-Unterstützung ermöglicht native iPadOS-App-Funktionalität (demnächst verfügbar) en macht KVM-GO zu einem der wenigen KVMs, die nativ met iPads funktionieren.
+### **Bluetooth-mogelijkheid**
+Ingebouwde Bluetooth-ondersteuning maakt native iPadOS-app-functionaliteit mogelijk (komend binnenkort), waardoor KVM-GO een van de weinige KVM's is die native met iPads werkt.
 
 ### **Open-Source**
 [Vollständig Open-Source](/compliance) Hardware en Software voor Transparenz en [Community-Innovation](/discord).

@@ -1,6 +1,6 @@
 ---
 title: "Features & Specifications"
-description: "KeyMod Series features: Bluetooth HID keyboard and mouse, USB + Bluetooth dual connection, custom profiles, macros, gamepad modes, presentation controls, shortcut hub. Open source mobile app for Android."
+description: "KeyMod Series features: Bluetooth HID keyboard and mouse, USB + Bluetooth dual connection, custom profiles, macros, gamepad modes, presentation controls, shortcut hub. Open source mobile app for Android and iOS."
 keywords: "KeyMod Series features, HID emulator, Bluetooth keyboard, USB keyboard, programmable buttons, gamepad, macro, open source, CH9329, shortcut hub, presentation mode"
 ---
 
@@ -14,8 +14,8 @@ KeyMod is in active development with a [public beta](/tutorial/keymod/) availabl
 
 ## Product Variants
 
-- **2-in-1 Connector Version** — Combined USB A + USB C plug design for broad compatibility with laptops, tablets, and phones
-- **USB C Version** — Dedicated USB C plug for modern devices and clean cable management
+- **Mini Version** — Type C male port only
+- **Plus Version** — Type A male port and Type C female port
 
 ## Core Features
 
@@ -41,8 +41,10 @@ With our open source mobile app, you can:
 - **Shortcut Hub** — Profile-based keyboard shortcuts for creative and dev tools (Blender, KiCAD, Photoshop, VS Code), with create, import, and export
 - **Macros** — Programmable key sequences with delays
 - **Voice input** — Speech-to-keyboard with AI (Whisper API)
+- **Terminal** — SSH over Bluetooth for remote command access
+- **Agent** — AI-driven direct interaction with HID or SSH commands to control another computer
 
-The **KeyCmd** app focuses on **Android** and **iPadOS**. It also works with **Mini-KVM** and **KVM-GO** over USB or Bluetooth. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
+The **KeyCmd** app focuses on **Android** and **iOS** (including iPadOS). It also works with **KVM-GO** over USB or Bluetooth. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
 
 
 ### **True Hardware HID**
@@ -57,15 +59,14 @@ KeyMod is open hardware and open software. We will publish schematics, PCB files
 
 ### **Connectivity**
 
-- **USB**: USB C port (2-in-1 variant: USB A + USB C combined plug)
+- **USB**: Mini version uses a Type C male port; Plus version uses a Type A male port and a Type C female port
 - **Bluetooth**: HID keyboard and mouse
 - **Target**: No software installation required
 
 ### **Key Hardware**
 
-- CH9329 HID emulator chip
-- Bluetooth module
-- USB C port
+- CH32V208 chip (CH9329-compatible protocol)
+- USB connector(s): Mini version uses Type C male; Plus version uses Type A male and Type C female
 - MCU
 - Programmable button(s)
 

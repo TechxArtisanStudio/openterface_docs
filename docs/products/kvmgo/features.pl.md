@@ -52,26 +52,26 @@ Dateiotragung zwischen Host- i Zielgeräten
 ### **Plattformogreifende Unterstützung**
 [Host-Apps](/app) kompatibel z macOS, Windows, Linux, Android i Chrome-Web-App dla universelle Integration.
 
-### **Textotragung**
-Übertragen Sie mühelos Text durch Simulation von Tastenanschlägen — perfekt dla Benutzernamen, Passwörter i Code-Snippets. Unterstützt ASCII-Zeichen einschließlich Symbole i Satzzeichen.
+### **Transfer tekstu**
+Bez wysiłku transmituj tekst, symulując naciśnięcia klawiszy — idealne do nazw użytkowników, haseł i fragmentów kodu. Obsługuje znaki ASCII, w tym symbole i interpunkcję.
 
-- **Host → Ziel**: Text o emulierte Tastenanschläge senden
-- **Ziel → Host**: Text vom Bildschirm des Ziels o OCR zum Host kopieren (nur macOS)
+- **Host → Cel**: Wysyłaj tekst za pomocą emulowanych naciśnięć klawiszy
+- **Cel → Host**: Kopiuj tekst z ekranu celu do hosta za pomocą OCR (tylko macOS)
 
-!!! warning "Textotragungsbeschränkungen"
-    - **Keine Zwischenablage-Integration**: Nur Tippenemulation, keine Bild- lub Dokumentotragung
-    - **Nur ASCII**: Beschränkt auf ASCII-Zeichen (keine Unterstützung dla Chinesisch, Japanisch, Koreanisch usw.)
-    - **Längenolegungen**: Am besten dla kurzen Text; große Blöcke können Leistungsprobleme verursachen
-    - **OCR-Funktion**: Ziel → Host Textotragung derzeit nur auf macOS verfügbar
+!!! warning "Ograniczenia transferu tekstu"
+    - **Brak integracji ze schowkiem**: Symuluje tylko wpisywanie, bez transferu obrazów lub dokumentów
+    - **Tylko ASCII**: Ograniczone do znaków ASCII (brak wsparcia dla chińskiego, japońskiego, koreańskiego itp.)
+    - **Rozważania dotyczące długości**: Najlepsze dla krótkiego tekstu; duże bloki mogą powodować problemy z wydajnością
+    - **Funkcja OCR**: Transfer tekstu Cel → Host jest obecnie dostępny tylko na macOS
 
-### **Plug-and-Play-Komfort**
-Keine Oprogramowanieinstallation auf dem Zielgerät erforderlich. Die Steuerung beginnt sofort nach der Połączenie ohne hinterlassene Oprogramowaniespuren.
+### **Komfort plug-and-play**
+Nie jest wymagana instalacja oprogramowania na urządzeniu docelowym. Sterowanie zaczyna się natychmiast po połączeniu bez pozostawiania śladów oprogramowania.
 
-### **Audio-Integration**
-HDMI-eingebetteter Audio-Durchgang dla vollständiges Multimedia-Erlebnis. (Nicht unterstützt auf KVM-Go VGA; Bestätigung ausstehend dla KVM-Go DP.)
+### **Integracja audio**
+Przepust audio HDMI zintegrowany dla pełnego doświadczenia multimedialnego. (Nieobsługiwane na KVM-Go VGA; potwierdzenie w toku dla KVM-Go DP.)
 
-### **Bluetooth-Fähigkeit**
-Integrierte Bluetooth-Unterstützung ermöglicht native iPadOS-App-Funktionalität (demnächst verfügbar) i macht KVM-GO zu einem der wenigen KVMs, die nativ z iPads funktionieren.
+### **Możliwość Bluetooth**
+Zintegrowane wsparcie Bluetooth umożliwia natywną funkcjonalność aplikacji iPadOS (wkrótce), czyniąc KVM-GO jednym z nielicznych KVM obsługujących natywnie iPady.
 
 ### **Open-Source**
 [Vollständig Open-Source](/compliance) Sprzęt i Oprogramowanie dla Transparenz i [Community-Innovation](/discord).

@@ -1,71 +1,81 @@
 ---
-title: "Functies & Spezifikationen"
-description: "KeyMod Series Functies: Bluetooth-HID-Tastatur en -Maus, USB + Bluetooth Dual-Verbinding, benutzerdefinierte Profile, Makros, Gamepad-Modi. Open-Source-Mobil-App voor Android en iPadOS."
-keywords: "KeyMod-Functies, HID-Emulator, Bluetooth-Tastatur, USB-Tastatur, programmierbare Tasten, Gamepad, Makro, Open Source, CH9329"
+title: "Functies en Specificaties"
+description: "KeyMod Series Functies: Bluetooth HID-toetsenbord en -muis, USB + Bluetooth dubbele verbinding, aangepaste profielen, macro's, gamepad-modi, presentatiebediening, shortcut hub. Open source mobiele app voor Android en iOS."
+keywords: "KeyMod Series functies, HID-emulator, Bluetooth-toetsenbord, USB-toetsenbord, programmeerbare knoppen, gamepad, macro, open source, CH9329, shortcut hub, presentatiemodus"
 ---
 
-# **Functies & Spezifikationen** | Openterface KeyMod
+# **Functies en Specificaties** | Openterface KeyMod Series
 
-## Pre-Launch-Status
+## Huidige status
 
-KeyMod befindet sich derzeit in der Pre-Launch-Entwicklung. Wir verfeinern die Hardware en Software. Abonnieren Sie die [Productseite](/products/keymod/), um over Fortschritte en Launch-Benachrichtigungen informiert zu bleiben.
+KeyMod is in actieve ontwikkeling met een [openbare bèta](/tutorial/keymod/) beschikbaar voor Android. Abonneer u op de [productpagina](/products/keymod/) om op de hoogte te blijven van launch-meldingen.
 
-> **Hinweis:** Functies, Spezifikationen en Design können sich während der Entwicklung noch ändern.
+> **Opmerking:** Functies, specificaties en ontwerp kunnen nog wijzigen naarmate de ontwikkeling vordert.
 
 ## Productvarianten
 
-- **2-in-1-Stecker-Version** — Kombinierter USB-A- en USB-C-Stecker voor breite Kompatibilität met Laptops, Tablets en Smartphones
-- **USB-C-Version** — Dedizierter USB-C-Stecker voor mofne Geräte en oversichtliche Kabelverwaltung
+- **Mini-versie** — Alleen Type C male connector
+- **Plus-versie** — Type A male connector en Type C female connector
 
-## Kernfunktionen
+## Kernfuncties
 
-### **Smartphone als Tastatur en Trackpad**
+### **Telefoon als toetsenbord en trackpad**
 
-KeyMod verwandelt Ihr Smartphone in eine tragbare Tastatur- en Trackpad-Konsole. Verwenden Sie es, wenn eine vollständige Tastatur en Maus niet verfügbar sind, of wenn Sie einen schnelleren Workflow als beim Gerätewechsel wünschen. Ideal voor Außendisplays, LED-Schilder-Player, Kioske, Smart-TVs en Set-Top-Boxen.
+KeyMod verandert uw telefoon in een draagbare toetsenbord- en trackpad-console. Gebruik het wanneer een volledig toetsenbord en muis niet beschikbaar zijn, of wanneer u een snellere workflow wilt dan het wisselen van apparaten. Ideaal voor outdoor display-computers, LED-signage-spelers, kiosken, smart-tv's en settopboxen.
 
-### **Dual-Verbinding: USB + Bluetooth**
+### **Dubbele verbinding: USB + Bluetooth**
 
-- **USB** — Plug-and-Play-Kabelverbindung voor zuverlässige, latenzarme Eingabe
-- **Bluetooth** — Kabellose Einrichtung, wenn das Szenario es zulässt; halten Sie Ihr Setup leicht en tragbar
+- **USB** — Plug-and-play bedrade verbinding voor betrouwbare, latency-arme invoer
+- **Bluetooth** — Kabelloze setup wanneer het scenario het toelaat; houd uw setup licht en draagbaar
 
-KeyMod ist voor praktische tägliche lokale Gerätesteuerung konzipiert, niet als Ersatz voor Remote-Desktop.
+KeyMod is ontworpen voor praktische dagelijkse lokale apparaatbesturing, niet als vervanging van remote desktop.
 
-### **Open-Source-Mobil-App**
+### **Open source mobiele app**
 
-Mit unserer Open-Source-Mobil-App können Sie:
+Met onze open source mobiele app kunt u:
 
-- Benutzerdefinierte Eingabeprofile erstellen
-- Makros starten en Hotkeys konfigurieren
-- Workflow-Verknüpfungen erstellen
+- **Toetsenbord & Muis (Basic)** — Volledig scherm toetsenbord met long-press herhaling, toetsvoorbeeld en numpad
+- **Toetsenbord & Muis Pro** — Samengestelde layout met Shortcut Hub-strips, gesplitst toetsenbord en IME
+- **Presentatiemodus** — Slide-afstandsbediening met timer voor Google Slides en andere apps
+- **Gamepad** — Virtuele controller met aanpasbare preset-layouts en multi-touchpad-ondersteuning
+- **Shortcut Hub** — Profielergebaseerde toetsenbordsneltoetsen voor creatieve en development-tools (Blender, KiCAD, Photoshop, VS Code), met aanmaken, importeren en exporteren
+- **Macro's** — Programmeerbare toetsenreeksen met vertragingen
+- **Spraakinput** — Speech-to-keyboard met AI (Whisper API)
+- **Terminal** — SSH via Bluetooth voor toegang tot opdrachten op afstand
+- **Agent** — AI-gestuurde directe interactie met HID- of SSH-opdrachten om een andere computer te besturen
 
-Die KeyMod-Controller-App konzentriert sich auf **Android, IOS en iPadOS**. Wir erweitern auch die Desktop-Steuerung met **Windows- en macOS-Software** in unserem breiteren Openterface-Ökosystem.
+De **KeyCmd**-app richt zich op **Android** en **iOS** (inclusief iPadOS). Hij werkt ook met **KVM-GO** via USB of Bluetooth. We breiden ook de desktopbesturing uit met **Windows- en macOS-software** in ons bredere Openterface-ecosysteem.
 
-### **Echte Hardware-HID**
 
-Basiert auf dem bewährten HID-Kern von Openterface Mini-KVM. Hardwarebasierte Tastatur- en Mausemulation—keine Softwareinstallation auf dem Zielgerät erforderlich.
+### **Echte hardware-HID**
 
-### **Open Source**
+Gebouwd op de beproefde HID-kern van Openterface Mini-KVM. Hardwaregebaseerde toetsenbord- en muismulatie—geen software-installatie vereist op het doelapparaat.
 
-KeyMod ist Open-Hardware en Open-Source-Software. Wir werden Schaltpläne, PCB-Dateien, Firmware, Software en BOM veröffentlichen, während das Projekt sich weiterentwickelt. [Treten Sie unserer Community bei](/discord), um beizutragen en auf dem Laufenden zu bleiben.
+### **Open source**
 
-## Technische Spezifikationen
+KeyMod is open hardware en open source software. We zullen schema's, PCB-bestanden, firmware, software en BOM publiceren naarmate het project vordert. [Word lid van onze community](/discord) om bij te dragen en op de hoogte te blijven.
 
-### **Konnektivität**
+## Technische specificaties
 
-- **USB**: USB-C-Anschluss (2-in-1-Variante: USB A + USB C kombinierter Stecker)
-- **Bluetooth**: HID-Tastatur en -Maus
-- **Zielgerät**: Keine Softwareinstallation erforderlich
+### **Connectiviteit**
 
-### **Wichtige Hardware**
+- **USB**: Mini-versie gebruikt Type C male connector; Plus-versie gebruikt Type A male connector en Type C female connector
+- **Bluetooth**: HID-toetsenbord en -muis
+- **Doel**: Geen software-installatie vereist
 
-- CH9329 HID-Emulator-Chip
-- Bluetooth-Modul
-- USB-C-Anschluss
+### **Belangrijkste hardware**
+
+- CH32V208-chip (CH9329-compatibel protocol)
+- USB-connector(s): Mini-versie gebruikt Type C male; Plus-versie gebruikt Type A male en Type C female
 - MCU
-- Programmierbare(r) Taste(n)
+- Programmeerbare knop(pen)
 
-### **Eingabefunktionen**
+### **Invoerfuncties**
 
-- Vollständige Tastatur- en Mausemulation (HID)
-- Benutzerdefinierte Eingabeprofile
-- Makros en Hotkeys
+- Volledige toetsenbord- en muisemulatie (HID)
+- Aangepaste invoerprofielen (Basic- en Pro-niveaus)
+- Macro's en sneltoetsen
+- Shortcut Hub met app-specifieke profielen
+- Gamepad met preset-gebaseerde layouts (schema v7)
+- Presentatiebediening met slide-timer
+- Spraak-naar-toetsenbord met AI

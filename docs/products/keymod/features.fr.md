@@ -1,21 +1,21 @@
 ---
 title: "Fonctionnalités et spécifications"
-description: "Fonctionnalités KeyMod Series : clavier et souris HID Bluetooth, connexion dual USB + Bluetooth, profils personnalisés, macros, modes manette. Application mobile open source pour Android et iPadOS."
-keywords: "fonctionnalités KeyMod, émulateur HID, clavier Bluetooth, clavier USB, boutons programmables, manette, macro, open source, CH9329"
+description: "Fonctionnalités KeyMod Series : clavier et souris HID Bluetooth, connexion dual USB + Bluetooth, profils personnalisés, macros, modes manette, commandes de présentation, hub de raccourcis. Application mobile open source pour Android et iOS."
+keywords: "fonctionnalités KeyMod Series, émulateur HID, clavier Bluetooth, clavier USB, boutons programmables, manette, macro, open source, CH9329, hub de raccourcis, mode présentation"
 ---
 
-# **Fonctionnalités et spécifications** | Openterface KeyMod
+# **Fonctionnalités et spécifications** | Openterface KeyMod Series
 
-## Statut pré-lancement
+## Statut actuel
 
-KeyMod est actuellement en développement pré-lancement. Nous affinons le matériel et le logiciel. Abonnez-vous sur la [page produit](/products/keymod/) pour rester informé des progrès et des notifications de lancement.
+KeyMod est en développement actif avec une [bêta publique](/tutorial/keymod/) disponible pour Android. Abonnez-vous sur la [page produit](/products/keymod/) pour rester informé des notifications de lancement.
 
 > **Note :** Les fonctionnalités, spécifications et design sont susceptibles d'être modifiés pendant le développement.
 
 ## Variantes de produit
 
-- **Version connecteur 2-en-1** — Conception de prise USB A + USB C combinée pour une large compatibilité avec ordinateurs portables, tablettes et téléphones
-- **Version USB C** — Prise USB C dédiée pour les appareils modernes et une gestion des câbles propre
+- **Version Mini** — Connecteur Type C mâle uniquement
+- **Version Plus** — Connecteur Type A mâle et connecteur Type C femelle
 
 ## Fonctionnalités principales
 
@@ -34,15 +34,22 @@ KeyMod est conçu pour le contrôle local pratique des appareils au quotidien, e
 
 Avec notre application mobile open source, vous pouvez :
 
-- Créer des profils d'entrée personnalisés
-- Lancer des macros et configurer des raccourcis clavier
-- Créer des raccourcis de flux de travail
+- **Clavier et souris (Basic)** — Clavier plein écran avec répétition par appui long, aperçu des touches et pavé numérique
+- **Clavier et souris Pro** — Disposition composite avec barres Shortcut Hub, clavier divisé et IME
+- **Mode présentation** — Télécommande de diapositives avec minuteur pour Google Slides et d'autres applications
+- **Manette** — Contrôleur virtuel avec dispositions prédéfinies personnalisables et prise en charge multi-pavé tactile
+- **Hub de raccourcis** — Raccourcis clavier basés sur des profils pour les outils créatifs et de développement (Blender, KiCAD, Photoshop, VS Code), avec création, import et export
+- **Macros** — Séquences de touches programmables avec délais
+- **Entrée vocale** — Dictée vocale avec IA (Whisper API)
+- **Terminal** — SSH via Bluetooth pour l'accès à distance aux commandes
+- **Agent** — Interaction directe pilotée par l'IA avec HID ou commandes SSH pour contrôler un autre ordinateur
 
-L'application contrôleur KeyMod se concentre sur **Android, IOS et iPadOS**. Nous développons également le contrôle desktop avec des logiciels **Windows et macOS** dans notre écosystème Openterface plus large.
+L'application **KeyCmd** se concentre sur **Android** et **iOS** (y compris iPadOS). Elle fonctionne également avec **KVM-GO** via USB ou Bluetooth. Nous développons également le contrôle desktop avec des logiciels **Windows et macOS** dans notre écosystème Openterface plus large.
+
 
 ### **Vrai HID matériel**
 
-Construit sur le noyau HID éprouvé d'Openterface Mini-KVM. Émulation clavier et souris basée sur le matériel—aucune installation logicielle requise sur l'appareil cible.
+Construit sur le noyau HID éprouvé d'Openterface Mini-KVM. Émulation clavier et souris basée sur le matériel — aucune installation logicielle requise sur l'appareil cible.
 
 ### **Open source**
 
@@ -52,20 +59,23 @@ KeyMod est un matériel et logiciel ouverts. Nous publierons les schémas, fichi
 
 ### **Connectivité**
 
-- **USB** : Port USB C (variante 2-en-1 : prise USB A + USB C combinée)
+- **USB** : La version Mini utilise un connecteur Type C mâle ; la version Plus utilise un connecteur Type A mâle et un connecteur Type C femelle
 - **Bluetooth** : Clavier et souris HID
 - **Cible** : Aucune installation logicielle requise
 
 ### **Matériel clé**
 
-- Puce émulateur HID CH9329
-- Module Bluetooth
-- Port USB C
+- Puce CH32V208 (protocole compatible CH9329)
+- Connecteur(s) USB : la version Mini utilise le Type C mâle ; la version Plus utilise le Type A mâle et le Type C femelle
 - MCU
 - Bouton(s) programmable(s)
 
 ### **Fonctionnalités d'entrée**
 
 - Émulation complète clavier et souris (HID)
-- Profils d'entrée personnalisés
+- Profils d'entrée personnalisés (niveaux Basic et Pro)
 - Macros et raccourcis clavier
+- Hub de raccourcis avec profils spécifiques aux applications
+- Manette avec dispositions prédéfinies (schéma v7)
+- Commandes de présentation avec minuteur de diapositives
+- Dictée vocale avec IA

@@ -1,71 +1,81 @@
 ---
-title: "Özellikler & Spezifikationen"
-description: "KeyMod Series Özellikler: Bluetooth-HID-Tastatur ve -Maus, USB + Bluetooth Dual-Bağlantı, benutzerdefinierte Profile, Makros, Gamepad-Modi. Open-Source-Mobil-App için Android ve iPadOS."
-keywords: "KeyMod-Özellikler, HID-Emulator, Bluetooth-Tastatur, USB-Tastatur, programmierbare Tasten, Gamepad, Makro, Open Source, CH9329"
+title: "Özellikler ve Teknik Detaylar"
+description: "KeyMod Series Özellikleri: Bluetooth HID klavye ve fare, USB + Bluetooth çift bağlantı, özel profiller, makrolar, gamepad modları, sunum kontrolleri, kısayol merkezi. Android ve iOS için açık kaynaklı mobil uygulama."
+keywords: "KeyMod Series özellikleri, HID emülatör, Bluetooth klavye, USB klavye, programlanabilir düğmeler, gamepad, makro, açık kaynak, CH9329, kısayol merkezi, sunum modu"
 ---
 
-# **Özellikler & Spezifikationen** | Openterface KeyMod
+# **Özellikler ve Teknik Detaylar** | Openterface KeyMod Series
 
-## Pre-Launch-Status
+## Mevcut Durum
 
-KeyMod befindet sich derzeit in der Pre-Launch-Entwicklung. Wir verfeinern die Donanım ve Yazılım. Abonnieren Sie die [Ürünseite](/products/keymod/), um hakkında Fortschritte ve Launch-Benachrichtigungen informiert zu bleiben.
+KeyMod aktif geliştirme aşamasındadır ve Android için [genel beta](/tutorial/keymod/) sürümü mevcuttur. Lansman bildirimleri hakkında bilgi almak için [ürün sayfası](/products/keymod/)'na abone olun.
 
-> **Hinweis:** Özellikler, Spezifikationen ve Design können sich während der Entwicklung noch ändern.
+> **Not:** Özellikler, teknik detaylar ve tasarım, geliştirme devam ettikçe değişiklik gösterebilir.
 
-## Ürünvarianten
+## Ürün Çeşitleri
 
-- **2-in-1-Stecker-Version** — Kombinierter USB-A- ve USB-C-Stecker için breite Kompatibilität ile Laptops, Tablets ve Smartphones
-- **USB-C-Version** — Dedizierter USB-C-Stecker için mveyane Geräte ve hakkındasichtliche Kabelverwaltung
+- **Mini Sürümü** — Sadece Type C erkek konektör
+- **Plus Sürümü** — Type A erkek konektör ve Type C dişi konektör
 
-## Kernfunktionen
+## Temel Özellikler
 
-### **Smartphone als Tastatur ve Trackpad**
+### **Telefonu Klavye ve Dokunmatik Yüzeye Dönüştürün**
 
-KeyMod verwandelt Ihr Smartphone in eine tragbare Tastatur- ve Trackpad-Konsole. Verwenden Sie es, wenn eine vollständige Tastatur ve Maus değil verfügbar sind, veya wenn Sie einen schnelleren Workflow als beim Gerätewechsel wünschen. Ideal için Außendisplays, LED-Schilder-Player, Kioske, Smart-TVs ve Set-Top-Boxen.
+KeyMod, telefonunuzu taşınabilir bir klavye ve dokunmatik yüz konsoluna dönüştürür. Tam boyutlu klavye ve fare bulunmadığında veya cihaz değiştirmekten daha hızlı bir iş akışı istediğinizde kullanın. Dış mekan ekran bilgisayarları, LED tabela oynatıcıları, kiosklar, akıllı TV'ler ve set üstü kutular için idealdir.
 
-### **Dual-Bağlantı: USB + Bluetooth**
+### **Çift Bağlantı: USB + Bluetooth**
 
-- **USB** — Plug-and-Play-Kabelverbindung için zuverlässige, latenzarme Eingabe
-- **Bluetooth** — Kabellose Einrichtung, wenn das Szenario es zulässt; halten Sie Ihr Setup leicht ve tragbar
+- **USB** — Güvenilir, düşük gecikmeli giriş için tak-çalıştır kablolu bağlantı
+- **Bluetooth** — Senaryo izin verdiğinde kablosuz kurulum; kurulumunuzu hafif ve taşınabilir tutun
 
-KeyMod ist için praktische tägliche lokale Gerätesteuerung konzipiert, değil als Ersatz için Remote-Desktop.
+KeyMod, uzak masaüstü yerine geçmek için değil, pratik günlük yerel cihaz kontrolü için tasarlanmıştır.
 
-### **Open-Source-Mobil-App**
+### **Açık Kaynaklı Mobil Uygulama**
 
-Mit unserer Open-Source-Mobil-App können Sie:
+Açık kaynaklı mobil uygulamamızla şunları yapabilirsiniz:
 
-- Benutzerdefinierte Eingabeprofile erstellen
-- Makros starten ve Hotkeys konfigurieren
-- Workflow-Verknüpfungen erstellen
+- **Klavye & Fare (Basic)** — Uzun basma tekrarı, tuş önizlemesi ve numara tuş takımı ile tam ekran klavye
+- **Klavye & Fare Pro** — Kısayol Merkezi şeritleri, bölünmüş klavye ve IME ile bileşik düzen
+- **Sunum Modu** — Google Slides ve diğer uygulamalar için zamanlayıcılı slayt uzaktan kumandası
+- **Gamepad** — Özelleştirilebilir hazır düzenler ve çoklu dokunmatik yüz desteği ile sanal kontrol cihazı
+- **Kısayol Merkezi** — Yaratıcı ve geliştirme araçları (Blender, KiCAD, Photoshop, VS Code) için profil tabanlı klavye kısayolları; oluşturma, içe aktarma ve dışa aktarma desteği
+- **Makrolar** — Gecikmeli programlanabilir tuş sıraları
+- **Ses girişi** — Yapay zeka (Whisper API) ile konuşmadan klavyeye
+- **Terminal** — Uzak komut erişimi için Bluetooth üzerinden SSH
+- **Agent** — Başka bir bilgisayarı kontrol etmek için HID veya SSH komutlarıyla yapay zeka destekli doğrudan etkileşim
 
-Die KeyMod-Controller-App konzentriert sich auf **Android, IOS ve iPadOS**. Wir erweitern auch die Desktop-Steuerung ile **Windows- ve macOS-Yazılım** in unserem breiteren Openterface-Ökosystem.
+**KeyCmd** uygulaması **Android** ve **iOS**'a (iPadOS dahil) odaklanmaktadır. USB veya Bluetooth üzerinden **KVM-GO** ile de çalışır. Daha geniş Openterface ekosistemimizde **Windows ve macOS** yazılımlarıyla masaüstü kontrolünü de genişletiyoruz.
 
-### **Echte Donanım-HID**
 
-Basiert auf dem bewährten HID-Kern von Openterface Mini-KVM. Donanımbasierte Tastatur- ve Mausemulation—keine Yazılıminstallation auf dem Zielgerät erforderlich.
+### **Gerçek Donanım HID**
 
-### **Open Source**
+Openterface Mini-KVM'nin kanıtlanmış HID çekirdeği üzerine inşa edilmiştir. Donanım tabanlı klavye ve fare emülasyonu — hedef cihazda herhangi bir yazılım kurulumu gerekmez.
 
-KeyMod ist Open-Donanım ve Open-Source-Yazılım. Wir werden Schaltpläne, PCB-Dateien, Firmware, Yazılım ve BOM veröffentlichen, während das Projekt sich weiterentwickelt. [Treten Sie unserer Community bei](/discord), um beizutragen ve auf dem Laufenden zu bleiben.
+### **Açık Kaynak**
 
-## Technische Spezifikationen
+KeyMod açık donanım ve açık kaynak yazılımdır. Proje geliştikçe şemaları, PCB dosyalarını, firmware'i, yazılımı ve BOM'u yayınlayacağız. Katkıda bulunmak ve güncel kalmak için [topluluğumuza katılın](/discord).
 
-### **Konnektivität**
+## Teknik Detaylar
 
-- **USB**: USB-C-Anschluss (2-in-1-Variante: USB A + USB C kombinierter Stecker)
-- **Bluetooth**: HID-Tastatur ve -Maus
-- **Zielgerät**: Keine Yazılıminstallation erforderlich
+### **Bağlantı**
 
-### **Wichtige Donanım**
+- **USB**: Mini sürümü Type C erkek konektör kullanır; Plus sürümü Type A erkek konektör ve Type C dişi konektör kullanır
+- **Bluetooth**: HID klavye ve fare
+- **Hedef**: Yazılım kurulumu gerekmez
 
-- CH9329 HID-Emulator-Chip
-- Bluetooth-Modul
-- USB-C-Anschluss
+### **Temel Donanım**
+
+- CH32V208 çip (CH9329 uyumlu protokol)
+- USB konektör(leri): Mini sürümü Type C erkek kullanır; Plus sürümü Type A erkek ve Type C dişi kullanır
 - MCU
-- Programmierbare(r) Taste(n)
+- Programlanabilir düğme(ler)
 
-### **Eingabefunktionen**
+### **Giriş Özellikleri**
 
-- Vollständige Tastatur- ve Mausemulation (HID)
-- Benutzerdefinierte Eingabeprofile
-- Makros ve Hotkeys
+- Tam klavye ve fare emülasyonu (HID)
+- Özel giriş profilleri (Basic ve Pro seviyeleri)
+- Makrolar ve kısayol tuşları
+- Uygulamaya özel profillerle Kısayol Merkezi
+- Hazır tabanlı düzenlerle gamepad (şema v7)
+- Slayt zamanlayıcılı sunum kontrolleri
+- Yapay zeka ile konuşmadan klavyeye

@@ -54,7 +54,7 @@ Un émulateur HID (clavier et souris) compact et programmable **USB + Bluetooth*
 
     Découvrez les fonctionnalités puissantes de KeyMod
 
-    [:octicons-arrow-right-24: Voir les fonctionnalités](/products/keymod/features)
+    [:octicons-arrow-right-24: Voir les fonctionnalités](/products/keymod/features/)
 
     [:octicons-arrow-right-24: Contenu de la boîte](/products/keymod/whats-in-the-box/)
 
