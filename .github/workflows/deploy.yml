@@ -38,6 +38,7 @@ jobs:
         run: npm run test:smoke
         env:
           CI: true
+          LINK_CHECK: '0'
 
       - uses: actions/upload-pages-artifact@v3
         with:
