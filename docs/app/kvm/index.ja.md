@@ -56,7 +56,7 @@ Openterface™ KVM ガジェットを起動して実行するには、ホスト�
     **Android APK**をダウンロードまたはソースからビルド：
 
     [:octicons-arrow-right-24: Google Play ストアからダウンロード](https://play.google.com/store/apps/details?id=com.openterface.AOS)<br>
-    [:octicons-download-24: {{android_version}}をダウンロード](https://github.com/TechxArtisanStudio/Openterface_Android/releases/download/{{android_version}}/OpenterfaceAndroid-release.apk) <br>
+    [:octicons-download-24: {{android_version}}をダウンロード](https://github.com/TechxArtisanStudio/Openterface_Android/releases/download/{{android_version}}/Openterface-{{android_version}}-release.apk) <br>
     [:octicons-mark-github-16: Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android) <br>
     [:octicons-play-24: デモを見る](https://x.com/TechxArtisan/status/1825460088922071398)
 

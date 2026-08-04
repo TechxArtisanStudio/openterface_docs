@@ -56,7 +56,7 @@ description: 要讓您的 Openterface™ KVM 設備運行起來，您需要在�
     下載或從源代碼構建**Android APK**：
 
     [:octicons-arrow-right-24: 從 Google Play 商店安裝](https://play.google.com/store/apps/details?id=com.openterface.AOS)<br>
-    [:octicons-download-24: 下載 {{android_version}}](https://github.com/TechxArtisanStudio/Openterface_Android/releases/download/{{android_version}}/OpenterfaceAndroid-release.apk) <br>
+    [:octicons-download-24: 下載 {{android_version}}](https://github.com/TechxArtisanStudio/Openterface_Android/releases/download/{{android_version}}/Openterface-{{android_version}}-release.apk) <br>
     [:octicons-mark-github-16: Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android) <br>
     [:octicons-play-24: 觀看演示](https://x.com/TechxArtisan/status/1825460088922071398)
 
