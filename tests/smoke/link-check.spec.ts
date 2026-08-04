@@ -47,10 +47,14 @@ test.describe('link integrity (image + page 404 detection)', () => {
 
   test('all internal pages/images resolve and external links are alive', async ({
     page,
+    baseURL,
   }) => {
     test.setTimeout(1_200_000); // 20 min
 
-    const base = new URL(page.url()).origin;
+    // baseURL comes from playwright.config.ts (http://localhost:PORT).
+    // Do NOT derive it from page.url(): before the first navigation the
+    // page is about:blank, whose origin is the string "null".
+    const base = baseURL!;
     const visited = new Set<string>();
     const queue: string[] = ['/'];
 
@@ -156,6 +160,7 @@ test.describe('link integrity (image + page 404 detection)', () => {
         );
         for (const href of hrefs) {
           if (SKIP_PROTOCOL_RE.test(href)) continue;
+          if (href === '' || href === '#' || href.startsWith('#')) continue; // same-page anchors
           const crawlerUrl = resolveInternal(href);
           if (crawlerUrl) {
             if (!visited.has(crawlerUrl)) queue.push(crawlerUrl);
