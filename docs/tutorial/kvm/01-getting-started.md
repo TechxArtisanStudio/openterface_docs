@@ -23,8 +23,8 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 
 | Device | Form Factor | Key Feature |
 |--------|------------|-------------|
-| [Mini-KVM](https://openterface.com/minikvm/?utm_source=docs) | Compact USB dongle | Desktop KVM-over-USB |
-| [KVM-Go](https://openterface.com/kvmgo/?utm_source=docs) | Toolkit-style portable | On-the-go KVM with built-in cables, **iPadOS support via BLE** |
+| [Mini-KVM](https://openterface.com/minikvm/?utm_source=docs) | Mini connection hub style | KVM over USB, switchable USB port |
+| [KVM-Go](https://openterface.com/kvmgo/?utm_source=docs) | Compact video dongle | Built-in video connector, compact design, 4K in / 4K out support, switchable SD card |
 | [uConsole KVM Extension v2](https://openterface.com/kvmext/?utm_source=docs) | Internal module | Built-in KVM + Ethernet + SD for ClockworkPi uConsole |
 
 > Looking for **KeyMod** (keyboard & mouse emulator only, no video)? See the [KeyMod Tutorial](../../keymod/index.md).
@@ -38,13 +38,13 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 - **Openterface KVM device** — Mini-KVM, KVM-Go, or uConsole KVM Extension
 - **Host computer** — Running macOS, Windows, Linux, or Android
 - **Target computer** — Any computer with HDMI output
-- **HDMI cable** — From target's HDMI output to the KVM's HDMI input
-- **USB cable** — From KVM to your host computer (provides both power and data)
-
-### Optional
-
-- **USB switch cable** — From KVM to the target device's USB port (for keyboard/mouse emulation)
-- **Keyboard and mouse** — Plug into the KVM's USB switchable port to control either host or target
+- **HDMI cable**
+  - Mini-KVM / uConsole KVM Extension v2 — From target's HDMI output to the KVM's HDMI input
+  - KVM-Go — Not required, has a built-in video connector
+- **USB Type-C cable** — From KVM to your host computer (provides both power and data)
+  - Mini-KVM Basic / uConsole KVM Extension — Required, not bundled
+  - KVM-Go / Mini-KVM Toolkit version — Bundled with cables
+  - If purchasing separately, use a high-quality USB 2.0 or 3.0 Type-C cable
 
 ---
 
@@ -54,29 +54,16 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 
 | Platform | Application | Download |
 |----------|------------|----------|
+| **Windows** | Openterface QT | [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) (installer or portable exe) |
 | **macOS** | Openterface for macOS | [App Store](/appstore) or [DMG](app/mmacos/dmg-installation.md) |
-| **Windows** | Openterface QT | [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) |
-| **Linux** | Openterface QT | [Flatpak](https://flathub.org/apps/com.openterface.openterfaceQT), .deb, .rpm, .pkg.tar.zst (Arch), AppImage |
+| **Linux** | Openterface QT | [Flatpak](https://flathub.org/apps/com.openterface.openterfaceQT), [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) (.deb, .rpm, .pkg.tar.zst, AppImage) |
 | **Android** | Openterface for Android | [Google Play](https://play.google.com/store/apps/details?id=com.openterface.AOS) or [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_Android/releases) |
 | **iPadOS** | Openterface for iPadOS | [App Store](/app/ipados/) — **KVM-Go only** |
 
-### Android Requirements
+### Windows
 
-The Android app requires:
-
-- **Android 8.0 (API 26)** or later
-- **USB OTG support** — most modern phones support it (Samsung, Google Pixel, OnePlus). Verify by connecting a USB flash drive with an OTG adapter
-- **USB OTG cable or adapter** to connect the KVM device to your phone
-
-### iPadOS Requirements
-
-The iPadOS app requires:
-
-- **iPadOS 17.0** or later
-- **KVM-Go device** — iPadOS connects to the KVM-Go dongle via **Bluetooth Low Energy (BLE)** for keyboard/mouse input, and the USB capture card for video
-- **Camera and Microphone permissions** — needed for video preview and audio monitoring from the capture card
-- **Bluetooth permission** — required to discover and connect to the KVM-Go dongle for HID input
-- **Photo Library permission** (optional) — to save screenshots and recordings to the Photos app
+- The installer bundles the CH340 serial driver. For portable builds, install it separately.
+- **Camera permission** — Go to **Settings > Privacy & security > Camera** and enable camera access for desktop apps. The KVM device appears as a USB camera for video capture
 
 ### macOS Permissions
 
@@ -91,66 +78,89 @@ On first launch, macOS will request:
 ### Linux Permissions
 
 - Add your user to the required groups:
-  - **Debian/Ubuntu:** `sudo usermod -a -G dialout,video $USER`
+  - **Debian/Ubuntu/Fedora/RHEL:** `sudo usermod -a -G dialout,video $USER`
   - **Arch Linux:** `sudo usermod -a -G uucp,video $USER` (Arch uses `uucp` instead of `dialout` for serial devices)
-- Install udev rules for device access (bundled in `.deb`, `.rpm`, `.pkg.tar.zst` packages)
+- Install udev rules for device access (bundled in `.deb`, `.rpm`, `.pkg.tar.zst` packages). Modern systems with systemd use `uaccess` tags to automatically grant device permissions to the logged-in user
 - **BrlTTY conflict:** Remove `brltty` or blacklist the serial chip — see [Troubleshooting](04-troubleshooting.md#brltty-conflict-linux)
 - **Arch Linux users:** See the [Arch Linux Installation Guide](../../app/qt/archlinux-installation.md) for full setup instructions
 
-### Windows
+### Android Requirements
 
-- The installer bundles the CH340 serial driver. For portable builds, install it separately.
+The Android app requires:
+
+- **Android 5.0 (API 21)** or later
+- **USB OTG support** — most modern phones support it (Samsung, Google Pixel, OnePlus). Verify by connecting a USB flash drive with an OTG adapter
+- **USB OTG cable or adapter** to connect the KVM device to your phone
+
+### iPadOS Requirements
+
+The iPadOS app requires:
+
+- **iPadOS 17.2** or later
+- **KVM-Go device** — iPadOS connects to the KVM-Go dongle via **Bluetooth Low Energy (BLE)** for keyboard/mouse input, and the USB capture card for video
+- **Camera and Microphone permissions** — needed for video preview and audio monitoring from the capture card
+- **Bluetooth permission** — required to discover and connect to the KVM-Go dongle for HID input
+- **Photo Library permission** (optional) — to save screenshots and recordings to the Photos app
 
 ---
 
 ## 4. Connecting the Hardware
 
-```
-┌─────────────┐                        ┌──────────────────┐
-│   TARGET    │─── HDMI cable ────────▶│  Openterface     │
-│  COMPUTER   │                        │  KVM Device      │
-└─────────────┘                        │                  │
-                                       │  ◄── USB cable ──│── USB switch cable ──▶ Target USB port
-                                       └──────────────────┘
-                                                │
-                                                ▼
-                                       ┌──────────────────┐
-                                       │   HOST COMPUTER  │
-                                       │  (this app)      │
-                                       └──────────────────┘
-```
+<div class="connection-diagrams" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h4>Host Side</h4>
+    <img src="https://assets.openterface.com/images/labels/host-side.webp" alt="Host Side Connection" style="max-width: 100%; height: auto;" />
+    <p style="font-size: 0.9em; margin-top: 10px;">
+      <strong>① Host USB</strong> — Connects to your host computer<br/>
+      <strong>④ Switchable USB</strong> — For keyboard/mouse emulation<br/>
+      <strong>⑤ Toggle Switch</strong> — Switch between host/target control
+    </p>
+  </div>
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h4>Target Side</h4>
+    <img src="https://assets.openterface.com/images/labels/target-side.webp" alt="Target Side Connection" style="max-width: 100%; height: auto;" />
+    <p style="font-size: 0.9em; margin-top: 10px;">
+      <strong>② Target USB</strong> — Connects to target computer<br/>
+      <strong>③ HDMI Input</strong> — Receives video from target
+    </p>
+  </div>
+</div>
 
 1. Connect the target's **HDMI output** to the KVM's **HDMI input**
-2. Connect the KVM's **USB** to a **USB port on your host computer**
-3. (Optional) Connect the USB switch cable from the KVM to the target's USB port
-4. (Optional) Plug your keyboard/mouse into the KVM's USB switchable port
-5. **Power on** the target device
+2. Connect the KVM's **Host USB** to your **host computer's USB port** using the USB Type-C cable
+3. Connect the KVM's **Target USB** to the **target computer's USB port**
 
 ### Device Detection
 
 The KVM enumerates as multiple USB devices:
 - **Video capture** (MS2109/MS2109S/MS2130S) — appears as a webcam
-- **Serial** (CH9329 or CH32V208) — `/dev/ttyUSB*` (Linux), `COM*` (Windows), `cu.usbserial-*` (macOS)
-- **HID** — used for firmware operations
+- **Serial** (CH340) — `/dev/ttyUSB*` (Linux), `COM*` (Windows), `cu.usbserial-*` (macOS)
+- **Serial** (CH32V208) — `/dev/ttyACM*` (Linux), `COM*` (Windows), `cu.usbserial-*` (macOS)
+- **HID** — used for camera control and firmware operations
 
 ### Connecting via Android Phone
 
 When using the Android app, the connection chain uses USB OTG:
 
-```
-┌──────────────┐     HDMI      ┌──────────────────┐
-│              │ ────────────▶ │   Openterface     │
-│  Target PC   │               │   KVM Device      │
-│  (screen)    │ ◀─────────── │                   │
-│              │     USB       │                   │
-└──────────────┘               └────────┬─────────┘
-                                        │
-                                   USB OTG
-                                        │
-                               ┌────────▼─────────┐
-                               │  Android Phone    │
-                               │  (Openterface)    │
-                               └──────────────────┘
+```mermaid
+flowchart LR
+    T[Target PC<br/>HDMI + USB]
+
+    subgraph KVM[Openterface KVM Device]
+        K_HDMI[HDMI Input]
+        K_TARGET[Target USB Port]
+        K_HOST[Host USB Port]
+    end
+
+    P[Android Phone<br/>USB OTG]
+    APP[Openterface KVM App]
+
+    T -->|HDMI Cable| K_HDMI
+    T ---|USB Cable| K_TARGET
+    K_HOST -->|USB OTG Cable| P
+    P --> APP
+
+    style KVM fill:#f5ebe9,stroke:#ff6e42,stroke-width:2px
 ```
 
 Connection order for Android:
@@ -158,7 +168,6 @@ Connection order for Android:
 1. **HDMI:** Connect target's HDMI output to the KVM's HDMI **input**
 2. **USB (target):** Connect target's USB port to the KVM's USB port — carries mouse/keyboard signals
 3. **USB OTG (phone):** Connect the KVM to your Android phone via USB OTG cable/adapter
-4. **Power:** Power on the KVM device (if separate power input) and the target computer
 
 When connected successfully, the video preview switches from a placeholder to the target's live screen, and tapping the phone screen moves the cursor on the target.
 
@@ -166,27 +175,30 @@ When connected successfully, the video preview switches from a placeholder to th
 
 The iPadOS app uses a different connection model: **BLE for input** and **USB capture for video**.
 
-```
-┌──────────────┐     HDMI      ┌──────────────────┐
-│              │ ────────────▶ │   KVM-Go Dongle   │
-│  Target PC   │               │                   │
-│  (screen)    │ ◀─── USB ──── │                   │
-└──────────────┘               └────────┬─────────┘
-                                        │
-                              ┌─────────┴─────────┐
-                              │   USB Capture     │ (video)
-                              │   BLE (FFF2)      │ (keyboard/mouse)
-                              └─────────┬─────────┘
-                                        │
-                              ┌─────────▼─────────┐
-                              │     iPad           │
-                              │  (Openterface)     │
-                              └───────────────────┘
+```mermaid
+flowchart TD
+    T[Target PC]
+    K[KVM-Go Dongle]
+
+    subgraph IPAD[iPad]
+        I_USB[iPad USB]
+        I_BLE[iPad Bluetooth]
+        APP[Openterface KVM App]
+    end
+
+    T -->|HDMI Cable| K
+    T -->|USB Cable| K
+    K -->|USB Capture<br/>Video| I_USB
+    K -->|BLE FFF2<br/>Keyboard/Mouse| I_BLE
+    I_USB --> APP
+    I_BLE --> APP
+
+    style IPAD fill:#f5ebe9,stroke:#ff6e42,stroke-width:2px
 ```
 
 Connection order for iPadOS:
 
-1. **Hardware:** Plug the KVM-Go dongle into the target PC's USB port and connect the HDMI input
+1. **Hardware:** Plug the KVM-Go dongle into the target PC's HDMI/VGA/DP port and connect the Target USB to Target Computer USB port, then HOST USB to Host Computer USB Port
 2. **Power on** the target computer
 3. **Open the app** on your iPad and grant camera, microphone, and Bluetooth permissions
 4. **Tap the BLE button** in the toolbar — the app scans for devices named `kvm*`
@@ -198,21 +210,6 @@ Connection order for iPadOS:
 ---
 
 ## 5. First Launch
-
-### The Main Window
-
-```
-┌─────────────────────────────────────────────────────────┐
-│  Menu Bar / Toolbar                                     │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│              VIDEO DISPLAY AREA                          │
-│         (shows target device screen)                     │
-│                                                         │
-├─────────────────────────────────────────────────────────┤
-│  Status Bar │ Port │ Keys │ Mouse │ Resolution │        │
-└─────────────────────────────────────────────────────────┘
-```
 
 ### Android Permissions
 
