@@ -289,6 +289,20 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
     ]
   },
   {
+    "title": "Openterface QT",
+    "groupTitle": "Openterface QT",
+    "items": [
+      {
+        "label": "Overview",
+        "slug": "app/qt"
+      },
+      {
+        "label": "Arch Linux Installation",
+        "slug": "app/qt/archlinux-installation"
+      }
+    ]
+  },
+  {
     "title": "KVM Series",
     "groupTitle": "KVM Series",
     "items": [

@@ -6,7 +6,7 @@ import { sidebarSlugsForPage } from '../config/sidebar-utils';
 import { newsPath, surfaceMarketingHost } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } from './locale';
 
-const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
+const LOCALE_SUFFIXES = [] as const;
 
 const CONFIG_DIR = path.join(process.cwd(), 'src/config');
 
@@ -532,9 +532,25 @@ function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): str
   return out;
 }
 
+function rewriteRelativeMdLinks(md: string): string {
+  // ponytail: drops .md extension from relative links; Astro routes are extensionless.
+  // Skips absolute (`/foo.md`), fully-qualified (`http...`), and anchor-only (`#foo`) hrefs.
+  return md.replace(
+    /\]\((?!https?:\/\/|\/|#)([^)]+?)\.md(\?[^)]*)?\)/g,
+    (_m, p: string, q: string) => {
+      let path = p;
+      // `foo/index.md` → directory index → `foo/`, not `foo/index/`.
+      path = path.replace(/\/index$/, '');
+      if (path === 'index') path = '.';
+      return `](${path}/${q ?? ''})`;
+    },
+  );
+}
+
 /** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
 export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageSlug?: string): string {
   let md = preprocessMkdocsMarkdownInner(raw);
+  md = rewriteRelativeMdLinks(md);
   if (locale) md = resolveMarketingHubMacros(md, locale);
   if (locale && pageSlug) md = rewriteNewsLinks(md, locale, pageSlug);
   return parseGridCards(md);

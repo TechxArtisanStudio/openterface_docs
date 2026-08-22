@@ -28,10 +28,20 @@ const appHubRedirects = Object.fromEntries(
     ]),
 );
 
+/** Strip legacy locale prefixes (site is now English-only). */
+const droppedLocales = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'];
+const legacyLocaleRedirects = Object.fromEntries(
+  droppedLocales.flatMap((loc) => [
+    [`/${loc}`, `/`],
+    [`/${loc}/`, `/`],
+    [`/${loc}/*`, `/:splat`],
+  ]),
+);
+
 export default defineConfig({
   site: 'https://docs.openterface.com',
   trailingSlash: 'always',
-  redirects: appHubRedirects,
+  redirects: { ...appHubRedirects, ...legacyLocaleRedirects },
   devToolbar: { enabled: false },
   integrations: [
     sitemap({

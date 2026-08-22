@@ -1,12 +1,9 @@
 ---
 import { docsNav, marketingHost, siteConfig } from '../config/site';
 import { activeDocsTab } from '../lib/docs-header-nav';
-import { switchLocaleDocPath } from '../lib/docs';
-import { LOCALE_LABELS, localizedPath, type SiteLocale } from '../lib/locale';
+import { localizedPath, type SiteLocale } from '../lib/locale';
 import { docsEcosystemLinks, t } from '../i18n/ui';
-import { preserveQueryForLocaleSwitch } from '../lib/preserve-query';
 import DocsHeaderBrand from './DocsHeaderBrand.astro';
-import TranslateIcon from './TranslateIcon.astro';
 import DocsSearch from './DocsSearch.astro';
 import NavDropdown from './NavDropdown.astro';
 import NavLinkWithBadge from './NavLinkWithBadge.astro';
@@ -19,7 +16,6 @@ interface Props {
 }
 
 const { locale, currentPath, currentSearch = '', searchIndex } = Astro.props;
-const preservedSearch = preserveQueryForLocaleSwitch(currentSearch);
 const ui = t(locale);
 const nav = docsNav(locale);
 const ecosystemLinks = docsEcosystemLinks(locale);
@@ -68,33 +64,6 @@ const activeTab = activeDocsTab(currentPath);
 
     <div class="site-header__toolbar">
       <DocsSearch locale={locale} searchIndex={searchIndex} class="hidden min-w-0 sm:block sm:max-w-xs lg:max-w-sm xl:max-w-md" />
-
-      <details class="locale-switcher relative hidden sm:block">
-        <summary
-          class="site-header__icon-btn"
-          aria-label={`Language: ${LOCALE_LABELS[locale]}`}
-        >
-          <TranslateIcon />
-        </summary>
-        <ul class="absolute right-0 top-full z-50 mt-1 min-w-[140px] rounded-lg border border-gray-200 bg-white py-1 shadow-lg">
-          {
-            Object.entries(LOCALE_LABELS).map(([loc, label]) => (
-              <li>
-                <a
-                  href={switchLocaleDocPath(currentPath, loc as SiteLocale, preservedSearch)}
-                  data-locale-switch
-                  class:list={[
-                    'block px-3 py-2 text-sm hover:bg-brand-light hover:text-primary-dark',
-                    loc === locale ? 'font-semibold text-primary-dark' : 'text-ink',
-                  ]}
-                >
-                  {label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </details>
 
       <details class="mobile-nav relative xl:hidden">
         <summary
@@ -198,26 +167,6 @@ const activeTab = activeDocsTab(currentPath);
                 </div>
               )
             }
-
-            <div class="mobile-nav-section pb-1 sm:hidden">
-              <p class="mobile-nav-section-label">{ui.mobile.language}</p>
-              <div class="mobile-nav-section-links">
-                {
-                  Object.entries(LOCALE_LABELS).map(([loc, label]) => (
-                    <a
-                      href={switchLocaleDocPath(currentPath, loc as SiteLocale, preservedSearch)}
-                      data-locale-switch
-                      class:list={[
-                        'mobile-nav-link',
-                        loc === locale ? 'font-semibold text-primary-dark' : '',
-                      ]}
-                    >
-                      {label}
-                    </a>
-                  ))
-                }
-              </div>
-            </div>
           </div>
         </nav>
       </details>
@@ -226,10 +175,6 @@ const activeTab = activeDocsTab(currentPath);
 </header>
 
 <script>
-  import { applyPreservedQueryToLocaleLinks } from '../lib/preserve-query';
-
-  applyPreservedQueryToLocaleLinks();
-
   function closeAllNavDropdowns(except?: Element | null) {
     document.querySelectorAll('header .nav-dropdown[open]').forEach((dropdown) => {
       if (except && dropdown === except) return;
@@ -302,7 +247,6 @@ const activeTab = activeDocsTab(currentPath);
 </script>
 
 <style>
-  .locale-switcher summary::-webkit-details-marker,
   .mobile-nav summary::-webkit-details-marker {
     display: none;
   }

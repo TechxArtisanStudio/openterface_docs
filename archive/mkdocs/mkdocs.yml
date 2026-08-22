@@ -94,6 +94,7 @@ plugins:
         KVM-Go Series ⏳: KVM-Go 系列 ⏳
         uConsole KVM Extension 🛠️: uConsole KVM 扩展 🛠️
         Installation Guide: 安装指南
+        Arch Linux Installation: Arch Linux 安装指南
         Accessories: 配件
         VGA to HDMI Cable 1m: VGA 转 HDMI 线 1m
         Type-C to C Cable Nylon 1.5m: Type‑C to C 尼龙线 1.5m
@@ -182,6 +183,7 @@ plugins:
         KVM-Go Series ⏳: KVM-Go シリーズ ⏳
         uConsole KVM Extension 🛠️: uConsole 用 KVM 拡張 🛠️
         Installation Guide: インストールガイド
+        Arch Linux Installation: Arch Linux インストールガイド
         Accessories: アクセサリ
         VGA to HDMI Cable 1m: VGA–HDMI ケーブル 1m
         Type-C to C Cable Nylon 1.5m: Type‑C–C ナイロンケーブル 1.5m
@@ -270,6 +272,7 @@ plugins:
         KVM-Go Series ⏳: KVM-Go 시리즈 ⏳
         uConsole KVM Extension 🛠️: uConsole KVM 확장 🛠️
         Installation Guide: 설치 가이드
+        Arch Linux Installation: Arch Linux 설치 가이드
         Accessories: 액세서리
         VGA to HDMI Cable 1m: VGA to HDMI 케이블 1m
         Type-C to C Cable Nylon 1.5m: Type‑C to C 나일론 케이블 1.5m
@@ -359,6 +362,7 @@ plugins:
         KVM-Go Series ⏳: KVM-Go Serie ⏳
         uConsole KVM Extension 🛠️: uConsole KVM‑Erweiterung 🛠️
         Installation Guide: Installationsanleitung
+        Arch Linux Installation: Arch Linux Installationsanleitung
         Accessories: Zubehör
         VGA to HDMI Cable 1m: VGA‑zu‑HDMI‑Kabel 1 m
         Type-C to C Cable Nylon 1.5m: Type‑C‑zu‑C Nylonkabel 1,5 m
@@ -448,6 +452,7 @@ plugins:
         KVM-Go Series ⏳: Série KVM-Go ⏳
         uConsole KVM Extension 🛠️: Extension KVM pour uConsole 🛠️
         Installation Guide: Guide d'installation
+        Arch Linux Installation: Guide d'installation Arch Linux
         Accessories: Accessoires
         VGA to HDMI Cable 1m: Câble VGA vers HDMI 1 m
         Type-C to C Cable Nylon 1.5m: Câble Type‑C vers C en nylon 1,5 m
@@ -536,6 +541,7 @@ plugins:
         KVM-Go Series ⏳: Serie KVM-Go ⏳
         uConsole KVM Extension 🛠️: Extensión KVM para uConsole 🛠️
         Installation Guide: Guía de instalación
+        Arch Linux Installation: Guía de instalación de Arch Linux
         Accessories: Accesorios
         VGA to HDMI Cable 1m: Cable VGA a HDMI 1 m
         Type-C to C Cable Nylon 1.5m: Cable Type‑C a C de nailon 1,5 m
@@ -624,6 +630,7 @@ plugins:
         KVM-Go Series ⏳: Serie KVM-Go ⏳
         uConsole KVM Extension 🛠️: Estensione KVM per uConsole 🛠️
         Installation Guide: Guida all'installazione
+        Arch Linux Installation: Guida all'installazione di Arch Linux
         Accessories: Accessori
         VGA to HDMI Cable 1m: Cavo VGA a HDMI 1 m
         Type-C to C Cable Nylon 1.5m: Cavo Type‑C a C in nylon 1,5 m
@@ -712,6 +719,7 @@ plugins:
         KVM-Go Series ⏳: Série KVM-Go ⏳
         uConsole KVM Extension 🛠️: Extensão KVM para uConsole 🛠️
         Installation Guide: Guia de instalação
+        Arch Linux Installation: Guia de instalação do Arch Linux
         Accessories: Acessórios
         VGA to HDMI Cable 1m: Cabo VGA para HDMI 1 m
         Type-C to C Cable Nylon 1.5m: Cabo Type‑C para C de náilon 1,5 m
@@ -801,6 +809,7 @@ plugins:
         KVM-Go Series ⏳: Seria KVM-Go ⏳
         uConsole KVM Extension 🛠️: Extensie KVM pentru uConsole 🛠️
         Installation Guide: Ghid de instalare
+        Arch Linux Installation: Ghid de instalare Arch Linux
         Accessories: Accesorii
         VGA to HDMI Cable 1m: Cablu VGA la HDMI 1 m
         Type-C to C Cable Nylon 1.5m: Cablu Type‑C la C din nailon 1,5 m
@@ -1025,6 +1034,9 @@ nav:
     - Toolkit Bag: products/accessories/openterface-toolkit-bag.md
 - Apps:
   - KVM Control: app/kvm/index.md
+  - Openterface QT:
+    - Overview: app/qt/index.md
+    - Arch Linux Installation: app/qt/archlinux-installation.md
   - KeyCmd: app/keycmd/index.md
   - KVM Control FAQs: app/kvm/faq.md
   - KeyCmd FAQs: app/keycmd/faq.md

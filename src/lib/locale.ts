@@ -1,43 +1,9 @@
-export const SUPPORTED_LOCALES = [
-  'en',
-  'zh',
-  'ja',
-  'ko',
-  'de',
-  'fr',
-  'es',
-  'it',
-  'pt',
-  'ro',
-  'hk',
-  'tw',
-  'ru',
-  'ar',
-  'tr',
-  'pl',
-  'nl',
-] as const;
+export const SUPPORTED_LOCALES = ['en'] as const;
 
 export type SiteLocale = (typeof SUPPORTED_LOCALES)[number];
 
 export const LOCALE_LABELS: Record<SiteLocale, string> = {
   en: 'English',
-  zh: '中文',
-  ja: '日本語',
-  ko: '한국어',
-  de: 'Deutsch',
-  fr: 'Français',
-  es: 'Español',
-  it: 'Italiano',
-  pt: 'Português',
-  ro: 'Română',
-  hk: '繁體中文（香港）',
-  tw: '繁體中文（台灣）',
-  ru: 'Русский',
-  ar: 'العربية',
-  tr: 'Türkçe',
-  pl: 'Polski',
-  nl: 'Nederlands',
 };
 
 export const DEFAULT_LOCALE: SiteLocale = 'en';

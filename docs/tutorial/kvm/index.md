@@ -9,9 +9,9 @@ description: "KVM software tutorial for Openterface Mini-KVM, KVM-GO, and uConso
 
 This tutorial covers the **Openterface KVM series** — devices that capture the target's HDMI video output and relay keyboard/mouse input through HID emulation:
 
-- **Mini-KVM** — Compact USB KVM adapter
-- **KVM-Go** — Portable KVM in a toolkit form factor
-- **uConsole KVM Extension** — Built-in KVM for the uConsole
+- [Mini-KVM](https://openterface.com/minikvm/?utm_source=docs) — Compact USB KVM adapter
+- [KVM-Go](https://openterface.com/kvmgo/?utm_source=docs) — Portable KVM in a toolkit form factor
+- [uConsole KVM Extension](https://openterface.com/kvmext/?utm_source=docs) — Built-in KVM for the uConsole
 
 > **Platforms:** macOS, Windows, Linux (desktop apps), **Android** (mobile app), and **iPadOS** (tablet app).
 > Android-specific and iPadOS-specific notes are marked throughout.

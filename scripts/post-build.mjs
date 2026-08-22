@@ -218,3 +218,26 @@ console.log(`post-build: ${refactorCount} /product/* and /app/overview|faq/ redi
 
 const shortcutCount = writeShortcutRedirects();
 console.log(`post-build: ${shortcutCount} legacy shortcut redirect stubs`);
+
+/** For each legacy locale prefix, mirror every EN content page as a redirect stub → unprefixed EN. */
+function writeLegacyLocaleRedirects(enPaths) {
+  const DROPPED_LOCALES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'];
+  let count = 0;
+  for (const loc of DROPPED_LOCALES) {
+    for (const enPath of enPaths) {
+      const fromPath = enPath === '/' ? `/${loc}/` : `/${loc}${enPath}`;
+      if (writeRedirectStub(fromPath, enPath === '/' ? '/' : enPath)) count++;
+    }
+  }
+  return count;
+}
+
+const legacyLocaleCount = writeLegacyLocaleRedirects(collectEnPaths(DIST, DIST).filter((p) => {
+  // Skip redirect stubs themselves and non-content top-level dirs.
+  if (/^\/(en|zh|ja|ko|de|fr|es|it|pt|ro|hk|tw|ru|ar|tr|pl|nl|assets|images)(\/|$)/.test(p)) return false;
+  const file = join(DIST, p.slice(1), 'index.html');
+  if (!existsSync(file)) return false;
+  const head = readFileSync(file, 'utf8').slice(0, 500);
+  return !head.includes('Redirecting to:');
+}));
+console.log(`post-build: ${legacyLocaleCount} legacy-locale → EN redirect stubs`);

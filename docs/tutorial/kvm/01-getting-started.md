@@ -23,9 +23,9 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 
 | Device | Form Factor | Key Feature |
 |--------|------------|-------------|
-| **Mini-KVM** | Compact USB dongle | Desktop KVM-over-USB |
-| **KVM-Go** | Toolkit-style portable | On-the-go KVM with built-in cables, **iPadOS support via BLE** |
-| **uConsole KVM Extension v2** | Internal module | Built-in KVM + Ethernet + SD for ClockworkPi uConsole |
+| [Mini-KVM](https://openterface.com/minikvm/?utm_source=docs) | Compact USB dongle | Desktop KVM-over-USB |
+| [KVM-Go](https://openterface.com/kvmgo/?utm_source=docs) | Toolkit-style portable | On-the-go KVM with built-in cables, **iPadOS support via BLE** |
+| [uConsole KVM Extension v2](https://openterface.com/kvmext/?utm_source=docs) | Internal module | Built-in KVM + Ethernet + SD for ClockworkPi uConsole |
 
 > Looking for **KeyMod** (keyboard & mouse emulator only, no video)? See the [KeyMod Tutorial](../../keymod/index.md).
 
@@ -56,7 +56,7 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 |----------|------------|----------|
 | **macOS** | Openterface for macOS | [App Store](/appstore) or [DMG](app/mmacos/dmg-installation.md) |
 | **Windows** | Openterface QT | [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) |
-| **Linux** | Openterface QT | [Flatpak](https://flathub.org/apps/com.openterface.openterfaceQT), .deb, .rpm, AppImage |
+| **Linux** | Openterface QT | [Flatpak](https://flathub.org/apps/com.openterface.openterfaceQT), .deb, .rpm, .pkg.tar.zst (Arch), AppImage |
 | **Android** | Openterface for Android | [Google Play](https://play.google.com/store/apps/details?id=com.openterface.AOS) or [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_Android/releases) |
 | **iPadOS** | Openterface for iPadOS | [App Store](/app/ipados/) — **KVM-Go only** |
 
@@ -90,9 +90,12 @@ On first launch, macOS will request:
 
 ### Linux Permissions
 
-- Add your user to the `dialout` and `video` groups: `sudo usermod -a -G dialout,video $USER`
-- Install udev rules for device access
+- Add your user to the required groups:
+  - **Debian/Ubuntu:** `sudo usermod -a -G dialout,video $USER`
+  - **Arch Linux:** `sudo usermod -a -G uucp,video $USER` (Arch uses `uucp` instead of `dialout` for serial devices)
+- Install udev rules for device access (bundled in `.deb`, `.rpm`, `.pkg.tar.zst` packages)
 - **BrlTTY conflict:** Remove `brltty` or blacklist the serial chip — see [Troubleshooting](04-troubleshooting.md#brltty-conflict-linux)
+- **Arch Linux users:** See the [Arch Linux Installation Guide](../../app/qt/archlinux-installation.md) for full setup instructions
 
 ### Windows
 
