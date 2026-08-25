@@ -145,7 +145,7 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('kvm-go slideshow keeps stable frame height when advancing', async ({ page }) => {
-    await page.goto('/product/kvm-go/');
+    await page.goto('/products/kvmgo/');
     const frame = page.locator('.doc-slideshow__frame');
     await expect(frame).toBeVisible();
 
@@ -163,7 +163,7 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('kvm-go overview shows models grid before pre-order CTA', async ({ page }) => {
-    await page.goto('/product/kvm-go/');
+    await page.goto('/products/kvmgo/');
     const models = page.locator('.doc-kvm-go-models');
     const cta = page.locator('.doc-buy-cta');
     await expect(models).toBeVisible();
@@ -215,7 +215,7 @@ test.describe('docs full corpus smoke', () => {
 
   test('kvm-go how-to-connect has sidebar, callouts, and search', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/product/kvm-go/how-to-connect/');
+    await page.goto('/products/kvmgo/how-to-connect/');
     await expect(page.locator('.docs-sidebar')).toBeVisible();
     await expect(page.locator('.docs-sidebar').getByText('KVM-Go Series')).toBeVisible();
     await expect(page.locator('.callout-warning').first()).toBeVisible();
