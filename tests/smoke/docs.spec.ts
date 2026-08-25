@@ -182,8 +182,8 @@ test.describe('docs full corpus smoke', () => {
     const variants = page.locator('.doc-keymod-variants');
     const cta = page.locator('.doc-buy-cta');
     await expect(variants).toBeVisible();
-    await expect(page.getByText('2-in-1 Connector Version')).toBeVisible();
-    await expect(page.getByText('USB C Version')).toBeVisible();
+    await expect(page.getByText('KeyMod Mini')).toBeVisible();
+    await expect(page.getByText('KeyMod Plus')).toBeVisible();
     await expect(cta).toBeVisible();
     const variantsBeforeCta = await variants.evaluate((el) => {
       const buy = document.querySelector('.doc-buy-cta');
