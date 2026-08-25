@@ -27,7 +27,7 @@ Direct plug-in capability with built-in male connectors:
 
 - **HDMI Male** — Modern device compatibility
 - **DisplayPort Male** — High-performance support
-- **VGA Male** — Legacy system support (coming soon)
+- **VGA Male** — Legacy system support
 
 ### **BIOS-Level Access**
 Direct access to target device BIOS, firmware, and startup management without network dependencies.

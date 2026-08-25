@@ -10,7 +10,7 @@ KeyMod Series is currently in pre-launch. Package contents and packaging design 
 
 ## Expected Contents *(tentative)*
 
-1. **KeyMod Unit** — USB + Bluetooth HID emulator (choose 2-in-1 or USB C variant)
+1. **KeyMod Unit** — USB + Bluetooth HID emulator (Mini with USB-C plug or Plus with USB-A plug)
 2. **USB Cable** — For wired connection (length and type to be finalized)
 3. **Quick Start Guide** — Setup and usage instructions
 

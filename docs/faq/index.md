@@ -49,6 +49,7 @@ Browse by product, app, or topic using the filters above — or jump to a sectio
 
 - [FAQs for Openterface KeyMod Series](/products/keymod/faq) — Pre-launch hardware and KeyCmd pairing
 - [Phone can't find KeyMod in the app?](/products/keymod/faq#troubleshooting) — Wrong app, Bluetooth pairing, and connection steps
+- [Is the 2-in-1 connector available?](/products/keymod/faq#hardware--mini-vs-plus) — Beta prototype vs current Mini and Plus lineup
 - [How to connect KeyMod](/products/keymod/how-to-connect/) — USB and Bluetooth setup
 - [KeyMod use cases](/products/keymod/use-cases/) — Phone-as-keyboard workflows
 

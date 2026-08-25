@@ -35,7 +35,7 @@ Download and install KeyCmd on your Android device or iPad from the [App](/app) 
 
 **Option A: USB Connection**
 
-Connect KeyMod to your phone via USB cable. The 2-in-1 variant fits both USB-A and USB-C ports; the USB C variant uses a USB-C cable.
+Connect KeyMod to your phone via USB cable. KeyMod Mini uses a USB-C plug; KeyMod Plus uses a USB-A plug.
 
 ![KeyMod Feature](https://assets2.openterface.com/images/keymod/feature.webp){:style="max-height:360px"}
 

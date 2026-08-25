@@ -18,18 +18,18 @@ Following the success of our 2024 [Mini-KVM](https://www.crowdsupply.com/techxar
 A compact, programmable **USB + Bluetooth** HID (keyboard and mouse) emulator, KeyMod Series turns your phone into a portable keyboard and trackpad console for quick local control and workflow shortcuts. Built on the proven HID core from Openterface Mini-KVM, it is plug and play, 100% open source.
 
 <div class="doc-keymod-variants">
-  <p class="doc-keymod-variants__title">Planned Variants</p>
+  <p class="doc-keymod-variants__title">KeyMod Series</p>
   <img src="https://assets2.openterface.com/images/keymod/keymod.webp" alt="Openterface KeyMod Series" class="doc-keymod-variants__photo skip-lightbox" loading="lazy" />
   <div class="doc-keymod-variants__grid">
     <div class="doc-keymod-variants__card">
-      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">2-in-1</span>
-      <p class="doc-keymod-variants__name">2-in-1 Connector Version</p>
-      <p class="doc-keymod-variants__desc">Combined USB A + USB C plug design for broad compatibility with laptops, tablets, and phones</p>
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
+      <p class="doc-keymod-variants__name">KeyMod Mini</p>
+      <p class="doc-keymod-variants__desc">USB-C male plug for modern devices, ultra-compact EDC with BLE wireless only</p>
     </div>
     <div class="doc-keymod-variants__card">
-      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--usbc">USB-C</span>
-      <p class="doc-keymod-variants__name">USB C Version</p>
-      <p class="doc-keymod-variants__desc">Dedicated USB C plug for modern devices and clean cable management</p>
+      <span class="doc-keymod-variants__badge doc-keymod-variants__badge--dual">USB-A</span>
+      <p class="doc-keymod-variants__name">KeyMod Plus</p>
+      <p class="doc-keymod-variants__desc">USB-A male plug with BLE or USB wired phone link for more bandwidth and steadier connection</p>
     </div>
   </div>
   <p class="doc-keymod-variants__note">Both variants share the same core functionality: Bluetooth HID keyboard and mouse, custom profiles, macros, and gamepad modes.</p>

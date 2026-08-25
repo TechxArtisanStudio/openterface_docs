@@ -38,7 +38,7 @@ Ultra-compact dimensions: **18 × 18 × 55 mm** (0.71 × 0.71 × 2.17 inches) �
 
 - **KVM-Go HDMI Male** — Direct HDMI connection for modern devices
 - **KVM-Go DisplayPort Male** — High-performance DisplayPort support  
-- **KVM-Go VGA Male** — Legacy system compatibility (coming soon)
+- **KVM-Go VGA Male** — Legacy system compatibility
 
 **:material-chat-question:{ .faq } How does this compare to Mini-KVM?**
 
@@ -120,7 +120,7 @@ Yes — visit [Openterface Viewer](https://openterface-viewer.pages.dev/) for a 
 
 - **HDMI**: Best for modern devices, servers, workstations
 - **DisplayPort**: High-resolution displays, professional setups
-- **VGA**: Legacy systems, older servers (coming soon)
+- **VGA**: Legacy systems, older servers
 
 ---
 

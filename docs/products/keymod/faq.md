@@ -59,9 +59,20 @@ Both SKUs run the same **KeyCmd** app. The difference is which **USB port on the
 
 BLE range (both): best within ~5 m, up to ~10 m in open space.
 
+**:material-chat-question:{ .faq } I saw photos of a 2-in-1 USB-A + USB-C connector. Is that available?**
+
+During our beta program, we produced a small run of a combined 2-in-1 connector prototype. Early Crowd Supply pages and some social media posts featured photos of that prototype.
+
+That 2-in-1 version is **not part of the current KeyMod lineup**. The KeyMod Plus ships with a dedicated USB-A connector. We made this change for two reasons:
+
+1. **Screen safety.** Some beta testers found that the flip-cover design of the 2-in-1 connector could accidentally scrape the laptop screen when closing the lid.
+2. **Manufacturing.** The 2-in-1 design requires a thinner PCB and a different production process, which adds significant cost. For the Crowd Supply campaign, we chose a more mainstream approach to keep the product accessible.
+
+Whether we revisit a 2-in-1 connector design in the future depends on how the current KeyMod campaign performs. We appreciate the interest and ask for your understanding.
+
 **:material-chat-question:{ .faq } Is KeyMod a Bluetooth keyboard for my PC?**
 
-No. KeyMod presents **USB HID** to the target. Bluetooth (or Plus USB) is **phone ↔ KeyMod only**—not “phone pairs to PC as a Bluetooth keyboard.” Your PC never pairs with your phone over Bluetooth for KeyMod control.
+No. KeyMod presents **USB HID** to the target. Bluetooth (or Plus USB) is **phone ↔ KeyMod only**—not "phone pairs to PC as a Bluetooth keyboard." Your PC never pairs with your phone over Bluetooth for KeyMod control.
 
 ---
 
