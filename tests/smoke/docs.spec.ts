@@ -168,7 +168,7 @@ test.describe('docs full corpus smoke', () => {
     const cta = page.locator('.doc-buy-cta');
     await expect(models).toBeVisible();
     await expect(page.getByText('KVM-Go HDMI Male')).toBeVisible();
-    await expect(page.getByText('Coming soon')).toBeVisible();
+    await expect(page.getByText('KVM-Go VGA Male')).toBeVisible();
     await expect(cta).toBeVisible();
     const modelsBeforeCta = await models.evaluate((el) => {
       const buy = document.querySelector('.doc-buy-cta');
