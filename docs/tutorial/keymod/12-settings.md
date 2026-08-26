@@ -4,7 +4,7 @@ description: "KeyMod Tutorial - Settings: Configure KeyMod's behavior and appear
 keywords: "KeyMod settings, auto-connect, theme, language, BLE delay, touchpad sensitivity"
 ---
 
-# 11. Settings
+# 12. Settings
 
 Configure KeyMod's behavior and appearance.
 
@@ -37,5 +37,5 @@ See [Target-Specific Keyboard](03-target-keyboard.md) for keyboard layout and Un
 
 ## Next Steps
 
-- **[← Presentation](10-presentation.md)** — Slide remote control
-- **[Troubleshooting →](12-troubleshooting.md)** — Common problems and solutions
+- **[← Agent](11-agent.md)** — AI-driven task automation
+- **[Troubleshooting →](13-troubleshooting.md)** — Common problems and solutions

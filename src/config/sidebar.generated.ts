@@ -357,32 +357,36 @@ export const NAV_SECTIONS: GeneratedNavSection[] = [
         "slug": "tutorial/keymod/05-macros"
       },
       {
-        "label": "Voice Input",
-        "slug": "tutorial/keymod/06-voice-input"
-      },
-      {
-        "label": "AI Integration",
-        "slug": "tutorial/keymod/07-ai"
-      },
-      {
         "label": "Gamepad",
-        "slug": "tutorial/keymod/08-gamepad"
+        "slug": "tutorial/keymod/06-gamepad"
       },
       {
         "label": "Numpad",
-        "slug": "tutorial/keymod/09-numpad"
+        "slug": "tutorial/keymod/07-numpad"
       },
       {
         "label": "Presentation",
-        "slug": "tutorial/keymod/10-presentation"
+        "slug": "tutorial/keymod/08-presentation"
+      },
+      {
+        "label": "Voice Input",
+        "slug": "tutorial/keymod/09-voice-input"
+      },
+      {
+        "label": "Terminal",
+        "slug": "tutorial/keymod/10-terminal"
+      },
+      {
+        "label": "Agent",
+        "slug": "tutorial/keymod/11-agent"
       },
       {
         "label": "Settings",
-        "slug": "tutorial/keymod/11-settings"
+        "slug": "tutorial/keymod/12-settings"
       },
       {
         "label": "Troubleshooting",
-        "slug": "tutorial/keymod/12-troubleshooting"
+        "slug": "tutorial/keymod/13-troubleshooting"
       }
     ]
   },

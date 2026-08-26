@@ -180,4 +180,4 @@ In landscape split mode, a **scrollable shortcut strip** appears above the two k
 ## Next Steps
 
 - **[Target-Specific Keyboard →](03-target-keyboard.md)** — Keyboard layouts and target OS mapping
-- **[Troubleshooting →](12-troubleshooting.md)** — Common problems and solutions
+- **[Troubleshooting →](13-troubleshooting.md)** — Common problems and solutions

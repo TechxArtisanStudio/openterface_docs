@@ -4,7 +4,7 @@ description: "KeyMod Tutorial - Troubleshooting: Common problems and solutions f
 keywords: "KeyMod troubleshooting, KeyMod not connecting, KeyMod Bluetooth issues, KeyMod keys not working"
 ---
 
-# 12. Troubleshooting
+# 13. Troubleshooting
 
 Common problems and solutions for KeyCmd on Android.
 

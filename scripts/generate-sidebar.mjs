@@ -95,10 +95,7 @@ function sectionsFromNav(nav) {
 
 function loadNav() {
   let raw = fs.readFileSync(MKDOCS, 'utf8');
-  if (raw.startsWith('# AUTO-GENERATED')) {
-    raw = raw.split('\n\n').slice(1).join('\n\n');
-  }
-  const doc = parseYaml(raw, { uniqueKeys: false });
+  const doc = parseYaml(raw, { uniqueKeys: false }) ?? {};
   return doc.nav ?? [];
 }
 
