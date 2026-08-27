@@ -12,7 +12,7 @@
   }
 
   function whenImageReady(img, callback) {
-    if (img.complete && img.naturalWidth > 0) {
+    if (img.complete) {
       callback();
       return;
     }
