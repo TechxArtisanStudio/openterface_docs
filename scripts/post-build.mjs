@@ -73,6 +73,7 @@ const SHORTCUT_REDIRECTS = [
   ['/products/keymod/updates/', 'https://news.openterface.com/product/keymod/', true],
   ['/products/kvm-go/', '/products/kvmgo/', false],
   ['/usb-switch/', '/products/minikvm/extension-pins/', false],
+  ['/support/minikvm/', '/products/minikvm/support/', false],
   ['/videos/', 'https://openterface.com/media/', true],
 ];
 
