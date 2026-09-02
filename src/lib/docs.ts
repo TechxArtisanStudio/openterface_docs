@@ -6,7 +6,7 @@ import { sidebarSlugsForPage } from '../config/sidebar-utils';
 import { newsPath, surfaceMarketingHost } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } from './locale';
 
-const LOCALE_SUFFIXES = [] as const;
+const LOCALE_SUFFIXES: readonly string[] = [];
 
 const CONFIG_DIR = path.join(process.cwd(), 'src/config');
 
@@ -70,7 +70,7 @@ function parseLocaleFromFilename(filename: string): { stem: string; locale: Site
   for (const loc of LOCALE_SUFFIXES) {
     const suffix = `.${loc}.md`;
     if (filename.endsWith(suffix)) {
-      return { stem: filename.slice(0, -suffix.length), locale: loc };
+      return { stem: filename.slice(0, -suffix.length), locale: loc as SiteLocale };
     }
   }
   if (filename.endsWith('.md')) {
@@ -588,6 +588,8 @@ export function renderMarkdown(
 ): { html: string; headings: DocHeading[] } {
   const md = preprocessMkdocsMarkdown(raw, locale, pageSlug);
   let html = marked.parse(md, { async: false, gfm: true }) as string;
+  // marked escapes apostrophes to &#39; — revert so browsers render a plain quote.
+  html = html.replace(/&#39;/g, "'");
   // marked may wrap standalone HTML blocks in <p> — unwrap doc embed wrappers
   html = html.replace(/<p>\s*(<div class="doc-(?:slideshow|slogan|center|buy|product-signup|funding|youtube)[^>]*>)/g, '$1');
   html = html.replace(/(<\/div>)\s*<\/p>/g, '$1');
