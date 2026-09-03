@@ -36,6 +36,7 @@ const appHubRedirects = Object.fromEntries(
 
 export default defineConfig({
   site: 'https://docs.openterface.com',
+  base: process.env.BASE_PATH || '/',
   trailingSlash: 'always',
   redirects: appHubRedirects,
   devToolbar: { enabled: false },
