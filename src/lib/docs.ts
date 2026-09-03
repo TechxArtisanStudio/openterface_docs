@@ -480,6 +480,12 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
   md = md.replace(/\]\(\/about\//g, '](/about/');
   md = md.replace(/\]\(\/policy\//g, '](/policy/');
 
+  // Prepend base path to remaining absolute internal links (not external/anchor/mailto)
+  const base = import.meta.env.BASE_URL;
+  if (base !== '/') {
+    md = md.replace(/\]\((\/(?!\/)[^)#?\s)]*)/g, `](${base}$1`);
+  }
+
   return md;
 }
 
