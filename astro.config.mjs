@@ -28,20 +28,16 @@ const appHubRedirects = Object.fromEntries(
     ]),
 );
 
-/** Strip legacy locale prefixes (site is now English-only). */
-const droppedLocales = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'];
-const legacyLocaleRedirects = Object.fromEntries(
-  droppedLocales.flatMap((loc) => [
-    [`/${loc}`, `/`],
-    [`/${loc}/`, `/`],
-    [`/${loc}/*`, `/:splat`],
-  ]),
-);
+/** Strip legacy locale prefixes (site is now English-only).
+ *  Redirects are generated as static HTML stubs by scripts/post-build.mjs,
+ *  so we do NOT register them as Astro redirects — the `/*` splat pattern
+ *  causes a build crash on Windows (literal `*` is an invalid directory
+ *  character on NTFS) and creates junk `*` directories on Linux. */
 
 export default defineConfig({
   site: 'https://docs.openterface.com',
   trailingSlash: 'always',
-  redirects: { ...appHubRedirects, ...legacyLocaleRedirects },
+  redirects: appHubRedirects,
   devToolbar: { enabled: false },
   integrations: [
     sitemap({
