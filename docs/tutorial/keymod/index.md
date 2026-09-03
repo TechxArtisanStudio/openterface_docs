@@ -43,13 +43,14 @@ The KeyCmd app communicates with the KeyMod hardware using the **CH9329 protocol
 | [3. Target OS](03-target-keyboard.md) | Target operating system mapping |
 | [4. Shortcut Hub](04-shortcuts.md) | Profile-based keyboard shortcuts for popular apps |
 | [5. Macros](05-macros.md) | Automated key sequences with delays |
-| [6. Voice Input](06-voice-input.md) | Speech-to-keyboard with Whisper AI |
-| [7. AI Integration](07-ai.md) | Text refinement and command assistant |
-| [8. Gamepad](08-gamepad.md) | Virtual game controller with customizable layouts |
-| [9. Numpad](09-numpad.md) | Numeric keypad for data entry |
-| [10. Presentation](10-presentation.md) | Slide remote control and timer |
-| [11. Settings](11-settings.md) | App configuration and preferences |
-| [12. Troubleshooting](12-troubleshooting.md) | Common problems and solutions |
+| [6. Gamepad](06-gamepad.md) | Virtual game controller with customizable layouts |
+| [7. Numpad](07-numpad.md) | Numeric keypad for data entry |
+| [8. Presentation](08-presentation.md) | Slide remote control and timer |
+| [9. Voice Input](09-voice-input.md) | Speech-to-keyboard with Whisper AI |
+| [10. Terminal](10-terminal.md) | SSH connection and command line access |
+| [11. Agent](11-agent.md) | AI-driven task automation via SSH or BLE |
+| [12. Settings](12-settings.md) | App configuration and preferences |
+| [13. Troubleshooting](13-troubleshooting.md) | Common problems and solutions |
 
 ## Getting Help
 

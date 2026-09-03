@@ -4,7 +4,7 @@ description: "KeyMod Tutorial - Numpad: A full numeric keypad for data entry. Ea
 keywords: "KeyMod numpad, numeric keypad, HID numpad, data entry"
 ---
 
-# 9. Numpad
+# 7. Numpad
 
 A full numeric keypad for data entry. Each key sends the corresponding HID numpad key code.
 
@@ -24,5 +24,5 @@ Some shortcut profiles (Blender, Fusion 360, KiCad) include **custom numpad grid
 
 ## Next Steps
 
-- **[← Gamepad](08-gamepad.md)** — Virtual game controller
-- **[Presentation →](10-presentation.md)** — Slide remote control
+- **[← Gamepad](06-gamepad.md)** — Virtual game controller
+- **[Presentation →](08-presentation.md)** — Slide remote control
