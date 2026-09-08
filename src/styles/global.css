@@ -232,6 +232,10 @@
     @apply my-8 border-gray-200;
   }
 
+  .prose-docs blockquote {
+    @apply my-4 border-l-4 border-brand/30 bg-surface py-2 pl-4 pr-3 text-ink/80 italic;
+  }
+
   .prose-docs strong {
     @apply font-semibold text-ink;
   }

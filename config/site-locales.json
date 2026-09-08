@@ -4,71 +4,7 @@
     "en": {
       "label": "English",
       "path": "en"
-    },
-    "zh": {
-      "label": "Chinese",
-      "path": "zh"
-    },
-    "ja": {
-      "label": "Japanese",
-      "path": "ja"
-    },
-    "ko": {
-      "label": "Korean",
-      "path": "ko"
-    },
-    "de": {
-      "label": "German",
-      "path": "de"
-    },
-    "fr": {
-      "label": "French",
-      "path": "fr"
-    },
-    "es": {
-      "label": "Spanish",
-      "path": "es"
-    },
-    "it": {
-      "label": "Italian",
-      "path": "it"
-    },
-    "pt": {
-      "label": "Portuguese",
-      "path": "pt"
-    },
-    "ro": {
-      "label": "Romanian",
-      "path": "ro"
-    },
-    "hk": {
-      "label": "繁體中文（香港）",
-      "path": "hk"
-    },
-    "tw": {
-      "label": "繁體中文（台灣）",
-      "path": "tw"
-    },
-    "ru": {
-      "label": "Русский",
-      "path": "ru"
-    },
-    "ar": {
-      "label": "العربية",
-      "path": "ar"
-    },
-    "tr": {
-      "label": "Türkçe",
-      "path": "tr"
-    },
-    "pl": {
-      "label": "Polski",
-      "path": "pl"
-    },
-    "nl": {
-      "label": "Nederlands",
-      "path": "nl"
     }
   },
-  "_note": "Docs path_locale map for locale switcher and builds; keep in sync when adding locales."
+  "_note": "English-only. Legacy locale prefixes (zh, ja, ko, ...) redirect to root via astro.config.mjs."
 }

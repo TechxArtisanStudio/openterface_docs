@@ -6,7 +6,7 @@ import { sidebarSlugsForPage } from '../config/sidebar-utils';
 import { newsPath, surfaceMarketingHost } from '../config/surface-urls';
 import { DEFAULT_LOCALE, localizedPath, stripLocalePrefix, type SiteLocale } from './locale';
 
-const LOCALE_SUFFIXES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'] as const;
+const LOCALE_SUFFIXES: readonly string[] = [];
 
 const CONFIG_DIR = path.join(process.cwd(), 'src/config');
 
@@ -70,7 +70,7 @@ function parseLocaleFromFilename(filename: string): { stem: string; locale: Site
   for (const loc of LOCALE_SUFFIXES) {
     const suffix = `.${loc}.md`;
     if (filename.endsWith(suffix)) {
-      return { stem: filename.slice(0, -suffix.length), locale: loc };
+      return { stem: filename.slice(0, -suffix.length), locale: loc as SiteLocale };
     }
   }
   if (filename.endsWith('.md')) {
@@ -480,6 +480,12 @@ function preprocessMkdocsMarkdownInner(raw: string): string {
   md = md.replace(/\]\(\/about\//g, '](/about/');
   md = md.replace(/\]\(\/policy\//g, '](/policy/');
 
+  // Prepend base path to remaining absolute internal links (not external/anchor/mailto)
+  const base = import.meta.env.BASE_URL;
+  if (base !== '/') {
+    md = md.replace(/\]\((\/(?!\/)[^)#?\s)]*)/g, `](${base}$1`);
+  }
+
   return md;
 }
 
@@ -532,9 +538,25 @@ function rewriteNewsLinks(md: string, locale: SiteLocale, pageSlug: string): str
   return out;
 }
 
+function rewriteRelativeMdLinks(md: string): string {
+  // ponytail: drops .md extension from relative links; Astro routes are extensionless.
+  // Skips absolute (`/foo.md`), fully-qualified (`http...`), and anchor-only (`#foo`) hrefs.
+  return md.replace(
+    /\]\((?!https?:\/\/|\/|#)([^)]+?)\.md(\?[^)]*)?\)/g,
+    (_m, p: string, q: string) => {
+      let path = p;
+      // `foo/index.md` → directory index → `foo/`, not `foo/index/`.
+      path = path.replace(/\/index$/, '');
+      if (path === 'index') path = '.';
+      return `](${path}/${q ?? ''})`;
+    },
+  );
+}
+
 /** Convert MkDocs Material markdown dialect to standard MD + HTML callouts. */
 export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageSlug?: string): string {
   let md = preprocessMkdocsMarkdownInner(raw);
+  md = rewriteRelativeMdLinks(md);
   if (locale) md = resolveMarketingHubMacros(md, locale);
   if (locale && pageSlug) md = rewriteNewsLinks(md, locale, pageSlug);
   return parseGridCards(md);
@@ -572,6 +594,8 @@ export function renderMarkdown(
 ): { html: string; headings: DocHeading[] } {
   const md = preprocessMkdocsMarkdown(raw, locale, pageSlug);
   let html = marked.parse(md, { async: false, gfm: true }) as string;
+  // marked escapes apostrophes to &#39; — revert so browsers render a plain quote.
+  html = html.replace(/&#39;/g, "'");
   // marked may wrap standalone HTML blocks in <p> — unwrap doc embed wrappers
   html = html.replace(/<p>\s*(<div class="doc-(?:slideshow|slogan|center|buy|product-signup|funding|youtube)[^>]*>)/g, '$1');
   html = html.replace(/(<\/div>)\s*<\/p>/g, '$1');

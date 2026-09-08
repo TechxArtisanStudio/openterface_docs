@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
+const BASE = process.env.BASE_PATH || '/';
 const { locales, default_locale: defaultLocale } = JSON.parse(
   readFileSync(join(ROOT, 'config/site-locales.json'), 'utf8'),
 );
@@ -29,6 +30,7 @@ const SKIP_ROOT = new Set([
 ]);
 
 function redirectHtml(target, { external = false } = {}) {
+  const targetWithBase = external ? target : `${BASE}${target.replace(/^\//, '')}`;
   const canonical = external
     ? target
     : `https://docs.openterface.com${target === '/' ? '/' : target}`;
@@ -36,12 +38,12 @@ function redirectHtml(target, { external = false } = {}) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=${target}">
+  <meta http-equiv="refresh" content="0; url=${targetWithBase}">
   <link rel="canonical" href="${canonical}">
   <title>Redirecting…</title>
-  <script>location.replace('${target}');</script>
+  <script>location.replace('${targetWithBase}');</script>
 </head>
-<body><p><a href="${target}">Openterface Docs</a></p></body>
+<body><p><a href="${targetWithBase}">Openterface Docs</a></p></body>
 </html>
 `;
 }
@@ -73,6 +75,7 @@ const SHORTCUT_REDIRECTS = [
   ['/products/keymod/updates/', 'https://news.openterface.com/product/keymod/', true],
   ['/products/kvm-go/', '/products/kvmgo/', false],
   ['/usb-switch/', '/products/minikvm/extension-pins/', false],
+  ['/support/minikvm/', '/products/minikvm/support/', false],
   ['/videos/', 'https://openterface.com/media/', true],
 ];
 
@@ -218,3 +221,26 @@ console.log(`post-build: ${refactorCount} /product/* and /app/overview|faq/ redi
 
 const shortcutCount = writeShortcutRedirects();
 console.log(`post-build: ${shortcutCount} legacy shortcut redirect stubs`);
+
+/** For each legacy locale prefix, mirror every EN content page as a redirect stub → unprefixed EN. */
+function writeLegacyLocaleRedirects(enPaths) {
+  const DROPPED_LOCALES = ['zh', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ro', 'hk', 'tw', 'ru', 'ar', 'tr', 'pl', 'nl'];
+  let count = 0;
+  for (const loc of DROPPED_LOCALES) {
+    for (const enPath of enPaths) {
+      const fromPath = enPath === '/' ? `/${loc}/` : `/${loc}${enPath}`;
+      if (writeRedirectStub(fromPath, enPath === '/' ? '/' : enPath)) count++;
+    }
+  }
+  return count;
+}
+
+const legacyLocaleCount = writeLegacyLocaleRedirects(collectEnPaths(DIST, DIST).filter((p) => {
+  // Skip redirect stubs themselves and non-content top-level dirs.
+  if (/^\/(en|zh|ja|ko|de|fr|es|it|pt|ro|hk|tw|ru|ar|tr|pl|nl|assets|images)(\/|$)/.test(p)) return false;
+  const file = join(DIST, p.slice(1), 'index.html');
+  if (!existsSync(file)) return false;
+  const head = readFileSync(file, 'utf8').slice(0, 500);
+  return !head.includes('Redirecting to:');
+}));
+console.log(`post-build: ${legacyLocaleCount} legacy-locale → EN redirect stubs`);

@@ -95,10 +95,11 @@ function sectionsFromNav(nav) {
 
 function loadNav() {
   let raw = fs.readFileSync(MKDOCS, 'utf8');
+  raw = raw.replace(/\r\n/g, '\n'); // normalize Windows line endings
   if (raw.startsWith('# AUTO-GENERATED')) {
     raw = raw.split('\n\n').slice(1).join('\n\n');
   }
-  const doc = parseYaml(raw, { uniqueKeys: false });
+  const doc = parseYaml(raw, { uniqueKeys: false }) ?? {};
   return doc.nav ?? [];
 }
 

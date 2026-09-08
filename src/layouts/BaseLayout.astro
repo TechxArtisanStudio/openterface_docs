@@ -35,8 +35,6 @@ const pageTitle = title ?? ui.siteName;
 const pageDescription = description ?? ui.siteDescription;
 const fullTitle = title && title !== ui.siteName ? `${title} | ${ui.siteName}` : ui.siteName;
 const canonical = new URL(canonicalPath, siteConfig.url).href;
-const htmlLang = locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja' : locale === 'ko' ? 'ko' : locale;
-const textDir = locale === 'ar' ? 'rtl' : 'ltr';
 const currentPath = Astro.url.pathname;
 const currentSearch = Astro.url.search;
 const xDefaultPath = switchLocalePath(currentPath, DEFAULT_LOCALE);
@@ -44,11 +42,11 @@ const searchIndex = searchIndexForLocale(locale);
 ---
 
 <!doctype html>
-<html lang={htmlLang} dir={textDir}>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}images/favicon.png`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />

@@ -145,7 +145,7 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('kvm-go slideshow keeps stable frame height when advancing', async ({ page }) => {
-    await page.goto('/product/kvm-go/');
+    await page.goto('/products/kvmgo/');
     const frame = page.locator('.doc-slideshow__frame');
     await expect(frame).toBeVisible();
 
@@ -163,12 +163,12 @@ test.describe('docs full corpus smoke', () => {
   });
 
   test('kvm-go overview shows models grid before pre-order CTA', async ({ page }) => {
-    await page.goto('/product/kvm-go/');
+    await page.goto('/products/kvmgo/');
     const models = page.locator('.doc-kvm-go-models');
     const cta = page.locator('.doc-buy-cta');
     await expect(models).toBeVisible();
     await expect(page.getByText('KVM-Go HDMI Male')).toBeVisible();
-    await expect(page.getByText('Coming soon')).toBeVisible();
+    await expect(page.getByText('KVM-Go VGA Male')).toBeVisible();
     await expect(cta).toBeVisible();
     const modelsBeforeCta = await models.evaluate((el) => {
       const buy = document.querySelector('.doc-buy-cta');
@@ -177,33 +177,19 @@ test.describe('docs full corpus smoke', () => {
     expect(modelsBeforeCta).toBe(true);
   });
 
-  test('zh kvm-go overview shows localized models grid', async ({ page }) => {
-    await page.goto('/zh/product/kvm-go/');
-    await expect(page.locator('.doc-kvm-go-models')).toBeVisible();
-    await expect(page.getByText('KVM-Go HDMI 公头')).toBeVisible();
-    await expect(page.getByText('即将推出')).toBeVisible();
-  });
-
   test('keymod overview shows variants grid before support CTA', async ({ page }) => {
     await page.goto('/product/keymod/');
     const variants = page.locator('.doc-keymod-variants');
     const cta = page.locator('.doc-buy-cta');
     await expect(variants).toBeVisible();
-    await expect(page.getByText('2-in-1 Connector Version')).toBeVisible();
-    await expect(page.getByText('USB C Version')).toBeVisible();
+    await expect(page.getByText('KeyMod Mini')).toBeVisible();
+    await expect(page.getByText('KeyMod Plus')).toBeVisible();
     await expect(cta).toBeVisible();
     const variantsBeforeCta = await variants.evaluate((el) => {
       const buy = document.querySelector('.doc-buy-cta');
       return buy ? (el.compareDocumentPosition(buy) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 : false;
     });
     expect(variantsBeforeCta).toBe(true);
-  });
-
-  test('zh keymod overview shows localized variants grid', async ({ page }) => {
-    await page.goto('/zh/product/keymod/');
-    await expect(page.locator('.doc-keymod-variants')).toBeVisible();
-    await expect(page.getByText('2 合 1 连接器版本')).toBeVisible();
-    await expect(page.getByText('USB C 版本')).toBeVisible();
   });
 
   test('minikvm overview shows package options before order CTA', async ({ page }) => {
@@ -227,16 +213,9 @@ test.describe('docs full corpus smoke', () => {
     await expect(link).toBeVisible();
   });
 
-  test('zh minikvm overview shows localized package options', async ({ page }) => {
-    await page.goto('/zh/product/minikvm/');
-    await expect(page.locator('.doc-minikvm-packages')).toBeVisible();
-    await expect(page.getByText('基础包装')).toBeVisible();
-    await expect(page.getByText('工具包包装')).toBeVisible();
-  });
-
   test('kvm-go how-to-connect has sidebar, callouts, and search', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/product/kvm-go/how-to-connect/');
+    await page.goto('/products/kvmgo/how-to-connect/');
     await expect(page.locator('.docs-sidebar')).toBeVisible();
     await expect(page.locator('.docs-sidebar').getByText('KVM-Go Series')).toBeVisible();
     await expect(page.locator('.callout-warning').first()).toBeVisible();
@@ -261,60 +240,6 @@ test.describe('docs full corpus smoke', () => {
     await page.goto('/tutorial/kvm/01-getting-started/');
     await expect(page.locator('.docs-sidebar')).toBeVisible();
     await expect(page.locator('.docs-sidebar').getByText('KVM Series')).toBeVisible();
-  });
-
-  test('zh locale page and translated sidebar labels', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/zh/product/kvm-go/how-to-connect/');
-    await expect(page).toHaveTitle(/Openterface 文档/);
-    await expect(page.getByRole('link', { name: '文档' }).first()).toBeVisible();
-    await expect(page.locator('aside.docs-sidebar').getByText(/KVM-Go 系列/)).toBeVisible();
-  });
-
-  test('zh minikvm sidebar shows translated support labels', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/zh/product/minikvm/support/mini-kvm-troubleshooting-and-support/');
-    const sidebar = page.locator('aside.docs-sidebar');
-    await expect(sidebar.getByText('故障排查')).toBeVisible();
-    await expect(sidebar.getByText('诊断自检指南（macOS）')).toBeVisible();
-    await expect(sidebar.getByText('诊断自检指南（Windows）')).toBeVisible();
-    await expect(sidebar.getByText('键盘和鼠标控制')).toBeVisible();
-    await expect(sidebar.getByText('Troubleshooting')).toHaveCount(0);
-  });
-
-  test('new locale home and product pages return 200', async ({ page }) => {
-    const paths = [
-      '/hk/product/kvm-go/',
-      '/tw/product/kvm-go/',
-      '/ru/product/kvm-go/',
-      '/ar/product/kvm-go/',
-      '/tr/product/kvm-go/',
-      '/pl/product/kvm-go/',
-      '/nl/product/kvm-go/',
-      '/hk/about/multi-languages/',
-      '/ru/about/multi-languages/',
-    ];
-
-    for (const path of paths) {
-      const response = await page.goto(path, { waitUntil: 'commit' });
-      expect(response?.status(), path).toBe(200);
-      await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
-    }
-  });
-
-  test('hk locale page shows translated sidebar labels', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/hk/product/kvm-go/how-to-connect/');
-    await expect(page).toHaveTitle(/Openterface 文檔/);
-    await expect(page.locator('aside.docs-sidebar').getByText(/KVM-Go 系列/)).toBeVisible();
-  });
-
-  test('ru locale page loads with localized chrome', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/ru/product/kvm-go/');
-    await expect(page).toHaveTitle(/Openterface/);
-    await expect(page.locator('.site-header')).toBeVisible();
-    await expect(page.locator('article .doc-page-nav')).toBeVisible();
   });
 
   test('faq page loads', async ({ page }) => {

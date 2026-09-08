@@ -29,7 +29,7 @@ See if others have reported similar questions or bugs:
 
 ## 4. Submit Troubleshooting Form
 
-If you still need help, please complete the [troubleshooting form](/support/minikvm). It walks you through the key details we need to diagnose issues accurately and respond faster.
+If you still need help, please complete the [troubleshooting form](/products/minikvm/support/). It walks you through the key details we need to diagnose issues accurately and respond faster.
 
 ## 5. Email Support
 

@@ -1,43 +1,9 @@
-export const SUPPORTED_LOCALES = [
-  'en',
-  'zh',
-  'ja',
-  'ko',
-  'de',
-  'fr',
-  'es',
-  'it',
-  'pt',
-  'ro',
-  'hk',
-  'tw',
-  'ru',
-  'ar',
-  'tr',
-  'pl',
-  'nl',
-] as const;
+export const SUPPORTED_LOCALES = ['en'] as const;
 
 export type SiteLocale = (typeof SUPPORTED_LOCALES)[number];
 
 export const LOCALE_LABELS: Record<SiteLocale, string> = {
   en: 'English',
-  zh: '中文',
-  ja: '日本語',
-  ko: '한국어',
-  de: 'Deutsch',
-  fr: 'Français',
-  es: 'Español',
-  it: 'Italiano',
-  pt: 'Português',
-  ro: 'Română',
-  hk: '繁體中文（香港）',
-  tw: '繁體中文（台灣）',
-  ru: 'Русский',
-  ar: 'العربية',
-  tr: 'Türkçe',
-  pl: 'Polski',
-  nl: 'Nederlands',
 };
 
 export const DEFAULT_LOCALE: SiteLocale = 'en';
@@ -47,12 +13,16 @@ export function isSiteLocale(value: string): value is SiteLocale {
 }
 
 export function localizedPath(locale: SiteLocale, ...segments: string[]): string {
+  const base = import.meta.env.BASE_URL;
   const parts = (locale === 'en' ? segments : [locale, ...segments]).filter(Boolean);
-  return parts.length === 0 ? '/' : `/${parts.join('/')}/`;
+  const path = parts.length === 0 ? '/' : `/${parts.join('/')}/`;
+  return base === '/' ? path : `${base}${path.replace(/^\//, '')}`;
 }
 
 export function stripLocalePrefix(pathname: string): { locale: SiteLocale; segments: string[] } {
-  const segments = pathname.split('/').filter(Boolean);
+  const base = import.meta.env.BASE_URL;
+  const stripped = base !== '/' && pathname.startsWith(base) ? pathname.slice(base.length) : pathname;
+  const segments = stripped.split('/').filter(Boolean);
   if (segments[0] && isSiteLocale(segments[0])) {
     return { locale: segments[0], segments: segments.slice(1) };
   }

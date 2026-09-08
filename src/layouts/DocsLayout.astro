@@ -5,7 +5,6 @@ import DocPageNav from '../components/DocPageNav.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
 import DocsTOC from '../components/DocsTOC.astro';
 import FaqFilterChips from '../components/FaqFilterChips.astro';
-import LocaleFallbackBanner from '../components/LocaleFallbackBanner.astro';
 import { sidebarForSlug, sidebarNavLabel } from '../config/sidebar';
 import { getAdjacentPages, getDocAlternates, pageDescription, pageTitle, type DocPage } from '../lib/docs';
 
@@ -37,7 +36,6 @@ const hasH1 = /<h1[\s>]/i.test(html);
   hreflangAlternates={alternates}
 >
   <div class="mx-auto max-w-7xl px-4 lg:px-6">
-    <LocaleFallbackBanner />
     <div class="flex flex-col gap-0 lg:flex-row lg:items-start">
     {
       sidebar && (

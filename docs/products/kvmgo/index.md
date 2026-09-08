@@ -30,11 +30,10 @@ Following the success of **Openterface Mini-KVM**, with over 5,000 users in our 
       <p class="doc-kvm-go-models__name">KVM-Go DisplayPort Male</p>
       <p class="doc-kvm-go-models__desc">High-performance DisplayPort support</p>
     </div>
-    <div class="doc-kvm-go-models__card doc-kvm-go-models__card--soon">
+    <div class="doc-kvm-go-models__card">
       <span class="doc-kvm-go-models__badge doc-kvm-go-models__badge--vga">VGA</span>
       <p class="doc-kvm-go-models__name">KVM-Go VGA Male</p>
       <p class="doc-kvm-go-models__desc">Legacy system compatibility</p>
-      <span class="doc-kvm-go-models__status">Coming soon</span>
     </div>
   </div>
   <p class="doc-kvm-go-models__note">All models share the same ultra-compact design and core functionality, just with different built-in video connectors.</p>
