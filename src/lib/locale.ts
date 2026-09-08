@@ -13,12 +13,16 @@ export function isSiteLocale(value: string): value is SiteLocale {
 }
 
 export function localizedPath(locale: SiteLocale, ...segments: string[]): string {
+  const base = import.meta.env.BASE_URL;
   const parts = (locale === 'en' ? segments : [locale, ...segments]).filter(Boolean);
-  return parts.length === 0 ? '/' : `/${parts.join('/')}/`;
+  const path = parts.length === 0 ? '/' : `/${parts.join('/')}/`;
+  return base === '/' ? path : `${base}${path.replace(/^\//, '')}`;
 }
 
 export function stripLocalePrefix(pathname: string): { locale: SiteLocale; segments: string[] } {
-  const segments = pathname.split('/').filter(Boolean);
+  const base = import.meta.env.BASE_URL;
+  const stripped = base !== '/' && pathname.startsWith(base) ? pathname.slice(base.length) : pathname;
+  const segments = stripped.split('/').filter(Boolean);
   if (segments[0] && isSiteLocale(segments[0])) {
     return { locale: segments[0], segments: segments.slice(1) };
   }

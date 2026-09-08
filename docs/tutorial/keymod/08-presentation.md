@@ -4,7 +4,7 @@ description: "KeyMod Tutorial - Presentation: Control your slideshow from your p
 keywords: "KeyMod presentation, slide remote, PowerPoint remote, Keynote remote, presentation timer"
 ---
 
-# 10. Presentation
+# 8. Presentation
 
 Control your slideshow from your phone — no clicker needed.
 
@@ -40,5 +40,5 @@ The timer card supports countdown and countup modes, with a progress fill bar, v
 
 ## Next Steps
 
-- **[← Numpad](09-numpad.md)** — Numeric keypad for data entry
-- **[Settings →](11-settings.md)** — App configuration and preferences
+- **[← Numpad](07-numpad.md)** — Numeric keypad for data entry
+- **[Voice Input →](09-voice-input.md)** — Voice-to-keyboard transcription

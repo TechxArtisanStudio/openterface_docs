@@ -1054,13 +1054,14 @@ nav:
     - Target Keyboard: tutorial/keymod/03-target-keyboard.md
     - Shortcut Hub: tutorial/keymod/04-shortcuts.md
     - Macros: tutorial/keymod/05-macros.md
-    - Voice Input: tutorial/keymod/06-voice-input.md
-    - AI Integration: tutorial/keymod/07-ai.md
-    - Gamepad: tutorial/keymod/08-gamepad.md
-    - Numpad: tutorial/keymod/09-numpad.md
-    - Presentation: tutorial/keymod/10-presentation.md
-    - Settings: tutorial/keymod/11-settings.md
-    - Troubleshooting: tutorial/keymod/12-troubleshooting.md
+    - Gamepad: tutorial/keymod/06-gamepad.md
+    - Numpad: tutorial/keymod/07-numpad.md
+    - Presentation: tutorial/keymod/08-presentation.md
+    - Voice Input: tutorial/keymod/09-voice-input.md
+    - Terminal: tutorial/keymod/10-terminal.md
+    - Agent: tutorial/keymod/11-agent.md
+    - Settings: tutorial/keymod/12-settings.md
+    - Troubleshooting: tutorial/keymod/13-troubleshooting.md
 - About:
   - Community: about/community.md
   - Multi-Languages: about/multi-languages.md

@@ -4,7 +4,7 @@ description: "Dictate text into the target PC with KeyMod voice input: system sp
 keywords: "KeyMod voice input, speech to text, Whisper, voice typing, hands-free keyboard"
 ---
 
-# 6. Voice Input
+# 9. Voice Input
 
 Convert your speech into keystrokes sent to the target computer — hands-free typing and accessibility.
 
@@ -53,5 +53,5 @@ Check the connection status. The "Send" button is disabled when not connected.
 
 ## Next Steps
 
-- **[← Macros](05-macros.md)** — Automated key sequences
-- **[AI Integration →](07-ai.md)** — AI-assisted text refinement and command assistant
+- **[← Presentation](08-presentation.md)** — Slide remote control
+- **[Terminal →](10-terminal.md)** — SSH connection and command line access

@@ -1,0 +1,18 @@
+---
+// Redirect /app/ → /app/kvm/ with base-path awareness
+const base = import.meta.env.BASE_URL;
+const target = `${base}app/kvm/`;
+---
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content={`0;url=${target}`} />
+  <meta name="robots" content="noindex" />
+  <title>Redirecting</title>
+</head>
+<body>
+  <a href={target}>Redirecting</a>
+</body>
+</html>

@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
+const BASE = process.env.BASE_PATH || '/';
 const { locales, default_locale: defaultLocale } = JSON.parse(
   readFileSync(join(ROOT, 'config/site-locales.json'), 'utf8'),
 );
@@ -29,6 +30,7 @@ const SKIP_ROOT = new Set([
 ]);
 
 function redirectHtml(target, { external = false } = {}) {
+  const targetWithBase = external ? target : `${BASE}${target.replace(/^\//, '')}`;
   const canonical = external
     ? target
     : `https://docs.openterface.com${target === '/' ? '/' : target}`;
@@ -36,12 +38,12 @@ function redirectHtml(target, { external = false } = {}) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=${target}">
+  <meta http-equiv="refresh" content="0; url=${targetWithBase}">
   <link rel="canonical" href="${canonical}">
   <title>Redirecting…</title>
-  <script>location.replace('${target}');</script>
+  <script>location.replace('${targetWithBase}');</script>
 </head>
-<body><p><a href="${target}">Openterface Docs</a></p></body>
+<body><p><a href="${targetWithBase}">Openterface Docs</a></p></body>
 </html>
 `;
 }

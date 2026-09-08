@@ -47,4 +47,4 @@ This opens a terminal (Ctrl+Alt+T), waits 1 second, then types `ls -la` and pres
 ## Next Steps
 
 - **[← Shortcut Hub](04-shortcuts.md)** — Profile-based keyboard shortcuts
-- **[Voice Input →](06-voice-input.md)** — Voice-to-keyboard transcription
+- **[Gamepad →](06-gamepad.md)** — Virtual game controller

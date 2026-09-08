@@ -4,7 +4,7 @@ description: "KeyMod Tutorial - Gamepad: Transform your phone into a virtual gam
 keywords: "KeyMod gamepad, virtual controller, game controller, WASD mapping, analog stick"
 ---
 
-# 8. Gamepad
+# 6. Gamepad
 
 Transform your phone into a virtual game controller for gaming, retro emulation, and game testing.
 
@@ -86,5 +86,5 @@ Each on-screen control is a **module** with three layers:
 
 ## Next Steps
 
-- **[← AI Integration](07-ai.md)** — AI-assisted text refinement and command assistant
-- **[Numpad →](09-numpad.md)** — Numeric keypad for data entry
+- **[← Macros](05-macros.md)** — Automated key sequences
+- **[Numpad →](07-numpad.md)** — Numeric keypad for data entry
