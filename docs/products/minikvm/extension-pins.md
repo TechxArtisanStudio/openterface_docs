@@ -18,8 +18,7 @@ The Openterface Mini-KVM features extension pins for advanced development and [O
 3. Download the [3D model](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/models) for the Extension Pin Cap.
 4. Check out our [Hardware GitHub repository](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware).
 
-![change-cap](https://assets.openterface.com/images/product/change-cap.svg#only-light){:style="max-height:300px"}
-![change-cap](https://assets.openterface.com/images/product/change-cap_1.svg#only-dark){:style="max-height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap.svg){:style="max-height:300px"}
 
 !!! warning "Warranty Void"
     Removing the original case may void the product warranty. All modifications or disassembly are undertaken at the user's own risk.
@@ -29,10 +28,8 @@ The Openterface Mini-KVM features extension pins for advanced development and [O
 
 ## Pin Configuration
 
-![target-side](https://assets.openterface.com/images/product/extension-pins-1.svg#only-light){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/product/extension-pins-2.svg#only-light){:style="max-height:200px"}
-![target-side](https://assets.openterface.com/images/product/extension-pins-1_1.svg#only-dark){:style="max-height:200px"}
-![host-side](https://assets.openterface.com/images/product/extension-pins-2_1.svg#only-dark){:style="max-height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1.svg){:style="max-height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2.svg){:style="max-height:200px"}
 
 The extension pins provide the following connections:
 

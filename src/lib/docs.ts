@@ -223,16 +223,8 @@ function transformGridCardIcons(md: string): string {
 
 function transformMkdocsImages(md: string): string {
   return md.replace(/!\[([^\]]*)\]\(([^)]+)\)(\{:[^}]+\})?/g, (_m, alt: string, src: string, attrs?: string) => {
-    let cleanSrc = src;
-    let themeClass = '';
-
-    if (/#only-dark$/i.test(src)) {
-      cleanSrc = src.replace(/#only-dark$/i, '');
-      themeClass = 'doc-img-dark';
-    } else if (/#only-light$/i.test(src)) {
-      cleanSrc = src.replace(/#only-light$/i, '');
-      themeClass = 'doc-img-light';
-    }
+    // Strip legacy MkDocs Material theme fragments (dark mode removed)
+    const cleanSrc = src.replace(/#only-(?:dark|light)$/i, '');
 
     let inlineStyle = '';
     if (attrs) {
@@ -246,7 +238,6 @@ function transformMkdocsImages(md: string): string {
     const isDiagram = /\/usbkvm\//i.test(cleanSrc) || (cleanSrc.endsWith('.svg') && !isInlineIcon);
 
     const classes = [
-      themeClass,
       isInlineIcon ? 'doc-inline-icon' : '',
       isDiagram ? 'doc-diagram' : '',
     ]
@@ -604,8 +595,8 @@ export function renderMarkdown(
   html = html.replace(/<p>\s*(<section class="doc-social-posts-section"[^>]*>)/g, '$1');
   html = html.replace(/<p>\s*(<h2 class="doc-faq-question"[^>]*>)/g, '$1');
   html = html.replace(/(<\/h2>)\s*<\/p>/g, '$1');
-  html = html.replace(/<p>\s*(<img class="doc-(?:diagram|inline-icon|img-light|img-dark)[^>]*>)/g, '$1');
-  html = html.replace(/(<img class="doc-(?:diagram|inline-icon|img-light|img-dark)[^>]*>)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*(<img class="doc-(?:diagram|inline-icon)[^>]*>)/g, '$1');
+  html = html.replace(/(<img class="doc-(?:diagram|inline-icon)[^>]*>)\s*<\/p>/g, '$1');
   html = transformMediaCoverage(html);
   const headings = extractHeadings(html);
   return { html: injectHeadingIds(html, headings), headings };

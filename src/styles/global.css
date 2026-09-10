@@ -136,43 +136,12 @@
     margin-inline: auto;
   }
 
-  .doc-diagram.doc-img-light {
-    display: block;
-  }
-
-  .doc-diagram.doc-img-dark {
-    display: none;
-  }
-
   .doc-inline-icon {
     @apply m-0 align-middle;
     width: auto;
     height: auto;
     max-height: 1.25rem;
     margin-inline: 0.125rem;
-  }
-
-  .doc-inline-icon.doc-img-light {
-    display: inline-block;
-  }
-
-  .doc-inline-icon.doc-img-dark {
-    display: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .doc-diagram.doc-img-light,
-    .doc-inline-icon.doc-img-light {
-      display: none;
-    }
-
-    .doc-diagram.doc-img-dark {
-      display: block;
-    }
-
-    .doc-inline-icon.doc-img-dark {
-      display: inline-block;
-    }
   }
 
   .doc-card-icon {

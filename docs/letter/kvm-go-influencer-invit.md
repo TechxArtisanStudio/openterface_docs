@@ -4,7 +4,7 @@ hide:
 description: "Openterface KVM-GO: Beta Review Guide: Hey there! Thanks again for joining our beta program. We’re genuinely excited to have you trying out the KVM-GO…"
 ---
 
-![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}
+![Openterface Logo](https://assets.openterface.com/images/openterface.svg){:style="max-height:46px"}
 
 # **Openterface KVM-GO: Beta Review Guide**
 
@@ -92,4 +92,4 @@ That’s everything for now. We’re honestly thrilled to have you onboard and c
 
 **Kevin Peng** – Technical Manager
 
-[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg#only-light){:style="max-height:28px"}](https://techxartisan.com)
+[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg){:style="max-height:28px"}](https://techxartisan.com)

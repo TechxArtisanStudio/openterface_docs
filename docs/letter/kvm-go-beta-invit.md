@@ -5,7 +5,7 @@ hide:
   - sitemap
 ---
 
-![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}
+![Openterface Logo](https://assets.openterface.com/images/openterface.svg){:style="max-height:46px"}
 
 ---
 
@@ -67,4 +67,4 @@ With your help, **KVM-GO** will become the most **compact, reliable, and indispe
 **Billy Wang** – Project Manager  
 **Kevin Peng** – Technical Manager  
 
-[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg#only-light){:style="max-height:28px"}](https://techxartisan.com)
+[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg){:style="max-height:28px"}](https://techxartisan.com)

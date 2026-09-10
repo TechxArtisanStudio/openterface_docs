@@ -43,8 +43,8 @@ To set up your **KVM-Go**, you’ll need the following components:
 ### **Step 1 — Connect USB Cables to KVM-Go**
 ![Plugging USB Cables](https://assets.openterface.com/images/kvm-go/step-1-plugged.webp){:style="max-height:360px"}
 
-- **Black USB-C cable** → Plug into the port labeled ![Target Icon](https://assets.openterface.com/images/shell-icons/target-computer.svg#only-light){:style="max-height:20px"} ![Target Icon](https://assets.openterface.com/images/shell-icons/target-computer_1.svg#only-dark){:style="max-height:20px"} **Target** on the KVM-Go case.  
-- **Orange USB-C cable** → Plug into the port labeled ![Host Icon](https://assets.openterface.com/images/shell-icons/host-computer.svg#only-light){:style="max-height:20px"} ![Host Icon](https://assets.openterface.com/images/shell-icons/host-computer_1.svg#only-dark){:style="max-height:20px"} **Host**.
+- **Black USB-C cable** → Plug into the port labeled ![Target Icon](https://assets.openterface.com/images/shell-icons/target-computer.svg){:style="max-height:20px"} **Target** on the KVM-Go case.  
+- **Orange USB-C cable** → Plug into the port labeled ![Host Icon](https://assets.openterface.com/images/shell-icons/host-computer.svg){:style="max-height:20px"} **Host**.
 
 !!! warning
     Both USB-C ports are physically identical.  

@@ -7,8 +7,7 @@ description: "About Us: was created with a simple but powerful idea: Open – Tr
 
 ## Our Brand & Slogan
 
-![Openterface Logo](https://assets.openterface.com/images/openterface.svg#only-light){:style="max-height:46px"}
-![Openterface Logo](https://assets.openterface.com/images/openterface_w.svg#only-dark){:style="max-height:46px"}
+![Openterface Logo](https://assets.openterface.com/images/openterface.svg){:style="max-height:46px"}
 
 was created with a simple but powerful idea:
 
@@ -26,8 +25,7 @@ Our goal is simple: **turn complexity into opportunity and potential into progre
 
 ## Our Company
 
-[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg#only-light){:style="max-height:28px"}](https://techxartisan.com)
-[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_w.svg#only-dark){:style="max-height:28px"}](https://techxartisan.com)
+[![TechxArtisan Logo](https://assets.openterface.com/images/logo_txa_b.svg){:style="max-height:28px"}](https://techxartisan.com)
 
 - **Company Name:** **TechxArtisan Limited**  
 - **Address:** Unit 04-05, 16/F, Broadway Building, 54-62 Lockhart Road, Wanchai, Hong Kong SAR, China

@@ -12,13 +12,12 @@ A **USB KVM**—often referred to as **KVM-over-USB**—is a keyboard, video, an
 
 ## :material-chat-question:{ .faq } How does USB KVM work? {: #how-usb-kvm-works }
 
-![USB KVM Connection Dark](https://assets.openterface.com/images/usbkvm/usb-kvm-connect-dark.svg#only-dark)
-![USB KVM Connection Light](https://assets.openterface.com/images/usbkvm/usb-kvm-connect-light.svg#only-light)
+![USB KVM Connection](https://assets.openterface.com/images/usbkvm/usb-kvm-connect-light.svg)
 
 Throughout this documentation, we refer to
 
-- Your controlling laptop or PC as ![host-computer](https://assets.openterface.com/images/shell-icons/host-computer.svg#only-light){:style="max-height:18px"} ![Host](https://assets.openterface.com/images/shell-icons/host.svg#only-light){:style="max-height:15px"} ![host-computer](https://assets.openterface.com/images/shell-icons/host-computer_1.svg#only-dark){:style="max-height:18px"} ![Host](https://assets.openterface.com/images/shell-icons/host_1.svg#only-dark){:style="max-height:15px"}
-- The device being controlled as ![target-computer](https://assets.openterface.com/images/shell-icons/target-computer.svg#only-light){:style="max-height:18px"} ![Target](https://assets.openterface.com/images/shell-icons/target.svg#only-light){:style="max-height:18px"} ![target-computer](https://assets.openterface.com/images/shell-icons/target-computer_1.svg#only-dark){:style="max-height:18px"} ![Target](https://assets.openterface.com/images/shell-icons/target_1.svg#only-dark){:style="max-height:18px"}
+- Your controlling laptop or PC as ![host-computer](https://assets.openterface.com/images/shell-icons/host-computer.svg){:style="max-height:18px"} ![Host](https://assets.openterface.com/images/shell-icons/host.svg){:style="max-height:15px"}
+- The device being controlled as ![target-computer](https://assets.openterface.com/images/shell-icons/target-computer.svg){:style="max-height:18px"} ![Target](https://assets.openterface.com/images/shell-icons/target.svg){:style="max-height:18px"}
 
 1. **Screen Streaming**  
    It captures the target device's display (via HDMI) and shows it in an application window on your host computer.
