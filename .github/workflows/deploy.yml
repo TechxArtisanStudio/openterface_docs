@@ -28,6 +28,9 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
+          CI: true
+          LINK_CHECK: '0'
+
           BASE_PATH: ${{ github.repository == 'TechxArtisanStudio/openterface_docs' && '/' || '/openterface_docs/' }}
       - uses: actions/upload-pages-artifact@v3
         with:

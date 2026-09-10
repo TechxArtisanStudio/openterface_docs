@@ -17,6 +17,7 @@
     "postbuild": "node scripts/post-build.mjs",
     "preview": "astro preview --port 8000 --host",
     "test:smoke": "playwright test tests/smoke",
+    "check:links": "LINK_CHECK=1 playwright test tests/smoke/link-check.spec.ts",
     "audit:meta-descriptions": "node scripts/audit-meta-descriptions.mjs"
   },
   "dependencies": {

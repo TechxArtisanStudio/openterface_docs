@@ -274,6 +274,262 @@ Logging can be adjusted in the app source to reduce console noise.
 
 ---
 
+## 11. AI Chat Advanced Features (Qt)
+
+The AI Chat system includes several advanced capabilities for power users and developers.
+
+### OpenAI Native Function Calling
+
+The AI Chat system supports OpenAI's native function calling format, where tool calls are returned in a structured `tool_calls` array rather than embedded in message content.
+
+**Benefits:**
+- Works with all OpenAI-compatible models (GPT-4, GPT-3.5, Claude, etc.)
+- More reliable tool execution
+- Proper API integration with tool call ID tracking
+- Backward compatible with legacy text-based format
+
+**How it works:**
+When an AI model returns tool calls in the native format:
+```json
+{
+  "choices": [{
+    "message": {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [{
+        "id": "call_123",
+        "type": "function",
+        "function": {
+          "name": "capture_screen",
+          "arguments": "{\"quality\": 80}"
+        }
+      }]
+    }
+  }]
+}
+```
+
+The system automatically extracts and executes these tool calls, preserving the call IDs for proper conversation flow.
+
+### Shared Tool Executor Architecture
+
+Both the MCP server and AI Chat system share a common tool execution layer through the `SharedToolExecutor` singleton.
+
+**Benefits:**
+- Consistent behavior between MCP and AI Chat
+- Single implementation for both systems
+- Bug fixes apply to both MCP and AI Chat
+- Shared resources (camera, screen analyzer)
+
+**Core capabilities:**
+- Terminal detection (cursor blink analysis)
+- Command execution with intelligent waiting
+- Screen analysis (OCR-based markdown conversion)
+- Differential screen analysis (change detection)
+
+### Web Search Integration
+
+The AI Chat system includes multi-provider web search capabilities.
+
+**Supported providers (in fallback order):**
+1. **Exa AI** (Primary) - AI-optimized semantic search via MCP
+2. **Parallel AI** (Secondary) - Alternative AI-optimized search
+3. **DuckDuckGo** (Fallback) - Free instant answers
+4. **Wikipedia** (Fallback) - Encyclopedia search
+
+**Configuration:** Settings → AI Chat → Web Search
+
+The system automatically tries providers in order and returns the first successful result.
+
+### Tools Configuration Tree
+
+AI Chat tools are organized in a hierarchical tree structure in the settings UI.
+
+**Features:**
+- Expandable/collapsible groups
+- Group propagation (check group → check all children)
+- Two-column layout (name + tool ID)
+- Persistent storage
+
+**Tool categories:**
+- Screen Tools (capture_screen, screen_to_markdown)
+- Mouse Tools (move_mouse, left_click, right_click, double_click, left_drag)
+- Keyboard Tools (type_text, press_key, repeat_key)
+- Recording Tools (start_recording, stop_recording)
+- System/Host Tools (set_target_system, run_bash)
+
+### Cursor Blink Detection
+
+Advanced terminal state detection using cursor blink analysis.
+
+**How it works:**
+The system captures multiple frames and analyzes:
+- Cursor blink patterns (typically 1-2 Hz)
+- Screen stability over multiple frames
+- Shell prompt presence via OCR
+
+**Use cases:**
+- Command completion detection
+- BIOS navigation (detect when menu is ready)
+- Automated testing (verify terminal state)
+
+**Configuration:** Settings → AI Chat → Advanced
+- Detection samples: 3-8 (default 5)
+- Detection interval: 200-1000ms (default 350ms)
+- Confidence threshold: 0.0-1.0 (default 0.8)
+
+### Advanced MCP Integration
+
+The AI Chat system integrates deeply with the MCP server for advanced automation.
+
+**Remote AI control:**
+```python
+import requests
+
+# Connect to MCP server
+session = requests.get("http://localhost:8080/sse").json()
+session_id = session["sessionId"]
+
+# Execute AI Chat tool via MCP
+requests.post(f"http://localhost:8080/messages?sessionId={session_id}", json={
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+        "name": "capture_screen",
+        "arguments": {"quality": 80}
+    }
+})
+```
+
+**Multi-client coordination:**
+Multiple MCP clients can coordinate via shared state, enabling complex automation workflows.
+
+---
+
+## 12. MCP Server (Model Context Protocol)
+
+The Openterface application includes a full MCP server implementation that exposes KVM control capabilities as standardized tools for AI assistants.
+
+### Transport Modes
+
+| Transport | Description | Use Case |
+|-----------|-------------|----------|
+| **stdio** | Standard input/output | CLI-based MCP clients (Claude Code) |
+| **Named Pipe** | Unix domain socket / Windows named pipe | Local IPC |
+| **SSE** | HTTP-based Server-Sent Events | Remote/network clients |
+
+### Starting the MCP Server
+
+**GUI mode:**
+Enable in Preferences → MCP Server
+
+**Headless mode:**
+```bash
+# SSE transport (recommended for remote access)
+./openterfaceQT --mcp-sse-port 8080
+
+# stdio transport (for local CLI clients)
+./openterfaceQT --mcp-stdio
+
+# Multiple transports simultaneously
+./openterfaceQT --mcp-stdio --mcp-sse-port 8080
+```
+
+### Available Tools
+
+**Mouse control:**
+- `mouse_move_absolute` - Move cursor to absolute position
+- `mouse_click` - Click at position (left/right/middle)
+- `mouse_move_relative` - Move cursor relative to current position
+- `mouse_scroll` - Scroll mouse wheel
+
+**Keyboard control:**
+- `keyboard_type_text` - Type text string
+- `keyboard_press_key` - Press key with optional modifiers
+- `keyboard_function_key` - Send function key (F1-F12)
+- `keyboard_ctrl_alt_del` - Send Ctrl+Alt+Del
+- `keyboard_set_layout` - Switch keyboard layout
+
+**Screen capture:**
+- `capture_screen` - Capture current screen as JPEG
+- `capture_last_image` - Retrieve last saved screenshot
+- `screen_to_markdown` - OCR-based screen text extraction
+
+**System:**
+- `system_status` - Get system and device status
+
+### Client Configuration
+
+**Claude Code (SSE - recommended):**
+```bash
+claude mcp add --transport sse openterface http://localhost:8080/sse
+```
+
+**Claude Desktop:**
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "openterface": {
+      "type": "sse",
+      "url": "http://localhost:8080/sse"
+    }
+  }
+}
+```
+
+**Cursor:**
+Settings → Features → MCP Servers → Add New MCP Server
+- Type: `sse`
+- Name: `openterface`
+- Server URL: `http://localhost:8080/sse`
+
+### Example: Python Client
+
+```python
+import httpx
+import json
+
+# Connect to MCP server
+response = httpx.get("http://localhost:8080/sse")
+session_id = response.json()["sessionId"]
+
+# List available tools
+httpx.post(
+    f"http://localhost:8080/messages?sessionId={session_id}",
+    json={
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "tools/list",
+        "params": {}
+    }
+)
+
+# Call a tool
+httpx.post(
+    f"http://localhost:8080/messages?sessionId={session_id}",
+    json={
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+            "name": "capture_screen",
+            "arguments": {"quality": 80}
+        }
+    }
+)
+```
+
+### Security Considerations
+
+- MCP server provides full control over target computer's mouse and keyboard
+- Run only in trusted environments
+- SSE transport has no authentication - use firewall rules to restrict access
+- Consider using a reverse proxy with authentication for production use
+
+---
+
 ## Next Steps
 
 - **[Troubleshooting →](04-troubleshooting.md)** — Common problems and solutions
