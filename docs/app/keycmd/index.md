@@ -28,6 +28,30 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
     [:octicons-arrow-right-24: Install from App Store](https://apps.apple.com/us/app/keycmd/id6776206628) <br>
     :octicons-mark-github-16: Source code *(coming soon)*
 
+-   ### :fontawesome-brands-android:{ .lg } **Android Tablet**
+
+    ***
+
+    KeyCmd app optimized for Android tablets with larger trackpad and keyboard layouts.
+
+    :octicons-clock-24: Coming soon
+
+-   ### :fontawesome-brands-apple:{ .lg } **iPadOS**
+
+    ***
+
+    KeyCmd app for iPad. Connect via Bluetooth LE or USB-C.
+
+    :octicons-clock-24: Coming soon
+
+-   ### :fontawesome-solid-terminal:{ .lg } **CLI**
+
+    ***
+
+    Command-line interface for KeyCmd — control your target from the terminal.
+
+    :octicons-clock-24: Coming soon
+
 </div>
 
 > **Beta notice:** KeyCmd for Android is in active beta. Source will be published after crowdfunding.
