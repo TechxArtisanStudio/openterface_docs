@@ -44,7 +44,7 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
 
     :octicons-clock-24: Coming soon
 
--   ### :fontawesome-solid-terminal:{ .lg } **CLI**
+-   ### :fontawesome-solid-terminal:{ .lg } **CLI version**
 
     ***
 
