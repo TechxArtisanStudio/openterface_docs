@@ -194,20 +194,20 @@ const MATERIAL_CARD_ICONS: Record<string, string> = {
 
 function transformFaqHeadings(md: string): string {
   let out = md.replace(
-    /^##\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
-    (_m, title: string, id: string) => `<h2 class="doc-faq-question" id="${id}">${title.trim()}</h2>\n`,
+    /^(#{1,6})\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
+    (_m, hashes: string, title: string, id: string) => `<${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'} class="doc-faq-question" id="${id}">${title.trim()}</${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'}>\n`,
   );
   out = out.replace(
-    /^##\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*$/gim,
-    (_m, title: string) => `<h2 class="doc-faq-question">${title.trim()}</h2>\n`,
+    /^(#{1,6})\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*$/gim,
+    (_m, hashes: string, title: string) => `<${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'} class="doc-faq-question">${title.trim()}</${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'}>\n`,
   );
   out = out.replace(
     /\*\*:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\*\*/g,
     '<p class="doc-faq-question doc-faq-question--inline"><strong>$1</strong></p>',
   );
   return out.replace(
-    /^##\s+(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
-    (_m, title: string, id: string) => `<h2 id="${id}">${title.trim()}</h2>\n`,
+    /^(#{1,6})\s+(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
+    (_m, hashes: string, title: string, id: string) => `<${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'} id="${id}">${title.trim()}</${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'}>\n`,
   );
 }
 
