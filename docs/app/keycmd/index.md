@@ -25,7 +25,7 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
 
     KeyCmd app for iPhone. Connect via Bluetooth LE or USB-C.
 
-    :octicons-arrow-right-24: Install from App Store *(coming soon)* <br>
+    [:octicons-arrow-right-24: Install from App Store](https://apps.apple.com/us/app/keycmd/id6776206628) <br>
     :octicons-mark-github-16: KeyCmd for iOS *(coming soon)*
 
 </div>
