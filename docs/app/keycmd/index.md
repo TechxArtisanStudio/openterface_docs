@@ -17,6 +17,7 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
     KeyCmd app with keyboard, trackpad, gamepad, macros, and voice input.
 
     [:octicons-download-24: Download beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk) <br>
+    [:octicons-arrow-right-24: Google Play](https://play.google.com/store/apps/details?id=com.openterface.keycmd) *(coming soon)* <br>
     :octicons-mark-github-16: Source code *(coming soon)*
 
 -   ### :fontawesome-brands-apple:{ .lg } **iOS**
