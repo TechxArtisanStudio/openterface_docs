@@ -40,7 +40,7 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
 
     ***
 
-    KeyCmd app for iPad. Connect via Bluetooth LE or USB-C.
+    KeyCmd app for iPad. Connect via Bluetooth LE.
 
     :octicons-clock-24: Coming soon
 
