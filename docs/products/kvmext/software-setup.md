@@ -1,6 +1,6 @@
 ---
 title: "Software Setup | Extension Module v2"
-description: "Install and configure the Openterface host app on your uConsole for KVM Extension Module v2 — HDMI capture, USB HID, SD card switching, and USB sharing."
+description: "Install and configure the Openterface host app on your uConsole for KVM Extension Module v2 — HDMI capture, USB HID, USB sharing, and what the app currently exposes for the microSD slot."
 keywords: "Openterface app installation, uConsole software setup, KVM extension v2, openterfaceqt"
 ---
 
@@ -8,7 +8,7 @@ keywords: "Openterface app installation, uConsole software setup, KVM extension 
 
 ## Installation overview
 
-The Openterface host app enables your uConsole to function as a KVM interface with HDMI capture, USB HID control, **SD card switching**, and **USB port sharing** between host and target.
+The Openterface host app enables your uConsole to function as a KVM interface with HDMI capture, USB HID control, and **USB port sharing** between host and target. The microSD slot can be read and written from the uConsole; switching it between host and target is not exposed by the app yet.
 
 !!! note "Requirements"
     - **uConsole (host)**: Openterface QT app required
@@ -78,7 +78,7 @@ Maintained by Rex for ClockworkPi images:
 - **Audio**: HDMI audio passthrough to uConsole speakers
 - **Text transfer**: Paste usernames, passwords, and snippets as simulated keystrokes
 - **USB switching**: Share USB storage between uConsole and target via the host app — see [Connect to Target](/products/kvmext/connect-to-target/)
-- **SD card switching**: Mount the SD card to host or target via the host app — see [SD Card Guide](/products/kvmext/sd-card/)
+- **SD card**: read and write from the uConsole — host/target switching is planned — see [SD Card Guide](/products/kvmext/sd-card/)
 
 ### **Troubleshooting software install**
 

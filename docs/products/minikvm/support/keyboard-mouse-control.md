@@ -78,10 +78,10 @@ Perform a **factory reset of the HID chip**:
 ## **4. Baud Rate Sensitivity in Noisy Environments**
 
 **Issue:**  
-Openterface defaults to **115200 bps** baud rate for faster mouse data transmission. However, in electrically noisy environments (e.g. switching power supplies, or long/unshielded cables), this high baud rate can lead to **serial communication errors**, causing dropped or corrupted HID commands.
+Openterface starts at **9600 bps** for reliable serial communication. Some users raise it to **115200 bps** for faster mouse data transmission. In electrically noisy environments (e.g. switching power supplies, or long/unshielded cables), that high baud rate can lead to **serial communication errors**, causing dropped or corrupted HID commands.
 
 **Solution:**  
-Switch to **9600 bps** baud rate:
+Drop back to **9600 bps** via **Control >> Baudrate**:
 - This significantly improves **communication reliability** in noisy setups.
 - The impact on latency is **negligible** under typical usage (e.g., 30 FPS video capture and control).
 

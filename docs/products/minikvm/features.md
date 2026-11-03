@@ -66,7 +66,7 @@ HDMI embedded audio passthrough for complete multimedia experience.
 
 ### **Connectivity & Power**
 - **Power**: USB-C powered (no external supply needed)
-- **USB Speed**: 12Mbps full-speed transmission
+- **USB Speed**: USB 2.0 high-speed host link; the HID emulation link to the target runs at 12 Mbps full-speed
 - **Host Compatibility**: Windows, macOS, Linux, Android
 - **Target**: No software installation required
 

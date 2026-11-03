@@ -48,7 +48,7 @@ keywords: "KVM extension features, uConsole KVM, HDMI KVM, USB HID control, port
 ### Switchable USB 2.0 Port
 
 - **Shared Port**: Easily switch USB access between the uConsole and the target device (e.g., flash drives) using the host app.
-- **USB Speed:** 12Mbps full-speed transmission
+- **USB Speed:** USB 2.0 high-speed capture link; HID emulation to the target at 12 Mbps full-speed
 
 ### Connectivity & Power
 

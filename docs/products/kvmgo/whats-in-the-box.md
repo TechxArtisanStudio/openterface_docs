@@ -11,12 +11,15 @@ We offer three complete toolkit options—**HDMI**, **DP**, or **VGA** version. 
 Each toolkit includes:
 
 1. **Core Product**: Openterface KVM-GO (choose HDMI, DP, or VGA version)
-2. **Toolkit Bag**: Compact carrying case
-3. **USB Cables**: 
+2. **Quick Start Guide**
+3. **Toolkit Bag**: Compact carrying case
+4. **3D-Printed Cap**: Custom cap with microSD storage
+5. **USB Cables**: 
    - 0.5m black Type-C to USB-A cable with Type-C adapter
    - 2.5m orange Type-C to Type-C cable with USB-A adapter
-4. **3D-Printed Cap**: Custom cap with microSD storage
-5. **Quick Start Guide**
+6. **3/32 Ball End L-shaped Hex Wrench**
+
+The **Basic** package contains only the KVM-GO unit and the Quick Start Guide.
 
 ![KVM-Go Parts](https://assets.openterface.com/images/kvm-go/step-0-all-parts-h.webp){:style="max-height:360px"}
 

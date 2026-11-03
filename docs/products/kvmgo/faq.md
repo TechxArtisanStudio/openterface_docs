@@ -30,7 +30,13 @@ KVM-Go is our next-generation ultra-compact KVM-over-USB solution. It's keychain
 
 **:material-chat-question:{ .faq } How small is it?**
 
-Ultra-compact dimensions: **18 × 18 × 55 mm** (0.71 × 0.71 × 2.17 inches) — small enough to fit on your keychain. Weight is approximately **25g (0.9 oz)**.
+Ultra-compact — small enough to fit on your keychain. Per the KVM-GO datasheet:
+
+| Model | Size | Weight |
+|-------|------|--------|
+| HDMI | 52.8 × 20.4 × 21 mm | ~30 g |
+| DisplayPort | 59.4 × 20.4 × 21 mm | ~35 g |
+| VGA | 54.8 × 33 × 21 mm | ~35 g |
 
 **:material-chat-question:{ .faq } What models are available?**
 
@@ -42,8 +48,8 @@ Ultra-compact dimensions: **18 × 18 × 55 mm** (0.71 × 0.71 × 2.17 inches) �
 
 Major improvements:
 
-- **Size**: 18×18×55mm vs 61×53×13.5mm (much smaller)
-- **Weight**: 25g vs 48g (lighter)
+- **Size**: 52.8×20.4×21 mm (HDMI model) vs 61×53×13.5 mm (much smaller profile)
+- **Weight**: ~30 g vs 48 g (lighter)
 - **Video**: 4K@60Hz vs 1080p@30Hz (better performance)
 - **USB**: USB 3.0 vs USB 2.0 (faster)
 - **Setup**: Built-in connectors vs separate cables (easier)
@@ -62,18 +68,17 @@ Yes — via the **switchable MicroSD slot** that can be shared between host and 
 
 **:material-chat-question:{ .faq } How do I switch the MicroSD direction?**
 
-Two convenient methods:
-1. **Hardware Button** – Physical button on the device for manual control
-2. **Software Switch** – Toggle button within the host app for instant switching
+**Hardware Button** — the physical button on the device. The card is mounted on whichever side the button selects. A host-app toggle is planned but is not exposed by the current firmware; see the [MicroSD Switching Guide](/products/kvmgo/microsd-switch/).
 
 **:material-chat-question:{ .faq } What do the LED indicators mean?**
 
-The **dual-color LED indicators** show the current MicroSD connection state:
+The **RGB status indicator** shows the current MicroSD connection state:
 
-- **🔵 Blue LED ON** – MicroSD card is mounted to the **target device**  
-- **🟢 Green LED ON** – MicroSD card is mounted to the **host computer**  
+- **🔵 Blue ON** – MicroSD card is mounted to the **target device**  
+- **🟢 Green ON** – MicroSD card is mounted to the **host computer**  
 - **LED OFF** – No MicroSD card inserted or device powered off  
-- **LED FLASHING** – Data transfer in progress (read/write activity)
+
+There is a single RGB indicator, so it reports the mount state rather than read/write activity.
 
 **:material-chat-question:{ .faq } How do I properly install the MicroSD card?**
 
@@ -96,7 +101,7 @@ Yes — 4K mode is experimental and generates additional heat. The device surfac
 
 **:material-chat-question:{ .faq } Open-source?**
 
-Yes — certified by [OSHWA](https://certification.oshwa.org/cn000015.html). Hardware and software are on [GitHub](https://github.com/TechxArtisanStudio/Openterface_KVM-GO_Hardware).
+Yes — hardware and software are published on [GitHub](https://github.com/TechxArtisanStudio/Openterface_KVM-GO_Hardware). OSHWA certification is still to come: the team applies once the mass-production hardware design is finalized. (The Mini-KVM is certified under [UID CN000015](https://certification.oshwa.org/cn000015.html).)
 
 **:material-chat-question:{ .faq } BIOS access**
 
@@ -108,7 +113,7 @@ Direct USB connection allows full BIOS-level control, unlike remote-only tools (
 
 **:material-chat-question:{ .faq } Can I use it with an iPad?**
 
-Yes — iPadOS support is coming soon via a native app available on the Apple App Store. This is made possible by KVM-GO's built-in Bluetooth capability, making it one of the few KVMs that works natively with iPads.
+Yes — the native [Openterface KVM iPad](https://apps.apple.com/us/app/openterface-kvm-ipad/id6763533664) app is on the App Store and requires iPadOS 17.2 or later. This is made possible by KVM-GO's built-in Bluetooth, making it one of the few KVMs that works natively with iPads. The iPad app works with KVM-Go only.
 
 **:material-chat-question:{ .faq } Is there a web-based app?**
 

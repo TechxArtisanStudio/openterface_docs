@@ -43,6 +43,8 @@ Your feedback is incredibly valuable to us, and while you’re welcome to test o
 
 5. **Device Simulation Settings (Windows/Linux)**
 
+    > **Heads up:** the beta firmware does not enable these yet. The CH32V208 control chip on KVM-Go does not accept the command-based HID configuration used for EDID and VID/PID edits, and there is no storage-switch command in the current build — so if an option is missing or has no effect, that is expected. Please still record what you see; it tells us what to prioritise.
+
     - 5.1. Display EDID Configuration
     - 5.2. USB Device Identification (VID/PID)
     - 5.3. SD Card Functionality

@@ -21,17 +21,20 @@ Arch Linux is fully supported with a native `.pkg.tar.zst` package that:
 
 ## Installation Methods
 
-### Method 1: Pre-built Package (Recommended)
+### Method 1: Pre-built Package from CI (Recommended)
 
-Download the latest `.pkg.tar.zst` from [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases):
+Arch packages are **not attached to GitHub Releases** — they are published as CI build artifacts (kept for 7 days):
+
+1. Open the latest successful run of the **Build Arch Linux package** job in the [linux-build workflow](https://github.com/TechxArtisanStudio/Openterface_QT/actions/workflows/linux-build.yaml)
+2. Download the `openterfaceQT_linux_amd64.pkg.tar.zst` artifact and extract it
+3. Install:
 
 ```bash
-# Download the package (replace URL with the latest release)
-wget https://github.com/TechxArtisanStudio/Openterface_QT/releases/download/v0.5.28/openterfaceqt-0.5.28.230-1-x86_64.pkg.tar.zst
-
 # Install — pacman auto-resolves all dependencies
 sudo pacman -U openterfaceqt-*.pkg.tar.zst
 ```
+
+If every artifact has expired, start a fresh build with **Run workflow** on the same [linux-build.yaml](https://github.com/TechxArtisanStudio/Openterface_QT/actions/workflows/linux-build.yaml) file (`workflow_dispatch` is enabled).
 
 pacman will automatically install all runtime dependencies from the Arch repos:
 
@@ -40,20 +43,7 @@ pacman will automatically install all runtime dependencies from the Arch repos:
 - libpulse, libxkbcommon, libusb, v4l-utils
 - Graphics stack (libglvnd, wayland, libxcb, libx11)
 
-### Method 2: Build from CI Artifact
-
-Download the package built by the [Arch Linux CI workflow](https://github.com/TechxArtisanStudio/Openterface_QT/actions/workflows/build-arch-package.yml):
-
-1. Go to the [Actions tab](https://github.com/TechxArtisanStudio/Openterface_QT/actions) and open a recent run of **Build Arch Linux Package**
-2. Download the `openterfaceqt-archlinux-<version>` artifact
-3. Extract and install:
-
-```bash
-unzip openterfaceqt-archlinux-*.zip
-sudo pacman -U openterfaceqt-*.pkg.tar.zst
-```
-
-### Method 3: Build Locally with makepkg
+### Method 2: Build Locally with makepkg
 
 Build the package from source using the PKGBUILD included in the repository:
 

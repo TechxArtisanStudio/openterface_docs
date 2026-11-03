@@ -29,7 +29,7 @@ keywords: "KVM extension v2 features, uConsole KVM, HDMI KVM, Ethernet expansion
 | **Latency** | &lt; 70 ms |
 | **KVM control** | USB HID keyboard and mouse emulation |
 | **Network** | 100M works on all uConsole base boards; 1000M requires uConsole Upgrade Kit |
-| **SD card** | Read/write with host/target switching via host app |
+| **SD card** | Read/write from the uConsole; host/target switching is planned, not in the current app |
 | **USB sharing** | USB 2.0 Full Speed (12 Mbps) shared switching |
 | **Target platforms** | Windows, macOS, Linux, x86 systems, ARM SBCs |
 | **Power** | Powered by uConsole expansion slot |

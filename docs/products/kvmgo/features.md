@@ -10,12 +10,12 @@ keywords: "KVM-Go features, ultra-compact KVM, built-in HDMI, 4K KVM, MicroSD KV
 
 The KVM-Go Series is in active production and fulfillment. Finished units are shipping to the Mouser warehouse for distribution, and Crowd Supply backers will begin receiving their orders soon. [Pre-order on Crowd Supply]({{ config.extra.kvmgo_purchase_link }}) to reserve yours.
 
-> **Note:** The VGA model is still in development; other details may be refined as manufacturing ramps up.
+> **Note:** Figures follow the official KVM-GO datasheet (Mar. 2026); details may be refined as manufacturing ramps up.
 
 ## Product Models
 - **KVM-Go HDMI Male** — Direct HDMI connection
 - **KVM-Go DisplayPort Male** — High-performance DisplayPort
-- **KVM-Go VGA Male** — Legacy system support (in development)
+- **KVM-Go VGA Male** — Legacy system support
 
 ## Core Features
 
@@ -68,10 +68,10 @@ Effortlessly transmit text by simulating keystrokes—perfect for usernames, pas
 No software installation required on target device. Control begins immediately upon connection with no software traces left behind.
 
 ### **Audio Integration**
-HDMI embedded audio passthrough for complete multimedia experience. (Not supported on KVM-Go VGA; pending confirmation for KVM-Go DP.)
+Embedded audio capture over HDMI and DisplayPort at 96 kHz/24-bit stereo, with 5.1-channel support (HD RX 5.1/7.1 channel capture). The VGA model does not support audio capture.
 
 ### **Bluetooth Capability**
-Built-in Bluetooth support enables native iPadOS app functionality (coming soon), making KVM-GO one of the few KVMs that works natively with iPads.
+Built-in Bluetooth lets the native [Openterface KVM iPad](https://apps.apple.com/us/app/openterface-kvm-ipad/id6763533664) app drive a KVM-Go without a host computer, making KVM-GO one of the few KVMs that works natively with iPads. It requires iPadOS 17.2 or later; see the [iPadOS connection flow](/tutorial/kvm/01-getting-started/#connecting-via-ipados).
 
 ### **Open-Source**
 [Fully open-source](/compliance) hardware and software for transparency and [community innovation](/discord).
@@ -79,8 +79,14 @@ Built-in Bluetooth support enables native iPadOS app functionality (coming soon)
 ## Technical Specifications
 
 ### **Physical Dimensions** *(subject to change before fulfillment)*
-- **Size**: 18 × 18 × 55 mm (0.71 × 0.71 × 2.17 inches)
-- **Weight**: ~25 g (0.9 oz)
+Per the KVM-GO datasheet, length × width × height and weight differ by connector model:
+
+| Model | Size | Weight |
+|-------|------|--------|
+| **KVM-GO HDMI** | 52.8 × 20.4 × 21 mm (2.08 × 0.80 × 0.83 in) | ~30 g (~1.1 oz) |
+| **KVM-GO DP** | 59.4 × 20.4 × 21 mm (2.34 × 0.80 × 0.83 in) | ~35 g (~1.2 oz) |
+| **KVM-GO VGA** | 54.8 × 33 × 21 mm (2.16 × 1.30 × 0.83 in) | ~35 g (~1.2 oz) |
+
 - **Material**: Aluminum alloy casing with 3D-printed caps
 
 ### **Connectivity & Power**
@@ -92,7 +98,7 @@ Built-in Bluetooth support enables native iPadOS app functionality (coming soon)
 ### **Video & Audio**
 - **Max Input**: 4096×2160@60Hz (YUV420), 4096×2160@30Hz (YUV444)
 - **Max Output**: 4096×2160@60Hz (MJPEG), 3840×2160@30Hz (YUV420)
-- **Audio**: HDMI embedded audio passthrough
+- **Audio**: HDMI/DP embedded audio capture (96 kHz/24-bit, 5.1 channel); not supported on the VGA model
 
 ### **Input Features**
 - Full keyboard and mouse emulation (absolute & relative)
