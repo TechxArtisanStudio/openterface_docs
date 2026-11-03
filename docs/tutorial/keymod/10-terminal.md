@@ -301,7 +301,7 @@ To add an SSH key:
 
 1. Tap **Connect** at the top to open the connection dialog.
 2. Select the transport link: **USB ECM Bridge** or **BLE-Eth Tunnel**.
-3. In the **Configured Profile** list, select a Profile (tap to select).
+3. In the **Configured Devices** list (labelled **DEVICES** on iOS), select a Profile (tap to select).
 4. Tap **Connect** in the bottom-right corner to start the connection.
 
 **The connection dialog. See below:**

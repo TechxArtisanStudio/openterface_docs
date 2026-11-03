@@ -25,9 +25,12 @@ A macro is a **recorded sequence of keystrokes** that you can replay. For exampl
 | `<CMD>` ... `</CMD>` | Hold/release Command/Win/Super |
 | `<ESC>`, `<BACK>`, `<ENTER>`, `<SPACE>` | Special keys |
 | `<LEFT>`, `<RIGHT>`, `<UP>`, `<DOWN>` | Arrow keys |
-| `<HOME>`, `<END>`, `<TAB>`, `<DEL>` | Navigation keys |
-| `<F1>` through `<F12>` | Function keys |
+| `<HOME>`, `<END>` | Navigation keys |
+| Tab / newline characters (Android) | Send Tab / Enter |
 | `<DELAY1S>`, `<DELAY2S>`, `<DELAY5S>`, `<DELAY10S>` | Pauses |
+| `<DELAY3S>`, `<DELAY4S>` | Pauses (iOS only) |
+
+`<TAB>`, `<DEL>` and `<F1>`–`<F12>` are **not** macro tokens — that wider set belongs to Shortcut Hub and the strip key editor.
 
 **Example:**
 ```
@@ -43,6 +46,10 @@ This opens a terminal (Ctrl+Alt+T), waits 1 second, then types `ls -la` and pres
 4. Build the macro command sequence using the text field and quick-insert token chips
 5. Adjust the **Send Char Interval** (delay between keystrokes in milliseconds)
 6. Tap **"Save"**
+
+## Scheduler
+
+The macro editor has a **Scheduler (optional)** section: enable it to pick a **run at** time and set an optional **repeat count** and **repeat interval** in seconds. On iOS the same idea appears as scheduled and repeating macros. The scheduler is not documented in this tutorial yet.
 
 ## Next Steps
 

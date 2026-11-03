@@ -20,7 +20,7 @@ A full numeric keypad for data entry. Each key sends the corresponding HID numpa
 
 ## Application-Specific Grids
 
-Some shortcut profiles (Blender, Fusion 360, KiCad) include **custom numpad grids** tailored to their specific applications.
+Shortcut profiles are plain lists of shortcuts — there is no separate custom numpad grid per profile. Only the **Blender** profile binds numpad keys, as ordinary Shortcut Hub entries (**Top → Numpad 7**, **Front → Numpad 1**, **Right → Numpad 3**, **Opposite → Numpad 9**, **Camera → Numpad 0**); the KiCad and Fusion 360 profiles contain no numpad entries.
 
 ## Next Steps
 

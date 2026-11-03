@@ -14,14 +14,14 @@ KeyMod connects your phone (running **KeyCmd**) to a target device. Your phone a
 
 **Connection flow:** Phone (KeyCmd) → KeyMod (USB or Bluetooth) → Target device
 
-- **Phone/Tablet**: Requires the KeyCmd app (Android or iPadOS)
+- **Phone/Tablet**: Requires the KeyCmd app (Android or iPhone; iPad on the way)
 - **KeyMod**: Connects to phone via USB or Bluetooth; connects to target via USB
 - **Target Device**: No software installation required
 
 ## **What You Need**
 
 - **KeyMod** — USB + Bluetooth HID emulator
-- **Phone or tablet** — Android or iPadOS with KeyCmd installed
+- **Phone or tablet** — Android or iPhone with KeyCmd installed
 - **USB cable** — For KeyMod-to-target connection (included with KeyMod)
 - **Optional**: Bluetooth for cable-free phone-to-KeyMod connection
 
@@ -29,7 +29,7 @@ KeyMod connects your phone (running **KeyCmd**) to a target device. Your phone a
 
 ### **Step 1 — Install KeyCmd**
 
-Download and install KeyCmd on your Android device or iPad from the [App](/app) section.
+Download and install KeyCmd on your Android device or iPhone from the [App](/app) section.
 
 ### **Step 2 — Connect KeyMod to Your Phone**
 

@@ -44,7 +44,7 @@ With our open source mobile app, you can:
 - **Terminal** — SSH over Bluetooth for remote command access
 - **Agent** — AI-driven direct interaction with HID or SSH commands to control another computer
 
-The **KeyCmd** app focuses on **Android** and **iOS** (including iPadOS). It also works with **KVM-GO** over USB or Bluetooth. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
+The **KeyCmd** app runs on **Android** and **iPhone** (iOS 17.0+); iPad support is on the way. It also works with **KVM-GO** over USB or Bluetooth. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
 
 
 ### **True Hardware HID**
@@ -76,6 +76,6 @@ KeyMod is open hardware and open software. We will publish schematics, PCB files
 - Custom input profiles (Basic and Pro tiers)
 - Macros and hotkeys
 - Shortcut Hub with app-specific profiles
-- Gamepad with preset-based layouts (schema v7)
+- Gamepad with preset-based layouts (schema v10)
 - Presentation controls with slide timer
 - Voice-to-keyboard with AI

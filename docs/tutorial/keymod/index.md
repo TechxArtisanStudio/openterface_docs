@@ -8,7 +8,7 @@ keywords: "KeyMod tutorial, how to use KeyMod, phone keyboard guide, KeyCmd tuto
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-This tutorial covers the **Android** version of **KeyCmd** with KeyMod hardware. The iOS version is under development.
+This tutorial covers the **Android** version of **KeyCmd** with KeyMod hardware. **KeyCmd 1.0 for iPhone** (iOS 17.0+) is live on the App Store; iPad support is on the way.
 
 ## What is KeyMod?
 
@@ -56,4 +56,4 @@ The KeyCmd app communicates with the KeyMod hardware using the **CH9329 protocol
 
 - **Bug reports:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Source code:** *(coming soon)*
+- **Source code:** [KeyCmd for Android](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android) · [KeyCmd for iOS](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS)

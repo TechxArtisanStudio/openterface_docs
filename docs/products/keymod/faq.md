@@ -32,7 +32,7 @@ KeyMod is a pocket **Wireless USB Multi-tool** bridge: a compact dongle that plu
 
 **:material-chat-question:{ .faq } What platforms does the KeyCmd app support?**
 
-The KeyCmd controller app focuses on **Android** and **iPadOS**. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
+The KeyCmd controller app runs on **Android** and **iPhone** (iOS 17.0+); iPad support is on the way. We are also expanding desktop control with **Windows and macOS** software in our broader Openterface ecosystem.
 
 **:material-chat-question:{ .faq } Does the target device need any software?**
 
@@ -106,9 +106,9 @@ Not with current KeyMod hardware. KeyCmd maps sticks and buttons to **keyboard a
 
 A few things to check:
 
-1. **Install the correct app.** Search for **KeyMod** on Google Play or the App Store. The "Openterface" app is a different product (KVM control) and will not discover KeyMod.
+1. **Install the correct app.** Search for **KeyCmd** on Google Play or the App Store. The "Openterface" app is a different product (KVM control) and will not discover KeyMod.
 2. **Do not pair through your phone's Bluetooth settings.** KeyMod does not require system-level pairing or a PIN code. Pairing through the phone's Bluetooth menu will not work and may show a PIN prompt that cannot be completed.
-3. **Connect through the app.** Make sure Bluetooth is enabled on your phone, then open the KeyMod app. Tap the signal icon in the top-right corner, select Bluetooth connection, and scan for nearby devices. The app should discover your KeyMod and connect directly.
+3. **Connect through the app.** Make sure Bluetooth is enabled on your phone, then open the KeyCmd app. Tap the signal icon in the top-right corner, select Bluetooth connection, and scan for nearby devices. The app should discover your KeyMod and connect directly.
 
 If the app still doesn't find your KeyMod after these steps, try restarting Bluetooth on your phone and scanning again. If the issue persists, contact [support@openterface.com](mailto:support@openterface.com) with your phone model and Android/iOS version.
 

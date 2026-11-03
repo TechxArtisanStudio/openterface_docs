@@ -20,20 +20,20 @@ The gamepad provides a full controller layout with D-pad, action buttons, should
 | Analog sticks | Touch and drag the stick circles |
 | Start / Select | Tap the buttons |
 
-## Preset System (v7)
+## Preset System (v10)
 
-KeyMod 0.15 introduced a **preset-based gamepad system**. Instead of fixed built-in layouts, gamepad configurations are now saved as **presets** that you can cycle through, import, and export.
+KeyMod 0.9 introduced a **preset-based gamepad system**. Instead of fixed built-in layouts, gamepad configurations are now saved as **presets** that you can cycle through, import, and export.
 
 ### Managing presets
 
-- **Tap the Preset chip** in the toolbar to cycle through available layouts
-- **Long-press the Preset chip** for the full preset list with import, add module, and export options
+- **Tap the Preset chip** (it shows the current layout name) to open the **Layouts** list — choose a layout, start a new one from the current layout, import, reorder, or use the per-layout options menu
+- The separate **Next layout** toolbar button cycles to the next preset
 - The bundled **emu-6** layout ships as the starter preset (`preset_default`)
-- Presets are shareable JSON files using layout **schema v7**
+- Presets are shareable JSON files using layout **schema v10**; layouts saved by older app versions are upgraded automatically when they load
 
 ### Adding modules
 
-From the preset menu, you can add new modules to any layout:
+Turn on **Edit** and tap **Add module** in the toolbar to add new modules to the current layout:
 
 - **D-Pad / Stick** — adds a left-thumb module (`stick_left`, `stick_left_2`, etc.)
 - **Touchpad** — adds a touchpad (`touchpad_1`, `touchpad_2`, etc.) with bundled L/M/R mouse buttons
