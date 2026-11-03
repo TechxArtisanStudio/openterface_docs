@@ -15,14 +15,12 @@ If you don't find what you need, **email us at [info@openterface.com](mailto:inf
 
 ## :material-clipboard-list: Quick Navigation
 
-- [FAQs for Openterface KeyMod Series](#faqs-for-openterface-keymod-series)
-  - [:material-clipboard-list: Quick Navigation](#material-clipboard-list-quick-navigation)
-  - [General](#general)
-  - [Hardware — Mini vs Plus](#hardware--mini-vs-plus)
-  - [Connectivity](#connectivity)
-  - [Features](#features)
-  - [Troubleshooting](#troubleshooting)
-  - [Pre-Launch](#pre-launch)
+- [General](#general)
+- [Hardware — Mini vs Plus](#hardware-mini-vs-plus)
+- [Connectivity](#connectivity)
+- [Features](#features)
+- [Troubleshooting](#troubleshooting)
+- [Pre-Launch](#pre-launch)
 
 ---
 

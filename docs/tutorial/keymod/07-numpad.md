@@ -24,5 +24,5 @@ Some shortcut profiles (Blender, Fusion 360, KiCad) include **custom numpad grid
 
 ## Next Steps
 
-- **[← Gamepad](06-gamepad.md)** — Virtual game controller
-- **[Presentation →](08-presentation.md)** — Slide remote control
+- **[← Gamepad](/tutorial/keymod/06-gamepad/)** — Virtual game controller
+- **[Presentation →](/tutorial/keymod/08-presentation/)** — Slide remote control

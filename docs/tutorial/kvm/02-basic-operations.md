@@ -339,5 +339,5 @@ Use the standard full screen button to fill the display with the video area, hid
 
 ## Next Steps
 
-- **[Advanced Features →](03-advanced-features.md)** — EDID, firmware, macros, scripts, diagnostics
-- **[Troubleshooting →](04-troubleshooting.md)** — Common problems and solutions
+- **[Advanced Features →](/tutorial/kvm/03-advanced-features/)** — EDID, firmware, macros, scripts, diagnostics
+- **[Troubleshooting →](/tutorial/kvm/04-troubleshooting/)** — Common problems and solutions

@@ -55,10 +55,10 @@ This is what sets KVM devices apart from remote desktop software: you can contro
 | Platform | Application | Download |
 |----------|------------|----------|
 | **Windows** | Openterface QT | [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) (installer or portable exe) |
-| **macOS** | Openterface for macOS | [App Store](/appstore) or [DMG](app/mmacos/dmg-installation.md) |
+| **macOS** | Openterface for macOS | [App Store](/appstore) or [DMG](/app/macos/dmg-installation/) |
 | **Linux** | Openterface QT | [Flatpak](https://flathub.org/apps/com.openterface.openterfaceQT), [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_QT/releases) (.deb, .rpm, .pkg.tar.zst, AppImage) |
 | **Android** | Openterface for Android | [Google Play](https://play.google.com/store/apps/details?id=com.openterface.AOS) or [GitHub Releases](https://github.com/TechxArtisanStudio/Openterface_Android/releases) |
-| **iPadOS** | Openterface for iPadOS | [App Store](/app/ipados/) — **KVM-Go only** |
+| **iPadOS** | Openterface for iPadOS | [App Store](https://apps.apple.com/us/app/openterface-kvm-ipad/id6763533664) — **KVM-Go only** |
 
 ### Windows
 
@@ -81,8 +81,8 @@ On first launch, macOS will request:
   - **Debian/Ubuntu/Fedora/RHEL:** `sudo usermod -a -G dialout,video $USER`
   - **Arch Linux:** `sudo usermod -a -G uucp,video $USER` (Arch uses `uucp` instead of `dialout` for serial devices)
 - Install udev rules for device access (bundled in `.deb`, `.rpm`, `.pkg.tar.zst` packages). Modern systems with systemd use `uaccess` tags to automatically grant device permissions to the logged-in user
-- **BrlTTY conflict:** Remove `brltty` or blacklist the serial chip — see [Troubleshooting](04-troubleshooting.md#brltty-conflict-linux)
-- **Arch Linux users:** See the [Arch Linux Installation Guide](../../app/qt/archlinux-installation.md) for full setup instructions
+- **BrlTTY conflict:** Remove `brltty` or blacklist the serial chip — see [Troubleshooting](/tutorial/kvm/04-troubleshooting/#brltty-conflict-linux)
+- **Arch Linux users:** See the [Arch Linux Installation Guide](/app/qt/archlinux-installation/) for full setup instructions
 
 ### Android Requirements
 
@@ -243,7 +243,7 @@ If you accidentally denied a permission, go to **Settings > Privacy & Security**
 - **Mouse indicator:** green = connected, orange = not found, gray = unknown
 - **Serial port:** should show a port name and baud rate (9600 or 115200)
 
-If indicators show orange or gray, see [Troubleshooting](04-troubleshooting.md).
+If indicators show orange or gray, see [Troubleshooting](/tutorial/kvm/04-troubleshooting/).
 
 ---
 
@@ -275,6 +275,6 @@ Toggle the USB switchable port between:
 
 ## 7. Next Steps
 
-- **[Basic Operations →](02-basic-operations.md)** — Mouse, keyboard, video, audio, recording
-- **[Advanced Features →](03-advanced-features.md)** — EDID, firmware, macros, scripts
-- **[Troubleshooting →](04-troubleshooting.md)** — Common problems and solutions
+- **[Basic Operations →](/tutorial/kvm/02-basic-operations/)** — Mouse, keyboard, video, audio, recording
+- **[Advanced Features →](/tutorial/kvm/03-advanced-features/)** — EDID, firmware, macros, scripts
+- **[Troubleshooting →](/tutorial/kvm/04-troubleshooting/)** — Common problems and solutions

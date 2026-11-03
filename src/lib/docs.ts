@@ -91,8 +91,26 @@ function slugToHref(slug: string, locale: SiteLocale): string {
   return localizedPath(locale, ...slug.split('/'));
 }
 
+/** Heading text reaches us HTML-escaped, so `&` arrives as `&amp;`; decoding first
+ *  keeps ids readable (`Installation & hardware` → `installation-hardware`, not `installation-amp-hardware`). */
+const HEADING_ENTITIES: Record<string, string> = {
+  amp: '&',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  apos: "'",
+  nbsp: ' ',
+  mdash: ' ',
+  ndash: ' ',
+  hellip: '',
+  reg: '',
+  trade: '',
+  copy: '',
+};
+
 function slugify(text: string): string {
   return text
+    .replace(/&([a-z]+|#\d+);/gi, (match, entity: string) => HEADING_ENTITIES[entity.toLowerCase()] ?? '')
     .toLowerCase()
     .replace(/[^\w\s-]/g, '')
     .trim()
@@ -201,9 +219,12 @@ function transformFaqHeadings(md: string): string {
     /^(#{1,6})\s+:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\s*$/gim,
     (_m, hashes: string, title: string) => `<${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'} class="doc-faq-question">${title.trim()}</${hashes.length === 1 ? 'h1' : hashes.length === 2 ? 'h2' : hashes.length === 3 ? 'h3' : hashes.length === 4 ? 'h4' : hashes.length === 5 ? 'h5' : 'h6'}>\n`,
   );
+  // Inline (bold) FAQ questions still need an id, otherwise deep links from
+  // other pages (e.g. the aggregated FAQ index) land on nothing.
   out = out.replace(
     /\*\*:material-chat-question:\{\s*\.faq\s*\}\s*(.+?)\*\*/g,
-    '<p class="doc-faq-question doc-faq-question--inline"><strong>$1</strong></p>',
+    (_m, title: string) =>
+      `<p class="doc-faq-question doc-faq-question--inline" id="${slugify(title.trim())}"><strong>${title.trim()}</strong></p>`,
   );
   return out.replace(
     /^(#{1,6})\s+(.+?)\s*\{:\s*#([a-z0-9-]+)\s*\}\s*$/gim,
@@ -555,7 +576,7 @@ export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageS
 
 function extractHeadings(html: string): DocHeading[] {
   const headings: DocHeading[] = [];
-  const re = /<h([2-3])[^>]*>(.*?)<\/h\1>/gi;
+  const re = /<h([2-3])[^>]*>([\s\S]*?)<\/h\1>/gi;
   let match: RegExpExecArray | null;
   while ((match = re.exec(html)) !== null) {
     const depth = Number(match[1]);
@@ -568,14 +589,17 @@ function extractHeadings(html: string): DocHeading[] {
   return headings;
 }
 
-function injectHeadingIds(html: string, headings: DocHeading[]): string {
-  let i = 0;
-  return html.replace(/<h([2-3])([^>]*)>/gi, (match, depth, attrs) => {
-    if (/\bid=/.test(attrs)) return match;
-    const heading = headings[i++];
-    if (!heading) return match;
-    return `<h${depth}${attrs} id="${heading.id}">`;
-  });
+/** Each id comes from its own heading text, so pre-existing ids never shift the anchor of a neighbour. */
+function injectHeadingIds(html: string): string {
+  return html.replace(
+    /<h([2-3])([^>]*)>([\s\S]*?)<\/h\1>/gi,
+    (match, depth: string, attrs: string, inner: string) => {
+      if (/\bid=/.test(attrs)) return match;
+      const text = inner.replace(/<[^>]+>/g, '').trim();
+      if (!text) return match;
+      return `<h${depth}${attrs} id="${slugify(text)}">${inner}</h${depth}>`;
+    },
+  );
 }
 
 export function renderMarkdown(
@@ -599,7 +623,7 @@ export function renderMarkdown(
   html = html.replace(/(<img class="doc-(?:diagram|inline-icon)[^>]*>)\s*<\/p>/g, '$1');
   html = transformMediaCoverage(html);
   const headings = extractHeadings(html);
-  return { html: injectHeadingIds(html, headings), headings };
+  return { html: injectHeadingIds(html), headings };
 }
 
 export function collectDocPages(): DocPage[] {

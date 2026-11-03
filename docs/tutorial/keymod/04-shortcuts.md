@@ -48,5 +48,5 @@ Each profile also has a **My Shortcuts** section for personal shortcuts.
 
 ## Next Steps
 
-- **[← Target-Specific Keyboard](03-target-keyboard.md)** — Keyboard layouts and target OS mapping
-- **[Macros →](05-macros.md)** — Automated key sequences
+- **[← Target-Specific Keyboard](/tutorial/keymod/03-target-keyboard/)** — Keyboard layouts and target OS mapping
+- **[Macros →](/tutorial/keymod/05-macros/)** — Automated key sequences

@@ -15,11 +15,11 @@ Welcome to the FAQ for **KeyCmd** — the phone-as-keyboard app for KeyMod, Mini
 ## :material-clipboard-list: Quick Navigation
 
 - [General](#general)
-- [Keyboard & HID](#keyboard--hid)
+- [Keyboard & HID](#keyboard-hid)
 - [macOS host behavior](#macos-host-behavior)
-- [Modifiers & key hold](#modifiers--key-hold)
+- [Modifiers & key hold](#modifiers-key-hold)
 - [Gamepad mode](#gamepad-mode)
-- [Bluetooth & connectivity](#bluetooth--connectivity)
+- [Bluetooth & connectivity](#bluetooth-connectivity)
 - [Gamepad preset glossary](#gamepad-preset-glossary)
 
 ---

@@ -92,4 +92,4 @@ Once the firmware is deprotected and selected:
 
 ## Further Reading
 
-- [Openterface KVM-Go Review Guide](review-guide.md) — Important notes and known issues for engineering prototype units
+- [Openterface KVM-Go Review Guide](/products/kvmgo/notes/review-guide/) — Important notes and known issues for engineering prototype units

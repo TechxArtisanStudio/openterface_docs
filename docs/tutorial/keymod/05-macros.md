@@ -46,5 +46,5 @@ This opens a terminal (Ctrl+Alt+T), waits 1 second, then types `ls -la` and pres
 
 ## Next Steps
 
-- **[← Shortcut Hub](04-shortcuts.md)** — Profile-based keyboard shortcuts
-- **[Gamepad →](06-gamepad.md)** — Virtual game controller
+- **[← Shortcut Hub](/tutorial/keymod/04-shortcuts/)** — Profile-based keyboard shortcuts
+- **[Gamepad →](/tutorial/keymod/06-gamepad/)** — Virtual game controller

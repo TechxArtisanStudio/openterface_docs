@@ -39,11 +39,11 @@ The **Openterface KVM Extension** replaces the original 4G/LTE modem in your uCo
 
     Discover the powerful features of the KVM Extension
 
-    [:octicons-arrow-right-24: What's in the Box](/products/kvmext/whats-in-the-box/)
+    [:octicons-arrow-right-24: What's in the Box](/products/kvmext/v1/whats-in-the-box/)
 
-    [:octicons-arrow-right-24: View Features](/products/kvmext/features)
+    [:octicons-arrow-right-24: View Features](/products/kvmext/v1/features/)
 
-    [:octicons-arrow-right-24: Hardware Installation](/products/kvmext/hardware-installation)
+    [:octicons-arrow-right-24: Hardware Installation](/products/kvmext/v1/hardware-installation/)
 
 
 -   :material-power-plug:{ .lg } __How to Use__
@@ -54,9 +54,9 @@ The **Openterface KVM Extension** replaces the original 4G/LTE modem in your uCo
 
     [:octicons-arrow-right-24: Download & Install Host App](/app)
 
-    [:octicons-arrow-right-24: Software Setup](/products/kvmext/software-setup)
+    [:octicons-arrow-right-24: Software Setup](/products/kvmext/v1/software-setup/)
 
-    [:octicons-arrow-right-24: View FAQs](/products/kvmext/faq)
+    [:octicons-arrow-right-24: View FAQs](/products/kvmext/v1/faq/)
 
 </div>
 

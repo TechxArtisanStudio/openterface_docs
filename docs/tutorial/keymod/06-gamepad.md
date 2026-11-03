@@ -86,5 +86,5 @@ Each on-screen control is a **module** with three layers:
 
 ## Next Steps
 
-- **[← Macros](05-macros.md)** — Automated key sequences
-- **[Numpad →](07-numpad.md)** — Numeric keypad for data entry
+- **[← Macros](/tutorial/keymod/05-macros/)** — Automated key sequences
+- **[Numpad →](/tutorial/keymod/07-numpad/)** — Numeric keypad for data entry

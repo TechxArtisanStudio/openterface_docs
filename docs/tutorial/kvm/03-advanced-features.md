@@ -276,7 +276,7 @@ Logging can be adjusted in the app source to reduce console noise.
 
 ## Next Steps
 
-- **[Troubleshooting →](04-troubleshooting.md)** — Common problems and solutions
+- **[Troubleshooting →](/tutorial/kvm/04-troubleshooting/)** — Common problems and solutions
 
 ---
 

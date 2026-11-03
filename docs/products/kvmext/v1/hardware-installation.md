@@ -14,7 +14,7 @@ keywords: "KVM extension installation, uConsole hardware setup, expansion board 
 The KVM Extension replaces the 4G/LTE module in the uConsole’s expansion slot, adding direct HDMI input and USB HID control.
 
 ## What You’ll Need
-- Check your [Package Contents](whats-in-the-box.md) before installation  
+- Check your [Package Contents](/products/kvmext/v1/whats-in-the-box/) before installation  
 - Openterface KVM Extension board  
 - Provided **washers** (to ensure stable mounting and even pressure)  
 - Hex screwdriver (for mounting screws)  
@@ -59,6 +59,6 @@ Reinstall the expansion slot cover to protect the KVM Extension board and mainta
 
 **Next Steps**
 
-1. Go to [Software Setup](/products/kvmext/software-setup/) to install the Openterface App.  
-2. Go to [Connect to Target Device](/products/kvmext/connect-to-target/) to connect your target device.  
-3. Review [Features & Specifications](/products/kvmext/features/) for detailed technical specs.
+1. Go to [Software Setup](/products/kvmext/v1/software-setup/) to install the Openterface App.  
+2. Go to [Connect to Target Device](/products/kvmext/v1/connect-to-target/) to connect your target device.  
+3. Review [Features & Specifications](/products/kvmext/v1/features/) for detailed technical specs.

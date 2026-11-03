@@ -33,9 +33,9 @@ Set the target OS to match the target computer's key conventions. This affects s
 
 Change the target OS by tapping the **OS icon** in the header bar.
 
-See [Target-Specific Keyboard](03-target-keyboard.md) for keyboard layout and Unicode input details.
+See [Target-Specific Keyboard](/tutorial/keymod/03-target-keyboard/) for keyboard layout and Unicode input details.
 
 ## Next Steps
 
-- **[← Agent](11-agent.md)** — AI-driven task automation
-- **[Troubleshooting →](13-troubleshooting.md)** — Common problems and solutions
+- **[← Agent](/tutorial/keymod/11-agent/)** — AI-driven task automation
+- **[Troubleshooting →](/tutorial/keymod/13-troubleshooting/)** — Common problems and solutions

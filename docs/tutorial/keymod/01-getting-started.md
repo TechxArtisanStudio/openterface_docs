@@ -90,4 +90,4 @@ That's it! You're now controlling your target computer remotely.
 
 ## Next Steps
 
-- **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Typing, modifiers, touchpad, and text input
+- **[Keyboard & Mouse →](/tutorial/keymod/02-keyboard-mouse/)** — Typing, modifiers, touchpad, and text input

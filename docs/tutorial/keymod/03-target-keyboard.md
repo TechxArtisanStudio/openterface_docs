@@ -10,14 +10,9 @@ KeyMod sends keystrokes that adapt to the target computer's operating system. Co
 
 ## How to Set
 
-Tap the **OS icon** in the header bar to open the picker:
+Tap the **OS icon** in the header bar to open the picker.
 
-<div align="center">
-  <img src="images/demo-target-os-picker.png" alt="Target OS picker dialog" width="300" />
-  <p><em>Target OS picker — choose macOS, Windows, or Linux.</em></p>
-</div>
-
-> **Note:** There is no screenshot for this yet. The OS picker is a dialog with three icon buttons (macOS, Windows, Linux) that appears when you tap the OS icon in the header bar.
+> **Note:** The OS picker is a dialog with three icon buttons (macOS, Windows, Linux) that appears when you tap the OS icon in the header bar.
 
 ## What It Changes
 
@@ -58,5 +53,5 @@ These are input method toggles within the app, not physical keyboard layouts. Ke
 
 ## Next Steps
 
-- **[← Keyboard & Mouse](02-keyboard-mouse.md)** — Typing, modifiers, touchpad, and text input
-- **[Shortcut Hub →](04-shortcuts.md)** — Profile-based keyboard shortcuts
+- **[← Keyboard & Mouse](/tutorial/keymod/02-keyboard-mouse/)** — Typing, modifiers, touchpad, and text input
+- **[Shortcut Hub →](/tutorial/keymod/04-shortcuts/)** — Profile-based keyboard shortcuts

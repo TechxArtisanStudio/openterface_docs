@@ -14,11 +14,11 @@ If you don't find what you need, email [support@openterface.com](mailto:support@
 
 ## :material-clipboard-list: Quick Navigation
 
-- [Product & purchase](#product--purchase)
-- [Installation & hardware](#installation--hardware)
+- [Product & purchase](#product-purchase)
+- [Installation & hardware](#installation-hardware)
 - [Compatibility](#compatibility)
-- [Control & features](#control--features)
-- [Video & audio](#video--audio)
+- [Control & features](#control-features)
+- [Video & audio](#video-audio)
 - [Troubleshooting](#troubleshooting)
 - [More](#more)
 

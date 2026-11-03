@@ -53,5 +53,5 @@ Check the connection status. The "Send" button is disabled when not connected.
 
 ## Next Steps
 
-- **[← Presentation](08-presentation.md)** — Slide remote control
-- **[Terminal →](10-terminal.md)** — SSH connection and command line access
+- **[← Presentation](/tutorial/keymod/08-presentation/)** — Slide remote control
+- **[Terminal →](/tutorial/keymod/10-terminal/)** — SSH connection and command line access
