@@ -80,7 +80,7 @@ If you can see the target desktop but keyboard and mouse inputs are unresponsive
 
 1. **Check cable connections** — Ensure the Target Type-C cable is connected to the target computer; the Host cable to your control computer.
 2. **Avoid unpowered USB hubs** — Use direct connection or a powered hub.
-3. **Reset the HID chip** — If the device seems "frozen," use **Advanced Menu → Factory Reset HID Chip** (OpenterfaceQt) or **Serial Reset Tool** (macOS).
+3. **Reset the HID chip** — If the device seems "frozen," use **Advanced >> Factory Reset HID Chip** (Openterface QT), or the **Factory Reset** step of the diagnostics tool on macOS (Settings window >> **Advanced & Debug** >> **Device Diagnostics**).
 4. **Try another USB port or reboot** — The host OS may disable a port after USB errors.
 5. **Lower baud rate** — In noisy environments, switch to 9600 bps for more reliable communication.
 

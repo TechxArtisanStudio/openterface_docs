@@ -85,7 +85,7 @@ All keystrokes typed while the app window is focused are forwarded to the target
 
 ### Special Keys
 
-Send key combinations via the toolbar keys panel or **Control > Special Keys**:
+Send key combinations from the keys toolbar panel (toggle with **Ctrl+Shift+K**) or the Virtual Keyboard dialog:
 
 - **F1–F12:** Function keys
 - **Ctrl+Alt+Del:** Windows three-finger salute
@@ -205,9 +205,9 @@ Zoom in/out, reset to fit, and scroll to pan when zoomed in.
 |---------|----------|-------|
 | **FFmpeg** | All | Recommended, hardware acceleration |
 | **GStreamer** | Linux | Pipeline flexibility |
-| **Qt Multimedia** | Windows | Simple fallback |
+| **Media Foundation** | Windows | Listed in the selector, but the app forces FFmpeg |
 
-Switch via **Preferences > Video > Media Backend**. Restart after changing.
+Switch via **Preferences > Video > Media Backend**. Restart after changing. On Windows the setting has no effect — the app always uses FFmpeg (DirectShow) there, because Media Foundation is incompatible.
 
 ### Android Video Controls
 
@@ -266,9 +266,9 @@ The iPadOS app lets you listen to the target PC's audio through your iPad's spea
 
 ### Screenshot
 
-Click the camera icon on the toolbar. Images are saved to your OS's default media folder:
-- **Linux:** `~/Pictures`
-- **Windows:** `C:\Users\<name>\Pictures`
+Click the camera icon on the toolbar. Images are saved to an `openterface` subfolder of your OS's Pictures location:
+- **Linux:** `~/Pictures/openterface`
+- **Windows:** `%USERPROFILE%\Pictures\openterface`
 - **macOS:** Camera captures folder (via Camera menu)
 
 ### Recording
@@ -327,7 +327,7 @@ The USB switch toggle shows whether the switchable port is routed to **Host** or
 
 ## 7. Preventing Screen Saver
 
-Enable **Prevent Screen Saver** (via Edit/Device menu or toolbar) to send periodic events that keep the target display awake.
+On Qt, the toolbar **Mouse dance** button (toggle with **Ctrl+Shift+F10**) moves the mouse on the target to keep its display awake. To stop the screensaver on your **host** display, tick **Inhibit Screen Saver** in **File >> Preferences >> General**. **Prevent screen saver** is macOS-only — it is an item in the macOS app's Edit menu; the Qt app has no such menu entry.
 
 ---
 

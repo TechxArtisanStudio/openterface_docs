@@ -14,7 +14,7 @@ Welcome to the FAQ for our apps. If you don’t find the answer you need, **emai
 - [Where can I download the host applications?](#host-app-download)
 - [Why do features differ across different host apps?](#host-app-differences)
 - [Which host app currently offers the best experience?](#best-host-app)
-- [Is there a host app supporting ChromeOS?](#host-app-chromeos)
+- [Is there a web app I can use on Chrome or other platforms?](#host-app-chromeos)
 - [Is there a host app supporting Apple's mobile devices?](#host-app-ios)
 - [What if F11 doesn't work on macOS applications?](#f11-macos-issue)
 
@@ -45,7 +45,7 @@ Yes! One of our awesome community members, [Kashall](https://github.com/kashalls
 
 #### :material-chat-question:{ .faq } Is there a host app supporting Apple's mobile devices? {: #host-app-ios }
 
-We are currently exploring compatibility with Apple's mobile systems, such as iOS and iPadOS. Due to Apple's stringent controls, these platforms may not support wired connections with third-party devices. However, the situation could change, or there might be potential workarounds. If you have any insights or suggestions, we welcome you to join our community to discuss them with us. We are committed to enhancing the convenience of our device by supporting as many systems as possible. If you're keen to help out with our development, come hang out with us in the community or shoot us an email!
+Yes! **Openterface KVM iPad** is already on the [App Store](https://apps.apple.com/us/app/openterface-kvm-ipad/id6763533664) and works today with **KVM-Go only** — it needs iPadOS 17.2 or later. The iPad talks to the KVM-Go dongle over **Bluetooth Low Energy (BLE)** for keyboard and mouse input, while video comes in over the **USB** capture connection, so wired connections do work on iPadOS. Mini-KVM and the uConsole KVM Extension have no BLE support, so the iPad app won't work with them. If you have any insights or suggestions, we welcome you to join our community to discuss them with us. We are committed to enhancing the convenience of our device by supporting as many systems as possible. If you're keen to help out with our development, come hang out with us in the community or shoot us an email!
 
 #### :material-chat-question:{ .faq } What if F11 doesn't work on macOS applications? {: #f11-macos-issue }
 

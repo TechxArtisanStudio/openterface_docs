@@ -14,8 +14,8 @@ description: "KVM Tutorial 03 — Advanced Features: Audience: Intermediate to E
 ### Video
 
 - **Resolution & frame rate** — Preferred capture settings
-- **Media backend** — FFmpeg, GStreamer (Linux), or Qt Multimedia (Windows)
-- **Hardware acceleration** — VAAPI (Intel/AMD), V4L2-M2M (Raspberry Pi)
+- **Media backend** — FFmpeg or GStreamer (Linux); on Windows the selector lists FFmpeg (DirectShow) and Media Foundation, but the app forces FFmpeg
+- **Hardware acceleration** — Auto (Recommended), NVIDIA CUDA, Intel Quick Sync Video (QSV), or CPU — FFmpeg backend only, requires restart
 - **Aspect ratio & scaling** — Custom ratio, Stretch/Fit/Fill
 
 ### Audio
@@ -51,7 +51,7 @@ You can change the display name that the KVM device reports to the target. This 
 
 > **Note:** Only editing the display name is currently supported. Resolution editing and custom resolution entries are not yet available.
 
-**Access:** Settings > EDID Display Name Editor (macOS) or Device > Update Display Settings (Qt)
+**Access:** Settings > EDID Display Name Editor (macOS) or File >> Preferences >> EDID Configuration (Qt) — click **Read from Device**, edit the **Display Name**, tick **Update display name**, then click **Apply**; the app exits after applying.
 
 ### Use Cases
 
@@ -96,7 +96,7 @@ An AutoHotKey-inspired scripting language for automating keyboard and mouse acti
 
 ### Opening
 
-Menu: **Device > Script Tool**
+Menu: **Advanced >> Script Tool**
 
 ### Commands
 
@@ -124,22 +124,24 @@ Menu: **Device > Script Tool**
 
 ### Update Process
 
-1. Open Firmware Update Tool (**Settings > Firmware Update Tool** on macOS, **Device > Update Firmware** on Qt)
+1. Open the firmware tool — **Settings > Firmware Update Tool** (macOS), or **File >> Preferences >> Video Firmware** and click **Firmware Update from Remote** (Qt)
 2. The tool checks for the latest version from the network
 3. Progress is tracked during the write operation
 4. **Do not disconnect the device during update**
+
+The Qt **Video Firmware** page also offers **Backup Firmware to .bin File** and **Write Firmware from .bin File**. The CH32V208 control chip is updated from **File >> Preferences >> Control Chip Firmware**, which flashes it with the built-in WCH ISP tool (Windows and Linux).
 
 ### Recovery
 
 1. Keep the device powered
 2. Close and reopen the Firmware Update Tool, retry
-3. Use the Serial Reset Tool if the device is unresponsive
+3. If the device is unresponsive, reset the HID chip to factory defaults: **Advanced >> Factory Reset HID Chip** (Qt), or the **Factory Reset** step of the diagnostics tool on macOS (Settings window > **Advanced & Debug** > **Device Diagnostics** > **Open Diagnostics Tool**)
 
 ---
 
-## 6. Serial Reset Tool
+## 6. Factory Reset HID Chip
 
-**Access:** Settings > Serial Reset Tool (macOS) or Device > Factory Reset HID Chip (Qt)
+**Access:** Advanced >> Factory Reset HID Chip (Qt). On macOS there is no menu item — the factory reset runs as the **Factory Reset** step inside the diagnostics tool: open the Settings window, go to **Advanced & Debug** > **Device Diagnostics** > **Open Diagnostics Tool**.
 
 Use when:
 - Device is in an unknown state after failed firmware update
@@ -150,15 +152,17 @@ Use when:
 
 ## 7. Diagnostics (Qt)
 
-Menu: **Device > Device Diagnostics**
+Menu: **Advanced >> Hardware Diagnostics**
 
-Runs hardware tests sequentially:
-1. Serial connection test
-2. Target USB status
-3. Factory reset test
-4. High/low baudrate test
-5. Stress test (rapid commands, measure success rate)
-6. Plug & play test (USB disconnect/reconnect detection)
+Runs 8 hardware tests sequentially:
+1. Overall Connection
+2. Target Plug & Play
+3. Host Plug & Play
+4. Factory Reset
+5. Serial Connection
+6. High Baudrate
+7. Low Baudrate
+8. Stress Test
 
 After running, export results via the **Support Email Dialog**.
 
@@ -200,7 +204,7 @@ Built-in TCP server for remote control on port 12345.
 
 ### Commands
 
-`CHECK_STATUS`, `GET_LAST_IMAGE`, `GET_TARGET_SCREEN`, `SCRIPT_COMMAND`
+`checkstatus`, `lastimage`, `gettargetscreen` — lowercase and without underscores (the server lowercases each line before matching). Any other line is passed to the script engine and run as an AHK script.
 
 ### Python Example
 
@@ -208,7 +212,7 @@ Built-in TCP server for remote control on port 12345.
 import socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("localhost", 12345))
-sock.send(b"CHECK_STATUS\n")
+sock.send(b"checkstatus\n")
 print(sock.recv(4096).decode())
 sock.close()
 ```

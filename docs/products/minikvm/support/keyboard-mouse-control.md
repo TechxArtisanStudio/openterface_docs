@@ -63,11 +63,11 @@ Under certain conditions—such as rapid command bursts combined with marginal p
 **Solution:**  
 Perform a **factory reset of the HID chip**:
 
-- In **macOS**: Use the **Serial Reset Tool** available in the **Advanced Menu** of the macOS utility.  
+- In **macOS**: run the **Factory Reset** step of the diagnostics tool — open the Settings window, then **Advanced & Debug** >> **Device Diagnostics** >> **Open Diagnostics Tool**.
 
-    <img src="https://assets.openterface.com/images/software/MacOS_FactoryResetHID.webp" alt="Serial Reset Tool (macOS)" width="150" />
+    <img src="https://assets.openterface.com/images/software/MacOS_FactoryResetHID.webp" alt="Factory Reset step in the macOS diagnostics tool" width="150" />
 
-- In **OpenterfaceQt** (desktop app): Go to **Advanced Menu → Factory Reset HID Chip**.
+- In **Openterface QT** (desktop app): Go to **Advanced >> Factory Reset HID Chip**.
 
     <img src="https://assets.openterface.com/images/software/OpenterfaceQT_FactoryResetHID.webp" alt="Factory Reset HID Chip (OpenterfaceQt)" width="150" />
 
