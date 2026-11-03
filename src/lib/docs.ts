@@ -574,32 +574,41 @@ export function preprocessMkdocsMarkdown(raw: string, locale?: SiteLocale, pageS
   return parseGridCards(md);
 }
 
-function extractHeadings(html: string): DocHeading[] {
-  const headings: DocHeading[] = [];
-  const re = /<h([2-3])[^>]*>([\s\S]*?)<\/h\1>/gi;
-  let match: RegExpExecArray | null;
-  while ((match = re.exec(html)) !== null) {
-    const depth = Number(match[1]);
-    const text = match[2].replace(/<[^>]+>/g, '').trim();
-    if (!text) continue;
-    const idMatch = match[0].match(/\bid="([^"]+)"/);
-    const id = idMatch?.[1] ?? slugify(text);
-    headings.push({ depth, text, id });
+/** Collects the TOC entries and adds the missing heading ids in one pass, so an entry's
+ *  id always matches the tag it came from. Each id is derived from its own heading text and
+ *  suffixed when repeated, otherwise several "Steps" sections would share one anchor. */
+function annotateHeadings(html: string): { html: string; headings: DocHeading[] } {
+  const HEADING_RE = /<h([2-3])([^>]*)>([\s\S]*?)<\/h\1>/gi;
+  const used = new Map<string, number>();
+  // FAQ questions render as h4, so reserve ids from every heading level, not just the TOC levels.
+  for (const m of html.matchAll(/<h[1-6][^>]*\bid="([^"]+)"/gi)) {
+    used.set(m[1], 1);
   }
-  return headings;
-}
 
-/** Each id comes from its own heading text, so pre-existing ids never shift the anchor of a neighbour. */
-function injectHeadingIds(html: string): string {
-  return html.replace(
-    /<h([2-3])([^>]*)>([\s\S]*?)<\/h\1>/gi,
-    (match, depth: string, attrs: string, inner: string) => {
-      if (/\bid=/.test(attrs)) return match;
-      const text = inner.replace(/<[^>]+>/g, '').trim();
-      if (!text) return match;
-      return `<h${depth}${attrs} id="${slugify(text)}">${inner}</h${depth}>`;
-    },
-  );
+  const parts: string[] = [];
+  const headings: DocHeading[] = [];
+  let cursor = 0;
+  let match: RegExpExecArray | null;
+  while ((match = HEADING_RE.exec(html)) !== null) {
+    const [, depth, attrs, inner] = match;
+    const text = inner.replace(/<[^>]+>/g, '').trim();
+    if (!text) continue;
+    const explicit = /\bid="([^"]+)"/.exec(attrs)?.[1];
+    let id = explicit ?? slugify(text);
+    if (!explicit) {
+      const seen = used.get(id);
+      if (seen === undefined) used.set(id, 1);
+      else {
+        used.set(id, seen + 1);
+        id = `${id}-${seen + 1}`;
+      }
+    }
+    headings.push({ depth: Number(depth), text, id });
+    parts.push(html.slice(cursor, match.index), explicit ? match[0] : `<h${depth}${attrs} id="${id}">${inner}</h${depth}>`);
+    cursor = match.index + match[0].length;
+  }
+  parts.push(html.slice(cursor));
+  return { html: parts.join(''), headings };
 }
 
 export function renderMarkdown(
@@ -622,8 +631,7 @@ export function renderMarkdown(
   html = html.replace(/<p>\s*(<img class="doc-(?:diagram|inline-icon)[^>]*>)/g, '$1');
   html = html.replace(/(<img class="doc-(?:diagram|inline-icon)[^>]*>)\s*<\/p>/g, '$1');
   html = transformMediaCoverage(html);
-  const headings = extractHeadings(html);
-  return { html: injectHeadingIds(html), headings };
+  return annotateHeadings(html);
 }
 
 export function collectDocPages(): DocPage[] {
