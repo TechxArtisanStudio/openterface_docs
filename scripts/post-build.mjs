@@ -70,6 +70,7 @@ const SHORTCUT_REDIRECTS = [
   ['/compliance/', '/about/compliance/', false],
   ['/contributing/', '/about/contribute-support/', false],
   ['/event/', 'https://news.openterface.com/events/', true],
+  ['/app/updates/', 'https://news.openterface.com/software/', true],
   ['/products/kvmgo/updates/', 'https://news.openterface.com/product/kvm-go/', true],
   ['/products/minikvm/updates/', 'https://news.openterface.com/product/minikvm/', true],
   ['/products/keymod/updates/', 'https://news.openterface.com/product/keymod/', true],
@@ -154,6 +155,15 @@ function writeRefactorRedirects() {
     ['/app/', '/app/kvm/'],
     ['/app/overview/', '/app/kvm/'],
     ['/app/faq/', '/app/kvm/faq/'],
+    // KeyMod tutorial pages were renumbered; the old slugs are still linked from the
+    // marketing sites and from apex 301 rules.
+    ['/tutorial/keymod/06-voice-input/', '/tutorial/keymod/09-voice-input/'],
+    ['/tutorial/keymod/07-ai/', '/tutorial/keymod/09-voice-input/'],
+    ['/tutorial/keymod/08-gamepad/', '/tutorial/keymod/06-gamepad/'],
+    ['/tutorial/keymod/09-numpad/', '/tutorial/keymod/07-numpad/'],
+    ['/tutorial/keymod/10-presentation/', '/tutorial/keymod/08-presentation/'],
+    ['/tutorial/keymod/11-settings/', '/tutorial/keymod/12-settings/'],
+    ['/tutorial/keymod/12-troubleshooting/', '/tutorial/keymod/13-troubleshooting/'],
   ]) {
     for (const prefix of LOCALE_PREFIXES) {
       const fromPath = `/${prefix}${from.replace(/^\//, '')}`.replace(/\/+/g, '/');
@@ -217,7 +227,7 @@ for (const name of readdirSync(DIST)) {
 console.log(`post-build: ${redirectCount} /en/* redirect stubs → unprefixed EN`);
 
 const refactorCount = writeRefactorRedirects();
-console.log(`post-build: ${refactorCount} /product/* and /app/overview|faq/ redirect stubs`);
+console.log(`post-build: ${refactorCount} legacy-path redirect stubs`);
 
 const shortcutCount = writeShortcutRedirects();
 console.log(`post-build: ${shortcutCount} legacy shortcut redirect stubs`);
