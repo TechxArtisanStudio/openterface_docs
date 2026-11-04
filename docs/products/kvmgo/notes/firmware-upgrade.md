@@ -1,23 +1,32 @@
 ---
 title: "KVM-Go Firmware Upgrade"
-description: "KVM-Go Firmware Upgrade: KVM-Go uses the CH32V208 chip from WCH for keyboard and mouse emulation. Currently, firmware flashing requires WCH's official…"
+description: "KVM-Go Firmware Upgrade: KVM-Go uses the CH32V208 chip from WCH for keyboard and mouse emulation. Flash it from the built-in WCH ISP tool in the Openterface app on Windows and Linux, or with WCH's official tool on Windows when working from macOS."
 ---
 
 # KVM-Go Firmware Upgrade
 
 ## Overview
 
-KVM-Go uses the CH32V208 chip from WCH for keyboard and mouse emulation. Currently, firmware flashing requires WCH's official programming tool, which is only available for Windows. Therefore, firmware updates must be performed on a Windows system at this time.
+KVM-Go uses the CH32V208 chip from WCH for keyboard and mouse emulation. The Openterface desktop app ships a built-in **WCH ISP Flash Tool**, so no external programmer or third-party tool is needed on **Windows and Linux**: open **Preferences >> Control Chip Firmware**, scan for the device, and flash.
 
-We're actively working on a cross-platform, self-developed firmware upgrade solution that will be integrated directly into the device. Once ready, it will support firmware updates across all major operating systems—without requiring third-party tools.
+On **macOS** the in-app flasher is not available, so use WCH's official ISP tool, which runs on Windows only — do this step from a Windows machine or a VM.
 
-> **Note:** This manual firmware upgrade procedure is a temporary solution for early development units. For official production products, firmware updates will be seamlessly integrated into our software, allowing you to update firmware directly through the application without requiring any third-party tools or manual procedures.
+The manual procedure below describes that WCHISPTool path.
+
+??? info "In-app flashing (Windows and Linux)"
+    1. Install the Openterface desktop app (see [Qt installation](/app/qt/)).
+    2. Connect the KVM-Go to the host with a USB cable.
+    3. Open **File >> Preferences >> Control Chip Firmware**.
+    4. Click **Scan Devices**, select the CH32V208 entry, then **Connect**.
+    5. Choose the firmware file and start the flash. On Linux, make sure the udev rules are installed first.
+
+> **Note:** Production units are normally updated from inside the app. Use the manual WCHISPTool path below on macOS, or to recover a chip that no longer enumerates over USB.
 
 ## Prerequisites
 
 Before proceeding, ensure you have:
 
-- A Windows computer
+- A Windows computer (for the WCHISPTool path described below)
 - The WCH ISP Tool installed
 - The firmware file (`.hex` format) ready for flashing
 
@@ -92,4 +101,4 @@ Once the firmware is deprotected and selected:
 
 ## Further Reading
 
-- [Openterface KVM-Go Review Guide](review-guide.md) — Important notes and known issues for engineering prototype units
+- [Openterface KVM-Go Review Guide](/products/kvmgo/notes/review-guide/) — Important notes and known issues for engineering prototype units

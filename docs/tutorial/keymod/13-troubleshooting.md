@@ -79,6 +79,8 @@ Install Google Voice Typing from Play Store. On Android 11+, KeyCmd needs the qu
 
 ### Silence Detection Not Working
 
+Automatic silence detection and the **Auto-Pause** on Silence toggle are **iOS** features. The Android app has neither — on Android, recording stops when you tap **Stop recording**. On iOS:
+
 | Symptom | Solution |
 |---|---|
 | **Recording continues when not speaking** | Check the Auto-Pause on Silence toggle. Reduce background noise. Speak clearly and close to the microphone. |

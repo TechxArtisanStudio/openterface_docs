@@ -29,7 +29,7 @@ Convert your speech into keystrokes sent to the target computer — hands-free t
 
 ## Silence Detection & Auto-Pause
 
-Both engines feature automatic silence detection that pauses recording when you stop speaking (2.0 second silence timeout by default). Toggle Auto-Pause on/off in the Voice Input view.
+**iOS only:** the iOS app detects silence automatically and pauses recording when you stop speaking (2.0 second silence timeout by default), and the Voice Input view has an **Auto-Pause** toggle for it. The Android app has neither silence detection nor an Auto-Pause toggle — on Android you end recording yourself with the **Stop recording** button.
 
 ### Troubleshooting Silence Detection
 
@@ -53,5 +53,5 @@ Check the connection status. The "Send" button is disabled when not connected.
 
 ## Next Steps
 
-- **[← Presentation](08-presentation.md)** — Slide remote control
-- **[Terminal →](10-terminal.md)** — SSH connection and command line access
+- **[← Presentation](/tutorial/keymod/08-presentation/)** — Slide remote control
+- **[Terminal →](/tutorial/keymod/10-terminal/)** — SSH connection and command line access

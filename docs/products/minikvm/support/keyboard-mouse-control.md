@@ -63,11 +63,11 @@ Under certain conditions—such as rapid command bursts combined with marginal p
 **Solution:**  
 Perform a **factory reset of the HID chip**:
 
-- In **macOS**: Use the **Serial Reset Tool** available in the **Advanced Menu** of the macOS utility.  
+- In **macOS**: run the **Factory Reset** step of the diagnostics tool — open the Settings window, then **Advanced & Debug** >> **Device Diagnostics** >> **Open Diagnostics Tool**.
 
-    <img src="https://assets.openterface.com/images/software/MacOS_FactoryResetHID.webp" alt="Serial Reset Tool (macOS)" width="150" />
+    <img src="https://assets.openterface.com/images/software/MacOS_FactoryResetHID.webp" alt="Factory Reset step in the macOS diagnostics tool" width="150" />
 
-- In **OpenterfaceQt** (desktop app): Go to **Advanced Menu → Factory Reset HID Chip**.
+- In **Openterface QT** (desktop app): Go to **Advanced >> Factory Reset HID Chip**.
 
     <img src="https://assets.openterface.com/images/software/OpenterfaceQT_FactoryResetHID.webp" alt="Factory Reset HID Chip (OpenterfaceQt)" width="150" />
 
@@ -78,10 +78,10 @@ Perform a **factory reset of the HID chip**:
 ## **4. Baud Rate Sensitivity in Noisy Environments**
 
 **Issue:**  
-Openterface defaults to **115200 bps** baud rate for faster mouse data transmission. However, in electrically noisy environments (e.g. switching power supplies, or long/unshielded cables), this high baud rate can lead to **serial communication errors**, causing dropped or corrupted HID commands.
+Openterface starts at **9600 bps** for reliable serial communication. Some users raise it to **115200 bps** for faster mouse data transmission. In electrically noisy environments (e.g. switching power supplies, or long/unshielded cables), that high baud rate can lead to **serial communication errors**, causing dropped or corrupted HID commands.
 
 **Solution:**  
-Switch to **9600 bps** baud rate:
+Drop back to **9600 bps** via **Control >> Baudrate**:
 - This significantly improves **communication reliability** in noisy setups.
 - The impact on latency is **negligible** under typical usage (e.g., 30 FPS video capture and control).
 

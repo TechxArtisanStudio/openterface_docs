@@ -14,11 +14,11 @@ If you don't find what you need, email [support@openterface.com](mailto:support@
 
 ## :material-clipboard-list: Quick Navigation
 
-- [Product & purchase](#product--purchase)
-- [Installation & hardware](#installation--hardware)
+- [Product & purchase](#product-purchase)
+- [Installation & hardware](#installation-hardware)
 - [Compatibility](#compatibility)
-- [Control & features](#control--features)
-- [Video & audio](#video--audio)
+- [Control & features](#control-features)
+- [Video & audio](#video-audio)
 - [Troubleshooting](#troubleshooting)
 - [More](#more)
 
@@ -88,7 +88,7 @@ One target at a time for KVM. Switch targets by moving HDMI and USB cables.
 
 **:material-chat-question:{ .faq } Can I transfer files via SD card?**
 
-Yes. Extension Module v2 supports SD card read/write with host/target switching via the Openterface app. See [SD Card Guide](/products/kvmext/sd-card/).
+Yes — read and write from the uConsole. Switching the card over to the target from the host app is planned and not available in the current release. See [SD Card Guide](/products/kvmext/sd-card/).
 
 **:material-chat-question:{ .faq } Does it support BIOS-level access?**
 

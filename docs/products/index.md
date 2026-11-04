@@ -21,7 +21,7 @@ Documentation for every Openterface hardware line. Pick your product to see feat
 
     ---
 
-    Ultra-compact KVM-over-USB with swappable video connectors
+    Ultra-compact KVM-over-USB with built-in HDMI, DisplayPort or VGA connectors
 
     [:octicons-arrow-right-24: KVM-GO docs](/products/kvmgo/)
 

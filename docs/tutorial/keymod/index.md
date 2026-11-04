@@ -8,7 +8,7 @@ keywords: "KeyMod tutorial, how to use KeyMod, phone keyboard guide, KeyCmd tuto
 
 {% include "partials/keymod-tutorial-slideshow.html" %}
 
-This tutorial covers the **Android** version of **KeyCmd** with KeyMod hardware. The iOS version is under development.
+This tutorial covers the **Android** version of **KeyCmd** with KeyMod hardware. **KeyCmd 1.0 for iPhone** (iOS 17.0+) is live on the App Store; iPad support is on the way.
 
 ## What is KeyMod?
 
@@ -38,22 +38,22 @@ The KeyCmd app communicates with the KeyMod hardware using the **CH9329 protocol
 
 | Guide | Description |
 |---|---|
-| [1. Getting Started](01-getting-started.md) | Install, connect, and pick your first mode (5 minutes) |
-| [2. Keyboard & Mouse](02-keyboard-mouse.md) | Typing, modifiers, touchpad, and text input |
-| [3. Target OS](03-target-keyboard.md) | Target operating system mapping |
-| [4. Shortcut Hub](04-shortcuts.md) | Profile-based keyboard shortcuts for popular apps |
-| [5. Macros](05-macros.md) | Automated key sequences with delays |
-| [6. Gamepad](06-gamepad.md) | Virtual game controller with customizable layouts |
-| [7. Numpad](07-numpad.md) | Numeric keypad for data entry |
-| [8. Presentation](08-presentation.md) | Slide remote control and timer |
-| [9. Voice Input](09-voice-input.md) | Speech-to-keyboard with Whisper AI |
-| [10. Terminal](10-terminal.md) | SSH connection and command line access |
-| [11. Agent](11-agent.md) | AI-driven task automation via SSH or BLE |
-| [12. Settings](12-settings.md) | App configuration and preferences |
-| [13. Troubleshooting](13-troubleshooting.md) | Common problems and solutions |
+| [1. Getting Started](/tutorial/keymod/01-getting-started/) | Install, connect, and pick your first mode (5 minutes) |
+| [2. Keyboard & Mouse](/tutorial/keymod/02-keyboard-mouse/) | Typing, modifiers, touchpad, and text input |
+| [3. Target OS](/tutorial/keymod/03-target-keyboard/) | Target operating system mapping |
+| [4. Shortcut Hub](/tutorial/keymod/04-shortcuts/) | Profile-based keyboard shortcuts for popular apps |
+| [5. Macros](/tutorial/keymod/05-macros/) | Automated key sequences with delays |
+| [6. Gamepad](/tutorial/keymod/06-gamepad/) | Virtual game controller with customizable layouts |
+| [7. Numpad](/tutorial/keymod/07-numpad/) | Numeric keypad for data entry |
+| [8. Presentation](/tutorial/keymod/08-presentation/) | Slide remote control and timer |
+| [9. Voice Input](/tutorial/keymod/09-voice-input/) | Speech-to-keyboard with Whisper AI |
+| [10. Terminal](/tutorial/keymod/10-terminal/) | SSH connection and command line access |
+| [11. Agent](/tutorial/keymod/11-agent/) | AI-driven task automation via SSH or BLE |
+| [12. Settings](/tutorial/keymod/12-settings/) | App configuration and preferences |
+| [13. Troubleshooting](/tutorial/keymod/13-troubleshooting/) | Common problems and solutions |
 
 ## Getting Help
 
 - **Bug reports:** [TechxArtisan Discord](https://discord.gg/techxartisan)
 - **Community:** [TechxArtisan Discord](https://discord.gg/techxartisan)
-- **Source code:** *(coming soon)*
+- **Source code:** [KeyCmd for Android](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android) · [KeyCmd for iOS](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS)

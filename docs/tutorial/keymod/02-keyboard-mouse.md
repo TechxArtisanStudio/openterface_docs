@@ -64,14 +64,12 @@ The **Basic** tier gives you a **dedicated full-screen keyboard** without the ap
 
 ## Display Modes (Android)
 
-Tap the **toggle handle** (pill-shaped divider between keyboard and touchpad) to cycle through display modes:
+The layout toggle key in the keyboard's top row switches the secondary layout. There is **no touchpad-only view**:
 
-| Mode | What you see |
+| Orientation | What you get |
 |---|---|
-| **Both** (default) | Keyboard + touchpad together |
-| **Keyboard only** | Full-width keyboard, touchpad hidden |
-| **Touchpad only** (portrait) | Touchpad takes the full screen |
-| **Split** (landscape) | Two half-keyboards with touchpad on the left |
+| **Portrait** | Keyboard + touchpad together, always |
+| **Landscape** | The toggle swaps **Split** (two half-keyboards with the touchpad on the left) ↔ **Keyboard only** (full-width keyboard, touchpad hidden). The key is labelled **Split** / **Full** for the layout you are on. |
 
 ## How to Use the Keyboard
 
@@ -95,7 +93,7 @@ Many letter keys have **hidden symbols** you can access by pressing and holding:
 
 ```
 Long-press "d" → shows: $  €  ¥  £
-Long-press "k" → shows: (  {  [  <
+Long-press "k" → shows: ,  (  )
 Long-press "/" → shows: \  |
 Long-press "m" → shows: +  _
 ```
@@ -104,11 +102,12 @@ Press and hold until a popup appears, then slide your finger toward the symbol y
 
 ### Fn Key Layer
 
-Tap the **Fn** key in the modifier row. The letter keys temporarily become **F1 through F12**:
+Tap the **Fn** key in the modifier row to latch the Fn layer. With Fn held, keys map as follows:
 
-- Q = F1, W = F2, E = F3, R = F4, T = F5, Y = F6
-- U = F7, I = F8, O = F9, P = F10
-- A = F11, S = F12
+- Q = 1, W = 2, E = 3, R = 4, T = 5, Y = 6, U = 7, I = 8, O = 9, P = 0
+- A = F1, S = F2, D = F3, F = F4, G = F5, H = F6, J = F7, K = F8, L = F9
+- Z = F10, X = F11, C = F12
+- **Tab** = Esc, **Backspace** = Delete
 
 ## Quick-Action Buttons
 
@@ -124,13 +123,9 @@ Common shortcut buttons are available for quick access. The app uses the **Targe
 | Redo | Cmd+Y | Ctrl+Y |
 | Find | Cmd+F | Ctrl+F |
 | Save | Cmd+S | Ctrl+S |
-| New Tab | Cmd+T | Ctrl+T |
 | Close Tab | Cmd+W | Ctrl+W |
-| Next Tab | Cmd+Tab | Ctrl+Tab |
-| Lock Screen | Cmd+L | Win+L |
-| Show Desktop | Cmd+D | Win+D |
-| Alt+F4 | — | Alt+F4 |
-| Ctrl+Alt+Del | — | Ctrl+Alt+Del |
+
+> **iOS only:** the iOS app additionally offers **New Tab** (`Ctrl+T`), **Next Tab** (`Ctrl+Tab`), **Lock Screen** (`Win+L`), **Show Desktop** (`Win+D`), **Alt+F4** and **Ctrl+Alt+Del** as ready-made buttons. The Android app does not provide these — on Android the equivalent list is the Shortcut Hub **Default** profile (Select All, Copy, Cut, Paste, Save, Undo, Find, Redo, New, Open, Print, Close, Replace).
 
 ## TouchPad
 
@@ -179,5 +174,5 @@ In landscape split mode, a **scrollable shortcut strip** appears above the two k
 
 ## Next Steps
 
-- **[Target-Specific Keyboard →](03-target-keyboard.md)** — Keyboard layouts and target OS mapping
-- **[Troubleshooting →](13-troubleshooting.md)** — Common problems and solutions
+- **[Target-Specific Keyboard →](/tutorial/keymod/03-target-keyboard/)** — Keyboard layouts and target OS mapping
+- **[Troubleshooting →](/tutorial/keymod/13-troubleshooting/)** — Common problems and solutions

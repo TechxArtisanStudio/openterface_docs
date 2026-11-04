@@ -19,13 +19,13 @@ Install KeyCmd, connect to your KeyMod hardware, and send your first keystroke i
 
 **Android:**
 
-1. Open your phone's browser and download the [KeyCmd beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk)
+1. Open your phone's browser and download the [latest KeyCmd beta APK](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android/releases/latest) (`KeyCmd-release.apk`)
 2. Tap the downloaded file to install
 3. If Android asks, allow **"Install unknown apps"** for your browser
 
-You can also get the latest build from the [App](/app/kvm/) page.
+You can also get the latest build from the [KeyCmd app page](/app/keycmd/).
 
-> **Note:** KeyCmd source code is not yet public. We plan to open-source it after a successful crowdfunding campaign.
+> **Note:** KeyCmd source is public — [Openterface_KeyCmd_Android](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android) and [Openterface_KeyCmd_iOS](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS) (AGPL-3.0).
 
 ## Step 2: Connect to Your KeyMod Device
 
@@ -67,9 +67,9 @@ Use the side menu (hamburger icon, top-left) to switch modes at any time:
   <p><em>Navigation drawer — switch modes, access macros, voice, and settings.</em></p>
 </div>
 
-**"Remember my choice"** — check this box to skip the Welcome screen on future launches and go directly to your last-used mode.
+**"Auto-enter selected mode"** — check this box to skip the Welcome screen on future launches and go directly to your last-used mode. (On iOS the same option is labelled **"Remember this choice and auto-enter this mode"**.)
 
-**"Skip" button** — bypass the Welcome screen and enter your previously-used mode immediately.
+**"Skip for now" button** — bypass the Welcome screen and enter your previously-used mode immediately.
 
 ## Step 4: Send Your First Keystroke
 
@@ -90,4 +90,4 @@ That's it! You're now controlling your target computer remotely.
 
 ## Next Steps
 
-- **[Keyboard & Mouse →](02-keyboard-mouse.md)** — Typing, modifiers, touchpad, and text input
+- **[Keyboard & Mouse →](/tutorial/keymod/02-keyboard-mouse/)** — Typing, modifiers, touchpad, and text input

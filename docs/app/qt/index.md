@@ -11,17 +11,25 @@ This document provides an overview of a cross-platform KVM (Keyboard, Video, Mou
 
 ### Preferences
 
-The Preferences menu allows users to customize settings via a dialog with four pages:<br>
+The Preferences menu allows users to customize settings via a dialog with eight pages plus an AI group (MCP, Tools, Chat):<br>
 ![Preferences Gernal](https://assets.openterface.com/images/qt/preferenceGernal.webp)
 
--   **General** This page configures debugging logs filter and the screen saver inhibit or not when the application is running. Log categories include:
+-   **General** This page configures the debug log filter and whether to inhibit the host screen saver (`Inhibit Screen Saver`). Log categories are grouped as:
 
-    -   Core
     -   Serial
-    -   UserInterface
-    -   host
+    -   Input (Keyboard & Mouse)
+    -   HID / Chip
+    -   Device
+    -   Camera / Backend
+    -   Audio
+    -   Scripts
+    -   Server
+    -   System
+    -   UI
+    -   AI Chat
+    -   Other
 
-    Users can choose to save logs to a .txt file and the screen saver inhibit or not.<br>
+    Each category can be expanded to set a per-category level. `Enable file logging` writes to `openterface.log` in a folder you pick with `Select Log Directory` (the application data directory by default).<br>
 
 ![Preferences Video](https://assets.openterface.com/images/qt/preferenceVideo.webp)
 
@@ -31,7 +39,11 @@ The Preferences menu allows users to customize settings via a dialog with four p
     -   Set the resolution.
     -   Choose the video stream format.
 
--   **Audio** This page is currently under development.<br>
+-   **Audio** This page provides:
+
+    -   **Audio Device Selection:** pick the `Audio Input Device`, refresh the list, and see the `Current Device`.
+    -   **Audio Recording Settings:** `Audio Codec`, `Sample Rate`, `Bitrate`, and `Quality` for recorded capture.
+    -   **Live Audio Settings:** `Enable Audio Pass-through` and a `Volume` slider for listening to target audio while controlling it.<br>
 
 ![Preferences TargetControl](https://assets.openterface.com/images/qt/preferenceTargetControl.webp)
 
@@ -47,9 +59,19 @@ The Preferences menu allows users to customize settings via a dialog with four p
     -   **Set the Vendor ID (VID) and Product ID (PID) read from the target.**
     -   **Define the USB descriptor for the target.**
 
+-   **Video Firmware** Firmware Management for the video (HDMI capture) chip: check the network for the latest version and use **Firmware Update from Remote**, **Backup Firmware to .bin File** (reads the current firmware from EEPROM), or **Write Firmware from .bin File**.
+
+-   **Control Chip Firmware** Flash the CH32V208 control chip over USB with the built-in WCH ISP support: **Scan Devices**, then **Connect** and program.
+
+-   **EDID Configuration** **Read from Device** to load the current EDID, then edit the **Display Name** and **Apply**. After updating, the application exits so the target re-reads the EDID.
+
+-   **Virtual Keyboard** Configure the on-screen function and composite key panel.
+
+-   **AI** A group with three pages: **MCP** (enable the Model Context Protocol server, **Stdio (local)** or **SSE (HTTP remote)**), **Tools**, and **Chat**.
+
 ### Edit
 
--   **Paste:** Both the Paste option in the Edit menu and the paste button in the top-left corner allow users to paste text from the host clipboard to the target device.
+-   **Paste:** Both the Paste option in the Edit menu and the paste button in the top-right corner allow users to paste text from the host clipboard to the target device.
 
 ### Control
 
@@ -59,32 +81,46 @@ This menu provides options to:<br>
 -   Toggle visibility of the host's mouse cursor. **Control >> Mouse Visibility >> Auto Hide or Always Show.**
 -   Switch a USB port on the hardware between target and host usage. **Control >> Switchable USB >> TO Target or To Host.**
 -   Adjust the baud rate for chip transmission. **Control >> Baudrate >> 9600, 115200.**
+-   Pick which attached device the menus and toolbar act on. **Control >> Device >> _<device name>_.**
 
-### Advance
+### Advanced
 
-The Advance menu includes the following options:<br>
+The Advanced menu includes the following options:<br>
 ![Advance menu](https://assets.openterface.com/images/qt/menuAdvance.webp)
 
 -   **Environment Checking:** Verifies if required drivers for the software are installed.
 -   **Reset Serial Port:** Restarts the serial port.
--   **Reset Keyboard and Mouse:** Resets the keyboard and mouse settings.
 -   **Factory Reset HID Chip:** Restores the HID chip to its factory settings.<br>
     ![Advance SerialConsole](https://assets.openterface.com/images/qt/advanceSerialConsole.webp)
--   **Serial Console:** Opens a new window to monitor all messages sent to the serial port, with filters for sent/received messages.<br>
+-   **Serial Console:** Opens the *Serial Port Debug* window to monitor messages exchanged with the control chip, with filters by message type: Chip info, Keyboard, Media keyboard, Mouse absolute, Mouse relative, and HID.<br>
     ![Advance ScriptTool](https://assets.openterface.com/images/qt/advanceScriptTool.webp)
 -   **Script Tool:** Runs AutoHotkey (AHK) scripts. This feature mimics AutoHotkey but supports only a subset of mouse/keyboard functions and screenshot capabilities. Scripts affect the target device.
+-   **Hardware Diagnostics:** Runs the built-in self-test suite against the attached device.
+-   **Hotplug Recovery Test:** Checks that control is restored after the device is unplugged and replugged.
+-   **Video Recording Settings:** Configure the codec, quality, and container used when recording the target screen.
 -   **TCP Server:** Receives AutoHotkey commands via TCP to execute them on the target device.
--   **Firmware Update:** Pulls the latest firmware from a remote server, allowing users to choose whether to flash it to the device.
+-   **Device Selector:** Choose which connected device the panel acts on.
+-   **Keyboard Mapping Editor:** Remap the keys the app sends to the target.
+-   **AI Chat:** Toggles the AI assistant panel.
+
+Firmware updates are not on this menu: they live in **Preferences >> Video Firmware** (video chip) and **Preferences >> Control Chip Firmware** (CH32V208 control chip).
 
 ### Languages
 
-The interface language can be set to:
+The interface language can be set to any translation shipped with the build:
 
+-   Chinese
 -   Danish
 -   English
--   German
 -   French
+-   German
+-   Italian
 -   Japanese
+-   Korean
+-   Portuguese
+-   Romanian
+-   Russian
+-   Spanish
 -   Swedish
 
 ### Help

@@ -77,7 +77,8 @@ sudo udevadm control --reload-rules
 If one backend shows a black screen, try another via **Preferences > Video > Media Backend**:
 - **FFmpeg** — Most reliable (recommended)
 - **GStreamer** — Linux only
-- **Qt Multimedia** — Windows fallback
+
+On Windows the selector offers FFmpeg (DirectShow) and Media Foundation, but the app forces FFmpeg, so changing it there has no effect.
 
 ### GStreamer Issues (Linux)
 
@@ -163,7 +164,7 @@ dmesg | grep ch341
 
 1. Power cycle: unplug USB, wait 10 seconds, reconnect
 2. Re-enter ISP mode (some devices: hold button during power-on)
-3. Use Serial Reset Tool to re-flash bootloader
+3. Reset the HID chip to factory defaults — **Advanced >> Factory Reset HID Chip** (Qt), or the **Factory Reset** step of the diagnostics tool (macOS: Settings window > **Advanced & Debug** > **Device Diagnostics** > **Open Diagnostics Tool**)
 4. Contact support if bricked
 
 ---
@@ -172,7 +173,7 @@ dmesg | grep ch341
 
 ### High CPU Usage
 
-1. **Enable hardware acceleration** — Preferences > Video > Hardware Acceleration (VAAPI, V4L2-M2M)
+1. **Enable hardware acceleration** — Preferences > Video > Hardware Acceleration (Auto, NVIDIA CUDA, Intel Quick Sync Video, or CPU; FFmpeg backend only, needs a restart)
 2. **Lower resolution** — 720p uses significantly less CPU than 1080p
 3. **Lower frame rate** — 15fps halves decode workload
 4. **Switch backend** — FFmpeg with HW acceleration typically uses less CPU than GStreamer
@@ -192,7 +193,7 @@ Check the FPS counter in the status bar. If actual FPS is below target, the pipe
 
 ### Serial Console (Qt)
 
-Open via **Device > Serial Port Debug** — shows real-time serial protocol messages with filters for Keyboard, Mouse, HID, Chip Info.
+Open via **Advanced >> Serial Console** (the window that opens is titled "Serial Port Debug") — shows real-time serial protocol messages with filters for Keyboard, Mouse, HID, Chip Info.
 
 ---
 
@@ -360,7 +361,7 @@ Include this file when opening a GitHub issue.
 
 ## Factory Reset
 
-1. Use the Serial Reset Tool from Settings (macOS) or Device menu (Qt)
+1. Run the factory reset: **Advanced >> Factory Reset HID Chip** in the Qt app, or the **Factory Reset** step of the diagnostics tool on macOS (Settings window > **Advanced & Debug** > **Device Diagnostics** > **Open Diagnostics Tool**)
 2. This resets the HID chip to factory defaults
 3. Reconnect the device after reset
 

@@ -25,16 +25,16 @@ This tutorial covers the **Openterface KVM series** — devices that capture the
 
 | # | Title | Audience |
 |---|-------|----------|
-| [01 — Getting Started](01-getting-started.md) | Installation, hardware setup, first launch | Beginners |
-| [02 — Basic Operations](02-basic-operations.md) | Mouse, keyboard, video, audio, recording | Everyone |
-| [03 — Advanced Features](03-advanced-features.md) | EDID, firmware, macros, scripts, diagnostics | Intermediate to Expert |
-| [04 — Troubleshooting](04-troubleshooting.md) | Common problems and solutions | Everyone |
+| [01 — Getting Started](/tutorial/kvm/01-getting-started/) | Installation, hardware setup, first launch | Beginners |
+| [02 — Basic Operations](/tutorial/kvm/02-basic-operations/) | Mouse, keyboard, video, audio, recording | Everyone |
+| [03 — Advanced Features](/tutorial/kvm/03-advanced-features/) | EDID, firmware, macros, scripts, diagnostics | Intermediate to Expert |
+| [04 — Troubleshooting](/tutorial/kvm/04-troubleshooting/) | Common problems and solutions | Everyone |
 
 ## Quick Start
 
-1. **New user?** Start with [Getting Started](01-getting-started.md) to install and connect your device
-2. **Ready to use it?** Read [Basic Operations](02-basic-operations.md) for mouse, keyboard, and video
-3. **Having trouble?** Jump to [Troubleshooting](04-troubleshooting.md) for common issues
+1. **New user?** Start with [Getting Started](/tutorial/kvm/01-getting-started/) to install and connect your device
+2. **Ready to use it?** Read [Basic Operations](/tutorial/kvm/02-basic-operations/) for mouse, keyboard, and video
+3. **Having trouble?** Jump to [Troubleshooting](/tutorial/kvm/04-troubleshooting/) for common issues
 
 ## Quick Links
 
@@ -42,5 +42,5 @@ This tutorial covers the **Openterface KVM series** — devices that capture the
 - [Mini-KVM Product Page](/products/minikvm/)
 - [KVM-Go Product Page](/products/kvmgo/)
 - [uConsole KVM Ext. Product Page](/products/kvmext/)
-- [iPadOS App](/app/ipados/) — Download and installation guide
+- [iPadOS App](https://apps.apple.com/us/app/openterface-kvm-ipad/id6763533664) — Openterface KVM iPad on the App Store (KVM-Go only)
 - [Discord](https://discord.gg/sFTJD6a3R8) — Community support

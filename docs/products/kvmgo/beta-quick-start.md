@@ -17,8 +17,8 @@ Congratulations on being selected as a beta tester! We are really excited to get
 
 Before you begin testing, please review these essential guides:
 
-- [Openterface KVM-Go Review Guide](notes/review-guide.md) — Important notes, known issues, and explanations for engineering prototype units
-- [KVM-Go Firmware Upgrade](notes/firmware-upgrade.md) — Step-by-step instructions for upgrading firmware if needed
+- [Openterface KVM-Go Review Guide](/products/kvmgo/notes/review-guide/) — Important notes, known issues, and explanations for engineering prototype units
+- [KVM-Go Firmware Upgrade](/products/kvmgo/notes/firmware-upgrade/) — Step-by-step instructions for upgrading firmware if needed
 
 > **Note:** These guides contain critical information about prototype limitations, known issues, and firmware upgrade procedures that may be helpful during your testing.
 
@@ -42,6 +42,8 @@ Your feedback is incredibly valuable to us, and while you’re welcome to test o
 4. **Copy & Paste (both short and long text)**
 
 5. **Device Simulation Settings (Windows/Linux)**
+
+    > **Heads up:** the beta firmware does not enable these yet. The CH32V208 control chip on KVM-Go does not accept the command-based HID configuration used for EDID and VID/PID edits, and there is no storage-switch command in the current build — so if an option is missing or has no effect, that is expected. Please still record what you see; it tells us what to prioritise.
 
     - 5.1. Display EDID Configuration
     - 5.2. USB Device Identification (VID/PID)

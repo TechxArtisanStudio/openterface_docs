@@ -29,7 +29,7 @@ The USB-A port's connection depends on both the **Hardware Switch** and the **So
 
 Any manual movement of the hardware switch will update the software display and return to a synced state.
 
-At startup, the device defaults to the host connection. The software detects the hardware switch's position and syncs accordingly.
+At startup the app reads the position of the hardware switch and matches it, so the port follows wherever the switch is set.
 
 !!! warning "Remember to eject the flash drive before toggling the switch"
     If the USB port is being used by a flash drive, ensure you eject the flash drive before toggling the switch to transfer the port's use to another computer.

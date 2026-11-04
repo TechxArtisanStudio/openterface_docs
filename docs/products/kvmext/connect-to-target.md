@@ -44,7 +44,7 @@ If you installed a network card:
 
 ### **SD card (optional — imaging & files)**
 
-Insert a microSD card into the module slot. Use the host app to switch access between uConsole and target. See [SD Card Guide](/products/kvmext/sd-card/).
+Insert a microSD card into the module slot. The card is read and written from the uConsole side; switching it over to the target is not exposed by the host app yet. See [SD Card Guide](/products/kvmext/sd-card/).
 
 ## USB 2.0 shared switching
 

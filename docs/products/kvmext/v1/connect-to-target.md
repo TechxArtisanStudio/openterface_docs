@@ -18,8 +18,8 @@ keywords: "KVM connection setup, target device connection, USB control setup, HD
 
 Before connecting your target device, ensure you have completed:
 
-1. [Hardware Installation](/products/kvmext/hardware-installation/) - Physical installation of the KVM Extension board
-2. [Software Setup](/products/kvmext/software-setup/) - Installation of the Openterface App
+1. [Hardware Installation](/products/kvmext/v1/hardware-installation/) - Physical installation of the KVM Extension board
+2. [Software Setup](/products/kvmext/v1/software-setup/) - Installation of the Openterface App
 
 ## Connection Steps
 

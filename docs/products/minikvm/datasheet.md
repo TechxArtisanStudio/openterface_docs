@@ -92,7 +92,7 @@ Openterface™ Mini-KVM is a feature-rich, production grade, open-source, and co
    As a USB device port, connecting to the Host computer for data transfer via built-in USB hub
 
 2. **USB-C Port (Female)** ②  
-   As a USB device port, connecting to the Host computer for emulating keyboard and mouse HID output via built-in USB hub
+   Connecting to the **Target** computer: emulated keyboard and mouse HID output via the built-in USB hub
 
 3. **HDMI Input Port (Female)** ③  
    HDMI source input from the Target computer

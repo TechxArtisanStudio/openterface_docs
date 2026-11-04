@@ -60,7 +60,7 @@ We currently support multiple platforms:
 
 ### Copy and Paste Functionality
 
-The firmware on your unit may not include our latest clipboard fixes. These issues have already been resolved in the newest firmware. You can update using the [Firmware Upgrade Guide](firmware-upgrade.md) if you would like to test the latest version.
+The firmware on your unit may not include our latest clipboard fixes. These issues have already been resolved in the newest firmware. You can update using the [Firmware Upgrade Guide](/products/kvmgo/notes/firmware-upgrade/) if you would like to test the latest version.
 
 ### Teardown (Optional)
 
@@ -96,4 +96,4 @@ Yes, KVM-Go will remain fully open-source. Once the hardware design is finalized
 
 ## Further Reading
 
-* [KVM-Go Firmware Upgrade](firmware-upgrade.md) — Step-by-step guide for updating your device
+* [KVM-Go Firmware Upgrade](/products/kvmgo/notes/firmware-upgrade/) — Step-by-step guide for updating your device

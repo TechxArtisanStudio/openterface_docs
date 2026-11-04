@@ -5,7 +5,7 @@ description: "Public Holidays: As a Hong Kong–based company, we mainly follow 
 
 # Public Holidays
 
-As a Hong Kong–based company, we mainly follow the public holidays of **Chinese mainland** and **Hong Kong**. Our office is closed on these days. For our regular working hours, please see [About Us](about-us.md).
+As a Hong Kong–based company, we mainly follow the public holidays of **Chinese mainland** and **Hong Kong**. Our office is closed on these days. For our regular working hours, please see [About Us](/about/about-us/).
 
 !!! info "Response time during holidays"
     During public holidays, our response may be slower than usual. Our tech and customer support teams will normally reply within **48 hours**.

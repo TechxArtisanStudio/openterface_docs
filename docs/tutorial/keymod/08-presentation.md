@@ -40,5 +40,5 @@ The timer card supports countdown and countup modes, with a progress fill bar, v
 
 ## Next Steps
 
-- **[← Numpad](07-numpad.md)** — Numeric keypad for data entry
-- **[Voice Input →](09-voice-input.md)** — Voice-to-keyboard transcription
+- **[← Numpad](/tutorial/keymod/07-numpad/)** — Numeric keypad for data entry
+- **[Voice Input →](/tutorial/keymod/09-voice-input/)** — Voice-to-keyboard transcription

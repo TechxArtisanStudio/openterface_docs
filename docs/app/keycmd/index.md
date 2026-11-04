@@ -16,18 +16,18 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
 
     KeyCmd app with keyboard, trackpad, gamepad, macros, and voice input.
 
-    [:octicons-download-24: Download beta APK (v0.19)](https://assets2.openterface.com/data/KeyCmd-release-0.19.apk) <br>
+    [:octicons-download-24: Download the latest beta APK](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android/releases/latest) <br>
     [:octicons-arrow-right-24: Google Play](https://play.google.com/store/apps/details?id=com.openterface.keycmd) *(coming soon)* <br>
-    :octicons-mark-github-16: Source code *(coming soon)*
+    [:octicons-mark-github-16: Source code](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android)
 
 -   ### :fontawesome-brands-apple:{ .lg } **iOS**
 
     ***
 
-    KeyCmd app for iPhone. Connect via Bluetooth LE or USB-C.
+    KeyCmd 1.0 for iPhone (iOS 17.0+). Connect via Bluetooth LE or USB-C.
 
     [:octicons-arrow-right-24: Install from App Store](https://apps.apple.com/us/app/keycmd/id6776206628) <br>
-    :octicons-mark-github-16: Source code *(coming soon)*
+    [:octicons-mark-github-16: Source code](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS)
 
 -   ### :fontawesome-brands-android:{ .lg } **Android Tablet**
 
@@ -55,7 +55,7 @@ Turn your phone or tablet into a **keyboard and mouse controller** for any compu
 
 </div>
 
-> **Beta notice:** KeyCmd for Android is in active beta. Source will be published after crowdfunding.
+> **Beta notice:** KeyCmd for Android is in active beta. The source is already public — [KeyCmd for Android](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android) and [KeyCmd for iOS](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS) (AGPL-3.0).
 
 ## Updates
 
