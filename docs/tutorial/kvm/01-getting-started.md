@@ -92,6 +92,8 @@ The Android app requires:
 - **USB OTG support** — most modern phones support it (Samsung, Google Pixel, OnePlus). Verify by connecting a USB flash drive with an OTG adapter
 - **USB OTG cable or adapter** to connect the KVM device to your phone
 
+> **Sideloading the APK:** if you install the GitHub APK instead of Google Play, allow "Install unknown apps" for your browser. Android allows only one app signature per package across all user profiles — if installation fails with a signature conflict ("App not installed" or `INSTALL_FAILED_UPDATE_INCOMPATIBLE`), uninstall the existing app from **every** user profile first (Settings → System → Multiple users). This can also happen when switching between Google Play and GitHub APK builds signed with different keys, e.g. on multi-user setups like GrapheneOS.
+
 ### iPadOS Requirements
 
 The iPadOS app requires:

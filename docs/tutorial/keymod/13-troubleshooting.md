@@ -8,6 +8,17 @@ keywords: "KeyMod troubleshooting, KeyMod not connecting, KeyMod Bluetooth issue
 
 Common problems and solutions for KeyCmd on Android.
 
+## Installation Issues
+
+### Signature Conflict on Multi-User Devices (e.g. GrapheneOS)
+
+Android requires the same app signature across **all** user profiles. If installing the APK fails with "App not installed" or `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, a previous KeyCmd build signed with a different key is still installed under another user profile.
+
+1. Uninstall KeyCmd from every user profile — switch users via Settings → System → Multiple users, or run `adb shell pm uninstall --user <id> com.openterface.KeyCmd` for each ID listed by `adb shell pm list users`.
+2. Install the new APK again in your main profile.
+
+---
+
 ## Connection Issues
 
 ### Not Connected

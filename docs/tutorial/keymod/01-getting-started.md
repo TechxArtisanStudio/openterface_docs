@@ -23,6 +23,8 @@ Install KeyCmd, connect to your KeyMod hardware, and send your first keystroke i
 2. Tap the downloaded file to install
 3. If Android asks, allow **"Install unknown apps"** for your browser
 
+> **Multi-user devices (e.g. GrapheneOS):** Android allows only one app signature per package across all user profiles. If installation fails with a signature conflict ("App not installed" or `INSTALL_FAILED_UPDATE_INCOMPATIBLE`), a previous KeyCmd build signed with a different key is still installed under another user profile. Uninstall KeyCmd from **every** user profile (Settings → System → Multiple users), then install the new APK again.
+
 You can also get the latest build from the [KeyCmd app page](/app/keycmd/).
 
 > **Note:** KeyCmd source is public — [Openterface_KeyCmd_Android](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_Android) and [Openterface_KeyCmd_iOS](https://github.com/TechxArtisanStudio/Openterface_KeyCmd_iOS) (AGPL-3.0).
